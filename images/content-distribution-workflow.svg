@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="900" height="680" viewBox="0 30 900 680"  xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .auto-box { fill: #e6ffe6; stroke: #99cc99; stroke-width: 2; }
+      .social-box { fill: #ffe6e6; stroke: #ff9999; stroke-width: 2; }
+      .academic-box { fill: #e6f3ff; stroke: #99ccff; stroke-width: 2; }
+      .dev-box { fill: #f0e6ff; stroke: #cc99ff; stroke-width: 2; }
+      .text { font-family: 'Noto Sans KR', Arial, sans-serif; font-size: 11px; text-anchor: middle; dominant-baseline: central; }
+      .title { font-weight: bold; font-size: 13px; }
+      .arrow { stroke: #333; stroke-width: 1.5; marker-end: url(#arrowhead); }
+      .feedback-arrow { stroke: #666; stroke-width: 2; stroke-dasharray: 5,5; marker-end: url(#arrowhead); }
+    </style>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#333" />
+    </marker>
+  </defs>
+
+  <!-- 1단계: 출간 -->
+  <rect x="400" y="60" width="100" height="40" class="auto-box" rx="5"/>
+  <text x="450" y="80" class="text title">출간</text>
+
+  <!-- 2단계: 자동 홍보 -->
+  <rect x="400" y="140" width="100" height="40" class="auto-box" rx="5"/>
+  <text x="450" y="160" class="text title">자동 홍보</text>
+
+  <!-- 3단계: 채널 분기 -->
+  <!-- 소셜 미디어 -->
+  <rect x="120" y="240" width="120" height="40" class="social-box" rx="5"/>
+  <text x="180" y="260" class="text title">소셜 미디어</text>
+  
+  <!-- 학술 플랫폼 -->
+  <rect x="390" y="240" width="120" height="40" class="academic-box" rx="5"/>
+  <text x="450" y="260" class="text title">학술 플랫폼</text>
+  
+  <!-- 개발 커뮤니티 -->
+  <rect x="660" y="240" width="120" height="40" class="dev-box" rx="5"/>
+  <text x="720" y="260" class="text title">개발 커뮤니티</text>
+
+  <!-- 4단계: 세부 플랫폼들 -->
+  <!-- 소셜 미디어 세부 -->
+  <rect x="40" y="340" width="80" height="35" class="social-box" rx="3"/>
+  <text x="80" y="357" class="text">Twitter/LinkedIn</text>
+  
+  <rect x="140" y="340" width="80" height="35" class="social-box" rx="3"/>
+  <text x="180" y="357" class="text">YouTube 리뷰</text>
+  
+  <rect x="240" y="340" width="80" height="35" class="social-box" rx="3"/>
+  <text x="280" y="357" class="text">팟캐스트 게스트</text>
+
+  <!-- 학술 플랫폼 세부 -->
+  <rect x="340" y="340" width="80" height="35" class="academic-box" rx="3"/>
+  <text x="380" y="357" class="text">Google Scholar</text>
+  
+  <rect x="440" y="340" width="80" height="35" class="academic-box" rx="3"/>
+  <text x="480" y="357" class="text">ResearchGate</text>
+  
+  <rect x="540" y="340" width="80" height="35" class="academic-box" rx="3"/>
+  <text x="580" y="357" class="text">Academia.edu</text>
+
+  <!-- 개발 커뮤니티 세부 -->
+  <rect x="640" y="340" width="80" height="35" class="dev-box" rx="3"/>
+  <text x="680" y="357" class="text">GitHub Trending</text>
+  
+  <rect x="740" y="340" width="80" height="35" class="dev-box" rx="3"/>
+  <text x="780" y="357" class="text">Hacker News</text>
+  
+  <rect x="690" y="390" width="80" height="35" class="dev-box" rx="3"/>
+  <text x="730" y="407" class="text">Reddit</text>
+
+  <!-- 5단계: 독자 유입 -->
+  <rect x="400" y="480" width="100" height="40" class="auto-box" rx="5"/>
+  <text x="450" y="500" class="text title">독자 유입</text>
+
+  <!-- 6단계: 피드백 수집 -->
+  <rect x="650" y="560" width="100" height="40" class="auto-box" rx="5"/>
+  <text x="700" y="580" class="text title">피드백 수집</text>
+
+  <!-- 7단계: 콘텐츠 개선 -->
+  <rect x="400" y="620" width="100" height="40" class="auto-box" rx="5"/>
+  <text x="450" y="640" class="text title">콘텐츠 개선</text>
+
+  <!-- 화살표들 -->
+  <!-- 출간 → 자동 홍보 -->
+  <line x1="450" y1="100" x2="450" y2="140" class="arrow"/>
+
+  <!-- 자동 홍보 → 3개 채널 -->
+  <line x1="425" y1="180" x2="200" y2="240" class="arrow"/>
+  <line x1="450" y1="180" x2="450" y2="240" class="arrow"/>
+  <line x1="475" y1="180" x2="700" y2="240" class="arrow"/>
+
+  <!-- 채널 → 세부 플랫폼 -->
+  <!-- 소셜 미디어 -->
+  <line x1="160" y1="280" x2="80" y2="340" class="arrow"/>
+  <line x1="180" y1="280" x2="180" y2="340" class="arrow"/>
+  <line x1="200" y1="280" x2="280" y2="340" class="arrow"/>
+
+  <!-- 학술 플랫폼 -->
+  <line x1="430" y1="280" x2="380" y2="340" class="arrow"/>
+  <line x1="450" y1="280" x2="480" y2="340" class="arrow"/>
+  <line x1="470" y1="280" x2="580" y2="340" class="arrow"/>
+
+  <!-- 개발 커뮤니티 -->
+  <line x1="700" y1="280" x2="680" y2="340" class="arrow"/>
+  <line x1="720" y1="280" x2="780" y2="340" class="arrow"/>
+  <line x1="720" y1="280" x2="730" y2="390" class="arrow"/>
+
+  <!-- 세부 플랫폼 → 독자 유입 -->
+  <line x1="80" y1="375" x2="420" y2="480" class="arrow"/>
+  <line x1="180" y1="375" x2="430" y2="480" class="arrow"/>
+  <line x1="280" y1="375" x2="440" y2="480" class="arrow"/>
+  <line x1="380" y1="375" x2="440" y2="480" class="arrow"/>
+  <line x1="480" y1="375" x2="450" y2="480" class="arrow"/>
+  <line x1="580" y1="375" x2="460" y2="480" class="arrow"/>
+  <line x1="680" y1="375" x2="470" y2="480" class="arrow"/>
+  <line x1="780" y1="375" x2="480" y2="480" class="arrow"/>
+  <line x1="730" y1="425" x2="480" y2="480" class="arrow"/>
+
+  <!-- 독자 유입 → 피드백 수집 -->
+  <line x1="500" y1="500" x2="650" y2="580" class="arrow"/>
+
+  <!-- 피드백 수집 → 콘텐츠 개선 -->
+  <line x1="650" y1="580" x2="500" y2="640" class="arrow"/>
+
+  <!-- 콘텐츠 개선 → 출간 (순환) -->
+  <path d="M 400 640 Q 200 640 200 80 Q 200 60 400 80" fill="none" class="feedback-arrow"/>
+
+  <!-- 범례 -->
+  <g transform="translate(40, 650)">
+    <rect x="-0" y="-20" width="330" height="35" fill="#f9f9f9" stroke="#ccc" stroke-width="1" rx="5"/>
+    
+    <rect x="10" y="-12" width="45" height="16" class="auto-box" rx="2"/>
+    <text x="35" y="-4" class="text">자동화</text>
+    
+    <rect x="80" y="-12" width="65" height="16" class="social-box" rx="2"/>
+    <text x="111" y="-4" class="text">소셜 미디어</text>
+    
+    <rect x="170" y="-12" width="65" height="16" class="academic-box" rx="2"/>
+    <text x="205" y="-4" class="text">학술 플랫폼</text>
+    
+    <rect x="250" y="-12" width="68" height="16" class="dev-box" rx="2"/>
+    <text x="285" y="-4" class="text">개발 커뮤니티</text>
+  </g>
+</svg>

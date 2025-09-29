@@ -1,0 +1,298 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 70 1200 750">
+  <defs>
+    <style>
+      .title-text { font-size: 32px; font-weight: bold; }
+      .section-title { font-size: 24px; font-weight: bold; }
+      .component-title { font-size: 20px; font-weight: bold; }
+      .description-text { font-size: 16px; font-weight: bold;}
+      .description-text-origin { font-size: 14px; }
+      .small-text { font-size: 12px; }
+    </style>
+    
+    <!-- Human Thinking Gradient -->
+    <linearGradient id="humanThinking" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3b82f6;stop-opacity:0.9" />
+      <stop offset="100%" style="stop-color:#1d4ed8;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- AI Thinking Gradient -->
+    <linearGradient id="aiThinking" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#10b981;stop-opacity:0.9" />
+      <stop offset="100%" style="stop-color:#047857;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Hybrid Intelligence Gradient -->
+    <radialGradient id="hybridIntelligence" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#fbbf24;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#f59e0b;stop-opacity:0.9" />
+      <stop offset="100%" style="stop-color:#d97706;stop-opacity:0.8" />
+    </radialGradient>
+    
+    <!-- Process Flow -->
+    <linearGradient id="processFlow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#8b5cf6;stop-opacity:0.8" />
+      <stop offset="50%" style="stop-color:#f59e0b;stop-opacity:0.9" />
+      <stop offset="100%" style="stop-color:#06b6d4;stop-opacity:0.8" />
+    </linearGradient>
+    
+    <!-- Arrow markers -->
+    <marker id="arrow" markerWidth="12" markerHeight="8" refX="11" refY="4" orient="auto">
+      <polygon points="0 0, 12 4, 0 8" fill="#64748b"/>
+    </marker>
+    
+    <marker id="fusionArrow" markerWidth="15" markerHeight="10" refX="13" refY="5" orient="auto">
+      <polygon points="0 0, 15 5, 0 10" fill="#f59e0b"/>
+    </marker>
+    
+    <!-- Glow effect -->
+    <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="5" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    
+    <!-- Pulse effect -->
+    <filter id="pulse" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1200" height="800" fill="#ffffff"/>
+  
+ <!-- Human Thinking (Left Side) -->
+  <g id="humanSide">
+    <rect x="50" y="100" width="300" height="450" fill="url(#humanThinking)" rx="20" filter="url(#glow)"/>
+    
+    <!-- Human Icon -->
+    <g transform="translate(-70,0)">
+      <circle cx="200" cy="150" r="25" fill="white" opacity="0.9"/>
+      <circle cx="200" cy="145" r="12" fill="#3b82f6"/>
+      <path d="M 188 165 Q 200 155 212 165 Q 212 175 200 180 Q 188 175 188 165 Z" fill="#3b82f6"/>
+    </g>
+
+    <text x="240" y="150" text-anchor="middle" font-family="Arial, sans-serif" class="section-title" fill="white">
+      인간 사고
+    </text>
+    <text x="240" y="170" text-anchor="middle" font-family="Arial, sans-serif" class="description-text" fill="rgba(255,255,255,0.8)">
+      Human Thinking
+    </text>
+    
+    <!-- Human Strengths -->
+    <rect x="70" y="190" width="260" height="340" fill="rgba(255,255,255,0.1)" rx="10"/>
+    <text x="200" y="225" text-anchor="middle" font-family="Arial, sans-serif" font-size="22px" font-weight="bolder" fill="white">
+      고유 강점
+    </text>
+    
+    <text x="90" y="260" font-family="Arial, sans-serif" class="description-text" fill="rgba(255,255,255,0.9)">
+      • 직관적 통찰
+    </text>
+    <text x="90" y="285" font-family="Arial, sans-serif" class="description-text" fill="rgba(255,255,255,0.9)">
+      • 맥락적 이해
+    </text>
+    <text x="90" y="310" font-family="Arial, sans-serif" class="description-text" fill="rgba(255,255,255,0.9)">
+      • 창의적 발상
+    </text>
+    <text x="90" y="335" font-family="Arial, sans-serif" class="description-text" fill="rgba(255,255,255,0.9)">
+      • 윤리적 판단
+    </text>
+    <text x="90" y="360" font-family="Arial, sans-serif" class="description-text" fill="rgba(255,255,255,0.9)">
+      • 감정적 공감
+    </text>
+    <text x="90" y="385" font-family="Arial, sans-serif" class="description-text" fill="rgba(255,255,255,0.9)">
+      • 상식적 추론
+    </text>
+    <text x="90" y="410" font-family="Arial, sans-serif" class="description-text" fill="rgba(255,255,255,0.9)">
+      • 경험적 학습
+    </text>
+    <text x="90" y="435" font-family="Arial, sans-serif" class="description-text" fill="rgba(255,255,255,0.9)">
+      • 비선형 사고
+    </text>
+    
+    <rect x="70" y="450" width="260" height="65" fill="rgba(255,255,255,0.2)" rx="8"/>
+    <text x="200" y="470" text-anchor="middle" font-family="Arial, sans-serif" class="component-title" fill="white">
+      한계
+    </text>
+    <text x="200" y="490" text-anchor="middle" font-family="Arial, sans-serif" class="small-text" fill="rgba(255,255,255,0.8)">
+      처리 속도 제한, 기억 용량 한계
+    </text>
+    <text x="200" y="505" text-anchor="middle" font-family="Arial, sans-serif" class="small-text" fill="rgba(255,255,255,0.8)">
+      인지 편향, 주관적 해석
+    </text>
+  </g>
+  
+  <!-- AI Thinking (Right Side) -->
+  <g id="aiSide">
+    <rect x="850" y="100" width="300" height="450" fill="url(#aiThinking)" rx="20" filter="url(#glow)"/>
+    
+    <!-- AI Icon -->
+    <g transform="translate(70,0)">
+      <rect x="980" y="125" width="40" height="40" fill="white" opacity="0.9" rx="8"/>
+      <circle cx="990" cy="140" r="3" fill="#10b981"/>
+      <circle cx="1010" cy="140" r="3" fill="#10b981"/>
+      <rect x="987" y="150" width="26" height="8" fill="#10b981" rx="4"/>
+    </g>
+
+    <text x="960" y="150" text-anchor="middle" font-family="Arial, sans-serif" class="section-title" fill="white">
+      AI 사고
+    </text>
+    <text x="960" y="170" text-anchor="middle" font-family="Arial, sans-serif" class="description-text" fill="rgba(255,255,255,0.8)">
+      AI Thinking
+    </text>
+    
+    <!-- AI Strengths -->
+    <rect x="870" y="190" width="260" height="340" fill="rgba(255,255,255,0.1)" rx="10"/>
+    <text x="1000" y="225" text-anchor="middle" font-family="Arial, sans-serif" font-size="22px" font-weight="bolder" fill="white">
+      고유 강점
+    </text>
+    
+    <text x="890" y="260" font-family="Arial, sans-serif" class="description-text" fill="rgba(255,255,255,0.9)">
+      • 대규모 데이터 처리
+    </text>
+    <text x="890" y="285" font-family="Arial, sans-serif" class="description-text" fill="rgba(255,255,255,0.9)">
+      • 빠른 연산 속도
+    </text>
+    <text x="890" y="310" font-family="Arial, sans-serif" class="description-text" fill="rgba(255,255,255,0.9)">
+      • 패턴 인식 능력
+    </text>
+    <text x="890" y="335" font-family="Arial, sans-serif" class="description-text" fill="rgba(255,255,255,0.9)">
+      • 일관된 성능
+    </text>
+    <text x="890" y="360" font-family="Arial, sans-serif" class="description-text" fill="rgba(255,255,255,0.9)">
+      • 24시간 작업
+    </text>
+    <text x="890" y="385" font-family="Arial, sans-serif" class="description-text" fill="rgba(255,255,255,0.9)">
+      • 다중 작업 처리
+    </text>
+    <text x="890" y="410" font-family="Arial, sans-serif" class="description-text" fill="rgba(255,255,255,0.9)">
+      • 객관적 분석
+    </text>
+    <text x="890" y="435" font-family="Arial, sans-serif" class="description-text" fill="rgba(255,255,255,0.9)">
+      • 언어간 번역
+    </text>
+    
+    <rect x="870" y="450" width="260" height="65" fill="rgba(255,255,255,0.2)" rx="8"/>
+    <text x="1000" y="470" text-anchor="middle" font-family="Arial, sans-serif" class="component-title" fill="white">
+      한계
+    </text>
+    <text x="1000" y="490" text-anchor="middle" font-family="Arial, sans-serif" class="small-text" fill="rgba(255,255,255,0.8)">
+      맥락 이해 부족, 창의성 제한
+    </text>
+    <text x="1000" y="505" text-anchor="middle" font-family="Arial, sans-serif" class="small-text" fill="rgba(255,255,255,0.8)">
+      윤리적 판단 결여, 할루시네이션
+    </text>
+  </g>
+  
+  <!-- Fusion Process (Center) -->
+  <g id="fusionProcess">
+    <!-- Fusion Arrows -->
+    <g opacity="1.0">
+      <line x1="350" y1="325" x2="520" y2="325" stroke="#f59e0b" stroke-width="6" marker-end="url(#fusionArrow)"/>
+      <line x1="850" y1="325" x2="680" y2="325" stroke="#f59e0b" stroke-width="6" marker-end="url(#fusionArrow)"/>
+    </g>
+    
+    <!-- Central Fusion Point -->
+    <circle cx="600" cy="325" r="70" fill="url(#hybridIntelligence)" filter="url(#glow)"/>
+    <text x="600" y="315" text-anchor="middle" font-family="Arial, sans-serif" class="component-title" fill="white">
+      하이브리드
+    </text>
+    <text x="600" y="335" text-anchor="middle" font-family="Arial, sans-serif" class="component-title" fill="white">
+      지능
+    </text>
+    <text x="600" y="360" text-anchor="middle" font-family="Arial, sans-serif" class="small-text" fill="rgba(255,255,255,0.8)">
+      Hybrid Intelligence
+    </text>
+  </g>
+  
+  <!-- AI Thinking Process Framework -->
+  <rect x="50" y="580" width="1100" height="180" fill="url(#processFlow)" opacity="0.1" rx="15"/>
+  <text x="600" y="610" text-anchor="middle" font-family="Arial, sans-serif" class="section-title" fill="#1e293b">
+    AI 시대 사고 프로세스
+  </text>
+  
+  <!-- Process Steps -->
+  <g id="processSteps" transform="translate(50,0)">
+    <!-- Step 1: Problem Definition -->
+    <rect x="80" y="630" width="150" height="80" fill="rgba(139,92,246,0.8)" rx="10"/>
+    <text x="155" y="655" text-anchor="middle" font-family="Arial, sans-serif" class="component-title" fill="white">
+      1. 문제 정의
+    </text>
+    <text x="155" y="675" text-anchor="middle" font-family="Arial, sans-serif" class="small-text" fill="rgba(255,255,255,0.8)">
+      인간의 직관과
+    </text>
+    <text x="155" y="690" text-anchor="middle" font-family="Arial, sans-serif" class="small-text" fill="rgba(255,255,255,0.8)">
+      맥락적 이해
+    </text>
+    
+    <!-- Step 2: Prompt Engineering -->
+    <rect x="270" y="630" width="150" height="80" fill="rgba(245,158,11,0.8)" rx="10"/>
+    <text x="345" y="655" text-anchor="middle" font-family="Arial, sans-serif" class="component-title" fill="white">
+      2. 프롬프트 설계
+    </text>
+    <text x="345" y="675" text-anchor="middle" font-family="Arial, sans-serif" class="small-text" fill="rgba(255,255,255,0.8)">
+      효과적인 AI
+    </text>
+    <text x="345" y="690" text-anchor="middle" font-family="Arial, sans-serif" class="small-text" fill="rgba(255,255,255,0.8)">
+      활용 전략
+    </text>
+    
+    <!-- Step 3: AI Processing -->
+    <rect x="460" y="630" width="150" height="80" fill="rgba(16,185,129,0.8)" rx="10"/>
+    <text x="535" y="655" text-anchor="middle" font-family="Arial, sans-serif" class="component-title" fill="white">
+      3. AI 처리
+    </text>
+    <text x="535" y="675" text-anchor="middle" font-family="Arial, sans-serif" class="small-text" fill="rgba(255,255,255,0.8)">
+      대규모 연산과
+    </text>
+    <text x="535" y="690" text-anchor="middle" font-family="Arial, sans-serif" class="small-text" fill="rgba(255,255,255,0.8)">
+      패턴 분석
+    </text>
+    
+    <!-- Step 4: Critical Evaluation -->
+    <rect x="650" y="630" width="150" height="80" fill="rgba(59,130,246,0.8)" rx="10"/>
+    <text x="725" y="655" text-anchor="middle" font-family="Arial, sans-serif" class="component-title" fill="white">
+      4. 비판적 평가
+    </text>
+    <text x="725" y="675" text-anchor="middle" font-family="Arial, sans-serif" class="small-text" fill="rgba(255,255,255,0.8)">
+      인간의 검증과
+    </text>
+    <text x="725" y="690" text-anchor="middle" font-family="Arial, sans-serif" class="small-text" fill="rgba(255,255,255,0.8)">
+      윤리적 판단
+    </text>
+    
+    <!-- Step 5: Creative Integration -->
+    <rect x="840" y="630" width="150" height="80" fill="rgba(236,72,153,0.8)" rx="10"/>
+    <text x="915" y="655" text-anchor="middle" font-family="Arial, sans-serif" class="component-title" fill="white">
+      5. 창의적 통합
+    </text>
+    <text x="915" y="675" text-anchor="middle" font-family="Arial, sans-serif" class="small-text" fill="rgba(255,255,255,0.8)">
+      인사이트와
+    </text>
+    <text x="915" y="690" text-anchor="middle" font-family="Arial, sans-serif" class="small-text" fill="rgba(255,255,255,0.8)">
+      혁신적 솔루션
+    </text>
+    
+    <!-- Process Flow Arrows -->
+    <g stroke="#64748b" stroke-width="3" marker-end="url(#arrow)" opacity="0.7">
+      <line x1="230" y1="670" x2="270" y2="670"/>
+      <line x1="420" y1="670" x2="460" y2="670"/>
+      <line x1="610" y1="670" x2="650" y2="670"/>
+      <line x1="800" y1="670" x2="840" y2="670"/>
+    </g>
+  </g>
+  
+  <!-- Key Success Factors -->
+  <rect x="150" y="730" width="900" height="50" fill="rgba(245,158,11,0.1)" rx="12" stroke="#f59e0b" stroke-width="2"/>
+  <text x="600" y="750" text-anchor="middle" font-family="Arial, sans-serif" class="component-title" fill="#d97706">
+    성공 핵심 요소
+  </text>
+  <text x="600" y="770" text-anchor="middle" font-family="Arial, sans-serif" class="description-text" fill="#92400e">
+    인간의 고유 역량(직관, 창의, 윤리) + AI의 강력한 도구(연산, 분석, 생성) = 시너지 극대화
+  </text>
+</svg>

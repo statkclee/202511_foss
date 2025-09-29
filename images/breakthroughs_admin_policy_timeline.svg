@@ -1,0 +1,505 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2800 1400">
+  <defs>
+    <!-- Background gradient -->
+    <linearGradient id="backgroundGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#FAFAFA;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#F5F6FA;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#EEF1F8;stop-opacity:1" />
+    </linearGradient>
+
+    <!-- Main timeline gradient -->
+    <linearGradient id="timelineGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#8B4513;stop-opacity:1" />
+      <stop offset="12.5%" style="stop-color:#DC143C;stop-opacity:1" />
+      <stop offset="25%" style="stop-color:#FF6347;stop-opacity:1" />
+      <stop offset="37.5%" style="stop-color:#32CD32;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#4169E1;stop-opacity:1" />
+      <stop offset="62.5%" style="stop-color:#9370DB;stop-opacity:1" />
+      <stop offset="75%" style="stop-color:#FF8C00;stop-opacity:1" />
+      <stop offset="87.5%" style="stop-color:#00CED1;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#20B2AA;stop-opacity:1" />
+    </linearGradient>
+
+    <!-- Field-specific gradients -->
+    <linearGradient id="census" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#CD853F;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#8B4513;stop-opacity:1" />
+    </linearGradient>
+
+    <linearGradient id="urban" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#F08080;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#DC143C;stop-opacity:1" />
+    </linearGradient>
+
+    <linearGradient id="health" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#FF7F50;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FF6347;stop-opacity:1" />
+    </linearGradient>
+
+    <linearGradient id="economy" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#7FFF00;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#32CD32;stop-opacity:1" />
+    </linearGradient>
+
+    <linearGradient id="justice" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#6495ED;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#4169E1;stop-opacity:1" />
+    </linearGradient>
+
+    <linearGradient id="democracy" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#DA70D6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#9370DB;stop-opacity:1" />
+    </linearGradient>
+
+    <linearGradient id="welfare" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFB347;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FF8C00;stop-opacity:1" />
+    </linearGradient>
+
+    <linearGradient id="environment" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#48D1CC;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#00CED1;stop-opacity:1" />
+    </linearGradient>
+
+    <linearGradient id="digital" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#40E0D0;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#20B2AA;stop-opacity:1" />
+    </linearGradient>
+
+    <!-- Drop shadow filter -->
+    <filter id="cardShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="3" dy="6" stdDeviation="4" flood-color="#000000" flood-opacity="0.12"/>
+    </filter>
+
+    <!-- Text shadow -->
+    <filter id="textShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="1" dy="2" stdDeviation="1" flood-color="#000000" flood-opacity="0.3"/>
+    </filter>
+
+    <style>
+      .main-title {
+        font-family: Georgia, serif;
+        font-size: 38px;
+        font-weight: bold;
+        fill: #2C3E50;
+      }
+
+      .subtitle {
+        font-family: Arial, sans-serif;
+        font-size: 20px;
+        fill: #7F8C8D;
+      }
+
+      .field-title {
+        font-family: Arial, sans-serif;
+        font-size: 28px;
+        font-weight: bold;
+        fill: #ffffff;
+      }
+
+      .field-subtitle {
+        font-family: Arial, sans-serif;
+        font-size: 22px;
+        fill: #F8F9FA;
+      }
+
+      .case-title {
+        font-family: Arial, sans-serif;
+        font-size: 24px;
+        font-weight: bold;
+      }
+
+      .case-desc {
+        font-family: Arial, sans-serif;
+        font-size: 20px;
+        fill: #2C3E50;
+      }
+
+      .case-impact {
+        font-family: Arial, sans-serif;
+        font-size: 20px;
+        font-weight: bold;
+        fill: #27AE60;
+      }
+
+      .case-data {
+        font-family: Arial, sans-serif;
+        font-size: 19px;
+        fill: #E74C3C;
+        font-weight: bold;
+      }
+
+      .year-label {
+        font-family: Arial, sans-serif;
+        font-size: 20px;
+        font-weight: bold;
+        fill: #34495E;
+      }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="2800" height="1400" fill="url(#backgroundGradient)"/>
+
+  <!-- Title Section -->
+  <text x="1400" y="50" text-anchor="middle" class="main-title" filter="url(#textShadow)">
+    Data-Driven Governance Revolution: Administrative Breakthroughs That Shaped Modern Society
+  </text>
+  <text x="1400" y="80" text-anchor="middle" class="subtitle">
+    From Domesday Book to Digital Government: How Data Transformed Public Administration (1086-2020)
+  </text>
+
+  <!-- Main Timeline -->
+  <rect x="150" y="695" width="2500" height="10" fill="url(#timelineGradient)" rx="5" filter="url(#cardShadow)"/>
+
+  <!-- Timeline markers -->
+  <circle cx="250" cy="700" r="8" fill="url(#census)" filter="url(#cardShadow)"/>
+  <circle cx="450" cy="700" r="8" fill="url(#urban)" filter="url(#cardShadow)"/>
+  <circle cx="650" cy="700" r="8" fill="url(#health)" filter="url(#cardShadow)"/>
+  <circle cx="850" cy="700" r="8" fill="url(#economy)" filter="url(#cardShadow)"/>
+  <circle cx="1050" cy="700" r="8" fill="url(#justice)" filter="url(#cardShadow)"/>
+  <circle cx="1350" cy="700" r="8" fill="url(#democracy)" filter="url(#cardShadow)"/>
+  <circle cx="1650" cy="700" r="8" fill="url(#welfare)" filter="url(#cardShadow)"/>
+  <circle cx="2050" cy="700" r="8" fill="url(#environment)" filter="url(#cardShadow)"/>
+  <circle cx="2450" cy="700" r="8" fill="url(#digital)" filter="url(#cardShadow)"/>
+
+  <!-- Year labels -->
+  <text x="250" y="725" text-anchor="middle" class="year-label">1086</text>
+  <text x="450" y="725" text-anchor="middle" class="year-label">1863</text>
+  <text x="650" y="725" text-anchor="middle" class="year-label">1948</text>
+  <text x="850" y="725" text-anchor="middle" class="year-label">1933</text>
+  <text x="1050" y="725" text-anchor="middle" class="year-label">1924</text>
+  <text x="1350" y="725" text-anchor="middle" class="year-label">1935</text>
+  <text x="1650" y="725" text-anchor="middle" class="year-label">1997</text>
+  <text x="2050" y="725" text-anchor="middle" class="year-label">1970</text>
+  <text x="2450" y="725" text-anchor="middle" class="year-label">2009</text>
+
+  <!-- 1. Domesday Book (1086) - Census &amp; Statistics -->
+  <g transform="translate(250, 180)">
+    <rect x="-160" y="0" width="320" height="480" fill="white" stroke="url(#census)" stroke-width="3" rx="12" filter="url(#cardShadow)"/>
+
+    <!-- Header -->
+    <rect x="-160" y="0" width="320" height="60" fill="url(#census)" rx="12"/>
+    <text class="field-title" x="0" y="25" text-anchor="middle">📊 Census &amp; Statistics</text>
+    <text class="field-subtitle" x="0" y="45" text-anchor="middle">Data Collection Systems</text>
+
+    <!-- Content -->
+    <text class="case-title" x="0" y="90" text-anchor="middle" fill="#8B4513">Domesday Book</text>
+    <text class="case-desc" x="0" y="115" text-anchor="middle">(1086)</text>
+
+    <text class="case-desc" x="0" y="150" text-anchor="middle">📋 First national survey</text>
+    <text class="case-desc" x="0" y="175" text-anchor="middle">🏰 13,418 settlements recorded</text>
+
+    <text class="case-impact" x="0" y="205" text-anchor="middle">Impact: Taxation system</text>
+    <text class="case-impact" x="0" y="230" text-anchor="middle">Land ownership database</text>
+
+    <text class="case-data" x="0" y="260" text-anchor="middle">📈 268,984 households surveyed</text>
+    <text class="case-data" x="0" y="285" text-anchor="middle">👥 Est. 1.5-2M total population</text>
+
+    <text class="case-title" x="0" y="320" text-anchor="middle" fill="#8B4513">Hollerith Census Machine</text>
+    <text class="case-desc" x="0" y="345" text-anchor="middle">(1890)</text>
+
+    <text class="case-desc" x="0" y="380" text-anchor="middle">🔢 Punch card tabulation</text>
+    <text class="case-desc" x="0" y="405" text-anchor="middle">📊 62.9M population processed</text>
+
+    <text class="case-impact" x="0" y="435" text-anchor="middle">Impact: 2.5 years vs 8 years</text>
+    <text class="case-data" x="0" y="460" text-anchor="middle">⚡ 80% time reduction</text>
+
+    <!-- Connection line -->
+    <line x1="0" y1="480" x2="0" y2="510" stroke="#8B4513" stroke-width="3"/>
+  </g>
+
+  <!-- 2. London Underground (1863) - Urban Planning -->
+  <g transform="translate(450, 750)">
+    <rect x="-160" y="0" width="320" height="480" fill="white" stroke="url(#urban)" stroke-width="3" rx="12" filter="url(#cardShadow)"/>
+
+    <!-- Header -->
+    <rect x="-160" y="0" width="320" height="60" fill="url(#urban)" rx="12"/>
+    <text class="field-title" x="0" y="25" text-anchor="middle">🏙️ Urban Planning</text>
+    <text class="field-subtitle" x="0" y="45" text-anchor="middle">Infrastructure Data</text>
+
+    <!-- Content -->
+    <text class="case-title" x="0" y="90" text-anchor="middle" fill="#DC143C">London Underground</text>
+    <text class="case-desc" x="0" y="115" text-anchor="middle">(1863)</text>
+
+    <text class="case-desc" x="0" y="150" text-anchor="middle">🚇 First metro system</text>
+    <text class="case-desc" x="0" y="175" text-anchor="middle">📊 Passenger flow data</text>
+
+    <text class="case-impact" x="0" y="205" text-anchor="middle">Impact: Urban mobility revolution</text>
+    <text class="case-impact" x="0" y="230" text-anchor="middle">Traffic congestion solution</text>
+
+    <text class="case-data" x="0" y="260" text-anchor="middle">🚃 3.8 miles initial line</text>
+    <text class="case-data" x="0" y="285" text-anchor="middle">👥 9.5M passengers/year (1864)</text>
+
+    <text class="case-title" x="0" y="320" text-anchor="middle" fill="#DC143C">Singapore ERP System</text>
+    <text class="case-desc" x="0" y="345" text-anchor="middle">(1998)</text>
+
+    <text class="case-desc" x="0" y="380" text-anchor="middle">🛣️ Electronic road pricing</text>
+    <text class="case-desc" x="0" y="405" text-anchor="middle">📡 Real-time traffic data</text>
+
+    <text class="case-impact" x="0" y="435" text-anchor="middle">Impact: 25% traffic reduction</text>
+    <text class="case-data" x="0" y="460" text-anchor="middle">💰 $50M annual revenue</text>
+
+    <!-- Connection line -->
+    <line x1="0" y1="0" x2="0" y2="-40" stroke="#DC143C" stroke-width="3"/>
+  </g>
+
+  <!-- 3. NHS Creation (1948) - Public Health -->
+  <g transform="translate(650, 180)">
+    <rect x="-160" y="0" width="320" height="480" fill="white" stroke="url(#health)" stroke-width="3" rx="12" filter="url(#cardShadow)"/>
+
+    <!-- Header -->
+    <rect x="-160" y="0" width="320" height="60" fill="url(#health)" rx="12"/>
+    <text class="field-title" x="0" y="25" text-anchor="middle">🏥 Public Health</text>
+    <text class="field-subtitle" x="0" y="45" text-anchor="middle">Healthcare Systems</text>
+
+    <!-- Content -->
+    <text class="case-title" x="0" y="90" text-anchor="middle" fill="#FF6347">NHS Establishment</text>
+    <text class="case-desc" x="0" y="115" text-anchor="middle">(1948)</text>
+
+    <text class="case-desc" x="0" y="150" text-anchor="middle">🏥 Universal healthcare</text>
+    <text class="case-desc" x="0" y="175" text-anchor="middle">📊 Patient data centralization</text>
+
+    <text class="case-impact" x="0" y="205" text-anchor="middle">Impact: Free at point of use</text>
+    <text class="case-impact" x="0" y="230" text-anchor="middle">Health outcomes improvement</text>
+
+    <text class="case-data" x="0" y="260" text-anchor="middle">👥 65M population covered</text>
+    <text class="case-data" x="0" y="285" text-anchor="middle">💰 £373M budget (1948/49)</text>
+
+    <text class="case-title" x="0" y="320" text-anchor="middle" fill="#FF6347">Electronic Health Records</text>
+    <text class="case-desc" x="0" y="345" text-anchor="middle">(2009)</text>
+
+    <text class="case-desc" x="0" y="380" text-anchor="middle">💻 Digital patient records</text>
+    <text class="case-desc" x="0" y="405" text-anchor="middle">🔗 Interoperable systems</text>
+
+    <text class="case-impact" x="0" y="435" text-anchor="middle">Impact: Care coordination</text>
+    <text class="case-data" x="0" y="460" text-anchor="middle">📈 Mixed efficiency outcomes</text>
+
+    <!-- Connection line -->
+    <line x1="0" y1="480" x2="0" y2="510" stroke="#FF6347" stroke-width="3"/>
+  </g>
+
+  <!-- 4. New Deal Programs (1933) - Economic Policy -->
+  <g transform="translate(850, 750)">
+    <rect x="-160" y="0" width="320" height="480" fill="white" stroke="url(#economy)" stroke-width="3" rx="12" filter="url(#cardShadow)"/>
+
+    <!-- Header -->
+    <rect x="-160" y="0" width="320" height="60" fill="url(#economy)" rx="12"/>
+    <text class="field-title" x="0" y="25" text-anchor="middle">💰 Economic Policy</text>
+    <text class="field-subtitle" x="0" y="45" text-anchor="middle">Fiscal Data Systems</text>
+
+    <!-- Content -->
+    <text class="case-title" x="0" y="90" text-anchor="middle" fill="#32CD32">New Deal Programs</text>
+    <text class="case-desc" x="0" y="115" text-anchor="middle">(1933-1939)</text>
+
+    <text class="case-desc" x="0" y="150" text-anchor="middle">📊 Economic data collection</text>
+    <text class="case-desc" x="0" y="175" text-anchor="middle">👷 Employment tracking</text>
+
+    <text class="case-impact" x="0" y="205" text-anchor="middle">Impact: 25% unemployment → 14%</text>
+    <text class="case-impact" x="0" y="230" text-anchor="middle">Social safety net creation</text>
+
+    <text class="case-data" x="0" y="260" text-anchor="middle">💵 $41.7B total spending</text>
+    <text class="case-data" x="0" y="285" text-anchor="middle">👥 8.5M jobs created</text>
+
+    <text class="case-title" x="0" y="320" text-anchor="middle" fill="#32CD32">Open Government Data</text>
+    <text class="case-desc" x="0" y="345" text-anchor="middle">(2009)</text>
+
+    <text class="case-desc" x="0" y="380" text-anchor="middle">🌐 Data.gov launch</text>
+    <text class="case-desc" x="0" y="405" text-anchor="middle">📂 Public dataset access</text>
+
+    <text class="case-impact" x="0" y="435" text-anchor="middle">Impact: Transparency boost</text>
+    <text class="case-data" x="0" y="460" text-anchor="middle">📊 200,000+ datasets</text>
+
+    <!-- Connection line -->
+    <line x1="0" y1="0" x2="0" y2="-40" stroke="#32CD32" stroke-width="3"/>
+  </g>
+
+  <!-- 5. FBI Fingerprint Database (1924) - Law Enforcement -->
+  <g transform="translate(1050, 180)">
+    <rect x="-160" y="0" width="320" height="480" fill="white" stroke="url(#justice)" stroke-width="3" rx="12" filter="url(#cardShadow)"/>
+
+    <!-- Header -->
+    <rect x="-160" y="0" width="320" height="60" fill="url(#justice)" rx="12"/>
+    <text class="field-title" x="0" y="25" text-anchor="middle">⚖️ Law &amp; Justice</text>
+    <text class="field-subtitle" x="0" y="45" text-anchor="middle">Crime Data Systems</text>
+
+    <!-- Content -->
+    <text class="case-title" x="0" y="90" text-anchor="middle" fill="#4169E1">FBI Fingerprint Database</text>
+    <text class="case-desc" x="0" y="115" text-anchor="middle">(1924)</text>
+
+    <text class="case-desc" x="0" y="150" text-anchor="middle">👆 National identification</text>
+    <text class="case-desc" x="0" y="175" text-anchor="middle">📂 Criminal record tracking</text>
+
+    <text class="case-impact" x="0" y="205" text-anchor="middle">Impact: Scientific policing</text>
+    <text class="case-impact" x="0" y="230" text-anchor="middle">Identity verification system</text>
+
+    <text class="case-data" x="0" y="260" text-anchor="middle">🔢 810,188 initial records</text>
+    <text class="case-data" x="0" y="285" text-anchor="middle">📈 100M+ prints today</text>
+
+    <text class="case-title" x="0" y="320" text-anchor="middle" fill="#4169E1">CompStat Crime Analysis</text>
+    <text class="case-desc" x="0" y="345" text-anchor="middle">(1994)</text>
+
+    <text class="case-desc" x="0" y="380" text-anchor="middle">📊 Real-time crime mapping</text>
+    <text class="case-desc" x="0" y="405" text-anchor="middle">🎯 Data-driven policing</text>
+
+    <text class="case-impact" x="0" y="435" text-anchor="middle">Impact: 50% crime reduction</text>
+    <text class="case-data" x="0" y="460" text-anchor="middle">📉 Murder: 2,245 → 629</text>
+
+    <!-- Connection line -->
+    <line x1="0" y1="480" x2="0" y2="510" stroke="#4169E1" stroke-width="3"/>
+  </g>
+
+  <!-- 6. Gallup Polling (1935) - Democracy &amp; Elections -->
+  <g transform="translate(1350, 750)">
+    <rect x="-160" y="0" width="320" height="480" fill="white" stroke="url(#democracy)" stroke-width="3" rx="12" filter="url(#cardShadow)"/>
+
+    <!-- Header -->
+    <rect x="-160" y="0" width="320" height="60" fill="url(#democracy)" rx="12"/>
+    <text class="field-title" x="0" y="25" text-anchor="middle">🗳️ Democracy</text>
+    <text class="field-subtitle" x="0" y="45" text-anchor="middle">Electoral Systems</text>
+
+    <!-- Content -->
+    <text class="case-title" x="0" y="90" text-anchor="middle" fill="#9370DB">Gallup Polling</text>
+    <text class="case-desc" x="0" y="115" text-anchor="middle">(1935)</text>
+
+    <text class="case-desc" x="0" y="150" text-anchor="middle">📊 Scientific polling</text>
+    <text class="case-desc" x="0" y="175" text-anchor="middle">🗳️ Election prediction</text>
+
+    <text class="case-impact" x="0" y="200" text-anchor="middle">Impact: Public opinion tracking</text>
+    <text class="case-impact" x="0" y="225" text-anchor="middle">Democratic feedback loop</text>
+
+    <text class="case-data" x="0" y="255" text-anchor="middle">🎯 1936 FDR prediction accurate</text>
+    <text class="case-data" x="0" y="280" text-anchor="middle">📈 ±3% margin of error</text>
+
+    <text class="case-title" x="0" y="320" text-anchor="middle" fill="#9370DB">Obama Digital Campaign</text>
+    <text class="case-desc" x="0" y="345" text-anchor="middle">(2008/2012)</text>
+
+    <text class="case-desc" x="0" y="375" text-anchor="middle">📱 Social media analytics</text>
+    <text class="case-desc" x="0" y="400" text-anchor="middle">🎯 Micro-targeting voters</text>
+
+    <text class="case-impact" x="0" y="430" text-anchor="middle">Impact: Digital campaigning</text>
+    <text class="case-data" x="0" y="455" text-anchor="middle">💰 $1B raised online</text>
+
+    <!-- Connection line -->
+    <line x1="0" y1="0" x2="0" y2="-40" stroke="#9370DB" stroke-width="3"/>
+  </g>
+
+  <!-- 7. Conditional Cash Transfer (1997) - Welfare -->
+  <g transform="translate(1650, 180)">
+    <rect x="-160" y="0" width="320" height="480" fill="white" stroke="url(#welfare)" stroke-width="3" rx="12" filter="url(#cardShadow)"/>
+
+    <!-- Header -->
+    <rect x="-160" y="0" width="320" height="60" fill="url(#welfare)" rx="12"/>
+    <text class="field-title" x="0" y="25" text-anchor="middle">🤝 Social Welfare</text>
+    <text class="field-subtitle" x="0" y="45" text-anchor="middle">Support Systems</text>
+
+    <!-- Content -->
+    <text class="case-title" x="0" y="90" text-anchor="middle" fill="#FF8C00">Bolsa Família Program</text>
+    <text class="case-desc" x="0" y="115" text-anchor="middle">(1997/2003)</text>
+
+    <text class="case-desc" x="0" y="145" text-anchor="middle">💳 Conditional cash transfers</text>
+    <text class="case-desc" x="0" y="170" text-anchor="middle">📊 Poverty data targeting</text>
+
+    <text class="case-impact" x="0" y="200" text-anchor="middle">Impact: 13.8M families aided</text>
+    <text class="case-impact" x="0" y="225" text-anchor="middle">Poverty reduction 3.6%</text>
+
+    <text class="case-data" x="0" y="255" text-anchor="middle">💰 $7.6B annual budget</text>
+    <text class="case-data" x="0" y="280" text-anchor="middle">🎓 School attendance +6%</text>
+
+    <text class="case-title" x="0" y="320" text-anchor="middle" fill="#FF8C00">Finland Basic Income</text>
+    <text class="case-desc" x="0" y="345" text-anchor="middle">(2017-2018)</text>
+
+    <text class="case-desc" x="0" y="375" text-anchor="middle">💶 €560/month unconditional</text>
+    <text class="case-desc" x="0" y="400" text-anchor="middle">📊 Randomized trial design</text>
+
+    <text class="case-impact" x="0" y="430" text-anchor="middle">Impact: Mental health boost</text>
+    <text class="case-data" x="0" y="455" text-anchor="middle">👥 2,000 recipients</text>
+
+    <!-- Connection line -->
+    <line x1="0" y1="480" x2="0" y2="510" stroke="#FF8C00" stroke-width="3"/>
+  </g>
+
+  <!-- 8. EPA Environmental Data (1970) - Environment -->
+  <g transform="translate(2050, 750)">
+    <rect x="-160" y="0" width="320" height="480" fill="white" stroke="url(#environment)" stroke-width="3" rx="12" filter="url(#cardShadow)"/>
+
+    <!-- Header -->
+    <rect x="-160" y="0" width="320" height="60" fill="url(#environment)" rx="12"/>
+    <text class="field-title" x="0" y="25" text-anchor="middle">🌍 Environment</text>
+    <text class="field-subtitle" x="0" y="45" text-anchor="middle">Climate Policy</text>
+
+    <!-- Content -->
+    <text class="case-title" x="0" y="90" text-anchor="middle" fill="#00CED1">EPA Establishment</text>
+    <text class="case-desc" x="0" y="115" text-anchor="middle">(1970)</text>
+
+    <text class="case-desc" x="0" y="145" text-anchor="middle">📊 Environmental monitoring</text>
+    <text class="case-desc" x="0" y="170" text-anchor="middle">🏭 Pollution data tracking</text>
+
+    <text class="case-impact" x="0" y="200" text-anchor="middle">Impact: Clean Air &amp; Water Acts</text>
+    <text class="case-impact" x="0" y="225" text-anchor="middle">Environmental protection</text>
+
+    <text class="case-data" x="0" y="255" text-anchor="middle">📉 Lead emissions -98%</text>
+    <text class="case-data" x="0" y="280" text-anchor="middle">💨 SO₂ emissions -90%</text>
+
+    <text class="case-title" x="0" y="320" text-anchor="middle" fill="#00CED1">Carbon Credit System</text>
+    <text class="case-desc" x="0" y="345" text-anchor="middle">(2005)</text>
+
+    <text class="case-desc" x="0" y="375" text-anchor="middle">📊 Emissions trading data</text>
+    <text class="case-desc" x="0" y="400" text-anchor="middle">🌍 EU ETS implementation</text>
+
+    <text class="case-impact" x="0" y="430" text-anchor="middle">Impact: Market-based solution</text>
+    <text class="case-data" x="0" y="455" text-anchor="middle">💰 €57B trading volume</text>
+
+    <!-- Connection line -->
+    <line x1="0" y1="0" x2="0" y2="-40" stroke="#00CED1" stroke-width="3"/>
+  </g>
+
+  <!-- 9. E-Government Systems (2009) - Digital Government -->
+  <g transform="translate(2450, 180)">
+    <rect x="-160" y="0" width="320" height="480" fill="white" stroke="url(#digital)" stroke-width="3" rx="12" filter="url(#cardShadow)"/>
+
+    <!-- Header -->
+    <rect x="-160" y="0" width="320" height="60" fill="url(#digital)" rx="12"/>
+    <text class="field-title" x="0" y="25" text-anchor="middle">💻 Digital Gov</text>
+    <text class="field-subtitle" x="0" y="45" text-anchor="middle">E-Government</text>
+
+    <!-- Content -->
+    <text class="case-title" x="0" y="90" text-anchor="middle" fill="#20B2AA">Digital Service Platforms</text>
+    <text class="case-desc" x="0" y="115" text-anchor="middle">(2009-2020)</text>
+
+    <text class="case-desc" x="0" y="145" text-anchor="middle">🌐 Online public services</text>
+    <text class="case-desc" x="0" y="170" text-anchor="middle">📱 Mobile-first approach</text>
+
+    <text class="case-impact" x="0" y="200" text-anchor="middle">Impact: Service efficiency</text>
+    <text class="case-impact" x="0" y="225" text-anchor="middle">Improved citizen satisfaction</text>
+
+    <text class="case-data" x="0" y="255" text-anchor="middle">⏱️ Faster processing times</text>
+    <text class="case-data" x="0" y="280" text-anchor="middle">💰 Significant cost efficiencies</text>
+
+    <text class="case-title" x="0" y="320" text-anchor="middle" fill="#20B2AA">COVID-19 Contact Tracing</text>
+    <text class="case-desc" x="0" y="345" text-anchor="middle">(2020)</text>
+
+    <text class="case-desc" x="0" y="375" text-anchor="middle">📱 Digital contact tracing</text>
+    <text class="case-desc" x="0" y="400" text-anchor="middle">🔒 Privacy-preserving data</text>
+
+    <text class="case-impact" x="0" y="430" text-anchor="middle">Impact: Pandemic response</text>
+    <text class="case-data" x="0" y="455" text-anchor="middle">📲 500M+ app downloads</text>
+
+    <!-- Connection line -->
+    <line x1="0" y1="480" x2="0" y2="510" stroke="#20B2AA" stroke-width="3"/>
+  </g>
+
+  <!-- Bottom summary -->
+  <rect x="150" y="1300" width="2500" height="80" fill="white" stroke="#2C3E50" stroke-width="3" rx="12" filter="url(#cardShadow)"/>
+  <text x="1400" y="1330" text-anchor="middle" class="case-title" fill="#2C3E50">
+    Administrative Data Revolution: 934 Years of Governance Innovation Through Information Systems
+  </text>
+  <text x="1400" y="1355" text-anchor="middle" class="case-desc">
+    From medieval surveys to digital platforms — how data transformed government efficiency, transparency &amp; citizen services
+  </text>
+  <text x="1400" y="1375" text-anchor="middle" class="case-impact">
+    "Good Government Requires Good Data" — Evidence-based policy making and data-driven public administration
+  </text>
+
+</svg>

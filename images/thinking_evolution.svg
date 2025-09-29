@@ -1,0 +1,261 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 20 1200 600">
+  <defs>
+    <style>
+      .title-text { font-size: 32px; font-weight: bold; }
+      .era-title { font-size: 20px; font-weight: bold; }
+      .era-subtitle { font-size: 18px; }
+      .feature-text { font-size: 16px; }
+      .timeline-text { font-size: 16px; font-weight: bold;}
+    </style>
+    
+    <!-- Era Gradients -->
+    <linearGradient id="logicalEra" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#8b5cf6;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#6d28d9;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="statisticalEra" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3b82f6;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#1d4ed8;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="computationalEra" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#10b981;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#047857;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="aiEra" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f59e0b;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#d97706;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Arrow marker -->
+    <marker id="arrow" markerWidth="12" markerHeight="6" refX="6" refY="2" orient="auto">
+      <polygon points="0 0, 12 4, 0 6" fill="#64748b"/>
+    </marker>
+    
+    <!-- Glow effect -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1200" height="800" fill="#ffffff"/>
+  
+  <!-- Timeline Arrow -->
+  <line x1="100" y1="400" x2="1100" y2="400" stroke="#64748b" stroke-width="4" marker-end="url(#arrow)" opacity="0.6"/>
+  <text x="1050" y="390" font-family="Arial, sans-serif" class="timeline-text" fill="#64748b">Time</text>
+  
+  <!-- Era 1: Logical Thinking -->
+  <g id="logicalThinking">
+    <rect x="80" y="120" width="200" height="240" fill="url(#logicalEra)" rx="15" filter="url(#glow)"/>
+    <text x="180" y="155" text-anchor="middle" font-family="Arial, sans-serif" class="era-title" fill="white">
+      Logical Thinking
+    </text>
+    <text x="180" y="175" text-anchor="middle" font-family="Arial, sans-serif" class="era-subtitle" fill="rgba(255,255,255,0.8)">
+      Logical Thinking
+    </text>
+    
+    <!-- Era timeline -->
+    <text x="180" y="200" text-anchor="middle" font-family="Arial, sans-serif" class="feature-text" fill="white" font-weight="bold">
+      Ancient ~ 19th Century
+    </text>
+    
+    <!-- Features -->
+    <text x="180" y="225" text-anchor="middle" font-family="Arial, sans-serif" class="feature-text" fill="rgba(255,255,255,0.9)">
+      • Deductive/Inductive Reasoning
+    </text>
+    <text x="180" y="245" text-anchor="middle" font-family="Arial, sans-serif" class="feature-text" fill="rgba(255,255,255,0.9)">
+      • Formal Logic
+    </text>
+    <text x="180" y="265" text-anchor="middle" font-family="Arial, sans-serif" class="feature-text" fill="rgba(255,255,255,0.9)">
+      • Philosophical Speculation
+    </text>
+    <text x="180" y="285" text-anchor="middle" font-family="Arial, sans-serif" class="feature-text" fill="rgba(255,255,255,0.9)">
+      • Mathematical Proof
+    </text>
+    
+    <!-- Tools -->
+    <rect x="90" y="300" width="180" height="45" fill="rgba(255,255,255,0.2)" rx="8"/>
+    <text x="180" y="315" text-anchor="middle" font-family="Arial, sans-serif" class="feature-text" fill="white" font-weight="bold">
+      Tools
+    </text>
+    <text x="180" y="335" text-anchor="middle" font-family="Arial, sans-serif" class="timeline-text" fill="rgba(255,255,255,0.8)">
+      Paper, Pen, Abacus
+    </text>
+    
+    <!-- Timeline position -->
+    <circle cx="180" cy="400" r="8" fill="#8b5cf6"/>
+  </g>
+  
+  <!-- Era 2: Statistical Thinking -->
+  <g id="statisticalThinking">
+    <rect x="320" y="120" width="200" height="240" fill="url(#statisticalEra)" rx="15" filter="url(#glow)"/>
+    <text x="420" y="155" text-anchor="middle" font-family="Arial, sans-serif" class="era-title" fill="white">
+      Statistical Thinking
+    </text>
+    <text x="420" y="175" text-anchor="middle" font-family="Arial, sans-serif" class="era-subtitle" fill="rgba(255,255,255,0.8)">
+      Statistical Thinking
+    </text>
+    
+    <text x="420" y="200" text-anchor="middle" font-family="Arial, sans-serif" class="feature-text" fill="white" font-weight="bold">
+      19th ~ 20th Century
+    </text>
+    
+    <text x="420" y="225" text-anchor="middle" font-family="Arial, sans-serif" class="feature-text" fill="rgba(255,255,255,0.9)">
+      • Probability and Uncertainty
+    </text>
+    <text x="420" y="245" text-anchor="middle" font-family="Arial, sans-serif" class="feature-text" fill="rgba(255,255,255,0.9)">
+      • Hypothesis Testing
+    </text>
+    <text x="420" y="265" text-anchor="middle" font-family="Arial, sans-serif" class="feature-text" fill="rgba(255,255,255,0.9)">
+      • Data Analysis
+    </text>
+    <text x="420" y="285" text-anchor="middle" font-family="Arial, sans-serif" class="feature-text" fill="rgba(255,255,255,0.9)">
+      • Experimental Design
+    </text>
+    
+    <rect x="330" y="300" width="180" height="45" fill="rgba(255,255,255,0.2)" rx="8"/>
+    <text x="420" y="315" text-anchor="middle" font-family="Arial, sans-serif" class="feature-text" fill="white" font-weight="bold">
+      Tools
+    </text>
+    <text x="420" y="335" text-anchor="middle" font-family="Arial, sans-serif" class="timeline-text" fill="rgba(255,255,255,0.8)">
+      Calculator, SPSS, R
+    </text>
+    
+    <circle cx="420" cy="400" r="8" fill="#3b82f6"/>
+  </g>
+  
+  <!-- Era 3: Computational Thinking -->
+  <g id="computationalThinking">
+    <rect x="560" y="120" width="200" height="240" fill="url(#computationalEra)" rx="15" filter="url(#glow)"/>
+    <text x="660" y="155" text-anchor="middle" font-family="Arial, sans-serif" class="era-title" fill="white">
+      Computational Thinking
+    </text>
+    <text x="660" y="175" text-anchor="middle" font-family="Arial, sans-serif" class="era-subtitle" fill="rgba(255,255,255,0.8)">
+      Computational Thinking
+    </text>
+    
+    <text x="660" y="200" text-anchor="middle" font-family="Arial, sans-serif" class="feature-text" fill="white" font-weight="bold">
+      Late 20th Century ~ 2010s
+    </text>
+    
+    <text x="660" y="225" text-anchor="middle" font-family="Arial, sans-serif" class="feature-text" fill="rgba(255,255,255,0.9)">
+      • Problem Decomposition
+    </text>
+    <text x="660" y="245" text-anchor="middle" font-family="Arial, sans-serif" class="feature-text" fill="rgba(255,255,255,0.9)">
+      • Pattern Recognition
+    </text>
+    <text x="660" y="265" text-anchor="middle" font-family="Arial, sans-serif" class="feature-text" fill="rgba(255,255,255,0.9)">
+      • Abstraction
+    </text>
+    <text x="660" y="285" text-anchor="middle" font-family="Arial, sans-serif" class="feature-text" fill="rgba(255,255,255,0.9)">
+      • Algorithm Design
+    </text>
+    
+    <rect x="570" y="300" width="180" height="45" fill="rgba(255,255,255,0.2)" rx="8"/>
+    <text x="660" y="315" text-anchor="middle" font-family="Arial, sans-serif" class="feature-text" fill="white" font-weight="bold">
+      Tools
+    </text>
+    <text x="660" y="335" text-anchor="middle" font-family="Arial, sans-serif" class="timeline-text" fill="rgba(255,255,255,0.8)">
+      Computer, Programming
+    </text>
+    
+    <circle cx="660" cy="400" r="8" fill="#10b981"/>
+  </g>
+  
+  <!-- Era 4: AI Thinking -->
+  <g id="aiThinking">
+    <rect x="800" y="120" width="200" height="240" fill="url(#aiEra)" rx="15" filter="url(#glow)"/>
+    <text x="900" y="155" text-anchor="middle" font-family="Arial, sans-serif" class="era-title" fill="white">
+      AI Thinking
+    </text>
+    <text x="900" y="175" text-anchor="middle" font-family="Arial, sans-serif" class="era-subtitle" fill="rgba(255,255,255,0.8)">
+      AI Thinking
+    </text>
+    
+    <text x="900" y="200" text-anchor="middle" font-family="Arial, sans-serif" class="feature-text" fill="white" font-weight="bold">
+      2020s ~
+    </text>
+    
+    <text x="900" y="225" text-anchor="middle" font-family="Arial, sans-serif" class="feature-text" fill="rgba(255,255,255,0.9)">
+      • Prompt Engineering
+    </text>
+    <text x="900" y="245" text-anchor="middle" font-family="Arial, sans-serif" class="feature-text" fill="rgba(255,255,255,0.9)">
+      • Hybrid Reasoning
+    </text>
+    <text x="900" y="265" text-anchor="middle" font-family="Arial, sans-serif" class="feature-text" fill="rgba(255,255,255,0.9)">
+      • Emergent Discovery
+    </text>
+    <text x="900" y="285" text-anchor="middle" font-family="Arial, sans-serif" class="feature-text" fill="rgba(255,255,255,0.9)">
+      • Critical Validation
+    </text>
+    
+    <rect x="810" y="300" width="180" height="45" fill="rgba(255,255,255,0.2)" rx="8"/>
+    <text x="900" y="315" text-anchor="middle" font-family="Arial, sans-serif" class="feature-text" fill="white" font-weight="bold">
+      Tools
+    </text>
+    <text x="900" y="335" text-anchor="middle" font-family="Arial, sans-serif" class="timeline-text" fill="rgba(255,255,255,0.8)">
+      LLM, ChatGPT, Claude
+    </text>
+    
+    <circle cx="900" cy="400" r="8" fill="#f59e0b"/>
+  </g>
+  
+  <!-- Evolution Arrows -->
+  <g opacity="1.0">
+    <path d="M 280 280 Q 300 260 320 280" stroke="#64748b" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+    <path d="M 520 280 Q 540 260 560 280" stroke="#64748b" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+    <path d="M 760 280 Q 780 260 800 280" stroke="#64748b" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+  </g>
+  
+  <!-- Cumulative Growth Indicator -->
+  <g id="cumulativeGrowth">
+    <!-- Background bars showing cumulative complexity -->
+    <rect x="80" y="450" width="200" height="20" fill="#8b5cf6" opacity="0.3" rx="3"/>
+    <rect x="320" y="450" width="200" height="30" fill="#3b82f6" opacity="0.3" rx="3"/>
+    <rect x="560" y="450" width="200" height="40" fill="#10b981" opacity="0.3" rx="3"/>
+    <rect x="800" y="450" width="200" height="50" fill="#f59e0b" opacity="0.3" rx="3"/>
+    
+    <text x="180" y="465" text-anchor="middle" font-family="Arial, sans-serif" class="timeline-text" fill="#8b5cf6" font-weight="bold">
+      Foundation
+    </text>
+    <text x="420" y="470" text-anchor="middle" font-family="Arial, sans-serif" class="timeline-text" fill="#3b82f6" font-weight="bold">
+      +Uncertainty
+    </text>
+    <text x="660" y="475" text-anchor="middle" font-family="Arial, sans-serif" class="timeline-text" fill="#10b981" font-weight="bold">
+      +Algorithms
+    </text>
+    <text x="900" y="480" text-anchor="middle" font-family="Arial, sans-serif" class="timeline-text" fill="#f59e0b" font-weight="bold">
+      +Intelligence Augmentation
+    </text>
+  </g>
+  
+  <!-- Key Insight -->
+  <rect x="200" y="520" width="800" height="80" fill="rgba(255,255,255,0.9)" rx="15" stroke="#64748b" stroke-width="2"/>
+  <text x="600" y="545" text-anchor="middle" font-family="Arial, sans-serif" class="era-title" fill="#1e293b">
+    Key Insight
+  </text>
+  <text x="600" y="570" text-anchor="middle" font-family="Arial, sans-serif" class="feature-text" fill="#374151">
+    Each era's thinking approach does not replace previous methods but <strong>develops cumulatively</strong>
+  </text>
+  <text x="600" y="590" text-anchor="middle" font-family="Arial, sans-serif" class="feature-text" fill="#374151">
+    In the AI era, the ability to <strong>integrate all thinking capabilities</strong> is key
+  </text>
+  
+  <!-- Modern Integration -->
+  <g transform="translate(0,-590)">
+    <rect x="100" y="630" width="1000" height="60" fill="linear-gradient(90deg, #8b5cf6 0%,rgb(133, 177, 248) 25%,rgb(68, 118, 102) 50%, #f59e0b 75%, #f59e0b 100%)" opacity="0.2" rx="10"/>
+    <text x="600" y="655" text-anchor="middle" font-family="Arial, sans-serif" class="era-subtitle" fill="#1e293b" font-weight="bold">
+      Present: Integrated Thinking
+    </text>
+    <text x="600" y="675" text-anchor="middle" font-family="Arial, sans-serif" class="feature-text" fill="#374151">
+      Logic + Statistics + Computing + AI = 21st Century Core Competency
+    </text>
+  </g>
+</svg>

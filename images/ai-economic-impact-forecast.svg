@@ -1,0 +1,155 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700" width="1200" height="700">
+  <defs>
+    <style><![CDATA[
+      .title { font-family: Inter, Segoe UI, Arial, sans-serif; font-size: 36px; font-weight: 900; fill: #f8fafc; }
+      .subtitle { font-family: Inter, Segoe UI, Arial, sans-serif; font-size: 20px; font-weight: 600; fill: #cbd5e1; }
+      .h1 { font-family: Inter, Segoe UI, Arial, sans-serif; font-size: 24px; font-weight: 800; fill: #ffffff; }
+      .h2 { font-family: Inter, Segoe UI, Arial, sans-serif; font-size: 20px; font-weight: 800; fill: #f1f5f9; }
+      .p { font-family: Inter, Segoe UI, Arial, sans-serif; font-size: 16px; font-weight: 600; fill: #e5e7eb; }
+      .small { font-family: Inter, Segoe UI, Arial, sans-serif; font-size: 14px; font-weight: 700; fill: #cbd5e1; }
+      .axis { font-family: Inter, Segoe UI, Arial, sans-serif; font-size: 14px; font-weight: 600; fill: #9ca3af; }
+      .metric { font-family: Inter, Segoe UI, Arial, sans-serif; font-size: 22px; font-weight: 900; fill: #34d399; }
+    ]]></style>
+
+    <!-- Background -->
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+
+    <!-- GDP growth gradient -->
+    <linearGradient id="gradGDP" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#3b82f6"/>
+      <stop offset="100%" stop-color="#10b981"/>
+    </linearGradient>
+
+    <!-- Effects -->
+    <filter id="shadow"><feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000" flood-opacity="0.3"/></filter>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge> 
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Arrow markers -->
+    <marker id="arrowUp" markerWidth="12" markerHeight="10" refX="6" refY="0" orient="auto">
+      <polygon points="0 10, 12 10, 6 0" fill="#9ca3af"/>
+    </marker>
+    <marker id="arrowRight" markerWidth="12" markerHeight="10" refX="12" refY="5" orient="auto">
+      <polygon points="0 0, 12 5, 0 10" fill="#9ca3af"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="700" fill="url(#bg)"/>
+
+  <!-- Header -->
+  <text x="600" y="50" text-anchor="middle" class="title">AI의 경제적 영향 전망</text>
+  <text x="600" y="80" text-anchor="middle" class="subtitle">Economic Impact Forecast of AI (Goldman Sachs)</text>
+
+  <!-- Main chart area -->
+  <g transform="translate(150,120)">
+    <!-- Chart background -->
+    <rect x="0" y="0" width="800" height="400" fill="#1f2937" opacity="0.3" rx="10"/>
+    
+    <!-- Grid lines -->
+    <g stroke="#374151" stroke-width="1" opacity="0.3">
+      <line x1="0" y1="80" x2="800" y2="80"/>
+      <line x1="0" y1="160" x2="800" y2="160"/>
+      <line x1="0" y1="240" x2="800" y2="240"/>
+      <line x1="0" y1="320" x2="800" y2="320"/>
+      <line x1="100" y1="0" x2="100" y2="400"/>
+      <line x1="200" y1="0" x2="200" y2="400"/>
+      <line x1="300" y1="0" x2="300" y2="400"/>
+      <line x1="400" y1="0" x2="400" y2="400"/>
+      <line x1="500" y1="0" x2="500" y2="400"/>
+      <line x1="600" y1="0" x2="600" y2="400"/>
+      <line x1="700" y1="0" x2="700" y2="400"/>
+    </g>
+    
+    <!-- Axes -->
+    <line x1="0" y1="400" x2="800" y2="400" stroke="#9ca3af" stroke-width="2" marker-end="url(#arrowRight)"/>
+    <line x1="0" y1="400" x2="0" y2="0" stroke="#9ca3af" stroke-width="2" marker-end="url(#arrowUp)"/>
+    
+    <!-- Y-axis labels (GDP Growth %) -->
+    <text x="-20" y="405" text-anchor="end" class="axis">0%</text>
+    <text x="-20" y="325" text-anchor="end" class="axis">2%</text>
+    <text x="-20" y="245" text-anchor="end" class="axis">4%</text>
+    <text x="-20" y="165" text-anchor="end" class="axis">6%</text>
+    <text x="-20" y="85" text-anchor="end" class="axis">8%</text>
+    
+    <!-- X-axis labels (Years) -->
+    <text x="0" y="425" text-anchor="middle" class="axis">2023</text>
+    <text x="200" y="425" text-anchor="middle" class="axis">2027</text>
+    <text x="400" y="425" text-anchor="middle" class="axis">2030</text>
+    <text x="600" y="425" text-anchor="middle" class="axis">2033</text>
+    <text x="800" y="425" text-anchor="middle" class="axis">2035</text>
+    
+    <!-- Axis titles -->
+    <text x="820" y="405" class="axis">연도 (Year)</text>
+    <text x="-80" y="200" text-anchor="middle" class="axis" transform="rotate(-90, -80, 200)">GDP 증가율 (%)</text>
+    
+    <!-- Baseline (no AI) -->
+    <line x1="0" y1="400" x2="800" y2="400" stroke="#64748b" stroke-width="3" stroke-dasharray="5,5"/>
+    <text x="820" y="405" class="small" fill="#64748b">Baseline (AI 없음)</text>
+    
+    <!-- AI impact curve -->
+    <path d="M 0 400 Q 100 380, 200 320 Q 400 200, 600 120 Q 700 80, 800 72" 
+          stroke="url(#gradGDP)" stroke-width="6" fill="none" filter="url(#glow)"/>
+    
+    <!-- Key points -->
+    <circle cx="200" cy="320" r="6" fill="#3b82f6" filter="url(#shadow)"/>
+    <circle cx="400" cy="200" r="6" fill="#10b981" filter="url(#shadow)"/>
+    <circle cx="600" cy="120" r="6" fill="#34d399" filter="url(#shadow)"/>
+    <circle cx="800" cy="72" r="6" fill="#10b981" filter="url(#shadow)"/>
+    
+    <!-- Peak annotation -->
+    <g transform="translate(600,120)">
+      <circle cx="0" cy="0" r="20" fill="#34d399" opacity="0.3"/>
+      <text x="0" y="-35" text-anchor="middle" class="metric">7%</text>
+      <text x="0" y="-15" text-anchor="middle" class="small">Peak Impact</text>
+    </g>
+  </g>
+
+  <!-- Key metrics -->
+  <g transform="translate(100,560)">
+    <rect x="0" y="0" width="1000" height="100" rx="15" fill="#1f2937" opacity="0.8"/>
+    <text x="500" y="25" text-anchor="middle" class="h1">핵심 경제 지표</text>
+    
+    <g transform="translate(50,45)" class="p">
+      <text x="0" y="0">💰 <text class="metric" fill="#34d399">전 세계 GDP 7% 증가</text> (향후 10년간)</text>
+      <text x="500" y="0">⚡ <text class="metric" fill="#3b82f6">생산성 15-25% 향상</text> (지식노동)</text>
+      <text x="0" y="30">📈 <text class="metric" fill="#10b981">신규 일자리 창출</text> (AI 관련 분야)</text>
+      <text x="500" y="30">🌍 <text class="metric" fill="#8b5cf6">$7조 경제 가치</text> (글로벌 추정)</text>
+    </g>
+  </g>
+
+  <!-- Comparison with past technologies -->
+  <g transform="translate(1000,150)">
+    <rect x="0" y="0" width="180" height="300" rx="15" fill="#374151" opacity="0.8"/>
+    <text x="90" y="25" text-anchor="middle" class="h2">역사적 비교</text>
+    <text x="90" y="50" text-anchor="middle" class="small">Historical Comparison</text>
+    
+    <g transform="translate(20,80)" class="p">
+      <text x="0" y="0" class="h2" fill="#fbbf24">인터넷</text>
+      <text x="0" y="20" class="small">(1990년대)</text>
+      <text x="0" y="40" class="small">GDP +3-5%</text>
+      
+      <text x="0" y="80" class="h2" fill="#3b82f6">전기</text>
+      <text x="0" y="100" class="small">(1920년대)</text>
+      <text x="0" y="120" class="small">GDP +2-4%</text>
+      
+      <text x="0" y="160" class="h2" fill="#10b981">생성형 AI</text>
+      <text x="0" y="180" class="small">(2020년대~)</text>
+      <text x="0" y="200" class="small">GDP +7%</text>
+      
+      <text x="0" y="240" class="small" fill="#34d399">역사상 최대</text>
+      <text x="0" y="260" class="small" fill="#34d399">경제적 영향</text>
+    </g>
+  </g>
+
+  <!-- Source and disclaimer -->
+  <text x="600" y="690" text-anchor="middle" class="small">출처: Goldman Sachs Global Investment Research (2023) | 예측치는 실제 결과와 다를 수 있음</text>
+</svg>

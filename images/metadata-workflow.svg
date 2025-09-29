@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 100 1200 650" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .title-text { font-family: 'Noto Sans KR', Arial, sans-serif; font-size: 20px; font-weight: bold; fill: #2c3e50; }
+      .subtitle-text { font-family: 'Noto Sans KR', Arial, sans-serif; font-size: 14px; fill: #34495e; }
+      .section-title { font-family: 'Noto Sans KR', Arial, sans-serif; font-size: 14px; font-weight: bold; fill: #2c3e50; }
+      .yaml-text { font-family: 'Courier New', monospace; font-size: 9px; fill: #2c3e50; }
+      .description-text { font-family: 'Noto Sans KR', Arial, sans-serif; font-size: 10px; fill: #34495e; }
+      .output-text { font-family: 'Noto Sans KR', Arial, sans-serif; font-size: 11px; fill: #ffffff; font-weight: bold; }
+      .connection-text { font-family: 'Noto Sans KR', Arial, sans-serif; font-size: 9px; fill: #7f8c8d; }
+      .dna-text { font-family: 'Noto Sans KR', Arial, sans-serif; font-size: 12px; font-weight: bold; fill: #e74c3c; }
+      .hierarchy-text { font-family: 'Noto Sans KR', Arial, sans-serif; font-size: 10px; fill: #7f8c8d; font-style: italic; }
+    </style>
+    
+    <!-- 그라디언트 정의 -->
+    <linearGradient id="projectGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1abc9c;stop-opacity:0.9" />
+      <stop offset="100%" style="stop-color:#16a085;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="yamlGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3498db;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#2980b9;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="htmlGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#e67e22;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#d35400;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="pdfGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#27ae60;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#229954;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="docxGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#8e44ad;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#7d3c98;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- 화살표 마커 -->
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#34495e"/>
+    </marker>
+    <marker id="arrow-light" markerWidth="8" markerHeight="8" refX="7" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#7f8c8d"/>
+    </marker>
+  </defs>
+  
+  <!-- 계층 표시 (좌측) -->
+  <text x="50" y="140" class="hierarchy-text">Level 1</text>
+  <text x="50" y="300" class="hierarchy-text">Level 2</text>
+  <text x="50" y="520" class="hierarchy-text">Level 3</text>
+  
+  <!-- DNA 나선 장식 (좌측 상단) -->
+  <path d="M 90 120 Q 100 130, 90 140 Q 80 150, 90 160" 
+        stroke="#e74c3c" stroke-width="2" fill="none"/>
+  <path d="M 105 125 Q 95 135, 105 145 Q 115 155, 105 165" 
+        stroke="#e74c3c" stroke-width="2" fill="none"/>
+  <text x="130" y="150" class="dna-text">프로젝트 DNA</text>
+  
+  <!-- LEVEL 1: 프로젝트 설정 (_quarto.yml) - 최상단 -->
+  <rect x="300" y="120" width="600" height="140" fill="url(#projectGrad)" stroke="#16a085" stroke-width="3" rx="8"/>
+  <text x="600" y="145" text-anchor="middle" class="section-title" fill="white">_quarto.yml (프로젝트 수준)</text>
+  <text x="600" y="160" text-anchor="middle" class="description-text" fill="white">전체 프로젝트 마스터 DNA</text>
+  
+  <!-- 프로젝트 설정 코드 -->
+  <rect x="320" y="175" width="270" height="75" fill="rgba(255,255,255,0.15)" rx="3"/>
+  <text x="330" y="190" class="yaml-text" fill="white">project:</text>
+  <text x="340" y="205" class="yaml-text" fill="white">type: book</text>
+  <text x="340" y="220" class="yaml-text" fill="white">chapters: [index.qmd, ...]</text>
+  <text x="330" y="235" class="yaml-text" fill="white">bibliography: references.bib</text>
+  
+  <rect x="610" y="175" width="270" height="75" fill="rgba(255,255,255,0.15)" rx="3"/>
+  <text x="620" y="190" class="yaml-text" fill="white">format:</text>
+  <text x="630" y="205" class="yaml-text" fill="white">html: {theme: cosmo}</text>
+  <text x="630" y="220" class="yaml-text" fill="white">pdf: {documentclass: article}</text>
+  <text x="630" y="235" class="yaml-text" fill="white">docx: {reference-doc: template}</text>
+  
+  <!-- 화살표들 (프로젝트에서 개별 문서들로) -->
+  <line x1="450" y1="270" x2="300" y2="340" stroke="#34495e" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="600" y1="270" x2="600" y2="340" stroke="#34495e" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="750" y1="270" x2="900" y2="340" stroke="#34495e" stroke-width="2" marker-end="url(#arrow)"/>
+  
+  <text x="375" y="310" class="connection-text">통제</text>
+  <text x="620" y="310" class="connection-text">상속</text>
+  <text x="825" y="310" class="connection-text">설정</text>
+  
+  <!-- LEVEL 2: 개별 문서 YAML들 - 중간층 -->
+  
+  <!-- 문서 1: index.qmd -->
+  <rect x="150" y="350" width="220" height="130" fill="url(#yamlGrad)" stroke="#2980b9" stroke-width="2" rx="5"/>
+  <text x="260" y="370" text-anchor="middle" class="section-title" fill="white">index.qmd</text>
+  <text x="260" y="385" text-anchor="middle" class="description-text" fill="white">메인 페이지</text>
+  
+  <rect x="170" y="395" width="180" height="70" fill="rgba(255,255,255,0.2)" rx="3"/>
+  <text x="180" y="410" class="yaml-text" fill="white">title: "펭귄 연구"</text>
+  <text x="180" y="425" class="yaml-text" fill="white">author: "김생태"</text>
+  <text x="180" y="440" class="yaml-text" fill="white">abstract: |</text>
+  <text x="185" y="455" class="yaml-text" fill="white">Palmer 데이터 분석</text>
+  
+  <!-- 문서 2: chapter1.qmd -->
+  <rect x="490" y="350" width="220" height="130" fill="url(#yamlGrad)" stroke="#2980b9" stroke-width="2" rx="5"/>
+  <text x="600" y="370" text-anchor="middle" class="section-title" fill="white">chapter1.qmd</text>
+  <text x="600" y="385" text-anchor="middle" class="description-text" fill="white">데이터 탐색</text>
+  
+  <rect x="510" y="395" width="180" height="70" fill="rgba(255,255,255,0.2)" rx="3"/>
+  <text x="520" y="410" class="yaml-text" fill="white">title: "데이터 탐색"</text>
+  <text x="520" y="425" class="yaml-text" fill="white">execute:</text>
+  <text x="530" y="440" class="yaml-text" fill="white">echo: true</text>
+  <text x="530" y="455" class="yaml-text" fill="white">warning: false</text>
+  
+  <!-- 문서 3: chapter2.qmd -->
+  <rect x="830" y="350" width="220" height="130" fill="url(#yamlGrad)" stroke="#2980b9" stroke-width="2" rx="5"/>
+  <text x="940" y="370" text-anchor="middle" class="section-title" fill="white">chapter2.qmd</text>
+  <text x="940" y="385" text-anchor="middle" class="description-text" fill="white">통계 분석</text>
+  
+  <rect x="850" y="395" width="180" height="70" fill="rgba(255,255,255,0.2)" rx="3"/>
+  <text x="860" y="410" class="yaml-text" fill="white">title: "통계 분석"</text>
+  <text x="860" y="425" class="yaml-text" fill="white">format:</text>
+  <text x="870" y="440" class="yaml-text" fill="white">html: {code-fold: true}</text>
+  <text x="870" y="455" class="yaml-text" fill="white">pdf: {keep-tex: true}</text>
+  
+  <!-- 화살표들 (개별 문서에서 출력물들로) -->
+  <line x1="260" y1="490" x2="200" y2="560" stroke="#7f8c8d" stroke-width="1" marker-end="url(#arrow-light)"/>
+  <line x1="600" y1="490" x2="600" y2="560" stroke="#7f8c8d" stroke-width="1" marker-end="url(#arrow-light)"/>
+  <line x1="940" y1="490" x2="1000" y2="560" stroke="#7f8c8d" stroke-width="1" marker-end="url(#arrow-light)"/>
+  
+  <!-- LEVEL 3: 최종 출력물들 - 하단 -->
+  
+  <!-- HTML 출력 -->
+  <rect x="100" y="570" width="200" height="100" fill="url(#htmlGrad)" stroke="#d35400" stroke-width="2" rx="5"/>
+  <text x="200" y="590" text-anchor="middle" class="output-text">HTML Book</text>
+  <text x="200" y="605" text-anchor="middle" class="description-text" fill="white">상호작용 웹사이트</text>
+  <rect x="120" y="615" width="160" height="45" fill="rgba(255,255,255,0.2)" rx="3"/>
+  <text x="130" y="630" class="yaml-text" fill="white" font-size="8px">• 목차 네비게이션</text>
+  <text x="130" y="640" class="yaml-text" fill="white" font-size="8px">• 코드 접기/펼치기</text>
+  <text x="130" y="650" class="yaml-text" fill="white" font-size="8px">• 검색 기능</text>
+  
+  <!-- PDF 출력 -->
+  <rect x="500" y="570" width="200" height="100" fill="url(#pdfGrad)" stroke="#229954" stroke-width="2" rx="5"/>
+  <text x="600" y="590" text-anchor="middle" class="output-text">PDF Document</text>
+  <text x="600" y="605" text-anchor="middle" class="description-text" fill="white">인쇄용 학술 문서</text>
+  <rect x="520" y="615" width="160" height="45" fill="rgba(255,255,255,0.2)" rx="3"/>
+  <text x="530" y="630" class="yaml-text" fill="white" font-size="8px">• LaTeX 고품질 조판</text>
+  <text x="530" y="640" class="yaml-text" fill="white" font-size="8px">• 수식 렌더링</text>
+  <text x="530" y="650" class="yaml-text" fill="white" font-size="8px">• 참고문헌 자동화</text>
+  
+  <!-- DOCX 출력 -->
+  <rect x="900" y="570" width="200" height="100" fill="url(#docxGrad)" stroke="#7d3c98" stroke-width="2" rx="5"/>
+  <text x="1000" y="590" text-anchor="middle" class="output-text">DOCX Files</text>
+  <text x="1000" y="605" text-anchor="middle" class="description-text" fill="white">협업 및 리뷰</text>
+  <rect x="920" y="615" width="160" height="45" fill="rgba(255,255,255,0.2)" rx="3"/>
+  <text x="930" y="630" class="yaml-text" fill="white" font-size="8px">• 워드 템플릿 적용</text>
+  <text x="930" y="640" class="yaml-text" fill="white" font-size="8px">• 트랙 변경 지원</text>
+  <text x="930" y="650" class="yaml-text" fill="white" font-size="8px">• 공동 편집</text>
+  
+  <!-- 핵심 개념들 (우측) -->
+  <text x="1100" y="200" class="section-title">Top-Down</text>
+  <text x="1100" y="215" class="section-title">통제 원리</text>
+  <circle cx="1110" cy="235" r="3" fill="#1abc9c"/>
+  <text x="1125" y="240" class="description-text" font-size="9px">전역 설정</text>
+  <circle cx="1110" cy="255" r="3" fill="#3498db"/>
+  <text x="1125" y="260" class="description-text" font-size="9px">개별 오버라이드</text>
+  <circle cx="1110" cy="275" r="3" fill="#e67e22"/>
+  <text x="1125" y="280" class="description-text" font-size="9px">형식별 최적화</text>
+  
+  <!-- 하단 메시지 -->
+  <rect x="50" y="700" width="1100" height="35" fill="rgba(52, 73, 94, 0.1)" stroke="#34495e" stroke-width="1" rx="3"/>
+  <text x="600" y="715" text-anchor="middle" class="description-text" font-weight="bold">
+    _quarto.yml이 전체를 통제 → 개별 문서가 상속/오버라이드 → 최종 출력물 생성
+  </text>
+  <text x="600" y="730" text-anchor="middle" class="description-text">
+    Document as Code 패러다임: 계층적 설정으로 일관성과 유연성 동시 확보
+  </text>
+</svg>

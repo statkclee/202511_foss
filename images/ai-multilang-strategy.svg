@@ -1,0 +1,208 @@
+<svg width="1200" height="650" viewBox="0 20 1200 650" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- AI Hub Gradient -->
+    <radialGradient id="aiGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#8e44ad" />
+      <stop offset="60%" stop-color="#9b59b6" />
+      <stop offset="100%" stop-color="#6c3483" />
+    </radialGradient>
+    
+    <!-- Language specific gradients -->
+    <linearGradient id="sqlGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#e74c3c" />
+      <stop offset="100%" stop-color="#c0392b" />
+    </linearGradient>
+    <linearGradient id="rGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#3498db" />
+      <stop offset="100%" stop-color="#2980b9" />
+    </linearGradient>
+    <linearGradient id="pythonGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#27ae60" />
+      <stop offset="100%" stop-color="#229954" />
+    </linearGradient>
+    <linearGradient id="juliaGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#f39c12" />
+      <stop offset="100%" stop-color="#e67e22" />
+    </linearGradient>
+    <linearGradient id="jsGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#2c3e50" />
+      <stop offset="100%" stop-color="#34495e" />
+    </linearGradient>
+    
+    <!-- Context layer gradient -->
+    <linearGradient id="contextGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ecf0f1" />
+      <stop offset="50%" stop-color="#bdc3c7" />
+      <stop offset="100%" stop-color="#ecf0f1" />
+    </linearGradient>
+    
+    <!-- Arrow markers -->
+    <marker id="arrowAI" markerWidth="12" markerHeight="8" refX="10" refY="4" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,8 L12,4 z" fill="#8e44ad"/>
+    </marker>
+    <marker id="arrowChain" markerWidth="10" markerHeight="6" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L10,3 z" fill="#7f8c8d"/>
+    </marker>
+    
+    <!-- Drop shadow -->
+    <filter id="strategyShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="3" dy="5" stdDeviation="4" flood-color="#00000030"/>
+    </filter>
+    
+    <!-- Styles -->
+    <style>
+      .title { font-family: 'IBM Plex Sans KR', sans-serif; font-size: 22px; font-weight: 700; fill: #2c3e50; }
+      .section-title { font-family: 'IBM Plex Sans KR', sans-serif; font-size: 16px; font-weight: 600; fill: #34495e; }
+      .ai-title { font-family: 'IBM Plex Sans KR', sans-serif; font-size: 18px; font-weight: 700; fill: white; }
+      .lang-title { font-family: 'IBM Plex Sans KR', sans-serif; font-size: 14px; font-weight: 600; fill: white; }
+      .lang-desc { font-family: 'IBM Plex Sans KR', sans-serif; font-size: 9px; fill: white; }
+      .prompt-text { font-family: 'IBM Plex Sans KR', sans-serif; font-size: 8px; fill: #2c3e50; }
+      .context-text { font-family: 'IBM Plex Sans KR', sans-serif; font-size: 14px; fill: #7f8c8d; font-weight: 600; }
+      .flow-number { font-family: 'IBM Plex Sans KR', sans-serif; font-size: 12px; fill: white; font-weight: 700; }
+      .connection-ai { stroke: #8e44ad; stroke-width: 1; fill: none; marker-end: url(#arrowAI); opacity: 0.8; }
+      .connection-chain { stroke: #7f8c8d; stroke-width: 2; fill: none; marker-end: url(#arrowChain); opacity: 0.7; }
+      .lang-circle { filter: url(#strategyShadow); }
+      .ai-hub { filter: url(#strategyShadow); }
+      .context-layer { fill: url(#contextGrad); opacity: 0.3; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="#f8f9fa"/>
+  
+  <!-- Section 1: AI Hub and Languages Connection -->
+  <text x="50" y="70" class="section-title">1. AI 중앙 허브와 언어별 연결</text>
+  
+  <!-- Central AI Hub -->
+  <circle cx="600" cy="150" r="60" fill="url(#aiGrad)" class="ai-hub"/>
+  <text x="600" y="145" class="ai-title" text-anchor="middle">🤖 AI</text>
+  <text x="600" y="160" class="ai-title" text-anchor="middle">허브</text>
+  
+  <!-- Language circles around AI hub -->
+  <!-- SQL -->
+  <circle cx="400" cy="100" r="35" fill="url(#sqlGrad)" class="lang-circle"/>
+  <text x="400" y="95" class="lang-title" text-anchor="middle">SQL</text>
+  <text x="400" y="108" class="lang-desc" text-anchor="middle">데이터 추출</text>
+  
+  <!-- R -->
+  <circle cx="800" cy="100" r="35" fill="url(#rGrad)" class="lang-circle"/>
+  <text x="800" y="95" class="lang-title" text-anchor="middle">R</text>
+  <text x="800" y="108" class="lang-desc" text-anchor="middle">통계 분석</text>
+  
+  <!-- Python -->
+  <circle cx="450" cy="220" r="35" fill="url(#pythonGrad)" class="lang-circle"/>
+  <text x="450" y="215" class="lang-title" text-anchor="middle">Python</text>
+  <text x="450" y="228" class="lang-desc" text-anchor="middle">ML/AI</text>
+  
+  <!-- Julia -->
+  <circle cx="750" cy="220" r="35" fill="url(#juliaGrad)" class="lang-circle"/>
+  <text x="750" y="215" class="lang-title" text-anchor="middle">Julia</text>
+  <text x="750" y="228" class="lang-desc" text-anchor="middle">고성능 계산</text>
+  
+  <!-- JavaScript -->
+  <circle cx="600" cy="280" r="35" fill="url(#jsGrad)" class="lang-circle"/>
+  <text x="600" y="275" class="lang-title" text-anchor="middle">JS</text>
+  <text x="600" y="288" class="lang-desc" text-anchor="middle">시각화</text>
+  
+  <!-- Connection lines from AI hub to languages - curved arrows -->
+  <path d="M 560 130 Q 500 115 440 115" class="connection-ai"/>
+  <path d="M 640 130 Q 700 115 760 115" class="connection-ai"/>
+  <path d="M 575 185 Q 520 190 485 205" class="connection-ai"/>
+  <path d="M 625 185 Q 680 190 715 205" class="connection-ai"/>
+  <path d="M 600 210 Q 600 225 600 245" class="connection-ai"/>
+
+  <!-- Prompt examples for each language -->
+  <rect x="270" y="140" width="120" height="40" fill="white" stroke="#e74c3c" stroke-width="1" rx="5" opacity="0.9"/>
+  <text x="285" y="152" class="prompt-text">"SELECT로 추출하되"</text>
+  <text x="285" y="162" class="prompt-text">"R 분석에 최적화해줘"</text>
+  <text x="285" y="172" class="prompt-text">"컬럼명은 snake_case로"</text>
+  
+  <rect x="830" y="140" width="120" height="40" fill="white" stroke="#3498db" stroke-width="1" rx="5" opacity="0.9"/>
+  <text x="835" y="152" class="prompt-text">"tidyverse 스타일로"</text>
+  <text x="835" y="162" class="prompt-text">"ggplot2 시각화 포함"</text>
+  <text x="835" y="172" class="prompt-text">"파이프 연산자 활용"</text>
+
+  <!-- Section 2: Prompt Chaining Flow -->
+  <text x="50" y="360" class="section-title">2. 프롬프트 체이닝 플로우</text>
+  
+  <!-- Flow boxes -->
+  <rect x="50" y="380" width="180" height="80" fill="url(#sqlGrad)" rx="10" class="lang-circle"/>
+  <circle cx="75" cy="395" r="12" fill="white" opacity="0.9"/>
+  <text x="75" y="399" class="flow-number" text-anchor="middle">1</text>
+  <text x="140" y="405" class="lang-title" text-anchor="middle">SQL 데이터 추출</text>
+  <text x="140" y="425" class="lang-desc" text-anchor="middle">"컨텍스트: 1만 행 고객 데이터"</text>
+  <text x="140" y="440" class="lang-desc" text-anchor="middle">"다음 단계: R 통계 분석용"</text>
+  <text x="140" y="455" class="lang-desc" text-anchor="middle">"출력: CSV, UTF-8 인코딩"</text>
+  
+  <rect x="280" y="380" width="180" height="80" fill="url(#rGrad)" rx="10" class="lang-circle"/>
+  <circle cx="305" cy="395" r="12" fill="white" opacity="0.9"/>
+  <text x="305" y="399" class="flow-number" text-anchor="middle">2</text>
+  <text x="370" y="405" class="lang-title" text-anchor="middle">R 통계 분석</text>
+  <text x="370" y="425" class="lang-desc" text-anchor="middle">"이전: SQL CSV 파일 로드"</text>
+  <text x="370" y="440" class="lang-desc" text-anchor="middle">"수행: t-test, ANOVA"</text>
+  <text x="370" y="455" class="lang-desc" text-anchor="middle">"출력: 결과 + 시각화"</text>
+  
+  <rect x="510" y="380" width="180" height="80" fill="url(#pythonGrad)" rx="10" class="lang-circle"/>
+  <circle cx="535" cy="395" r="12" fill="white" opacity="0.9"/>
+  <text x="535" y="399" class="flow-number" text-anchor="middle">3</text>
+  <text x="600" y="405" class="lang-title" text-anchor="middle">Python ML 예측</text>
+  <text x="600" y="425" class="lang-desc" text-anchor="middle">"이전: R 검정 결과"</text>
+  <text x="600" y="440" class="lang-desc" text-anchor="middle">"수행: 예측 모델링"</text>
+  <text x="600" y="455" class="lang-desc" text-anchor="middle">"출력: 예측값 JSON"</text>
+  
+  <rect x="740" y="380" width="180" height="80" fill="url(#juliaGrad)" rx="10" class="lang-circle"/>
+  <circle cx="765" cy="395" r="12" fill="white" opacity="0.9"/>
+  <text x="765" y="399" class="flow-number" text-anchor="middle">4</text>
+  <text x="830" y="405" class="lang-title" text-anchor="middle">Julia 최적화</text>
+  <text x="830" y="425" class="lang-desc" text-anchor="middle">"이전: Python 예측값"</text>
+  <text x="830" y="440" class="lang-desc" text-anchor="middle">"수행: 고속 시뮬레이션"</text>
+  <text x="830" y="455" class="lang-desc" text-anchor="middle">"출력: 최적해 벡터"</text>
+  
+  <rect x="970" y="380" width="180" height="80" fill="url(#jsGrad)" rx="10" class="lang-circle"/>
+  <circle cx="995" cy="395" r="12" fill="white" opacity="0.9"/>
+  <text x="995" y="399" class="flow-number" text-anchor="middle">5</text>
+  <text x="1060" y="405" class="lang-title" text-anchor="middle">JS 대시보드</text>
+  <text x="1060" y="425" class="lang-desc" text-anchor="middle">"이전: Julia 최적해"</text>
+  <text x="1060" y="440" class="lang-desc" text-anchor="middle">"수행: 인터랙티브 차트"</text>
+  <text x="1060" y="455" class="lang-desc" text-anchor="middle">"출력: 웹 애플리케이션"</text>
+  
+  <!-- Chain arrows -->
+  <path d="M 235 420 L 275 420" class="connection-chain"/>
+  <path d="M 465 420 L 505 420" class="connection-chain"/>
+  <path d="M 695 420 L 735 420" class="connection-chain"/>
+  <path d="M 925 420 L 965 420" class="connection-chain"/>
+
+  <!-- Section 3: Context Management Layer -->
+  <text x="50" y="510" class="section-title">3. 컨텍스트 관리 레이어</text>
+  
+  <!-- Context layer visualization -->
+  <rect x="50" y="520" width="1100" height="100" class="context-layer" rx="15"/>
+  
+  <!-- Context components -->
+  <rect x="80" y="535" width="200" height="70" fill="white" stroke="#95a5a6" stroke-width="2" rx="8"/>
+  <text x="180" y="555" class="context-text" text-anchor="middle">프로젝트 메타데이터</text>
+  <text x="90" y="575" class="prompt-text">• 목표: 고객 세분화</text>
+  <text x="90" y="588" class="prompt-text">• 데이터: 100K 고객 x 50 피처</text>
+  <text x="90" y="601" class="prompt-text">• 제약: 개인정보 보호, 실시간 처리</text>
+  
+  <rect x="320" y="535" width="200" height="70" fill="white" stroke="#95a5a6" stroke-width="2" rx="8"/>
+  <text x="420" y="555" class="context-text" text-anchor="middle">데이터 스키마</text>
+  <text x="330" y="575" class="prompt-text">• 형식: Parquet, JSON</text>
+  <text x="330" y="588" class="prompt-text">• 인코딩: UTF-8</text>
+  <text x="330" y="601" class="prompt-text">• 변수명: snake_case 통일</text>
+  
+  <rect x="560" y="535" width="200" height="70" fill="white" stroke="#95a5a6" stroke-width="2" rx="8"/>
+  <text x="660" y="555" class="context-text" text-anchor="middle">품질 기준</text>
+  <text x="570" y="575" class="prompt-text">• 코드 스타일: PEP8, tidyverse</text>
+  <text x="570" y="588" class="prompt-text">• 문서화: docstring, roxygen2</text>
+  <text x="570" y="601" class="prompt-text">• 테스트: 커버리지 80% 이상</text>
+  
+  <rect x="800" y="535" width="200" height="70" fill="white" stroke="#95a5a6" stroke-width="2" rx="8"/>
+  <text x="900" y="555" class="context-text" text-anchor="middle">성능 목표</text>
+  <text x="810" y="575" class="prompt-text">• 처리 시간: &lt; 10초</text>
+  <text x="810" y="588" class="prompt-text">• 메모리: &lt; 8GB</text>
+  <text x="810" y="601" class="prompt-text">• 정확도: &gt; 95%</text>
+  
+  <!-- Bottom note -->
+  <text x="600" y="350" class="context-text" text-anchor="middle">💡 핵심: 각 단계별 컨텍스트를 다음 언어로 명시적 전달하여 일관성 유지</text>
+</svg>

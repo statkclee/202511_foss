@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 50 1000 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .title-text { font-family: 'IBM Plex Sans KR', sans-serif; font-size: 24px; font-weight: bold; fill: #2c3e50; }
+      .stage-text { font-family: 'IBM Plex Sans KR', sans-serif; font-size: 16px; font-weight: 600; fill: #34495e; }
+      .desc-text-middle { font-family: 'Noto Sans KR', sans-serif; font-size: 15px; fill: #7f8c8d; }
+      .desc-text { font-family: 'Noto Sans KR', sans-serif; font-size: 13px; fill: #7f8c8d; }
+      .process-box { fill: #ecf0f1; stroke: #bdc3c7; stroke-width: 2; }
+      .arrow { fill: #3498db; }
+      .paper { fill: #f8f9fa; stroke: #dee2e6; stroke-width: 1.5; }
+      .ink { fill: #2c3e50; }
+      .print-machine { fill: #95a5a6; stroke: #7f8c8d; stroke-width: 2; }
+    </style>
+    
+    <!-- 화살표 마커 정의 -->
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" 
+            refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" class="arrow" />
+    </marker>
+  </defs>
+
+  <!-- 1단계: 저자 원고 -->
+  <g id="stage1">
+    <rect x="50" y="80" width="150" height="120" rx="10" class="process-box"/>
+    <text x="125" y="105" text-anchor="middle" class="stage-text">1. Author's Manuscript</text>
+    
+    <!-- 원고 아이콘 -->
+    <rect x="85" y="120" width="80" height="60" rx="3" class="paper"/>
+    <line x1="95" y1="135" x2="155" y2="135" stroke="#2c3e50" stroke-width="1"/>
+    <line x1="95" y1="145" x2="145" y2="145" stroke="#2c3e50" stroke-width="1"/>
+    <line x1="95" y1="155" x2="150" y2="155" stroke="#2c3e50" stroke-width="1"/>
+    <line x1="95" y1="165" x2="140" y2="165" stroke="#2c3e50" stroke-width="1"/>
+    
+    <!-- 펜 -->
+    <line x1="170" y1="130" x2="175" y2="140" stroke="#8b4513" stroke-width="3"/>
+    <circle cx="172" cy="128" r="2" fill="#2c3e50"/>
+    
+    <text x="125" y="230" text-anchor="middle" class="desc-text-middle">Written with pen and ink</text>
+  </g>
+
+  <!-- 화살표 1 -->
+  <line x1="200" y1="140" x2="260" y2="140" stroke="#3498db" stroke-width="3" marker-end="url(#arrowhead)"/>
+
+  <!-- 2단계: 식자 작업 -->
+  <g id="stage2">
+    <rect x="270" y="80" width="150" height="120" rx="10" class="process-box"/>
+    <text x="345" y="105" text-anchor="middle" class="stage-text">2. Typesetting Work</text>
+    
+    <!-- 활자 상자들 -->
+    <rect x="290" y="120" width="20" height="15" fill="#8b4513"/>
+    <rect x="315" y="120" width="20" height="15" fill="#8b4513"/>
+    <rect x="340" y="120" width="20" height="15" fill="#8b4513"/>
+    <rect x="365" y="120" width="20" height="15" fill="#8b4513"/>
+    <rect x="290" y="140" width="20" height="15" fill="#8b4513"/>
+    <rect x="315" y="140" width="20" height="15" fill="#8b4513"/>
+    <rect x="340" y="140" width="20" height="15" fill="#8b4513"/>
+    <rect x="365" y="140" width="20" height="15" fill="#8b4513"/>
+    
+    <!-- 조판된 페이지 -->
+    <rect x="300" y="160" width="70" height="50" rx="3" class="paper"/>
+    <rect x="305" y="165" width="60" height="3" fill="#2c3e50"/>
+    <rect x="305" y="172" width="60" height="3" fill="#2c3e50"/>
+    <rect x="305" y="179" width="60" height="3" fill="#2c3e50"/>
+    <rect x="305" y="186" width="60" height="3" fill="#2c3e50"/>
+    <rect x="305" y="193" width="60" height="3" fill="#2c3e50"/>
+    
+    <text x="345" y="230" text-anchor="middle" class="desc-text-middle">Movable type composition</text>
+  </g>
+
+  <!-- 화살표 2 -->
+  <line x1="420" y1="140" x2="480" y2="140" stroke="#3498db" stroke-width="3" marker-end="url(#arrowhead)"/>
+
+  <!-- 3단계: 인쇄 -->
+  <g id="stage3">
+    <rect x="490" y="80" width="150" height="120" rx="10" class="process-box"/>
+    <text x="565" y="105" text-anchor="middle" class="stage-text">3. Printing Process</text>
+    
+    <!-- 인쇄기 -->
+    <rect x="520" y="120" width="90" height="40" rx="5" class="print-machine"/>
+    <rect x="530" y="130" width="70" height="20" fill="#7f8c8d"/>
+    <circle cx="545" cy="140" r="3" fill="#34495e"/>
+    <circle cx="585" cy="140" r="3" fill="#34495e"/>
+    
+    <!-- 인쇄되는 종이 -->
+    <rect x="540" y="170" width="50" height="30" rx="2" class="paper"/>
+    <line x1="545" y1="180" x2="585" y2="180" stroke="#2c3e50" stroke-width="1"/>
+    <line x1="545" y1="185" x2="575" y2="185" stroke="#2c3e50" stroke-width="1"/>
+    <line x1="545" y1="190" x2="580" y2="190" stroke="#2c3e50" stroke-width="1"/>
+    
+    <text x="565" y="230" text-anchor="middle" class="desc-text-middle">Mass reproduction</text>
+  </g>
+
+  <!-- 화살표 3 -->
+  <line x1="640" y1="140" x2="700" y2="140" stroke="#3498db" stroke-width="3" marker-end="url(#arrowhead)"/>
+
+  <!-- 4단계: 완성된 책 -->
+  <g id="stage4">
+    <rect x="710" y="80" width="150" height="120" rx="10" class="process-box"/>
+    <text x="785" y="105" text-anchor="middle" class="stage-text">4. Finished Book</text>
+    
+    <!-- 책들 -->
+    <g id="books">
+      <rect x="730" y="120" width="15" height="50" fill="#8b4513" stroke="#654321" stroke-width="1"/>
+      <rect x="750" y="120" width="15" height="50" fill="#2980b9" stroke="#1f4e79" stroke-width="1"/>
+      <rect x="770" y="120" width="15" height="50" fill="#27ae60" stroke="#1e8449" stroke-width="1"/>
+      <rect x="790" y="120" width="15" height="50" fill="#e74c3c" stroke="#c0392b" stroke-width="1"/>
+      <rect x="810" y="120" width="15" height="50" fill="#9b59b6" stroke="#7d3c98" stroke-width="1"/>
+    </g>
+    
+    <text x="785" y="185" text-anchor="middle" class="desc-text">Identical content</text>
+    <text x="785" y="230" text-anchor="middle" class="desc-text-middle">Unmodifiable</text>
+  </g>
+
+  <!-- 특징 설명 박스들 -->
+  <g id="characteristics" transform="translate(0, -30)">
+    <!-- 일방향 정보 전달 -->
+    <rect x="50" y="280" width="200" height="80" rx="8" fill="#e8f4fd" stroke="#3498db" stroke-width="2"/>
+    <text x="150" y="305" text-anchor="middle" class="stage-text">One-way Information Transfer</text>
+    <text x="60" y="325" class="desc-text">Author → Reader</text>
+    <text x="60" y="340" class="desc-text">No reader feedback possible</text>
+    <text x="60" y="355" class="desc-text">No interaction</text>
+
+    <!-- 불변성 -->
+    <rect x="280" y="280" width="200" height="80" rx="8" fill="#fdf2e8" stroke="#e67e22" stroke-width="2"/>
+    <text x="380" y="305" text-anchor="middle" class="stage-text">Immutability</text>
+    <text x="290" y="325" class="desc-text">Cannot modify after printing</text>
+    <text x="290" y="340" class="desc-text">Must reprint if errors found</text>
+    <text x="290" y="355" class="desc-text">Content permanently fixed</text>
+
+    <!-- 물리적 제약 -->
+    <rect x="510" y="280" width="200" height="80" rx="8" fill="#f4f8fd" stroke="#8e44ad" stroke-width="2"/>
+    <text x="610" y="305" text-anchor="middle" class="stage-text">Physical Constraints</text>
+    <text x="520" y="325" class="desc-text">Limitations of paper and ink</text>
+    <text x="520" y="340" class="desc-text">Volume and weight</text>
+    <text x="520" y="355" class="desc-text">Limited color expression</text>
+
+    <!-- 선형적 읽기 -->
+    <rect x="740" y="280" width="200" height="80" rx="8" fill="#eaf7f0" stroke="#27ae60" stroke-width="2"/>
+    <text x="840" y="305" text-anchor="middle" class="stage-text">Linear Reading</text>
+    <text x="750" y="325" class="desc-text">From first page in order</text>
+    <text x="750" y="340" class="desc-text">Difficult random access</text>
+    <text x="750" y="355" class="desc-text">Cannot reorganize content</text>
+  </g>
+
+</svg>

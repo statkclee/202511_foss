@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1200" height="680" viewBox="20 50 1200 680" xmlns="http://www.w3.org/2000/svg"
+     role="img" aria-label="DSL 진화 타임라인: 시대적 요구와 언어의 탄생">
+  <defs>
+    <!-- 시대별 배경 - 밝은 파스텔 색상 -->
+    <linearGradient id="era1970" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FEE2E2;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FECACA;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="era1980" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#DCFCE7;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#BBF7D0;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="era1990" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#DBEAFE;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#BFDBFE;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="era2000" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FEF3C7;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FDE68A;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="era2010" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#F3E8FF;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#E9D5FF;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="era2020" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FCE7F3;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FBCFE8;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- 언어별 단색 - 각 언어 대표 색상 -->
+    <defs>
+      <solidColor id="sqlColor" color="#336791"/>
+      <solidColor id="rColor" color="#276DC3"/>
+      <solidColor id="pythonColor" color="#3776AB"/>
+      <solidColor id="jsColor" color="#F7DF1E"/>
+      <solidColor id="juliaColor" color="#CB3C33"/>
+      <solidColor id="quartoColor" color="#75AADB"/>
+    </defs>
+    
+    <!-- 그림자 필터 -->
+    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="3"/>
+      <feOffset dx="2" dy="4" result="offsetblur"/>
+      <feComponentTransfer><feFuncA type="linear" slope="0.2"/></feComponentTransfer>
+      <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    
+    <!-- 글로우 효과 -->
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="4" result="coloredBlur"/>
+      <feMerge><feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    
+    <!-- 화살표 -->
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto">
+      <path d="M2,2 L2,8 L8,5 z" fill="#3B82F6" />
+    </marker>
+    
+    <!-- 스타일 -->
+    <style>
+      .title-text { font-family: "Noto Sans KR", "Apple SD Gothic Neo", sans-serif; font-size: 28px; font-weight: bold; fill: #1e293b; }
+      .subtitle-text { font-family: "Noto Sans KR", "Apple SD Gothic Neo", sans-serif; font-size: 16px; fill: #64748b; }
+      .era-text { font-family: "Noto Sans KR", "Apple SD Gothic Neo", sans-serif; font-size: 15px; font-weight: bold; fill: #1F2937; }
+      .problem-text { font-family: "Noto Sans KR", "Apple SD Gothic Neo", sans-serif; font-size: 10px; fill: #374151; }
+      .lang-title { font-family: "Noto Sans KR", "Apple SD Gothic Neo", sans-serif; font-size: 14px; font-weight: bold; fill: white; text-shadow: 1px 1px 2px rgba(0,0,0,0.8); }
+      .lang-desc { font-family: "Noto Sans KR", "Apple SD Gothic Neo", sans-serif; font-size: 9px; fill: white; text-shadow: 1px 1px 1px rgba(0,0,0,0.7); }
+      .timeline-year { font-family: "JetBrains Mono", monospace; font-size: 14px; font-weight: bold; fill: #1e293b; }
+      .convergence-text { font-family: "Noto Sans KR", "Apple SD Gothic Neo", sans-serif; font-size: 14px; font-weight: bold; fill: #7C3AED; }
+      .need-text { font-family: "Noto Sans KR", "Apple SD Gothic Neo", sans-serif; font-size: 11px; fill: #059669; }
+    </style>
+  </defs>
+  
+  <!-- 배경 -->
+  <rect width="1400" height="800" fill="#f8fafc" rx="12"/>
+  
+  <!-- 타임라인 축 -->
+  <line x1="100" y1="120" x2="1150" y2="120" stroke="#cbd5e1" stroke-width="3"/>
+  
+  <!-- 1970년대: SQL의 탄생 -->
+  <g transform="translate(180, 120)">
+    <circle cx="0" cy="0" r="8" fill="#8B4513"/>
+    <text x="0" y="-25" text-anchor="middle" class="timeline-year">1970년대</text>
+    
+    <!-- 시대적 배경 -->
+    <rect x="-75" y="25" width="150" height="70" rx="8" fill="url(#era1970)" stroke="#DC2626" stroke-width="1"/>
+    <text x="0" y="45" text-anchor="middle" class="era-text">데이터베이스 혁명</text>
+    <text x="0" y="62" text-anchor="middle" class="problem-text">관계형 모델의 등장</text>
+    <text x="0" y="76" text-anchor="middle" class="problem-text">구조화된 쿼리 필요</text>
+    <text x="0" y="90" text-anchor="middle" class="problem-text">CODD의 12규칙</text>
+    
+    <!-- SQL 언어박스 -->
+    <rect x="-55" y="110" width="110" height="55" rx="8" fill="#336791" filter="url(#shadow)"/>
+    <text x="0" y="130" text-anchor="middle" class="lang-title">SQL</text>
+    <text x="0" y="144" text-anchor="middle" class="lang-desc">구조화 쿼리 언어</text>
+    <text x="0" y="157" text-anchor="middle" class="lang-desc">관계형 DB 표준</text>
+  </g>
+  
+  <!-- 1993년: R의 탄생 -->
+  <g transform="translate(520, 120)">
+    <circle cx="0" cy="0" r="8" fill="#2E8B57"/>
+    <text x="0" y="-25" text-anchor="middle" class="timeline-year">1993년</text>
+    
+    <!-- 시대적 배경 -->
+    <rect x="-75" y="25" width="150" height="70" rx="8" fill="url(#era1980)" stroke="#10B981" stroke-width="1"/>
+    <text x="0" y="45" text-anchor="middle" class="era-text">통계 소프트웨어</text>
+    <text x="0" y="62" text-anchor="middle" class="problem-text">S 언어의 한계</text>
+    <text x="0" y="76" text-anchor="middle" class="problem-text">무료 통계 도구 필요</text>
+    <text x="0" y="90" text-anchor="middle" class="problem-text">학술 연구 확산</text>
+    
+    <!-- R 언어박스 -->
+    <rect x="-55" y="110" width="110" height="55" rx="8" fill="#276DC3" filter="url(#shadow)"/>
+    <text x="0" y="130" text-anchor="middle" class="lang-title">R</text>
+    <text x="0" y="144" text-anchor="middle" class="lang-desc">통계 전문 언어</text>
+    <text x="0" y="157" text-anchor="middle" class="lang-desc">오픈소스 생태계</text>
+  </g>
+  
+  <!-- 1995년: JavaScript의 탄생 -->
+  <g transform="translate(690, 120)">
+    <circle cx="0" cy="0" r="8" fill="#F7DF1E"/>
+    <text x="0" y="-25" text-anchor="middle" class="timeline-year">1995년</text>
+    
+    <!-- 시대적 배경 -->
+    <rect x="-75" y="25" width="150" height="70" rx="8" fill="url(#era1990)" stroke="#3B82F6" stroke-width="1"/>
+    <text x="0" y="45" text-anchor="middle" class="era-text">웹 브라우저 전쟁</text>
+    <text x="0" y="62" text-anchor="middle" class="problem-text">정적 웹페이지의 한계</text>
+    <text x="0" y="76" text-anchor="middle" class="problem-text">클라이언트 상호작용</text>
+    <text x="0" y="90" text-anchor="middle" class="problem-text">10일 만에 개발</text>
+    
+    <!-- JavaScript 언어박스 -->
+    <rect x="-55" y="110" width="110" height="55" rx="8" fill="#F7DF1E" filter="url(#shadow)"/>
+    <text x="0" y="130" text-anchor="middle" class="lang-title" fill="#333">JavaScript</text>
+    <text x="0" y="144" text-anchor="middle" class="lang-desc" fill="#333">브라우저 스크립팅</text>
+    <text x="0" y="157" text-anchor="middle" class="lang-desc" fill="#333">동적 웹페이지</text>
+  </g>
+  
+  <!-- 1991년: Python의 탄생 -->
+  <g transform="translate(350, 120)">
+    <circle cx="0" cy="0" r="8" fill="#3776AB"/>
+    <text x="0" y="-25" text-anchor="middle" class="timeline-year">1991년</text>
+    
+    <!-- 시대적 배경 -->
+    <rect x="-75" y="25" width="150" height="70" rx="8" fill="url(#era2000)" stroke="#F59E0B" stroke-width="1"/>
+    <text x="0" y="45" text-anchor="middle" class="era-text">범용 언어 추구</text>
+    <text x="0" y="62" text-anchor="middle" class="problem-text">C++의 복잡성</text>
+    <text x="0" y="76" text-anchor="middle" class="problem-text">가독성 중시</text>
+    <text x="0" y="90" text-anchor="middle" class="problem-text">"Life is short"</text>
+    
+    <!-- Python 언어박스 -->
+    <rect x="-55" y="110" width="110" height="55" rx="8" fill="#3776AB" filter="url(#shadow)"/>
+    <text x="0" y="130" text-anchor="middle" class="lang-title">Python</text>
+    <text x="0" y="144" text-anchor="middle" class="lang-desc">범용 스크립팅</text>
+    <text x="0" y="157" text-anchor="middle" class="lang-desc">교육/과학 컴퓨팅</text>
+  </g>
+  
+  <!-- 2012년: Julia의 탄생 -->
+  <g transform="translate(860, 120)">
+    <circle cx="0" cy="0" r="8" fill="#CB3C33"/>
+    <text x="0" y="-25" text-anchor="middle" class="timeline-year">2012년</text>
+    
+    <!-- 시대적 배경 -->
+    <rect x="-75" y="25" width="150" height="70" rx="8" fill="url(#era2010)" stroke="#8B5CF6" stroke-width="1"/>
+    <text x="0" y="45" text-anchor="middle" class="era-text">두 언어 문제</text>
+    <text x="0" y="62" text-anchor="middle" class="problem-text">프로토타입 vs 성능</text>
+    <text x="0" y="76" text-anchor="middle" class="problem-text">C/Fortran의 벽</text>
+    <text x="0" y="90" text-anchor="middle" class="problem-text">MIT의 야심</text>
+    
+    <!-- Julia 언어박스 -->
+    <rect x="-55" y="110" width="110" height="55" rx="8" fill="#CB3C33" filter="url(#shadow)"/>
+    <text x="0" y="130" text-anchor="middle" class="lang-title">Julia</text>
+    <text x="0" y="144" text-anchor="middle" class="lang-desc">고성능 과학계산</text>
+    <text x="0" y="157" text-anchor="middle" class="lang-desc">동적+정적 최적화</text>
+  </g>
+  
+  <!-- 2020년대: 융합의 시대 -->
+  <g transform="translate(1030, 120)">
+    <circle cx="0" cy="0" r="8" fill="#FF6347"/>
+    <text x="0" y="-25" text-anchor="middle" class="timeline-year">2020년대</text>
+    
+    <!-- 시대적 배경 -->
+    <rect x="-75" y="25" width="150" height="70" rx="8" fill="url(#era2020)" stroke="#EC4899" stroke-width="1"/>
+    <text x="0" y="45" text-anchor="middle" class="era-text">AI/데이터과학</text>
+    <text x="0" y="62" text-anchor="middle" class="problem-text">복합 도메인 요구</text>
+    <text x="0" y="76" text-anchor="middle" class="problem-text">재현성 위기</text>
+    <text x="0" y="90" text-anchor="middle" class="problem-text">협업의 필수</text>
+    
+    <!-- Quarto 통합 허브 -->
+    <ellipse cx="0" cy="135" rx="70" ry="30" fill="#75AADB" filter="url(#glow)" stroke="#3B82F6" stroke-width="3"/>
+    <text x="0" y="130" text-anchor="middle" class="lang-title">Quarto</text>
+    <text x="0" y="145" text-anchor="middle" class="lang-desc">다중언어 통합</text>
+  </g>
+  
+  <!-- 문제의식과 해결책 -->
+  <g id="problems-solutions" transform="translate(100, 350)">
+    <!-- 현재의 도전 -->터
+    <rect x="0" y="0" width="400" height="200" rx="15" fill="#FEF2F2" stroke="#DC2626" stroke-width="2"/>
+    <text x="200" y="30" text-anchor="middle" font-size="18" font-weight="bold" fill="#DC2626">현재 데이터 과학의 도전과제</text>
+    
+    <g transform="translate(30, 60)">
+      <text x="0" y="0" class="problem-text">🔄 <tspan font-weight="bold">복잡성 증가</tspan>: 단일 언어로는 모든 요구사항 해결 불가</text>
+      <text x="0" y="25" class="problem-text">👥 <tspan font-weight="bold">협업 필요성</tspan>: 서로 다른 전문성을 가진 팀원들의 작업 통합</text>
+      <text x="0" y="50" class="problem-text">🔍 <tspan font-weight="bold">재현성 요구</tspan>: 연구의 투명성과 검증가능성 확보</text>
+      <text x="0" y="75" class="problem-text">⚡ <tspan font-weight="bold">성능 vs 생산성</tspan>: 개발 속도와 실행 성능의 트레이드오프</text>
+      <text x="0" y="100" class="problem-text">🌐 <tspan font-weight="bold">출력 다양성</tspan>: 웹, PDF, 대시보드 등 다중 형태 요구</text>
+      <text x="0" y="125" class="problem-text">🤖 <tspan font-weight="bold">AI 도구 분산</tspan>: 언어별 특화된 AI 어시스턴트들</text>
+    </g>
+    
+    <!-- 쿼토의 해결책 -->
+    <rect x="600" y="0" width="450" height="200" rx="15" fill="#F0FDF4" stroke="#10B981" stroke-width="2"/>
+    <text x="850" y="30" text-anchor="middle" font-size="18" font-weight="bold" fill="#10B981">쿼토가 제공하는 솔루션</text>
+    
+    <g transform="translate(640, 60)">
+      <text x="0" y="0" class="need-text">✅ <tspan font-weight="bold">통합 실행 환경</tspan>: knitr(R) + Jupyter(Python/Julia) + OJS</text>
+      <text x="0" y="25" class="need-text">🔄 <tspan font-weight="bold">언어 간 데이터 공유</tspan>: reticulate, JuliaCall을 통한 seamless 연동</text>
+      <text x="0" y="50" class="need-text">📄 <tspan font-weight="bold">단일 소스 다중 출력</tspan>: 하나의 .qmd에서 HTML/PDF/PPT 생성</text>
+      <text x="0" y="75" class="need-text">🔍 <tspan font-weight="bold">완전한 재현성</tspan>: 코드+데이터+텍스트 버전 관리</text>
+      <text x="0" y="100" class="need-text">👥 <tspan font-weight="bold">협업 최적화</tspan>: 각자의 주력 언어로 기여 가능</text>
+      <text x="0" y="125" class="need-text">🤖 <tspan font-weight="bold">AI 시대 대응</tspan>: 모든 언어에서 LLM 기반 코드 생성</text>
+    </g>
+  </g>
+  
+  <!-- 미래 전망 -->
+  <g id="future" transform="translate(100, 580)">
+    <rect x="0" y="0" width="1050" height="120" rx="15" fill="#EFF6FF" stroke="#3B82F6" stroke-width="2"/>
+    <text x="600" y="30" text-anchor="middle" font-size="18" font-weight="bold" fill="#1E40AF">미래: AI 네이티브 다중 언어 환경</text>
+    
+    <!-- 미래 시나리오 -->
+    <g transform="translate(50, 50)">
+      <text x="0" y="0" font-size="12" fill="#1E40AF">🔮 <tspan font-weight="bold">자연어 → 다중 언어 코드</tspan>: "매출 분석해줘" → SQL(추출) + R(통계) + Python(ML) + OJS(시각화)</text>
+      <text x="0" y="20" font-size="12" fill="#1E40AF">🧠 <tspan font-weight="bold">언어별 특화 AI</tspan>: R용 통계 전문 AI, Python용 ML 전문 AI, Julia용 HPC 전문 AI</text>
+      <text x="0" y="40" font-size="12" fill="#1E40AF">⚡ <tspan font-weight="bold">실시간 최적화</tspan>: 성능 병목 자동 감지 및 Julia/C++로 자동 변환</text>
+      <text x="0" y="60" font-size="12" fill="#1E40AF">📊 <tspan font-weight="bold">지능형 문서</tspan>: 독자에 따라 기술적 깊이 자동 조절하는 적응형 출판</text>
+    </g>
+  </g>
+  
+  <!-- 연결선들과 수렴 화살표 -->
+  <!-- 시간순 연결 -->
+  <path d="M 230 120 Q 290 140 350 120" stroke="#94A3B8" stroke-width="1" stroke-dasharray="2,3" fill="none" opacity="0.5"/>
+  <path d="M 400 120 Q 460 140 520 120" stroke="#94A3B8" stroke-width="1" stroke-dasharray="2,3" fill="none" opacity="0.5"/>
+  <path d="M 570 120 Q 625 140 690 120" stroke="#94A3B8" stroke-width="1" stroke-dasharray="2,3" fill="none" opacity="0.5"/>
+  <path d="M 740 120 Q 800 140 860 120" stroke="#94A3B8" stroke-width="1" stroke-dasharray="2,3" fill="none" opacity="0.5"/>
+  
+  <!-- Julia로부터 "두 언어 문제" 해결 화살표 -->
+  <path d="M 880 120 Q 970 100 1025 120" stroke="#8B5CF6" stroke-width="2" marker-end="url(#arrow)" fill="none"/>
+  <text x="950" y="105" text-anchor="middle" font-size="12" fill="#8B5CF6" font-weight="bold">"두 언어 문제" 해결</text>
+  
+  <!-- 그 외 언어들에서 Quarto로 꿽은선 화살표 -->
+  <!-- Python에서 Quarto로 -->
+  <path d="M 350 290 L 350 320 L 1050 320 L 1050 290" stroke="#3B82F6" stroke-width="1.5" marker-end="url(#arrow)" fill="none" opacity="0.8"/>
+  
+  <!-- R에서 Quarto로 -->
+  <path d="M 520 290 L 520 320 L 1050 320 L 1050 290" stroke="#3B82F6" stroke-width="1.5" marker-end="url(#arrow)" fill="none" opacity="0.8"/>
+  
+  <!-- JavaScript에서 Quarto로 -->
+  <path d="M 690 290 L 690 320 L 1050 320 L 1050 290" stroke="#3B82F6" stroke-width="1.5" marker-end="url(#arrow)" fill="none" opacity="0.8"/>
+  
+  <text x="600" y="340" text-anchor="middle" font-size="17" fill="#3B82F6" font-weight="bold">AI/데이터과학 시대 통합</text>
+  
+  <!-- 주요 인사이트 박스 -->
+  <g transform="translate(530, 400)">
+    <rect x="0" y="0" width="140" height="100" rx="10" fill="#F3E8FF" stroke="#9333EA" stroke-width="2"/>
+    <text x="80" y="20" text-anchor="middle" font-size="14" font-weight="bold" fill="#7C3AED">핵심 인사이트</text>
+    <text x="10" y="40" font-size="11" fill="#7C3AED">각 DSL은 특정 시대의</text>
+    <text x="10" y="55" font-size="11" fill="#7C3AED">구체적 문제 해결을</text>
+    <text x="10" y="70" font-size="11" fill="#7C3AED">위해 탄생했다.</text>
+    <text x="10" y="90" font-size="11" fill="#7C3AED">지금은 통합의 시대!</text>
+  </g>
+</svg>

@@ -1,0 +1,592 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3400 1400">
+  <defs>
+    <!-- Background gradient -->
+    <linearGradient id="backgroundGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#FAFAFA;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#F5F6FA;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#EEF1F8;stop-opacity:1" />
+    </linearGradient>
+
+    <!-- Main timeline gradient -->
+    <linearGradient id="timelineGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#8B4513;stop-opacity:1" />
+      <stop offset="25%" style="stop-color:#FF6B35;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#4A90E2;stop-opacity:1" />
+      <stop offset="75%" style="stop-color:#7B68EE;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FF1493;stop-opacity:1" />
+    </linearGradient>
+
+    <!-- Era-specific gradients -->
+    <linearGradient id="scientific" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#D2691E;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#8B4513;stop-opacity:1" />
+    </linearGradient>
+
+    <linearGradient id="desktop" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#FF8C42;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FF6B35;stop-opacity:1" />
+    </linearGradient>
+
+    <linearGradient id="modern" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#6BB6FF;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#4A90E2;stop-opacity:1" />
+    </linearGradient>
+
+    <linearGradient id="cloud" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#9370DB;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#7B68EE;stop-opacity:1" />
+    </linearGradient>
+
+    <linearGradient id="ai" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#FF69B4;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FF1493;stop-opacity:1" />
+    </linearGradient>
+
+    <!-- Drop shadow filter -->
+    <filter id="cardShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="3" dy="6" stdDeviation="4" flood-color="#000000" flood-opacity="0.12"/>
+    </filter>
+
+    <!-- Text shadow -->
+    <filter id="textShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="1" dy="2" stdDeviation="1" flood-color="#000000" flood-opacity="0.3"/>
+    </filter>
+
+    <style>
+      .main-title {
+        font-family: Georgia, serif;
+        font-size: 42px;
+        font-weight: bold;
+        fill: #2C3E50;
+      }
+
+      .subtitle {
+        font-family: Arial, sans-serif;
+        font-size: 22px;
+        fill: #7F8C8D;
+      }
+
+      .field-title {
+        font-family: Arial, sans-serif;
+        font-size: 28px;
+        font-weight: bold;
+        fill: #ffffff;
+      }
+
+      .field-subtitle {
+        font-family: Arial, sans-serif;
+        font-size: 22px;
+        fill: #F8F9FA;
+      }
+
+      .case-title {
+        font-family: Arial, sans-serif;
+        font-size: 24px;
+        font-weight: bold;
+      }
+
+      .case-desc {
+        font-family: Arial, sans-serif;
+        font-size: 20px;
+        fill: #2C3E50;
+      }
+
+      .case-impact {
+        font-family: Arial, sans-serif;
+        font-size: 20px;
+        font-weight: bold;
+        fill: #27AE60;
+      }
+
+      .case-data {
+        font-family: Arial, sans-serif;
+        font-size: 19px;
+        fill: #E74C3C;
+        font-weight: bold;
+      }
+
+      .year-label {
+        font-family: Arial, sans-serif;
+        font-size: 20px;
+        font-weight: bold;
+        fill: #34495E;
+      }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="3400" height="1400" fill="url(#backgroundGradient)"/>
+
+  <!-- Title Section -->
+  <text x="1700" y="50" text-anchor="middle" class="main-title" filter="url(#textShadow)">
+    Data Science IDE History: From Scientific Computing to AI Collaboration
+  </text>
+  <text x="1700" y="80" text-anchor="middle" class="subtitle">
+    Data Science IDE History: From Scientific Computing to AI Collaboration (1984-2025)
+  </text>
+
+  <!-- Main Timeline -->
+  <rect x="150" y="695" width="3200" height="10" fill="url(#timelineGradient)" rx="5" filter="url(#cardShadow)"/>
+
+  <!-- Timeline markers -->
+  <circle cx="250" cy="700" r="8" fill="url(#scientific)" filter="url(#cardShadow)"/>
+  <circle cx="430" cy="700" r="8" fill="url(#scientific)" filter="url(#cardShadow)"/>
+  <circle cx="610" cy="700" r="8" fill="url(#desktop)" filter="url(#cardShadow)"/>
+  <circle cx="790" cy="700" r="8" fill="url(#desktop)" filter="url(#cardShadow)"/>
+  <circle cx="970" cy="700" r="8" fill="url(#modern)" filter="url(#cardShadow)"/>
+  <circle cx="1300" cy="700" r="8" fill="url(#modern)" filter="url(#cardShadow)"/>
+  <circle cx="1600" cy="700" r="8" fill="url(#modern)" filter="url(#cardShadow)"/>
+  <circle cx="1900" cy="700" r="8" fill="url(#cloud)" filter="url(#cardShadow)"/>
+  <circle cx="2200" cy="700" r="8" fill="url(#cloud)" filter="url(#cardShadow)"/>
+  <circle cx="2500" cy="700" r="8" fill="url(#cloud)" filter="url(#cardShadow)"/>
+  <circle cx="2800" cy="700" r="8" fill="url(#cloud)" filter="url(#cardShadow)"/>
+  <circle cx="3050" cy="700" r="8" fill="url(#ai)" filter="url(#cardShadow)"/>
+
+  <!-- Year labels -->
+  <text x="250" y="725" text-anchor="middle" class="year-label">1984</text>
+  <text x="430" y="725" text-anchor="middle" class="year-label">1988</text>
+  <text x="610" y="725" text-anchor="middle" class="year-label">1993</text>
+  <text x="790" y="725" text-anchor="middle" class="year-label">1990s</text>
+  <text x="970" y="725" text-anchor="middle" class="year-label">2001</text>
+  <text x="1300" y="725" text-anchor="middle" class="year-label">2009</text>
+  <text x="1600" y="725" text-anchor="middle" class="year-label">2011</text>
+  <text x="1900" y="725" text-anchor="middle" class="year-label">2013</text>
+  <text x="2200" y="725" text-anchor="middle" class="year-label">2014</text>
+  <text x="2500" y="725" text-anchor="middle" class="year-label">2017</text>
+  <text x="2800" y="725" text-anchor="middle" class="year-label">2019</text>
+  <text x="3050" y="725" text-anchor="middle" class="year-label">2024</text>
+
+  <!-- 1. MATLAB (1984) - Scientific Computing Pioneer -->
+  <g transform="translate(250, 180)">
+    <rect x="-160" y="0" width="320" height="480" fill="white" stroke="url(#scientific)" stroke-width="3" rx="12" filter="url(#cardShadow)"/>
+
+    <!-- Header -->
+    <rect x="-160" y="0" width="320" height="60" fill="url(#scientific)" rx="12"/>
+    <text class="field-title" x="0" y="25" text-anchor="middle">🔬 Scientific Computing</text>
+    <text class="field-subtitle" x="0" y="45" text-anchor="middle">Scientific Computing</text>
+
+    <!-- Content -->
+    <text class="case-title" x="0" y="90" text-anchor="middle" fill="#8B4513">MATLAB</text>
+    <text class="case-desc" x="0" y="115" text-anchor="middle">(1984)</text>
+
+    <text class="case-desc" x="0" y="150" text-anchor="middle">🧮 Matrix Laboratory</text>
+    <text class="case-desc" x="0" y="175" text-anchor="middle">📊 Integrated graphics environment</text>
+
+    <text class="case-impact" x="0" y="205" text-anchor="middle">Impact: Scientific computing IDE pioneer</text>
+    <text class="case-impact" x="0" y="230" text-anchor="middle">Engineering standard tool</text>
+
+    <text class="case-data" x="0" y="260" text-anchor="middle">👨‍💻 Cleve Moler &amp; Jack Little</text>
+    <text class="case-data" x="0" y="285" text-anchor="middle">🏢 MathWorks founded</text>
+
+    <text class="case-title" x="0" y="325" text-anchor="middle" fill="#8B4513">PC-MATLAB</text>
+    <text class="case-desc" x="0" y="350" text-anchor="middle">(December 1984)</text>
+
+    <text class="case-desc" x="0" y="380" text-anchor="middle">💻 IBM PC-based</text>
+    <text class="case-desc" x="0" y="405" text-anchor="middle">🛠️ Toolbox system</text>
+
+    <text class="case-impact" x="0" y="435" text-anchor="middle">Impact: Commercial scientific computing</text>
+    <text class="case-data" x="0" y="460" text-anchor="middle">🎯 Control &amp; Signal toolboxes</text>
+
+    <!-- Connection line -->
+    <line x1="0" y1="480" x2="0" y2="510" stroke="#8B4513" stroke-width="3"/>
+  </g>
+
+  <!-- 2. Mathematica (1988) - Symbolic Computing -->
+  <g transform="translate(430, 750)">
+    <rect x="-160" y="0" width="320" height="480" fill="white" stroke="url(#scientific)" stroke-width="3" rx="12" filter="url(#cardShadow)"/>
+
+    <!-- Header -->
+    <rect x="-160" y="0" width="320" height="60" fill="url(#scientific)" rx="12"/>
+    <text class="field-title" x="0" y="25" text-anchor="middle">🔣 Symbolic Computing</text>
+    <text class="field-subtitle" x="0" y="45" text-anchor="middle">Symbolic Computing</text>
+
+    <!-- Content -->
+    <text class="case-title" x="0" y="90" text-anchor="middle" fill="#8B4513">Mathematica</text>
+    <text class="case-desc" x="0" y="115" text-anchor="middle">(1988)</text>
+
+    <text class="case-desc" x="0" y="150" text-anchor="middle">📓 Notebook interface</text>
+    <text class="case-desc" x="0" y="175" text-anchor="middle">∫ Symbolic mathematics</text>
+
+    <text class="case-impact" x="0" y="205" text-anchor="middle">Impact: Notebook paradigm pioneer</text>
+    <text class="case-impact" x="0" y="230" text-anchor="middle">Interactive document innovation</text>
+
+    <text class="case-data" x="0" y="260" text-anchor="middle">🧠 Stephen Wolfram</text>
+    <text class="case-data" x="0" y="285" text-anchor="middle">🔬 Wolfram Research</text>
+
+    <text class="case-title" x="0" y="325" text-anchor="middle" fill="#8B4513">Wolfram Language</text>
+    <text class="case-desc" x="0" y="350" text-anchor="middle">(1988+)</text>
+
+    <text class="case-desc" x="0" y="380" text-anchor="middle">🌐 Knowledge-based computing</text>
+    <text class="case-desc" x="0" y="405" text-anchor="middle">📊 Visualization integration</text>
+
+    <text class="case-impact" x="0" y="435" text-anchor="middle">Impact: Computational linguistics</text>
+    <text class="case-data" x="0" y="460" text-anchor="middle">🎯 Scientific publishing innovation</text>
+
+    <!-- Connection line -->
+    <line x1="0" y1="0" x2="0" y2="-40" stroke="#8B4513" stroke-width="3"/>
+  </g>
+
+  <!-- 3. R & S-PLUS (1993) - Statistical Computing -->
+  <g transform="translate(610, 180)">
+    <rect x="-160" y="0" width="320" height="480" fill="white" stroke="url(#desktop)" stroke-width="3" rx="12" filter="url(#cardShadow)"/>
+
+    <!-- Header -->
+    <rect x="-160" y="0" width="320" height="60" fill="url(#desktop)" rx="12"/>
+    <text class="field-title" x="0" y="25" text-anchor="middle">📈 Statistical Computing</text>
+    <text class="field-subtitle" x="0" y="45" text-anchor="middle">Statistical Computing</text>
+
+    <!-- Content -->
+    <text class="case-title" x="0" y="90" text-anchor="middle" fill="#FF6B35">R Language</text>
+    <text class="case-desc" x="0" y="115" text-anchor="middle">(1993)</text>
+
+    <text class="case-desc" x="0" y="150" text-anchor="middle">📊 Statistical analysis</text>
+    <text class="case-desc" x="0" y="175" text-anchor="middle">📦 Package ecosystem</text>
+
+    <text class="case-impact" x="0" y="205" text-anchor="middle">Impact: Open source statistics</text>
+    <text class="case-impact" x="0" y="230" text-anchor="middle">Data science foundation</text>
+
+    <text class="case-data" x="0" y="260" text-anchor="middle">👥 Ross Ihaka &amp; Robert Gentleman</text>
+    <text class="case-data" x="0" y="285" text-anchor="middle">🏫 University of Auckland</text>
+
+    <text class="case-title" x="0" y="325" text-anchor="middle" fill="#FF6B35">S-PLUS</text>
+    <text class="case-desc" x="0" y="350" text-anchor="middle">(1988-2008)</text>
+
+    <text class="case-desc" x="0" y="380" text-anchor="middle">💼 Commercial S language</text>
+    <text class="case-desc" x="0" y="405" text-anchor="middle">🏢 Bell Labs origin</text>
+
+    <text class="case-impact" x="0" y="435" text-anchor="middle">Impact: R language inspiration</text>
+    <text class="case-data" x="0" y="460" text-anchor="middle">🎯 Statistical software standard</text>
+
+    <!-- Connection line -->
+    <line x1="0" y1="480" x2="0" y2="510" stroke="#FF6B35" stroke-width="3"/>
+  </g>
+
+  <!-- 4. SPSS (1990s GUI) - Point-and-Click Statistics -->
+  <g transform="translate(790, 750)">
+    <rect x="-160" y="0" width="320" height="480" fill="white" stroke="url(#desktop)" stroke-width="3" rx="12" filter="url(#cardShadow)"/>
+
+    <!-- Header -->
+    <rect x="-160" y="0" width="320" height="60" fill="url(#desktop)" rx="12"/>
+    <text class="field-title" x="0" y="25" text-anchor="middle">🖱️ GUI Statistics</text>
+    <text class="field-subtitle" x="0" y="45" text-anchor="middle">GUI Statistics</text>
+
+    <!-- Content -->
+    <text class="case-title" x="0" y="90" text-anchor="middle" fill="#FF6B35">SPSS</text>
+    <text class="case-desc" x="0" y="115" text-anchor="middle">(1990s GUI)</text>
+
+    <text class="case-desc" x="0" y="150" text-anchor="middle">📊 Point and click</text>
+    <text class="case-desc" x="0" y="175" text-anchor="middle">📋 Menu-based analysis</text>
+
+    <text class="case-impact" x="0" y="205" text-anchor="middle">Impact: Statistical analysis democratization</text>
+    <text class="case-impact" x="0" y="230" text-anchor="middle">Non-programmer accessibility</text>
+
+    <text class="case-data" x="0" y="260" text-anchor="middle">📈 Statistical Package for Social Sciences</text>
+    <text class="case-data" x="0" y="285" text-anchor="middle">🏫 Social sciences research standard</text>
+
+    <text class="case-title" x="0" y="325" text-anchor="middle" fill="#FF6B35">Windows GUI Era</text>
+    <text class="case-desc" x="0" y="350" text-anchor="middle">(1992+)</text>
+
+    <text class="case-desc" x="0" y="380" text-anchor="middle">🖼️ Visual interface</text>
+    <text class="case-desc" x="0" y="405" text-anchor="middle">📊 Chart generator</text>
+
+    <text class="case-impact" x="0" y="435" text-anchor="middle">Impact: GUI-based data analysis</text>
+    <text class="case-data" x="0" y="460" text-anchor="middle">🎯 Drag and drop analysis</text>
+
+    <!-- Connection line -->
+    <line x1="0" y1="0" x2="0" y2="-40" stroke="#FF6B35" stroke-width="3"/>
+  </g>
+
+  <!-- 5. IPython (2001) - Interactive Python -->
+  <g transform="translate(970, 180)">
+    <rect x="-160" y="0" width="320" height="480" fill="white" stroke="url(#modern)" stroke-width="3" rx="12" filter="url(#cardShadow)"/>
+
+    <!-- Header -->
+    <rect x="-160" y="0" width="320" height="60" fill="url(#modern)" rx="12"/>
+    <text class="field-title" x="0" y="25" text-anchor="middle">🐍 Interactive Python</text>
+    <text class="field-subtitle" x="0" y="45" text-anchor="middle">Interactive Python</text>
+
+    <!-- Content -->
+    <text class="case-title" x="0" y="90" text-anchor="middle" fill="#4A90E2">IPython</text>
+    <text class="case-desc" x="0" y="115" text-anchor="middle">(2001)</text>
+
+    <text class="case-desc" x="0" y="150" text-anchor="middle">⚡ Enhanced Python shell</text>
+    <text class="case-desc" x="0" y="175" text-anchor="middle">🔍 Introspection</text>
+
+    <text class="case-impact" x="0" y="205" text-anchor="middle">Impact: Interactive computing foundation</text>
+    <text class="case-impact" x="0" y="230" text-anchor="middle">Beginning of notebook revolution</text>
+
+    <text class="case-data" x="0" y="260" text-anchor="middle">👨‍💻 Fernando Pérez</text>
+    <text class="case-data" x="0" y="285" text-anchor="middle">🎓 UC Berkeley</text>
+
+    <text class="case-title" x="0" y="325" text-anchor="middle" fill="#4A90E2">IPython Notebook</text>
+    <text class="case-desc" x="0" y="350" text-anchor="middle">(2011)</text>
+
+    <text class="case-desc" x="0" y="380" text-anchor="middle">📓 Web-based notebook</text>
+    <text class="case-desc" x="0" y="405" text-anchor="middle">💻 Browser interface</text>
+
+    <text class="case-impact" x="0" y="435" text-anchor="middle">Impact: Jupyter notebook evolution</text>
+    <text class="case-data" x="0" y="460" text-anchor="middle">🎯 Reproducible research</text>
+
+    <!-- Connection line -->
+    <line x1="0" y1="480" x2="0" y2="510" stroke="#4A90E2" stroke-width="3"/>
+  </g>
+
+  <!-- 6. Spyder (2009) - Scientific Python IDE -->
+  <g transform="translate(1300, 750)">
+    <rect x="-160" y="0" width="320" height="480" fill="white" stroke="url(#modern)" stroke-width="3" rx="12" filter="url(#cardShadow)"/>
+
+    <!-- Header -->
+    <rect x="-160" y="0" width="320" height="60" fill="url(#modern)" rx="12"/>
+    <text class="field-title" x="0" y="25" text-anchor="middle">🔬 Scientific Python</text>
+    <text class="field-subtitle" x="0" y="45" text-anchor="middle">Scientific Python</text>
+
+    <!-- Content -->
+    <text class="case-title" x="0" y="90" text-anchor="middle" fill="#4A90E2">Spyder</text>
+    <text class="case-desc" x="0" y="115" text-anchor="middle">(2009)</text>
+
+    <text class="case-desc" x="0" y="150" text-anchor="middle">🧪 Scientific computing dedicated</text>
+    <text class="case-desc" x="0" y="175" text-anchor="middle">📊 Variable explorer</text>
+
+    <text class="case-impact" x="0" y="205" text-anchor="middle">Impact: Python data science IDE</text>
+    <text class="case-impact" x="0" y="230" text-anchor="middle">MATLAB-style interface</text>
+
+    <text class="case-data" x="0" y="260" text-anchor="middle">👨‍💻 Pierre Raybaut</text>
+    <text class="case-data" x="0" y="285" text-anchor="middle">🐍 Python Qt-based</text>
+
+    <text class="case-title" x="0" y="325" text-anchor="middle" fill="#4A90E2">Scientific Environment</text>
+    <text class="case-desc" x="0" y="350" text-anchor="middle">(2009+)</text>
+
+    <text class="case-desc" x="0" y="380" text-anchor="middle">📦 NumPy/SciPy integration</text>
+    <text class="case-desc" x="0" y="405" text-anchor="middle">📈 Matplotlib visualization</text>
+
+    <text class="case-impact" x="0" y="435" text-anchor="middle">Impact: IDE for scientists</text>
+    <text class="case-data" x="0" y="460" text-anchor="middle">🎯 Data analysis specialized</text>
+
+    <!-- Connection line -->
+    <line x1="0" y1="0" x2="0" y2="-40" stroke="#4A90E2" stroke-width="3"/>
+  </g>
+
+  <!-- 7. RStudio (2011) - R-Focused IDE -->
+  <g transform="translate(1600, 180)">
+    <rect x="-160" y="0" width="320" height="480" fill="white" stroke="url(#modern)" stroke-width="3" rx="12" filter="url(#cardShadow)"/>
+
+    <!-- Header -->
+    <rect x="-160" y="0" width="320" height="60" fill="url(#modern)" rx="12"/>
+    <text class="field-title" x="0" y="25" text-anchor="middle">📊 R-Focused IDE</text>
+    <text class="field-subtitle" x="0" y="45" text-anchor="middle">R-Focused IDE</text>
+
+    <!-- Content -->
+    <text class="case-title" x="0" y="90" text-anchor="middle" fill="#4A90E2">RStudio</text>
+    <text class="case-desc" x="0" y="115" text-anchor="middle">(2011)</text>
+
+    <text class="case-desc" x="0" y="150" text-anchor="middle">📝 R Markdown</text>
+    <text class="case-desc" x="0" y="175" text-anchor="middle">📊 Integrated data viewer</text>
+
+    <text class="case-impact" x="0" y="205" text-anchor="middle">Impact: R ecosystem innovation</text>
+    <text class="case-impact" x="0" y="230" text-anchor="middle">Reproducible research</text>
+
+    <text class="case-data" x="0" y="260" text-anchor="middle">👨‍💻 JJ Allaire</text>
+    <text class="case-data" x="0" y="285" text-anchor="middle">🏢 RStudio PBC (now Posit)</text>
+
+    <text class="case-title" x="0" y="325" text-anchor="middle" fill="#4A90E2">Reproducible Research</text>
+    <text class="case-desc" x="0" y="350" text-anchor="middle">(2011+)</text>
+
+    <text class="case-desc" x="0" y="380" text-anchor="middle">📋 R Markdown integration</text>
+    <text class="case-desc" x="0" y="405" text-anchor="middle">📦 Package management</text>
+
+    <text class="case-impact" x="0" y="435" text-anchor="middle">Impact: Open source data science</text>
+    <text class="case-data" x="0" y="460" text-anchor="middle">🎯 Shiny app development</text>
+
+    <!-- Connection line -->
+    <line x1="0" y1="480" x2="0" y2="510" stroke="#4A90E2" stroke-width="3"/>
+  </g>
+
+  <!-- 8. Databricks (2013) - Big Data Platform -->
+  <g transform="translate(1900, 750)">
+    <rect x="-160" y="0" width="320" height="480" fill="white" stroke="url(#cloud)" stroke-width="3" rx="12" filter="url(#cardShadow)"/>
+
+    <!-- Header -->
+    <rect x="-160" y="0" width="320" height="60" fill="url(#cloud)" rx="12"/>
+    <text class="field-title" x="0" y="25" text-anchor="middle">☁️ Big Data Platform</text>
+    <text class="field-subtitle" x="0" y="45" text-anchor="middle">Big Data Platform</text>
+
+    <!-- Content -->
+    <text class="case-title" x="0" y="90" text-anchor="middle" fill="#7B68EE">Databricks</text>
+    <text class="case-desc" x="0" y="115" text-anchor="middle">(2013)</text>
+
+    <text class="case-desc" x="0" y="150" text-anchor="middle">⚡ Apache Spark-based</text>
+    <text class="case-desc" x="0" y="175" text-anchor="middle">☁️ Cloud native</text>
+
+    <text class="case-impact" x="0" y="205" text-anchor="middle">Impact: Unified analytics platform</text>
+    <text class="case-impact" x="0" y="230" text-anchor="middle">Big data democratization</text>
+
+    <text class="case-data" x="0" y="260" text-anchor="middle">👥 Spark creators</text>
+    <text class="case-data" x="0" y="285" text-anchor="middle">🎓 UC Berkeley AMPLab</text>
+
+    <text class="case-title" x="0" y="325" text-anchor="middle" fill="#7B68EE">Unified Analytics</text>
+    <text class="case-desc" x="0" y="350" text-anchor="middle">(2014+)</text>
+
+    <text class="case-desc" x="0" y="380" text-anchor="middle">🤝 Collaborative notebooks</text>
+    <text class="case-desc" x="0" y="405" text-anchor="middle">🔗 MLOps integration</text>
+
+    <text class="case-impact" x="0" y="435" text-anchor="middle">Impact: Enterprise data science</text>
+    <text class="case-data" x="0" y="460" text-anchor="middle">🎯 $62B valuation (2024)</text>
+
+    <!-- Connection line -->
+    <line x1="0" y1="0" x2="0" y2="-40" stroke="#7B68EE" stroke-width="3"/>
+  </g>
+
+  <!-- 9. Jupyter/JupyterLab (2014/2018) - Multi-language Notebooks -->
+  <g transform="translate(2200, 180)">
+    <rect x="-160" y="0" width="320" height="480" fill="white" stroke="url(#cloud)" stroke-width="3" rx="12" filter="url(#cardShadow)"/>
+
+    <!-- Header -->
+    <rect x="-160" y="0" width="320" height="60" fill="url(#cloud)" rx="12"/>
+    <text class="field-title" x="0" y="25" text-anchor="middle">📓 Multi-language Notebooks</text>
+    <text class="field-subtitle" x="0" y="45" text-anchor="middle">Multi-language Notebooks</text>
+
+    <!-- Content -->
+    <text class="case-title" x="0" y="90" text-anchor="middle" fill="#7B68EE">Jupyter</text>
+    <text class="case-desc" x="0" y="115" text-anchor="middle">(2014)</text>
+
+    <text class="case-desc" x="0" y="150" text-anchor="middle">🌐 Language-agnostic</text>
+    <text class="case-desc" x="0" y="175" text-anchor="middle">📚 100+ language support</text>
+
+    <text class="case-impact" x="0" y="205" text-anchor="middle">Impact: Notebook standardization</text>
+    <text class="case-impact" x="0" y="230" text-anchor="middle">Data science de facto standard</text>
+
+    <text class="case-data" x="0" y="260" text-anchor="middle">📊 IPython evolution</text>
+    <text class="case-data" x="0" y="285" text-anchor="middle">🌍 Project Jupyter</text>
+
+    <text class="case-title" x="0" y="325" text-anchor="middle" fill="#7B68EE">JupyterLab</text>
+    <text class="case-desc" x="0" y="350" text-anchor="middle">(2018)</text>
+
+    <text class="case-desc" x="0" y="380" text-anchor="middle">🔧 Extensible IDE</text>
+    <text class="case-desc" x="0" y="405" text-anchor="middle">🎨 Observable (2018) - JS notebooks</text>
+
+    <text class="case-impact" x="0" y="435" text-anchor="middle">Impact: Web-based data science</text>
+    <text class="case-data" x="0" y="460" text-anchor="middle">🎯 Open source standard</text>
+
+    <!-- Connection line -->
+    <line x1="0" y1="480" x2="0" y2="510" stroke="#7B68EE" stroke-width="3"/>
+  </g>
+
+  <!-- 10. Google Colab (2017) - Cloud Notebooks -->
+  <g transform="translate(2500, 750)">
+    <rect x="-160" y="0" width="320" height="480" fill="white" stroke="url(#cloud)" stroke-width="3" rx="12" filter="url(#cardShadow)"/>
+
+    <!-- Header -->
+    <rect x="-160" y="0" width="320" height="60" fill="url(#cloud)" rx="12"/>
+    <text class="field-title" x="0" y="25" text-anchor="middle">🚀 Cloud Notebooks</text>
+    <text class="field-subtitle" x="0" y="45" text-anchor="middle">Cloud Notebooks</text>
+
+    <!-- Content -->
+    <text class="case-title" x="0" y="90" text-anchor="middle" fill="#7B68EE">Google Colab</text>
+    <text class="case-desc" x="0" y="115" text-anchor="middle">(2017)</text>
+
+    <text class="case-desc" x="0" y="150" text-anchor="middle">🆓 Free GPU/TPU</text>
+    <text class="case-desc" x="0" y="175" text-anchor="middle">🤝 Real-time collaboration</text>
+
+    <text class="case-impact" x="0" y="205" text-anchor="middle">Impact: Accessibility revolution</text>
+    <text class="case-impact" x="0" y="230" text-anchor="middle">AI/ML learning democratization</text>
+
+    <text class="case-data" x="0" y="260" text-anchor="middle">🔬 Google Research</text>
+    <text class="case-data" x="0" y="285" text-anchor="middle">📱 Jupyter compatible</text>
+
+    <text class="case-title" x="0" y="325" text-anchor="middle" fill="#7B68EE">Cloud Ecosystem</text>
+    <text class="case-desc" x="0" y="350" text-anchor="middle">(2019+)</text>
+
+    <text class="case-desc" x="0" y="380" text-anchor="middle">📊 Hex (2019) - Modern analytics</text>
+    <text class="case-desc" x="0" y="405" text-anchor="middle">🤝 Deepnote collaboration</text>
+
+    <text class="case-impact" x="0" y="435" text-anchor="middle">Impact: Cloud-first data science</text>
+    <text class="case-data" x="0" y="460" text-anchor="middle">🎯 Zero-setup accessibility</text>
+
+    <!-- Connection line -->
+    <line x1="0" y1="0" x2="0" y2="-40" stroke="#7B68EE" stroke-width="3"/>
+  </g>
+
+  <!-- 11. VS Code Data Science (2019) - Universal Editor -->
+  <g transform="translate(2800, 180)">
+    <rect x="-160" y="0" width="320" height="480" fill="white" stroke="url(#cloud)" stroke-width="3" rx="12" filter="url(#cardShadow)"/>
+
+    <!-- Header -->
+    <rect x="-160" y="0" width="320" height="60" fill="url(#cloud)" rx="12"/>
+    <text class="field-title" x="0" y="25" text-anchor="middle">🔧 Universal Editor</text>
+    <text class="field-subtitle" x="0" y="45" text-anchor="middle">Universal IDE</text>
+
+    <!-- Content -->
+    <text class="case-title" x="0" y="90" text-anchor="middle" fill="#7B68EE">VS Code Data Science</text>
+    <text class="case-desc" x="0" y="115" text-anchor="middle">(2019)</text>
+
+    <text class="case-desc" x="0" y="150" text-anchor="middle">📓 Native Jupyter support</text>
+    <text class="case-desc" x="0" y="175" text-anchor="middle">🔍 Variable explorer</text>
+
+    <text class="case-impact" x="0" y="205" text-anchor="middle">Impact: Popular editor becomes DS IDE</text>
+    <text class="case-impact" x="0" y="230" text-anchor="middle">Hybrid script/notebook workflow</text>
+
+    <text class="case-data" x="0" y="260" text-anchor="middle">🌍 World's most popular editor</text>
+    <text class="case-data" x="0" y="285" text-anchor="middle">🐍 Python extension ecosystem</text>
+
+    <text class="case-title" x="0" y="325" text-anchor="middle" fill="#7B68EE">Modern Ecosystem</text>
+    <text class="case-desc" x="0" y="350" text-anchor="middle">(2019+)</text>
+
+    <text class="case-desc" x="0" y="380" text-anchor="middle">🏢 DataSpell (2021) - JetBrains DS IDE</text>
+    <text class="case-desc" x="0" y="405" text-anchor="middle">☁️ Deepnote (2019) - Cloud collaboration</text>
+
+    <text class="case-impact" x="0" y="435" text-anchor="middle">Impact: IDE market explosion</text>
+    <text class="case-data" x="0" y="460" text-anchor="middle">🎯 Choice and specialization</text>
+
+    <!-- Connection line -->
+    <line x1="0" y1="480" x2="0" y2="510" stroke="#7B68EE" stroke-width="3"/>
+  </g>
+
+  <!-- 12. Positron (2024) - Next-Gen Multi-language -->
+  <g transform="translate(3050, 750)">
+    <rect x="-160" y="0" width="320" height="480" fill="white" stroke="url(#ai)" stroke-width="3" rx="12" filter="url(#cardShadow)"/>
+
+    <!-- Header -->
+    <rect x="-160" y="0" width="320" height="60" fill="url(#ai)" rx="12"/>
+    <text class="field-title" x="0" y="25" text-anchor="middle">🚀 Next-Gen IDE</text>
+    <text class="field-subtitle" x="0" y="45" text-anchor="middle">Multi-language Platform</text>
+
+    <!-- Content -->
+    <text class="case-title" x="0" y="90" text-anchor="middle" fill="#FF1493">Positron</text>
+    <text class="case-desc" x="0" y="115" text-anchor="middle">(2024)</text>
+
+    <text class="case-desc" x="0" y="150" text-anchor="middle">⚖️ Python &amp; R as equals</text>
+    <text class="case-desc" x="0" y="175" text-anchor="middle">🏗️ Built on VS Code foundation</text>
+
+    <text class="case-impact" x="0" y="205" text-anchor="middle">Impact: RStudio evolution</text>
+    <text class="case-impact" x="0" y="230" text-anchor="middle">Multi-language data science</text>
+
+    <text class="case-data" x="0" y="260" text-anchor="middle">🏢 Posit (formerly RStudio)</text>
+    <text class="case-data" x="0" y="285" text-anchor="middle">🤖 AI assistant integration</text>
+
+    <text class="case-title" x="0" y="325" text-anchor="middle" fill="#FF1493">Future Vision</text>
+    <text class="case-desc" x="0" y="350" text-anchor="middle">(2024+)</text>
+
+    <text class="case-desc" x="0" y="380" text-anchor="middle">🎯 SQL and other languages</text>
+    <text class="case-desc" x="0" y="405" text-anchor="middle">🔮 AI-native development</text>
+
+    <text class="case-impact" x="0" y="435" text-anchor="middle">Impact: Unified data science platform</text>
+    <text class="case-data" x="0" y="460" text-anchor="middle">🚀 Cross-language collaboration</text>
+
+    <!-- Connection line -->
+    <line x1="0" y1="0" x2="0" y2="-40" stroke="#FF1493" stroke-width="3"/>
+  </g>
+
+  <!-- Bottom summary -->
+  <rect x="150" y="1300" width="3200" height="80" fill="white" stroke="#2C3E50" stroke-width="3" rx="12" filter="url(#cardShadow)"/>
+  <text x="1750" y="1330" text-anchor="middle" class="case-title" fill="#2C3E50">
+    Data Science IDE Evolution: 41+ Years of Innovation from Scientific Computing to AI-Native Development
+  </text>
+  <text x="1750" y="1355" text-anchor="middle" class="case-desc">
+    From MATLAB (1984) to Positron (2024): Transforming data science through collaborative, multi-language platforms
+  </text>
+  <text x="1750" y="1375" text-anchor="middle" class="case-impact">
+    "Evolution from isolated tools to AI-integrated ecosystems democratizes data science" — Enabling universal access
+  </text>
+
+</svg>

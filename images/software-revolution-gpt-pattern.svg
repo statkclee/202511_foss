@@ -1,0 +1,209 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 900" width="1400" height="900">
+  <defs>
+    <style><![CDATA[
+      .title { font-family: Inter, Segoe UI, Arial, sans-serif; font-size: 40px; font-weight: 900; fill: #f8fafc; }
+      .subtitle { font-family: Inter, Segoe UI, Arial, sans-serif; font-size: 22px; font-weight: 600; fill: #cbd5e1; }
+      .h1 { font-family: Inter, Segoe UI, Arial, sans-serif; font-size: 26px; font-weight: 800; fill: #ffffff; }
+      .h2 { font-family: Inter, Segoe UI, Arial, sans-serif; font-size: 20px; font-weight: 800; fill: #f1f5f9; }
+      .p { font-family: Inter, Segoe UI, Arial, sans-serif; font-size: 16px; font-weight: 600; fill: #e5e7eb; }
+      .small { font-family: Inter, Segoe UI, Arial, sans-serif; font-size: 14px; font-weight: 700; fill: #cbd5e1; }
+      .year { font-family: Inter, Segoe UI, Arial, sans-serif; font-size: 18px; font-weight: 900; fill: #fbbf24; }
+      .phase-title { font-family: Inter, Segoe UI, Arial, sans-serif; font-size: 24px; font-weight: 800; }
+    ]]></style>
+
+    <!-- Background -->
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+
+    <!-- Phase gradients -->
+    <linearGradient id="gradPhase1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#dc2626"/>
+      <stop offset="100%" stop-color="#b91c1c"/>
+    </linearGradient>
+
+    <linearGradient id="gradPhase2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#d97706"/>
+    </linearGradient>
+
+    <linearGradient id="gradPhase3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10b981"/>
+      <stop offset="100%" stop-color="#059669"/>
+    </linearGradient>
+
+    <!-- Effects -->
+    <filter id="shadow"><feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000" flood-opacity="0.3"/></filter>
+    <filter id="glow"><feDropShadow dx="0" dy="0" stdDeviation="12" flood-color="#fbbf24" flood-opacity="0.4"/></filter>
+
+    <!-- Arrow markers -->
+    <marker id="arrow" markerWidth="12" markerHeight="8" refX="10" refY="4" orient="auto">
+      <polygon points="0 0, 12 4, 0 8" fill="#34d399"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1400" height="900" fill="url(#bg)"/>
+
+  <!-- Header -->
+  <text x="700" y="60" text-anchor="middle" class="title">소프트웨어 혁명: GPT 패턴의 재현</text>
+  <text x="700" y="95" text-anchor="middle" class="subtitle">Software Revolution: Repeating GPT Pattern (1940s-2020s)</text>
+
+  <!-- Timeline -->
+  <g transform="translate(100,200)">
+    <!-- Timeline line -->
+    <line x1="0" y1="50" x2="1200" y2="50" stroke="#64748b" stroke-width="4"/>
+    
+    <!-- Phase 1: General Foundation (1940s-1970s) -->
+    <g>
+      <rect x="0" y="80" width="400" height="270" rx="15" fill="url(#gradPhase1)" filter="url(#shadow)" opacity="0.9"/>
+      <text x="200" y="110" text-anchor="middle" class="phase-title" fill="#000">1단계: 범용 기반 (1940s-1970s)</text>
+      <text x="200" y="135" text-anchor="middle" class="small" fill="#000">General Foundation - 30년</text>
+      
+      <!-- Computer icon -->
+      <text x="200" y="180" text-anchor="middle" style="font-size: 40px;">🖥️</text>
+      
+      <g transform="translate(20,200)">
+        <text x="0" y="0" class="h2" fill="#fed7aa">범용 기술:</text>
+        <text x="0" y="25" class="p" fill="#000" font-size="13px">• 1946: ENIAC - 최초 프로그래밍 가능 컴퓨터</text>
+        <text x="0" y="45" class="p" fill="#000" font-size="13px">• 1957: FORTRAN - 최초 고급 프로그래밍 언어</text>
+        <text x="0" y="65" class="p" fill="#000" font-size="13px">• 1958: 집적회로(IC) - 트랜지스터 칩 집적</text>
+        <text x="0" y="85" class="p" fill="#000" font-size="13px">• 1960s: 시분할 시스템 - 다중 사용자 동시</text>
+        <text x="0" y="105" class="p" fill="#000" font-size="13px">• 1969: ARPANET - 인터넷의 시초</text>
+        <text x="0" y="125" class="p" fill="#000" font-size="13px">• 1971: 마이크로프로세서 - 개인용 컴퓨터</text>
+      </g>
+      
+      <!-- Timeline marker -->
+      <circle cx="200" cy="50" r="8" fill="#dc2626"/>
+      <text x="200" y="30" text-anchor="middle" class="year">1940s</text>
+    </g>
+
+    <!-- Arrow 1 -->
+    <line x1="360" y1="200" x2="420" y2="200" stroke="#34d399" stroke-width="6" marker-end="url(#arrow)"/>
+    <text x="390" y="170" text-anchor="middle" class="small" fill="#34d399">플랫폼화</text>
+
+    <!-- Phase 2: Platform Specialization (1970s-1990s) -->
+    <g transform="translate(430,0)">
+      <rect x="0" y="80" width="340" height="270" rx="15" fill="url(#gradPhase2)" filter="url(#shadow)" opacity="0.9"/>
+      <text x="170" y="110" text-anchor="middle" class="phase-title" fill="#000">2단계: 플랫폼 전문화</text>
+      <text x="170" y="135" text-anchor="middle" class="small" fill="#000">Platform Era - 20년</text>
+      
+      <!-- OS icon -->
+      <text x="170" y="180" text-anchor="middle" style="font-size: 40px;">💿</text>
+      
+      <g transform="translate(20,200)">
+        <text x="0" y="0" class="h2" fill="#fed7aa">플랫폼 구축:</text>
+        <text x="0" y="25" class="p" fill="#000" font-size="13px">• 1970: UNIX - 최초 현대적 운영체제</text>
+        <text x="0" y="48" class="p" fill="#000" font-size="13px">• 1981: MS-DOS - PC 운영체제 표준</text>
+        <text x="0" y="71" class="p" fill="#000" font-size="13px">• 1984: Mac OS - GUI 운영체제</text>
+        <text x="0" y="94" class="p" fill="#000" font-size="13px">• 1991: Linux - 오픈소스 운영체제</text>
+        <text x="0" y="117" class="p" fill="#000" font-size="13px">• 2008: Android - 모바일 운영체제</text>
+      </g>
+      
+      <!-- Timeline marker -->
+      <circle cx="170" cy="50" r="8" fill="#f59e0b"/>
+      <text x="170" y="30" text-anchor="middle" class="year">1970s</text>
+    </g>
+
+    <!-- Arrow 2 -->
+    <line x1="780" y1="200" x2="840" y2="200" stroke="#34d399" stroke-width="6" marker-end="url(#arrow)"/>
+    <text x="810" y="170" text-anchor="middle" class="small" fill="#34d399">앱 폭발</text>
+
+    <!-- Phase 3: Application Explosion (1990s-2020s) -->
+    <g transform="translate(850,0)">
+      <rect x="0" y="80" width="350" height="270" rx="15" fill="url(#gradPhase3)" filter="url(#shadow)" opacity="0.9"/>
+      <text x="175" y="110" text-anchor="middle" class="phase-title" fill="#000">3단계: 애플리케이션 폭발</text>
+      <text x="175" y="135" text-anchor="middle" class="small" fill="#000">App Explosion - 30년</text>
+      
+      <!-- Apps icon -->
+      <text x="175" y="180" text-anchor="middle" style="font-size: 40px;">📱</text>
+      
+      <g transform="translate(20,200)">
+        <text x="0" y="0" class="h2" fill="#a7f3d0">전문화 완성:</text>
+        <text x="0" y="25" class="p" fill="#000" font-size="13px">• 1990: Office Suite - 문서/업무 생산성</text>
+        <text x="0" y="43" class="p" fill="#000" font-size="13px">• 1990: Photoshop - 디자인/그래픽</text>
+        <text x="0" y="61" class="p" fill="#000" font-size="13px">• 1995: 웹 브라우저 - 인터넷 접근</text>
+        <text x="0" y="79" class="p" fill="#000" font-size="13px">• 2004: Facebook/SNS - 소셜 미디어</text>
+        <text x="0" y="97" class="p" fill="#000" font-size="13px">• 2007: SaaS - 클라우드 기반 앱</text>
+        <text x="0" y="115" class="p" fill="#000" font-size="13px">• 2008: 모바일 앱 - 스마트폰 생태계</text>
+        <text x="0" y="133" class="p" fill="#000" font-size="13px">• 2010s: AWS/클라우드 - 인프라 서비스</text>
+      </g>
+      
+      <!-- Timeline marker -->
+      <circle cx="175" cy="50" r="8" fill="#10b981"/>
+      <text x="175" y="30" text-anchor="middle" class="year">1990s</text>
+    </g>
+
+    <!-- Final marker -->
+    <circle cx="1200" cy="50" r="8" fill="#34d399" filter="url(#glow)"/>
+    <text x="1200" y="30" text-anchor="middle" class="year">2020s</text>
+  </g>
+
+  <!-- Key comparison -->
+  <g transform="translate(100,570)">
+    <rect x="0" y="0" width="1200" height="320" rx="20" fill="#1f2937" opacity="0.8" filter="url(#shadow)"/>
+    <text x="600" y="35" text-anchor="middle" class="h1" fill="#fbbf24">GPT 패턴 재현: 가속화되는 혁명</text>
+    
+    <g transform="translate(50,80)">
+      <!-- Column 1: Same Pattern -->
+      <g transform="translate(0,0)">
+        <text x="0" y="0" class="h2" fill="#dc2626">🔄 동일한 패턴</text>
+        <text x="0" y="45" class="p">• 범용 기술 → 표준 플랫폼</text>
+        <text x="0" y="65" class="p">• 플랫폼 → 전문 애플리케이션</text>
+        <text x="0" y="85" class="p">• 전문화 → 대량 확산</text>
+        <text x="0" y="105" class="p">• 네트워크 효과</text>
+        <text x="0" y="125" class="p">• 생태계 형성</text>
+      </g>
+
+      <!-- Column 2: Platform Stack -->
+      <g transform="translate(300,0)">
+        <text x="0" y="0" class="h2" fill="#f59e0b">🏗️ 계층화 구조</text>
+        <text x="0" y="45" class="p">• 하드웨어 (기반)</text>
+        <text x="0" y="65" class="p">• 운영체제 (1차 플랫폼)</text>
+        <text x="0" y="85" class="p">• 미들웨어 (2차 플랫폼)</text>
+        <text x="0" y="105" class="p">• 애플리케이션 (전문화)</text>
+        <text x="0" y="125" class="p">• 사용자 서비스</text>
+      </g>
+
+      <!-- Column 3: Speed Acceleration -->
+      <g transform="translate(600,0)">
+        <text x="0" y="0" class="h2" fill="#10b981">⚡ 속도 가속화</text>
+        <text x="0" y="45" class="p">• 산업혁명 1.0: 200년</text>
+        <text x="0" y="65" class="p">• 소프트웨어 혁명: 80년</text>
+        <text x="0" y="85" class="p">• **2.5배 빠른 속도**</text>
+        <text x="0" y="105" class="p">• 디지털 복제 가능</text>
+        <text x="0" y="125" class="p">• 글로벌 동시 배포</text>
+      </g>
+
+      <!-- Column 4: Current AI Era -->
+      <g transform="translate(900,0)">
+        <text x="0" y="0" class="h2" fill="#8b5cf6">🤖 AI 시대 예측</text>
+        <text x="0" y="45" class="p">• AI: 새로운 범용 기술</text>
+        <text x="0" y="65" class="p">• LLM: 새로운 OS</text>
+        <text x="0" y="85" class="p">• AI 에이전트: 새 앱</text>
+        <text x="0" y="105" class="p">• 예상 기간: 20-30년</text>
+        <text x="0" y="125" class="p">• **10배 빠른 속도?**</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- Bottom insight -->
+  <g transform="translate(150,820)">
+    <rect x="0" y="0" width="1100" height="55" rx="15" fill="#065f46" opacity="0.8"/>
+    <text x="100" y="35" text-anchor="middle" class="h1" fill="#6ee7b7">핵심 통찰</text>
+    <text x="540" y="35" text-anchor="middle" class="h2" fill="#6ee7b7">GPT 패턴은 반복되지만 디지털 특성으로 인해 각 사이클마다 속도가 기하급수적으로 가속화된다</text>
+  </g>
+
+  <!-- Evolution Timeline Comparison -->
+  <g transform="translate(1050,10)">
+    <rect x="0" y="0" width="300" height="200" rx="15" fill="#7c3aed" opacity="0.8" filter="url(#shadow)"/>
+    <text x="150" y="25" text-anchor="middle" class="h2" fill="#e9d5ff">진화 속도 비교</text>
+    <text x="20" y="60" class="p" fill="#e9d5ff">📚 산업혁명 1.0</text>
+    <text x="20" y="80" class="small" fill="#e9d5ff">   200년 (1702-1913)</text>
+    <text x="20" y="110" class="p" fill="#e9d5ff">💻 소프트웨어 혁명</text>
+    <text x="20" y="130" class="small" fill="#e9d5ff">   80년 (1940-2020)</text>
+    <text x="20" y="160" class="p" fill="#e9d5ff">🤖 AI 혁명 (예상)</text>
+    <text x="20" y="180" class="small" fill="#e9d5ff">   20-30년 (2000-2030)</text>
+  </g>
+</svg>

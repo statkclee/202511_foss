@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1200" height="700" viewBox="0 0 1200 700" xmlns="http://www.w3.org/2000/svg"
+     role="img" aria-label="쿼토 다중 언어 생태계와 통합 워크플로우">
+  <defs>
+    <!-- 언어별 그라데이션 -->
+    <linearGradient id="rGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#276DC3;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1E5CAB;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="pythonGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3776AB;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FFD43B;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="juliaGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#CB3C33;stop-opacity:1" />
+      <stop offset="30%" style="stop-color:#389826;stop-opacity:1" />
+      <stop offset="60%" style="stop-color:#9558B2;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#4063D8;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="sqlGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#336791;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#4479A1;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="jsGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#F7DF1E;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#F0DB4F;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="quartoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#75AADB;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2D6FA1;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- 필터 효과 -->
+    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="3"/>
+      <feOffset dx="2" dy="4" result="offsetblur"/>
+      <feComponentTransfer><feFuncA type="linear" slope="0.2"/></feComponentTransfer>
+      <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="4" result="coloredBlur"/>
+      <feMerge><feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    
+    <!-- 화살표 마커 -->
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto" markerUnits="strokeWidth">
+      <path d="M2,2 L2,10 L10,6 z" fill="#64748B" />
+    </marker>
+    <marker id="flowArrow" markerWidth="14" markerHeight="14" refX="12" refY="7" orient="auto" markerUnits="strokeWidth">
+      <path d="M2,2 L2,12 L12,7 z" fill="#3B82F6" />
+    </marker>
+    
+    <!-- 스타일 정의 -->
+    <style>
+      .title-text { font-family: "Noto Sans KR", "Apple SD Gothic Neo", sans-serif; font-size: 24px; font-weight: bold; fill: #1e293b; }
+      .subtitle-text { font-family: "Noto Sans KR", "Apple SD Gothic Neo", sans-serif; font-size: 14px; fill: #64748b; }
+      .lang-title { font-family: "Noto Sans KR", "Apple SD Gothic Neo", sans-serif; font-size: 16px; font-weight: bold; fill: white; }
+      .feature-text { font-family: "Noto Sans KR", "Apple SD Gothic Neo", sans-serif; font-size: 11px; fill: white; }
+      .label-text { font-family: "Noto Sans KR", "Apple SD Gothic Neo", sans-serif; font-size: 12px; fill: #475569; }
+      .code-text { font-family: "JetBrains Mono", "Cascadia Code", monospace; font-size: 10px; fill: #334155; }
+      .problem-text { font-family: "Noto Sans KR", "Apple SD Gothic Neo", sans-serif; font-size: 11px; fill: #dc2626; }
+      .solution-text { font-family: "Noto Sans KR", "Apple SD Gothic Neo", sans-serif; font-size: 11px; fill: #059669; }
+    </style>
+  </defs>
+  
+  <!-- 배경 -->
+  <rect width="1200" height="700" fill="#f8fafc" rx="12"/>
+  
+  <!-- 제목 영역 -->
+  <text x="600" y="35" text-anchor="middle" class="title-text">쿼토 다중 언어 생태계: 현재와 미래</text>
+  <text x="600" y="55" text-anchor="middle" class="subtitle-text">각 언어의 강점을 활용한 통합 과학기술 문서 작성</text>
+  
+  <!-- 1층: 언어별 핵심 역량 -->
+  <g id="language-cores">
+    <!-- R -->
+    <g transform="translate(150, 120)">
+      <rect x="-70" y="-40" width="140" height="100" rx="12" fill="url(#rGrad)" filter="url(#shadow)"/>
+      <text x="0" y="-15" text-anchor="middle" class="lang-title">R</text>
+      <text x="0" y="5" text-anchor="middle" class="feature-text">통계 분석</text>
+      <text x="0" y="20" text-anchor="middle" class="feature-text">ggplot2 시각화</text>
+      <text x="0" y="35" text-anchor="middle" class="feature-text">tidyverse 생태계</text>
+      <circle cx="50" cy="-25" r="8" fill="#10B981" opacity="0.9"/>
+      <text x="50" y="-22" text-anchor="middle" font-size="10" fill="white">강</text>
+    </g>
+    
+    <!-- Python -->
+    <g transform="translate(350, 120)">
+      <rect x="-70" y="-40" width="140" height="100" rx="12" fill="url(#pythonGrad)" filter="url(#shadow)"/>
+      <text x="0" y="-15" text-anchor="middle" class="lang-title">Python</text>
+      <text x="0" y="5" text-anchor="middle" class="feature-text">머신러닝/AI</text>
+      <text x="0" y="20" text-anchor="middle" class="feature-text">pandas 데이터</text>
+      <text x="0" y="35" text-anchor="middle" class="feature-text">scikit-learn</text>
+      <circle cx="50" cy="-25" r="8" fill="#10B981" opacity="0.9"/>
+      <text x="50" y="-22" text-anchor="middle" font-size="10" fill="white">강</text>
+    </g>
+    
+    <!-- Julia -->
+    <g transform="translate(550, 120)">
+      <rect x="-70" y="-40" width="140" height="100" rx="12" fill="url(#juliaGrad)" filter="url(#shadow)"/>
+      <text x="0" y="-15" text-anchor="middle" class="lang-title">Julia</text>
+      <text x="0" y="5" text-anchor="middle" class="feature-text">고성능 계산</text>
+      <text x="0" y="20" text-anchor="middle" class="feature-text">수치 시뮬레이션</text>
+      <text x="0" y="35" text-anchor="middle" class="feature-text">병렬 처리</text>
+      <circle cx="50" cy="-25" r="8" fill="#F59E0B" opacity="0.9"/>
+      <text x="50" y="-22" text-anchor="middle" font-size="10" fill="white">중</text>
+    </g>
+    
+    <!-- SQL -->
+    <g transform="translate(750, 120)">
+      <rect x="-70" y="-40" width="140" height="100" rx="12" fill="url(#sqlGrad)" filter="url(#shadow)"/>
+      <text x="0" y="-15" text-anchor="middle" class="lang-title">SQL</text>
+      <text x="0" y="5" text-anchor="middle" class="feature-text">데이터 쿼리</text>
+      <text x="0" y="20" text-anchor="middle" class="feature-text">대용량 처리</text>
+      <text x="0" y="35" text-anchor="middle" class="feature-text">관계형 모델</text>
+      <circle cx="50" cy="-25" r="8" fill="#10B981" opacity="0.9"/>
+      <text x="50" y="-22" text-anchor="middle" font-size="10" fill="white">강</text>
+    </g>
+    
+    <!-- JavaScript/OJS -->
+    <g transform="translate(950, 120)">
+      <rect x="-70" y="-40" width="140" height="100" rx="12" fill="url(#jsGrad)" filter="url(#shadow)"/>
+      <text x="0" y="-15" text-anchor="middle" class="lang-title" fill="#333">JavaScript</text>
+      <text x="0" y="5" text-anchor="middle" class="feature-text" fill="#333">인터랙티브</text>
+      <text x="0" y="20" text-anchor="middle" class="feature-text" fill="#333">웹 대시보드</text>
+      <text x="0" y="35" text-anchor="middle" class="feature-text" fill="#333">Observable</text>
+      <circle cx="50" cy="-25" r="8" fill="#10B981" opacity="0.9"/>
+      <text x="50" y="-22" text-anchor="middle" font-size="10" fill="white">강</text>
+    </g>
+  </g>
+  
+  <!-- 2층: 통합 허브 (Quarto) -->
+  <g transform="translate(600, 280)">
+    <circle cx="0" cy="0" r="80" fill="url(#quartoGrad)" filter="url(#glow)" stroke="#2D6FA1" stroke-width="3"/>
+    <text x="0" y="-20" text-anchor="middle" font-size="20" font-weight="bold" fill="white">Quarto</text>
+    <text x="0" y="5" text-anchor="middle" font-size="12" fill="white">통합 실행 엔진</text>
+    <text x="0" y="25" text-anchor="middle" font-size="11" fill="#E0F2FE">knitr + Jupyter</text>
+    
+    <!-- 연결선 -->
+    <path d="M -70,-50 L -150,-100" stroke="#64748B" stroke-width="2" marker-end="url(#arrow)" opacity="0.6"/>
+    <path d="M -35,-70 L -350,-100" stroke="#64748B" stroke-width="2" marker-end="url(#arrow)" opacity="0.6"/>
+    <path d="M 0,-80 L -550,-100" stroke="#64748B" stroke-width="2" marker-end="url(#arrow)" opacity="0.6"/>
+    <path d="M 35,-70 L -750,-100" stroke="#64748B" stroke-width="2" marker-end="url(#arrow)" opacity="0.6"/>
+    <path d="M 70,-50 L -950,-100" stroke="#64748B" stroke-width="2" marker-end="url(#arrow)" opacity="0.6"/>
+  </g>
+  
+  <!-- 3층: 실제 사용 패턴과 문제점 -->
+  <g id="usage-patterns" transform="translate(100, 400)">
+    <rect x="0" y="0" width="450" height="150" rx="10" fill="#FEF2F2" stroke="#DC2626" stroke-width="1" stroke-dasharray="5,3"/>
+    <text x="225" y="25" text-anchor="middle" font-size="14" font-weight="bold" fill="#DC2626">현재 문제점</text>
+    
+    <text x="20" y="50" class="problem-text">❌ 언어별 예제가 동일한 사인 그래프 반복 (중복성)</text>
+    <text x="20" y="70" class="problem-text">❌ 각 언어의 고유 강점이 드러나지 않음</text>
+    <text x="20" y="90" class="problem-text">❌ 실무 활용 사례 부족 (너무 기초적)</text>
+    <text x="20" y="110" class="problem-text">❌ 언어 간 데이터 공유/통합 예제 미흡</text>
+    <text x="20" y="130" class="problem-text">❌ AI/LLM 시대 코드 생성 관점 부재</text>
+  </g>
+  
+  <!-- 4층: 개선 방향 -->
+  <g id="improvements" transform="translate(650, 400)">
+    <rect x="0" y="0" width="450" height="150" rx="10" fill="#F0FDF4" stroke="#10B981" stroke-width="1" stroke-dasharray="5,3"/>
+    <text x="225" y="25" text-anchor="middle" font-size="14" font-weight="bold" fill="#10B981">개선 전략</text>
+    
+    <text x="20" y="50" class="solution-text">✅ 언어별 차별화된 실무 예제 제시</text>
+    <text x="20" y="70" class="solution-text">✅ R: 통계분석 → Python: ML → Julia: 시뮬레이션</text>
+    <text x="20" y="90" class="solution-text">✅ 실제 연구 워크플로우 시나리오 구성</text>
+    <text x="20" y="110" class="solution-text">✅ reticulate를 통한 R-Python 통합 강화</text>
+    <text x="20" y="130" class="solution-text">✅ AI 코드 생성과 검증 프로세스 추가</text>
+  </g>
+  
+  <!-- 5층: 제안하는 새로운 구조 -->
+  <g id="new-structure" transform="translate(100, 570)">
+    <rect x="0" y="0" width="1000" height="100" rx="10" fill="#EFF6FF" stroke="#3B82F6" stroke-width="2"/>
+    <text x="500" y="25" text-anchor="middle" font-size="14" font-weight="bold" fill="#1E40AF">제안: 실무 중심 재구성</text>
+    
+    <!-- 워크플로우 -->
+    <g transform="translate(50, 50)">
+      <rect x="0" y="0" width="120" height="35" rx="8" fill="#DBEAFE" stroke="#3B82F6"/>
+      <text x="60" y="22" text-anchor="middle" font-size="11" fill="#1E40AF">SQL: 데이터 추출</text>
+    </g>
+    
+    <path d="M 220 67 L 250 67" stroke="#3B82F6" stroke-width="2" marker-end="url(#flowArrow)"/>
+    
+    <g transform="translate(260, 50)">
+      <rect x="0" y="0" width="120" height="35" rx="8" fill="#DBEAFE" stroke="#3B82F6"/>
+      <text x="60" y="22" text-anchor="middle" font-size="11" fill="#1E40AF">R: EDA/통계검정</text>
+    </g>
+    
+    <path d="M 430 67 L 460 67" stroke="#3B82F6" stroke-width="2" marker-end="url(#flowArrow)"/>
+    
+    <g transform="translate(470, 50)">
+      <rect x="0" y="0" width="120" height="35" rx="8" fill="#DBEAFE" stroke="#3B82F6"/>
+      <text x="60" y="22" text-anchor="middle" font-size="11" fill="#1E40AF">Python: ML모델</text>
+    </g>
+    
+    <path d="M 640 67 L 670 67" stroke="#3B82F6" stroke-width="2" marker-end="url(#flowArrow)"/>
+    
+    <g transform="translate(680, 50)">
+      <rect x="0" y="0" width="120" height="35" rx="8" fill="#DBEAFE" stroke="#3B82F6"/>
+      <text x="60" y="22" text-anchor="middle" font-size="11" fill="#1E40AF">Julia: 최적화</text>
+    </g>
+    
+    <path d="M 850 67 L 880 67" stroke="#3B82F6" stroke-width="2" marker-end="url(#flowArrow)"/>
+    
+    <g transform="translate(890, 50)">
+      <rect x="0" y="0" width="60" height="35" rx="8" fill="#FEF3C7" stroke="#F59E0B"/>
+      <text x="30" y="22" text-anchor="middle" font-size="11" fill="#92400E">OJS: 시각화</text>
+    </g>
+  </g>
+  
+  <!-- AI/LLM 통합 표시 -->
+  <g transform="translate(1050, 120)">
+    <rect x="0" y="0" width="120" height="80" rx="10" fill="#F3E8FF" stroke="#9333EA" stroke-width="2" stroke-dasharray="4,2"/>
+    <text x="60" y="25" text-anchor="middle" font-size="12" font-weight="bold" fill="#7C3AED">AI/LLM</text>
+    <text x="60" y="45" text-anchor="middle" font-size="10" fill="#7C3AED">코드 생성</text>
+    <text x="60" y="60" text-anchor="middle" font-size="10" fill="#7C3AED">자동 최적화</text>
+  </g>
+  
+  <!-- AI 연결선 -->
+  <path d="M 1050 160 Q 900 250 680 280" stroke="#9333EA" stroke-width="1.5" stroke-dasharray="6,3" fill="none" opacity="0.6"/>
+</svg>

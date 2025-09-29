@@ -1,0 +1,215 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" width="1600" height="1000">
+  <defs>
+    <style><![CDATA[
+      .title { font-family: Inter, Segoe UI, Arial, sans-serif; font-size: 44px; font-weight: 900; fill: #f8fafc; }
+      .subtitle { font-family: Inter, Segoe UI, Arial, sans-serif; font-size: 22px; font-weight: 600; fill: #cbd5e1; }
+      .h1 { font-family: Inter, Segoe UI, Arial, sans-serif; font-size: 26px; font-weight: 800; fill: #ffffff; }
+      .h2 { font-family: Inter, Segoe UI, Arial, sans-serif; font-size: 22px; font-weight: 800; fill: #f1f5f9; }
+      .p { font-family: Inter, Segoe UI, Arial, sans-serif; font-size: 18px; font-weight: 600; fill: #e5e7eb; }
+      .small { font-family: Inter, Segoe UI, Arial, sans-serif; font-size: 14px; font-weight: 700; fill: #cbd5e1; }
+      .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; font-size: 14px; font-weight: 700; fill: #e5e7eb; }
+    ]]></style>
+
+    <!-- Background -->
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+
+    <!-- Palette -->
+    <linearGradient id="gradCase" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1d4ed8"/>
+      <stop offset="100%" stop-color="#1e3a8a"/>
+    </linearGradient>
+    <linearGradient id="gradFlowDown" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#d97706"/>
+    </linearGradient>
+    <linearGradient id="gradSpill" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#10b981"/>
+      <stop offset="100%" stop-color="#34d399"/>
+    </linearGradient>
+
+    <!-- Effects -->
+    <filter id="shadow"><feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#000" flood-opacity="0.35"/></filter>
+
+    <!-- Markers -->
+    <marker id="arrowDown" markerWidth="16" markerHeight="12" refX="14" refY="6" orient="auto">
+      <polygon points="0 0, 16 6, 0 12" fill="#f59e0b"/>
+    </marker>
+    <marker id="arrowRight" markerWidth="18" markerHeight="14" refX="16" refY="7" orient="auto">
+      <polygon points="0 0, 18 7, 0 14" fill="#34d399"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1600" height="1000" fill="url(#bg)"/>
+
+  <!-- Header -->
+  <text x="800" y="68" text-anchor="middle" class="title">‘기관 → 대중’ Top‑Down 확산의 대표 사례</text>
+  <text x="800" y="104" text-anchor="middle" class="subtitle">Institution → Industry → Public</text>
+
+  <!-- Legend -->
+  <g transform="translate(70,130)">
+    <rect x="0" y="0" width="520" height="64" rx="12" fill="#0b1220" opacity="0.6"/>
+    <g transform="translate(16,16)">
+      <rect x="0" y="4" width="18" height="18" rx="4" fill="url(#gradCase)"/>
+      <text x="26" y="18" class="small">기관/정부/거대연구 주도</text>
+      <line x1="190" y1="14" x2="218" y2="14" stroke="url(#gradFlowDown)" stroke-width="6" marker-end="url(#arrowDown)"/>
+      <text x="228" y="18" class="small">하향식 확산</text>
+      <line x1="342" y1="14" x2="370" y2="14" stroke="url(#gradSpill)" stroke-width="6" marker-end="url(#arrowRight)"/>
+      <text x="380" y="18" class="small">민간 파급/상품화</text>
+    </g>
+  </g>
+
+  <!-- Cases grid: 5 cards -->
+  <g transform="translate(70,220)">
+    <!-- 1. Nuclear -->
+    <g>
+      <rect x="0" y="0" width="290" height="460" rx="16" fill="url(#gradCase)" filter="url(#shadow)"/>
+      <text x="145" y="36" text-anchor="middle" class="h1">핵기술</text>
+      <text x="145" y="62" text-anchor="middle" class="small">맨해튼 프로젝트 → 민간</text>
+      <g transform="translate(18,92)" class="p">
+        <text x="0" y="0">• 출발: 군사(핵무기)</text>
+        <text x="0" y="28">• 전환: 원자력 발전·의료</text>
+      </g>
+      <!-- Down flow: Institution → Industry → Public -->
+      <g transform="translate(40,170)">
+        <rect x="0" y="0" width="210" height="40" rx="10" fill="#0b1220" opacity="0.6"/>
+        <text x="105" y="26" text-anchor="middle" class="small">기관/정부</text>
+        <path d="M 105 40 L 105 78" stroke="url(#gradFlowDown)" stroke-width="8" marker-end="url(#arrowDown)"/>
+        <rect x="0" y="78" width="210" height="40" rx="10" fill="#0b1220" opacity="0.6"/>
+        <text x="105" y="104" text-anchor="middle" class="small">기업/산업</text>
+        <path d="M 105 118 L 105 156" stroke="url(#gradFlowDown)" stroke-width="8" marker-end="url(#arrowDown)"/>
+        <rect x="0" y="156" width="210" height="40" rx="10" fill="#0b1220" opacity="0.6"/>
+        <text x="105" y="182" text-anchor="middle" class="small">대중/소비자</text>
+      </g>
+      <g transform="translate(18,370)">
+        <rect x="0" y="0" width="254" height="70" rx="12" fill="#0b1220" opacity="0.6"/>
+        <text x="127" y="28" text-anchor="middle" class="h2">특징</text>
+        <text x="18" y="54" class="small">극비·고비용·장기 전환</text>
+      </g>
+    </g>
+
+    <!-- 2. GPS -->
+    <g transform="translate(320,0)">
+      <rect x="0" y="0" width="290" height="460" rx="16" fill="url(#gradCase)" filter="url(#shadow)"/>
+      <text x="145" y="36" text-anchor="middle" class="h1">GPS</text>
+      <text x="145" y="62" text-anchor="middle" class="small">군사용(1970s) → 민간 개방</text>
+      <g transform="translate(18,92)" class="p">
+        <text x="0" y="0">• 출발: 군사용 항법</text>
+        <text x="0" y="28">• 확산: 내비·스마트폰·IoT</text>
+      </g>
+      <g transform="translate(40,170)">
+        <rect x="0" y="0" width="210" height="40" rx="10" fill="#0b1220" opacity="0.6"/>
+        <text x="105" y="26" text-anchor="middle" class="small">국방/위성 시스템</text>
+        <path d="M 105 40 L 105 78" stroke="url(#gradFlowDown)" stroke-width="8" marker-end="url(#arrowDown)"/>
+        <rect x="0" y="78" width="210" height="40" rx="10" fill="#0b1220" opacity="0.6"/>
+        <text x="105" y="104" text-anchor="middle" class="small">기업 서비스</text>
+        <path d="M 105 118 L 105 156" stroke="url(#gradFlowDown)" stroke-width="8" marker-end="url(#arrowDown)"/>
+        <rect x="0" y="156" width="210" height="40" rx="10" fill="#0b1220" opacity="0.6"/>
+        <text x="105" y="182" text-anchor="middle" class="small">대중 앱/디바이스</text>
+      </g>
+      <g transform="translate(18,370)">
+        <rect x="0" y="0" width="254" height="70" rx="12" fill="#0b1220" opacity="0.6"/>
+        <text x="127" y="28" text-anchor="middle" class="h2">특징</text>
+        <text x="18" y="54" class="small">군사우선 → 민간개방</text>
+      </g>
+    </g>
+
+    <!-- 3. Internet (ARPANET) -->
+    <g transform="translate(640,0)">
+      <rect x="0" y="0" width="290" height="460" rx="16" fill="url(#gradCase)" filter="url(#shadow)"/>
+      <text x="145" y="36" text-anchor="middle" class="h1">인터넷</text>
+      <text x="145" y="62" text-anchor="middle" class="small">ARPANET → WWW 상업화</text>
+      <g transform="translate(18,92)" class="p">
+        <text x="0" y="0">• 출발: 국방·대학 연구망</text>
+        <text x="0" y="28">• 확산: 90s 상업화/가정 보급</text>
+      </g>
+      <g transform="translate(40,170)">
+        <rect x="0" y="0" width="210" height="40" rx="10" fill="#0b1220" opacity="0.6"/>
+        <text x="105" y="26" text-anchor="middle" class="small">정부/연구기관</text>
+        <path d="M 105 40 L 105 78" stroke="url(#gradFlowDown)" stroke-width="8" marker-end="url(#arrowDown)"/>
+        <rect x="0" y="78" width="210" height="40" rx="10" fill="#0b1220" opacity="0.6"/>
+        <text x="105" y="104" text-anchor="middle" class="small">통신·플랫폼 산업</text>
+        <path d="M 105 118 L 105 156" stroke="url(#gradFlowDown)" stroke-width="8" marker-end="url(#arrowDown)"/>
+        <rect x="0" y="156" width="210" height="40" rx="10" fill="#0b1220" opacity="0.6"/>
+        <text x="105" y="182" text-anchor="middle" class="small">가정/대중</text>
+      </g>
+      <g transform="translate(18,370)">
+        <rect x="0" y="0" width="254" height="70" rx="12" fill="#0b1220" opacity="0.6"/>
+        <text x="127" y="28" text-anchor="middle" class="h2">특징</text>
+        <text x="18" y="54" class="small">공공연구 → 상업 생태계</text>
+      </g>
+    </g>
+
+    <!-- 4. Space Tech -->
+    <g transform="translate(960,0)">
+      <rect x="0" y="0" width="290" height="460" rx="16" fill="url(#gradCase)" filter="url(#shadow)"/>
+      <text x="145" y="36" text-anchor="middle" class="h1">우주기술</text>
+      <text x="145" y="62" text-anchor="middle" class="small">냉전기 NASA·소련 → 민간</text>
+      <g transform="translate(18,92)" class="p">
+        <text x="0" y="0">• 출발: 국가 주도 로켓·위성</text>
+        <text x="0" y="28">• 확산: 통신·기상·지도 서비스</text>
+      </g>
+      <g transform="translate(40,170)">
+        <rect x="0" y="0" width="210" height="40" rx="10" fill="#0b1220" opacity="0.6"/>
+        <text x="105" y="26" text-anchor="middle" class="small">국가 우주 프로그램</text>
+        <path d="M 105 40 L 105 78" stroke="url(#gradFlowDown)" stroke-width="8" marker-end="url(#arrowDown)"/>
+        <rect x="0" y="78" width="210" height="40" rx="10" fill="#0b1220" opacity="0.6"/>
+        <text x="105" y="104" text-anchor="middle" class="small">위성통신 산업</text>
+        <path d="M 105 118 L 105 156" stroke="url(#gradFlowDown)" stroke-width="8" marker-end="url(#arrowDown)"/>
+        <rect x="0" y="156" width="210" height="40" rx="10" fill="#0b1220" opacity="0.6"/>
+        <text x="105" y="182" text-anchor="middle" class="small">대중 서비스</text>
+      </g>
+      <g transform="translate(18,370)">
+        <rect x="0" y="0" width="254" height="70" rx="12" fill="#0b1220" opacity="0.6"/>
+        <text x="127" y="28" text-anchor="middle" class="h2">특징</text>
+        <text x="18" y="54" class="small">거대프로젝트 → 파생 서비스</text>
+      </g>
+    </g>
+
+    <!-- 5. Computing (Mainframe → PC) -->
+    <g transform="translate(1280,0)">
+      <rect x="0" y="0" width="290" height="460" rx="16" fill="url(#gradCase)" filter="url(#shadow)"/>
+      <text x="145" y="36" text-anchor="middle" class="h1">컴퓨팅</text>
+      <text x="145" y="62" text-anchor="middle" class="small">메인프레임 → 기업 → 가정</text>
+      <g transform="translate(18,92)" class="p">
+        <text x="0" y="0">• 출발: 군사/정부·대기업</text>
+        <text x="0" y="28">• 확산: 업무용 → 개인용</text>
+      </g>
+      <g transform="translate(40,170)">
+        <rect x="0" y="0" width="210" height="40" rx="10" fill="#0b1220" opacity="0.6"/>
+        <text x="105" y="26" text-anchor="middle" class="small">정부/대형기관</text>
+        <path d="M 105 40 L 105 78" stroke="url(#gradFlowDown)" stroke-width="8" marker-end="url(#arrowDown)"/>
+        <rect x="0" y="78" width="210" height="40" rx="10" fill="#0b1220" opacity="0.6"/>
+        <text x="105" y="104" text-anchor="middle" class="small">기업 IT</text>
+        <path d="M 105 118 L 105 156" stroke="url(#gradFlowDown)" stroke-width="8" marker-end="url(#arrowDown)"/>
+        <rect x="0" y="156" width="210" height="40" rx="10" fill="#0b1220" opacity="0.6"/>
+        <text x="105" y="182" text-anchor="middle" class="small">가정/개인</text>
+      </g>
+      <g transform="translate(18,370)">
+        <rect x="0" y="0" width="254" height="70" rx="12" fill="#0b1220" opacity="0.6"/>
+        <text x="127" y="28" text-anchor="middle" class="h2">특징</text>
+        <text x="18" y="54" class="small">대형→소형·저가·보급화</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- Bottom ribbon: Pattern summary -->
+  <g>
+    <rect x="120" y="720" width="1360" height="120" rx="18" fill="#0b1220" opacity="0.65"/>
+    <g transform="translate(140,740)">
+      <text x="0" y="0" class="h2">공통 인사이트</text>
+      <text x="0" y="34" class="p">① 초기: 극비·고비용·제한 접근 ② 중기: 산업 표준화·상품화 ③ 후기: 대중 보급·파생 서비스</text>
+      <text x="0" y="62" class="p">→ 대조적으로, LLM은 역순(대중 → 기업 → 정책)으로 전개</text>
+    </g>
+  </g>
+
+  <!-- Footer note -->
+  <g transform="translate(120,870)">
+    <rect x="0" y="0" width="1360" height="72" rx="12" fill="#111827"/>
+    <text x="20" y="28" class="small">메모: 각 사례의 연도·세부는 보조 슬라이드/문서에서 상세 인용 가능</text>
+    <text x="20" y="52" class="mono">Nuclear · GPS · ARPANET/Internet · Space Tech · Mainframe→PC</text>
+  </g>
+</svg>

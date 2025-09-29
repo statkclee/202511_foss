@@ -1,0 +1,154 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 800" width="1400" height="800">
+  <defs>
+    <style><![CDATA[
+      .title { font-family: Inter, Segoe UI, Arial, sans-serif; font-size: 36px; font-weight: 900; fill: #f8fafc; }
+      .subtitle { font-family: Inter, Segoe UI, Arial, sans-serif; font-size: 20px; font-weight: 600; fill: #cbd5e1; }
+      .h1 { font-family: Inter, Segoe UI, Arial, sans-serif; font-size: 24px; font-weight: 800; fill: #ffffff; }
+      .h2 { font-family: Inter, Segoe UI, Arial, sans-serif; font-size: 20px; font-weight: 800; fill: #f1f5f9; }
+      .p { font-family: Inter, Segoe UI, Arial, sans-serif; font-size: 16px; font-weight: 600; fill: #e5e7eb; }
+      .small { font-family: Inter, Segoe UI, Arial, sans-serif; font-size: 14px; font-weight: 700; fill: #cbd5e1; }
+      .year { font-family: Inter, Segoe UI, Arial, sans-serif; font-size: 18px; font-weight: 900; fill: #fbbf24; }
+    ]]></style>
+
+    <!-- Background -->
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+
+    <!-- Stage gradients -->
+    <linearGradient id="gradStage1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fbbf24"/>
+      <stop offset="100%" stop-color="#f59e0b"/>
+    </linearGradient>
+
+    <linearGradient id="gradStage2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3b82f6"/>
+      <stop offset="100%" stop-color="#2563eb"/>
+    </linearGradient>
+
+    <linearGradient id="gradStage3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10b981"/>
+      <stop offset="100%" stop-color="#059669"/>
+    </linearGradient>
+
+    <!-- Effects -->
+    <filter id="shadow"><feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000" flood-opacity="0.3"/></filter>
+    
+    <!-- Arrow markers -->
+    <marker id="arrowRight" markerWidth="16" markerHeight="12" refX="4" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#34d399"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1400" height="800" fill="url(#bg)"/>
+
+  <!-- Header -->
+  <text x="700" y="60" text-anchor="middle" class="title">Electrification vs Generative AI: Three-Stage Development Comparison</text>
+  <text x="700" y="90" text-anchor="middle" class="subtitle">Electrification vs Generative AI: Three-Stage Development Comparison</text>
+
+  <!-- Timeline -->
+  <g transform="translate(100,140)">
+    <!-- Stage 1: Simple Substitution -->
+    <g>
+      <rect x="0" y="0" width="380" height="500" rx="20" fill="url(#gradStage1)" filter="url(#shadow)" opacity="0.9"/>
+      <text x="190" y="40" text-anchor="middle" class="h1">Stage 1: Simple Substitution</text>
+      <text x="190" y="70" text-anchor="middle" class="small">Simple Substitution</text>
+      
+      <!-- Electrification -->
+      <g transform="translate(20,100)">
+        <rect x="0" y="0" width="340" height="160" rx="12" fill="#1f2937" opacity="0.7"/>
+        <text x="170" y="25" text-anchor="middle" class="h2" fill="#fbbf24">Electrification (1880-1900)</text>
+        <text x="20" y="50" class="p">• Steam engine → Electric dynamo replacement</text>
+        <text x="20" y="75" class="p">• Maintained centralized systems</text>
+        <text x="20" y="100" class="p">• No change in existing factory layouts</text>
+        <text x="20" y="125" class="p">• Minimal productivity improvement</text>
+        <text x="170" y="150" text-anchor="middle" class="year">~20 years</text>
+      </g>
+
+      <!-- AI -->
+      <g transform="translate(20,280)">
+        <rect x="0" y="0" width="340" height="160" rx="12" fill="#1f2937" opacity="0.7"/>
+        <text x="170" y="25" text-anchor="middle" class="h2" fill="#fbbf24">Generative AI (2020-2025)</text>
+        <text x="20" y="50" class="p">• Adding AI tools to existing tasks</text>
+        <text x="20" y="75" class="p">• Mostly maintaining existing workflows</text>
+        <text x="20" y="100" class="p">• Minimal organizational structural change</text>
+        <text x="20" y="125" class="p">• Limited productivity improvement</text>
+        <text x="170" y="150" text-anchor="middle" class="year">Currently ongoing</text>
+      </g>
+    </g>
+
+    <!-- Arrow 1 -->
+    <line x1="380" y1="250" x2="420" y2="250" stroke="#34d399" stroke-width="6" marker-end="url(#arrowRight)"/>
+
+    <!-- Stage 2: Gradual Adaptation -->
+    <g transform="translate(440,0)">
+      <rect x="0" y="0" width="380" height="500" rx="20" fill="url(#gradStage2)" filter="url(#shadow)" opacity="0.9"/>
+      <text x="190" y="40" text-anchor="middle" class="h1">Stage 2: Gradual Adaptation</text>
+      <text x="190" y="70" text-anchor="middle" class="small">Gradual Adaptation</text>
+      
+      <!-- Electrification -->
+      <g transform="translate(20,100)">
+        <rect x="0" y="0" width="340" height="160" rx="12" fill="#1f2937" opacity="0.7"/>
+        <text x="170" y="25" text-anchor="middle" class="h2" fill="#93c5fd">Electrification (1900-1920)</text>
+        <text x="20" y="50" class="p">• Partial introduction of individual electric motors</text>
+        <text x="20" y="75" class="p">• Gradual factory improvements</text>
+        <text x="20" y="100" class="p">• Mixed system operations</text>
+        <text x="20" y="125" class="p">• Increased complexity</text>
+        <text x="170" y="150" text-anchor="middle" class="year">~10-20 years</text>
+      </g>
+
+      <!-- AI -->
+      <g transform="translate(20,280)">
+        <rect x="0" y="0" width="340" height="160" rx="12" fill="#1f2937" opacity="0.7"/>
+        <text x="170" y="25" text-anchor="middle" class="h2" fill="#93c5fd">AI Adaptation (2025-2030, expected)</text>
+        <text x="20" y="50" class="p">• Development of AI-dedicated workflows</text>
+        <text x="20" y="75" class="p">• Partial organizational restructuring</text>
+        <text x="20" y="100" class="p">• Existing-AI system mixture</text>
+        <text x="20" y="125" class="p">• Increased learning costs</text>
+        <text x="170" y="150" text-anchor="middle" class="year">Expected 5 years</text>
+      </g>
+    </g>
+
+    <!-- Arrow 2 -->
+    <line x1="820" y1="250" x2="860" y2="250" stroke="#34d399" stroke-width="6" marker-end="url(#arrowRight)"/>
+
+    <!-- Stage 3: Revolutionary Reconfiguration -->
+    <g transform="translate(880,0)">
+      <rect x="0" y="0" width="380" height="500" rx="20" fill="url(#gradStage3)" filter="url(#shadow)" opacity="0.9"/>
+      <text x="190" y="40" text-anchor="middle" class="h1">Stage 3: Revolutionary Reconfiguration</text>
+      <text x="190" y="70" text-anchor="middle" class="small">Revolutionary Reconfiguration</text>
+      
+      <!-- Electrification -->
+      <g transform="translate(20,100)">
+        <rect x="0" y="0" width="340" height="160" rx="12" fill="#1f2937" opacity="0.7"/>
+        <text x="170" y="25" text-anchor="middle" class="h2" fill="#6ee7b7">Electrification (1920s)</text>
+        <text x="20" y="50" class="p">• Full adoption of unit drive systems</text>
+        <text x="20" y="75" class="p">• Complete factory layout redesign</text>
+        <text x="20" y="100" class="p">• Work process innovation</text>
+        <text x="20" y="125" class="p">• Explosive productivity improvement</text>
+        <text x="170" y="150" text-anchor="middle" class="year">After 30-40 years</text>
+      </g>
+
+      <!-- AI -->
+      <g transform="translate(20,280)">
+        <rect x="0" y="0" width="340" height="160" rx="12" fill="#1f2937" opacity="0.7"/>
+        <text x="170" y="25" text-anchor="middle" class="h2" fill="#6ee7b7">AI Revolution (2030-2040, expected)</text>
+        <text x="20" y="50" class="p">• AI-native organizational structure</text>
+        <text x="20" y="75" class="p">• Complete work process reconfiguration</text>
+        <text x="20" y="100" class="p">• Human-AI collaboration optimization</text>
+        <text x="20" y="125" class="p">• Work & decision-making paradigm innovation</text>
+        <text x="170" y="150" text-anchor="middle" class="year">Expected after 20 years</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- Key Insights -->
+  <g transform="translate(700,700)">
+    <rect x="-650" y="-50" width="1300" height="80" rx="15" fill="#1f2937" opacity="0.8"/>
+    <text x="0" y="-20" text-anchor="middle" class="h1">Key Insight: AI may spread up to twice as fast as electrification</text>
+    <text x="0" y="5" text-anchor="middle" class="p">Electrification 30-40 years vs AI 20 years (estimated) - Impact of digital infrastructure and global connectivity</text>
+    <text x="0" y="30" text-anchor="middle" class="small">Key Insight: AI may spread up to twice as fast as electrification due to digital infrastructure</text>
+  </g>
+</svg>

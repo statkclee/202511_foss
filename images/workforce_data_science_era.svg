@@ -1,0 +1,520 @@
+<svg viewBox="0 0 1700 830" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Gradients for different domains -->
+    <linearGradient id="businessGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3B82F6"/>
+      <stop offset="100%" style="stop-color:#1D4ED8"/>
+    </linearGradient>
+
+    <linearGradient id="technicalGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#10B981"/>
+      <stop offset="100%" style="stop-color:#047857"/>
+    </linearGradient>
+
+    <linearGradient id="specializedGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#8B5CF6"/>
+      <stop offset="100%" style="stop-color:#7C3AED"/>
+    </linearGradient>
+
+    <linearGradient id="governanceGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#F59E0B"/>
+      <stop offset="100%" style="stop-color:#D97706"/>
+    </linearGradient>
+
+    <!-- Timeline gradient -->
+    <linearGradient id="timelineGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#1E40AF"/>
+      <stop offset="50%" style="stop-color:#3B82F6"/>
+      <stop offset="100%" style="stop-color:#60A5FA"/>
+    </linearGradient>
+
+    <!-- Person icon -->
+    <path id="person" d="M 0,-15 A 5,5 0 0,1 0,-5 A 8,8 0 0,1 -8,3 L -8,15 L 8,15 L 8,3 A 8,8 0 0,1 0,-5"/>
+
+    <!-- Challenge point icon (different from pain point) -->
+    <circle id="challenge" cx="0" cy="0" r="8" fill="#F59E0B" opacity="0.8"/>
+    <text x="0" y="3" text-anchor="middle" font-family="Arial" font-size="12" font-weight="bold" fill="white">?</text>
+
+    <!-- Real-time icon -->
+    <circle id="realtime" cx="0" cy="0" r="10" fill="#10B981" stroke="#047857" stroke-width="1"/>
+    <circle cx="-3" cy="-3" r="2" fill="#047857"/>
+    <circle cx="3" cy="3" r="2" fill="#047857"/>
+    <path d="M -3,-3 L 3,3" stroke="#047857" stroke-width="1"/>
+
+    <!-- Arrow markers -->
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L6,3 z" fill="#374151"/>
+    </marker>
+
+    <marker id="agileArrow" markerWidth="8" markerHeight="8" refX="7" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L6,3 z" fill="#10B981"/>
+    </marker>
+
+    <marker id="fastArrow" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto">
+      <path d="M0,0 L0,8 L8,4 z" fill="#3B82F6" stroke="#1D4ED8" stroke-width="1"/>
+    </marker>
+
+    <!-- Shadow filter -->
+    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="2"/>
+      <feOffset dx="1" dy="1" result="offsetblur"/>
+      <feComponentTransfer>
+        <feFuncA type="linear" slope="0.3"/>
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1700" height="1100" fill="#F8FAFC"/>
+
+  <!-- Title -->
+  <text x="850" y="50" text-anchor="middle" font-family="Arial, sans-serif" font-size="34" font-weight="bold" fill="#1F2937">
+    Data Science Era: Cross-Functional Teams &amp; Collaboration
+  </text>
+  <text x="850" y="80" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" fill="#6B7280">
+    Evolution to Agile, Open-Source, and Real-Time Analytics (2014-2020)
+  </text>
+
+  <!-- Timeline Bar with Corrected Dates -->
+  <g transform="translate(150, 115)">
+    <rect x="0" y="0" width="1500" height="35" rx="17" fill="url(#timelineGradient)" stroke="#1E40AF" stroke-width="2"/>
+    <text x="80" y="23" font-family="Arial" font-size="18" font-weight="bold" fill="white">2014</text>
+    <text x="350" y="23" font-family="Arial" font-size="18" font-weight="bold" fill="white">2016</text>
+    <text x="650" y="23" font-family="Arial" font-size="18" font-weight="bold" fill="white">2018</text>
+    <text x="950" y="23" font-family="Arial" font-size="18" font-weight="bold" fill="white">2019</text>
+    <text x="1250" y="23" font-family="Arial" font-size="18" font-weight="bold" fill="white">2020</text>
+
+    <!-- Key milestones with correct dates -->
+    <circle cx="120" cy="17" r="4" fill="#EF4444"/>
+    <text x="120" y="50" text-anchor="middle" font-family="Arial" font-size="12" font-weight="bold" fill="#1E40AF">Kubernetes</text>
+
+    <circle cx="180" cy="17" r="4" fill="#EF4444"/>
+    <text x="180" y="50" text-anchor="middle" font-family="Arial" font-size="12" font-weight="bold" fill="#1E40AF">Jupyter</text>
+
+    <circle cx="280" cy="17" r="4" fill="#EF4444"/>
+    <text x="280" y="50" text-anchor="middle" font-family="Arial" font-size="12" font-weight="bold" fill="#1E40AF">Airflow</text>
+
+    <circle cx="400" cy="17" r="4" fill="#EF4444"/>
+    <text x="400" y="50" text-anchor="middle" font-family="Arial" font-size="12" font-weight="bold" fill="#1E40AF">TensorFlow</text>
+
+    <circle cx="500" cy="17" r="4" fill="#EF4444"/>
+    <text x="500" y="50" text-anchor="middle" font-family="Arial" font-size="12" font-weight="bold" fill="#1E40AF">Spark 2.0</text>
+
+    <circle cx="600" cy="17" r="4" fill="#EF4444"/>
+    <text x="600" y="50" text-anchor="middle" font-family="Arial" font-size="12" font-weight="bold" fill="#1E40AF">dbt</text>
+
+    <circle cx="800" cy="17" r="4" fill="#EF4444"/>
+    <text x="800" y="50" text-anchor="middle" font-family="Arial" font-size="12" font-weight="bold" fill="#1E40AF">GDPR</text>
+
+    <circle cx="1000" cy="17" r="4" fill="#EF4444"/>
+    <text x="1000" y="50" text-anchor="middle" font-family="Arial" font-size="12" font-weight="bold" fill="#1E40AF">MLflow</text>
+  </g>
+  
+  <!-- Enhanced Governance & MLOps Layer -->
+  <g transform="translate(900, 190)">
+    <rect x="-450" y="0" width="900" height="70" rx="12" fill="url(#governanceGradient)" filter="url(#shadow)"/>
+    <text x="0" y="30" text-anchor="middle" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="white">
+      ⚖️ Data Governance, Ethics &amp; MLOps
+    </text>
+    <text x="-200" y="50" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#FEE2E2">
+      GDPR (2018) • Model Cards • Responsible AI
+    </text>
+    <text x="200" y="50" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#FEE2E2">
+      LIME/SHAP • ML Observability • Privacy by Design
+    </text>
+  </g>
+
+  <!-- Business Intelligence & Analytics Domain -->
+  <g transform="translate(280, 270)">
+    <!-- Domain Header -->
+    <rect x="-200" y="0" width="400" height="80" rx="10" fill="url(#businessGradient)" filter="url(#shadow)"/>
+    <text x="0" y="30" text-anchor="middle" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="white">
+      📊 Business Intelligence &amp; Analytics
+    </text>
+    <text x="0" y="55" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#DBEAFE">
+      Self-Service, Real-Time, Data-Driven
+    </text>
+
+    <!-- Data Analysts -->
+    <g transform="translate(-150, 120)">
+      <use href="#person" transform="scale(1.5)" fill="#3B82F6"/>
+      <text x="0" y="40" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#374151">
+        Data Analysts
+      </text>
+      <text x="0" y="56" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#6B7280">
+        SQL, Python, R
+      </text>
+      <text x="0" y="70" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#9CA3AF">
+        Tableau, Power BI
+      </text>
+    </g>
+
+    <!-- Product Analysts -->
+    <g transform="translate(10, 120)">
+      <use href="#person" transform="scale(1.5)" fill="#3B82F6"/>
+      <text x="0" y="40" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#374151">
+        Product Analysts
+      </text>
+      <text x="0" y="56" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#6B7280">
+        A/B Testing, Mixpanel
+      </text>
+      <text x="0" y="70" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#9CA3AF">
+        Growth Analytics
+      </text>
+    </g>
+
+    <!-- BI Developers -->
+    <g transform="translate(150, 120)">
+      <use href="#person" transform="scale(1.5)" fill="#3B82F6"/>
+      <text x="0" y="40" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#374151">
+        BI Developers
+      </text>
+      <text x="0" y="56" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#6B7280">
+        Looker, dbt
+      </text>
+      <text x="0" y="70" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#9CA3AF">
+        Self-Service BI
+      </text>
+    </g>
+
+    <!-- Data Visualization Specialists -->
+    <g transform="translate(-90, 220)">
+      <use href="#person" transform="scale(1.5)" fill="#3B82F6"/>
+      <text x="0" y="40" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#374151">
+        Visualization Specialists
+      </text>
+      <text x="0" y="56" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#6B7280">
+        D3.js, ggplot2
+      </text>
+      <text x="0" y="70" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#9CA3AF">
+        Interactive Dashboards
+      </text>
+    </g>
+
+    <!-- Marketing Scientists -->
+    <g transform="translate(70, 220)">
+      <use href="#person" transform="scale(1.5)" fill="#3B82F6"/>
+      <text x="0" y="40" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#374151">
+        Marketing Scientists
+      </text>
+      <text x="0" y="56" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#6B7280">
+        Attribution Modeling
+      </text>
+      <text x="0" y="70" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#9CA3AF">
+        Customer Analytics
+      </text>
+    </g>
+
+    <!-- Challenges -->
+    <g transform="translate(0, 310)">
+      <rect x="-180" y="0" width="400" height="45" rx="5" fill="#FEF3C7" stroke="#F59E0B" stroke-width="1"/>
+      <use href="#challenge" transform="translate(-150, 22)"/>
+      <text x="-120" y="15" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#D97706">
+        Challenges:
+      </text>
+      <text x="-130" y="35" font-family="Arial, sans-serif" font-size="14" fill="#92400E">
+        • Data quality issues • Skill gaps • Tool proliferation
+      </text>
+    </g>
+
+    <!-- Business Domain Workflow -->
+    <g transform="translate(0, 370)">
+      <rect x="-180" y="0" width="360" height="60" rx="5" fill="white" stroke="#3B82F6" stroke-width="1"/>
+      <text x="0" y="20" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#3B82F6">
+        Agile Analytics (2-4 weeks)
+      </text>
+      <text x="0" y="40" text-anchor="middle" font-family="monospace" font-size="11" fill="#374151">
+        Hypothesis → Data Collection → Analysis
+      </text>
+      <text x="0" y="55" text-anchor="middle" font-family="monospace" font-size="11" fill="#374151">
+        → Visualization → Action → Iterate
+      </text>
+    </g>
+
+    <!-- Real-time Processing Indicator -->
+    <g transform="translate(30, 320)">
+      <use href="#realtime" transform="scale(0.8)"/>
+      <text x="13" y="5" font-family="Arial, sans-serif" font-size="16" fill="#047857">Real-time Dashboards</text>
+    </g>
+  </g>
+
+  <!-- Data Engineering & Infrastructure Domain -->
+  <g transform="translate(850, 270)">
+    <!-- Domain Header -->
+    <rect x="-200" y="0" width="400" height="80" rx="10" fill="url(#technicalGradient)" filter="url(#shadow)"/>
+    <text x="0" y="30" text-anchor="middle" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="white">
+      ⚡ Data Engineering &amp; Infrastructure
+    </text>
+    <text x="0" y="55" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#A7F3D0">
+      Cloud-Native, Scalable, Automated
+    </text>
+
+    <!-- Data Engineers -->
+    <g transform="translate(-150, 120)">
+      <use href="#person" transform="scale(1.5)" fill="#10B981"/>
+      <text x="0" y="40" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#374151">
+        Data Engineers
+      </text>
+      <text x="0" y="56" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#6B7280">
+        Apache Spark, Airflow
+      </text>
+      <text x="0" y="70" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#9CA3AF">
+        ETL/ELT Pipelines
+      </text>
+    </g>
+
+    <!-- Cloud Architects -->
+    <g transform="translate(0, 120)">
+      <use href="#person" transform="scale(1.5)" fill="#10B981"/>
+      <text x="0" y="40" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#374151">
+        Cloud Architects
+      </text>
+      <text x="0" y="56" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#6B7280">
+        AWS, GCP, Azure
+      </text>
+      <text x="0" y="70" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#9CA3AF">
+        Infrastructure as Code
+      </text>
+    </g>
+
+    <!-- DevOps Engineers -->
+    <g transform="translate(150, 120)">
+      <use href="#person" transform="scale(1.5)" fill="#10B981"/>
+      <text x="0" y="40" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#374151">
+        DevOps Engineers
+      </text>
+      <text x="0" y="56" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#6B7280">
+        Docker, Kubernetes
+      </text>
+      <text x="0" y="70" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#9CA3AF">
+        CI/CD Pipelines
+      </text>
+    </g>
+
+    <!-- Database Engineers -->
+    <g transform="translate(-90, 220)">
+      <use href="#person" transform="scale(1.5)" fill="#10B981"/>
+      <text x="0" y="40" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#374151">
+        Database Engineers
+      </text>
+      <text x="0" y="56" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#6B7280">
+        BigQuery, Snowflake
+      </text>
+      <text x="0" y="70" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#9CA3AF">
+        Data Warehousing
+      </text>
+    </g>
+
+    <!-- Platform Engineers -->
+    <g transform="translate(90, 220)">
+      <use href="#person" transform="scale(1.5)" fill="#10B981"/>
+      <text x="0" y="40" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#374151">
+        Platform Engineers
+      </text>
+      <text x="0" y="56" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#6B7280">
+        Kafka, Elasticsearch
+      </text>
+      <text x="0" y="70" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#9CA3AF">
+        Data Platforms
+      </text>
+    </g>
+
+    <!-- Challenges -->
+    <g transform="translate(0, 310)">
+      <rect x="-180" y="0" width="380" height="45" rx="5" fill="#FEF3C7" stroke="#F59E0B" stroke-width="1"/>
+      <use href="#challenge" transform="translate(-160, 22)"/>
+      <text x="-140" y="15" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#D97706">
+        Challenges:
+      </text>
+      <text x="-150" y="33" font-family="Arial, sans-serif" font-size="13" fill="#92400E">
+        • Scaling issues • Data governance • Security compliance
+      </text>
+    </g>
+
+    <!-- Technical Domain Workflow -->
+    <g transform="translate(0, 370)">
+      <rect x="-180" y="0" width="360" height="60" rx="5" fill="white" stroke="#10B981" stroke-width="1"/>
+      <text x="0" y="20" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#10B981">
+        Continuous Integration (Real-time)
+      </text>
+      <text x="0" y="40" text-anchor="middle" font-family="monospace" font-size="11" fill="#374151">
+        Code → Test → Build → Deploy
+      </text>
+      <text x="0" y="55" text-anchor="middle" font-family="monospace" font-size="11" fill="#374151">
+        → Monitor → Scale → Iterate
+      </text>
+    </g>
+
+    <!-- Real-time Processing Indicator -->
+    <g transform="translate(30, 320)">
+      <use href="#realtime" transform="scale(0.7)"/>
+      <text x="10" y="5" font-family="Arial, sans-serif" font-size="16" fill="#047857">Stream Processing</text>
+    </g>
+  </g>
+
+  <!-- Data Science & Research Domain -->
+  <g transform="translate(1420, 270)">
+    <!-- Domain Header -->
+    <rect x="-200" y="0" width="400" height="80" rx="10" fill="url(#specializedGradient)" filter="url(#shadow)"/>
+    <text x="0" y="30" text-anchor="middle" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="white">
+      🧠 Data Science &amp; ML
+    </text>
+    <text x="0" y="55" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#DDD6FE">
+      Predictive, Experimental, Model-Driven
+    </text>
+
+    <!-- Data Scientists -->
+    <g transform="translate(-120, 120)">
+      <use href="#person" transform="scale(1.5)" fill="#8B5CF6"/>
+      <text x="0" y="40" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#374151">
+        Data Scientists
+      </text>
+      <text x="0" y="56" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#6B7280">
+        Python, R, Jupyter
+      </text>
+      <text x="0" y="70" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#9CA3AF">
+        scikit-learn, pandas
+      </text>
+    </g>
+
+    <!-- ML Engineers -->
+    <g transform="translate(0, 120)">
+      <use href="#person" transform="scale(1.5)" fill="#8B5CF6"/>
+      <text x="0" y="40" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#374151">
+        ML Engineers
+      </text>
+      <text x="0" y="56" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#6B7280">
+        TensorFlow, PyTorch
+      </text>
+      <text x="0" y="70" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#9CA3AF">
+        Model Deployment
+      </text>
+    </g>
+
+    <!-- Research Scientists -->
+    <g transform="translate(120, 120)">
+      <use href="#person" transform="scale(1.5)" fill="#8B5CF6"/>
+      <text x="0" y="40" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#374151">
+        Research Scientists
+      </text>
+      <text x="0" y="56" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#6B7280">
+        Deep Learning
+      </text>
+      <text x="0" y="70" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#9CA3AF">
+        Algorithm Development
+      </text>
+    </g>
+
+    <!-- Quantitative Analysts -->
+    <g transform="translate(-80, 220)">
+      <use href="#person" transform="scale(1.5)" fill="#8B5CF6"/>
+      <text x="0" y="40" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#374151">
+        Quantitative Analysts
+      </text>
+      <text x="0" y="56" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#6B7280">
+        Financial Modeling
+      </text>
+      <text x="0" y="70" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#9CA3AF">
+        Risk Analytics
+      </text>
+    </g>
+
+    <!-- Applied Scientists -->
+    <g transform="translate(80, 220)">
+      <use href="#person" transform="scale(1.5)" fill="#8B5CF6"/>
+      <text x="0" y="40" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#374151">
+        Applied Scientists
+      </text>
+      <text x="0" y="56" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#6B7280">
+        Product ML
+      </text>
+      <text x="0" y="70" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#9CA3AF">
+        A/B Testing, Causal Inference
+      </text>
+    </g>
+
+    <!-- Challenges -->
+    <g transform="translate(0, 310)">
+      <rect x="-180" y="0" width="380" height="45" rx="5" fill="#FEF3C7" stroke="#F59E0B" stroke-width="1"/>
+      <use href="#challenge" transform="translate(-160, 22)"/>
+      <text x="-140" y="15" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#D97706">
+        Challenges:
+      </text>
+      <text x="-140" y="33" font-family="Arial, sans-serif" font-size="14" fill="#92400E">
+        • Model deployment • Reproducibility • Interpretability
+      </text>
+    </g>
+
+    <!-- Specialized Domain Workflow -->
+    <g transform="translate(0, 370)">
+      <rect x="-180" y="0" width="360" height="60" rx="5" fill="white" stroke="#8B5CF6" stroke-width="1"/>
+      <text x="0" y="20" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#8B5CF6">
+        Experiment-Driven (1-3 months)
+      </text>
+      <text x="0" y="40" text-anchor="middle" font-family="monospace" font-size="11" fill="#374151">
+        Problem → Data → Model → Validate
+      </text>
+      <text x="0" y="55" text-anchor="middle" font-family="monospace" font-size="11" fill="#374151">
+        → Deploy → Monitor → Improve
+      </text>
+    </g>
+
+    <!-- Real-time Processing Indicator -->
+    <g transform="translate(30, 320)">
+      <use href="#realtime" transform="scale(0.7)"/>
+      <text x="11" y="5" font-family="Arial, sans-serif" font-size="16" fill="#047857">Online Learning</text>
+    </g>
+  </g>
+
+  <!-- Cross-functional Collaboration -->
+  <g transform="translate(850, 500)">
+
+    <!-- Collaboration flow arrows -->
+    <g transform="translate(0, 30)">
+      <path d="M -400 20 L -200 20" stroke="#3B82F6" stroke-width="3" fill="none" marker-end="url(#fastArrow)"/>
+      <text x="-300" y="15" text-anchor="middle" font-family="Arial" font-size="16" fill="#1D4ED8">Analytics Request</text>
+      <text x="-300" y="35" text-anchor="middle" font-family="Arial" font-size="14" fill="#1D4ED8">(1-2 days)</text>
+
+      <path d="M 200 20 L 400 20" stroke="#10B981" stroke-width="3" fill="none" marker-end="url(#agileArrow)"/>
+      <text x="300" y="15" text-anchor="middle" font-family="Arial" font-size="16" fill="#047857">Data Pipeline</text>
+      <text x="300" y="35" text-anchor="middle" font-family="Arial" font-size="14" fill="#047857">(2-3 days)</text>
+
+      <!-- Collaboration indicators -->
+      <g transform="translate(-300, 0)">
+        <circle cx="0" cy="-20" r="10" fill="#10B981"/>
+        <text x="0" y="-12" text-anchor="middle" font-family="Arial" font-size="20" font-weight="bold" fill="white">✓</text>
+        <text x="0" y="55" text-anchor="middle" font-family="Arial" font-size="16" fill="#047857">Collaboration</text>
+      </g>
+
+      <g transform="translate(300, 0)">
+        <circle cx="0" cy="-20" r="10" fill="#10B981"/>
+        <text x="0" y="-12" text-anchor="middle" font-family="Arial" font-size="20" font-weight="bold" fill="white">✓</text>
+        <text x="0" y="55" text-anchor="middle" font-family="Arial" font-size="16" fill="#047857">Shared Tools</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- Evolution arrow and note -->
+  <g transform="translate(850, 740)">
+    <path d="M -250 0 L 200 0" stroke="#8B5CF6" stroke-width="4" fill="none" marker-end="url(#arrow)"/>
+    <text x="-40" y="-10" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#8B5CF6">
+      Evolution to Modern MLOps Era (2020+)
+    </text>
+    <text x="0" y="25" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#374151">
+      Cross-functional teams enabled faster iteration and democratized data access
+    </text>
+    <text x="0" y="45" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#6B7280">
+      Foundation for AI-native organizations with continuous learning and deployment
+    </text>
+  </g>
+
+  <!-- Footer Timeline -->
+  <text x="850" y="810" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#6B7280">
+    📅 2014-2020 | 🌐 Open Source | 🤝 Cross-Functional | ⚡ Real-time | 🧠 ML-Driven
+  </text>
+
+</svg>

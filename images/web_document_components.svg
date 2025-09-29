@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1180 380" width="1180" height="380">
+  <defs>
+    <!-- 그림자 효과 -->
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="1.5"/>
+      <feOffset dx="1" dy="1" result="offsetblur"/>
+      <feComponentTransfer>
+        <feFuncA type="linear" slope="0.2"/>
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    
+    <!-- 웹 문서 그라디언트 -->
+    <linearGradient id="webGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#7952b3;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#6610f2;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- HTML 그라디언트 -->
+    <linearGradient id="htmlGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#e15361;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#dc3545;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- CSS 그라디언트 -->
+    <linearGradient id="cssGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3d8bfd;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0d6efd;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- JavaScript 그라디언트 -->
+    <linearGradient id="jsGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffc107;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#fd9843;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- 화살표 마커 -->
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L7,3 z" fill="#6c757d"/>
+    </marker>
+  </defs>
+  
+  <!-- 배경 -->
+  <rect width="1180" height="380" fill="#ffffff"/>
+  
+  <!-- 웹 문서 (최상단) -->
+  <g transform="translate(440, 5)">
+    <rect x="0" y="0" width="300" height="50" 
+          fill="url(#webGradient)" 
+          stroke="#6610f2" 
+          stroke-width="2" 
+          rx="8" 
+          filter="url(#shadow)"/>
+    <text x="150" y="32" font-family="'Noto Sans KR', Arial, sans-serif" 
+          font-size="18" font-weight="bold" 
+          text-anchor="middle" fill="white">Web Document</text>
+  </g>
+  
+  <!-- 메인 연결선 -->
+  <path d="M 590,55 L 590,80" stroke="#6c757d" stroke-width="2.5" fill="none"/>
+  
+  <!-- 수평 분기선 -->
+  <path d="M 290,80 L 890,80" stroke="#6c757d" stroke-width="2" fill="none"/>
+  
+  <!-- 3개 메인 컴포넌트로 연결 -->
+  <g stroke="#6c757d" stroke-width="2" fill="none">
+    <path d="M 290,80 L 290,110" marker-end="url(#arrow)"/>
+    <path d="M 590,80 L 590,110" marker-end="url(#arrow)"/>
+    <path d="M 890,80 L 890,110" marker-end="url(#arrow)"/>
+  </g>
+  
+  <!-- 3대 핵심 기술 -->
+  <!-- HTML -->
+  <g transform="translate(190, 110)">
+    <rect x="0" y="0" width="200" height="60" 
+          fill="url(#htmlGradient)" 
+          stroke="#dc3545" 
+          stroke-width="2" 
+          rx="8" 
+          filter="url(#shadow)"/>
+    <text x="100" y="28" font-family="'Noto Sans KR', Arial, sans-serif" 
+          font-size="17" font-weight="bold" 
+          text-anchor="middle" fill="white">HTML</text>
+    <text x="100" y="44" font-family="'Noto Sans KR', Arial, sans-serif" 
+          font-size="11" 
+          text-anchor="middle" fill="rgba(255,255,255,0.9)">Structure</text>
+  </g>
+  
+  <!-- CSS -->
+  <g transform="translate(490, 110)">
+    <rect x="0" y="0" width="200" height="60" 
+          fill="url(#cssGradient)" 
+          stroke="#0d6efd" 
+          stroke-width="2" 
+          rx="8" 
+          filter="url(#shadow)"/>
+    <text x="100" y="28" font-family="'Noto Sans KR', Arial, sans-serif" 
+          font-size="17" font-weight="bold" 
+          text-anchor="middle" fill="white">CSS</text>
+    <text x="100" y="44" font-family="'Noto Sans KR', Arial, sans-serif" 
+          font-size="11" 
+          text-anchor="middle" fill="rgba(255,255,255,0.9)">Styling</text>
+  </g>
+  
+  <!-- JavaScript -->
+  <g transform="translate(790, 110)">
+    <rect x="0" y="0" width="200" height="60" 
+          fill="url(#jsGradient)" 
+          stroke="#fd9843" 
+          stroke-width="2" 
+          rx="8" 
+          filter="url(#shadow)"/>
+    <text x="100" y="28" font-family="'Noto Sans KR', Arial, sans-serif" 
+          font-size="17" font-weight="bold" 
+          text-anchor="middle" fill="white">JavaScript</text>
+    <text x="100" y="44" font-family="'Noto Sans KR', Arial, sans-serif" 
+          font-size="11" 
+          text-anchor="middle" fill="rgba(255,255,255,0.9)">Dynamic Features</text>
+  </g>
+  
+  <!-- HTML 하위 요소 연결선 -->
+  <path d="M 290,170 L 290,195" stroke="#dc3545" stroke-width="2" fill="none"/>
+  <path d="M 75,195 L 395,195" stroke="#dc3545" stroke-width="1.5" fill="none"/>
+  <g stroke="#dc3545" stroke-width="1.5" fill="none">
+    <path d="M 75,195 L 75,220" marker-end="url(#arrow)"/>
+    <path d="M 155,195 L 155,220" marker-end="url(#arrow)"/>
+    <path d="M 235,195 L 235,220" marker-end="url(#arrow)"/>
+    <path d="M 315,195 L 315,220" marker-end="url(#arrow)"/>
+    <path d="M 395,195 L 395,220" marker-end="url(#arrow)"/>
+  </g>
+  
+  <!-- CSS 하위 요소 연결선 -->
+  <path d="M 590,170 L 590,195" stroke="#0d6efd" stroke-width="2" fill="none"/>
+  <path d="M 505,195 L 745,195" stroke="#0d6efd" stroke-width="1.5" fill="none"/>
+  <g stroke="#0d6efd" stroke-width="1.5" fill="none">
+    <path d="M 505,195 L 505,270" marker-end="url(#arrow)"/>
+    <path d="M 585,195 L 585,270" marker-end="url(#arrow)"/>
+    <path d="M 665,195 L 665,270" marker-end="url(#arrow)"/>
+    <path d="M 745,195 L 745,270" marker-end="url(#arrow)"/>
+  </g>
+  
+  <!-- JavaScript 하위 요소 연결선 -->
+  <path d="M 890,170 L 890,195" stroke="#fd9843" stroke-width="2" fill="none"/>
+  <path d="M 775,195 L 1035,195" stroke="#fd9843" stroke-width="1.5" fill="none"/>
+  <g stroke="#fd9843" stroke-width="1.5" fill="none">
+    <path d="M 775,195 L 775,320" marker-end="url(#arrow)"/>
+    <path d="M 905,195 L 905,320" marker-end="url(#arrow)"/>
+    <path d="M 1035,195 L 1035,320" marker-end="url(#arrow)"/>
+  </g>
+  
+  <!-- HTML 하위 요소들 -->
+  <g font-family="'Noto Sans KR', Arial, sans-serif">
+    <g transform="translate(40, 220)">
+      <rect x="0" y="0" width="70" height="40" fill="#fff5f5" stroke="#dc3545" stroke-width="1.5" rx="5" filter="url(#shadow)"/>
+      <text x="35" y="18" font-size="10" font-weight="bold" text-anchor="middle" fill="#dc3545">Tags</text>
+      <text x="35" y="30" font-size="8" text-anchor="middle" fill="#6c757d">&lt;tag&gt;</text>
+    </g>
+    
+    <g transform="translate(120, 220)">
+      <rect x="0" y="0" width="70" height="40" fill="#fff5f5" stroke="#dc3545" stroke-width="1.5" rx="5" filter="url(#shadow)"/>
+      <text x="35" y="18" font-size="10" font-weight="bold" text-anchor="middle" fill="#dc3545">Text</text>
+      <text x="35" y="30" font-size="8" text-anchor="middle" fill="#6c757d">content</text>
+    </g>
+    
+    <g transform="translate(200, 220)">
+      <rect x="0" y="0" width="70" height="40" fill="#fff5f5" stroke="#dc3545" stroke-width="1.5" rx="5" filter="url(#shadow)"/>
+      <text x="35" y="18" font-size="10" font-weight="bold" text-anchor="middle" fill="#dc3545">Links</text>
+      <text x="35" y="30" font-size="8" text-anchor="middle" fill="#6c757d">&lt;a&gt;</text>
+    </g>
+    
+    <g transform="translate(280, 220)">
+      <rect x="0" y="0" width="70" height="40" fill="#fff5f5" stroke="#dc3545" stroke-width="1.5" rx="5" filter="url(#shadow)"/>
+      <text x="35" y="18" font-size="10" font-weight="bold" text-anchor="middle" fill="#dc3545">Lists</text>
+      <text x="35" y="30" font-size="8" text-anchor="middle" fill="#6c757d">&lt;ul&gt;&lt;ol&gt;</text>
+    </g>
+    
+    <g transform="translate(360, 220)">
+      <rect x="0" y="0" width="70" height="40" fill="#fff5f5" stroke="#dc3545" stroke-width="1.5" rx="5" filter="url(#shadow)"/>
+      <text x="35" y="18" font-size="10" font-weight="bold" text-anchor="middle" fill="#dc3545">Tables</text>
+      <text x="35" y="30" font-size="8" text-anchor="middle" fill="#6c757d">&lt;table&gt;</text>
+    </g>
+  </g>
+  
+  <!-- CSS 하위 요소들 -->
+  <g font-family="'Noto Sans KR', Arial, sans-serif">
+    <g transform="translate(470, 270)">
+      <rect x="0" y="0" width="70" height="40" fill="#f0f8ff" stroke="#0d6efd" stroke-width="1.5" rx="5" filter="url(#shadow)"/>
+      <text x="35" y="18" font-size="10" font-weight="bold" text-anchor="middle" fill="#0d6efd">Colors</text>
+      <text x="35" y="30" font-size="8" text-anchor="middle" fill="#6c757d">color</text>
+    </g>
+    
+    <g transform="translate(550, 270)">
+      <rect x="0" y="0" width="70" height="40" fill="#f0f8ff" stroke="#0d6efd" stroke-width="1.5" rx="5" filter="url(#shadow)"/>
+      <text x="35" y="18" font-size="10" font-weight="bold" text-anchor="middle" fill="#0d6efd">Fonts</text>
+      <text x="35" y="30" font-size="8" text-anchor="middle" fill="#6c757d">font</text>
+    </g>
+    
+    <g transform="translate(630, 270)">
+      <rect x="0" y="0" width="70" height="40" fill="#f0f8ff" stroke="#0d6efd" stroke-width="1.5" rx="5" filter="url(#shadow)"/>
+      <text x="35" y="18" font-size="10" font-weight="bold" text-anchor="middle" fill="#0d6efd">Spacing</text>
+      <text x="35" y="30" font-size="8" text-anchor="middle" fill="#6c757d">margin</text>
+    </g>
+    
+    <g transform="translate(710, 270)">
+      <rect x="0" y="0" width="70" height="40" fill="#f0f8ff" stroke="#0d6efd" stroke-width="1.5" rx="5" filter="url(#shadow)"/>
+      <text x="35" y="18" font-size="10" font-weight="bold" text-anchor="middle" fill="#0d6efd">Alignment</text>
+      <text x="35" y="30" font-size="8" text-anchor="middle" fill="#6c757d">align</text>
+    </g>
+  </g>
+  
+  <!-- JavaScript 하위 요소들 -->
+  <g font-family="'Noto Sans KR', Arial, sans-serif">
+    <g transform="translate(720, 320)">
+      <rect x="0" y="0" width="110" height="40" fill="#fffaf0" stroke="#fd9843" stroke-width="1.5" rx="5" filter="url(#shadow)"/>
+      <text x="55" y="18" font-size="10" font-weight="bold" text-anchor="middle" fill="#fd9843">User Interaction</text>
+      <text x="55" y="30" font-size="8" text-anchor="middle" fill="#6c757d">event</text>
+    </g>
+    
+    <g transform="translate(850, 320)">
+      <rect x="0" y="0" width="110" height="40" fill="#fffaf0" stroke="#fd9843" stroke-width="1.5" rx="5" filter="url(#shadow)"/>
+      <text x="55" y="18" font-size="10" font-weight="bold" text-anchor="middle" fill="#fd9843">Data Processing</text>
+      <text x="55" y="30" font-size="8" text-anchor="middle" fill="#6c757d">function</text>
+    </g>
+    
+    <g transform="translate(980, 320)">
+      <rect x="0" y="0" width="110" height="40" fill="#fffaf0" stroke="#fd9843" stroke-width="1.5" rx="5" filter="url(#shadow)"/>
+      <text x="55" y="18" font-size="10" font-weight="bold" text-anchor="middle" fill="#fd9843">Element Modification</text>
+      <text x="55" y="30" font-size="8" text-anchor="middle" fill="#6c757d">DOM</text>
+    </g>
+  </g>
+  
+  <!-- 범례 -->
+  <g transform="translate(10, 365)">
+    <text x="0" y="0" font-family="'Noto Sans KR', Arial, sans-serif" 
+          font-size="18" fill="#6c757d">
+      Structure (HTML) → Styling (CSS) → Behavior (JavaScript)
+    </text>
+  </g>
+</svg>

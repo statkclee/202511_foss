@@ -1,0 +1,308 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" width="1600" height="1000">
+  <defs>
+    <style><![CDATA[
+      .title { font-family: Inter, Segoe UI, Arial, sans-serif; font-size: 40px; font-weight: 900; fill: #f8fafc; }
+      .subtitle { font-family: Inter, Segoe UI, Arial, sans-serif; font-size: 22px; font-weight: 600; fill: #cbd5e1; }
+      .h1 { font-family: Inter, Segoe UI, Arial, sans-serif; font-size: 20px; font-weight: 800; fill: #ffffff; }
+      .h2 { font-family: Inter, Segoe UI, Arial, sans-serif; font-size: 18px; font-weight: 800; fill: #f1f5f9; }
+      .p { font-family: Inter, Segoe UI, Arial, sans-serif; font-size: 18px; font-weight: 600; fill: #e5e7eb; }
+      .small { font-family: Inter, Segoe UI, Arial, sans-serif; font-size: 12px; font-weight: 700; fill: #cbd5e1; }
+      .year { font-family: Inter, Segoe UI, Arial, sans-serif; font-size: 16px; font-weight: 900; fill: #fbbf24; }
+    ]]></style>
+
+    <!-- Background -->
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+
+    <!-- Era gradients -->
+    <linearGradient id="gradAncient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#92400e"/>
+      <stop offset="100%" stop-color="#78350f"/>
+    </linearGradient>
+
+    <linearGradient id="gradClassical" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#dc2626"/>
+      <stop offset="100%" stop-color="#b91c1c"/>
+    </linearGradient>
+
+    <linearGradient id="gradMedieval" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ea580c"/>
+      <stop offset="100%" stop-color="#c2410c"/>
+    </linearGradient>
+
+    <linearGradient id="gradRenaissance" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ca8a04"/>
+      <stop offset="100%" stop-color="#a16207"/>
+    </linearGradient>
+
+    <linearGradient id="gradIndustrial" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#059669"/>
+      <stop offset="100%" stop-color="#047857"/>
+    </linearGradient>
+
+    <linearGradient id="gradModern" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0284c7"/>
+      <stop offset="100%" stop-color="#0369a1"/>
+    </linearGradient>
+
+    <linearGradient id="gradDigital" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7c3aed"/>
+      <stop offset="100%" stop-color="#6d28d9"/>
+    </linearGradient>
+
+    <linearGradient id="gradAI" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10b981"/>
+      <stop offset="100%" stop-color="#059669"/>
+    </linearGradient>
+
+    <!-- Effects -->
+    <filter id="shadow"><feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000" flood-opacity="0.3"/></filter>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge> 
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Arrow markers -->
+    <marker id="arrowRight" markerWidth="16" markerHeight="12" refX="14" refY="6" orient="auto">
+      <polygon points="0 0, 16 6, 0 12" fill="#34d399"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1600" height="1000" fill="url(#bg)"/>
+
+  <!-- Header -->
+  <text x="800" y="60" text-anchor="middle" class="title">Historical Evolution of General Purpose Technologies</text>
+  <text x="800" y="95" text-anchor="middle" class="subtitle">Historical Evolution of General Purpose Technologies</text>
+
+  <!-- Timeline -->
+  <g transform="translate(80,150)">
+    <!-- Main timeline line -->
+    <line x1="0" y1="570" x2="1440" y2="570" stroke="#4b5563" stroke-width="4"/>
+    
+    <!-- Era 1: Ancient (Agriculture, Writing) -->
+    <g transform="translate(0,0)">
+      <rect x="0" y="0" width="180" height="450" rx="15" fill="url(#gradAncient)" filter="url(#shadow)" opacity="0.9"/>
+      <text x="90" y="30" text-anchor="middle" class="h1">Ancient</text>
+      <text x="90" y="50" text-anchor="middle" class="small">Ancient Era</text>
+      <text x="90" y="75" text-anchor="middle" class="year">BC 9000-500</text>
+      
+      <g transform="translate(15,110)" class="p">
+        <text x="0" y="0" class="h2" fill="#fed7aa">Major GPTs:</text>
+        <text x="0" y="30">• Plant cultivation (BC 9000)</text>
+        <text x="0" y="55">• Writing (BC 3400)</text>
+        <text x="0" y="80">• Iron (BC 1200)</text>
+        
+        <text x="0" y="120" class="h2" fill="#fed7aa">Impact:</text>
+        <text x="0" y="150">• Agricultural revolution</text>
+        <text x="0" y="175">• Civilization development</text>
+        <text x="0" y="200">• Iron Age</text>
+        
+        <text x="0" y="240" class="h2" fill="#fed7aa">Characteristics:</text>
+        <text x="0" y="270">• Survival-focused</text>
+        <text x="0" y="295">• Regional diffusion</text>
+        <text x="0" y="320">• Slow development</text>
+      </g>
+      
+      <circle cx="90" cy="570" r="12" fill="url(#gradAncient)" stroke="#fff" stroke-width="3"/>
+    </g>
+
+    <!-- Era 2: Classical/Medieval (Watermills, Printing) -->
+    <g transform="translate(200,0)">
+      <rect x="0" y="0" width="180" height="450" rx="15" fill="url(#gradMedieval)" filter="url(#shadow)" opacity="0.9"/>
+      <text x="90" y="30" text-anchor="middle" class="h1">Medieval</text>
+      <text x="90" y="50" text-anchor="middle" class="small">Medieval Era</text>
+      <text x="90" y="75" text-anchor="middle" class="year">500-1500</text>
+      
+      <g transform="translate(15,110)" class="p">
+        <text x="0" y="0" class="h2" fill="#fed7aa">Major GPTs:</text>
+        <text x="0" y="30">• Water mills (early medieval)</text>
+        <text x="0" y="55">• Three-masted ships (15C)</text>
+        <text x="0" y="80">• Printing press (15C)</text>
+        
+        <text x="0" y="120" class="h2" fill="#fed7aa">Impact:</text>
+        <text x="0" y="150">• Technological innovation</text>
+        <text x="0" y="175">• Age of exploration</text>
+        <text x="0" y="200">• Information revolution</text>
+        
+        <text x="0" y="240" class="h2" fill="#fed7aa">Characteristics:</text>
+        <text x="0" y="270">• Craft-centered</text>
+        <text x="0" y="295">• Knowledge dissemination</text>
+        <text x="0" y="320">• Age of exploration</text>
+      </g>
+      
+      <circle cx="90" cy="570" r="12" fill="url(#gradMedieval)" stroke="#fff" stroke-width="3"/>
+    </g>
+
+    <!-- Era 3: Industrial Revolution -->
+    <g transform="translate(400,0)">
+      <rect x="0" y="0" width="200" height="450" rx="15" fill="url(#gradIndustrial)" filter="url(#shadow)" opacity="0.9"/>
+      <text x="100" y="30" text-anchor="middle" class="h1">Industrial Revolution</text>
+      <text x="100" y="50" text-anchor="middle" class="small">Industrial Revolution</text>
+      <text x="100" y="75" text-anchor="middle" class="year">1750-1850</text>
+      
+      <g transform="translate(15,110)" class="p">
+        <text x="0" y="0" class="h2" fill="#a7f3d0">Major GPTs:</text>
+        <text x="0" y="30">• Factory system (18C)</text>
+        <text x="0" y="55">• Steam engine (late 18C)</text>
+        <text x="0" y="80">• Railway (mid 19C)</text>
+        
+        <text x="0" y="120" class="h2" fill="#a7f3d0">Impact:</text>
+        <text x="0" y="150">• First Industrial Revolution</text>
+        <text x="0" y="175">• Transportation revolution</text>
+        <text x="0" y="200">• Urbanization</text>
+        
+        <text x="0" y="240" class="h2" fill="#a7f3d0">Characteristics:</text>
+        <text x="0" y="270">• Mechanization</text>
+        <text x="0" y="295">• Mass production</text>
+        <text x="0" y="320">• Labor transformation</text>
+      </g>
+      
+      <circle cx="100" cy="570" r="12" fill="url(#gradIndustrial)" stroke="#fff" stroke-width="3"/>
+    </g>
+
+    <!-- Era 4: Second Industrial Revolution -->
+    <g transform="translate(620,0)">
+      <rect x="0" y="0" width="200" height="450" rx="15" fill="url(#gradModern)" filter="url(#shadow)" opacity="0.9"/>
+      <text x="100" y="30" text-anchor="middle" class="h1">Second Industrial Revolution</text>
+      <text x="100" y="50" text-anchor="middle" class="small">Second Industrial</text>
+      <text x="100" y="75" text-anchor="middle" class="year">1870-1914</text>
+      
+      <g transform="translate(15,110)" class="p">
+        <text x="0" y="0" class="h2" fill="#bfdbfe">Major GPTs:</text>
+        <text x="0" y="30">• Electricity (early 20C)</text>
+        <text x="0" y="55">• Internal combustion engine (late 19C)</text>
+        <text x="0" y="80">• Automobile (early 20C)</text>
+        
+        <text x="0" y="120" class="h2" fill="#bfdbfe">Impact:</text>
+        <text x="0" y="150">• Second Industrial Revolution</text>
+        <text x="0" y="175">• Automotive revolution</text>
+        <text x="0" y="200">• Electrification</text>
+        
+        <text x="0" y="240" class="h2" fill="#bfdbfe">Characteristics:</text>
+        <text x="0" y="270">• Power utilization</text>
+        <text x="0" y="295">• Personal mobility</text>
+        <text x="0" y="320">• Lifestyle innovation</text>
+      </g>
+      
+      <circle cx="100" cy="570" r="12" fill="url(#gradModern)" stroke="#fff" stroke-width="3"/>
+    </g>
+
+    <!-- Era 5: Information Age -->
+    <g transform="translate(840,0)">
+      <rect x="0" y="0" width="200" height="450" rx="15" fill="url(#gradDigital)" filter="url(#shadow)" opacity="0.9"/>
+      <text x="100" y="30" text-anchor="middle" class="h1">Information Revolution</text>
+      <text x="100" y="50" text-anchor="middle" class="small">Information Age</text>
+      <text x="100" y="75" text-anchor="middle" class="year">1950-2000</text>
+      
+      <g transform="translate(15,110)" class="p">
+        <text x="0" y="0" class="h2" fill="#ddd6fe">Major GPTs:</text>
+        <text x="0" y="30">• Computer (late 20C)</text>
+        <text x="0" y="55">• Internet (late 20C)</text>
+        <text x="0" y="80">• Lean production (late 20C)</text>
+        
+        <text x="0" y="120" class="h2" fill="#ddd6fe">Impact:</text>
+        <text x="0" y="150">• 정보혁명</text>
+        <text x="0" y="175">• Digital revolution</text>
+        <text x="0" y="200">• Efficiency revolution</text>
+        
+        <text x="0" y="240" class="h2" fill="#ddd6fe">Characteristics:</text>
+        <text x="0" y="270">• Information processing</text>
+        <text x="0" y="295">• Global connectivity</text>
+        <text x="0" y="320">• Knowledge economy</text>
+      </g>
+      
+      <circle cx="100" cy="570" r="12" fill="url(#gradDigital)" stroke="#fff" stroke-width="3"/>
+    </g>
+
+    <!-- Era 6: AI Revolution -->
+    <g transform="translate(1060,0)">
+      <rect x="0" y="0" width="200" height="450" rx="15" fill="url(#gradAI)" filter="url(#shadow)" opacity="0.9"/>
+      <text x="100" y="30" text-anchor="middle" class="h1">Cognitive Revolution</text>
+      <text x="100" y="50" text-anchor="middle" class="small">Cognitive Revolution</text>
+      <text x="100" y="75" text-anchor="middle" class="year">2022-Present</text>
+      
+      <g transform="translate(15,110)" class="p">
+        <text x="0" y="0" class="h2" fill="#a7f3d0">Major GPTs:</text>
+        <text x="0" y="30">• Generative AI (2022)</text>
+        <text x="0" y="55">• Conversational AI</text>
+        <text x="0" y="80">• Multimodal AI</text>
+        
+        <text x="0" y="120" class="h2" fill="#a7f3d0">Impact:</text>
+        <text x="0" y="150">• Cognitive revolution</text>
+        <text x="0" y="175">• Creative assistance</text>
+        <text x="0" y="200">• Intelligence augmentation</text>
+        
+        <text x="0" y="240" class="h2" fill="#a7f3d0">Characteristics:</text>
+        <text x="0" y="270">• Cognitive enhancement</text>
+        <text x="0" y="295">• Creative collaboration</text>
+        <text x="0" y="320">• Democratization</text>
+      </g>
+      
+      <circle cx="100" cy="570" r="12" fill="url(#gradAI)" stroke="#fff" stroke-width="3" filter="url(#glow)"/>
+    </g>
+
+    <!-- Future placeholder -->
+    <g transform="translate(1280,0)">
+      <rect x="0" y="0" width="200" height="450" rx="15" fill="#374151" filter="url(#shadow)" opacity="0.5" stroke="#fbbf24" stroke-width="2" stroke-dasharray="5,5"/>
+      <text x="80" y="30" text-anchor="middle" class="h1" fill="#fbbf24">Future?</text>
+      <text x="80" y="50" text-anchor="middle" class="small" fill="#fbbf24">Future?</text>
+      <text x="80" y="75" text-anchor="middle" class="year">2030+</text>
+      
+      <g transform="translate(15,110)" class="p">
+        <text x="0" y="0" class="h2" fill="#fbbf24">Possibilities:</text>
+        <text x="0" y="30">• Physical AI</text>
+        <text x="0" y="55">• Brain-Computer</text>
+        <text x="0" y="80">• Quantum computing</text>
+        
+        <text x="0" y="120" class="h2" fill="#fbbf24">Expected Impact:</text>
+        <text x="0" y="150">• Physical intelligence</text>
+        <text x="0" y="175">• Human-AI integration</text>
+        <text x="0" y="200">• Dimensional leap</text>
+        
+        <text x="0" y="240" class="h2" fill="#fbbf24">Characteristics:</text>
+        <text x="0" y="270">• Super-intelligence era</text>
+        <text x="0" y="295">• Physical-digital fusion</text>
+        <text x="0" y="320">• Post-human possibilities</text>
+      </g>
+      
+      <circle cx="80" cy="570" r="8" fill="#fbbf24" stroke="#fff" stroke-width="2" opacity="0.7"/>
+    </g>
+
+    <!-- Arrows showing progression -->
+    <g transform="translate(0,570)">
+      <line x1="180" y1="0" x2="200" y2="0" stroke="#34d399" stroke-width="4" marker-end="url(#arrowRight)"/>
+      <line x1="380" y1="0" x2="400" y2="0" stroke="#34d399" stroke-width="4" marker-end="url(#arrowRight)"/>
+      <line x1="600" y1="0" x2="620" y2="0" stroke="#34d399" stroke-width="4" marker-end="url(#arrowRight)"/>
+      <line x1="820" y1="0" x2="840" y2="0" stroke="#34d399" stroke-width="4" marker-end="url(#arrowRight)"/>
+      <line x1="1040" y1="0" x2="1060" y2="0" stroke="#34d399" stroke-width="4" marker-end="url(#arrowRight)" filter="url(#glow)"/>
+      <line x1="1260" y1="0" x2="1280" y2="0" stroke="#fbbf24" stroke-width="4" marker-end="url(#arrowRight)" stroke-dasharray="5,5"/>
+    </g>
+  </g>
+
+  <!-- Key Insights -->
+  <g transform="translate(800,780)">
+    <rect x="-720" y="0" width="1440" height="120" rx="15" fill="#1f2937" opacity="0.8"/>
+    <text x="0" y="30" text-anchor="middle" class="h1">Key Insights on Evolution Patterns</text>
+    <text x="0" y="55" text-anchor="middle" class="p">Each era's GPT expands new dimensions of human capability: Physical → Information → Cognitive</text>
+    <text x="0" y="80" text-anchor="middle" class="small">Generative AI is the first GPT to directly participate in human creative and cognitive processes</text>
+    <text x="0" y="105" text-anchor="middle" class="small">Key Pattern: Each GPT expands new dimensions of human capability - Physical → Information → Cognitive</text>
+  </g>
+
+  <!-- Current status indicator -->
+  <g transform="translate(1160,140)">
+    <polygon points="0 0, 20 -25, -20 -25" fill="#10b981" filter="url(#shadow)"/>
+    <text x="0" y="-35" text-anchor="middle" class="h2" fill="#10b981">Current Position</text>
+  </g>
+
+  <!-- Acceleration indicator -->
+  <g transform="translate(800,950)">
+    <text x="0" y="0" text-anchor="middle" class="h1">⚡ Accelerating Innovation Cycles: Millennia → Centuries → Decades → Years</text>
+    <text x="0" y="25" text-anchor="middle" class="small">Accelerating Innovation Cycles: Millennia → Centuries → Decades → Years</text>
+  </g>
+</svg>

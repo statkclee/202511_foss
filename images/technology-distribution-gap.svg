@@ -1,0 +1,147 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 900" width="1400" height="900">
+  <defs>
+    <style><![CDATA[
+      .title { font-family: Inter, Segoe UI, Arial, sans-serif; font-size: 40px; font-weight: 900; fill: #f8fafc; }
+      .subtitle { font-family: Inter, Segoe UI, Arial, sans-serif; font-size: 22px; font-weight: 600; fill: #cbd5e1; }
+      .quote { font-family: Georgia, serif; font-size: 28px; font-weight: 600; fill: #fbbf24; font-style: italic; }
+      .quote-small { font-family: Georgia, serif; font-size: 20px; font-weight: 500; fill: #e5e7eb; font-style: italic; }
+      .author { font-family: Inter, Segoe UI, Arial, sans-serif; font-size: 16px; font-weight: 700; fill: #94a3b8; }
+      .h1 { font-family: Inter, Segoe UI, Arial, sans-serif; font-size: 24px; font-weight: 800; fill: #ffffff; }
+      .h2 { font-family: Inter, Segoe UI, Arial, sans-serif; font-size: 18px; font-weight: 800; fill: #f1f5f9; }
+      .p { font-family: Inter, Segoe UI, Arial, sans-serif; font-size: 14px; font-weight: 600; fill: #e5e7eb; }
+      .small { font-family: Inter, Segoe UI, Arial, sans-serif; font-size: 12px; font-weight: 700; fill: #cbd5e1; }
+      .tech-label { font-family: Inter, Segoe UI, Arial, sans-serif; font-size: 16px; font-weight: 900; }
+      .year-label { font-family: Inter, Segoe UI, Arial, sans-serif; font-size: 14px; font-weight: 800; }
+    ]]></style>
+
+    <!-- Background -->
+    <radialGradient id="bg" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </radialGradient>
+
+    <!-- Technology era gradients -->
+    <radialGradient id="aiEra" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#fbbf24" stop-opacity="0.3"/>
+      <stop offset="70%" stop-color="#f59e0b" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#d97706" stop-opacity="0.1"/>
+    </radialGradient>
+
+    <radialGradient id="digitalEra" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#3b82f6" stop-opacity="0.3"/>
+      <stop offset="70%" stop-color="#2563eb" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#1d4ed8" stop-opacity="0.1"/>
+    </radialGradient>
+
+    <radialGradient id="analogEra" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#64748b" stop-opacity="0.3"/>
+      <stop offset="70%" stop-color="#475569" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#334155" stop-opacity="0.1"/>
+    </radialGradient>
+
+    <!-- Effects -->
+    <filter id="glow"><feDropShadow dx="0" dy="0" stdDeviation="12" flood-color="#fbbf24" flood-opacity="0.4"/></filter>
+    <filter id="shadow"><feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000" flood-opacity="0.3"/></filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1400" height="900" fill="url(#bg)"/>
+
+  <!-- Header -->
+  <text x="700" y="60" text-anchor="middle" class="title">기술의 불균등한 분포</text>
+  <text x="700" y="95" text-anchor="middle" class="subtitle">The Uneven Distribution of Technology</text>
+
+  <!-- Central quote -->
+  <g transform="translate(700,150)">
+    <rect x="-350" y="-30" width="700" height="120" rx="20" fill="#1f2937" opacity="0.8" filter="url(#shadow)"/>
+    <text x="0" y="0" text-anchor="middle" class="quote">"미래는 이미 와 있다</text>
+    <text x="0" y="35" text-anchor="middle" class="quote">단지 고르게 분포되어 있지 않을 뿐이다"</text>
+    <text x="0" y="70" text-anchor="middle" class="quote-small">"The future is already here — it's just not evenly distributed."</text>
+    <text x="0" y="95" text-anchor="middle" class="author">— William Gibson</text>
+  </g>
+
+  <!-- Technology eras visualization -->
+  <g transform="translate(700,450)">
+    <!-- 2024년 동시대 표시 -->
+    <text x="0" y="-80" text-anchor="middle" class="h1" fill="#34d399">같은 2024년을 살지만...</text>
+    <text x="0" y="-55" text-anchor="middle" class="small">Living in the same 2024, but...</text>
+
+    <!-- AI Era (innermost circle) -->
+    <circle cx="0" cy="0" r="120" fill="url(#aiEra)" stroke="#fbbf24" stroke-width="3" opacity="0.8"/>
+    <text x="0" y="-40" text-anchor="middle" class="tech-label" fill="#fbbf24">AI 시대</text>
+    <text x="0" y="-20" text-anchor="middle" class="small" fill="#fbbf24">AI Era</text>
+    <text x="0" y="10" text-anchor="middle" class="year-label" fill="#fbbf24">ChatGPT: 2개월</text>
+    <text x="0" y="30" text-anchor="middle" class="p" fill="#fbbf24">생성형 AI 활용</text>
+    <text x="0" y="50" text-anchor="middle" class="p" fill="#fbbf24">즉시 정보 생성 및 분석</text>
+
+    <!-- Digital Era (middle circle) -->
+    <circle cx="0" cy="0" r="200" fill="none" stroke="url(#digitalEra)" stroke-width="80" opacity="0.4"/>
+    <g transform="rotate(-30)">
+      <text x="180" y="-10" text-anchor="middle" class="tech-label" fill="#93c5fd">디지털 시대</text>
+      <text x="180" y="10" text-anchor="middle" class="small" fill="#93c5fd">Digital Era</text>
+      <text x="180" y="30" text-anchor="middle" class="year-label" fill="#93c5fd">인터넷: 7년</text>
+      <text x="180" y="50" text-anchor="middle" class="p" fill="#93c5fd">웹 검색 및 이메일</text>
+    </g>
+
+    <!-- Analog Era (outermost circle) -->
+    <circle cx="0" cy="0" r="320" fill="none" stroke="url(#analogEra)" stroke-width="80" opacity="0.4"/>
+    <g transform="rotate(30)">
+      <text x="-280" y="-10" text-anchor="middle" class="tech-label" fill="#cbd5e1">아날로그 시대</text>
+      <text x="-280" y="10" text-anchor="middle" class="small" fill="#cbd5e1">Analog Era</text>
+      <text x="-280" y="30" text-anchor="middle" class="year-label" fill="#cbd5e1">전화: 75년</text>
+      <text x="-280" y="50" text-anchor="middle" class="p" fill="#cbd5e1">음성 통화만 가능</text>
+    </g>
+  </g>
+
+  <!-- Population indicators -->
+  <g transform="translate(200,650)">
+    <!-- AI Era users -->
+    <circle cx="0" cy="0" r="8" fill="#fbbf24"/>
+    <text x="20" y="5" class="p" fill="#fbbf24">AI 시대 사용자 (소수)</text>
+    
+    <!-- Digital Era users -->
+    <circle cx="0" cy="30" r="8" fill="#3b82f6"/>
+    <text x="20" y="35" class="p" fill="#93c5fd">디지털 시대 사용자 (중간층)</text>
+    
+    <!-- Analog Era users -->
+    <circle cx="0" cy="60" r="8" fill="#64748b"/>
+    <text x="20" y="65" class="p" fill="#cbd5e1">아날로그 시대 사용자 (다수)</text>
+  </g>
+
+  <!-- Global statistics -->
+  <g transform="translate(1000,650)">
+    <rect x="0" y="0" width="350" height="120" rx="15" fill="#1f2937" opacity="0.8"/>
+    <text x="175" y="25" text-anchor="middle" class="h2" fill="#34d399">현실의 기술 격차</text>
+    <text x="20" y="50" class="p">• 전 세계 인구의 37%가 인터넷 미사용</text>
+    <text x="20" y="70" class="p">• ChatGPT 사용자는 전체의 2% 미만</text>
+    <text x="20" y="90" class="p">• 같은 해, 다른 세기를 살고 있는 인류</text>
+    <text x="20" y="110" class="small">출처: ITU, OpenAI 사용자 통계 (2024)</text>
+  </g>
+
+  <!-- Time paradox visualization -->
+  <g transform="translate(100,300)">
+    <text x="0" y="0" class="h2" fill="#fbbf24">시간 역설</text>
+    <text x="0" y="25" class="small">Time Paradox</text>
+    
+    <!-- Timeline arrows -->
+    <g transform="translate(0,50)">
+      <line x1="0" y1="0" x2="150" y2="0" stroke="#fbbf24" stroke-width="3" marker-end="url(#arrow)"/>
+      <text x="75" y="-10" text-anchor="middle" class="small" fill="#fbbf24">2개월</text>
+      
+      <line x1="0" y1="30" x2="150" y2="30" stroke="#3b82f6" stroke-width="3"/>
+      <text x="75" y="20" text-anchor="middle" class="small" fill="#93c5fd">7년</text>
+      
+      <line x1="0" y1="60" x2="150" y2="60" stroke="#64748b" stroke-width="3"/>
+      <text x="75" y="50" text-anchor="middle" class="small" fill="#cbd5e1">75년</text>
+      
+      <text x="160" y="30" class="p">← 같은 2024년</text>
+    </g>
+  </g>
+
+  <!-- Arrow marker -->
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#fbbf24"/>
+    </marker>
+  </defs>
+</svg>

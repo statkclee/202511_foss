@@ -1,0 +1,174 @@
+<svg viewBox="0 30 950 600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="blueGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#E3F2FD"/>
+      <stop offset="100%" style="stop-color:#2196F3"/>
+    </linearGradient>
+
+    <linearGradient id="decisionGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#FFE0B2"/>
+      <stop offset="100%" style="stop-color:#FF9800"/>
+    </linearGradient>
+
+    <linearGradient id="productGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#E8F5E8"/>
+      <stop offset="100%" style="stop-color:#4CAF50"/>
+    </linearGradient>
+
+    <marker id="arrowhead" markerWidth="10" markerHeight="7"
+     refX="9" refY="3.5" orient="auto" markerUnits="strokeWidth">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#333"/>
+    </marker>
+
+    <filter id="shadow">
+      <feDropShadow dx="2" dy="2" stdDeviation="2" flood-color="#00000030"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect x="0" y="0" width="950" height="650" fill="white"/>
+
+  <!-- Title -->
+  <text x="475" y="70" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#333">
+    📊 Data Science Outputs: Two Pathways 🛠️
+  </text>
+
+  <!-- Subtitle -->
+  <text x="475" y="95" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#666">
+    From Data Analysis to Strategic Action vs Scalable Products
+  </text>
+
+  <!-- Shared Data Processing Flow -->
+  <rect x="50" y="120" width="120" height="50" fill="url(#blueGradient)" stroke="#1976D2" stroke-width="2" rx="5"/>
+  <text x="110" y="140" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#1976D2">Raw Data</text>
+  <text x="110" y="155" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#1976D2">Collection</text>
+
+  <path d="M 170 145 L 210 145" stroke="#333" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+
+  <rect x="220" y="120" width="120" height="50" fill="url(#blueGradient)" stroke="#1976D2" stroke-width="2" rx="5"/>
+  <text x="280" y="140" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#1976D2">Data</text>
+  <text x="280" y="155" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#1976D2">Processing</text>
+
+  <path d="M 340 145 L 380 145" stroke="#333" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+
+  <rect x="390" y="120" width="120" height="50" fill="url(#blueGradient)" stroke="#1976D2" stroke-width="2" rx="5"/>
+  <text x="450" y="140" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#1976D2">Clean Data &amp;</text>
+  <text x="450" y="155" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#1976D2">Analysis</text>
+
+  <!-- Branching arrows with labels -->
+  <path d="M 450 170 L 350 220" stroke="#333" stroke-width="3" fill="none" marker-end="url(#arrowhead)"/>
+  <g transform="translate(-50, 0)">
+    <text x="390" y="190" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#666">Strategic Insight</text>
+    <text x="390" y="205" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#666">Output</text>
+  </g>
+
+  <path d="M 450 170 L 550 220" stroke="#333" stroke-width="3" fill="none" marker-end="url(#arrowhead)"/>
+  <g transform="translate(50, 0)">
+    <text x="510" y="190" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#666">Operational Product</text>
+    <text x="510" y="205" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#666">Output</text>
+  </g>
+
+  <!-- Left Path: Make Decisions -->
+  <g transform="translate(50, -20)">
+    <rect x="80" y="240" width="180" height="80" fill="url(#decisionGradient)" stroke="#FF9800" stroke-width="3" rx="8" filter="url(#shadow)"/>
+    <text x="170" y="260" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#E65100">📊 PATHWAY 1</text>
+    <text x="170" y="280" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" font-weight="bold" fill="#E65100">Make Decisions</text>
+    <text x="170" y="295" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="#BF360C">Strategic Action</text>
+    <text x="170" y="310" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#BF360C">Analyst-Led Initiative</text>
+  </g>
+
+  <!-- Right Path: Build Data Product -->
+  <g transform="translate(-50, -20)">
+    <rect x="640" y="240" width="210" height="80" fill="url(#productGradient)" stroke="#4CAF50" stroke-width="3" rx="8" filter="url(#shadow)"/>
+    <text x="745" y="260" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#1B5E20">🛠️ PATHWAY 2</text>
+    <text x="745" y="280" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" font-weight="bold" fill="#1B5E20">Build Data Product</text>
+    <text x="745" y="295" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="#2E7D32">Scalable Solution</text>
+    <text x="745" y="310" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#2E7D32">Cross-Functional Team</text>
+  </g>
+
+  <!-- Decision Path Details -->
+  <g transform="translate(0, -30)">
+    <rect x="50" y="350" width="320" height="200" fill="#FFF8E1" stroke="#FF9800" stroke-width="2" rx="10"/>
+    <text x="210" y="375" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#E65100">Decision-Making Process</text>
+
+    <!-- Decision steps -->
+    <circle cx="80" cy="405" r="8" fill="#FF9800"/>
+    <text x="100" y="410" font-family="Arial, sans-serif" font-size="13" fill="#333">Exploratory Data Analysis (Python/R/Jupyter)</text>
+
+    <circle cx="80" cy="430" r="8" fill="#FF9800"/>
+    <text x="100" y="435" font-family="Arial, sans-serif" font-size="13" fill="#333">Statistical Modeling &amp; Insights</text>
+
+    <circle cx="80" cy="455" r="8" fill="#FF9800"/>
+    <text x="100" y="460" font-family="Arial, sans-serif" font-size="13" fill="#333">Communicate Findings (Reports/Dashboards)</text>
+
+    <circle cx="80" cy="480" r="8" fill="#FF9800"/>
+    <text x="100" y="485" font-family="Arial, sans-serif" font-size="13" fill="#333">Inform Strategic Decisions</text>
+
+    <circle cx="80" cy="505" r="8" fill="#FF9800"/>
+    <text x="100" y="510" font-family="Arial, sans-serif" font-size="13" fill="#333">Policy Changes &amp; Actions</text>
+
+    <circle cx="80" cy="530" r="8" fill="#FF9800"/>
+    <text x="100" y="535" font-family="Arial, sans-serif" font-size="13" fill="#333">Measure KPIs &amp; Business Impact</text>
+  </g>
+
+  <!-- Key characteristics -->
+  <g transform="translate(0, -10)">
+    <rect x="35" y="545" width="350" height="30" fill="#FFE0B2" rx="3"/>
+    <text x="210" y="557" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#BF360C">
+      Authority: Human oversight with analyst recommendations
+    </text>
+    <text x="210" y="570" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#BF360C">
+      Outcome: KPIs, presentations, strategic reports
+    </text>
+  </g>
+
+  <!-- Product Path Details -->
+  <g transform="translate(0, -30)">
+    <rect x="530" y="350" width="370" height="225" fill="#F1F8E9" stroke="#4CAF50" stroke-width="2" rx="10"/>
+    <text x="715" y="375" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#1B5E20">Product Development Process</text>
+
+    <!-- Product steps -->
+    <circle cx="560" cy="405" r="8" fill="#4CAF50"/>
+    <text x="580" y="410" font-family="Arial, sans-serif" font-size="13" fill="#333">ML Model Development (MLOps/CI-CD)</text>
+
+    <circle cx="560" cy="430" r="8" fill="#4CAF50"/>
+    <text x="580" y="435" font-family="Arial, sans-serif" font-size="13" fill="#333">Build Automated Pipeline (Docker/K8s)</text>
+
+    <circle cx="560" cy="455" r="8" fill="#4CAF50"/>
+    <text x="580" y="460" font-family="Arial, sans-serif" font-size="13" fill="#333">Create User Interface/API (Cloud Deploy)</text>
+
+    <circle cx="560" cy="480" r="8" fill="#4CAF50"/>
+    <text x="580" y="485" font-family="Arial, sans-serif" font-size="13" fill="#333">Deploy Scalable Solution (AWS/GCP/Azure)</text>
+
+    <circle cx="560" cy="505" r="8" fill="#4CAF50"/>
+    <text x="580" y="510" font-family="Arial, sans-serif" font-size="13" fill="#333">Continuous Monitoring &amp; Updates</text>
+
+    <circle cx="560" cy="530" r="8" fill="#4CAF50"/>
+    <text x="580" y="535" font-family="Arial, sans-serif" font-size="13" fill="#333">Feature Store &amp; Model Registry</text>
+
+    <circle cx="560" cy="555" r="8" fill="#4CAF50"/>
+    <text x="580" y="560" font-family="Arial, sans-serif" font-size="13" fill="#333">Track SLAs, NPS, Uptime Metrics</text>
+  </g>
+
+  <!-- Key characteristics -->
+  <g transform="translate(0, -20)">
+    <rect x="550" y="575" width="330" height="30" fill="#C8E6C9" rx="3"/>
+    <text x="715" y="587" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#2E7D32">
+      Authority: Machine-driven with human governance
+    </text>
+    <text x="715" y="600" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#2E7D32">
+      Outcome: SLAs, NPS scores, automated operations
+    </text>
+  </g>
+
+  <!-- Comparison Section -->
+  <line x1="475" y1="240" x2="475" y2="580" stroke="#999" stroke-width="2" stroke-dasharray="10,5"/>
+  <text x="475" y="600" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-style="italic" fill="#666">
+    Two distinct outcomes from the same data foundation
+  </text>
+
+  <!-- VS indicator -->
+  <circle cx="475" cy="280" r="25" fill="white" stroke="#666" stroke-width="3"/>
+  <text x="475" y="290" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#666">VS</text>
+
+</svg>

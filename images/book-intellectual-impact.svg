@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 5 1200 780" xmlns="http://www.w3.org/2000/svg">
+  <!-- Definitions -->
+  <defs>
+    <style>
+      .title { font: bold 22px 'Noto Sans KR', 'AppleGothic', sans-serif; fill: #2c3e50; text-anchor: middle; }
+      .center-title { font: bold 24px 'Noto Sans KR', 'AppleGothic', sans-serif; fill: white; text-anchor: middle; }
+      .core-text { font: bold 18px 'Noto Sans KR', 'AppleGothic', sans-serif; fill: white; text-anchor: middle; }
+      .effect-text { font: 16px 'Noto Sans KR', 'AppleGothic', sans-serif; fill: #2c3e50; text-anchor: middle; }
+      .impact-text { font: bold 15px 'Noto Sans KR', 'AppleGothic', sans-serif; fill: white; text-anchor: middle; }
+      .english-text { font: 13px 'AppleGothic', sans-serif; fill: #444; text-anchor: middle; font-style: italic; }
+      .badge-text { font: bold 14px 'Noto Sans KR', 'AppleGothic', sans-serif; fill: white; text-anchor: middle; }
+      
+      /* Authority theme */
+      .authority-primary { fill: #ffd700; stroke: #b8860b; stroke-width: 2; }
+      .authority-secondary { fill: #fff2cc; stroke: #f4e4bc; stroke-width: 1.5; }
+      .authority-impact { fill: #daa520; stroke: #b8860b; stroke-width: 2; }
+      
+      /* Access theme */
+      .access-primary { fill: #32cd32; stroke: #228b22; stroke-width: 2; }
+      .access-secondary { fill: #d5e8d4; stroke: #a8d8a0; stroke-width: 1.5; }
+      .access-impact { fill: #90ee90; stroke: #228b22; stroke-width: 2; }
+      
+      /* Completeness theme */
+      .complete-primary { fill: #4169e1; stroke: #191970; stroke-width: 2; }
+      .complete-secondary { fill: #dae8fc; stroke: #a3c8f0; stroke-width: 1.5; }
+      .complete-impact { fill: #6495ed; stroke: #191970; stroke-width: 2; }
+      
+      /* Center and connections */
+      .center-circle { fill: url(#centerGradient); stroke: #2c3e50; stroke-width: 3; }
+      .connection-line { stroke: #7f8c8d; stroke-width: 2; opacity: 0.6; }
+      .impact-line { stroke: #e74c3c; stroke-width: 3; opacity: 0.8; stroke-dasharray: 8,4; }
+      
+      /* Badges */
+      .badge { fill: #c0392b; stroke: #a93226; stroke-width: 2; rx: 15; }
+      .oa-badge { fill: #2ecc71; stroke: #27ae60; stroke-width: 2; rx: 12; }
+      
+      .shadow { filter: drop-shadow(2px 2px 4px rgba(0,0,0,0.3)); }
+    </style>
+    
+    <!-- Gradients -->
+    <radialGradient id="centerGradient" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#3498db" />
+      <stop offset="100%" stop-color="#2c3e50" />
+    </radialGradient>
+    
+    <radialGradient id="authorityGradient" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffd700" />
+      <stop offset="100%" stop-color="#b8860b" />
+    </radialGradient>
+    
+    <radialGradient id="accessGradient" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#32cd32" />
+      <stop offset="100%" stop-color="#228b22" />
+    </radialGradient>
+    
+    <radialGradient id="completeGradient" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#4169e1" />
+      <stop offset="100%" stop-color="#191970" />
+    </radialGradient>
+  </defs>
+  
+  <!-- Background
+  <rect x="0" y="0" width="1200" height="800" fill="#ffffff" stroke="#e9ecef" stroke-width="1"/> -->
+  
+  <!-- Center Group: Book Publication with Badges -->
+  <g id="center-group" transform="translate(0, 0)">
+    <!-- Main circle -->
+    <circle cx="600" cy="400" r="90" class="center-circle shadow"/>
+    <text x="600" y="395" class="center-title">책 출간</text>
+    <text x="600" y="420" class="english-text">Book Publishing</text>
+    
+    <!-- Badge: Diamond OA -->
+    <rect x="510" y="310" width="180" height="30" class="oa-badge shadow" rx="15"/>
+    <text x="600" y="329" class="badge-text">다이아몬드 오픈 액세스</text>
+    
+    <!-- Badge: 11 Books -->
+    <rect x="510" y="460" width="180" height="30" class="badge shadow" rx="15"/>
+    <text x="600" y="479" class="badge-text">한국 R 사용자회 11권 출간</text>
+  </g>
+  
+  <!-- Core Values Group (Level 1) -->
+  <g id="core-values-group" transform="translate(0, 0)">
+    <!-- Authority (Top Left) -->
+    <g id="authority-core">
+      <circle cx="300" cy="200" r="65" fill="url(#authorityGradient)" stroke="#b8860b" stroke-width="3" class="shadow"/>
+      <text x="300" y="195" class="core-text">지적 권위성</text>
+      <text x="300" y="215" class="english-text">Authority</text>
+    </g>
+    
+    <!-- Access (Top Right) -->
+    <g id="access-core">
+      <circle cx="900" cy="200" r="65" fill="url(#accessGradient)" stroke="#228b22" stroke-width="3" class="shadow"/>
+      <text x="900" y="195" class="core-text">접근성 확보</text>
+      <text x="900" y="215" class="english-text">Accessibility</text>
+    </g>
+    
+    <!-- Completeness (Bottom) -->
+    <g id="completeness-core" transform="translate(0, -50)">
+      <circle cx="600" cy="650" r="65" fill="url(#completeGradient)" stroke="#191970" stroke-width="3" class="shadow"/>
+      <text x="600" y="645" class="core-text">완결성 제공</text>
+      <text x="600" y="665" class="english-text">Completeness</text>
+    </g>
+  </g>
+  
+  <!-- Connection Lines from Center to Core Values -->
+  <g id="center-connections">
+    <!-- Smooth curved connection to Authority -->
+    <path d="M 535 345 Q 420 290 365 235" fill="none" class="connection-line"/>
+    
+    <!-- Smooth curved connection to Access -->
+    <path d="M 665 345 Q 780 290 835 235" fill="none" class="connection-line"/>
+    
+    <!-- Straight connection to Completeness -->
+    <line x1="600" y1="490" x2="600" y2="535" class="connection-line"/>
+  </g>
+  
+  <!-- Secondary Effects Group (Level 2) -->
+  <g id="secondary-effects-group" transform="translate(0, 0)">
+    <!-- Authority Effects -->
+    <g id="authority-effects">
+      <ellipse cx="150" cy="120" rx="50" ry="28" class="authority-secondary shadow"/>
+      <text x="150" y="125" class="effect-text">학술 인용</text>
+      
+      <ellipse cx="300" cy="80" rx="50" ry="28" class="authority-secondary shadow"/>
+      <text x="300" y="85" class="effect-text">미디어 인용</text>
+      
+      <ellipse cx="450" cy="120" rx="50" ry="28" class="authority-secondary shadow"/>
+      <text x="450" y="125" class="effect-text">정책 참조</text>
+    </g>
+    
+    <!-- Access Effects -->
+    <g id="access-effects">
+      <ellipse cx="750" cy="120" rx="55" ry="28" class="access-secondary shadow"/>
+      <text x="750" y="125" class="effect-text">전세계 독자</text>
+      
+      <ellipse cx="900" cy="80" rx="50" ry="28" class="access-secondary shadow"/>
+      <text x="900" y="85" class="effect-text">교육 활용</text>
+      
+      <ellipse cx="1050" cy="120" rx="50" ry="28" class="access-secondary shadow"/>
+      <text x="1050" y="125" class="effect-text">번역 확산</text>
+    </g>
+    
+    <!-- Completeness Effects -->
+    <g id="completeness-effects" transform="translate(0, -50)">
+      <ellipse cx="450" cy="720" rx="55" ry="28" class="complete-secondary shadow"/>
+      <text x="450" y="725" class="effect-text">체계적 학습</text>
+      
+      <ellipse cx="600" cy="750" rx="55" ry="28" class="complete-secondary shadow"/>
+      <text x="600" y="755" class="effect-text">전문성 획득</text>
+      
+      <ellipse cx="750" cy="720" rx="50" ry="28" class="complete-secondary shadow"/>
+      <text x="750" y="725" class="effect-text">실무 적용</text>
+    </g>
+  </g>
+  
+  <!-- Connection Lines to Secondary Effects -->
+  <g id="secondary-connections">
+    <!-- Authority connections (curved for smoother look) -->
+    <path d="M 255 165 Q 215 150 175 148" fill="none" class="connection-line"/>
+    <path d="M 300 135 Q 300 110 300 108" fill="none" class="connection-line"/>
+    <path d="M 345 165 Q 385 150 425 148" fill="none" class="connection-line"/>
+    
+    <!-- Access connections (curved for smoother look) -->
+    <path d="M 845 165 Q 805 150 775 148" fill="none" class="connection-line"/>
+    <path d="M 900 135 Q 900 110 900 108" fill="none" class="connection-line"/>
+    <path d="M 955 165 Q 995 150 1025 148" fill="none" class="connection-line"/>
+    
+    <!-- Completeness connections (curved for smoother look) -->
+    <g transform="translate(0, -50)">
+      <path d="M 545 685 Q 505 705 475 748" fill="none" class="connection-line"/>
+      <path d="M 600 715 Q 600 735 600 722" fill="none" class="connection-line"/>
+      <path d="M 655 685 Q 695 705 725 748" fill="none" class="connection-line"/>
+    </g>
+  </g>
+  
+  <!-- Ultimate Impact Effects Group (Level 3) -->
+  <g id="ultimate-impacts-group" transform="translate(0, 0)">
+    <!-- Authority Impacts (Top row) -->
+    <g id="authority-impacts">
+      <rect x="50" y="25" width="100" height="40" class="authority-impact shadow" rx="5"/>
+      <text x="100" y="48" class="impact-text">학문 발전</text>
+      
+      <rect x="200" y="25" width="100" height="40" class="authority-impact shadow" rx="5"/>
+      <text x="250" y="48" class="impact-text">사회적 영향</text>
+      
+      <rect x="350" y="25" width="100" height="40" class="authority-impact shadow" rx="5"/>
+      <text x="400" y="48" class="impact-text">정책 기여</text>
+    </g>
+    
+    <!-- Access Impacts (Top row) -->
+    <g id="access-impacts">
+      <rect x="640" y="25" width="120" height="40" class="access-impact shadow" rx="5"/>
+      <text x="700" y="48" class="impact-text">글로벌 임팩트</text>
+      
+      <rect x="800" y="25" width="100" height="40" class="access-impact shadow" rx="5"/>
+      <text x="850" y="48" class="impact-text">교육 혁신</text>
+      
+      <rect x="950" y="25" width="100" height="40" class="access-impact shadow" rx="5"/>
+      <text x="1000" y="48" class="impact-text">문화 교류</text>
+    </g>
+    
+    <!-- Completeness Impacts (Bottom row) -->
+    <g id="completeness-impacts" transform="translate(-30, -35)">
+      <rect x="350" y="760" width="100" height="40" class="complete-impact shadow" rx="5"/>
+      <text x="400" y="783" class="impact-text">인재 양성</text>
+      
+      <rect x="500" y="760" width="100" height="40" class="complete-impact shadow" rx="5"/>
+      <text x="550" y="783" class="impact-text">산업 발전</text>
+      
+      <rect x="650" y="760" width="100" height="40" class="complete-impact shadow" rx="5"/>
+      <text x="700" y="783" class="impact-text">혁신 창출</text>
+    </g>
+  </g>
+  
+  <!-- Impact Connections (Level 2 to Level 3) -->
+  <g id="impact-connections">
+    <!-- Authority Effects to Authority Impacts -->
+    <path d="M 150 95 Q 125 70 100 65" fill="none" class="impact-line"/>
+    <path d="M 300 52 Q 275 38 250 65" fill="none" class="impact-line"/>
+    <path d="M 450 95 Q 425 70 400 65" fill="none" class="impact-line"/>
+    
+    <!-- Access Effects to Access Impacts -->
+    <path d="M 750 95 Q 725 70 700 65" fill="none" class="impact-line"/>
+    <path d="M 900 52 Q 875 38 850 65" fill="none" class="impact-line"/>
+    <path d="M 1050 95 Q 1025 70 1000 65" fill="none" class="impact-line"/>
+    
+    <!-- Completeness Effects to Completeness Impacts -->
+    <g transform="translate(0, -50)">
+      <path d="M 450 748 Q 425 770 400 780" fill="none" class="impact-line"/>
+      <path d="M 600 778 Q 575 785 550 780" fill="none" class="impact-line"/>
+      <path d="M 750 748 Q 735 748 720 770" fill="none" class="impact-line"/>
+    </g>
+  </g>
+  
+  <!-- Legend -->
+  <g transform="translate(50, 450)">
+    <rect x="0" y="-15" width="280" height="130" fill="white" stroke="#dee2e6" stroke-width="1" rx="8" class="shadow"/>
+    <text x="140" y="20" class="title">범례</text>
+    
+    <circle cx="30" cy="40" r="12" fill="url(#authorityGradient)"/>
+    <text x="85" y="45" class="effect-text">지적 권위성</text>
+    
+    <circle cx="30" cy="65" r="12" fill="url(#accessGradient)"/>
+    <text x="70" y="70" class="effect-text">접근성</text>
+    
+    <circle cx="30" cy="90" r="12" fill="url(#completeGradient)"/>
+    <text x="70" y="95" class="effect-text">완결성</text>
+    
+    <rect x="150" y="35" width="70" height="25" class="authority-impact" rx="3"/>
+    <text x="185" y="53" class="badge-text" font-size="10px">최종 영향</text>
+    
+    <line x1="150" y1="80" x2="190" y2="80" class="impact-line"/>
+    <text x="220" y="85" class="english-text">파급효과</text>
+  </g>
+  
+  <!-- Statistics Box -->
+  <g transform="translate(900, 450)">
+    <rect x="0" y="-10" width="250" height="130" fill="white" stroke="#dee2e6" stroke-width="1" rx="8" class="shadow"/>
+    <text x="125" y="20" class="title">성과 지표</text>
+    
+    <text x="80" y="45" class="effect-text">📚 출간 도서: 11권</text>
+    <text x="90" y="65" class="effect-text">🌍 글로벌 접근: 무제한</text>
+    <text x="98" y="85" class="effect-text">💎 Diamond OA: 100%</text>
+    <text x="110" y="105" class="effect-text">🔄 지속가능성: 커뮤니티 기반</text>
+  </g>
+</svg>

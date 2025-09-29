@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="900" height="550" viewBox="0 50 900 550" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- 그라디언트 정의 -->
+    <linearGradient id="classicKorGrad" x1="0%" y1="0%" x2="50%" y2="0%">
+      <stop offset="0%" style="stop-color:#8B4513;stop-opacity:0.08" />
+      <stop offset="100%" style="stop-color:#D2B48C;stop-opacity:0.08" />
+    </linearGradient>
+    <linearGradient id="modernKorGrad" x1="0%" y1="50%" x2="50%" y2="100%">
+      <stop offset="0%" style="stop-color:#2C3E50;stop-opacity:0.08" />
+      <stop offset="100%" style="stop-color:#3498DB;stop-opacity:0.08" />
+    </linearGradient>
+    <linearGradient id="digitalKorGrad" x1="50%" y1="0%" x2="100%" y2="50%">
+      <stop offset="0%" style="stop-color:#27AE60;stop-opacity:0.08" />
+      <stop offset="100%" style="stop-color:#2ECC71;stop-opacity:0.08" />
+    </linearGradient>
+    <linearGradient id="webKorGrad" x1="50%" y1="50%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#9B59B6;stop-opacity:0.08" />
+      <stop offset="100%" style="stop-color:#E67E22;stop-opacity:0.08" />
+    </linearGradient>
+    
+    <!-- 카드 그림자 효과 -->
+    <filter id="cardShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="1" dy="2" stdDeviation="3" flood-color="#000000" flood-opacity="0.15"/>
+    </filter>
+    
+    <style>
+      .timeline-line { stroke: #34495e; stroke-width: 3; opacity: 0.7; }
+      .timeline-dot-classic { fill: #8B4513; stroke: #fff; stroke-width: 2; filter: url(#cardShadow); }
+      .timeline-dot-modern { fill: #2C3E50; stroke: #fff; stroke-width: 2; filter: url(#cardShadow); }
+      .timeline-dot-digital { fill: #27AE60; stroke: #fff; stroke-width: 2; filter: url(#cardShadow); }
+      .timeline-dot-web { fill: #9B59B6; stroke: #fff; stroke-width: 2; filter: url(#cardShadow); }
+      
+      .title-text { font-family: 'Noto Serif KR', serif; font-size: 22px; font-weight: bold; fill: #2C3E50; text-anchor: middle; }
+      .era-text { font-family: 'Noto Sans KR', sans-serif; font-size: 14px; font-weight: bold; fill: #34495e; text-anchor: middle; }
+      .milestone-text { font-family: 'Noto Sans KR', sans-serif; font-size: 11px; font-weight: 600; fill: #2C3E50; }
+      .year-text { font-family: 'Noto Sans KR', sans-serif; font-size: 9px; font-weight: bold; fill: #7F8C8D; }
+      .description-text { font-family: 'Noto Sans KR', sans-serif; font-size: 8px; fill: #7F8C8D; }
+      .legend-text { font-family: 'Noto Sans KR', sans-serif; font-size: 12px; font-weight: bold; fill: #7F8C8D; }
+      .sample-text { font-size: 12px; opacity: 0.9; font-weight: bold; }
+      
+      .card-bg { fill: white; stroke: #E8E8E8; stroke-width: 1; filter: url(#cardShadow); rx: 4; }
+      .connector-line { stroke: #BDC3C7; stroke-width: 1; opacity: 0.6; }
+      .era-divider { stroke: #BDC3C7; stroke-width: 2; opacity: 0.4; stroke-dasharray: 5,5; }
+    </style>
+  </defs>
+
+  <!-- 배경 그라디언트 구역 (4분할) -->
+  <rect x="0" y="50" width="450" height="220" fill="url(#classicKorGrad)"/>
+  <rect x="0" y="270" width="450" height="220" fill="url(#modernKorGrad)"/>
+  <rect x="450" y="50" width="450" height="220" fill="url(#digitalKorGrad)"/>
+  <rect x="450" y="270" width="450" height="220" fill="url(#webKorGrad)"/>
+
+  <!-- 중앙 구분선 -->
+  <line x1="450" y1="50" x2="450" y2="490" class="era-divider"/>
+
+  <!-- 좌측 타임라인 -->
+  <line x1="225" y1="70" x2="225" y2="470" class="timeline-line"/>
+  
+  <!-- 우측 타임라인 -->
+  <line x1="675" y1="70" x2="675" y2="470" class="timeline-line"/>
+
+  <!-- 시대 구분 텍스트 -->
+  <text x="310" y="85" class="era-text">조선시대 ~ 일제강점기</text>
+  <text x="745" y="85" class="era-text">디지털 활자 시대</text>
+  <text x="155" y="285" class="era-text">해방 ~ 사진식자 시대</text>
+  <text x="615" y="285" class="era-text">웹폰트 ~ AI 시대</text>
+
+  <!-- 좌측 상단: 조선시대 ~ 일제강점기 -->
+  
+  <!-- 1443: 훈민정음 창제 -->
+  <circle cx="225" cy="110" r="10" class="timeline-dot-classic"/>
+  <rect x="30" y="90" width="180" height="45" class="card-bg"/>
+  <line x1="210" y1="112" x2="217" y2="110" class="connector-line"/>
+  <text x="35" y="105" class="milestone-text">훈민정음 창제</text>
+  <text x="35" y="115" class="year-text">1443년 (세종 25년)</text>
+  <text x="35" y="123" class="description-text">"백성을 가르치는 바른 소리"</text>
+  <text x="35" y="131" class="description-text">28자 체계 완성</text>
+  <text x="130" y="120" class="sample-text" style="font-family: 'Noto Serif KR', serif; fill: #8B4513;">훈민정음</text>
+
+  <!-- 1448: 동국정운, 판본체 -->
+  <circle cx="225" cy="165" r="8" class="timeline-dot-classic"/>
+  <rect x="250" y="145" width="180" height="45" class="card-bg"/>
+  <line x1="233" y1="165" x2="250" y2="167" class="connector-line"/>
+  <text x="255" y="160" class="milestone-text">동국정운 &amp; 판본체</text>
+  <text x="255" y="170" class="year-text">1448년</text>
+  <text x="255" y="178" class="description-text">최초 한글 인쇄 서체</text>
+  <text x="255" y="186" class="description-text">목활자로 제작</text>
+  <text x="340" y="175" class="sample-text" style="font-family: 'Noto Serif KR', serif; fill: #8B4513;">판본체</text>
+
+  <!-- 1900s: 최지혁 궁체 활자화 -->
+  <circle cx="225" cy="220" r="8" class="timeline-dot-classic"/>
+  <rect x="30" y="200" width="180" height="45" class="card-bg"/>
+  <line x1="210" y1="222" x2="217" y2="220" class="connector-line"/>
+  <text x="35" y="215" class="milestone-text">최지혁 궁체 활자화</text>
+  <text x="35" y="225" class="year-text">1900년대 초</text>
+  <text x="35" y="233" class="description-text">일본 츠키지 활자 주조소</text>
+  <text x="35" y="241" class="description-text">한글 납활자의 시작</text>
+  <text x="120" y="230" class="sample-text" style="font-family: 'Noto Serif KR', serif; fill: #8B4513;">궁체</text>
+
+  <!-- 좌측 하단: 해방 ~ 사진식자 시대 -->
+  
+  <!-- 1920-1930s: 신문용 서체들 -->
+  <circle cx="225" cy="310" r="8" class="timeline-dot-modern"/>
+  <rect x="250" y="290" width="180" height="45" class="card-bg"/>
+  <line x1="233" y1="310" x2="250" y2="312" class="connector-line"/>
+  <text x="255" y="305" class="milestone-text">신문용 서체 개발</text>
+  <text x="255" y="315" class="year-text">1920-1930년대</text>
+  <text x="255" y="323" class="description-text">한성체, 독본체 등장</text>
+  <text x="255" y="331" class="description-text">박경서체(동아일보)</text>
+  <text x="340" y="320" class="sample-text" style="font-family: 'Noto Sans KR', sans-serif; fill: #2C3E50;">박경서체</text>
+
+  <!-- 1945-1960s: 해방 후 활자 -->
+  <circle cx="225" cy="365" r="6" class="timeline-dot-modern"/>
+  <rect x="30" y="345" width="180" height="45" class="card-bg"/>
+  <line x1="210" y1="367" x2="217" y2="365" class="connector-line"/>
+  <text x="35" y="360" class="milestone-text">해방 후 새로운 서체</text>
+  <text x="35" y="370" class="year-text">1945-1960년대</text>
+  <text x="35" y="378" class="description-text">동아출판사체</text>
+  <text x="35" y="386" class="description-text">국정교과서체</text>
+  <text x="120" y="375" class="sample-text" style="font-family: 'Noto Sans KR', sans-serif; fill: #2C3E50;">교과서체</text>
+
+  <!-- 1960s-1980s: 사진식자 시대 -->
+  <circle cx="225" cy="420" r="8" class="timeline-dot-modern"/>
+  <rect x="250" y="400" width="180" height="45" class="card-bg"/>
+  <line x1="233" y1="420" x2="250" y2="422" class="connector-line"/>
+  <text x="255" y="415" class="milestone-text">사진식자 한글서체</text>
+  <text x="255" y="425" class="year-text">1960-1980년대</text>
+  <text x="255" y="433" class="description-text">명조/고딕 다양화</text>
+  <text x="255" y="441" class="description-text">견종, 태종, 중종, 세종</text>
+  <text x="340" y="430" class="sample-text" style="font-family: 'Noto Serif KR', serif; fill: #2C3E50;">명조체</text>
+
+  <!-- 우측 상단: 디지털 활자 시대 -->
+  
+  <!-- 1990s: 한양 HY시리즈 -->
+  <circle cx="675" cy="110" r="8" class="timeline-dot-digital"/>
+  <rect x="480" y="90" width="180" height="45" class="card-bg"/>
+  <line x1="660" y1="112" x2="667" y2="110" class="connector-line"/>
+  <text x="485" y="105" class="milestone-text">한양 HY시리즈</text>
+  <text x="485" y="115" class="year-text">1990년대</text>
+  <text x="485" y="123" class="description-text">PC용 한글 디지털 폰트</text>
+  <text x="485" y="131" class="description-text">HY견고딕, HY신명조</text>
+  <text x="570" y="120" class="sample-text" style="font-family: 'Noto Sans KR', sans-serif; fill: #27AE60;">HY견고딕</text>
+
+  <!-- 1990s: 윤디자인 -->
+  <circle cx="675" cy="165" r="8" class="timeline-dot-digital"/>
+  <rect x="700" y="145" width="180" height="45" class="card-bg"/>
+  <line x1="683" y1="165" x2="700" y2="167" class="connector-line"/>
+  <text x="705" y="160" class="milestone-text">윤디자인 설립</text>
+  <text x="705" y="170" class="year-text">1991년</text>
+  <text x="705" y="178" class="description-text">윤고딕, 윤명조 시리즈</text>
+  <text x="705" y="186" class="description-text">한글 타이포그래피 전문화</text>
+  <text x="795" y="175" class="sample-text" style="font-family: 'Noto Sans KR', sans-serif; fill: #27AE60;">윤고딕</text>
+
+  <!-- 2006: 맑은 고딕 -->
+  <circle cx="675" cy="220" r="8" class="timeline-dot-digital"/>
+  <rect x="480" y="200" width="180" height="45" class="card-bg"/>
+  <line x1="660" y1="222" x2="667" y2="220" class="connector-line"/>
+  <text x="485" y="215" class="milestone-text">맑은 고딕 (산돌)</text>
+  <text x="485" y="225" class="year-text">2006년</text>
+  <text x="485" y="233" class="description-text">Windows Vista 기본폰트</text>
+  <text x="485" y="241" class="description-text">클리어타입 지원</text>
+  <text x="590" y="230" class="sample-text" style="font-family: 'Noto Sans KR', sans-serif; fill: #27AE60;">맑은 고딕</text>
+
+  <!-- 우측 하단: 웹폰트 ~ AI 시대 -->
+  
+  <!-- 2008: 나눔글꼴 -->
+  <circle cx="675" cy="310" r="10" class="timeline-dot-web"/>
+  <rect x="700" y="285" width="180" height="55" class="card-bg"/>
+  <line x1="683" y1="310" x2="700" y2="312" class="connector-line"/>
+  <text x="705" y="300" class="milestone-text">나눔글꼴 공개</text>
+  <text x="705" y="310" class="year-text">2008년 10월 9일 (한글날)</text>
+  <text x="705" y="318" class="description-text">네이버 × 산돌 협업</text>
+  <text x="705" y="326" class="description-text">11,172자 완전한 유니코드</text>
+  <text x="705" y="334" class="description-text">무료 배포의 시작</text>
+  <text x="805" y="325" class="sample-text" style="font-family: 'Noto Sans KR', sans-serif; fill: #9B59B6;">나눔고딕</text>
+
+  <!-- 2010s: 웹폰트 시대 -->
+  <circle cx="675" cy="375" r="8" class="timeline-dot-web"/>
+  <rect x="480" y="355" width="180" height="45" class="card-bg"/>
+  <line x1="660" y1="377" x2="667" y2="375" class="connector-line"/>
+  <text x="485" y="370" class="milestone-text">웹폰트 대중화</text>
+  <text x="485" y="380" class="year-text">2010년대</text>
+  <text x="485" y="388" class="description-text">Google Fonts 한글 지원</text>
+  <text x="485" y="396" class="description-text">Noto Sans/Serif KR</text>
+  <text x="570" y="385" class="sample-text" style="font-family: 'Noto Sans KR', sans-serif; fill: #9B59B6;">Noto Sans KR</text>
+
+  <!-- 2020s: AI 폰트 & 개인화 -->
+  <circle cx="675" cy="430" r="8" class="timeline-dot-web"/>
+  <rect x="700" y="405" width="180" height="55" class="card-bg"/>
+  <line x1="683" y1="430" x2="700" y2="432" class="connector-line"/>
+  <text x="705" y="420" class="milestone-text">AI 폰트 &amp; 다양화</text>
+  <text x="705" y="430" class="year-text">2020년대</text>
+  <text x="705" y="438" class="description-text">네이버 클로바 손글씨</text>
+  <text x="705" y="446" class="description-text">Pretendard, 토스페이스</text>
+  <text x="705" y="454" class="description-text">가변폰트 지원 확산</text>
+  <text x="795" y="440" class="sample-text" style="font-family: 'Noto Sans KR', sans-serif; fill: #E67E22;">Pretendard</text>
+
+  <!-- 하단 요약 -->
+  <text x="450" y="515" class="era-text">580년간 한글 글꼴의 여정</text>
+  <text x="450" y="530" class="description-text" style="font-size: 10px;">세종대왕의 창제정신에서 AI 개인화까지</text>
+
+  <!-- 범례 -->
+  <g transform="translate(0,-10)">
+    <rect x="50" y="550" width="800" height="45" fill="white" stroke="#E8E8E8" stroke-width="1" rx="4" opacity="0.9"/>
+    <text x="60" y="565" class="milestone-text">범례:</text>
+    
+    <circle cx="80" cy="575" r="4" class="timeline-dot-classic"/>
+    <text x="90" y="579" class="legend-text">조선~일제강점기</text>
+    
+    <circle cx="200" cy="575" r="4" class="timeline-dot-modern"/>
+    <text x="210" y="579" class="legend-text">해방~사진식자</text>
+    
+    <circle cx="320" cy="575" r="4" class="timeline-dot-digital"/>
+    <text x="330" y="579" class="legend-text">디지털 활자</text>
+    
+    <circle cx="440" cy="575" r="4" class="timeline-dot-web"/>
+    <text x="450" y="579" class="legend-text">웹폰트~AI</text>
+
+    <text x="600" y="579" class="legend-text">좌측: 전통 한글 | 우측: 디지털 한글</text>
+  </g>
+
+</svg>

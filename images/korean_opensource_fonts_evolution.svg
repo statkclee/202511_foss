@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1000" height="500" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="1000" height="500" fill="#f8f9fa"/>
+  
+  <!-- Timeline arrow -->
+  <defs>
+    <marker id="arrowhead" markerWidth="12" markerHeight="11" refX="5" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#2c3e50"/>
+    </marker>
+  </defs>
+  
+  <!-- Main timeline -->
+  <line x1="50" y1="450" x2="950" y2="450" stroke="#2c3e50" stroke-width="3" marker-end="url(#arrowhead)"/>
+  
+  <!-- Time markers -->
+  <text x="150" y="470" font-family="Arial, sans-serif" font-size="14" fill="#7f8c8d" text-anchor="middle">2008</text>
+  <text x="350" y="470" font-family="Arial, sans-serif" font-size="14" fill="#7f8c8d" text-anchor="middle">2014</text>
+  <text x="600" y="470" font-family="Arial, sans-serif" font-size="14" fill="#7f8c8d" text-anchor="middle">2021</text>
+  <text x="800" y="470" font-family="Arial, sans-serif" font-size="14" fill="#7f8c8d" text-anchor="middle">2023</text>
+  
+  <!-- 1. 나눔글꼴 (2008) -->
+  <rect x="80" y="80" width="160" height="320" fill="#e74c3c" opacity="0.1" stroke="#e74c3c" stroke-width="2" rx="10"/>
+  <text x="160" y="105" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#e74c3c" text-anchor="middle">나눔글꼴</text>
+  <text x="160" y="125" font-family="Arial, sans-serif" font-size="12" fill="#c0392b" text-anchor="middle">NanumGothic/Myeongjo</text>
+  <text x="160" y="145" font-family="Arial, sans-serif" font-size="12" fill="#c0392b" text-anchor="middle">(2008, 네이버)</text>
+  
+  <!-- 나눔글꼴 특징 -->
+  <text x="100" y="175" font-family="Arial, sans-serif" font-size="12" fill="#2c3e50">혁신:</text>
+  <text x="100" y="195" font-family="Arial, sans-serif" font-size="11" fill="#27ae60">• 최초 무료 배포</text>
+  <text x="100" y="215" font-family="Arial, sans-serif" font-size="11" fill="#27ae60">• 11,172자 완전 지원</text>
+  <text x="100" y="235" font-family="Arial, sans-serif" font-size="11" fill="#27ae60">• 웹폰트 시대 개막</text>
+  <text x="100" y="255" font-family="Arial, sans-serif" font-size="11" fill="#27ae60">• 고딕/명조 세트 제공</text>
+  
+  <text x="100" y="290" font-family="Arial, sans-serif" font-size="12" fill="#2c3e50">영향:</text>
+  <text x="100" y="310" font-family="Arial, sans-serif" font-size="11" fill="#e74c3c">• 한글 디지털화 가속</text>
+  <text x="100" y="330" font-family="Arial, sans-serif" font-size="11" fill="#e74c3c">• 웹 표준화 기여</text>
+  <text x="100" y="350" font-family="Arial, sans-serif" font-size="11" fill="#e74c3c">• 오픈소스 문화 확산</text>
+  
+  <!-- 2. 본고딕/Noto Sans KR (2014) -->
+  <g transform="translate(0,0)">
+    <rect x="280" y="60" width="160" height="340" fill="#f39c12" opacity="0.1" stroke="#f39c12" stroke-width="2" rx="10"/>
+    <text x="360" y="85" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#f39c12" text-anchor="middle">본고딕</text>
+    <text x="360" y="105" font-family="Arial, sans-serif" font-size="12" fill="#e67e22" text-anchor="middle">Noto Sans/Serif KR</text>
+    <text x="360" y="125" font-family="Arial, sans-serif" font-size="12" fill="#e67e22" text-anchor="middle">(2014, Google-Adobe)</text>
+    
+    <!-- 본고딕 특징 -->
+    <text x="300" y="155" font-family="Arial, sans-serif" font-size="12" fill="#2c3e50">글로벌 전략:</text>
+    <text x="300" y="175" font-family="Arial, sans-serif" font-size="11" fill="#27ae60">• 범용 다국어 지원</text>
+    <text x="300" y="195" font-family="Arial, sans-serif" font-size="11" fill="#27ae60">• Source Han Sans 기반</text>
+    <text x="300" y="215" font-family="Arial, sans-serif" font-size="11" fill="#27ae60">• 7가지 굵기 제공</text>
+    <text x="300" y="235" font-family="Arial, sans-serif" font-size="11" fill="#27ae60">• 국제 표준 호환</text>
+    
+    <text x="300" y="270" font-family="Arial, sans-serif" font-size="12" fill="#2c3e50">기술적 진보:</text>
+    <text x="300" y="290" font-family="Arial, sans-serif" font-size="11" fill="#3498db">• OpenType 최적화</text>
+    <text x="300" y="310" font-family="Arial, sans-serif" font-size="11" fill="#3498db">• 크로스 플랫폼</text>
+    <text x="300" y="330" font-family="Arial, sans-serif" font-size="11" fill="#3498db">• 프로페셔널 품질</text>
+    <text x="300" y="350" font-family="Arial, sans-serif" font-size="11" fill="#3498db">• Google Fonts 연동</text>
+  </g>
+
+  <!-- 3. Pretendard (2021) -->
+  <rect x="530" y="40" width="160" height="360" fill="#27ae60" opacity="0.1" stroke="#27ae60" stroke-width="2" rx="10"/>
+  <text x="610" y="65" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#27ae60" text-anchor="middle">Pretendard</text>
+  <text x="610" y="85" font-family="Arial, sans-serif" font-size="12" fill="#229954" text-anchor="middle">프리텐다드</text>
+  <text x="610" y="105" font-family="Arial, sans-serif" font-size="12" fill="#229954" text-anchor="middle">(2021, 길형진)</text>
+  
+  <!-- Pretendard 특징 -->
+  <text x="550" y="135" font-family="Arial, sans-serif" font-size="12" fill="#2c3e50">혁신적 접근:</text>
+  <text x="550" y="155" font-family="Arial, sans-serif" font-size="11" fill="#27ae60">• system-ui 대체</text>
+  <text x="550" y="175" font-family="Arial, sans-serif" font-size="11" fill="#27ae60">• Inter + 본고딕 결합</text>
+  <text x="550" y="195" font-family="Arial, sans-serif" font-size="11" fill="#27ae60">• 9가지 굵기</text>
+  <text x="550" y="215" font-family="Arial, sans-serif" font-size="11" fill="#27ae60">• Variable Font 지원</text>
+  
+  <text x="550" y="250" font-family="Arial, sans-serif" font-size="12" fill="#2c3e50">크로스 플랫폼:</text>
+  <text x="550" y="270" font-family="Arial, sans-serif" font-size="11" fill="#3498db">• iOS/Android 일관성</text>
+  <text x="550" y="290" font-family="Arial, sans-serif" font-size="11" fill="#3498db">• 182개 언어 지원</text>
+  <text x="550" y="310" font-family="Arial, sans-serif" font-size="11" fill="#3498db">• UI 특화 최적화</text>
+  <text x="550" y="330" font-family="Arial, sans-serif" font-size="11" fill="#3498db">• 정부 표준 채택</text>
+  
+  <!-- 4. 토스페이스/기타 (2023~) -->
+  <rect x="730" y="100" width="160" height="300" fill="#9b59b6" opacity="0.1" stroke="#9b59b6" stroke-width="2" rx="10"/>
+  <text x="810" y="125" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#9b59b6" text-anchor="middle">토스페이스</text>
+  <text x="810" y="145" font-family="Arial, sans-serif" font-size="12" fill="#8e44ad" text-anchor="middle">TossFace</text>
+  <text x="810" y="165" font-family="Arial, sans-serif" font-size="12" fill="#8e44ad" text-anchor="middle">(2023, 토스)</text>
+  
+  <!-- 토스페이스 특징 -->
+  <text x="750" y="195" font-family="Arial, sans-serif" font-size="12" fill="#2c3e50">특화 전략:</text>
+  <text x="750" y="215" font-family="Arial, sans-serif" font-size="11" fill="#27ae60">• 금융 UI 최적화</text>
+  <text x="750" y="235" font-family="Arial, sans-serif" font-size="11" fill="#27ae60">• 숫자 가독성 강화</text>
+  <text x="750" y="255" font-family="Arial, sans-serif" font-size="11" fill="#27ae60">• 브랜드 정체성</text>
+  
+  <text x="750" y="290" font-family="Arial, sans-serif" font-size="12" fill="#2c3e50">미래 트렌드:</text>
+  <text x="750" y="310" font-family="Arial, sans-serif" font-size="11" fill="#9b59b6">• AI 기반 최적화</text>
+  <text x="750" y="330" font-family="Arial, sans-serif" font-size="11" fill="#9b59b6">• 산업별 특화</text>
+  <text x="750" y="350" font-family="Arial, sans-serif" font-size="11" fill="#9b59b6">• 개인화 폰트</text>
+  
+  <!-- Evolution arrows -->
+  <path d="M 240 250 Q 260 230 280 250" fill="none" stroke="#34495e" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <path d="M 440 250 Q 470 230 520 250" fill="none" stroke="#34495e" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <path d="M 690 250 Q 710 230 730 250" fill="none" stroke="#34495e" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- Impact highlight -->
+  <rect x="100" y="410" width="750" height="30" fill="#3498db" opacity="0.1" stroke="#3498db" stroke-width="1" rx="5"/>
+  <text x="475" y="430" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#2980b9" text-anchor="middle">한국 디지털 타이포그래피 혁명: 무료 → 글로벌 → 통합 → 특화</text>
+  
+</svg>

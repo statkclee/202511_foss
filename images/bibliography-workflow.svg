@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 45 800 450" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .title-text { font-family: 'Noto Sans KR', Arial, sans-serif; font-size: 18px; font-weight: bold; fill: #2c3e50; }
+      .section-title { font-family: 'Noto Sans KR', Arial, sans-serif; font-size: 14px; font-weight: bold; fill: #2c3e50; }
+      .label-text { font-family: 'Noto Sans KR', Arial, sans-serif; font-size: 11px; fill: #2c3e50; }
+      .small-text { font-family: 'Noto Sans KR', Arial, sans-serif; font-size: 9px; fill: #34495e; }
+      .code-text { font-family: 'Courier New', monospace; font-size: 8px; fill: #2c3e50; }
+      .arrow-text { font-family: Arial, sans-serif; font-size: 10px; fill: #e74c3c; font-weight: bold; }
+    </style>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#e74c3c"/>
+    </marker>
+  </defs>
+  
+  <!-- 1단계: BibTeX 데이터베이스 -->
+  <rect x="30" y="70" width="200" height="140" fill="#e8f8f5" stroke="#27ae60" stroke-width="2" rx="5"/>
+  <text x="130" y="90" text-anchor="middle" class="section-title">BibTeX 데이터베이스</text>
+  <text x="130" y="105" text-anchor="middle" class="small-text">(.bib file)</text>
+  
+  <!-- BibTeX 샘플 -->
+  <rect x="40" y="115" width="180" height="85" fill="#ffffff" stroke="#95a5a6" stroke-width="1"/>
+  <text x="45" y="130" class="code-text">@article{wilkinson2005,</text>
+  <text x="45" y="142" class="code-text">  title = {Grammar of Graphics},</text>
+  <text x="45" y="154" class="code-text">  author = {Wilkinson, Leland},</text>
+  <text x="45" y="166" class="code-text">  journal = {Springer},</text>
+  <text x="45" y="178" class="code-text">  year = {2005}</text>
+  <text x="45" y="190" class="code-text">}</text>
+  
+  <!-- 화살표 1 -->
+  <line x1="240" y1="140" x2="320" y2="140" stroke="#e74c3c" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="280" y="130" text-anchor="middle" class="arrow-text">처리</text>
+  <text x="280" y="155" text-anchor="middle" class="small-text">Processing</text>
+  
+  <!-- 2단계: CSL 스타일 -->
+  <rect x="330" y="70" width="200" height="140" fill="#ebf3fd" stroke="#3498db" stroke-width="2" rx="5"/>
+  <text x="430" y="90" text-anchor="middle" class="section-title">CSL 스타일 엔진</text>
+  <text x="430" y="105" text-anchor="middle" class="small-text">Citation Style Language</text>
+  
+  <!-- CSL 옵션들 -->
+  <rect x="340" y="115" width="180" height="85" fill="#ffffff" stroke="#95a5a6" stroke-width="1"/>
+  <text x="430" y="130" text-anchor="middle" class="label-text">스타일 선택:</text>
+  <text x="345" y="145" class="small-text">• APA (심리학회)</text>
+  <text x="345" y="158" class="small-text">• IEEE (전기전자공학회)</text>
+  <text x="345" y="171" class="small-text">• Nature (네이처 저널)</text>
+  <text x="345" y="184" class="small-text">• Chicago (시카고 스타일)</text>
+  
+  <!-- 화살표 2 -->
+  <line x1="540" y1="140" x2="620" y2="140" stroke="#e74c3c" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="580" y="130" text-anchor="middle" class="arrow-text">변환</text>
+  <text x="580" y="155" text-anchor="middle" class="small-text">Transform</text>
+  
+  <!-- 3단계: 형식화된 출력 -->
+  <rect x="630" y="70" width="150" height="140" fill="#fdeaa7" stroke="#f39c12" stroke-width="2" rx="5"/>
+  <text x="705" y="90" text-anchor="middle" class="section-title">서식반영된 인용</text>
+  <text x="705" y="105" text-anchor="middle" class="small-text">Formatted Output</text>
+  
+  <!-- 출력 예시들 -->
+  <rect x="640" y="115" width="130" height="85" fill="#ffffff" stroke="#95a5a6" stroke-width="1"/>
+  <text x="705" y="130" text-anchor="middle" class="label-text">출력 결과:</text>
+  <text x="645" y="145" class="small-text">APA:</text>
+  <text x="645" y="157" class="code-text" font-size="7px">Wilkinson, L. (2005)...</text>
+  <text x="645" y="172" class="small-text">IEEE:</text>
+  <text x="645" y="184" class="code-text" font-size="7px">[1] L. Wilkinson...</text>
+  
+  <!-- Quarto 통합 섹션 -->
+  <rect x="100" y="250" width="600" height="120" fill="#f8f9fa" stroke="#6c757d" stroke-width="2" rx="5"/>
+  <text x="400" y="275" text-anchor="middle" class="section-title">Quarto에서의 통합 워크플로우</text>
+  <text x="400" y="290" text-anchor="middle" class="small-text">Integrated Workflow in Quarto</text>
+  
+  <!-- Quarto 단계들 -->
+  <rect x="120" y="305" width="150" height="55" fill="#e3f2fd" stroke="#2196f3" stroke-width="1" rx="3"/>
+  <text x="195" y="320" text-anchor="middle" class="label-text">1. 문서 작성</text>
+  <text x="195" y="332" text-anchor="middle" class="small-text">Write Document</text>
+  <text x="195" y="344" text-anchor="middle" class="code-text">[@wilkinson2005]</text>
+  <text x="195" y="354" text-anchor="middle" class="small-text">inline citation</text>
+  
+  <rect x="325" y="305" width="150" height="55" fill="#f3e5f5" stroke="#9c27b0" stroke-width="1" rx="3"/>
+  <text x="400" y="320" text-anchor="middle" class="label-text">2. 렌더링</text>
+  <text x="400" y="332" text-anchor="middle" class="small-text">Render Process</text>
+  <text x="400" y="344" text-anchor="middle" class="code-text">quarto render</text>
+  <text x="400" y="354" text-anchor="middle" class="small-text">+ bibliography</text>
+  
+  <rect x="530" y="305" width="150" height="55" fill="#e8f5e8" stroke="#4caf50" stroke-width="1" rx="3"/>
+  <text x="605" y="320" text-anchor="middle" class="label-text">3. 최종 출력</text>
+  <text x="605" y="332" text-anchor="middle" class="small-text">Final Output</text>
+  <text x="605" y="344" text-anchor="middle" class="code-text">HTML/PDF/DOCX</text>
+  <text x="605" y="354" text-anchor="middle" class="small-text">with references</text>
+  
+  <!-- Quarto 화살표들 -->
+  <line x1="275" y1="332" x2="320" y2="332" stroke="#e74c3c" stroke-width="1" marker-end="url(#arrow)"/>
+  <line x1="480" y1="332" x2="525" y2="332" stroke="#e74c3c" stroke-width="1" marker-end="url(#arrow)"/>
+  
+  <!-- 장점 섹션 -->
+  <rect x="50" y="400" width="700" height="75" fill="#fff3cd" stroke="#ffc107" stroke-width="1" rx="3"/>
+  <text x="400" y="420" text-anchor="middle" class="section-title">문서 코드화 패러다임 장점</text>
+  
+  <text x="70" y="445" class="label-text">• 자동화된 참고문헌 관리 (Automated bibliography management)</text>
+  <text x="70" y="460" class="label-text">• 일관성 있는 인용 형식 (Consistent citation formatting)</text>
+  <text x="450" y="445" class="label-text">• 버전 관리와 협업 지원 (Version control and collaboration)</text>
+  <text x="450" y="460" class="label-text">• 다양한 출력 형식 지원 (Multiple output formats)</text>
+</svg>

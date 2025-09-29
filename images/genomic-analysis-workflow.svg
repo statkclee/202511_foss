@@ -1,0 +1,136 @@
+<svg width="1000" height="260" viewBox="0 20 1000 260" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Bio-themed gradients -->
+    <linearGradient id="sqlBioGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#00b894" />
+      <stop offset="100%" stop-color="#00a085" />
+    </linearGradient>
+    <linearGradient id="pythonBioGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0984e3" />
+      <stop offset="100%" stop-color="#074abc" />
+    </linearGradient>
+    <linearGradient id="rBioGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#00cec9" />
+      <stop offset="100%" stop-color="#00b3b3" />
+    </linearGradient>
+    <linearGradient id="juliaBioGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#6c5ce7" />
+      <stop offset="100%" stop-color="#5a4fcf" />
+    </linearGradient>
+    <linearGradient id="jsBioGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#e17055" />
+      <stop offset="100%" stop-color="#d63031" />
+    </linearGradient>
+    <linearGradient id="bioBgGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f1f8f6" />
+      <stop offset="50%" stop-color="#e8f5f0" />
+      <stop offset="100%" stop-color="#f1f8f6" />
+    </linearGradient>
+    
+    <!-- DNA helix pattern -->
+    <pattern id="dnaPattern" x="0" y="0" width="40" height="20" patternUnits="userSpaceOnUse">
+      <path d="M0,10 Q10,5 20,10 T40,10" stroke="#00b894" stroke-width="1" fill="none" opacity="0.3"/>
+      <path d="M0,10 Q10,15 20,10 T40,10" stroke="#00cec9" stroke-width="1" fill="none" opacity="0.3"/>
+      <circle cx="10" cy="8" r="1.5" fill="#00b894" opacity="0.5"/>
+      <circle cx="30" cy="12" r="1.5" fill="#00cec9" opacity="0.5"/>
+    </pattern>
+    
+    <!-- Drop shadows -->
+    <filter id="bioShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="2" dy="4" stdDeviation="4" flood-color="#00000025"/>
+    </filter>
+    
+    <!-- Green arrow markers -->
+    <marker id="arrowGreen" markerWidth="12" markerHeight="8" refX="10" refY="4" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,8 L12,4 z" fill="#00b894"/>
+    </marker>
+    
+    <!-- Styles -->
+    <style>
+      .bio-title { font-family: 'IBM Plex Sans KR', sans-serif; font-size: 18px; font-weight: 700; fill: #2d3436; }
+      .bio-lang-title { font-family: 'IBM Plex Sans KR', sans-serif; font-size: 14px; font-weight: 600; fill: white; }
+      .bio-lang-desc { font-family: 'IBM Plex Sans KR', sans-serif; font-size: 10px; fill: white; }
+      .bio-data-flow { font-family: 'IBM Plex Sans KR', sans-serif; font-size: 9px; fill: #00a085; font-style: italic; }
+      .bio-process-box { rx: 12; filter: url(#bioShadow); }
+      .bio-flow-arrow { stroke: #00b894; stroke-width: 1.2; fill: none; marker-end: url(#arrowGreen); }
+      .bio-data-label { fill: #00a085; font-family: 'IBM Plex Sans KR', sans-serif; font-size: 8px; }
+      .dna-accent { fill: url(#dnaPattern); opacity: 0.1; }
+    </style>
+  </defs>
+
+  <!-- Background with DNA pattern -->
+  <rect width="100%" height="100%" fill="url(#bioBgGrad)"/>
+  <rect width="100%" height="100%" class="dna-accent"/>
+  
+  <!-- Process boxes -->
+  <!-- SQL -->
+  <rect x="20" y="60" width="160" height="160" fill="url(#sqlBioGrad)" class="bio-process-box"/>
+  <circle cx="100" cy="90" r="20" fill="white" opacity="0.2"/>
+  <text x="100" y="95" style="font-size: 16px; fill: white; text-anchor: middle;">🏥</text>
+  <text x="100" y="125" class="bio-lang-title" text-anchor="middle">SQL</text>
+  <text x="100" y="145" class="bio-lang-desc" text-anchor="middle">환자 임상 데이터베이스</text>
+  <text x="100" y="160" class="bio-lang-desc" text-anchor="middle">• EMR 의료기록 통합</text>
+  <text x="100" y="175" class="bio-lang-desc" text-anchor="middle">• 유전자 정보 매칭</text>
+  <text x="100" y="190" class="bio-lang-desc" text-anchor="middle">• 환자 코호트 구성</text>
+  <text x="100" y="205" class="bio-lang-desc" text-anchor="middle">Output: 임상 메타데이터</text>
+  
+  <!-- Python -->
+  <rect x="220" y="60" width="160" height="160" fill="url(#pythonBioGrad)" class="bio-process-box"/>
+  <circle cx="300" cy="90" r="20" fill="white" opacity="0.2"/>
+  <text x="300" y="95" style="font-size: 16px; fill: white; text-anchor: middle;">🧬</text>
+  <text x="300" y="125" class="bio-lang-title" text-anchor="middle">Python</text>
+  <text x="300" y="145" class="bio-lang-desc" text-anchor="middle">시퀀스 데이터 처리</text>
+  <text x="300" y="160" class="bio-lang-desc" text-anchor="middle">• Biopython 서열정렬</text>
+  <text x="300" y="175" class="bio-lang-desc" text-anchor="middle">• FASTQ 품질관리</text>
+  <text x="300" y="190" class="bio-lang-desc" text-anchor="middle">• 변이 호출 (GATK)</text>
+  <text x="300" y="205" class="bio-lang-desc" text-anchor="middle">Output: VCF 변이파일</text>
+  
+  <!-- R -->
+  <rect x="420" y="60" width="160" height="160" fill="url(#rBioGrad)" class="bio-process-box"/>
+  <circle cx="500" cy="90" r="20" fill="white" opacity="0.2"/>
+  <text x="500" y="95" style="font-size: 16px; fill: white; text-anchor: middle;">📈</text>
+  <text x="500" y="125" class="bio-lang-title" text-anchor="middle">R</text>
+  <text x="500" y="145" class="bio-lang-desc" text-anchor="middle">통계 유전학 분석</text>
+  <text x="500" y="160" class="bio-lang-desc" text-anchor="middle">• GWAS 연관성 분석</text>
+  <text x="500" y="175" class="bio-lang-desc" text-anchor="middle">• Kaplan-Meier 생존</text>
+  <text x="500" y="190" class="bio-lang-desc" text-anchor="middle">• Cox 회귀모델</text>
+  <text x="500" y="205" class="bio-lang-desc" text-anchor="middle">Output: p-value 매트릭스</text>
+  
+  <!-- Julia -->
+  <rect x="620" y="60" width="160" height="160" fill="url(#juliaBioGrad)" class="bio-process-box"/>
+  <circle cx="700" cy="90" r="20" fill="white" opacity="0.2"/>
+  <text x="700" y="95" style="font-size: 16px; fill: white; text-anchor: middle;">⚛️</text>
+  <text x="700" y="125" class="bio-lang-title" text-anchor="middle">Julia</text>
+  <text x="700" y="145" class="bio-lang-desc" text-anchor="middle">분자 시뮬레이션</text>
+  <text x="700" y="160" class="bio-lang-desc" text-anchor="middle">• 단백질 폴딩 예측</text>
+  <text x="700" y="175" class="bio-lang-desc" text-anchor="middle">• 분자동역학 (MD)</text>
+  <text x="700" y="190" class="bio-lang-desc" text-anchor="middle">• 약물 도킹</text>
+  <text x="700" y="205" class="bio-lang-desc" text-anchor="middle">Output: PDB 구조파일</text>
+  
+  <!-- JavaScript -->
+  <rect x="820" y="60" width="160" height="160" fill="url(#jsBioGrad)" class="bio-process-box"/>
+  <circle cx="900" cy="90" r="20" fill="white" opacity="0.2"/>
+  <text x="900" y="95" style="font-size: 16px; fill: white; text-anchor: middle;">🔬</text>
+  <text x="900" y="125" class="bio-lang-title" text-anchor="middle">JavaScript</text>
+  <text x="900" y="145" class="bio-lang-desc" text-anchor="middle">3D 구조 시각화</text>
+  <text x="900" y="160" class="bio-lang-desc" text-anchor="middle">• NGL Viewer 렌더링</text>
+  <text x="900" y="175" class="bio-lang-desc" text-anchor="middle">• WebGL 분자모델</text>
+  <text x="900" y="190" class="bio-lang-desc" text-anchor="middle">• 인터랙티브 탐색</text>
+  <text x="900" y="205" class="bio-lang-desc" text-anchor="middle">Output: 웹 분자뷰어</text>
+  
+  <!-- Flow arrows with DNA-like curves -->
+  <path d="M 185 140 Q 202 125 220 140" class="bio-flow-arrow"/>
+  <path d="M 385 140 Q 402 155 420 140" class="bio-flow-arrow"/>
+  <path d="M 585 140 Q 602 125 620 140" class="bio-flow-arrow"/>
+  <path d="M 785 140 Q 802 155 820 140" class="bio-flow-arrow"/>
+  
+  <!-- Data flow labels -->
+  <text x="202" y="120" class="bio-data-flow" text-anchor="middle">환자 데이터</text>
+  <text x="402" y="160" class="bio-data-flow" text-anchor="middle">정렬 시퀀스</text>
+  <text x="602" y="120" class="bio-data-flow" text-anchor="middle">통계 결과</text>
+  <text x="802" y="160" class="bio-data-flow" text-anchor="middle">3D 구조</text>
+  
+  <!-- Bottom info bar with DNA motif -->
+  <rect x="20" y="230" width="960" height="30" fill="#e8f5f0" rx="5" opacity="0.6"/>
+  <text x="500" y="248" class="bio-data-label" text-anchor="middle">🧬 핵심 성과: 1000명 환자 → 95% 단백질 구조 예측 → 정밀 의료 실현</text>
+</svg>

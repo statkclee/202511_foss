@@ -1,0 +1,147 @@
+<svg width="900" height="650" viewBox="0 0 900 650" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- 그라데이션 정의 -->
+    <linearGradient id="textGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#e8f4fd;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#d4edfc;stop-opacity:1"/>
+    </linearGradient>
+    
+    <linearGradient id="codeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f3e8ff;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#e9d5ff;stop-opacity:1"/>
+    </linearGradient>
+    
+    <linearGradient id="graphGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#fef3e2;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#fed7aa;stop-opacity:1"/>
+    </linearGradient>
+    
+    <linearGradient id="tableGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f0fdf4;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#dcfce7;stop-opacity:1"/>
+    </linearGradient>
+
+    <radialGradient id="centerGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#f8f9fa;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#e9ecef;stop-opacity:1"/>
+    </radialGradient>
+
+    <!-- 그림자 필터 -->
+    <filter id="dropshadow">
+      <feDropShadow dx="2" dy="2" stdDeviation="3" flood-color="#000000" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+  
+  <style>
+    .main-title { font-family: 'Noto Sans KR', sans-serif; font-size: 28px; font-weight: bold; fill: #1f2937; text-anchor: middle; }
+    .subtitle { font-family: 'Noto Sans KR', sans-serif; font-size: 16px; fill: #6b7280; text-anchor: middle; }
+    
+    .section-title { font-family: 'Noto Sans KR', sans-serif; font-size: 18px; font-weight: bold; fill: #374151; text-anchor: middle; }
+    .section-subtitle { font-family: 'Noto Sans KR', sans-serif; font-size: 13px; fill: #6b7280; text-anchor: middle; font-weight: 500; }
+    .feature-text { font-family: 'Noto Sans KR', sans-serif; font-size: 12px; fill: #4b5563; text-anchor: middle; }
+    .sample-text { font-family: 'Noto Sans KR', sans-serif; font-size: 11px; fill: #374151; text-anchor: middle; }
+    .sample-serif { font-family: 'Noto Serif KR', serif; font-size: 11px; fill: #374151; text-anchor: middle; }
+    .sample-mono { font-family: 'D2 Coding', monospace; font-size: 11px; fill: #374151; text-anchor: middle; }
+    .sample-sans { font-family: 'Noto Sans KR', sans-serif; font-size: 11px; fill: #374151; text-anchor: middle; }
+    
+    .center-text { font-family: 'Noto Sans KR', sans-serif; font-size: 16px; font-weight: bold; fill: #374151; text-anchor: middle; }
+    .icon { font-size: 24px; text-anchor: middle; }
+    .arrow-line { stroke: #9ca3af; stroke-width: 2; stroke-dasharray: 5,3; }
+  </style>
+
+  <!-- 배경 -->
+  <rect width="900" height="650" fill="#fefefe"/>
+  
+  <!-- 상단 타이틀 -->
+  <text x="450" y="40" class="main-title">글꼴의 4가지 얼굴</text>
+  <text x="450" y="65" class="subtitle">각 요소가 요구하는 글꼴의 특별한 역할</text>
+
+  <!-- 1. 텍스트 글꼴 (좌상) -->
+  <rect x="80" y="120" width="320" height="200" rx="20" fill="url(#textGrad)" stroke="#3b82f6" stroke-width="2" filter="url(#dropshadow)"/>
+  <text x="240" y="150" class="icon">📖</text>
+  <text x="240" y="175" class="section-title">텍스트 글꼴</text>
+  <text x="240" y="195" class="section-subtitle">"읽기의 편안함"</text>
+  
+  <text x="240" y="220" class="feature-text">Serif/Sans-serif</text>
+  <text x="240" y="240" class="sample-serif">긴 문장을 읽어도 피로하지 않은 글꼴</text>
+  <text x="240" y="255" class="sample-text">vs</text>
+  <text x="240" y="270" class="sample-sans">디지털 화면에 최적화된 Sans-serif</text>
+  
+  <rect x="100" y="285" width="280" height="25" rx="5" fill="#ffffff" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="240" y="300" class="feature-text" style="font-weight: bold; fill: #1e40af;">장시간 읽어도 편안한</text>
+
+  <!-- 2. 코드 글꼴 (우상) -->
+  <rect x="500" y="120" width="320" height="200" rx="20" fill="url(#codeGrad)" stroke="#8b5cf6" stroke-width="2" filter="url(#dropshadow)"/>
+  <text x="660" y="150" class="icon">💻</text>
+  <text x="660" y="175" class="section-title">코드 글꼴</text>
+  <text x="660" y="195" class="section-subtitle">"정확한 구분"</text>
+  
+  <text x="660" y="220" class="feature-text">Monospace</text>
+  <text x="660" y="240" class="sample-mono">0 O o | 1 l I</text>
+  <text x="660" y="260" class="sample-mono">if (x == y) {</text>
+  <text x="660" y="275" class="sample-mono">    return true;</text>
+  <text x="660" y="290" class="sample-mono">}</text>
+  
+  <rect x="520" y="285" width="280" height="25" rx="5" fill="#ffffff" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="660" y="300" class="feature-text" style="font-weight: bold; fill: #7c3aed;">모든 문자가 같은 폭</text>
+
+  <!-- 3. 그래프 글꼴 (좌하) -->
+  <rect x="80" y="380" width="320" height="200" rx="20" fill="url(#graphGrad)" stroke="#f59e0b" stroke-width="2" filter="url(#dropshadow)"/>
+  <text x="240" y="410" class="icon">📊</text>
+  <text x="240" y="435" class="section-title">그래프 글꼴</text>
+  <text x="240" y="455" class="section-subtitle">"깔끔한 전달"</text>
+  
+  <text x="240" y="480" class="feature-text">Clean Sans-serif</text>
+  
+  <!-- 미니 그래프 -->
+  <rect x="200" y="495" width="12" height="25" fill="#3b82f6"/>
+  <rect x="220" y="485" width="12" height="35" fill="#3b82f6"/>
+  <rect x="240" y="490" width="12" height="30" fill="#3b82f6"/>
+  <rect x="260" y="480" width="12" height="40" fill="#3b82f6"/>
+  <text x="206" y="535" class="sample-sans" style="font-size: 9px;">Q1</text>
+  <text x="226" y="535" class="sample-sans" style="font-size: 9px;">Q2</text>
+  <text x="246" y="535" class="sample-sans" style="font-size: 9px;">Q3</text>
+  <text x="266" y="535" class="sample-sans" style="font-size: 9px;">Q4</text>
+  
+  <rect x="100" y="545" width="280" height="25" rx="5" fill="#ffffff" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="240" y="560" class="feature-text" style="font-weight: bold; fill: #d97706;">데이터에 집중</text>
+
+  <!-- 4. 표 글꼴 (우하) -->
+  <rect x="500" y="380" width="320" height="200" rx="20" fill="url(#tableGrad)" stroke="#10b981" stroke-width="2" filter="url(#dropshadow)"/>
+  <text x="660" y="410" class="icon">📋</text>
+  <text x="660" y="435" class="section-title">표 글꼴</text>
+  <text x="660" y="455" class="section-subtitle">"계층적 구조"</text>
+  
+  <text x="660" y="480" class="feature-text">Sans-serif + Weight 변화</text>
+  
+  <!-- 미니 표 -->
+  <rect x="580" y="490" width="160" height="50" fill="#ffffff" stroke="#d1d5db" stroke-width="1" rx="3"/>
+  <line x1="580" y1="505" x2="740" y2="505" stroke="#d1d5db" stroke-width="1"/>
+  <text x="590" y="500" class="sample-sans" style="font-size: 10px; font-weight: bold;">항목</text>
+  <text x="650" y="500" class="sample-sans" style="font-size: 10px; font-weight: bold;">값</text>
+  <text x="700" y="500" class="sample-sans" style="font-size: 10px; font-weight: bold;">단위</text>
+  <text x="590" y="520" class="sample-sans" style="font-size: 10px;">온도</text>
+  <text x="650" y="520" class="sample-sans" style="font-size: 10px;">25.3</text>
+  <text x="700" y="520" class="sample-sans" style="font-size: 10px;">°C</text>
+  <text x="590" y="535" class="sample-sans" style="font-size: 10px;">습도</text>
+  <text x="650" y="535" class="sample-sans" style="font-size: 10px;">67.8</text>
+  <text x="700" y="535" class="sample-sans" style="font-size: 10px;">%</text>
+  
+  <rect x="520" y="545" width="280" height="25" rx="5" fill="#ffffff" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="660" y="560" class="feature-text" style="font-weight: bold; fill: #059669;">정보의 체계적 정리</text>
+
+  <!-- 중앙 연결부 -->
+  <circle cx="450" cy="350" r="50" fill="url(#centerGrad)" stroke="#6b7280" stroke-width="2" filter="url(#dropshadow)"/>
+  <text x="450" y="345" class="center-text">조화</text>
+  <text x="450" y="365" class="center-text" style="font-size: 12px;">Harmony</text>
+
+  <!-- 연결선 -->
+  <line x1="400" y1="220" x2="420" y2="320" class="arrow-line"/>
+  <line x1="500" y1="220" x2="480" y2="320" class="arrow-line"/>
+  <line x1="400" y1="480" x2="420" y2="380" class="arrow-line"/>
+  <line x1="500" y1="480" x2="480" y2="380" class="arrow-line"/>
+
+  <!-- 하단 메시지 -->
+  <rect x="200" y="610" width="500" height="30" rx="15" fill="#f9fafb" stroke="#e5e7eb" stroke-width="1" filter="url(#dropshadow)"/>
+  <text x="450" y="630" class="feature-text" style="font-weight: bold; font-size: 14px;">각자의 역할을 완벽히 수행할 때 최고의 문서가 탄생한다</text>
+</svg>

@@ -1,0 +1,495 @@
+<svg viewBox="0 0 1700 830" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Gradients for different domains -->
+    <linearGradient id="businessGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#64748B"/>
+      <stop offset="100%" style="stop-color:#475569"/>
+    </linearGradient>
+
+    <linearGradient id="technicalGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0F766E"/>
+      <stop offset="100%" style="stop-color:#0D9488"/>
+    </linearGradient>
+
+    <linearGradient id="specializedGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#7C3AED"/>
+      <stop offset="100%" style="stop-color:#8B5CF6"/>
+    </linearGradient>
+
+    <linearGradient id="governanceGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#DC2626"/>
+      <stop offset="100%" style="stop-color:#EF4444"/>
+    </linearGradient>
+
+    <!-- Timeline gradient -->
+    <linearGradient id="timelineGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#374151"/>
+      <stop offset="50%" style="stop-color:#6B7280"/>
+      <stop offset="100%" style="stop-color:#9CA3AF"/>
+    </linearGradient>
+
+    <!-- Person icon -->
+    <path id="person" d="M 0,-15 A 5,5 0 0,1 0,-5 A 8,8 0 0,1 -8,3 L -8,15 L 8,15 L 8,3 A 8,8 0 0,1 0,-5"/>
+
+    <!-- Pain point icon -->
+    <circle id="pain" cx="0" cy="0" r="8" fill="#DC2626" opacity="0.8"/>
+    <text x="0" y="3" text-anchor="middle" font-family="Arial" font-size="12" font-weight="bold" fill="white">!</text>
+
+    <!-- Clock icon for batch processing -->
+    <circle id="clock" cx="0" cy="0" r="10" fill="#F59E0B" stroke="#D97706" stroke-width="1"/>
+    <path d="M 0,-6 L 0,0 L 4,4" stroke="#7C2D12" stroke-width="2" fill="none"/>
+
+    <!-- Arrow markers -->
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L6,3 z" fill="#374151"/>
+    </marker>
+
+    <marker id="redArrow" markerWidth="8" markerHeight="8" refX="7" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L6,3 z" fill="#DC2626"/>
+    </marker>
+
+    <marker id="slowArrow" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto">
+      <path d="M0,0 L0,8 L8,4 z" fill="#F59E0B" stroke="#D97706" stroke-width="1"/>
+    </marker>
+
+    <!-- Shadow filter -->
+    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="2"/>
+      <feOffset dx="1" dy="1" result="offsetblur"/>
+      <feComponentTransfer>
+        <feFuncA type="linear" slope="0.3"/>
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1700" height="1200" fill="#F8FAFC"/>
+
+  <!-- Title -->
+  <text x="850" y="50" text-anchor="middle" font-family="Arial, sans-serif" font-size="34" font-weight="bold" fill="#1F2937">
+    Pre-Data Science Era: Siloed Workforce &amp; Pain Points
+  </text>
+  <text x="850" y="80" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" fill="#6B7280">
+    Historical Analysis of Departmental Structure and System Limitations (1990-2013)
+  </text>
+
+  <!-- Timeline Bar -->
+  <g transform="translate(150, 110)">
+    <rect x="0" y="0" width="1400" height="30" rx="15" fill="url(#timelineGradient)" stroke="#374151" stroke-width="1"/>
+    <text x="50" y="20" font-family="Arial"   font-size="16" font-weight="bold" fill="white">1990</text>
+    <text x="350" y="20" font-family="Arial"  font-size="16" font-weight="bold" fill="white">1995</text>
+    <text x="650" y="20" font-family="Arial"  font-size="16" font-weight="bold" fill="white">2000</text>
+    <text x="950" y="20" font-family="Arial"  font-size="16" font-weight="bold" fill="white">2005</text>
+    <text x="1250" y="20" font-family="Arial" font-size="16" font-weight="bold" fill="white">2010</text>
+    <text x="1350" y="20" font-family="Arial" font-size="16" font-weight="bold" fill="white">2013</text>
+
+    <!-- Key milestones -->
+    <circle cx="200" cy="15" r="3" fill="#EF4444"/>
+    <text x="200" y="45" text-anchor="middle" font-family="Arial" font-size="14" fill="#DC2626">Crystal Reports</text>
+    <circle cx="500" cy="15" r="3" fill="#EF4444"/>
+    <text x="500" y="45" text-anchor="middle" font-family="Arial" font-size="14" fill="#DC2626">Informatica</text>
+    <circle cx="800" cy="15" r="3" fill="#EF4444"/>
+    <text x="800" y="45" text-anchor="middle" font-family="Arial" font-size="14" fill="#DC2626">SOX Act</text>
+    <circle cx="1100" cy="15" r="3" fill="#EF4444"/>
+    <text x="1100" y="45" text-anchor="middle" font-family="Arial" font-size="14" fill="#DC2626">Basel II</text>
+  </g>
+
+  <!-- Governance & Compliance Layer (Top) -->
+  <g transform="translate(850, 180)">
+    <rect x="-400" y="0" width="800" height="60" rx="10" fill="url(#governanceGradient)" filter="url(#shadow)"/>
+    <text x="0" y="25" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="white">
+      ⚖️ Governance &amp; Compliance Oversight
+    </text>
+    <text x="0" y="45" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#FEE2E2">
+      SOX (2002) • Basel II (2004) • HIPAA • Data Stewards • Audit Teams
+    </text>
+  </g>
+
+  <!-- Business Domain -->
+  <g transform="translate(280, 270)">
+    <!-- Domain Header -->
+    <rect x="-200" y="0" width="400" height="80" rx="10" fill="url(#businessGradient)" filter="url(#shadow)"/>
+    <text x="0" y="30" text-anchor="middle" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="white">
+      💼 Business Domain
+    </text>
+    <text x="0" y="55" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#E2E8F0">
+      Strategy, Analysis, Reporting
+    </text>
+
+    <!-- Business Analysts -->
+    <g transform="translate(-150, 120)">
+      <use href="#person" transform="scale(1.5)" fill="#64748B"/>
+      <text x="0" y="40" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#374151">
+        Business Analysts
+      </text>
+      <text x="0" y="56" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#6B7280">
+        Excel (1985~), Access (1992~)
+      </text>
+      <text x="0" y="70" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#9CA3AF">
+        Pivot Tables, VBA
+      </text>
+    </g>
+
+    <!-- Marketing Analysts -->
+    <g transform="translate(10, 120)">
+      <use href="#person" transform="scale(1.5)" fill="#64748B"/>
+      <text x="0" y="40" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#374151">
+        Marketing Analysts
+      </text>
+      <text x="0" y="56" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#6B7280">
+        SPSS (1968~), SAS (1976~)
+      </text>
+      <text x="0" y="70" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#9CA3AF">
+        Customer Segmentation
+      </text>
+    </g>
+
+    <!-- Management Consultants -->
+    <g transform="translate(150, 120)">
+      <use href="#person" transform="scale(1.5)" fill="#64748B"/>
+      <text x="0" y="40" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#374151">
+        Consultants
+      </text>
+      <text x="0" y="56" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#6B7280">
+        PowerPoint (1990~)
+      </text>
+      <text x="0" y="70" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#9CA3AF">
+        McKinsey Framework
+      </text>
+    </g>
+
+    <!-- Report Developers -->
+    <g transform="translate(-90, 220)">
+      <use href="#person" transform="scale(1.5)" fill="#64748B"/>
+      <text x="0" y="40" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#374151">
+        Report Developers
+      </text>
+      <text x="0" y="56" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#6B7280">
+        Crystal Reports (1991~)
+      </text>
+      <text x="0" y="70" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#9CA3AF">
+        SSRS (2004~)
+      </text>
+    </g>
+
+    <!-- Financial Analysts -->
+    <g transform="translate(70, 220)">
+      <use href="#person" transform="scale(1.5)" fill="#64748B"/>
+      <text x="0" y="40" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#374151">
+        Financial Analysts
+      </text>
+      <text x="0" y="56" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#6B7280">
+        Bloomberg Terminal (1981~)
+      </text>
+      <text x="0" y="70" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#9CA3AF">
+        Excel VBA, @RISK
+      </text>
+    </g>
+
+    <!-- Pain Points -->
+    <g transform="translate(0, 310)">
+      <rect x="-180" y="0" width="400" height="45" rx="5" fill="#FECACA" stroke="#DC2626" stroke-width="1"/>
+      <use href="#pain" transform="translate(-140, 22)"/>
+      <text x="-120" y="15" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#DC2626">
+        Pain Points:
+      </text>
+      <text x="-130" y="30" font-family="Arial, sans-serif" font-size="11" fill="#991B1B">
+        • Version control chaos • Email-based reporting • Manual reconciliation
+      </text>
+    </g>
+
+    <!-- Business Domain Workflow -->
+    <g transform="translate(0, 370)">
+      <rect x="-180" y="0" width="360" height="60" rx="5" fill="white" stroke="#64748B" stroke-width="1"/>
+      <text x="0" y="20" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#64748B">
+        Business Workflow (3-6 months)
+      </text>
+      <text x="0" y="40" text-anchor="middle" font-family="monospace" font-size="11" fill="#374151">
+        Request → Excel Analysis → PowerPoint
+      </text>
+      <text x="0" y="55" text-anchor="middle" font-family="monospace" font-size="11" fill="#374151">
+        → Executive Meeting → Decision
+      </text>
+    </g>
+
+    <!-- Batch Processing Indicator -->
+    <g transform="translate(50, 320)">
+      <use href="#clock" transform="scale(0.8)"/>
+      <text x="15" y="5" font-family="Arial, sans-serif" font-size="16" fill="#92400E">Monthly Reports</text>
+    </g>
+  </g>
+
+  <!-- Technical Domain -->
+  <g transform="translate(850, 270)">
+    <!-- Domain Header -->
+    <rect x="-200" y="0" width="400" height="80" rx="10" fill="url(#technicalGradient)" filter="url(#shadow)"/>
+    <text x="0" y="30" text-anchor="middle" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="white">
+      🔧 Technical Domain
+    </text>
+    <text x="0" y="55" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#A7F3D0">
+      Infrastructure, ETL, Systems
+    </text>
+
+    <!-- Database Administrators -->
+    <g transform="translate(-150, 120)">
+      <use href="#person" transform="scale(1.5)" fill="#0F766E"/>
+      <text x="0" y="40" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#374151">
+        Database Admins
+      </text>
+      <text x="0" y="56" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#6B7280">
+        Oracle 7 (1992~)
+      </text>
+      <text x="0" y="70" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#9CA3AF">
+        SQL Server (1989~)
+      </text>
+    </g>
+
+    <!-- System Analysts -->
+    <g transform="translate(0, 120)">
+      <use href="#person" transform="scale(1.5)" fill="#0F766E"/>
+      <text x="0" y="40" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#374151">
+        System Analysts
+      </text>
+      <text x="0" y="56" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#6B7280">
+        Requirements Analysis
+      </text>
+      <text x="0" y="70" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#9CA3AF">
+        UML, ERD
+      </text>
+    </g>
+
+    <!-- BI Developers -->
+    <g transform="translate(150, 120)">
+      <use href="#person" transform="scale(1.5)" fill="#0F766E"/>
+      <text x="0" y="40" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#374151">
+        BI Developers
+      </text>
+      <text x="0" y="56" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#6B7280">
+        Cognos (1969~)
+      </text>
+      <text x="0" y="70" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#9CA3AF">
+        BusinessObjects (1990~)
+      </text>
+    </g>
+
+    <!-- ETL Developers -->
+    <g transform="translate(-90, 220)">
+      <use href="#person" transform="scale(1.5)" fill="#0F766E"/>
+      <text x="0" y="40" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#374151">
+        ETL Developers
+      </text>
+      <text x="0" y="56" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#6B7280">
+        Informatica (1998~)
+      </text>
+      <text x="0" y="70" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#9CA3AF">
+        DataStage (1997~)
+      </text>
+    </g>
+
+    <!-- IT Specialists -->
+    <g transform="translate(90, 220)">
+      <use href="#person" transform="scale(1.5)" fill="#0F766E"/>
+      <text x="0" y="40" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#374151">
+        IT Specialists
+      </text>
+      <text x="0" y="56" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#6B7280">
+        COBOL, FORTRAN
+      </text>
+      <text x="0" y="70" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#9CA3AF">
+        Mainframes, C++
+      </text>
+    </g>
+
+    <!-- Pain Points -->
+    <g transform="translate(0, 310)">
+      <rect x="-180" y="0" width="360" height="45" rx="5" fill="#FECACA" stroke="#DC2626" stroke-width="1"/>
+      <use href="#pain" transform="translate(-140, 22)"/>
+      <text x="-120" y="15" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#DC2626">
+        Pain Points:
+      </text>
+      <text x="-120" y="30" font-family="Arial, sans-serif" font-size="10" fill="#991B1B">
+        • Nightly batch failures • ETL bottlenecks • Storage limits
+      </text>
+    </g>
+
+    <!-- Technical Domain Workflow -->
+    <g transform="translate(0, 370)">
+      <rect x="-180" y="0" width="360" height="60" rx="5" fill="white" stroke="#0F766E" stroke-width="1"/>
+      <text x="0" y="20" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#0F766E">
+        Technical Workflow (Nightly Batch)
+      </text>
+      <text x="0" y="40" text-anchor="middle" font-family="monospace" font-size="11" fill="#374151">
+        FTP Upload → ETL Process → Data Warehouse
+      </text>
+      <text x="0" y="55" text-anchor="middle" font-family="monospace" font-size="11" fill="#374151">
+        → Report Generation → Tape Backup
+      </text>
+    </g>
+
+    <!-- Batch Processing Indicator -->
+    <g transform="translate(50, 320)">
+      <use href="#clock" transform="scale(0.8)"/>
+      <text x="15" y="5" font-family="Arial, sans-serif" font-size="16" fill="#92400E">11PM-5AM</text>
+    </g>
+  </g>
+
+  <!-- Specialized Domain -->
+  <g transform="translate(1420, 270)">
+    <!-- Domain Header -->
+    <rect x="-200" y="0" width="400" height="80" rx="10" fill="url(#specializedGradient)" filter="url(#shadow)"/>
+    <text x="0" y="30" text-anchor="middle" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="white">
+      🎓 Specialized Domain
+    </text>
+    <text x="0" y="55" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#DDD6FE">
+      Research, Statistics, Academia
+    </text>
+
+    <!-- Statisticians -->
+    <g transform="translate(-120, 120)">
+      <use href="#person" transform="scale(1.5)" fill="#7C3AED"/>
+      <text x="0" y="40" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#374151">
+        Statisticians
+      </text>
+      <text x="0" y="56" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#6B7280">
+        SAS (1976~), SPSS (1968~)
+      </text>
+      <text x="0" y="70" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#9CA3AF">
+        Stata (1985~)
+      </text>
+    </g>
+
+    <!-- Operations Research -->
+    <g transform="translate(0, 120)">
+      <use href="#person" transform="scale(1.5)" fill="#7C3AED"/>
+      <text x="0" y="40" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#374151">
+        OR Analysts
+      </text>
+      <text x="0" y="56" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#6B7280">
+        CPLEX (1988~)
+      </text>
+      <text x="0" y="70" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#9CA3AF">
+        GAMS (1976~)
+      </text>
+    </g>
+
+    <!-- Actuaries -->
+    <g transform="translate(120, 120)">
+      <use href="#person" transform="scale(1.5)" fill="#7C3AED"/>
+      <text x="0" y="40" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#374151">
+        Actuaries
+      </text>
+      <text x="0" y="56" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#6B7280">
+        Risk Models
+      </text>
+      <text x="0" y="70" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#9CA3AF">
+        Milliman, Prophet
+      </text>
+    </g>
+
+    <!-- Biostatisticians -->
+    <g transform="translate(-60, 220)">
+      <use href="#person" transform="scale(1.5)" fill="#7C3AED"/>
+      <text x="0" y="40" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#374151">
+        Biostatisticians
+      </text>
+      <text x="0" y="56" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#6B7280">
+        Clinical Trials
+      </text>
+      <text x="0" y="70" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#9CA3AF">
+        R (1993~), early
+      </text>
+    </g>
+
+    <!-- Quality Analysts -->
+    <g transform="translate(60, 220)">
+      <use href="#person" transform="scale(1.5)" fill="#7C3AED"/>
+      <text x="0" y="40" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#374151">
+        Quality Analysts
+      </text>
+      <text x="0" y="56" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#6B7280">
+        Minitab (1972~)
+      </text>
+      <text x="0" y="70" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#9CA3AF">
+        Six Sigma (1986~)
+      </text>
+    </g>
+
+    <!-- Pain Points -->
+    <g transform="translate(0, 310)">
+      <rect x="-180" y="0" width="360" height="45" rx="5" fill="#FECACA" stroke="#DC2626" stroke-width="1"/>
+      <use href="#pain" transform="translate(-140, 22)"/>
+      <text x="-120" y="15" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#DC2626">
+        Pain Points:
+      </text>
+      <text x="-120" y="30" font-family="Arial, sans-serif" font-size="10" fill="#991B1B">
+        • Expensive licenses • Model reproducibility • Publication delays
+      </text>
+    </g>
+
+    <!-- Specialized Domain Workflow -->
+    <g transform="translate(0, 370)">
+      <rect x="-180" y="0" width="360" height="60" rx="5" fill="white" stroke="#7C3AED" stroke-width="1"/>
+      <text x="0" y="20" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#7C3AED">
+        Research Workflow (6-18 months)
+      </text>
+      <text x="0" y="40" text-anchor="middle" font-family="monospace" font-size="11" fill="#374151">
+        Hypothesis → Statistical Analysis
+      </text>
+      <text x="0" y="55" text-anchor="middle" font-family="monospace" font-size="11" fill="#374151">
+        → Peer Review → Publication
+      </text>
+    </g>
+
+    <!-- Batch Processing Indicator -->
+    <g transform="translate(50, 320)">
+      <use href="#clock" transform="scale(0.8)"/>
+      <text x="15" y="5" font-family="Arial, sans-serif" font-size="16" fill="#92400E">Quarterly</text>
+    </g>
+  </g>
+
+  <!-- Inter-domain Dependencies -->
+  <g transform="translate(850, 500)">
+
+    <!-- Request flow arrows -->
+    <g transform="translate(0, 30)">
+      <path d="M -400 20 L -200 20" stroke="#F59E0B" stroke-width="3" fill="none" marker-end="url(#slowArrow)" stroke-dasharray="5,3"/>
+      <text x="-300" y="-15" text-anchor="middle" font-family="Arial" font-size="16" fill="#92400E">Business Request</text>
+      <text x="-300" y="35" text-anchor="middle" font-family="Arial" font-size="14" fill="#92400E">(2-4 weeks)</text>
+
+      <path d="M 200 20 L 400 20" stroke="#F59E0B" stroke-width="3" fill="none" marker-end="url(#slowArrow)" stroke-dasharray="5,3"/>
+      <text x="300" y="-15" text-anchor="middle" font-family="Arial" font-size="16" fill="#92400E">IT Implementation</text>
+      <text x="300" y="35" text-anchor="middle" font-family="Arial" font-size="14" fill="#92400E">(8-12 weeks)</text>
+
+      <!-- Bottleneck indicators -->
+      <g transform="translate(-300, 0)">
+        <use href="#pain" transform="scale(0.8)"/>
+        <text x="0" y="55" text-anchor="middle" font-family="Arial" font-size="12" fill="#DC2626">Bottleneck</text>
+      </g>
+
+      <g transform="translate(300, 0)">
+        <use href="#pain" transform="scale(0.8)"/>
+        <text x="0" y="55" text-anchor="middle" font-family="Arial" font-size="12" fill="#DC2626">Bottleneck</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- Evolution arrow and note -->
+  <g transform="translate(850, 750)">
+    <path d="M -250 0 L 200 0" stroke="#22C55E" stroke-width="4" fill="none" marker-end="url(#arrow)"/>
+    <text x="-40" y="-10" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#22C55E">
+      Evolution to Modern Data Science Era (2014+)
+    </text>
+    <text x="0" y="25" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#374151">
+      These fragmented roles converged into the "Classic Three": Data Analyst, Data Scientist, Data Engineer
+    </text>
+  </g>
+
+  <!-- Footer Timeline -->
+  <text x="850" y="800" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#6B7280">
+    📅 1990-2013 | 💰 High License Costs | 🏢 Department Silos | ⏰ Batch Processing | 📊 Limited Real-time
+  </text>
+</svg>

@@ -1,0 +1,190 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 900" width="1400" height="900">
+  <defs>
+    <style><![CDATA[
+      .title { font-family: Inter, Segoe UI, Arial, sans-serif; font-size: 40px; font-weight: 900; fill: #f8fafc; }
+      .subtitle { font-family: Inter, Segoe UI, Arial, sans-serif; font-size: 22px; font-weight: 600; fill: #cbd5e1; }
+      .h1 { font-family: Inter, Segoe UI, Arial, sans-serif; font-size: 26px; font-weight: 800; fill: #ffffff; }
+      .h2 { font-family: Inter, Segoe UI, Arial, sans-serif; font-size: 20px; font-weight: 800; fill: #f1f5f9; }
+      .p { font-family: Inter, Segoe UI, Arial, sans-serif; font-size: 16px; font-weight: 600; fill: #e5e7eb; }
+      .small { font-family: Inter, Segoe UI, Arial, sans-serif; font-size: 14px; font-weight: 700; fill: #cbd5e1; }
+      .year { font-family: Inter, Segoe UI, Arial, sans-serif; font-size: 18px; font-weight: 900; fill: #fbbf24; }
+      .phase-title { font-family: Inter, Segoe UI, Arial, sans-serif; font-size: 24px; font-weight: 800; }
+      .barrier-text { font-family: Inter, Segoe UI, Arial, sans-serif; font-size: 14px; font-weight: 600; fill: #f87171; }
+    ]]></style>
+
+    <!-- Background -->
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+
+    <!-- Phase gradients -->
+    <linearGradient id="gradPhase1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10b981"/>
+      <stop offset="100%" stop-color="#059669"/>
+    </linearGradient>
+
+    <linearGradient id="gradPhase2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3b82f6"/>
+      <stop offset="100%" stop-color="#2563eb"/>
+    </linearGradient>
+
+    <linearGradient id="gradPhase3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8b5cf6"/>
+      <stop offset="100%" stop-color="#7c3aed"/>
+    </linearGradient>
+
+    <!-- Effects -->
+    <filter id="shadow"><feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000" flood-opacity="0.3"/></filter>
+    <filter id="glow"><feDropShadow dx="0" dy="0" stdDeviation="12" flood-color="#fbbf24" flood-opacity="0.4"/></filter>
+
+    <!-- Arrow markers -->
+    <marker id="arrow" markerWidth="12" markerHeight="8" refX="10" refY="4" orient="auto">
+      <polygon points="0 0, 12 4, 0 8" fill="#64748b"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1400" height="900" fill="url(#bg)"/>
+
+  <!-- Header -->
+  <text x="700" y="60" text-anchor="middle" class="title">산업혁명 2.0: 인지혁명</text>
+  <text x="700" y="95" text-anchor="middle" class="subtitle">Industrial Revolution 2.0: The Cognitive Revolution (1999-Present)</text>
+
+  <!-- Timeline -->
+  <g transform="translate(100,140)">
+    <!-- Timeline line -->
+    <line x1="0" y1="50" x2="1200" y2="50" stroke="#64748b" stroke-width="4"/>
+    
+    <!-- Phase 1: Computing Power (1999-2016) -->
+    <g>
+      <rect x="0" y="80" width="400" height="220" rx="15" fill="url(#gradPhase1)" filter="url(#shadow)" opacity="0.9"/>
+      <text x="200" y="110" text-anchor="middle" class="phase-title" fill="#000">1단계: 컴퓨팅 파워 (1999-2016)</text>
+      <text x="200" y="135" text-anchor="middle" class="small" fill="#000">Computing Power - 17년</text>
+      
+      <!-- GPU icon -->
+      <text x="200" y="180" text-anchor="middle" style="font-size: 40px;">🖥️</text>
+      
+      <g transform="translate(20,200)">
+        <text x="0" y="0" class="h2" fill="#a7f3d0">주요 발명:</text>
+        <text x="0" y="25" class="p" fill="#000">• 1999: GeForce 256 (첫 GPU)</text>
+        <text x="0" y="45" class="p" fill="#000">• 2006: CUDA 플랫폼</text>
+        <text x="0" y="65" class="p" fill="#000">• 2012: 딥러닝 혁명</text>
+      </g>
+      
+      <!-- Timeline marker -->
+      <circle cx="200" cy="50" r="8" fill="#10b981"/>
+      <text x="200" y="30" text-anchor="middle" class="year">1999</text>
+    </g>
+
+    <!-- Phase 2: AI Factory (2016-Present) -->
+    <g transform="translate(400,0)">
+      <rect x="0" y="80" width="400" height="220" rx="15" fill="url(#gradPhase2)" filter="url(#shadow)" opacity="0.9"/>
+      <text x="200" y="110" text-anchor="middle" class="phase-title" fill="#000">2단계: AI 팩토리 (2016-현재)</text>
+      <text x="200" y="135" text-anchor="middle" class="small" fill="#000">AI Factory - 전문화 진행중</text>
+      
+      <!-- AI Factory icon -->
+      <text x="200" y="180" text-anchor="middle" style="font-size: 40px;">🏭🤖</text>
+      
+      <g transform="translate(20,200)">
+        <text x="0" y="0" class="h2" fill="#bfdbfe">진행 상황:</text>
+        <text x="0" y="25" class="p" fill="#000">• 2016: DGX-1 첫 AI 팩토리</text>
+        <text x="0" y="45" class="p" fill="#000">• 2022: ChatGPT 범용 AI</text>
+        <text x="0" y="65" class="p" fill="#000">• 2025: 전문화 가속화</text>
+      </g>
+      
+      <!-- Timeline marker -->
+      <circle cx="0" cy="50" r="8" fill="#3b82f6"/>
+      <text x="0" y="30" text-anchor="middle" class="year">2016</text>
+    </g>
+
+    <!-- Phase 3: Future Completion (Unknown) -->
+    <g transform="translate(800,0)">
+      <rect x="0" y="80" width="400" height="220" rx="15" fill="url(#gradPhase3)" filter="url(#shadow)" opacity="0.5"/>
+      <text x="200" y="110" text-anchor="middle" class="phase-title" fill="#000">3단계: 완성 시점 (미지수)</text>
+      <text x="200" y="135" text-anchor="middle" class="small" fill="#000">Completion - When?</text>
+      
+      <!-- Question mark icon -->
+      <text x="200" y="180" text-anchor="middle" style="font-size: 40px;">❓</text>
+      
+      <g transform="translate(20,200)">
+        <text x="0" y="0" class="h2" fill="#c4b5fd">예상 단계:</text>
+        <text x="0" y="25" class="p" fill="#000">• AGI 달성</text>
+        <text x="0" y="45" class="p" fill="#000">• 완전한 전문화</text>
+        <text x="0" y="65" class="p" fill="#000">• 인지 조립라인 완성</text>
+      </g>
+      
+      <!-- Future timeline marker -->
+      <circle cx="200" cy="50" r="8" fill="#8b5cf6" opacity="0.5"/>
+      <text x="200" y="30" text-anchor="middle" class="year">20??</text>
+    </g>
+
+    <!-- Current position marker -->
+    <circle cx="600" cy="50" r="15" fill="#fbbf24" filter="url(#glow)"/>
+    <text x="600" y="10" text-anchor="middle" class="h2" fill="#fbbf24">현재 위치</text>
+    <text x="600" y="30" text-anchor="middle" class="small" fill="#fbbf24">2025</text>
+  </g>
+
+  <!-- Key achievements explanation -->
+  <g transform="translate(100,480)">
+    <rect x="0" y="0" width="1200" height="350" rx="20" fill="#1f2937" opacity="0.8" filter="url(#shadow)"/>
+    <text x="600" y="35" text-anchor="middle" class="h1" fill="#fbbf24">인지혁명의 핵심 특징</text>
+    
+    <g transform="translate(50,90)">
+      <!-- Column 1: Speed Revolution -->
+      <g transform="translate(0,0)">
+        <text x="0" y="0" class="h2" fill="#10b981">⚡ 극초고속 진화</text>
+        <text x="0" y="30" class="p">• 산업혁명 1.0: 211년 완료</text>
+        <text x="0" y="50" class="p">• 인지혁명: 진행중 (2025)</text>
+        <text x="0" y="70" class="p">• **완료시점 미지수**</text>
+        <text x="0" y="90" class="p">• 디지털 인프라 기반</text>
+        <text x="0" y="110" class="p">• 네트워크 효과</text>
+      </g>
+
+      <!-- Column 2: From Physical to Cognitive -->
+      <g transform="translate(300,0)">
+        <text x="0" y="0" class="h2" fill="#3b82f6">🧠 물리→인지 전환</text>
+        <text x="0" y="30" class="p">• 물리적 → 인지적 생산</text>
+        <text x="0" y="50" class="p">• 근력 → 사고력</text>
+        <text x="0" y="70" class="p">• 전문화 진행중</text>
+        <text x="0" y="90" class="p">• 범용 AI → 특화 AI</text>
+        <text x="0" y="110" class="p">• 인간-AI 협업 발전</text>
+      </g>
+
+      <!-- Column 3: Exponential Scale -->
+      <g transform="translate(600,0)">
+        <text x="0" y="0" class="h2" fill="#8b5cf6">🚀 지수적 확산</text>
+        <text x="0" y="30" class="p">• ChatGPT: 2개월 1억 사용자</text>
+        <text x="0" y="50" class="p">• 전 세계 동시 접근</text>
+        <text x="0" y="70" class="p">• 언어 장벽 소거</text>
+        <text x="0" y="90" class="p">• 복사 비용 제로</text>
+        <text x="0" y="110" class="p">• 즉시 업데이트</text>
+      </g>
+
+      <!-- Column 4: Universal Impact -->
+      <g transform="translate(900,0)">
+        <text x="0" y="0" class="h2" fill="#f59e0b">🌍 범용적 영향</text>
+        <text x="0" y="30" class="p">• 모든 지식 분야</text>
+        <text x="0" y="50" class="p">• 창작부터 분석까지</text>
+        <text x="0" y="70" class="p">• 개인부터 기업까지</text>
+        <text x="0" y="90" class="p">• 교육 혁신</text>
+        <text x="0" y="110" class="p">• 생산성 민주화</text>
+      </g>
+
+      <!-- Bottom insight -->
+      <g transform="translate(0,150)">
+        <rect x="0" y="0" width="1100" height="80" rx="15" fill="#065f46" opacity="0.8"/>
+        <text x="550" y="25" text-anchor="middle" class="h2" fill="#6ee7b7">핵심 통찰</text>
+        <text x="550" y="50" text-anchor="middle" class="p" fill="#6ee7b7">인지혁명은 현재 전문화 단계에 있으며 언제 완성될지</text>
+        <text x="550" y="70" text-anchor="middle" class="p" fill="#6ee7b7">**예측하기 어렵지만** 산업혁명 1.0보다 훨씬 빠르게 진행중</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- Source citation -->
+  <g transform="translate(100,870)">
+    <text x="0" y="0" class="small" fill="#64748b">출처: Sequoia Capital - "The $10 Trillion AI Revolution: Why It's Bigger Than the Industrial Revolution"</text>
+    <text x="0" y="20" class="small" fill="#64748b">https://www.youtube.com/watch?v=yoycgOMq1tI</text>
+  </g>
+
+</svg>

@@ -1,0 +1,401 @@
+<svg width="1200" height="800" viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Advanced gradients and patterns -->
+    <pattern id="honeycomb" patternUnits="userSpaceOnUse" width="60" height="52" patternTransform="translate(0,0) scale(0.5)">
+      <polygon points="30,0 52,15 52,37 30,52 8,37 8,15" fill="none" stroke="#E8F4FD" stroke-width="1" opacity="0.3"/>
+    </pattern>
+
+    <radialGradient id="opennessGradient" cx="0.5" cy="0.5" r="0.8">
+      <stop offset="0%" style="stop-color:#00C851;stop-opacity:0.9"/>
+      <stop offset="50%" style="stop-color:#1B5E20;stop-opacity:0.7"/>
+      <stop offset="100%" style="stop-color:#2E7D32;stop-opacity:0.3"/>
+    </radialGradient>
+
+    <radialGradient id="participationGradient" cx="0.5" cy="0.5" r="0.8">
+      <stop offset="0%" style="stop-color:#2196F3;stop-opacity:0.9"/>
+      <stop offset="50%" style="stop-color:#0D47A1;stop-opacity:0.7"/>
+      <stop offset="100%" style="stop-color:#1565C0;stop-opacity:0.3"/>
+    </radialGradient>
+
+    <radialGradient id="utilizationGradient" cx="0.5" cy="0.5" r="0.8">
+      <stop offset="0%" style="stop-color:#FF5722;stop-opacity:0.9"/>
+      <stop offset="50%" style="stop-color:#BF360C;stop-opacity:0.7"/>
+      <stop offset="100%" style="stop-color:#D84315;stop-opacity:0.3"/>
+    </radialGradient>
+
+    <!-- Central complex gradient -->
+    <radialGradient id="centralGradient" cx="0.5" cy="0.5" r="0.6">
+      <stop offset="0%" style="stop-color:#37474F;stop-opacity:1"/>
+      <stop offset="30%" style="stop-color:#263238;stop-opacity:0.9"/>
+      <stop offset="100%" style="stop-color:#102027;stop-opacity:0.8"/>
+    </radialGradient>
+
+    <!-- Enhanced shadow and glow filters -->
+    <filter id="dropShadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="4"/>
+      <feOffset dx="3" dy="3" result="offset"/>
+      <feFlood flood-color="#000000" flood-opacity="0.3"/>
+      <feComposite in2="offset" operator="in"/>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Data flow animation paths -->
+    <marker id="arrowhead" markerWidth="12" markerHeight="10" refX="10" refY="5" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,10 L12,5 z" fill="#546E7A" opacity="0.8"/>
+    </marker>
+  </defs>
+
+  <!-- Honeycomb background pattern -->
+  <rect width="1200" height="800" fill="url(#honeycomb)"/>
+
+  <!-- Background gradient overlay -->
+  <rect width="1200" height="800" fill="linear-gradient(135deg, #FAFAFA 0%, #E3F2FD 100%)" opacity="0.8"/>
+
+  <!-- Main title with enhanced typography -->
+  <text x="600" y="60" text-anchor="middle" font-family="'Montserrat', sans-serif" font-size="28" font-weight="800" fill="#263238">
+    Data Science Era in Public Administration
+  </text>
+  <text x="600" y="90" text-anchor="middle" font-family="'Open Sans', sans-serif" font-size="16" fill="#546E7A" font-style="italic">
+    The Open Government Revolution (2009-2018)
+  </text>
+
+  <!-- Timeline at the top -->
+  <g id="timeline">
+    <line x1="200" y1="120" x2="1000" y2="120" stroke="#90A4AE" stroke-width="3"/>
+    <circle cx="280" cy="120" r="8" fill="#4CAF50"/>
+    <text x="280" y="140" text-anchor="middle" font-family="'Open Sans', sans-serif" font-size="14" font-weight="bold" fill="#37474F">2009</text>
+    <text x="280" y="155" text-anchor="middle" font-family="'Open Sans', sans-serif" font-size="12" fill="#546E7A">Data.gov</text>
+    <text x="280" y="168" text-anchor="middle" font-family="'Open Sans', sans-serif" font-size="12" fill="#546E7A">Launch (May)</text>
+
+    <circle cx="450" cy="120" r="8" fill="#2196F3"/>
+    <text x="450" y="140" text-anchor="middle" font-family="'Open Sans', sans-serif" font-size="14" font-weight="bold" fill="#37474F">2012</text>
+    <text x="450" y="155" text-anchor="middle" font-family="'Open Sans', sans-serif" font-size="12" fill="#546E7A">Federal Big Data</text>
+    <text x="450" y="168" text-anchor="middle" font-family="'Open Sans', sans-serif" font-size="12" fill="#546E7A">Initiative ($200M)</text>
+
+    <circle cx="620" cy="120" r="8" fill="#FF9800"/>
+    <text x="620" y="140" text-anchor="middle" font-family="'Open Sans', sans-serif" font-size="14" font-weight="bold" fill="#37474F">2013</text>
+    <text x="620" y="155" text-anchor="middle" font-family="'Open Sans', sans-serif" font-size="12" fill="#546E7A">G8 Open Data</text>
+    <text x="620" y="168" text-anchor="middle" font-family="'Open Sans', sans-serif" font-size="12" fill="#546E7A">Charter (June)</text>
+
+    <circle cx="790" cy="120" r="8" fill="#E91E63"/>
+    <text x="790" y="140" text-anchor="middle" font-family="'Open Sans', sans-serif" font-size="14" font-weight="bold" fill="#37474F">2014</text>
+    <text x="790" y="155" text-anchor="middle" font-family="'Open Sans', sans-serif" font-size="12" fill="#546E7A">USDS &amp; 18F</text>
+    <text x="790" y="168" text-anchor="middle" font-family="'Open Sans', sans-serif" font-size="12" fill="#546E7A">Founded</text>
+
+    <circle cx="950" cy="120" r="8" fill="#9C27B0"/>
+    <text x="950" y="140" text-anchor="middle" font-family="'Open Sans', sans-serif" font-size="14" font-weight="bold" fill="#37474F">2018</text>
+    <text x="950" y="155" text-anchor="middle" font-family="'Open Sans', sans-serif" font-size="12" fill="#546E7A">Cloud Smart</text>
+    <text x="950" y="168" text-anchor="middle" font-family="'Open Sans', sans-serif" font-size="12" fill="#546E7A">Strategy</text>
+  </g>
+
+  <!-- Central complex hub with gear mechanism -->
+  <g id="centralHub" transform="translate(600,470)">
+    <!-- Outer gear -->
+    <circle r="100" fill="url(#centralGradient)" filter="url(#dropShadow)"/>
+    <circle r="90" fill="none" stroke="#455A64" stroke-width="2" stroke-dasharray="10,5"/>
+
+    <!-- Inner gears -->
+    <circle r="75" fill="none" stroke="#546E7A" stroke-width="1" opacity="0.7"/>
+    <circle r="60" fill="none" stroke="#607D8B" stroke-width="1" opacity="0.5"/>
+
+    <!-- Central data core -->
+    <circle r="45" fill="#37474F" stroke="#90A4AE" stroke-width="2"/>
+
+    <!-- Data science symbol -->
+    <text y="-10" text-anchor="middle" font-family="'Montserrat', sans-serif" font-size="24" font-weight="bold" fill="#E0E0E0">
+      DATA SCIENCE
+    </text>
+    <text y="20" text-anchor="middle" font-family="'Open Sans', sans-serif" font-size="14" fill="#B0BEC5">
+      FRAMEWORK
+    </text>
+    <text y="65" text-anchor="middle" font-family="'Source Code Pro', monospace" font-size="16" fill="#78909C">
+      2009-2018
+    </text>
+  </g>
+
+  <!-- DOMAIN 1: OPENNESS (Top) - Enhanced -->
+  <g id="opennessZone" transform="translate(600,255)">
+    <!-- Main domain circle -->
+    <circle r="120" fill="url(#opennessGradient)" filter="url(#dropShadow)"/>
+    <circle r="105" fill="none" stroke="#2E7D32" stroke-width="2" stroke-dasharray="5,3"/>
+
+    <!-- Domain title -->
+    <text y="-20" text-anchor="middle" font-family="'Montserrat', sans-serif" font-size="20" font-weight="bold" fill="white">
+      OPENNESS
+    </text>
+    <text y="15" text-anchor="middle" font-family="'Open Sans', sans-serif" font-size="17" fill="#C8E6C9">
+      Transparent &amp; Accessible Data
+    </text>
+
+    <!-- Sub-components around the domain -->
+    <!-- Public Data Portal -->
+    <g transform="translate(-80,-60)">
+      <rect x="-40" y="-18" width="80" height="36" rx="5" fill="#4CAF50" stroke="white" stroke-width="2"/>
+      <text y="-2" text-anchor="middle" font-family="'Open Sans', sans-serif" font-size="11" font-weight="bold" fill="white">📊 Data.gov</text>
+      <text y="12" text-anchor="middle" font-family="'Open Sans', sans-serif" font-size="9" fill="white">Portal (2009)</text>
+    </g>
+
+    <!-- Open Source -->
+    <g transform="translate(80,-60)">
+      <rect x="-40" y="-18" width="80" height="36" rx="5" fill="#388E3C" stroke="white" stroke-width="2"/>
+      <text y="-2" text-anchor="middle" font-family="'Open Sans', sans-serif" font-size="11" font-weight="bold" fill="white">⚙️ GitHub</text>
+      <text y="12" text-anchor="middle" font-family="'Open Sans', sans-serif" font-size="9" fill="white">Open Source</text>
+    </g>
+
+    <!-- API Ecosystem -->
+    <g transform="translate(-80,60)">
+      <rect x="-40" y="-18" width="80" height="36" rx="5" fill="#2E7D32" stroke="white" stroke-width="2"/>
+      <text y="-2" text-anchor="middle" font-family="'Open Sans', sans-serif" font-size="11" font-weight="bold" fill="white">🔌 APIs</text>
+      <text y="12" text-anchor="middle" font-family="'Open Sans', sans-serif" font-size="9" fill="white">Open APIs</text>
+    </g>
+
+    <!-- Standards -->
+    <g transform="translate(80,60)">
+      <rect x="-40" y="-18" width="80" height="36" rx="5" fill="#1B5E20" stroke="white" stroke-width="2"/>
+      <text y="-2" text-anchor="middle" font-family="'Open Sans', sans-serif" font-size="11" font-weight="bold" fill="white">📋 Standards</text>
+      <text y="12" text-anchor="middle" font-family="'Open Sans', sans-serif" font-size="9" fill="white">Data Standards</text>
+    </g>
+  </g>
+
+  <!-- DOMAIN 2: PARTICIPATION (Bottom Right) - Enhanced -->
+  <g id="participationZone" transform="translate(950,580)">
+    <!-- Main domain circle -->
+    <circle r="120" fill="url(#participationGradient)" filter="url(#dropShadow)"/>
+    <circle r="105" fill="none" stroke="#1565C0" stroke-width="2" stroke-dasharray="5,3"/>
+
+    <!-- Domain title -->
+    <text y="-15" text-anchor="middle" font-family="'Montserrat', sans-serif" font-size="20" font-weight="bold" fill="white">
+      PARTICIPATION
+    </text>
+    <text y="15" text-anchor="middle" font-family="'Open Sans', sans-serif" font-size="16" fill="#BBDEFB">
+      Citizen &amp; Community Collaboration
+    </text>
+
+    <!-- Apps for Democracy -->
+    <g transform="translate(-80,-70)">
+      <circle r="30" fill="#1976D2" stroke="white" stroke-width="2"/>
+      <text y="-7" text-anchor="middle" font-family="'Open Sans', sans-serif" font-size="16" font-weight="bold" fill="white">📱</text>
+      <text y="7" text-anchor="middle" font-family="'Open Sans', sans-serif" font-size="10" fill="white">Apps for</text>
+      <text y="18" text-anchor="middle" font-family="'Open Sans', sans-serif" font-size="10" fill="white">Democracy (2008)</text>
+    </g>
+
+    <!-- Code for America -->
+    <g transform="translate(80,-70)">
+      <circle r="30" fill="#1565C0" stroke="white" stroke-width="2"/>
+      <text y="-7" text-anchor="middle" font-family="'Open Sans', sans-serif" font-size="16" font-weight="bold" fill="white">🇺🇸</text>
+      <text y="7" text-anchor="middle" font-family="'Open Sans', sans-serif" font-size="10" fill="white">Code for America</text>
+      <text y="18" text-anchor="middle" font-family="'Open Sans', sans-serif" font-size="10" fill="white">(Founded 2009)</text>
+    </g>
+
+    <!-- Hackathons -->
+    <g transform="translate(-80,70)">
+      <circle r="30" fill="#0D47A1" stroke="white" stroke-width="2"/>
+      <text y="-2" text-anchor="middle" font-family="'Open Sans', sans-serif" font-size="20" font-weight="bold" fill="white">🏆</text>
+      <text y="15" text-anchor="middle" font-family="'Open Sans', sans-serif" font-size="10" fill="white">Civic Hackathons</text>
+    </g>
+
+    <!-- National Day of Civic Hacking -->
+    <g transform="translate(80,70)">
+      <circle r="30" fill="#0277BD" stroke="white" stroke-width="2"/>
+      <text y="-7" text-anchor="middle" font-family="'Open Sans', sans-serif" font-size="16" font-weight="bold" fill="white">🌐</text>
+      <text y="7" text-anchor="middle" font-family="'Open Sans', sans-serif" font-size="10" fill="white">Nat'l Day Civic</text>
+      <text y="18" text-anchor="middle" font-family="'Open Sans', sans-serif" font-size="10" fill="white">Hacking (2013)</text>
+    </g>
+  </g>
+
+  <!-- DOMAIN 3: UTILIZATION (Bottom Left) - Enhanced -->
+  <g id="utilizationZone" transform="translate(250,580)">
+    <!-- Main domain circle -->
+    <circle r="120" fill="url(#utilizationGradient)" filter="url(#dropShadow)"/>
+    <circle r="105" fill="none" stroke="#D84315" stroke-width="2" stroke-dasharray="5,3"/>
+
+    <!-- Domain title -->
+    <text y="-15" text-anchor="middle" font-family="'Montserrat', sans-serif" font-size="20" font-weight="bold" fill="white">
+      UTILIZATION
+    </text>
+    <text y="15" text-anchor="middle" font-family="'Open Sans', sans-serif" font-size="16" fill="#FFCCBC">
+      Data-Driven Decision Making
+    </text>
+
+    <!-- Data Visualization -->
+    <g transform="translate(-100,-50)">
+      <rect x="-40" y="-18" width="80" height="36" rx="5" fill="#FF5722" stroke="white" stroke-width="2"/>
+      <text y="-2" text-anchor="middle" font-family="'Open Sans', sans-serif" font-size="12" font-weight="bold" fill="white">📊 D3.js (2011)</text>
+      <text y="12" text-anchor="middle" font-family="'Open Sans', sans-serif" font-size="10" fill="white">Visualization</text>
+    </g>
+
+    <!-- UK GOV.UK -->
+    <g transform="translate(100,-50)">
+      <rect x="-40" y="-18" width="80" height="36" rx="5" fill="#E64A19" stroke="white" stroke-width="2"/>
+      <text y="-2" text-anchor="middle" font-family="'Open Sans', sans-serif" font-size="12" font-weight="bold" fill="white">🇬🇧 GOV.UK</text>
+      <text y="12" text-anchor="middle" font-family="'Open Sans', sans-serif" font-size="10" fill="white">A/B Testing</text>
+    </g>
+
+    <!-- Chicago Data Portal -->
+    <g transform="translate(-80,50)">
+      <rect x="-40" y="-18" width="80" height="36" rx="5" fill="#D84315" stroke="white" stroke-width="2"/>
+      <text y="-2" text-anchor="middle" font-family="'Open Sans', sans-serif" font-size="12" font-weight="bold" fill="white">📱 Chicago</text>
+      <text y="12" text-anchor="middle" font-family="'Open Sans', sans-serif" font-size="10" fill="white">Data Dashboards</text>
+    </g>
+
+    <!-- Evidence-based Policy -->
+    <g transform="translate(80,50)">
+      <rect x="-40" y="-18" width="80" height="36" rx="5" fill="#BF360C" stroke="white" stroke-width="2"/>
+      <text y="-2" text-anchor="middle" font-family="'Open Sans', sans-serif" font-size="12" font-weight="bold" fill="white">📋 RCTs</text>
+      <text y="12" text-anchor="middle" font-family="'Open Sans', sans-serif" font-size="10" fill="white">Randomized Trials</text>
+    </g>
+  </g>
+
+  <!-- Data flow connections with enhanced styling -->
+  <g id="dataFlows">
+    <!-- Openness to Participation -->
+    <path d="M 720 280 Q 830 350 880 480" stroke="#546E7A" stroke-width="3" fill="none"
+          stroke-dasharray="8,4" opacity="0.7" marker-end="url(#arrowhead)"/>
+    <text x="700" y="340" font-family="'Open Sans', sans-serif" font-size="18" fill="#546E7A"
+          transform="rotate(45 800 360)">Open Data → Civic Engagement</text>
+
+    <!-- Participation to Utilization -->
+    <path d="M 830 580 Q 650 670 370 580" stroke="#546E7A" stroke-width="3" fill="none"
+          stroke-dasharray="8,4" opacity="0.7" marker-end="url(#arrowhead)"/>
+    <text x="615" y="650" font-family="'Open Sans', sans-serif" font-size="18" fill="#546E7A"
+          text-anchor="middle">Community → Policy Implementation</text>
+
+    <!-- Utilization to Openness -->
+    <path d="M 320 460 Q 420 350 480 280" stroke="#546E7A" stroke-width="3" fill="none"
+          stroke-dasharray="8,4" opacity="0.7" marker-end="url(#arrowhead)"/>
+    <text x="250" y="350" font-family="'Open Sans', sans-serif" font-size="18" fill="#546E7A"
+          transform="rotate(-50 400 350)">Results → Expanded Openness</text>
+  </g>
+
+  <!-- Technology stack showcase -->
+  <g id="techStack" transform="translate(10,80)">
+    <rect width="180" height="420" rx="15" fill="white" stroke="#E0E0E0" stroke-width="2" filter="url(#dropShadow)"/>
+    <text x="90" y="30" text-anchor="middle" font-family="'Montserrat', sans-serif" font-size="16" font-weight="bold" fill="#263238">
+      Core Technology Stack
+    </text>
+
+    <!-- Programming Languages -->
+    <text x="20" y="65" font-family="'Open Sans', sans-serif" font-size="14" font-weight="bold" fill="#37474F">Languages &amp; Platforms</text>
+    <g transform="translate(20,80)">
+      <circle cx="12" cy="0" r="10" fill="#3776AB"/>
+      <text x="30" y="5" font-family="'Open Sans', sans-serif" font-size="12" fill="#37474F">Python</text>
+
+      <circle cx="12" cy="25" r="10" fill="#276DC3"/>
+      <text x="30" y="30" font-family="'Open Sans', sans-serif" font-size="12" fill="#37474F">R</text>
+
+      <circle cx="12" cy="50" r="10" fill="#F7DF1E"/>
+      <text x="30" y="55" font-family="'Open Sans', sans-serif" font-size="12" fill="#37474F">JavaScript</text>
+    </g>
+
+    <!-- Tools -->
+    <text x="20" y="165" font-family="'Open Sans', sans-serif" font-size="14" font-weight="bold" fill="#37474F">Tools &amp; Frameworks</text>
+    <g transform="translate(20,180)">
+      <rect x="0" y="0" width="18" height="18" fill="#F37626"/>
+      <text x="25" y="13" font-family="'Open Sans', sans-serif" font-size="12" fill="#37474F">Jupyter</text>
+
+      <rect x="0" y="25" width="18" height="18" fill="#181717"/>
+      <text x="25" y="38" font-family="'Open Sans', sans-serif" font-size="12" fill="#37474F">GitHub</text>
+
+      <rect x="0" y="50" width="18" height="18" fill="#20BEFF"/>
+      <text x="25" y="63" font-family="'Open Sans', sans-serif" font-size="12" fill="#37474F">Kaggle</text>
+    </g>
+
+    <!-- Big Data -->
+    <text x="20" y="275" font-family="'Open Sans', sans-serif" font-size="14" font-weight="bold" fill="#37474F">Big Data Stack</text>
+    <g transform="translate(20,290)">
+      <circle cx="9" cy="9" r="9" fill="#FF6900"/>
+      <text x="25" y="14" font-family="'Open Sans', sans-serif" font-size="12" fill="#37474F">Hadoop</text>
+
+      <circle cx="9" cy="34" r="9" fill="#E25A1C"/>
+      <text x="25" y="39" font-family="'Open Sans', sans-serif" font-size="12" fill="#37474F">Spark</text>
+
+      <circle cx="9" cy="59" r="9" fill="#005571"/>
+      <text x="25" y="64" font-family="'Open Sans', sans-serif" font-size="12" fill="#37474F">Elasticsearch</text>
+    </g>
+
+    <!-- Cloud Platforms -->
+    <text x="20" y="385" font-family="'Open Sans', sans-serif" font-size="14" font-weight="bold" fill="#37474F">Cloud Platforms</text>
+    <text x="20" y="405" font-family="'Open Sans', sans-serif" font-size="12" fill="#546E7A">AWS, Azure, GCP</text>
+    <text x="20" y="420" font-family="'Open Sans', sans-serif" font-size="10" fill="#78909C" font-style="italic">(Typical tools, not universal)</text>
+  </g>
+
+  <!-- Success metrics and impact -->
+  <g id="metrics" transform="translate(990,80)">
+    <rect width="200" height="400" rx="15" fill="white" stroke="#E0E0E0" stroke-width="2" filter="url(#dropShadow)"/>
+    <text x="100" y="30" text-anchor="middle" font-family="'Montserrat', sans-serif" font-size="16" font-weight="bold" fill="#263238">
+      Era Impact &amp; Achievements
+    </text>
+
+    <!-- Statistics -->
+    <g transform="translate(10,55)">
+      <rect width="180" height="70" rx="8" fill="#E8F5E8" stroke="#4CAF50" stroke-width="1"/>
+      <text x="90" y="25" text-anchor="middle" font-family="'Montserrat', sans-serif" font-size="22" font-weight="bold" fill="#2E7D32">
+        1000+
+      </text>
+      <text x="90" y="43" text-anchor="middle" font-family="'Open Sans', sans-serif" font-size="12" fill="#4CAF50">
+        Open Datasets
+      </text>
+      <text x="90" y="58" text-anchor="middle" font-family="'Open Sans', sans-serif" font-size="11" fill="#2E7D32">
+        Average per Government Agency
+      </text>
+    </g>
+
+    <g transform="translate(10,145)">
+      <rect width="180" height="70" rx="8" fill="#E3F2FD" stroke="#2196F3" stroke-width="1"/>
+      <text x="90" y="25" text-anchor="middle" font-family="'Montserrat', sans-serif" font-size="22" font-weight="bold" fill="#1565C0">
+        100K+
+      </text>
+      <text x="90" y="43" text-anchor="middle" font-family="'Open Sans', sans-serif" font-size="12" fill="#2196F3">
+        Civic Developers
+      </text>
+      <text x="90" y="58" text-anchor="middle" font-family="'Open Sans', sans-serif" font-size="11" fill="#1565C0">
+        Global Community
+      </text>
+    </g>
+
+    <g transform="translate(10,235)">
+      <rect width="180" height="70" rx="8" fill="#FFF3E0" stroke="#FF9800" stroke-width="1"/>
+      <text x="90" y="25" text-anchor="middle" font-family="'Montserrat', sans-serif" font-size="22" font-weight="bold" fill="#F57C00">
+        80%
+      </text>
+      <text x="90" y="43" text-anchor="middle" font-family="'Open Sans', sans-serif" font-size="12" fill="#FF9800">
+        Efficiency Improvement
+      </text>
+      <text x="90" y="58" text-anchor="middle" font-family="'Open Sans', sans-serif" font-size="11" fill="#F57C00">
+        Data-Driven Decision Making
+      </text>
+    </g>
+
+    <!-- Key Innovations -->
+    <text x="20" y="340" font-family="'Open Sans', sans-serif" font-size="14" font-weight="bold" fill="#37474F">Government Programs</text>
+    <text x="20" y="360" font-family="'Open Sans', sans-serif" font-size="11" fill="#546E7A">• CDC/EPA Hadoop deployments</text>
+    <text x="20" y="375" font-family="'Open Sans', sans-serif" font-size="11" fill="#546E7A">• NYC Analytics Dashboards</text>
+    <text x="20" y="390" font-family="'Open Sans', sans-serif" font-size="11" fill="#546E7A">• Federal Data Strategy (2019)</text>
+  </g>
+
+  <!-- Footer with era characteristics -->
+  <rect x="0" y="730" width="1200" height="70" fill="#37474F" opacity="0.9"/>
+  <text x="20" y="775" font-family="'Open Sans', sans-serif" font-size="18" fill="#B0BEC5" font-weight="bold">
+    • Citizen-Centric Open Government
+  </text>
+  <text x="330" y="775" font-family="'Open Sans', sans-serif" font-size="18" fill="#B0BEC5"  font-weight="bold">
+    • Community-Based Collaboration
+  </text>
+  <text x="630" y="775" font-family="'Open Sans', sans-serif" font-size="18" fill="#B0BEC5"  font-weight="bold">
+    • Evidence-Based Policy Making
+  </text>
+  <text x="950" y="775" font-family="'Open Sans', sans-serif" font-size="18" fill="#B0BEC5"  font-weight="bold">
+    • Data Democratization
+  </text>
+</svg>

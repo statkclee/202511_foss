@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1400" height="1000" viewBox="0 0 1400 1000" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Gradients -->
+    <linearGradient id="humanCentric" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4CAF50;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2E7D32;stop-opacity:1" />
+    </linearGradient>
+
+    <linearGradient id="aiCentric" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#E91E63;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#9C27B0;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3F51B5;stop-opacity:1" />
+    </linearGradient>
+
+    <linearGradient id="inversionGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#4CAF50;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#FF5722;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#9C27B0;stop-opacity:1" />
+    </linearGradient>
+
+    <radialGradient id="humanCore" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#66BB6A;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#4CAF50;stop-opacity:1" />
+    </radialGradient>
+
+    <radialGradient id="aiCore" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#EC407A;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#9C27B0;stop-opacity:1" />
+    </radialGradient>
+
+    <linearGradient id="warningGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#FF9800;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#E65100;stop-opacity:1" />
+    </linearGradient>
+
+    <!-- Filters -->
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="6" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-opacity="0.3"/>
+    </filter>
+
+    <!-- Arrow markers -->
+    <marker id="dataFlow" markerWidth="12" markerHeight="10" refX="11" refY="5" orient="auto">
+      <polygon points="0,0 12,5 0,10" fill="#666"/>
+    </marker>
+
+    <marker id="inversionArrow" markerWidth="25" markerHeight="20" refX="23" refY="10" orient="auto">
+      <polygon points="0,0 25,10 0,20" fill="#FF5722"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1400" height="1000" fill="#F5F5F5"/>
+
+  <!-- Subtle grid -->
+  <pattern id="grid" x="0" y="0" width="50" height="50" patternUnits="userSpaceOnUse">
+    <path d="M 50 0 L 0 0 0 50" fill="none" stroke="#E0E0E0" stroke-width="1" opacity="0.4"/>
+  </pattern>
+  <rect width="1400" height="1000" fill="url(#grid)"/>
+
+  <!-- Title -->
+  <rect x="150" y="30" width="1100" height="75" fill="url(#inversionGrad)" rx="15" filter="url(#shadow)"/>
+  <text x="700" y="60" text-anchor="middle" font-family="Arial, sans-serif" font-size="32" font-weight="900" fill="#FFFFFF">The Great Inversion: Who Serves Whom?</text>
+  <text x="700" y="85" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#FFECB3">From Data-Enabled Human Decisions to Human-Generated Data for AI Autonomy</text>
+
+  <!-- Traditional Paradigm (Left) -->
+  <g id="traditional-paradigm">
+    <rect x="50" y="150" width="600" height="700" fill="#E8F5E9" stroke="#4CAF50" stroke-width="3" rx="20" opacity="0.95"/>
+    <text x="350" y="185" text-anchor="middle" font-family="Arial, sans-serif" font-size="26" font-weight="bold" fill="#2E7D32">Traditional Paradigm</text>
+    <text x="530" y="270" text-anchor="middle" font-family="Arial, sans-serif" font-size="22" fill="#4CAF50">"Data Serves Humans"</text>
+
+    <!-- Human at Center -->
+    <g transform="translate(350, 350)">
+      <circle cx="0" cy="0" r="80" fill="url(#humanCore)" filter="url(#glow)" stroke="#2E7D32" stroke-width="4"/>
+      <text x="0" y="-10" text-anchor="middle" font-family="Arial, sans-serif" font-size="30" font-weight="bold" fill="#FFFFFF">HUMAN</text>
+      <text x="0" y="20" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#E8F5E9">Decision Maker</text>
+      <text x="0" y="45" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#C8E6C9">Authority &amp; Agency</text>
+    </g>
+
+    <!-- Data Sources flowing TO human -->
+    <g transform="translate(350, 350)">
+      <!-- Data from top -->
+      <g transform="translate(0, 50)">
+        <rect x="-60" y="-200" width="120" height="40" fill="#A5D6A7" stroke="#4CAF50" stroke-width="2" rx="8"/>
+        <text x="0" y="-175" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#2E7D32">Reports</text>
+        <path d="M 0 -160 L 0 -130" stroke="#4CAF50" stroke-width="2" marker-end="url(#dataFlow)"/>
+      </g>
+
+      <!-- Data from left -->
+      <g transform="translate(-30, 0)">
+        <rect x="-220" y="-20" width="120" height="40" fill="#A5D6A7" stroke="#4CAF50" stroke-width="2" rx="8"/>
+        <text x="-160" y="5" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#2E7D32">Analytics</text>
+        <path d="M -100 0 L -50 0" stroke="#4CAF50" stroke-width="2" marker-end="url(#dataFlow)"/>      
+      </g>
+
+      <!-- Data from right -->
+      <g transform="translate(30, 0)">
+        <rect x="100" y="-20" width="120" height="40" fill="#A5D6A7" stroke="#4CAF50" stroke-width="2" rx="8"/>
+        <text x="160" y="5" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#2E7D32">Metrics</text>
+        <path d="M 100 0 L 50 0" stroke="#4CAF50" stroke-width="2" marker-end="url(#dataFlow)"/>
+      </g>
+
+      <!-- Data from bottom -->
+      <g transform="translate(0, -20)">
+        <rect x="-60" y="160" width="120" height="40" fill="#A5D6A7" stroke="#4CAF50" stroke-width="2" rx="8"/>
+        <text x="0" y="185" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#2E7D32">Insights</text>
+        <path d="M 0 160 L 0 100" stroke="#4CAF50" stroke-width="2" marker-end="url(#dataFlow)"/>
+      </g>
+    </g>
+
+    <!-- Traditional Characteristics -->
+    <g transform="translate(100, 550)">
+      <rect x="0" y="0" width="500" height="280" fill="#FFFFFF" stroke="#4CAF50" stroke-width="2" rx="12"/>
+      <text x="250" y="30" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#2E7D32">Human-Centric Decision Making</text>
+
+      <text x="30" y="70" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#4CAF50">✓ Human Authority</text>
+      <text x="50" y="90" font-family="Arial, sans-serif" font-size="16" fill="#666">Humans decide what to decide</text>
+
+      <text x="30" y="120" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#4CAF50">✓ Data as Tool</text>
+      <text x="50" y="140" font-family="Arial, sans-serif" font-size="16" fill="#666">Information supports judgment</text>
+
+      <text x="30" y="170" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#4CAF50">✓ Human Oversight</text>
+      <text x="50" y="190" font-family="Arial, sans-serif" font-size="16" fill="#666">Every decision reviewed by humans</text>
+
+      <text x="30" y="220" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#4CAF50">✓ Accountability</text>
+      <text x="50" y="240" font-family="Arial, sans-serif" font-size="16" fill="#666">Clear responsibility chain</text>
+
+      <text x="30" y="270" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#2E7D32">Purpose: Data enables human wisdom</text>
+    </g>
+  </g>
+
+  <!-- Inversion Arrow -->
+  <g id="inversion">
+    <path d="M 670 500 L 730 500" stroke="url(#inversionGrad)" stroke-width="8" marker-end="url(#inversionArrow)" filter="url(#glow)"/>
+    <text x="700" y="480" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#FF5722">THE GREAT</text>
+    <text x="700" y="500" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#FF5722">INVERSION</text>
+    <text x="700" y="530" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#FF5722">Who serves whom?</text>
+  </g>
+
+  <!-- AI Paradigm (Right) -->
+  <g id="ai-paradigm">
+    <rect x="750" y="150" width="600" height="700" fill="#F3E5F5" stroke="#9C27B0" stroke-width="3" rx="20" opacity="0.95"/>
+    <text x="1050" y="185" text-anchor="middle" font-family="Arial, sans-serif" font-size="26" font-weight="bold" fill="#4A148C">AI Era Paradigm</text>
+    <text x="1250" y="270" text-anchor="middle" font-family="Arial, sans-serif" font-size="22" fill="#9C27B0">"Humans Serve AI"</text>
+
+    <!-- AI at Center -->
+    <g transform="translate(1050, 350)">
+      <circle cx="0" cy="0" r="80" fill="url(#aiCore)" filter="url(#glow)" stroke="#4A148C" stroke-width="4"/>
+      <text x="0" y="-10" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#FFFFFF">AI</text>
+      <text x="0" y="10" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#F8BBD9">Decision Maker</text>
+      <text x="0" y="30" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#E1BEE7">Autonomous Agency</text>
+    </g>
+
+    <!-- Humans providing data TO AI -->
+    <g transform="translate(1050, 350)">
+      <!-- Human data sources -->
+      <g transform="translate(0, 50)">
+        <rect x="-60" y="-200" width="120" height="40" fill="#CE93D8" stroke="#9C27B0" stroke-width="2" rx="8"/>
+        <text x="0" y="-175" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#4A148C">Human Clicks</text>
+        <path d="M 0 -160 L 0 -130" stroke="#9C27B0" stroke-width="2" marker-end="url(#dataFlow)"/>
+      </g>
+
+      <g transform="translate(-50, 0)">
+        <rect x="-225" y="-20" width="130" height="40" fill="#CE93D8" stroke="#9C27B0" stroke-width="2" rx="8"/>
+        <text x="-160" y="5" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#4A148C">Human Behavior</text>
+        <path d="M -100 0 L -30 0" stroke="#9C27B0" stroke-width="2" marker-end="url(#dataFlow)"/>
+      </g>
+
+      <g transform="translate(50, 0)">
+        <rect x="100" y="-20" width="120" height="40" fill="#CE93D8" stroke="#9C27B0" stroke-width="2" rx="8"/>
+        <text x="160" y="5" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#4A148C">Human Choices</text>
+        <path d="M 100 -10 L 35 -10" stroke="#9C27B0" stroke-width="2" marker-end="url(#dataFlow)"/>
+      </g>
+
+      <g transform="translate(0, 0)">
+        <rect x="-65" y="160" width="140" height="40" fill="#CE93D8" stroke="#9C27B0" stroke-width="2" rx="8"/>
+        <text x="5" y="185" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#4A148C">Human Preferences</text>
+        <path d="M -20 160 L -20 90" stroke="#9C27B0" stroke-width="3" marker-end="url(#dataFlow)"/>
+      </g>      
+
+      <!-- AI Output arrows -->
+      <g transform="translate(0, 20)">
+        <path d="M 90 -10 L 150 -10" stroke="#E91E63" stroke-width="2" marker-end="url(#dataFlow)"/>
+        <text x="90" y="20" font-family="Arial, sans-serif" font-size="14" fill="#E91E63">Auto-decisions</text>
+      </g>       
+
+      <path d="M 20 90 L 20 150" stroke="#E91E63" stroke-width="3" marker-end="url(#dataFlow)"/>
+      <text x="40" y="130" font-family="Arial, sans-serif" font-size="14" fill="#E91E63">Actions</text>
+    </g>
+
+    <!-- AI Characteristics -->
+    <g transform="translate(800, 550)">
+      <rect x="0" y="0" width="500" height="280" fill="#FFFFFF" stroke="#9C27B0" stroke-width="2" rx="12"/>
+      <text x="250" y="30" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#4A148C">AI-Centric Decision Making</text>
+
+      <text x="30" y="70" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#E91E63">⚠ AI Authority</text>
+      <text x="50" y="90" font-family="Arial, sans-serif" font-size="16" fill="#666">AI decides what to decide</text>
+
+      <text x="30" y="120" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#E91E63">⚠ Humans as Data</text>
+      <text x="50" y="140" font-family="Arial, sans-serif" font-size="16" fill="#666">Human behavior becomes input</text>
+
+      <text x="30" y="170" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#E91E63">⚠ Minimal Oversight</text>
+      <text x="50" y="190" font-family="Arial, sans-serif" font-size="16" fill="#666">Millions of micro-decisions unseen</text>
+
+      <text x="30" y="220" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#E91E63">⚠ Distributed Responsibility</text>
+      <text x="50" y="240" font-family="Arial, sans-serif" font-size="16" fill="#666">Who is accountable?</text>
+
+      <text x="30" y="270" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#4A148C">Purpose: Humans enable AI autonomy</text>
+    </g>
+  </g>
+
+  <!-- Critical Questions -->
+  <g id="questions" transform="translate(200, 880)">
+    <rect x="-50" y="0" width="1100" height="100" fill="url(#warningGrad)" rx="12" filter="url(#shadow)"/>
+    <text x="500" y="25" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#FFFFFF">The Fundamental Questions</text>
+
+    <text x="-25" y="50" font-family="Arial, sans-serif" font-size="16" fill="#FFFFFF">• Who decides what decisions AI should make?</text>
+    <text x="-25" y="70" font-family="Arial, sans-serif" font-size="16" fill="#FFFFFF">• Where does human agency remain meaningful?</text>
+    <text x="-25" y="90" font-family="Arial, sans-serif" font-size="16" fill="#FFFFFF">• What happens when AI consistently makes better decisions than humans?</text>
+
+    <text x="550" y="50" font-family="Arial, sans-serif" font-size="16" fill="#FFFFFF">• Are we creating our own decision-making obsolescence?</text>
+    <text x="550" y="70" font-family="Arial, sans-serif" font-size="16" fill="#FFFFFF">• Who controls the AI that controls the decisions?</text>
+    <text x="550" y="90" font-family="Arial, sans-serif" font-size="16" fill="#FFFFFF">• Is this evolution inevitable or can we choose differently?</text>
+  </g>
+</svg>

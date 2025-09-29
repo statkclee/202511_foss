@@ -1,0 +1,408 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2000 1100">
+  <defs>
+    <!-- Background gradient -->
+    <linearGradient id="backgroundGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#FEFEFE;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#F8F9FA;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#F1F3F4;stop-opacity:1" />
+    </linearGradient>
+
+    <!-- Timeline gradient -->
+    <linearGradient id="timelineGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#8B0000;stop-opacity:1" />
+      <stop offset="12.5%" style="stop-color:#FF4500;stop-opacity:1" />
+      <stop offset="25%" style="stop-color:#32CD32;stop-opacity:1" />
+      <stop offset="37.5%" style="stop-color:#FF6347;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#4169E1;stop-opacity:1" />
+      <stop offset="62.5%" style="stop-color:#8A2BE2;stop-opacity:1" />
+      <stop offset="75%" style="stop-color:#DC143C;stop-opacity:1" />
+      <stop offset="87.5%" style="stop-color:#20B2AA;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FF1493;stop-opacity:1" />
+    </linearGradient>
+
+    <!-- Era gradients -->
+    <linearGradient id="foundation" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#CD5C5C;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#8B0000;stop-opacity:1" />
+    </linearGradient>
+
+    <linearGradient id="antibiotic" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#FF7F50;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FF4500;stop-opacity:1" />
+    </linearGradient>
+
+    <linearGradient id="epidemiology" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#7FFF00;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#32CD32;stop-opacity:1" />
+    </linearGradient>
+
+    <linearGradient id="vaccination" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFB347;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FF6347;stop-opacity:1" />
+    </linearGradient>
+
+    <linearGradient id="hiv" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#6495ED;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#4169E1;stop-opacity:1" />
+    </linearGradient>
+
+    <linearGradient id="genomics" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#DA70D6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#8A2BE2;stop-opacity:1" />
+    </linearGradient>
+
+    <linearGradient id="precision" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#F08080;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#DC143C;stop-opacity:1" />
+    </linearGradient>
+
+    <linearGradient id="digital" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#48D1CC;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#20B2AA;stop-opacity:1" />
+    </linearGradient>
+
+    <linearGradient id="mrna" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#FF69B4;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FF1493;stop-opacity:1" />
+    </linearGradient>
+
+    <!-- Drop shadow filter -->
+    <filter id="cardShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="3" dy="5" stdDeviation="4" flood-color="#000000" flood-opacity="0.2"/>
+    </filter>
+
+    <!-- Text shadow -->
+    <filter id="textShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="1" dy="2" stdDeviation="1" flood-color="#000000" flood-opacity="0.4"/>
+    </filter>
+
+    <style>
+      .main-title {
+        font-family: Georgia, serif;
+        font-size: 36px;
+        font-weight: bold;
+        fill: #2C3E50;
+      }
+
+      .subtitle {
+        font-family: Arial, sans-serif;
+        font-size: 20px;
+        fill: #7F8C8D;
+      }
+
+      .era-title {
+        font-family: Arial, sans-serif;
+        font-size: 24px;
+        font-weight: bold;
+        fill: #ffffff;
+      }
+
+      .era-subtitle {
+        font-family: Arial, sans-serif;
+        font-size: 20px;
+        fill: #F5F5F5;
+      }
+
+      .case-title {
+        font-family: Arial, sans-serif;
+        font-size: 18px;
+        font-weight: bold;
+      }
+
+      .case-desc {
+        font-family: Arial, sans-serif;
+        font-size: 16px;
+        fill: #2C3E50;
+      }
+
+      .case-impact {
+        font-family: Arial, sans-serif;
+        font-size: 16px;
+        font-weight: bold;
+        fill: #27AE60;
+      }
+
+      .case-data {
+        font-family: Arial, sans-serif;
+        font-size: 15px;
+        fill: #E74C3C;
+        font-weight: bold;
+      }
+
+      .year-label {
+        font-family: Arial, sans-serif;
+        font-size: 20px;
+        font-weight: bold;
+        fill: #34495E;
+      }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="2000" height="1200" fill="url(#backgroundGradient)"/>
+
+  <!-- Title Section -->
+  <text x="1000" y="50" text-anchor="middle" class="main-title" filter="url(#textShadow)">
+    Data-Driven Medical Revolution: Discoveries That Saved Humanity
+  </text>
+  <text x="1000" y="80" text-anchor="middle" class="subtitle">
+    Data-Driven Medical Breakthroughs: Discoveries That Saved Humanity
+  </text>
+
+  <!-- Main Timeline -->
+  <rect x="150" y="595" width="1700" height="10" fill="url(#timelineGradient)" rx="5" filter="url(#cardShadow)"/>
+
+  <!-- Timeline markers -->
+  <circle cx="200" cy="600" r="8" fill="url(#foundation)" filter="url(#cardShadow)"/>
+  <circle cx="350" cy="600" r="8" fill="url(#antibiotic)" filter="url(#cardShadow)"/>
+  <circle cx="500" cy="600" r="8" fill="url(#epidemiology)" filter="url(#cardShadow)"/>
+  <circle cx="650" cy="600" r="8" fill="url(#vaccination)" filter="url(#cardShadow)"/>
+  <circle cx="800" cy="600" r="8" fill="url(#hiv)" filter="url(#cardShadow)"/>
+  <circle cx="950" cy="600" r="8" fill="url(#genomics)" filter="url(#cardShadow)"/>
+  <circle cx="1300" cy="600" r="8" fill="url(#precision)" filter="url(#cardShadow)"/>
+  <circle cx="1650" cy="600" r="8" fill="url(#mrna)" filter="url(#cardShadow)"/>
+
+  <!-- Year labels -->
+  <text x="200" y="630" text-anchor="middle" class="year-label">1854</text>
+  <text x="350" y="580" text-anchor="middle" class="year-label">1928</text>
+  <text x="500" y="630" text-anchor="middle" class="year-label">1948</text>
+  <text x="650" y="580" text-anchor="middle" class="year-label">1954</text>
+  <text x="800" y="630" text-anchor="middle" class="year-label">1987</text>
+  <text x="950" y="580" text-anchor="middle" class="year-label">1990</text>
+  <text x="1300" y="630" text-anchor="middle" class="year-label">2000s</text>
+  <text x="1650" y="580" text-anchor="middle" class="year-label">2020</text>
+
+  <!-- 1. John Snow Cholera Map (1854) - Foundation of Epidemiology -->
+  <g transform="translate(200, 150)">
+    <rect x="-120" y="0" width="280" height="400" fill="white" stroke="url(#foundation)" stroke-width="4" rx="12" filter="url(#cardShadow)"/>
+
+    <!-- Header -->
+    <rect x="-120" y="0" width="280" height="70" fill="url(#foundation)" rx="12"/>
+    <text class="era-title" x="0" y="30" text-anchor="middle">🗺️ Birth of Epidemiology</text>
+    <text class="era-subtitle" x="0" y="55" text-anchor="middle">Foundation of Epidemiology</text>
+
+    <!-- Content -->
+    <text class="case-title" x="20" y="105" text-anchor="middle" fill="#8B0000">John Snow's Cholera Map</text>
+    <text class="case-desc" x="20" y="125" text-anchor="middle">(1854)</text>
+
+    <text class="case-desc" x="20" y="155" text-anchor="middle">💧 Contaminated water → Disease spread</text>
+    <text class="case-desc" x="20" y="175" text-anchor="middle">📊 Death mapping visualization</text>
+
+    <text class="case-desc" x="20" y="205" text-anchor="middle">🚰 Broad Street pump removal</text>
+    <text class="case-desc" x="20" y="225" text-anchor="middle">👥 Local interviews &amp; data collection</text>
+
+    <text class="case-impact" x="20" y="260" text-anchor="middle">Impact: Birth of modern epidemiology</text>
+    <text class="case-impact" x="20" y="280" text-anchor="middle">Founded data-driven disease investigation</text>
+
+    <text class="case-data" x="20" y="315" text-anchor="middle">📈 Data: 600+ deaths analyzed</text>
+    <text class="case-data" x="20" y="335" text-anchor="middle">First disease map visualization</text>
+
+    <!-- Connection line -->
+    <line x1="0" y1="400" x2="0" y2="440" stroke="#8B0000" stroke-width="4"/>
+  </g>
+
+  <!-- 2. Penicillin Discovery (1928) - Antibiotic Era -->
+  <g transform="translate(350, 650)">
+    <rect x="-120" y="0" width="280" height="400" fill="white" stroke="url(#antibiotic)" stroke-width="4" rx="12" filter="url(#cardShadow)"/>
+
+    <!-- Header -->
+    <rect x="-120" y="0" width="280" height="70" fill="url(#antibiotic)" rx="12"/>
+    <text class="era-title" x="0" y="30" text-anchor="middle">🧫 Antibiotic Era</text>
+    <text class="era-subtitle" x="0" y="55" text-anchor="middle">Antibiotic Era</text>
+
+    <!-- Content -->
+    <text class="case-title" x="20" y="105" text-anchor="middle" fill="#FF4500">Fleming's Penicillin Discovery</text>
+    <text class="case-desc" x="20" y="125" text-anchor="middle">(1928)</text>
+
+    <text class="case-desc" x="20" y="155" text-anchor="middle">🔬 Accidental mold observation</text>
+    <text class="case-desc" x="20" y="175" text-anchor="middle">⚗️ Systematic experimentation</text>
+
+    <text class="case-desc" x="20" y="205" text-anchor="middle">💊 Mass production (1940s)</text>
+    <text class="case-desc" x="20" y="225" text-anchor="middle">🌍 Global antibiotic revolution</text>
+
+    <text class="case-impact" x="20" y="260" text-anchor="middle">Impact: Millions of lives saved</text>
+    <text class="case-impact" x="20" y="280" text-anchor="middle">Transformed infectious disease treatment</text>
+
+    <text class="case-data" x="20" y="315" text-anchor="middle">📊 Dramatic reduction in infection deaths</text>
+    <text class="case-data" x="20" y="335" text-anchor="middle">Foundation of modern antibiotics</text>
+
+    <!-- Connection line -->
+    <line x1="0" y1="0" x2="0" y2="-45" stroke="#FF4500" stroke-width="4"/>
+  </g>
+
+  <!-- 3. Framingham Heart Study (1948) - Cardiovascular Epidemiology -->
+  <g transform="translate(500, 150)">
+    <rect x="-120" y="0" width="280" height="400" fill="white" stroke="url(#epidemiology)" stroke-width="4" rx="12" filter="url(#cardShadow)"/>
+
+    <!-- Header -->
+    <rect x="-120" y="0" width="280" height="70" fill="url(#epidemiology)" rx="12"/>
+    <text class="era-title" x="0" y="30" text-anchor="middle">❤️ Cardiovascular Epidemiology</text>
+    <text class="era-subtitle" x="0" y="55" text-anchor="middle">Cardiovascular Epidemiology</text>
+
+    <!-- Content -->
+    <text class="case-title" x="20" y="105" text-anchor="middle" fill="#32CD32">Framingham Heart Study</text>
+    <text class="case-desc" x="20" y="125" text-anchor="middle">(1948)</text>
+
+    <text class="case-desc" x="20" y="155" text-anchor="middle">👥 5,209 participants tracked</text>
+    <text class="case-desc" x="20" y="175" text-anchor="middle">📈 Risk factor concept established</text>
+
+    <text class="case-desc" x="20" y="205" text-anchor="middle">🚬 Smoking, hypertension, cholesterol</text>
+    <text class="case-desc" x="20" y="225" text-anchor="middle">📊 Longitudinal cohort methodology</text>
+
+    <text class="case-impact" x="20" y="260" text-anchor="middle">Impact: Preventive medicine revolution</text>
+    <text class="case-impact" x="20" y="280" text-anchor="middle">Cardiovascular risk prediction models</text>
+
+    <text class="case-data" x="20" y="315" text-anchor="middle">📈 75 years, 3 generations tracked</text>
+    <text class="case-data" x="20" y="335" text-anchor="middle">Over 1,200 research publications</text>
+
+    <!-- Connection line -->
+    <line x1="0" y1="400" x2="0" y2="440" stroke="#32CD32" stroke-width="4"/>
+  </g>
+
+  <!-- 4. Polio Vaccine (1954) - Vaccination Era -->
+  <g transform="translate(650, 650)">
+    <rect x="-120" y="0" width="280" height="400" fill="white" stroke="url(#vaccination)" stroke-width="4" rx="12" filter="url(#cardShadow)"/>
+
+    <!-- Header -->
+    <rect x="-120" y="0" width="280" height="70" fill="url(#vaccination)" rx="12"/>
+    <text class="era-title" x="0" y="30" text-anchor="middle">💉 Vaccination Era</text>
+    <text class="era-subtitle" x="0" y="55" text-anchor="middle">Vaccination Era</text>
+
+    <!-- Content -->
+    <text class="case-title" x="20" y="105" text-anchor="middle" fill="#FF6347">Polio Vaccine Development</text>
+    <text class="case-desc" x="20" y="125" text-anchor="middle">(1954)</text>
+
+    <text class="case-desc" x="20" y="155" text-anchor="middle">👨‍⚕️ Jonas Salk's research</text>
+    <text class="case-desc" x="20" y="175" text-anchor="middle">🧪 1.6 million clinical trial</text>
+
+    <text class="case-desc" x="20" y="205" text-anchor="middle">🌍 Global eradication campaign</text>
+    <text class="case-desc" x="20" y="225" text-anchor="middle">📊 Randomized controlled trial design</text>
+
+    <text class="case-impact" x="20" y="260" text-anchor="middle">Impact: 99% reduction in polio cases</text>
+    <text class="case-impact" x="20" y="280" text-anchor="middle">Near-complete global eradication</text>
+
+    <text class="case-data" x="20" y="315" text-anchor="middle">📈 29,000 → 5,600 cases (1955-1957)</text>
+    <text class="case-data" x="20" y="335" text-anchor="middle">Largest clinical trial in history</text>
+
+    <!-- Connection line -->
+    <line x1="0" y1="0" x2="0" y2="-45" stroke="#FF6347" stroke-width="4"/>
+  </g>
+
+  <!-- 5. HIV/AIDS HAART (1987-1996) - Combination Therapy -->
+  <g transform="translate(800, 150)">
+    <rect x="-120" y="0" width="280" height="400" fill="white" stroke="url(#hiv)" stroke-width="4" rx="12" filter="url(#cardShadow)"/>
+
+    <!-- Header -->
+    <rect x="-120" y="0" width="280" height="70" fill="url(#hiv)" rx="12"/>
+    <text class="era-title" x="0" y="30" text-anchor="middle">🧬 Combination Therapy</text>
+    <text class="era-subtitle" x="0" y="55" text-anchor="middle">Combination Therapy</text>
+
+    <!-- Content -->
+    <text class="case-title" x="20" y="105" text-anchor="middle" fill="#4169E1">HIV/AIDS HAART Treatment</text>
+    <text class="case-desc" x="20" y="125" text-anchor="middle">(1987-1996)</text>
+
+    <text class="case-desc" x="20" y="155" text-anchor="middle">💊 AZT (1987) → Combination therapy</text>
+    <text class="case-desc" x="20" y="175" text-anchor="middle">🔬 3-drug combination therapy</text>
+
+    <text class="case-desc" x="20" y="205" text-anchor="middle">📊 Viral replication blocking</text>
+    <text class="case-desc" x="20" y="225" text-anchor="middle">🎆 Vancouver Conference breakthrough (1996)</text>
+
+    <text class="case-impact" x="20" y="260" text-anchor="middle">Impact: Sharp mortality decline (late 1990s)</text>
+    <text class="case-impact" x="20" y="280" text-anchor="middle">Transformed HIV from fatal to chronic</text>
+
+    <text class="case-data" x="20" y="315" text-anchor="middle">⏰ Substantial life expectancy gain</text>
+    <text class="case-data" x="20" y="335" text-anchor="middle">Near-normal lifespan when treated early</text>
+
+    <!-- Connection line -->
+    <line x1="0" y1="400" x2="0" y2="440" stroke="#4169E1" stroke-width="4"/>
+  </g>
+
+  <!-- 6. Human Genome Project (1990-2003) - Genomic Medicine -->
+  <g transform="translate(950, 650)">
+    <rect x="-120" y="0" width="280" height="400" fill="white" stroke="url(#genomics)" stroke-width="4" rx="12" filter="url(#cardShadow)"/>
+
+    <!-- Header -->
+    <rect x="-120" y="0" width="280" height="70" fill="url(#genomics)" rx="12"/>
+    <text class="era-title" x="0" y="30" text-anchor="middle">🧬 Genomic Medicine</text>
+    <text class="era-subtitle" x="0" y="55" text-anchor="middle">Genomic Medicine</text>
+
+    <!-- Content -->
+    <text class="case-title" x="20" y="105" text-anchor="middle" fill="#8A2BE2">Human Genome Project</text>
+    <text class="case-desc" x="20" y="125" text-anchor="middle">(1990-2003)</text>
+
+    <text class="case-desc" x="20" y="155" text-anchor="middle">🔢 3 billion base pairs sequenced</text>
+    <text class="case-desc" x="20" y="175" text-anchor="middle">🧪 Personalized medicine begins</text>
+
+    <text class="case-desc" x="20" y="205" text-anchor="middle">💰 Cost: $100M (2001) → &lt;$1,000 (2021+)</text>
+    <text class="case-desc" x="20" y="225" text-anchor="middle">🌍 International collaboration model</text>
+
+    <text class="case-impact" x="20" y="260" text-anchor="middle">Impact: Precision medicine era begins</text>
+    <text class="case-impact" x="20" y="280" text-anchor="middle">Genomic medicine revolution</text>
+
+    <text class="case-data" x="20" y="315" text-anchor="middle">🎯 BRCA1/2 genetic testing</text>
+    <text class="case-data" x="20" y="335" text-anchor="middle">20,000-25,000 genes identified</text>
+
+    <!-- Connection line -->
+    <line x1="0" y1="0" x2="0" y2="-45" stroke="#8A2BE2" stroke-width="4"/>
+  </g>
+
+  <!-- 7. Smoking-Cancer Studies (1950s) - Evidence-Based Medicine -->
+  <g transform="translate(1300, 150)">
+    <rect x="-140" y="0" width="320" height="400" fill="white" stroke="url(#precision)" stroke-width="4" rx="12" filter="url(#cardShadow)"/>
+
+    <!-- Header -->
+    <rect x="-140" y="0" width="320" height="70" fill="url(#precision)" rx="12"/>
+    <text class="era-title" x="0" y="30" text-anchor="middle">📊 Evidence-Based Medicine</text>
+    <text class="era-subtitle" x="0" y="55" text-anchor="middle">Evidence-Based Medicine</text>
+
+    <!-- Content -->
+    <text class="case-title" x="20" y="105" text-anchor="middle" fill="#DC143C">Smoking-Cancer Link Proof</text>
+    <text class="case-desc" x="20" y="125" text-anchor="middle">(1950-2004)</text>
+
+    <text class="case-desc" x="20" y="155" text-anchor="middle">👨‍⚕️ Richard Doll Study (1950)</text>
+    <text class="case-desc" x="20" y="175" text-anchor="middle">📈 34,439 doctors, 50-year follow-up</text>
+
+    <text class="case-desc" x="20" y="205" text-anchor="middle">🚬 Dose-response relationship</text>
+    <text class="case-desc" x="20" y="225" text-anchor="middle">📊 Prospective cohort methodology</text>
+
+    <text class="case-impact" x="20" y="260" text-anchor="middle">Impact: 25x lung cancer risk proven</text>
+    <text class="case-impact" x="20" y="280" text-anchor="middle">Global tobacco control policies</text>
+
+    <text class="case-data" x="20" y="315" text-anchor="middle">⚰️ 10 years life gained by quitting</text>
+    <text class="case-data" x="20" y="335" text-anchor="middle">20% mortality decline in men (UK)</text>
+
+    <!-- Connection line -->
+    <line x1="0" y1="400" x2="0" y2="440" stroke="#DC143C" stroke-width="4"/>
+  </g>
+
+  <!-- 8. COVID-19 mRNA Vaccines (2020) - Digital Health Era -->
+  <g transform="translate(1650, 650)">
+    <rect x="-120" y="0" width="280" height="400" fill="white" stroke="url(#mrna)" stroke-width="4" rx="12" filter="url(#cardShadow)"/>
+
+    <!-- Header -->
+    <rect x="-120" y="0" width="280" height="70" fill="url(#mrna)" rx="12"/>
+    <text class="era-title" x="0" y="30" text-anchor="middle">🤖 AI Medicine Era</text>
+    <text class="era-subtitle" x="0" y="55" text-anchor="middle">AI Medicine Era</text>
+
+    <!-- Content -->
+    <text class="case-title" x="20" y="105" text-anchor="middle" fill="#FF1493">COVID-19 mRNA Vaccines</text>
+    <text class="case-desc" x="20" y="125" text-anchor="middle">(2020)</text>
+
+    <text class="case-desc" x="20" y="155" text-anchor="middle">🧬 Rapid sequence-based design</text>
+    <text class="case-desc" x="20" y="175" text-anchor="middle">Built on decades of mRNA research</text>
+
+    <text class="case-desc" x="20" y="205" text-anchor="middle">🧪 40,000 participant trials</text>
+    <text class="case-desc" x="20" y="225" text-anchor="middle">⚡ 300-day development</text>
+
+    <text class="case-impact" x="20" y="260" text-anchor="middle">Impact: 95% efficacy in trials</text>
+    <text class="case-impact" x="20" y="280" text-anchor="middle">Prevented millions of deaths</text>
+
+    <text class="case-data" x="20" y="315" text-anchor="middle">💉 Billions of doses administered globally</text>
+    <text class="case-data" x="20" y="335" text-anchor="middle">Record-breaking vaccine rollout</text>
+
+    <!-- Connection line -->
+    <line x1="0" y1="0" x2="0" y2="-45" stroke="#FF1493" stroke-width="4"/>
+  </g>
+
+</svg>

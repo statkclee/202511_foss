@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="20 90 1600 710" width="1600" height="710">
+  <!-- Background -->
+  <!-- <rect width="1600" height="750" fill="#F7FAFC"/> -->
+
+  <defs>
+    <!-- Gradients -->
+    <linearGradient id="rmdGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#718096;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#4A5568;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="quartoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#75AADB;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#4682B4;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="websiteGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#48BB78;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#38A169;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="blogGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#ED8936;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#DD6B20;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="bookGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#9F7AEA;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#805AD5;stop-opacity:1" />
+    </linearGradient>
+
+    <!-- Arrow marker -->
+    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#333" />
+    </marker>
+    
+    <!-- Glow filter -->
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  
+  <!-- Left Section: RMarkdown Era -->
+  <g id="rmarkdown-era">
+    <!-- RMarkdown Box -->
+    <rect x="50" y="150" width="280" height="100" rx="10" fill="url(#rmdGradient)" opacity="0.9"/>
+    <text x="190" y="190" font-family="'Noto Sans KR', sans-serif" font-size="24" font-weight="bold" text-anchor="middle" fill="white">
+      RMarkdown 시대
+    </text>
+    <text x="190" y="220" font-family="'Noto Sans KR', sans-serif" font-size="16" text-anchor="middle" fill="white">
+      개별 도구, 분산된 워크플로우
+    </text>
+    
+    <!-- Individual outputs from RMarkdown -->
+    <g id="rmd-outputs">
+      <!-- HTML -->
+      <rect x="80" y="300" width="100" height="60" rx="5" fill="#E2E8F0" stroke="#CBD5E0" stroke-width="2"/>
+      <text x="130" y="335" font-family="monospace" font-size="14" text-anchor="middle" fill="#4A5568">HTML</text>
+      
+      <!-- PDF -->
+      <rect x="200" y="300" width="100" height="60" rx="5" fill="#E2E8F0" stroke="#CBD5E0" stroke-width="2"/>
+      <text x="250" y="335" font-family="monospace" font-size="14" text-anchor="middle" fill="#4A5568">PDF</text>
+      
+      <!-- Word -->
+      <rect x="80" y="380" width="100" height="60" rx="5" fill="#E2E8F0" stroke="#CBD5E0" stroke-width="2"/>
+      <text x="130" y="415" font-family="monospace" font-size="14" text-anchor="middle" fill="#4A5568">Word</text>
+      
+      <!-- Slides -->
+      <rect x="200" y="380" width="100" height="60" rx="5" fill="#E2E8F0" stroke="#CBD5E0" stroke-width="2"/>
+      <text x="250" y="415" font-family="monospace" font-size="14" text-anchor="middle" fill="#4A5568">Slides</text>
+    </g>
+    
+    <!-- Pain points -->
+    <text x="190" y="480" font-family="'Noto Sans KR', sans-serif" font-size="18" text-anchor="middle" fill="#E53E3E">
+      "각각 따로 관리..."
+    </text>
+    <text x="190" y="510" font-family="'Noto Sans KR', sans-serif" font-size="18" text-anchor="middle" fill="#E53E3E">
+      "버전 불일치..."
+    </text>
+    <text x="190" y="540" font-family="'Noto Sans KR', sans-serif" font-size="18" text-anchor="middle" fill="#E53E3E">
+      "배포 복잡성..."
+    </text>
+  </g>
+  
+  <!-- Transformation Arrow -->
+  <g id="transformation">
+    <path d="M 350 300 Q 500 250 650 300" stroke="#4682B4" stroke-width="4" fill="none" marker-end="url(#arrowhead)" stroke-dasharray="10,5" opacity="0.7"/>
+    <text x="500" y="240" font-family="'Noto Sans KR', sans-serif" font-size="20" font-weight="bold" text-anchor="middle" fill="#4682B4">
+      혁신의 순간
+    </text>
+    <text x="500" y="265" font-family="'Noto Sans KR', sans-serif" font-size="14" text-anchor="middle" fill="#718096">
+      One Source, Multiple Outputs
+    </text>
+  </g>
+  
+  <!-- Center: Quarto Core -->
+  <g id="quarto-core">
+    <!-- Quarto Circle -->
+    <circle cx="700" cy="350" r="80" fill="url(#quartoGradient)" filter="url(#glow)" opacity="0.95"/>
+    <text x="700" y="345" font-family="'Noto Sans KR', sans-serif" font-size="28" font-weight="bold" text-anchor="middle" fill="white">
+      Quarto
+    </text>
+    <text x="700" y="370" font-family="'Noto Sans KR', sans-serif" font-size="14" text-anchor="middle" fill="white">
+      통합 출판 시스템
+    </text>
+  </g>
+  
+  <!-- Right Section: Quarto Outputs -->
+  <g id="quarto-outputs">
+    <!-- Website -->
+    <g id="website-output">
+      <rect x="900" y="150" width="400" height="140" rx="15" fill="url(#websiteGradient)" opacity="0.95"/>
+      <text x="920" y="180" font-family="'Noto Sans KR', sans-serif" font-size="22" font-weight="bold" fill="white">
+        📋 웹사이트: 연구자의 얼굴
+      </text>
+      <text x="920" y="210" font-family="'Noto Sans KR', sans-serif" font-size="15" fill="white">
+        • 이력서와 포트폴리오가 살아있는 공간
+      </text>
+      <text x="920" y="235" font-family="'Noto Sans KR', sans-serif" font-size="15" fill="white">
+        • 연구자와 연구자를 잇는 디지털 명함
+      </text>
+      <text x="920" y="260" font-family="'Noto Sans KR', sans-serif" font-size="15" fill="white">
+        • ORCID, Google Scholar와 자동 연동
+      </text>
+      
+      <!-- Connection from Quarto -->
+      <path d="M 771 320 L 897 220" stroke="url(#websiteGradient)" stroke-width="3" opacity="0.7"/>
+      
+      <!-- Connection mechanism: Who connects -->
+      <text x="1330" y="220" font-family="'Noto Sans KR', sans-serif" font-size="24" font-weight="bold" fill="#38A169">
+        WHO
+      </text>
+      <text x="1200" y="180" font-family="'Noto Sans KR', sans-serif" font-size="18" fill="#4A5568"  font-weight="bold" >
+        연구자 발견
+      </text>
+    </g>
+    
+    <!-- Blog -->
+    <g id="blog-output">
+      <rect x="900" y="320" width="400" height="140" rx="15" fill="url(#blogGradient)" opacity="0.95"/>
+      <text x="920" y="350" font-family="'Noto Sans KR', sans-serif" font-size="22" font-weight="bold" fill="white">
+        ✍️ 블로그: 살아있는 연구 일지
+      </text>
+      <text x="920" y="380" font-family="'Noto Sans KR', sans-serif" font-size="15" fill="white">
+        • 최신 연구 성과를 실시간으로 공유
+      </text>
+      <text x="920" y="405" font-family="'Noto Sans KR', sans-serif" font-size="15" fill="white">
+        • 실패와 성공의 과정을 투명하게 기록
+      </text>
+      <text x="920" y="430" font-family="'Noto Sans KR', sans-serif" font-size="15" fill="white">
+        • 피어 리뷰 전 아이디어 검증의 장
+      </text>
+      
+      <!-- Connection from Quarto -->
+      <path d="M 780 350 L 895 390" stroke="url(#blogGradient)" stroke-width="3" opacity="0.7"/>
+      
+      <!-- Connection mechanism: What connects -->
+      <text x="1310" y="370" font-family="'Noto Sans KR', sans-serif" font-size="24" font-weight="bold" fill="#DD6B20">
+        WHAT
+      </text>
+      <text x="1223" y="350" font-family="'Noto Sans KR', sans-serif" font-size="18" fill="#4A5568"  font-weight="bold" >
+        연구 공유
+      </text>
+    </g>
+    
+    <!-- Book -->
+    <g id="book-output">
+      <rect x="900" y="490" width="400" height="140" rx="15" fill="url(#bookGradient)" opacity="0.95"/>
+      <text x="920" y="520" font-family="'Noto Sans KR', sans-serif" font-size="22" font-weight="bold" fill="white">
+        📚 전자책: 지식의 결정체
+      </text>
+      <text x="920" y="550" font-family="'Noto Sans KR', sans-serif" font-size="15" fill="white">
+        • 흩어진 연구를 체계적 지식으로 승화
+      </text>
+      <text x="920" y="575" font-family="'Noto Sans KR', sans-serif" font-size="15" fill="white">
+        • 재현가능한 교과서와 매뉴얼 제작
+      </text>
+      <text x="920" y="600" font-family="'Noto Sans KR', sans-serif" font-size="15" fill="white">
+        • Diamond Open Access로 지식 민주화
+      </text>
+      
+      <!-- Connection from Quarto -->
+      <path d="M 765 400 L 897 560" stroke="url(#bookGradient)" stroke-width="3" opacity="0.7"/>
+      
+      <!-- Connection mechanism: Why connects -->
+      <text x="1330" y="560" font-family="'Noto Sans KR', sans-serif" font-size="24" font-weight="bold" fill="#805AD5">
+        WHY
+      </text>
+      <text x="1200" y="520" font-family="'Noto Sans KR', sans-serif" font-size="18" fill="#4A5568" font-weight="bold" >
+        지식 체계화
+      </text>
+    </g>
+  </g>
+  
+  <!-- Bottom: Unified Workflow -->
+  <g id="unified-workflow">
+    <rect x="300" y="680" width="800" height="80" rx="10" fill="#EDF2F7" stroke="#75AADB" stroke-width="3"/>
+    <text x="700" y="710" font-family="'Noto Sans KR', sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#2D3748">
+      하나의 소스, 무한한 가능성 → 지속가능한 연구 문화
+    </text>
+    <text x="700" y="735" font-family="'Noto Sans KR', sans-serif" font-size="14" text-anchor="middle" fill="#4A5568">
+      git push 한 번으로 웹사이트, 블로그, 전자책이 동시에 업데이트 • 커뮤니티의 피드백으로 지속적 개선
+    </text>
+    <text x="700" y="755" font-family="'Noto Sans KR', sans-serif" font-size="12" text-anchor="middle" fill="#718096">
+      "이제 연구자는 콘텐츠 창작에만 집중하고, 기술은 커뮤니티와 함께 발전시킵니다"
+    </text>
+  </g>
+  
+  <!-- Community Formation Through Three Pathways -->
+  <g id="community-formation">
+    <!-- Three convergence paths -->
+    <g id="convergence-paths">
+      <!-- WHO path (Website) -->
+      <path d="M 1300 240 Q 1400 320 1500 400" stroke="#48BB78" stroke-width="4" fill="none" opacity="0.9" marker-end="url(#arrowhead)"/>
+      <text x="1370" y="290" font-family="'Noto Sans KR', sans-serif" font-size="18" font-weight="bold" fill="#38A169">
+        연구자 연결
+      </text>
+      
+      <!-- WHAT path (Blog) -->
+      <path d="M 1300 390 Q 1390 395 1500 400" stroke="#ED8936" stroke-width="5" fill="none" opacity="0.9" marker-end="url(#arrowhead)"/>
+      <text x="1370" y="385" font-family="'Noto Sans KR', sans-serif" font-size="18" font-weight="bold" fill="#DD6B20">
+        연구 공유
+      </text>
+      
+      <!-- WHY path (Book) -->
+      <path d="M 1300 560 Q 1390 480 1500 400" stroke="#9F7AEA" stroke-width="4" fill="none" opacity="0.9" marker-end="url(#arrowhead)"/>
+      <text x="1400" y="500" font-family="'Noto Sans KR', sans-serif" font-size="18" font-weight="bold" fill="#805AD5">
+        지식 체계화
+      </text>
+    </g>
+    
+    <!-- Convergence point: Connected Community -->
+    <g transform="translate(600, -250)">
+      <circle cx="900" cy="650" r="50" fill="#4299E1" opacity="0.9" filter="url(#glow)"/>
+      <text x="900" y="645" font-family="'Noto Sans KR', sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="white">
+        연결된
+      </text>
+      <text x="900" y="665" font-family="'Noto Sans KR', sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="white">
+        커뮤니티
+      </text>
+      
+    </g>
+    
+    <!-- Ecosystem effects -->
+    <text x="1500" y="340" font-family="'Noto Sans KR', sans-serif" font-size="24" font-weight="bold" text-anchor="middle" fill="#4299E1">
+      집단지성 형성
+    </text>
+    
+    <!-- Simplified feedback indicator -->
+    <text x="1510" y="475" font-family="'Noto Sans KR', sans-serif" font-size="24" text-anchor="middle" fill="#4299E1">
+      ↻ 지속적 개선
+    </text>
+
+    <!-- Left side: Isolated researcher -->
+    <circle cx="100" cy="650" r="50" fill="#FEB2B2" opacity="0.8"/>
+    <text x="100" y="650" font-family="'Noto Sans KR', sans-serif" font-size="24" font-weight="bold" text-anchor="middle" fill="white">
+      고립된
+    </text>
+    <text x="100" y="680" font-family="'Noto Sans KR', sans-serif" font-size="20" font-weight="bold" text-anchor="middle" fill="white">
+      연구자
+    </text>
+    
+    <!-- Transformation arrow - bottom curved path -->
+    <path d="M 150 650 Q 500 650 900 650 Q 1750 650 1560 400" fill="none" stroke="#4682B4" stroke-width="3" stroke-dasharray="4,2" marker-end="url(#arrowhead)" opacity="0.7"/>
+    
+    <!-- Journey stages -->
+    <text x="300" y="670" font-family="'Noto Sans KR', sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#4682B4">
+      Quarto 발견
+    </text>
+    <text x="700" y="640" font-family="'Noto Sans KR', sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#4682B4">
+      생태계 적응
+    </text>
+    <text x="1100" y="670" font-family="'Noto Sans KR', sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#4682B4">
+      커뮤니티 합류
+    </text>
+    
+    <!-- Overall journey label -->
+    <text x="1450" y="650" font-family="'Noto Sans KR', sans-serif" font-size="28" text-anchor="middle" fill="#718096">
+      연구자 변화 여정
+    </text>
+  </g>
+
+</svg>

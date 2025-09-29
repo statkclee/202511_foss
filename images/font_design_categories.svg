@@ -1,0 +1,150 @@
+<svg width="1200" height="500" viewBox="30 30 1200 500" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- 그라데이션 정의 -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#fefefe;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#f8fafc;stop-opacity:1"/>
+    </linearGradient>
+    
+    <linearGradient id="headerGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e293b;stop-opacity:0.1"/>
+      <stop offset="100%" style="stop-color:#334155;stop-opacity:0.05"/>
+    </linearGradient>
+
+    <linearGradient id="serifGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#fef7ed;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#fed7aa;stop-opacity:1"/>
+    </linearGradient>
+
+    <linearGradient id="sansGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ecfdf5;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#d1fae5;stop-opacity:1"/>
+    </linearGradient>
+
+    <linearGradient id="monoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#e0e7ff;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#c7d2fe;stop-opacity:1"/>
+    </linearGradient>
+
+    <linearGradient id="displayGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#fdf2f8;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#fce7f3;stop-opacity:1"/>
+    </linearGradient>
+
+    <!-- 그림자 필터 -->
+    <filter id="dropshadow">
+      <feDropShadow dx="2" dy="2" stdDeviation="3" flood-color="#000000" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+  
+  <style>
+    .main-title { font-family: 'Noto Sans KR', sans-serif; font-size: 20px; font-weight: bold; fill: #1e293b; text-anchor: middle; }
+    .subtitle { font-family: 'Noto Sans KR', sans-serif; font-size: 16px; fill: #64748b; text-anchor: middle; }
+    .box-title { font-family: 'Noto Sans KR', sans-serif; font-size: 20px; font-weight: bold; fill: #1e293b; text-anchor: middle; }
+    .box-subtitle { font-family: 'Noto Sans KR', sans-serif; font-size: 14px; fill: #6b7280; text-anchor: middle; font-style: italic; }
+    .feature-text { font-family: 'Noto Sans KR', sans-serif; font-size: 14px; fill: #374151; text-anchor: start; }
+    .sample-serif { font-family: 'Times New Roman', serif; font-size: 16px; font-weight: normal; fill: #1e293b; text-anchor: middle; }
+    .sample-sans { font-family: 'Arial', sans-serif; font-size: 16px; font-weight: normal; fill: #1e293b; text-anchor: middle; }
+    .sample-mono { font-family: 'Courier New', monospace; font-size: 16px; font-weight: normal; fill: #1e293b; text-anchor: middle; }
+    .sample-display { font-family: 'Times New Roman', serif; font-size: 18px; font-weight: bold; fill: #1e293b; text-anchor: middle; text-decoration: underline; }
+    .usage-text { font-family: 'Noto Sans KR', sans-serif; font-size: 13px; font-weight: bold; fill: #059669; text-anchor: middle; }
+  </style>
+
+  <!-- 배경 -->
+  <rect width="1200" height="600" fill="url(#bgGrad)"/>
+  
+  <!-- 상단 제목 -->
+  <rect x="50" y="50" width="1140" height="50" rx="15" fill="url(#headerGrad)" stroke="#1e293b" stroke-width="2" filter="url(#dropshadow)"/>
+  <text x="600" y="85" class="main-title">읽기 목적과 시각적 효과에 따른 글꼴 분류</text>
+
+  <!-- Serif 글꼴 -->
+  <rect x="50" y="120" width="270" height="220" rx="12" fill="url(#serifGrad)" stroke="#ea580c" stroke-width="2" filter="url(#dropshadow)"/>
+  <text x="185" y="145" class="box-title">Serif (세리프)</text>
+  <text x="185" y="165" class="box-subtitle">획 끝에 삐침이 있는 글꼴</text>
+  
+  <text x="185" y="190" class="sample-serif">Times New Roman</text>
+  <text x="185" y="210" class="sample-serif">Noto Serif KR</text>
+  <text x="185" y="230" class="sample-serif">Georgia</text>
+  
+  <text x="70" y="255" class="feature-text" font-size="14" font-weight="bold">📚 장점:</text>
+  <text x="70" y="275" class="feature-text">• 긴 글 읽기에 적합</text>
+  <text x="70" y="290" class="feature-text">• 눈의 흐름 유도</text>
+  <text x="70" y="305" class="feature-text">• 전통적이고 권위적 느낌</text>
+  
+  <rect x="70" y="315" width="200" height="20" rx="10" fill="#ffffff" stroke="#ea580c" stroke-width="1"/>
+  <text x="170" y="328" class="usage-text">책, 신문, 학술 논문</text>
+
+  <!-- Sans-serif 글꼴 -->
+  <rect x="340" y="120" width="270" height="220" rx="12" fill="url(#sansGrad)" stroke="#059669" stroke-width="2" filter="url(#dropshadow)"/>
+  <text x="475" y="145" class="box-title">Sans-serif (산세리프)</text>
+  <text x="475" y="165" class="box-subtitle">삐침이 없는 깔끔한 글꼴</text>
+  
+  <text x="475" y="190" class="sample-sans">Arial</text>
+  <text x="475" y="210" class="sample-sans">Noto Sans KR</text>
+  <text x="475" y="230" class="sample-sans">Helvetica</text>
+  
+  <text x="360" y="255" class="feature-text" font-size="14" font-weight="bold">💻 장점:</text>
+  <text x="360" y="275" class="feature-text">• 디지털 화면에 최적화</text>
+  <text x="360" y="290" class="feature-text">• 현대적이고 깔끔함</text>
+  <text x="360" y="305" class="feature-text">• 작은 크기에서도 가독성 우수</text>
+  
+  <rect x="360" y="315" width="200" height="20" rx="10" fill="#ffffff" stroke="#059669" stroke-width="1"/>
+  <text x="460" y="328" class="usage-text">웹사이트, UI, 프레젠테이션</text>
+
+  <!-- Monospace 글꼴 -->
+  <rect x="630" y="120" width="270" height="220" rx="12" fill="url(#monoGrad)" stroke="#3730a3" stroke-width="2" filter="url(#dropshadow)"/>
+  <text x="765" y="145" class="box-title">Monospace (고정폭)</text>
+  <text x="765" y="165" class="box-subtitle">모든 문자가 동일한 폭</text>
+  
+  <text x="765" y="190" class="sample-mono">Courier New</text>
+  <text x="765" y="210" class="sample-mono">D2 Coding</text>
+  <text x="765" y="230" class="sample-mono">Consolas</text>
+  
+  <text x="650" y="255" class="feature-text" font-size="14" font-weight="bold">⌨️ 장점:</text>
+  <text x="650" y="275" class="feature-text">• 코드 정렬 일관성</text>
+  <text x="650" y="290" class="feature-text">• 문자 구분 명확</text>
+  <text x="650" y="305" class="feature-text">• 표, 데이터 표시 최적</text>
+  
+  <rect x="650" y="315" width="200" height="20" rx="10" fill="#ffffff" stroke="#3730a3" stroke-width="1"/>
+  <text x="750" y="328" class="usage-text">코딩, 터미널, 로그파일</text>
+
+  <!-- Display/Script 글꼴 -->
+  <rect x="920" y="120" width="270" height="220" rx="12" fill="url(#displayGrad)" stroke="#be185d" stroke-width="2" filter="url(#dropshadow)"/>
+  <text x="1055" y="145" class="box-title">Display/Script</text>
+  <text x="1055" y="165" class="box-subtitle">장식적이고 특수한 글꼴</text>
+  
+  <text x="1055" y="190" class="sample-display">Decorative</text>
+  <text x="1055" y="210" class="sample-display" style="font-style: italic;">Script Style</text>
+  <text x="1055" y="230" class="sample-display" style="font-variant: small-caps;">IMPACT</text>
+  
+  <text x="940" y="255" class="feature-text" font-size="14" font-weight="bold">🎨 장점:</text>
+  <text x="940" y="275" class="feature-text">• 강한 시각적 임팩트</text>
+  <text x="940" y="290" class="feature-text">• 브랜드 개성 표현</text>
+  <text x="940" y="305" class="feature-text">• 감정적 메시지 전달</text>
+  
+  <rect x="940" y="315" width="200" height="20" rx="10" fill="#ffffff" stroke="#be185d" stroke-width="1"/>
+  <text x="1040" y="328" class="usage-text">제목, 로고, 포스터</text>
+
+  <!-- 하단 비교 및 선택 가이드 -->
+  <g transform="translate(130,-10)">
+    <rect x="50" y="380" width="900" height="140" rx="12" fill="#ffffff" stroke="#d1d5db" stroke-width="2" filter="url(#dropshadow)"/>
+    
+    <text x="500" y="405" class="box-title">글꼴 선택 가이드</text>
+    
+    <!-- 용도별 추천 -->
+    <text x="90" y="425" class="feature-text" style="font-weight: bold; font-size: 16px;">📖 용도별 추천:</text>
+
+    <text x="90" y="450" class="feature-text">• <tspan style="font-weight: bold;">장문 읽기</tspan>: Serif → 눈의 피로 감소, 흐름 유도</text>
+    <text x="90" y="470" class="feature-text">• <tspan style="font-weight: bold;">화면 표시</tspan>: Sans-serif → 픽셀에서 깔끔함, 작은 크기 가독성</text>
+    <text x="90" y="490" class="feature-text">• <tspan style="font-weight: bold;">코드/데이터</tspan>: Monospace → 정렬 일관성, 문자 혼동 방지 (0 vs O, 1 vs l vs I)</text>
+    <text x="90" y="510" class="feature-text">• <tspan style="font-weight: bold;">제목/강조</tspan>: Display/Script → 시각적 임팩트, 브랜드 차별화</text>
+    
+    <!-- 과학기술 문서 특별 고려사항 -->
+    <g transform="translate(450,-80)">
+      <text x="120" y="510" class="feature-text" style="font-weight: bold; font-size: 16px;">🔬 과학기술 문서 특별 고려사항:</text>
+      <text x="120" y="530" class="feature-text">• <tspan style="font-weight: bold;">본문</tspan>: Serif (논문) 또는 Sans-serif (디지털)</text>
+      <text x="120" y="570" class="feature-text">• <tspan style="font-weight: bold;">코드블록</tspan>: 반드시 Monospace</text>
+      <text x="120" y="550" class="feature-text">• <tspan style="font-weight: bold;">수식</tspan>: LaTeX 전용 수학 글꼴 (Computer Modern, STIX)</text>
+    </g>
+  </g>
+</svg>

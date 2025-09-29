@@ -1,0 +1,214 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2400 1200" width="2400" height="1200">
+  <defs>
+    <!-- Background & Palette -->
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b1020"/>
+      <stop offset="100%" stop-color="#101b3a"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000" flood-opacity="0.55"/>
+    </filter>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#9DD6FF"/>
+    </marker>
+    <style>
+      .title { font: 800 42px/1.2 'Inter','Noto Sans KR',system-ui,sans-serif; fill:#E5EAF3 }
+      .subtitle { font: 600 20px/1.4 'Inter','Noto Sans KR',system-ui,sans-serif; fill:#9DD6FF }
+      .group { font: 700 22px/1.2 'Inter','Noto Sans KR',system-ui,sans-serif; fill:#A5B4FC }
+      .tool { font: 800 28px/1.2 'Inter','Noto Sans KR',system-ui,sans-serif; fill:#F8FAFC }
+      .desc { font: 18px/1.5 'Inter','Noto Sans KR',system-ui,sans-serif; fill:#C7D2FE }
+      .chip-text { font: 800 19px/1.1 'Inter','Noto Sans KR',system-ui,sans-serif; fill:#0B1220 }
+      .chip-sub { font: 600 15px/1.1 'Inter','Noto Sans KR',system-ui,sans-serif; fill:#0B1220 }
+      .card { rx:16; filter:url(#shadow) }
+      .pill { rx:16; filter:url(#shadow) }
+      .ico { font: 900 22px/1 'Inter','Noto Sans KR',system-ui; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="2400" height="1200" fill="url(#bg)"/>
+
+  <!-- Header -->
+  <text x="40" y="75" class="title">Writing, Editing, and Development Workflow with AI Integration</text>
+
+  <!--
+    Grid: 4 columns × 3 rows (unit width 580)
+    Col X: 40, 620, 1200, 1780
+    Row Y: 180, 490, 800
+    Card: 520×160 at y=0; Pill: 520×88 at y=172; Vertical arrow from (260,160) → (260,172)
+  -->
+
+  <!-- ===== Row 1 ===== -->
+  <!-- 1. Word + Copilot -->
+  <g transform="translate(40,180)">
+    <text x="0" y="-30" class="group">Document Writing · Notes</text>
+    <rect x="0" y="0" width="520" height="160" class="card" fill="#1E2A4B"/>
+    <text x="25" y="55" class="tool">Microsoft Word + Copilot</text>
+    <text x="25" y="90" class="desc">Reports · Proposals · Style · Proofreading</text>
+    <text x="25" y="125" class="desc">References · Tables/Charts</text>
+    <line x1="260" y1="160" x2="260" y2="172" stroke="#93C5FD" stroke-width="3" marker-end="url(#arrow)"/>
+    <rect x="0" y="172" width="520" height="88" class="pill" fill="#93C5FD"/>
+    <text x="25" y="225" class="ico">✍️</text>
+    <text x="60" y="215" class="chip-text">AI Writing · Summarization · Translation · Tone Matching</text>
+    <text x="60" y="245" class="chip-sub">Draft Instructions · Auto Correction · Highlight Extraction</text>
+  </g>
+
+  <!-- 2. Notion + Q&A AI -->
+  <g transform="translate(620,180)">
+    <text x="0" y="-30" class="group">Documents/Wiki · Knowledge Base</text>
+    <rect x="0" y="0" width="520" height="160" class="card" fill="#21314F"/>
+    <text x="25" y="55" class="tool">Notion + Q&amp;A AI</text>
+    <text x="25" y="90" class="desc">Document/DB Integration · Page Search</text>
+    <text x="25" y="125" class="desc">Templates · Collaboration</text>
+    <line x1="260" y1="160" x2="260" y2="172" stroke="#7DD3FC" stroke-width="3" marker-end="url(#arrow)"/>
+    <rect x="0" y="172" width="520" height="88" class="pill" fill="#7DD3FC"/>
+    <text x="25" y="225" class="ico">🔎</text>
+    <text x="60" y="215" class="chip-text">AI Q&amp;A · Contextual Search</text>
+    <text x="60" y="245" class="chip-sub">Summary · Key Points · Link/Tag Recommendations</text>
+  </g>
+
+  <!-- 3. Photoshop + GenFill -->
+  <g transform="translate(1200,180)">
+    <text x="0" y="-30" class="group">Image · Graphics</text>
+    <rect x="0" y="0" width="520" height="160" class="card" fill="#3A2753"/>
+    <text x="25" y="55" class="tool">Adobe Photoshop + Generative Fill</text>
+    <text x="25" y="90" class="desc">Layers · Masks · Compositing · Brushes</text>
+    <text x="25" y="125" class="desc">Color Correction · RAW</text>
+    <line x1="260" y1="160" x2="260" y2="172" stroke="#C4B5FD" stroke-width="3" marker-end="url(#arrow)"/>
+    <rect x="0" y="172" width="520" height="88" class="pill" fill="#C4B5FD"/>
+    <text x="25" y="225" class="ico">🖌️</text>
+    <text x="60" y="215" class="chip-text">AI Generation/Eraser · Background/Object Extension</text>
+    <text x="60" y="245" class="chip-sub">Prompt Synthesis · Style Transfer · Upscaling</text>
+  </g>
+
+  <!-- 4. Premiere + Sensei -->
+  <g transform="translate(1780,180)">
+    <text x="0" y="-30" class="group">Video Editing</text>
+    <rect x="0" y="0" width="520" height="160" class="card" fill="#2B2331"/>
+    <text x="25" y="55" class="tool">Adobe Premiere Pro + Sensei</text>
+    <text x="25" y="90" class="desc">Cut Editing · Timeline · Color</text>
+    <text x="25" y="125" class="desc">Subtitles · Effects</text>
+    <line x1="260" y1="160" x2="260" y2="172" stroke="#FCA5A5" stroke-width="3" marker-end="url(#arrow)"/>
+    <rect x="0" y="172" width="520" height="88" class="pill" fill="#FCA5A5"/>
+    <text x="25" y="225" class="ico">🎬</text>
+    <text x="60" y="215" class="chip-text">AI Auto Cut · Speech→Subtitles · Summary</text>
+    <text x="60" y="245" class="chip-sub">Scene Detection · Audio Cleanup · Reshooting Guide</text>
+  </g>
+
+  <!-- ===== Row 2 ===== -->
+  <!-- 5. Audition / Logic Pro -->
+  <g transform="translate(40,515)">
+    <text x="0" y="-30" class="group">Audio · Sound</text>
+    <rect x="0" y="0" width="520" height="160" class="card" fill="#1F3A2A"/>
+    <text x="25" y="55" class="tool">Adobe Audition / Logic Pro</text>
+    <text x="25" y="90" class="desc">Waveform Editing · Mixing · Effects</text>
+    <text x="25" y="125" class="desc">Noise Removal · Restoration</text>
+    <line x1="260" y1="160" x2="260" y2="172" stroke="#86EFAC" stroke-width="3" marker-end="url(#arrow)"/>
+    <rect x="0" y="172" width="520" height="88" class="pill" fill="#86EFAC"/>
+    <text x="25" y="225" class="ico">🎙️</text>
+    <text x="60" y="215" class="chip-text">AI Audio Separation · Voice Enhancement · TTS/Cleanup</text>
+    <text x="60" y="245" class="chip-sub">Speaker Identification · Breathing Removal · Room Tone</text>
+  </g>
+
+  <!-- 6. VS Code + Copilot -->
+  <g transform="translate(620,515)">
+    <text x="0" y="-30" class="group">Coding · IDE</text>
+    <rect x="0" y="0" width="520" height="160" class="card" fill="#16243B"/>
+    <text x="25" y="55" class="tool">VS Code + GitHub Copilot</text>
+    <text x="25" y="90" class="desc">Debugging · Extensions · Git · Terminal</text>
+    <text x="25" y="125" class="desc">Multi-language</text>
+    <line x1="260" y1="160" x2="260" y2="172" stroke="#93C5FD" stroke-width="3" marker-end="url(#arrow)"/>
+    <rect x="0" y="172" width="520" height="88" class="pill" fill="#93C5FD"/>
+    <text x="25" y="225" class="ico">🧩</text>
+    <text x="60" y="215" class="chip-text">AI Autocomplete · Refactoring · Testing</text>
+    <text x="60" y="245" class="chip-sub">Comments→Code · Code→Explanation · Snippets</text>
+  </g>
+
+  <!-- 7. Cursor / JetBrains AI -->
+  <g transform="translate(1200,515)">
+    <text x="0" y="-30" class="group">AI IDE · Alternatives</text>
+    <rect x="0" y="0" width="520" height="160" class="card" fill="#1A2A44"/>
+    <text x="25" y="55" class="tool">Cursor / JetBrains + AI Assistant</text>
+    <text x="25" y="90" class="desc">Inline Chat · Diff · Context Awareness</text>
+    <text x="25" y="125" class="desc">Review · Migration</text>
+    <line x1="260" y1="160" x2="260" y2="172" stroke="#7EA6FF" stroke-width="3" marker-end="url(#arrow)"/>
+    <rect x="0" y="172" width="520" height="88" class="pill" fill="#7EA6FF"/>
+    <text x="25" y="225" class="ico">🤖</text>
+    <text x="60" y="215" class="chip-text">Agent Execution · File Tree Flow</text>
+    <text x="60" y="245" class="chip-sub">Refactoring Plans · Multi-file Editing · Testing</text>
+  </g>
+
+  <!-- 8. Terminal / CI-CD -->
+  <g transform="translate(1780,515)">
+    <text x="0" y="-30" class="group">Terminal · Build · Deployment</text>
+    <rect x="0" y="0" width="520" height="160" class="card" fill="#0B1220"/>
+    <text x="25" y="55" class="tool">Shell / Git / CI·CD</text>
+    <text x="25" y="90" class="desc">Scripts · Logs · Packaging</text>
+    <text x="25" y="125" class="desc">Monitoring</text>
+    <line x1="260" y1="160" x2="260" y2="172" stroke="#FDE68A" stroke-width="3" marker-end="url(#arrow)"/>
+    <rect x="0" y="172" width="520" height="88" class="pill" fill="#FDE68A"/>
+    <text x="25" y="225" class="ico">🧭</text>
+    <text x="60" y="215" class="chip-text">AI Command Assistance · Build Failure Analysis</text>
+    <text x="60" y="245" class="chip-sub">Log Summary · Script Generation · Security Checks</text>
+  </g>
+
+  <!-- ===== Row 3 ===== -->
+  <!-- 9. Unreal / Blender -->
+  <g transform="translate(40,850)">
+    <text x="0" y="-30" class="group">3D · Games · Immersive</text>
+    <rect x="0" y="0" width="520" height="160" class="card" fill="#3A2417"/>
+    <text x="25" y="55" class="tool">Unreal Engine / Blender</text>
+    <text x="25" y="90" class="desc">Materials · Rigging · Animation</text>
+    <text x="25" y="125" class="desc">Simulation · Lighting</text>
+    <line x1="260" y1="160" x2="260" y2="172" stroke="#FDBA74" stroke-width="3" marker-end="url(#arrow)"/>
+    <rect x="0" y="172" width="520" height="88" class="pill" fill="#FDBA74"/>
+    <text x="25" y="225" class="ico">🎮</text>
+    <text x="60" y="215" class="chip-text">AI Asset Generation · Retargeting · Voice NPCs</text>
+    <text x="60" y="245" class="chip-sub">Prompt Mesh/Texture · Path Planning · Dialogue</text>
+  </g>
+
+  <!-- 10. Browser / Research -->
+  <g transform="translate(620,850)">
+    <text x="0" y="-30" class="group">Browser · Research</text>
+    <rect x="0" y="0" width="520" height="160" class="card" fill="#222B31"/>
+    <text x="25" y="55" class="tool">Perplexity / Arc / Chrome</text>
+    <text x="25" y="90" class="desc">Tabs · Bookmarks · Reading Mode</text>
+    <text x="25" y="125" class="desc">Highlights</text>
+    <line x1="260" y1="160" x2="260" y2="172" stroke="#A7F3D0" stroke-width="3" marker-end="url(#arrow)"/>
+    <rect x="0" y="172" width="520" height="88" class="pill" fill="#A7F3D0"/>
+    <text x="25" y="225" class="ico">📚</text>
+    <text x="60" y="215" class="chip-text">AI Search Summary · Source Links · Context Tracking</text>
+    <text x="60" y="245" class="chip-sub">Deep Research · Citation Generation · Comparison Tables</text>
+  </g>
+
+  <!-- 11. Quarto / Jupyter / RStudio -->
+  <g transform="translate(1200,850)">
+    <text x="0" y="-30" class="group">Data · Scientific Documents</text>
+    <rect x="0" y="0" width="520" height="160" class="card" fill="#243143"/>
+    <text x="25" y="55" class="tool">Quarto / Jupyter / RStudio</text>
+    <text x="25" y="90" class="desc">Notebooks · Reports · Dashboards</text>
+    <text x="25" y="125" class="desc">Reproducibility · Deployment</text>
+    <line x1="260" y1="160" x2="260" y2="172" stroke="#9DE1FF" stroke-width="3" marker-end="url(#arrow)"/>
+    <rect x="0" y="172" width="520" height="88" class="pill" fill="#9DE1FF"/>
+    <text x="25" y="225" class="ico">📈</text>
+    <text x="60" y="215" class="chip-text">AI Code/Graph Suggestions · Explanation Generation</text>
+    <text x="60" y="245" class="chip-sub">EDA Guide · Formula/Caption Automation</text>
+  </g>
+
+  <!-- 12. Excel / Google Sheets -->
+  <g transform="translate(1780,850)">
+    <text x="0" y="-30" class="group">Spreadsheets · BI</text>
+    <rect x="0" y="0" width="520" height="160" class="card" fill="#1E3146"/>
+    <text x="25" y="45" class="tool">Excel / Google Sheets + Copilot·Gemini</text>
+    <text x="25" y="90" class="desc">Pivot · Conditional Formatting · Functions</text>
+    <text x="25" y="125" class="desc">Data Cleanup · Charts</text>
+    <line x1="260" y1="160" x2="260" y2="172" stroke="#F9A8D4" stroke-width="3" marker-end="url(#arrow)"/>
+    <rect x="0" y="172" width="520" height="88" class="pill" fill="#F9A8D4"/>
+    <text x="25" y="225" class="ico">📊</text>
+    <text x="60" y="215" class="chip-text">AI Formula Suggestions · Pivot/Chart Automation</text>
+    <text x="60" y="245" class="chip-sub">Data Cleansing · Anomaly Detection · Explanation/Insights</text>
+  </g>
+
+  <!-- Footer Note -->
+  <text x="40" y="1150" class="desc">※ 'AI Module Chips' operate through various forms attached to tools: built-in assistants, plugins, automation scripts, cloud/on-device models, etc.</text>
+</svg>

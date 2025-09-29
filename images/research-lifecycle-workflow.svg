@@ -1,0 +1,151 @@
+<svg viewBox="20 100 900 450" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .title { font: bold 22px 'AppleGothic', sans-serif; fill: #2c3e50; }
+      .subtitle { font: 14px 'AppleGothic', sans-serif; fill: #7f8c8d; }
+      .source-title { font: bold 18px 'AppleGothic', sans-serif; fill: #2c3e50; text-anchor: middle; }
+      .source-subtitle { font: 12px 'AppleGothic', sans-serif; fill: #34495e; text-anchor: middle; }
+      .stage-title { font: bold 14px 'AppleGothic', sans-serif; fill: white; text-anchor: middle; }
+      .stage-subtitle { font: 11px 'AppleGothic', sans-serif; fill: white; text-anchor: middle; }
+      .time-label { font: bold 12px 'AppleGothic', sans-serif; fill: #34495e; text-anchor: middle; }
+      .insight-text { font: bold 14px 'AppleGothic', sans-serif; fill: #2c3e50; text-anchor: middle; }
+      .journal-label { font: 10px 'AppleGothic', sans-serif; fill: #7f8c8d; text-anchor: middle; }
+      
+      .source-box { fill: #ecf0f1; stroke: #95a5a6; stroke-width: 3; }
+      .html-stage { fill: #3498db; stroke: #2980b9; stroke-width: 2; }
+      .word-stage { fill: #f39c12; stroke: #d68910; stroke-width: 2; }
+      .pdf-stage { fill: #2ecc71; stroke: #27ae60; stroke-width: 2; }
+      
+      .main-arrow { stroke: #34495e; stroke-width: 3; fill: none; marker-end: url(#arrowhead-main); }
+      .branch-arrow { stroke: #7f8c8d; stroke-width: 2; fill: none; marker-end: url(#arrowhead-branch); }
+      .time-arrow { stroke: #95a5a6; stroke-width: 2; fill: none; marker-end: url(#arrowhead-time); }
+      .progress-arrow { stroke: #34495e; stroke-width: 3; fill: none; marker-end: url(#arrowhead-progress); }
+      .ai-connection { stroke: #9b59b6; stroke-width: 2; fill: none; stroke-dasharray: 4,4; marker-end: url(#arrowhead-ai); }
+      
+      .ai-box { fill: #9b59b6; stroke: #8e44ad; stroke-width: 2; }
+      .ai-title { font: bold 14px 'AppleGothic', sans-serif; fill: white; text-anchor: middle; }
+      .ai-subtitle { font: 10px 'AppleGothic', sans-serif; fill: white; text-anchor: middle; }
+    </style>
+    
+    <defs>
+      <linearGradient id="timeGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+        <stop offset="0%" style="stop-color:#e8f4fd;stop-opacity:1" />
+        <stop offset="50%" style="stop-color:#fef9e7;stop-opacity:1" />
+        <stop offset="100%" style="stop-color:#eafaf1;stop-opacity:1" />
+      </linearGradient>
+    </defs>
+    
+    <marker id="arrowhead-main" markerWidth="12" markerHeight="8" refX="10" refY="4" orient="auto">
+      <polygon points="0 0, 12 4, 0 8" fill="#34495e" />
+    </marker>
+    <marker id="arrowhead-branch" markerWidth="10" markerHeight="6" refX="8" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#7f8c8d" />
+    </marker>
+    <marker id="arrowhead-time" markerWidth="8" markerHeight="5" refX="6" refY="2.5" orient="auto">
+      <polygon points="0 0, 8 2.5, 0 5" fill="#95a5a6" />
+    </marker>
+    <marker id="arrowhead-progress" markerWidth="10" markerHeight="6" refX="8" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#34495e" />
+    </marker>
+    <marker id="arrowhead-ai" markerWidth="8" markerHeight="5" refX="6" refY="2.5" orient="auto">
+      <polygon points="0 0, 8 2.5, 0 5" fill="#9b59b6" />
+    </marker>
+  </defs>
+
+  <!-- Background gradient for time flow -->
+  <rect x="0" y="0" width="1000" height="650" fill="url(#timeGradient)" opacity="0.3"/>
+
+  <!-- Title -->
+  <text x="250" y="160" class="title" text-anchor="middle">Write Once, Publish Everywhere</text>
+
+  <!-- Left: Quarto Source -->
+  <rect x="80" y="200" width="180" height="120" rx="15" class="source-box"/>
+  <text x="170" y="230" class="source-title">하나의 원본</text>
+  <text x="170" y="250" class="source-subtitle">Quarto 문서</text>
+  <text x="170" y="270" class="source-subtitle">(.qmd)</text>
+  <text x="170" y="295" class="source-subtitle">데이터 + 코드 + 텍스트</text>
+
+  <!-- AI Assistant Box -->
+  <rect x="80" y="340" width="180" height="60" rx="10" class="ai-box"/>
+  <text x="170" y="365" class="ai-title">🤖 AI 어시스턴트</text>
+  <text x="170" y="385" class="ai-subtitle">전 과정 지원</text>
+
+  <!-- Main flow arrow -->
+  <line x1="280" y1="260" x2="400" y2="260" class="main-arrow"/>
+
+  <!-- Branch point -->
+  <circle cx="420" cy="260" r="8" fill="#34495e"/>
+
+  <!-- Branch arrows to outputs -->
+  <line x1="428" y1="252" x2="550" y2="160" class="branch-arrow"/>
+  <line x1="428" y1="260" x2="550" y2="260" class="branch-arrow"/>
+  <line x1="428" y1="268" x2="550" y2="360" class="branch-arrow"/>
+
+
+  <!-- Right: Three Outputs -->
+  
+  <!-- HTML Output (Top) -->
+  <rect x="580" y="120" width="300" height="80" rx="10" class="html-stage"/>
+  <text x="620" y="145" class="stage-title">연구 초기</text>
+  <text x="620" y="165" class="stage-subtitle">HTML</text>
+  <text x="620" y="185" class="stage-subtitle">아이디어 공유</text>
+  
+  <text x="780" y="135" class="stage-subtitle">• 동료 연구자</text>
+  <text x="780" y="150" class="stage-subtitle">• 인터랙티브</text>
+  <text x="780" y="165" class="stage-subtitle">• 빠른 피드백</text>
+  <text x="780" y="180" class="stage-subtitle">🤖 AI: 문헌리뷰, 아이디어</text>
+
+  <!-- Word Output (Middle) -->
+  <rect x="580" y="220" width="300" height="80" rx="10" class="word-stage"/>
+  <text x="620" y="245" class="stage-title">연구 중기</text>
+  <text x="620" y="265" class="stage-subtitle">Word</text>
+  <text x="620" y="285" class="stage-subtitle">협업 리뷰</text>
+  
+  <text x="780" y="235" class="stage-subtitle">• 지도교수</text>
+  <text x="780" y="250" class="stage-subtitle">• 공동연구자</text>
+  <text x="780" y="265" class="stage-subtitle">• 주석 기능</text>
+  <text x="780" y="280" class="stage-subtitle">🤖 AI: 텍스트 개선, 논리 검토</text>
+
+  <!-- PDF Output (Bottom) -->
+  <rect x="580" y="320" width="300" height="80" rx="10" class="pdf-stage"/>
+  <text x="620" y="345" class="stage-title">연구 후기</text>
+  <text x="620" y="365" class="stage-subtitle">PDF</text>
+  <text x="620" y="385" class="stage-subtitle">학술지 투고</text>
+  
+  <text x="780" y="335" class="stage-subtitle">• Nature, PLOS ONE</text>
+  <text x="780" y="350" class="stage-subtitle">• IEEE, ACM</text>
+  <text x="780" y="365" class="stage-subtitle">• 완성된 형식</text>
+  <text x="780" y="380" class="stage-subtitle">🤖 AI: 형식 검사, 인용 확인</text>
+
+  <!-- AI Connection Lines -->
+  <line x1="260" y1="370" x2="680" y2="160" class="ai-connection"/>
+  <line x1="260" y1="370" x2="680" y2="260" class="ai-connection"/>
+  <line x1="260" y1="370" x2="680" y2="360" class="ai-connection"/>
+
+  <!-- Stage progression arrows -->
+  <line x1="730" y1="200" x2="730" y2="220" class="progress-arrow"/>
+  <line x1="730" y1="300" x2="730" y2="320" class="progress-arrow"/>
+  
+  <!-- Stage flow indicator -->
+  <text x="680" y="455" class="time-label">초기 → 중기 → 후기</text>
+
+  <!-- Time axis -->
+  <g transform="translate(0,-100)">
+  <line x1="100" y1="530" x2="900" y2="530" class="time-arrow"/>
+  <text x="150" y="520" class="time-label">연구 진행</text>
+  
+  <text x="200" y="550" class="time-label">연구 초기</text>
+  <text x="500" y="550" class="time-label">연구 중기</text>
+  <text x="800" y="550" class="time-label">연구 후기</text>
+
+  <!-- Time markers -->
+  <line x1="200" y1="525" x2="200" y2="535" stroke="#95a5a6" stroke-width="2"/>
+  <line x1="500" y1="525" x2="500" y2="535" stroke="#95a5a6" stroke-width="2"/>
+  <line x1="800" y1="525" x2="800" y2="535" stroke="#95a5a6" stroke-width="2"/>
+
+  <!-- Key insight -->
+  <rect x="150" y="580" width="700" height="50" rx="10" fill="none" stroke="#3498db" stroke-width="2"/>
+  <text x="500" y="600" class="insight-text">💡 연구자는 형식이 아닌 내용에 집중</text>
+  <text x="500" y="620" class="journal-label">하나의 원본에서 모든 출판 매체의 요구사항을 자동 처리</text>
+  </g>
+</svg>

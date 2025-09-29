@@ -1,0 +1,147 @@
+<svg width="1000" height="370" viewBox="0 10 1000 370" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Strategy-specific gradients -->
+    <linearGradient id="fileGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#3498db" />
+      <stop offset="100%" stop-color="#2980b9" />
+    </linearGradient>
+    <linearGradient id="memoryGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#e74c3c" />
+      <stop offset="100%" stop-color="#c0392b" />
+    </linearGradient>
+    <linearGradient id="quartoGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#27ae60" />
+      <stop offset="100%" stop-color="#229954" />
+    </linearGradient>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f8f9fa" />
+      <stop offset="25%" stop-color="#e9ecef" />
+      <stop offset="75%" stop-color="#e9ecef" />
+      <stop offset="100%" stop-color="#f8f9fa" />
+    </linearGradient>
+    
+    <!-- Data flow patterns -->
+    <pattern id="dataPattern" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+      <circle cx="5" cy="5" r="2" fill="#bdc3c7" opacity="0.3"/>
+      <circle cx="15" cy="15" r="2" fill="#95a5a6" opacity="0.3"/>
+      <path d="M5,5 L15,15" stroke="#7f8c8d" stroke-width="0.5" opacity="0.3"/>
+    </pattern>
+    
+    <!-- Shadows -->
+    <filter id="strategyShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="3" dy="5" stdDeviation="4" flood-color="#00000025"/>
+    </filter>
+    
+    <!-- Connection lines -->
+    <marker id="connector" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L8,3 z" fill="#7f8c8d"/>
+    </marker>
+    
+    <!-- Styles -->
+    <style>
+      .title { font-family: 'IBM Plex Sans KR', sans-serif; font-size: 20px; font-weight: 700; fill: #2c3e50; }
+      .strategy-title { font-family: 'IBM Plex Sans KR', sans-serif; font-size: 16px; font-weight: 600; fill: white; }
+      .tech-label { font-family: 'IBM Plex Sans KR', sans-serif; font-size: 12px; font-weight: 600; fill: #2c3e50; }
+      .tech-desc { font-family: 'IBM Plex Sans KR', sans-serif; font-size: 9px; fill: #636e72; }
+      .tech-desc-top { font-family: 'IBM Plex Sans KR', sans-serif; font-size: 15px; fill: #636e72; }      
+      .performance-label { font-family: 'IBM Plex Sans KR', sans-serif; font-size: 8px; fill: #8e44ad; font-weight: 600; }
+      .strategy-box { rx: 15; filter: url(#strategyShadow); }
+      .tech-box { rx: 8; fill: white; stroke: #bdc3c7; stroke-width: 2; }
+      .connection { stroke: #7f8c8d; stroke-width: 1.5; fill: none; marker-end: url(#connector); opacity: 0.6; }
+      .data-bg { fill: url(#dataPattern); opacity: 0.1; }
+    </style>
+  </defs>
+
+  <!-- Background with data flow pattern -->
+  <rect width="100%" height="100%" fill="url(#bgGrad)"/>
+  <rect width="100%" height="100%" class="data-bg"/>
+  
+  <!-- File-based Strategy -->
+  <rect x="50" y="70" width="280" height="280" fill="url(#fileGrad)" class="strategy-box"/>
+  <text x="190" y="95" class="strategy-title" text-anchor="middle">📁 파일 기반 접근</text>
+  
+  <!-- Parquet -->
+  <rect x="70" y="120" width="240" height="50" class="tech-box"/>
+  <text x="80" y="135" class="tech-label">Parquet</text>
+  <text x="80" y="150" class="tech-desc">• 컬럼 저장 포맷, 모든 언어 지원</text>
+  <text x="80" y="165" class="tech-desc">• 수 배 압축, 데이터별 편차 있음</text>
+  
+  <!-- CSV/JSON -->
+  <rect x="70" y="185" width="240" height="50" class="tech-box"/>
+  <text x="80" y="200" class="tech-label">CSV/JSON</text>
+  <text x="80" y="215" class="tech-desc">• 단순 구현, 높은 호환성</text>
+  <text x="80" y="230" class="tech-desc">• 타입 정보 손실, 저장 비효율성</text>
+  
+  <!-- HDF5 -->
+  <rect x="70" y="250" width="240" height="50" class="tech-box"/>
+  <text x="80" y="265" class="tech-label">HDF5</text>
+  <text x="80" y="280" class="tech-desc">• 과학 컴퓨팅 표준, 배열 데이터</text>
+  <text x="80" y="295" class="tech-desc">• 메타데이터 지원, 계층 구조</text>
+  
+  <!-- Performance indicator -->
+  <rect x="70" y="315" width="240" height="25" fill="#ecf0f1" rx="5"/>
+  <text x="190" y="330" class="performance-label" text-anchor="middle">성능: 중간 | 안정성: 높음 | 호환성: 최고</text>
+
+  <!-- Memory-based Strategy -->
+  <rect x="360" y="70" width="280" height="280" fill="url(#memoryGrad)" class="strategy-box"/>
+  <text x="500" y="95" class="strategy-title" text-anchor="middle">⚡ 메모리 기반 접근</text>
+  
+  <!-- Apache Arrow -->
+  <rect x="380" y="120" width="240" height="50" class="tech-box"/>
+  <text x="390" y="135" class="tech-label">Apache Arrow</text>
+  <text x="390" y="150" class="tech-desc">• 복사 최소화 연동</text>
+  <text x="390" y="165" class="tech-desc">• R/Python/Julia 직접 연동</text>
+  
+  <!-- Shared Memory -->
+  <rect x="380" y="185" width="240" height="50" class="tech-box"/>
+  <text x="390" y="200" class="tech-label">공유 메모리</text>
+  <text x="390" y="215" class="tech-desc">• POSIX 공유 메모리 (IPC)</text>
+  <text x="390" y="230" class="tech-desc">• 커널 복사 없는 고속 전달</text>
+  
+  <!-- Redis -->
+  <rect x="380" y="250" width="240" height="50" class="tech-box"/>
+  <text x="390" y="265" class="tech-label">Redis</text>
+  <text x="390" y="280" class="tech-desc">• 캐시/메시지브로커/DB</text>
+  <text x="390" y="295" class="tech-desc">• 분산 인메모리 저장소</text>
+  
+  <!-- Performance indicator -->
+  <rect x="380" y="315" width="240" height="25" fill="#fadbd8" rx="5"/>
+  <text x="500" y="330" class="performance-label" text-anchor="middle">성능: 최고 | 안정성: 중간 | 호환성: 중간</text>
+
+  <!-- Quarto Native Strategy -->
+  <rect x="670" y="70" width="280" height="280" fill="url(#quartoGrad)" class="strategy-box"/>
+  <text x="810" y="95" class="strategy-title" text-anchor="middle">🔧 Quarto 네이티브</text>
+  
+  <!-- ojs_define -->
+  <rect x="690" y="120" width="240" height="50" class="tech-box"/>
+  <text x="700" y="135" class="tech-label">ojs_define() 함수</text>
+  <text x="700" y="150" class="tech-desc">• R/Python → Observable JS 전달</text>
+  <text x="700" y="165" class="tech-desc">• 데이터 직렬화 및 전송</text>
+  
+  <!-- Single Engine -->
+  <rect x="690" y="185" width="240" height="50" class="tech-box"/>
+  <text x="700" y="200" class="tech-label">단일 계산 엔진</text>
+  <text x="700" y="215" class="tech-desc">• knitr 또는 Jupyter 엔진</text>
+  <text x="700" y="230" class="tech-desc">• 문서당 하나의 환경</text>
+  
+  <!-- Reticulate Integration -->
+  <rect x="690" y="250" width="240" height="50" class="tech-box"/>
+  <text x="700" y="265" class="tech-label">reticulate (R 환경)</text>
+  <text x="700" y="280" class="tech-desc">• R ↔ Python 객체 교환</text>
+  <text x="700" y="295" class="tech-desc">• transpose()로 데이터 변환</text>
+  
+  <!-- Performance indicator -->
+  <rect x="690" y="315" width="240" height="25" fill="#d5f4e6" rx="5"/>
+  <text x="810" y="330" class="performance-label" text-anchor="middle">성능: 높음 | 안정성: 높음 | 제한: 단일 엔진</text>
+
+  <!-- Connection arrows showing data flow -->
+  <path d="M 330 210 Q 350 190 380 210" class="connection"/>
+  <path d="M 640 210 Q 660 190 690 210" class="connection"/>
+  
+  <!-- Central hub showing integration -->
+  <circle cx="100" cy="45" r="15" fill="#34495e" opacity="0.8"/>
+  <text x="100" y="48" style="font-size: 12px; fill: white; text-anchor: middle;">통합</text>
+  
+  <!-- Bottom integration note -->
+  <text x="310" y="49" class="tech-desc-top" text-anchor="middle">실제 프로젝트에서는 세 가지 전략을 상황에 맞게 조합하여 사용</text>
+</svg>

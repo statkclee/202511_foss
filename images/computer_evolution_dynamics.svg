@@ -1,0 +1,314 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760">
+  <defs>
+    <style>
+      .title-text { font-size: 24px; font-weight: bold; }
+      .subtitle-text { font-size: 14px; }
+      .era-title { font-size: 16px; font-weight: bold; }
+      .force-title { font-size: 18px; font-weight: bold; }
+      .tech-text { font-size: 13px; font-weight: bold; }
+      .market-text { font-size: 13px; font-weight: bold; }
+      .timeline-text { font-size: 13px; font-weight: bold; }
+      .insight-text { font-size: 16px; font-weight: bold; }
+      .small-text { font-size: 10px; }
+    </style>
+    
+    <!-- Gradients for Technology Push (left side) -->
+    <linearGradient id="techGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#6366f1;stop-opacity:0.9" />
+      <stop offset="100%" style="stop-color:#4f46e5;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Gradients for Market Pull (right side) -->
+    <linearGradient id="marketGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#059669;stop-opacity:0.9" />
+      <stop offset="100%" style="stop-color:#047857;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Era-specific gradients -->
+    <radialGradient id="mainframeEra" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#dc2626;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#991b1b;stop-opacity:1" />
+    </radialGradient>
+    
+    <radialGradient id="pcEra" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#7c3aed;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#5b21b6;stop-opacity:1" />
+    </radialGradient>
+    
+    <radialGradient id="internetEra" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#0891b2;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#0e7490;stop-opacity:1" />
+    </radialGradient>
+    
+    <radialGradient id="mobileEra" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#ea580c;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#c2410c;stop-opacity:1" />
+    </radialGradient>
+    
+    <radialGradient id="aiEra" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#16a34a;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#15803d;stop-opacity:1" />
+    </radialGradient>
+    
+    <radialGradient id="physicalAiEra" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#6366f1;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#4338ca;stop-opacity:1" />
+    </radialGradient>
+    
+    <!-- Interaction zone gradient -->
+    <linearGradient id="interactionZone" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#6366f1;stop-opacity:0.3" />
+      <stop offset="50%" style="stop-color:#f59e0b;stop-opacity:0.5" />
+      <stop offset="100%" style="stop-color:#059669;stop-opacity:0.3" />
+    </linearGradient>
+    
+    <!-- Arrow markers -->
+    <marker id="techArrow" markerWidth="12" markerHeight="10" refX="10" refY="5" orient="auto">
+      <polygon points="0 0, 12 5, 0 10" fill="#4f46e5"/>
+    </marker>
+    
+    <marker id="marketArrow" markerWidth="12" markerHeight="10" refX="10" refY="5" orient="auto">
+      <polygon points="0 0, 12 5, 0 10" fill="#047857"/>
+    </marker>
+    
+    <marker id="interactionArrow" markerWidth="10" markerHeight="8" refX="8" refY="4" orient="auto">
+      <polygon points="0 0, 10 4, 0 8" fill="#f59e0b"/>
+    </marker>
+    
+    <!-- Shadow filter -->
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="2" dy="2" stdDeviation="3" flood-opacity="0.2"/>
+    </filter>
+    
+    <!-- Glow filter -->
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge> 
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1200" height="900" fill="#fefefe"/>
+  
+  <!-- Title -->
+  <text x="600" y="35" text-anchor="middle" font-family="Arial, sans-serif" class="title-text" fill="#1e293b">
+    컴퓨터 진화의 핵심 동력
+  </text>
+  <text x="600" y="55" text-anchor="middle" font-family="Arial, sans-serif" class="subtitle-text" fill="#64748b">
+    Computer Evolution: The Core Dynamics of Technology Push and Market Pull
+  </text>
+  
+  <!-- Technology Push Side (Left) -->
+  <g id="technology-push">
+    <rect x="50" y="90" width="200" height="570" fill="url(#techGradient)" rx="15" opacity="0.1"/>
+    <text x="150" y="120" text-anchor="middle" font-family="Arial, sans-serif" class="force-title" fill="#4f46e5">
+      기술적 동력
+    </text>
+    <text x="150" y="140" text-anchor="middle" font-family="Arial, sans-serif" class="subtitle-text" fill="#4f46e5">
+      Technology Push
+    </text>
+    
+    <!-- Technology innovations with timeline -->
+    <g id="tech-innovations" transform="translate(-30,0)">
+      <!-- Transistor -->
+      <circle cx="120" cy="180" r="15" fill="#dc2626" filter="url(#shadow)"/>
+      <text x="120" y="185" text-anchor="middle" font-family="Arial, sans-serif" class="small-text" fill="white">🔬</text>
+      <text x="160" y="185" font-family="Arial, sans-serif" class="tech-text" fill="#4f46e5">트랜지스터</text>
+      <text x="160" y="200" font-family="Arial, sans-serif" class="timeline-text" fill="#6b7280">1950s-1960s</text>
+      
+      <!-- Microprocessor -->
+      <circle cx="120" cy="250" r="15" fill="#7c3aed" filter="url(#shadow)"/>
+      <text x="120" y="255" text-anchor="middle" font-family="Arial, sans-serif" class="small-text" fill="white">💾</text>
+      <text x="160" y="255" font-family="Arial, sans-serif" class="tech-text" fill="#4f46e5">마이크로프로세서</text>
+      <text x="160" y="270" font-family="Arial, sans-serif" class="timeline-text" fill="#6b7280">1970s-1980s</text>
+      
+      <!-- Internet -->
+      <circle cx="120" cy="320" r="15" fill="#0891b2" filter="url(#shadow)"/>
+      <text x="120" y="325" text-anchor="middle" font-family="Arial, sans-serif" class="small-text" fill="white">🌐</text>
+      <text x="160" y="325" font-family="Arial, sans-serif" class="tech-text" fill="#4f46e5">인터넷</text>
+      <text x="160" y="340" font-family="Arial, sans-serif" class="timeline-text" fill="#6b7280">1990s</text>
+      
+      <!-- Mobile Technology -->
+      <circle cx="120" cy="390" r="15" fill="#ea580c" filter="url(#shadow)"/>
+      <text x="120" y="395" text-anchor="middle" font-family="Arial, sans-serif" class="small-text" fill="white">📱</text>
+      <text x="160" y="395" font-family="Arial, sans-serif" class="tech-text" fill="#4f46e5">무선기술</text>
+      <text x="160" y="410" font-family="Arial, sans-serif" class="timeline-text" fill="#6b7280">2000s</text>
+      
+      <!-- AI/ML -->
+      <circle cx="120" cy="460" r="15" fill="#16a34a" filter="url(#shadow)"/>
+      <text x="120" y="465" text-anchor="middle" font-family="Arial, sans-serif" class="small-text" fill="white">🤖</text>
+      <text x="160" y="465" font-family="Arial, sans-serif" class="tech-text" fill="#4f46e5">AI/ML</text>
+      <text x="160" y="480" font-family="Arial, sans-serif" class="timeline-text" fill="#6b7280">2010s-2020s</text>
+      
+      <!-- Physical AI -->
+      <circle cx="120" cy="530" r="15" fill="#6366f1" filter="url(#shadow)"/>
+      <text x="120" y="535" text-anchor="middle" font-family="Arial, sans-serif" class="small-text" fill="white">🦾</text>
+      <text x="160" y="535" font-family="Arial, sans-serif" class="tech-text" fill="#4f46e5">로봇공학 + Edge AI</text>
+      <text x="160" y="550" font-family="Arial, sans-serif" class="timeline-text" fill="#6b7280">2020s-2030s</text>
+    </g>
+  </g>
+  
+  <!-- Market Pull Side (Right) -->
+  <g id="market-pull">
+    <rect x="950" y="90" width="200" height="570" fill="url(#marketGradient)" rx="15" opacity="0.1"/>
+    <text x="1050" y="120" text-anchor="middle" font-family="Arial, sans-serif" class="force-title" fill="#047857">
+      사회적 동력
+    </text>
+    <text x="1050" y="140" text-anchor="middle" font-family="Arial, sans-serif" class="subtitle-text" fill="#047857">
+      Market Pull
+    </text>
+    
+    <!-- Market demands with timeline -->
+    <g id="market-demands"  transform="translate(20,0)">
+      <!-- Scientific Computing -->
+      <circle cx="1080" cy="180" r="15" fill="#dc2626" filter="url(#shadow)"/>
+      <text x="1080" y="185" text-anchor="middle" font-family="Arial, sans-serif" class="small-text" fill="white">🧮</text>
+      <text x="1040" y="185" text-anchor="end" font-family="Arial, sans-serif" class="market-text" fill="#047857">과학계산</text>
+      <text x="1040" y="200" text-anchor="end" font-family="Arial, sans-serif" class="timeline-text" fill="#6b7280">Mainframe Era</text>
+      
+      <!-- Personal Productivity -->
+      <circle cx="1080" cy="250" r="15" fill="#7c3aed" filter="url(#shadow)"/>
+      <text x="1080" y="255" text-anchor="middle" font-family="Arial, sans-serif" class="small-text" fill="white">📊</text>
+      <text x="1040" y="255" text-anchor="end" font-family="Arial, sans-serif" class="market-text" fill="#047857">개인생산성</text>
+      <text x="1040" y="270" text-anchor="end" font-family="Arial, sans-serif" class="timeline-text" fill="#6b7280">PC Era</text>
+      
+      <!-- Information Sharing -->
+      <circle cx="1080" cy="320" r="15" fill="#0891b2" filter="url(#shadow)"/>
+      <text x="1080" y="325" text-anchor="middle" font-family="Arial, sans-serif" class="small-text" fill="white">📡</text>
+      <text x="1040" y="325" text-anchor="end" font-family="Arial, sans-serif" class="market-text" fill="#047857">정보공유</text>
+      <text x="1040" y="340" text-anchor="end" font-family="Arial, sans-serif" class="timeline-text" fill="#6b7280">Internet Era</text>
+      
+      <!-- Mobility -->
+      <circle cx="1080" cy="390" r="15" fill="#ea580c" filter="url(#shadow)"/>
+      <text x="1080" y="395" text-anchor="middle" font-family="Arial, sans-serif" class="small-text" fill="white">🚶</text>
+      <text x="1040" y="395" text-anchor="end" font-family="Arial, sans-serif" class="market-text" fill="#047857">이동성</text>
+      <text x="1040" y="410" text-anchor="end" font-family="Arial, sans-serif" class="timeline-text" fill="#6b7280">Mobile Era</text>
+      
+      <!-- Automation -->
+      <circle cx="1080" cy="460" r="15" fill="#16a34a" filter="url(#shadow)"/>
+      <text x="1080" y="465" text-anchor="middle" font-family="Arial, sans-serif" class="small-text" fill="white">⚙️</text>
+      <text x="1040" y="465" text-anchor="end" font-family="Arial, sans-serif" class="market-text" fill="#047857">자동화</text>
+      <text x="1040" y="480" text-anchor="end" font-family="Arial, sans-serif" class="timeline-text" fill="#6b7280">AI Era</text>
+      
+      <!-- Physical Tasks -->
+      <circle cx="1080" cy="530" r="15" fill="#6366f1" filter="url(#shadow)"/>
+      <text x="1080" y="535" text-anchor="middle" font-family="Arial, sans-serif" class="small-text" fill="white">🏭</text>
+      <text x="1040" y="535" text-anchor="end" font-family="Arial, sans-serif" class="market-text" fill="#047857">물리적 작업</text>
+      <text x="1040" y="550" text-anchor="end" font-family="Arial, sans-serif" class="timeline-text" fill="#6b7280">Physical AI Era</text>
+    </g>
+  </g>
+  
+  <!-- Central Interaction Zone -->
+  <g id="interaction-zone">
+    <rect x="300" y="90" width="600" height="570" fill="url(#interactionZone)" rx="10" filter="url(#shadow)" opacity="0.8"/>
+    
+    <!-- Era representations in center -->
+    <g id="computing-eras">
+      <!-- Mainframe Era -->
+      <ellipse cx="600" cy="180" rx="120" ry="30" fill="url(#mainframeEra)" filter="url(#shadow)" opacity="0.9"/>
+      <text x="600" y="175" text-anchor="middle" font-family="Arial, sans-serif" class="era-title" fill="white">
+        메인프레임 시대
+      </text>
+      <text x="600" y="190" text-anchor="middle" font-family="Arial, sans-serif" class="timeline-text" fill="white">
+        Mainframe Era (1960s-1980s)
+      </text>
+      
+      <!-- PC Era -->
+      <ellipse cx="600" cy="250" rx="120" ry="30" fill="url(#pcEra)" filter="url(#shadow)" opacity="0.9"/>
+      <text x="600" y="245" text-anchor="middle" font-family="Arial, sans-serif" class="era-title" fill="white">
+        개인컴퓨터 시대
+      </text>
+      <text x="600" y="260" text-anchor="middle" font-family="Arial, sans-serif" class="timeline-text" fill="white">
+        PC Era (1970s-1990s)
+      </text>
+      
+      <!-- Internet Era -->
+      <ellipse cx="600" cy="320" rx="120" ry="30" fill="url(#internetEra)" filter="url(#shadow)" opacity="0.9"/>
+      <text x="600" y="315" text-anchor="middle" font-family="Arial, sans-serif" class="era-title" fill="white">
+        인터넷 시대
+      </text>
+      <text x="600" y="330" text-anchor="middle" font-family="Arial, sans-serif" class="timeline-text" fill="white">
+        Internet Era (1990s-2000s)
+      </text>
+      
+      <!-- Mobile Era -->
+      <ellipse cx="600" cy="390" rx="120" ry="30" fill="url(#mobileEra)" filter="url(#shadow)" opacity="0.9"/>
+      <text x="600" y="385" text-anchor="middle" font-family="Arial, sans-serif" class="era-title" fill="white">
+        모바일 시대
+      </text>
+      <text x="600" y="400" text-anchor="middle" font-family="Arial, sans-serif" class="timeline-text" fill="white">
+        Mobile Era (2000s-2010s)
+      </text>
+      
+      <!-- AI Era -->
+      <ellipse cx="600" cy="460" rx="120" ry="30" fill="url(#aiEra)" filter="url(#shadow)" opacity="0.9"/>
+      <text x="600" y="455" text-anchor="middle" font-family="Arial, sans-serif" class="era-title" fill="white">
+        AI 시대
+      </text>
+      <text x="600" y="470" text-anchor="middle" font-family="Arial, sans-serif" class="timeline-text" fill="white">
+        AI Era (2010s-2020s)
+      </text>
+      
+      <!-- Physical AI Era -->
+      <ellipse cx="600" cy="530" rx="120" ry="30" fill="url(#physicalAiEra)" filter="url(#shadow)" opacity="0.9"/>
+      <text x="600" y="525" text-anchor="middle" font-family="Arial, sans-serif" class="era-title" fill="white">
+        Physical AI 시대
+      </text>
+      <text x="600" y="540" text-anchor="middle" font-family="Arial, sans-serif" class="timeline-text" fill="white">
+        Physical AI Era (2025-2040s)
+      </text>
+    </g>
+  </g>
+  
+  <!-- Push arrows from technology to center -->
+  <g id="push-arrows">
+    <path d="M 250 180 Q 275 180 300 180" stroke="#4f46e5" stroke-width="4" fill="none" marker-end="url(#techArrow)" opacity="0.8"/>
+    <path d="M 250 250 Q 275 250 300 250" stroke="#4f46e5" stroke-width="4" fill="none" marker-end="url(#techArrow)" opacity="0.8"/>
+    <path d="M 250 320 Q 275 320 300 320" stroke="#4f46e5" stroke-width="4" fill="none" marker-end="url(#techArrow)" opacity="0.8"/>
+    <path d="M 250 390 Q 275 390 300 390" stroke="#4f46e5" stroke-width="4" fill="none" marker-end="url(#techArrow)" opacity="0.8"/>
+    <path d="M 250 460 Q 275 460 300 460" stroke="#4f46e5" stroke-width="4" fill="none" marker-end="url(#techArrow)" opacity="0.8"/>
+    <path d="M 250 530 Q 275 530 300 530" stroke="#4f46e5" stroke-width="4" fill="none" marker-end="url(#techArrow)" opacity="0.8"/>
+  </g>
+  
+  <!-- Pull arrows from center to market -->
+  <g id="pull-arrows">
+    <path d="M 900 180 Q 925 180 950 180" stroke="#047857" stroke-width="4" fill="none" marker-end="url(#marketArrow)" opacity="0.8"/>
+    <path d="M 900 250 Q 925 250 950 250" stroke="#047857" stroke-width="4" fill="none" marker-end="url(#marketArrow)" opacity="0.8"/>
+    <path d="M 900 320 Q 925 320 950 320" stroke="#047857" stroke-width="4" fill="none" marker-end="url(#marketArrow)" opacity="0.8"/>
+    <path d="M 900 390 Q 925 390 950 390" stroke="#047857" stroke-width="4" fill="none" marker-end="url(#marketArrow)" opacity="0.8"/>
+    <path d="M 900 460 Q 925 460 950 460" stroke="#047857" stroke-width="4" fill="none" marker-end="url(#marketArrow)" opacity="0.8"/>
+    <path d="M 900 530 Q 925 530 950 530" stroke="#047857" stroke-width="4" fill="none" marker-end="url(#marketArrow)" opacity="0.8"/>
+  </g>
+  
+  <!-- Feedback loops in center -->
+  <g id="feedback-loops"  transform="translate(0,-20)">
+    <ellipse cx="600" cy="370" rx="280" ry="220" stroke="#f59e0b" stroke-width="3" fill="none" stroke-dasharray="10,5" opacity="0.6"/>
+    <path d="M 400 370 Q 500 350 600 370 Q 700 390 800 370" stroke="#f59e0b" stroke-width="5" fill="none" marker-end="url(#interactionArrow)" opacity="0.7"/>
+  </g>
+  
+  <!-- Key Insight -->
+  <g id="key-insight"  transform="translate(0,-140)">
+    <rect x="200" y="820" width="800" height="60" rx="15" fill="#f59e0b" filter="url(#shadow)" opacity="0.9"/>
+    <text x="600" y="845" text-anchor="middle" font-family="Arial, sans-serif" class="insight-text" fill="white">
+      핵심 통찰: 기술과 시장 요구의 상호작용이 진화를 주도
+    </text>
+    <text x="600" y="865" text-anchor="middle" font-family="Arial, sans-serif" class="subtitle-text" fill="white">
+      Key Insight: The Interaction Between Technology and Market Demands Drives Evolution
+    </text>
+  </g>
+  
+  <!-- Timeline axis -->
+  <g id="timeline">
+    <line x1="120" y1="620" x2="1080" y2="620" stroke="#9ca3af" stroke-width="2"/>
+    <text x="150" y="640" font-family="Arial, sans-serif" class="timeline-text" fill="#6b7280">1960s</text>
+    <text x="300" y="640" font-family="Arial, sans-serif" class="timeline-text" fill="#6b7280">1980s</text>
+    <text x="450" y="640" font-family="Arial, sans-serif" class="timeline-text" fill="#6b7280">1990s</text>
+    <text x="600" y="640" font-family="Arial, sans-serif" class="timeline-text" fill="#6b7280">2000s</text>
+    <text x="750" y="640" font-family="Arial, sans-serif" class="timeline-text" fill="#6b7280">2010s</text>
+    <text x="900" y="640" font-family="Arial, sans-serif" class="timeline-text" fill="#6b7280">2020s</text>
+    <text x="1050" y="640" font-family="Arial, sans-serif" class="timeline-text" fill="#6b7280">Future</text>
+  </g>
+</svg>

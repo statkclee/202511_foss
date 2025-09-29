@@ -1,0 +1,443 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 650">
+  <defs>
+    <!-- Consistent color scheme for similar task categories -->
+
+    <!-- AI/ML tasks (Deep Blue shades) -->
+    <linearGradient id="aiTask1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#1B4F72;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#154360;stop-opacity:1" />
+    </linearGradient>
+
+    <linearGradient id="aiTask2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#2E86AB;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1B4F72;stop-opacity:1" />
+    </linearGradient>
+
+    <!-- Platform/Automation tasks (Green shades) -->
+    <linearGradient id="platformTask1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#148F77;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0E6B5D;stop-opacity:1" />
+    </linearGradient>
+
+    <linearGradient id="platformTask2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#48C9B0;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#148F77;stop-opacity:1" />
+    </linearGradient>
+
+    <!-- Strategic/Product tasks (Purple shades) -->
+    <linearGradient id="strategyTask1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#6C3483;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#5B2C6F;stop-opacity:1" />
+    </linearGradient>
+
+    <linearGradient id="strategyTask2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#A569BD;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#6C3483;stop-opacity:1" />
+    </linearGradient>
+
+    <!-- Communication/Collaboration tasks (Orange shades) -->
+    <linearGradient id="collabTask1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#D35400;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#BA4A00;stop-opacity:1" />
+    </linearGradient>
+
+    <linearGradient id="collabTask2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#F39C12;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#D35400;stop-opacity:1" />
+    </linearGradient>
+
+    <!-- Operations/Monitoring tasks (Red shades) -->
+    <linearGradient id="opsTask1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#A93226;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#922B21;stop-opacity:1" />
+    </linearGradient>
+
+    <linearGradient id="opsTask2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#E74C3C;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#A93226;stop-opacity:1" />
+    </linearGradient>
+
+    <!-- Minimal Data Processing (Light Blue) -->
+    <linearGradient id="dataTask1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#85C1E9;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#5DADE2;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1400" height="650" fill="#FAFAFA"/>
+
+  <!-- Title -->
+  <text x="700" y="30" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#2C3E50">
+    Post-Data Science Era: AI-Augmented Workforce Time Allocation (2024+)
+  </text>
+  <text x="700" y="50" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#7F8C8D">
+    LLM integration &amp; automation-first workflows | Projected allocations based on AI adoption trends
+  </text>
+
+  <!-- Percentage Scale -->
+  <g transform="translate(250, 80) scale(1.215)">
+    <text x="0" y="0" font-family="Arial, sans-serif" font-size="12" fill="#7F8C8D">0%</text>
+    <text x="225" y="0" font-family="Arial, sans-serif" font-size="12" fill="#7F8C8D">25%</text>
+    <text x="450" y="0" font-family="Arial, sans-serif" font-size="12" fill="#7F8C8D">50%</text>
+    <text x="675" y="0" font-family="Arial, sans-serif" font-size="12" fill="#7F8C8D">75%</text>
+    <text x="900" y="0" font-family="Arial, sans-serif" font-size="12" fill="#7F8C8D">100%</text>
+    <!-- Scale lines -->
+    <line x1="0" y1="5" x2="0" y2="10" stroke="#BDC3C7" stroke-width="5"/>
+    <line x1="225" y1="5" x2="225" y2="10" stroke="#BDC3C7" stroke-width="5"/>
+    <line x1="450" y1="5" x2="450" y2="10" stroke="#BDC3C7" stroke-width="5"/>
+    <line x1="675" y1="5" x2="675" y2="10" stroke="#BDC3C7" stroke-width="5"/>
+    <line x1="900" y1="5" x2="900" y2="10" stroke="#BDC3C7" stroke-width="5"/>
+  </g>
+
+  <!-- AI/ML Engineer -->
+  <g transform="translate(50, 110)">
+    <text x="-20" y="20" font-family="Arial, sans-serif" font-size="15" font-weight="bold" fill="#2C3E50">
+      AI/ML Engineer ¹
+    </text>
+    <text x="-20" y="35" font-family="Arial, sans-serif" font-size="11" fill="#7F8C8D">
+      Integrates LLMs &amp; optimizes AI workflows with automation
+    </text>
+    <text x="-20" y="48" font-family="Arial, sans-serif" font-size="10" fill="#95A5A6">
+      Tools: LangChain, OpenAI API, AutoML, MLflow, Kubernetes
+    </text>
+
+    <g transform="translate(200, 10)">
+      <!-- LLM Integration 30% -->
+      <rect x="0" y="0" width="330" height="45" fill="url(#aiTask1)" rx="2"/>
+      <text x="165" y="24" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="white" font-weight="bold">
+        LLM Integration
+      </text>
+      <text x="165" y="38" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white" font-weight="bold">
+        30%
+      </text>
+
+      <!-- Model Optimization 25% -->
+      <rect x="330" y="0" width="275" height="45" fill="url(#aiTask2)" rx="2"/>
+      <text x="467" y="24" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="white" font-weight="bold">
+        Model Optimization
+      </text>
+      <text x="467" y="38" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white" font-weight="bold">
+        25%
+      </text>
+
+      <!-- Prompt Engineering 20% -->
+      <rect x="605" y="0" width="220" height="45" fill="url(#strategyTask1)" rx="2"/>
+      <text x="715" y="24" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="white" font-weight="bold">
+        Prompt Engineering
+      </text>
+      <text x="715" y="38" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white" font-weight="bold">
+        20%
+      </text>
+
+      <!-- Deployment 15% -->
+      <rect x="825" y="0" width="165" height="45" fill="url(#platformTask1)" rx="2"/>
+      <text x="907" y="24" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="white" font-weight="bold">
+        Deployment
+      </text>
+      <text x="907" y="38" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white" font-weight="bold">
+        15%
+      </text>
+
+      <!-- Monitoring 10% -->
+      <rect x="990" y="0" width="110" height="45" fill="url(#opsTask1)" rx="2"/>
+      <text x="1045" y="27" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white" font-weight="bold">
+        Monitoring
+      </text>
+      <text x="1045" y="38" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white" font-weight="bold">
+        10%
+      </text>
+    </g>
+  </g>
+
+  <!-- Platform Engineer -->
+  <g transform="translate(50, 190)">
+    <text x="-20" y="20" font-family="Arial, sans-serif" font-size="15" font-weight="bold" fill="#2C3E50">
+      Platform Engineer ²
+    </text>
+    <text x="-20" y="35" font-family="Arial, sans-serif" font-size="11" fill="#7F8C8D">
+      Builds self-service data platforms &amp; automated infrastructure
+    </text>
+    <text x="-20" y="48" font-family="Arial, sans-serif" font-size="10" fill="#95A5A6">
+      Tools: Terraform, Kubernetes, Snowflake, dbt Cloud, DataHub
+    </text>
+
+    <g transform="translate(200, 10)">
+      <!-- Platform Development 35% -->
+      <rect x="0" y="0" width="385" height="45" fill="url(#platformTask1)" rx="2"/>
+      <text x="192" y="24" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="white" font-weight="bold">
+        Platform Development
+      </text>
+      <text x="192" y="38" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white" font-weight="bold">
+        35%
+      </text>
+
+      <!-- Self-Service Tools 30% -->
+      <rect x="385" y="0" width="330" height="45" fill="url(#platformTask2)" rx="2"/>
+      <text x="550" y="24" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="white" font-weight="bold">
+        Self-Service Tools
+      </text>
+      <text x="550" y="38" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white" font-weight="bold">
+        30%
+      </text>
+
+      <!-- Infrastructure 20% -->
+      <rect x="715" y="0" width="220" height="45" fill="url(#opsTask1)" rx="2"/>
+      <text x="825" y="24" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="white" font-weight="bold">
+        Infrastructure
+      </text>
+      <text x="825" y="38" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white" font-weight="bold">
+        20%
+      </text>
+
+      <!-- Documentation 15% -->
+      <rect x="935" y="0" width="165" height="45" fill="url(#collabTask1)" rx="2"/>
+      <text x="1017" y="27" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white" font-weight="bold">
+        Documentation
+      </text>
+      <text x="1017" y="38" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white" font-weight="bold">
+        15%
+      </text>
+    </g>
+  </g>
+
+  <!-- Analytics Engineer -->
+  <g transform="translate(50, 270)">
+    <text x="-20" y="20" font-family="Arial, sans-serif" font-size="15" font-weight="bold" fill="#2C3E50">
+      Analytics Engineer ³
+    </text>
+    <text x="-20" y="35" font-family="Arial, sans-serif" font-size="11" fill="#7F8C8D">
+      Creates data products &amp; semantic layers with AI assistance
+    </text>
+    <text x="-20" y="48" font-family="Arial, sans-serif" font-size="10" fill="#95A5A6">
+      Tools: dbt, Semantic Layer, LookML, AI Code Assistant
+    </text>
+
+    <g transform="translate(200, 10)">
+      <!-- Data Products 35% -->
+      <rect x="0" y="0" width="385" height="45" fill="url(#strategyTask1)" rx="2"/>
+      <text x="192" y="24" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="white" font-weight="bold">
+        Data Products
+      </text>
+      <text x="192" y="38" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white" font-weight="bold">
+        35%
+      </text>
+
+      <!-- Semantic Layer 25% -->
+      <rect x="385" y="0" width="275" height="45" fill="url(#strategyTask2)" rx="2"/>
+      <text x="522" y="24" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="white" font-weight="bold">
+        Semantic Layer
+      </text>
+      <text x="522" y="38" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white" font-weight="bold">
+        25%
+      </text>
+
+      <!-- Pipeline Automation 20% -->
+      <rect x="660" y="0" width="220" height="45" fill="url(#platformTask1)" rx="2"/>
+      <text x="770" y="24" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="white" font-weight="bold">
+        Pipeline Automation
+      </text>
+      <text x="770" y="38" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white" font-weight="bold">
+        20%
+      </text>
+
+      <!-- Governance 20% -->
+      <rect x="880" y="0" width="220" height="45" fill="url(#opsTask1)" rx="2"/>
+      <text x="990" y="24" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="white" font-weight="bold">
+        Governance
+      </text>
+      <text x="990" y="38" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white" font-weight="bold">
+        20%
+      </text>
+    </g>
+  </g>
+
+  <!-- MLOps Engineer -->
+  <g transform="translate(50, 350)">
+    <text x="-20" y="20" font-family="Arial, sans-serif" font-size="15" font-weight="bold" fill="#2C3E50">
+      MLOps Engineer ⁴
+    </text>
+    <text x="-20" y="35" font-family="Arial, sans-serif" font-size="11" fill="#7F8C8D">
+      Automates ML lifecycle with CI/CD &amp; real-time monitoring
+    </text>
+    <text x="-20" y="48" font-family="Arial, sans-serif" font-size="10" fill="#95A5A6">
+      Tools: Kubeflow, MLflow, Weights &amp; Biases, GitHub Actions
+    </text>
+
+    <g transform="translate(200, 10)">
+      <!-- CI/CD for ML 30% -->
+      <rect x="0" y="0" width="330" height="45" fill="url(#platformTask1)" rx="2"/>
+      <text x="165" y="24" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="white" font-weight="bold">
+        CI/CD for ML
+      </text>
+      <text x="165" y="38" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white" font-weight="bold">
+        30%
+      </text>
+
+      <!-- Model Monitoring 25% -->
+      <rect x="330" y="0" width="275" height="45" fill="url(#opsTask1)" rx="2"/>
+      <text x="467" y="24" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="white" font-weight="bold">
+        Model Monitoring
+      </text>
+      <text x="467" y="38" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white" font-weight="bold">
+        25%
+      </text>
+
+      <!-- Infrastructure 25% -->
+      <rect x="605" y="0" width="275" height="45" fill="url(#opsTask2)" rx="2"/>
+      <text x="742" y="24" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="white" font-weight="bold">
+        Infrastructure
+      </text>
+      <text x="742" y="38" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white" font-weight="bold">
+        25%
+      </text>
+
+      <!-- Incident Response 20% -->
+      <rect x="880" y="0" width="220" height="45" fill="url(#collabTask1)" rx="2"/>
+      <text x="990" y="24" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="white" font-weight="bold">
+        Incident Response
+      </text>
+      <text x="990" y="38" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white" font-weight="bold">
+        20%
+      </text>
+    </g>
+  </g>
+
+  <!-- Data Product Manager -->
+  <g transform="translate(50, 430)">
+    <text x="-20" y="20" font-family="Arial, sans-serif" font-size="15" font-weight="bold" fill="#2C3E50">
+      Data Product Manager ⁵
+    </text>
+    <text x="-20" y="35" font-family="Arial, sans-serif" font-size="11" fill="#7F8C8D">
+      Defines AI-driven data products &amp; business strategy
+    </text>
+    <text x="-20" y="48" font-family="Arial, sans-serif" font-size="10" fill="#95A5A6">
+      Tools: Figma, Amplitude, LLM Analytics, Product Analytics
+    </text>
+
+    <g transform="translate(200, 10)">
+      <!-- Strategy 40% -->
+      <rect x="0" y="0" width="440" height="45" fill="url(#strategyTask1)" rx="2"/>
+      <text x="220" y="24" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="white" font-weight="bold">
+        Strategy &amp; Roadmap
+      </text>
+      <text x="220" y="38" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white" font-weight="bold">
+        40%
+      </text>
+
+      <!-- Stakeholder Management 30% -->
+      <rect x="440" y="0" width="330" height="45" fill="url(#collabTask1)" rx="2"/>
+      <text x="605" y="24" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="white" font-weight="bold">
+        Stakeholder Management
+      </text>
+      <text x="605" y="38" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white" font-weight="bold">
+        30%
+      </text>
+
+      <!-- Product Design 20% -->
+      <rect x="770" y="0" width="220" height="45" fill="url(#strategyTask2)" rx="2"/>
+      <text x="880" y="24" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="white" font-weight="bold">
+        Product Design
+      </text>
+      <text x="880" y="38" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white" font-weight="bold">
+        20%
+      </text>
+
+      <!-- Metrics 10% -->
+      <rect x="990" y="0" width="110" height="45" fill="url(#dataTask1)" rx="2"/>
+      <text x="1045" y="27" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white" font-weight="bold">
+        Metrics
+      </text>
+      <text x="1045" y="38" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white" font-weight="bold">
+        10%
+      </text>
+    </g>
+  </g>
+
+  <!-- Task Categories Legend -->
+  <g transform="translate(100, 490)">
+    <text x="0" y="40" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#2C3E50">
+      Task Categories
+    </text>
+
+    <g transform="translate(120, 0)">
+      <!-- AI/ML Integration -->
+      <rect x="0" y="25" width="25" height="15" fill="url(#aiTask1)" rx="2"/>
+      <text x="35" y="37" font-family="Arial, sans-serif" font-size="12" fill="#2C3E50">AI/ML Integration</text>
+
+      <!-- Platform/Automation -->
+      <rect x="180" y="25" width="25" height="15" fill="url(#platformTask1)" rx="2"/>
+      <text x="215" y="37" font-family="Arial, sans-serif" font-size="12" fill="#2C3E50">Platform/Automation</text>
+
+      <!-- Strategy/Product -->
+      <rect x="360" y="25" width="25" height="15" fill="url(#strategyTask1)" rx="2"/>
+      <text x="395" y="37" font-family="Arial, sans-serif" font-size="12" fill="#2C3E50">Strategy/Product</text>
+
+      <!-- Collaboration -->
+      <rect x="520" y="25" width="25" height="15" fill="url(#collabTask1)" rx="2"/>
+      <text x="555" y="37" font-family="Arial, sans-serif" font-size="12" fill="#2C3E50">Collaboration</text>
+
+      <!-- Operations -->
+      <rect x="660" y="25" width="25" height="15" fill="url(#opsTask1)" rx="2"/>
+      <text x="695" y="37" font-family="Arial, sans-serif" font-size="12" fill="#2C3E50">Operations/Monitoring</text>
+
+      <!-- Minimal Data Processing -->
+      <rect x="840" y="25" width="25" height="15" fill="url(#dataTask1)" rx="2"/>
+      <text x="875" y="37" font-family="Arial, sans-serif" font-size="12" fill="#2C3E50">Minimal Data Processing</text>
+    </g>
+  </g>
+
+  <!-- Workflow Timeline -->
+  <g transform="translate(100, 550)">
+    <text x="400" y="20" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#2C3E50">
+      AI-Augmented Workflow Timeline
+    </text>
+
+    <!-- Timeline -->
+    <line x1="50" y1="50" x2="1150" y2="50" stroke="#BDC3C7" stroke-width="2"/>
+
+    <!-- Time markers -->
+    <text x="50" y="45" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#7F8C8D">Hour 1</text>
+    <text x="350" y="45" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#7F8C8D">Hour 2</text>
+    <text x="650" y="45" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#7F8C8D">Day 1</text>
+    <text x="950" y="45" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#7F8C8D">Day 2</text>
+
+    <!-- Process steps -->
+    <rect x="50" y="60" width="250" height="25" fill="url(#collabTask1)" rx="2"/>
+    <text x="175" y="76" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="white" font-weight="bold">
+      Request via self-service
+    </text>
+
+    <rect x="300" y="60" width="300" height="25" fill="url(#aiTask1)" rx="2"/>
+    <text x="450" y="76" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="white" font-weight="bold">
+      AI auto-generates insights
+    </text>
+
+    <rect x="600" y="60" width="250" height="25" fill="url(#platformTask1)" rx="2"/>
+    <text x="725" y="76" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="white" font-weight="bold">
+      Automated validation
+    </text>
+
+    <rect x="850" y="60" width="200" height="25" fill="url(#strategyTask1)" rx="2"/>
+    <text x="950" y="76" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="white" font-weight="bold">
+      Strategic interpretation
+    </text>
+
+    <rect x="1050" y="60" width="100" height="25" fill="url(#collabTask2)" rx="2"/>
+    <text x="1100" y="76" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="white" font-weight="bold">
+      Real-time action
+    </text>
+
+    <!-- Total time -->
+    <text x="700" y="20" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#148F77">
+      Total Time: Hours to 2 days for complex analysis
+    </text>
+  </g>
+
+  <!-- Source methodology note -->
+  <text x="700" y="630" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#95A5A6" font-style="italic">
+    Projections based on 2024 LLM adoption trends, platform engineering patterns, &amp; automation impact studies
+  </text>
+
+</svg>
