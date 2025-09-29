@@ -1,0 +1,301 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 45 1200 750">
+  <defs>
+    <style>
+      .title-text { font-size: 28px; font-weight: bold; }
+      .layer-title { font-size: 24px; font-weight: bold; }
+      .layer-title-english { font-size: 17px; font-weight: bold; }
+      .component-text { font-size: 14px; font-weight: normal; }
+      .small-text { font-size: 14px; }
+      .kernel-text { font-size: 18px; font-weight: bold; }
+    </style>
+    
+    <!-- Kernel Space Gradient -->
+    <linearGradient id="kernelSpace" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#dc2626;stop-opacity:0.9" />
+      <stop offset="100%" style="stop-color:#991b1b;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- User Space Gradient -->
+    <linearGradient id="userSpace" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#3b82f6;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#1e40af;stop-opacity:0.9" />
+    </linearGradient>
+    
+    <!-- Hardware Gradient -->
+    <linearGradient id="hardware" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#6b7280;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#374151;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- LLM Core Gradient -->
+    <linearGradient id="llmCore" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#f59e0b;stop-opacity:0.9" />
+      <stop offset="100%" style="stop-color:#d97706;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Natural Language Interface -->
+    <linearGradient id="nlInterface" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#10b981;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#047857;stop-opacity:0.9" />
+    </linearGradient>
+    
+    <!-- Arrow marker -->
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#64748b"/>
+    </marker>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1200" height="800" fill="#f8fafc"/>
+
+  <!-- Traditional vs LLM OS Labels -->
+  <text x="300" y="75" text-anchor="middle" font-family="Arial, sans-serif" class="layer-title" fill="#64748b">
+    현재 OS
+  </text>
+  <text x="900" y="75" text-anchor="middle" font-family="Arial, sans-serif" class="layer-title" fill="#64748b">
+    LLM OS
+  </text>
+  
+  <!-- Traditional OS (Left Side) -->
+  <!-- Hardware Layer -->
+  <rect x="50" y="700" width="500" height="80" fill="url(#hardware)" rx="5"/>
+  <text x="300" y="730" text-anchor="middle" font-family="Arial, sans-serif" class="component-text" fill="white" font-weight="bold">
+    하드웨어 (CPU, 메모리, 디스크, 네트워크)
+  </text>
+  <text x="300" y="750" text-anchor="middle" font-family="Arial, sans-serif" class="small-text" fill="rgba(255,255,255,0.8)">
+    Hardware Abstraction Layer (HAL)
+  </text>
+  
+  <!-- Kernel Space -->
+  <rect x="50" y="500" width="500" height="180" fill="url(#kernelSpace)" rx="5"/>
+  <text x="300" y="530" text-anchor="middle" font-family="Arial, sans-serif" fill="white">
+    <tspan class="layer-title">커널 공간</tspan> <tspan class="layer-title-english">(Kernel Space)</tspan>
+  </text>
+  
+  <!-- Kernel Components -->
+  <rect x="70" y="550" width="110" height="40" fill="rgba(255,255,255,0.2)" rx="3"/>
+  <text x="125" y="575" text-anchor="middle" font-family="Arial, sans-serif" class="small-text" fill="white" font-weight="bold">
+    프로세스 관리
+  </text>
+  
+  <rect x="190" y="550" width="110" height="40" fill="rgba(255,255,255,0.2)" rx="3"/>
+  <text x="245" y="575" text-anchor="middle" font-family="Arial, sans-serif" class="small-text" fill="white" font-weight="bold">
+    메모리 관리
+  </text>
+  
+  <rect x="310" y="550" width="110" height="40" fill="rgba(255,255,255,0.2)" rx="3"/>
+  <text x="365" y="575" text-anchor="middle" font-family="Arial, sans-serif" class="small-text" fill="white" font-weight="bold">
+    파일 시스템
+  </text>
+  
+  <rect x="430" y="550" width="110" height="40" fill="rgba(255,255,255,0.2)" rx="3"/>
+  <text x="485" y="575" text-anchor="middle" font-family="Arial, sans-serif" class="small-text" fill="white" font-weight="bold">
+    I/O 관리
+  </text>
+  
+  <!-- System Call Interface -->
+  <rect x="70" y="620" width="460" height="30" fill="rgba(255,255,255,0.3)" rx="3"/>
+  <text x="300" y="640" text-anchor="middle" font-family="Arial, sans-serif" class="small-text" fill="white" font-weight="bold">
+    시스템 콜 인터페이스 (System Call Interface)
+  </text>
+  
+  <!-- User Space -->
+  <rect x="50" y="100" width="500" height="380" fill="url(#userSpace)" rx="5"/>
+  <text x="300" y="130" text-anchor="middle" font-family="Arial, sans-serif" fill="white">
+    <tspan class="layer-title">사용자 공간</tspan> <tspan class="layer-title-english">(User Space)</tspan>
+  </text>
+  
+  <!-- User Applications -->
+  <rect x="70" y="160" width="100" height="60" fill="rgba(255,255,255,0.2)" rx="3"/>
+  <text x="120" y="195" text-anchor="middle" font-family="Arial, sans-serif" class="small-text" fill="white" font-weight="bold">
+    웹브라우저
+  </text>
+  
+  <rect x="190" y="160" width="100" height="60" fill="rgba(255,255,255,0.2)" rx="3"/>
+  <text x="240" y="195" text-anchor="middle" font-family="Arial, sans-serif" class="small-text" fill="white" font-weight="bold">
+    텍스트 편집기
+  </text>
+  
+  <rect x="310" y="160" width="100" height="60" fill="rgba(255,255,255,0.2)" rx="3"/>
+  <text x="360" y="195" text-anchor="middle" font-family="Arial, sans-serif" class="small-text" fill="white" font-weight="bold">
+    계산기
+  </text>
+  
+  <rect x="430" y="160" width="100" height="60" fill="rgba(255,255,255,0.2)" rx="3"/>
+  <text x="480" y="195" text-anchor="middle" font-family="Arial, sans-serif" class="small-text" fill="white" font-weight="bold">
+    미디어 플레이어
+  </text>
+  
+  <!-- LLM OS (Right Side) -->
+  <!-- Hardware Layer (Same) -->
+  <rect x="650" y="700" width="500" height="80" fill="url(#hardware)" rx="5"/>
+  <text x="900" y="730" text-anchor="middle" font-family="Arial, sans-serif" class="component-text" fill="white" font-weight="bold">
+    하드웨어 (GPU 클러스터, 고용량 메모리, 고속 네트워크)
+  </text>
+  <text x="900" y="750" text-anchor="middle" font-family="Arial, sans-serif" class="small-text" fill="rgba(255,255,255,0.8)">
+    LLM-Optimized Hardware Layer
+  </text>
+  
+  <!-- LLM Kernel Space -->
+  <rect x="650" y="460" width="500" height="220" fill="url(#llmCore)" rx="5"/>
+  <text x="900" y="490" text-anchor="middle" font-family="Arial, sans-serif" fill="white">
+    <tspan class="layer-title">지능형 커널 공간</tspan> <tspan class="layer-title-english">(Intelligent Kernel Space)</tspan>
+  </text>
+  
+  <!-- LLM Core Components -->
+  <rect x="670" y="510" width="130" height="50" fill="rgba(255,255,255,0.2)" rx="3"/>
+  <text x="735" y="530" text-anchor="middle" font-family="Arial, sans-serif" class="small-text" fill="white" font-weight="bold">
+    추론 엔진
+  </text>
+  <text x="735" y="545" text-anchor="middle" font-family="Arial, sans-serif" class="small-text" fill="rgba(255,255,255,0.8)">
+    Inference Engine
+  </text>
+  
+  <rect x="820" y="510" width="130" height="50" fill="rgba(255,255,255,0.2)" rx="3"/>
+  <text x="885" y="530" text-anchor="middle" font-family="Arial, sans-serif" class="small-text" fill="white" font-weight="bold">
+    의미 기억 관리
+  </text>
+  <text x="885" y="545" text-anchor="middle" font-family="Arial, sans-serif" class="small-text" fill="rgba(255,255,255,0.8)">
+    Semantic Memory
+  </text>
+  
+  <rect x="970" y="510" width="130" height="50" fill="rgba(255,255,255,0.2)" rx="3"/>
+  <text x="1035" y="530" text-anchor="middle" font-family="Arial, sans-serif" class="small-text" fill="white" font-weight="bold">
+    도구 오케스트레이션
+  </text>
+  <text x="1035" y="545" text-anchor="middle" font-family="Arial, sans-serif" class="small-text" fill="rgba(255,255,255,0.8)">
+    Tool Orchestration
+  </text>
+  
+  <rect x="670" y="580" width="130" height="50" fill="rgba(255,255,255,0.2)" rx="3"/>
+  <text x="735" y="600" text-anchor="middle" font-family="Arial, sans-serif" class="small-text" fill="white" font-weight="bold">
+    지능형 스케줄러
+  </text>
+  <text x="735" y="615" text-anchor="middle" font-family="Arial, sans-serif" class="small-text" fill="rgba(255,255,255,0.8)">
+    AI Scheduler
+  </text>
+  
+  <rect x="820" y="580" width="130" height="50" fill="rgba(255,255,255,0.2)" rx="3"/>
+  <text x="885" y="600" text-anchor="middle" font-family="Arial, sans-serif" class="small-text" fill="white" font-weight="bold">
+    컨텍스트 관리
+  </text>
+  <text x="885" y="615" text-anchor="middle" font-family="Arial, sans-serif" class="small-text" fill="rgba(255,255,255,0.8)">
+    Context Manager
+  </text>
+  
+  <rect x="970" y="580" width="130" height="50" fill="rgba(255,255,255,0.2)" rx="3"/>
+  <text x="1035" y="600" text-anchor="middle" font-family="Arial, sans-serif" class="small-text" fill="white" font-weight="bold">
+    학습/적응 엔진
+  </text>
+  <text x="1035" y="615" text-anchor="middle" font-family="Arial, sans-serif" class="small-text" fill="rgba(255,255,255,0.8)">
+    Learning Engine
+  </text>
+  
+  <!-- Natural Language Interface -->
+  <rect x="670" y="640" width="460" height="40" fill="url(#nlInterface)" rx="3"/>
+  <text x="900" y="655" text-anchor="middle" font-family="Arial, sans-serif" class="component-text" fill="white" font-weight="bold">
+    자연어 인터페이스 (Natural Language Interface)
+  </text>
+  <text x="900" y="670" text-anchor="middle" font-family="Arial, sans-serif" class="small-text" fill="rgba(255,255,255,0.8)">
+    자연어 ↔ 시스템 콜 변환
+  </text>
+  
+  <!-- Intelligent User Space -->
+  <rect x="650" y="100" width="500" height="340" fill="rgba(16,185,129,0.1)" rx="5" stroke="#10b981" stroke-width="2"/>
+  <text x="900" y="130" text-anchor="middle" font-family="Arial, sans-serif" fill="#047857">
+    <tspan class="layer-title">지능형 사용자 공간</tspan> <tspan class="layer-title-english">(Intelligent User Space)</tspan>
+  </text>
+  
+  <!-- AI-Powered Applications -->
+  <rect x="670" y="160" width="120" height="70" fill="#10b981" opacity="0.8" rx="3"/>
+  <text x="730" y="185" text-anchor="middle" font-family="Arial, sans-serif" class="small-text" fill="white" font-weight="bold">
+    AI 문서 작성기
+  </text>
+  <text x="730" y="210" text-anchor="middle" font-family="Arial, sans-serif" class="small-text" fill="rgba(255,255,255,0.8)">
+    "보고서 작성해줘"
+  </text>
+  
+  <rect x="820" y="160" width="120" height="70" fill="#10b981" opacity="0.8" rx="3"/>
+  <text x="880" y="185" text-anchor="middle" font-family="Arial, sans-serif" class="small-text" fill="white" font-weight="bold">
+    코딩 어시스턴트
+  </text>
+  <text x="880" y="210" text-anchor="middle" font-family="Arial, sans-serif" class="small-text" fill="rgba(255,255,255,0.8)">
+    "웹사이트 만들어줘"
+  </text>
+  
+  <rect x="970" y="160" width="120" height="70" fill="#10b981" opacity="0.8" rx="3"/>
+  <text x="1030" y="185" text-anchor="middle" font-family="Arial, sans-serif" class="small-text" fill="white" font-weight="bold">
+    데이터 분석기
+  </text>
+  <text x="1030" y="210" text-anchor="middle" font-family="Arial, sans-serif" class="small-text" fill="rgba(255,255,255,0.8)">
+    "트렌드 분석해줘"
+  </text>
+  
+  <rect x="670" y="250" width="120" height="70" fill="#8b5cf6" opacity="0.8" rx="3"/>
+  <text x="730" y="275" text-anchor="middle" font-family="Arial, sans-serif" class="small-text" fill="white" font-weight="bold">
+    멀티모달 에디터
+  </text>
+  <text x="730" y="300" text-anchor="middle" font-family="Arial, sans-serif" class="small-text" fill="rgba(255,255,255,0.8)">
+    "이미지로 설명해줘"
+  </text>
+  
+  <rect x="820" y="250" width="120" height="70" fill="#8b5cf6" opacity="0.8" rx="3"/>
+  <text x="880" y="275" text-anchor="middle" font-family="Arial, sans-serif" class="small-text" fill="white" font-weight="bold">
+    개인 비서
+  </text>
+  <text x="880" y="300" text-anchor="middle" font-family="Arial, sans-serif" class="small-text" fill="rgba(255,255,255,0.8)">
+    "일정 조율해줘"
+  </text>
+  
+  <rect x="970" y="250" width="120" height="70" fill="#8b5cf6" opacity="0.8" rx="3"/>
+  <text x="1030" y="275" text-anchor="middle" font-family="Arial, sans-serif" class="small-text" fill="white" font-weight="bold">
+    학습 도우미
+  </text>
+  <text x="1030" y="300" text-anchor="middle" font-family="Arial, sans-serif" class="small-text" fill="rgba(255,255,255,0.8)">
+    "개념 설명해줘"
+  </text>
+  
+  <!-- Connection Arrows -->
+  <g stroke="#64748b" stroke-width="2" marker-end="url(#arrowhead)" opacity="0.7">
+    <!-- Traditional OS flow -->
+    <line x1="300" y1="480" x2="300" y2="500"/>
+    <line x1="300" y1="680" x2="300" y2="700"/>
+    
+    <!-- LLM OS flow -->
+    <line x1="900" y1="440" x2="900" y2="460"/>
+    <line x1="900" y1="680" x2="900" y2="700"/>
+  </g>
+  
+  <!-- Key Differences Box -->
+  <g transform="translate(-25,-50)">
+    <rect x="100" y="350" width="450" height="110" fill="rgba(255,255,255,0.9)" rx="8" stroke="#1e293b" stroke-width="2"/>
+    <text x="325" y="372" text-anchor="middle" font-family="Arial, sans-serif" fill="#dc2626" font-weight="bold" font-size="18px" >
+      전통 OS: 시스템 콜 기반
+    </text>
+    <text x="325" y="395" text-anchor="middle" font-family="Arial, sans-serif" class="small-text" fill="#dc2626">
+      • 프로그램 ↔ 커널 ↔ 하드웨어
+    </text>
+    <text x="325" y="420" text-anchor="middle" font-family="Arial, sans-serif" class="small-text" fill="#dc2626">
+      • 명령어 기반 인터페이스
+    </text>
+    <text x="325" y="445" text-anchor="middle" font-family="Arial, sans-serif" class="small-text" fill="#dc2626">
+      • 정적 리소스 관리
+    </text>
+  </g>
+
+  <g transform="translate(-25,-20)">
+    <rect x="700" y="350" width="450" height="100" fill="rgba(255,255,255,0.9)" rx="8" stroke="#047857" stroke-width="2"/>
+    <text x="925" y="375" text-anchor="middle" font-family="Arial, sans-serif" fill="#047857" font-weight="bold" font-size="18px">
+      LLM OS: 자연어 기반
+    </text>
+    <text x="925" y="400" text-anchor="middle" font-family="Arial, sans-serif" class="small-text" fill="#374151">
+      • 자연어 ↔ 지능형 커널 ↔ AI 하드웨어
+    </text>
+    <text x="925" y="423" text-anchor="middle" font-family="Arial, sans-serif" class="small-text" fill="#374151">
+      • 의도 기반 인터페이스
+    </text>
+    <text x="925" y="443" text-anchor="middle" font-family="Arial, sans-serif" class="small-text" fill="#374151">
+      • 적응형 리소스 관리
+    </text>
+  </g>
+</svg>

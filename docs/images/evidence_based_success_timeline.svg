@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1800 900">
+  <defs>
+    <!-- Background gradient -->
+    <linearGradient id="backgroundGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#FEFEFE;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#F8F9FA;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#F1F3F4;stop-opacity:1" />
+    </linearGradient>
+
+    <!-- Timeline gradient -->
+    <linearGradient id="timelineGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#8B4513;stop-opacity:1" />
+      <stop offset="12.5%" style="stop-color:#228B22;stop-opacity:1" />
+      <stop offset="25%" style="stop-color:#4682B4;stop-opacity:1" />
+      <stop offset="37.5%" style="stop-color:#696969;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#9370DB;stop-opacity:1" />
+      <stop offset="62.5%" style="stop-color:#FF8C00;stop-opacity:1" />
+      <stop offset="75%" style="stop-color:#00CED1;stop-opacity:1" />
+      <stop offset="87.5%" style="stop-color:#1E90FF;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FF1493;stop-opacity:1" />
+    </linearGradient>
+
+    <!-- Era gradients -->
+    <linearGradient id="ancient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#D4A574;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#8B7355;stop-opacity:1" />
+    </linearGradient>
+
+    <linearGradient id="medieval" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#81C784;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#4CAF50;stop-opacity:1" />
+    </linearGradient>
+
+    <linearGradient id="scientific" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#64B5F6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2196F3;stop-opacity:1" />
+    </linearGradient>
+
+    <linearGradient id="industrial" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#90A4AE;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#607D8B;stop-opacity:1" />
+    </linearGradient>
+
+    <linearGradient id="computing" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#BA68C8;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#9C27B0;stop-opacity:1" />
+    </linearGradient>
+
+    <linearGradient id="database" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFB74D;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FF9800;stop-opacity:1" />
+    </linearGradient>
+
+    <linearGradient id="internet" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#4DD0E1;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#00BCD4;stop-opacity:1" />
+    </linearGradient>
+
+    <linearGradient id="bigdata" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#5C6BC0;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#303F9F;stop-opacity:1" />
+    </linearGradient>
+
+    <linearGradient id="ai" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#F06292;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#E91E63;stop-opacity:1" />
+    </linearGradient>
+
+    <!-- Drop shadow filter -->
+    <filter id="cardShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="2" dy="4" stdDeviation="3" flood-color="#000000" flood-opacity="0.15"/>
+    </filter>
+
+    <!-- Text shadow -->
+    <filter id="textShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="1" dy="1" stdDeviation="1" flood-color="#000000" flood-opacity="0.3"/>
+    </filter>
+
+    <!-- Success icon patterns -->
+    <pattern id="successPattern" patternUnits="userSpaceOnUse" width="20" height="20">
+      <rect width="20" height="20" fill="#27AE60" opacity="0.1"/>
+      <text x="10" y="15" text-anchor="middle" font-size="12" fill="#27AE60">✓</text>
+    </pattern>
+
+    <style>
+      .card-header-title {
+        font-family: Arial, sans-serif;
+        font-size: 26px;
+        font-weight: bold;
+        fill: #ffffff;
+      }
+
+      .card-header-subtitle {
+        font-family: Arial, sans-serif;
+        font-size: 22px;
+        fill: #F5F5F5;
+      }
+
+      .case-title {
+        font-family: Arial, sans-serif;
+        font-size: 18px;
+        font-weight: bold;
+      }
+
+      .case-desc {
+        font-family: Arial, sans-serif;
+        font-size: 16px;
+        fill: #2C3E50;
+      }
+
+      .case-impact {
+        font-family: Arial, sans-serif;
+        font-size: 15px;
+        font-weight: bold;
+        fill: #27AE60;
+      }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1800" height="1000" fill="url(#backgroundGradient)"/>
+
+  <!-- Title -->
+  <text x="900" y="40" text-anchor="middle" font-family="Georgia, serif" font-size="32" font-weight="bold" fill="#2C3E50" filter="url(#textShadow)">
+    Evidence-Based Decision Making: Historical Success Stories
+  </text>
+  <text x="900" y="70" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" fill="#7F8C8D">
+    Transformative decisions that shaped civilization through data and evidence
+  </text>
+
+  <!-- Main Timeline -->
+  <rect x="100" y="495" width="1600" height="10" fill="url(#timelineGradient)" rx="5" filter="url(#cardShadow)"/>
+
+  <!-- Era markers on timeline -->
+  <circle cx="180" cy="500" r="6" fill="url(#ancient)" filter="url(#cardShadow)"/>
+  <circle cx="350" cy="500" r="6" fill="url(#medieval)" filter="url(#cardShadow)"/>
+  <circle cx="500" cy="500" r="6" fill="url(#scientific)" filter="url(#cardShadow)"/>
+  <circle cx="700" cy="500" r="6" fill="url(#industrial)" filter="url(#cardShadow)"/>
+  <circle cx="850" cy="500" r="6" fill="url(#computing)" filter="url(#cardShadow)"/>
+  <circle cx="1000" cy="500" r="6" fill="url(#database)" filter="url(#cardShadow)"/>
+  <circle cx="1200" cy="500" r="6" fill="url(#internet)" filter="url(#cardShadow)"/>
+  <circle cx="1400" cy="500" r="6" fill="url(#bigdata)" filter="url(#cardShadow)"/>
+  <circle cx="1600" cy="500" r="6" fill="url(#ai)" filter="url(#cardShadow)"/>
+
+  <!-- Ancient Era Success Cases (Above Timeline) -->
+  <g transform="translate(180, 140)">
+    <rect x="-110" y="0" width="260" height="320" fill="white" stroke="url(#ancient)" stroke-width="3" rx="10" filter="url(#cardShadow)"/>
+
+    <!-- Header -->
+    <rect x="-110" y="0" width="260" height="65" fill="url(#ancient)" rx="10"/>
+    <text class="card-header-title" x="0" y="35" text-anchor="middle">Ancient Era</text>
+    <text class="card-header-subtitle" x="0" y="60" text-anchor="middle">3000 BC - 500 AD</text>
+
+    <!-- Success cases -->
+    <text class="case-title" x="20" y="110" text-anchor="middle" fill="#8B4513">🏺 Egyptian Nile Predictions</text>
+    <text class="case-desc" x="20" y="134" text-anchor="middle">7-year flood cycles → Agricultural planning</text>
+    <text class="case-impact" x="20" y="156" text-anchor="middle">Impact: 3000+ years civilization</text>
+
+    <text class="case-title" x="20" y="190" text-anchor="middle" fill="#8B4513">📊 Roman Census System</text>
+    <text class="case-desc" x="20" y="214" text-anchor="middle">Population data → Military &amp; taxation</text>
+    <text class="case-impact" x="20" y="236" text-anchor="middle">Impact: 1000+ year empire</text>
+
+    <text class="case-title" x="20" y="270" text-anchor="middle" fill="#8B4513">🌟 Babylonian Astronomy</text>
+    <text class="case-desc" x="20" y="294" text-anchor="middle">Star patterns → Calendar &amp; navigation</text>
+    <text class="case-impact" x="20" y="316" text-anchor="middle">Impact: Foundation of science</text>
+
+    <!-- Connection line -->
+    <line x1="0" y1="320" x2="0" y2="350" stroke="#8B4513" stroke-width="3"/>
+  </g>
+
+  <!-- Medieval Era Success Cases (Below Timeline) -->
+  <g transform="translate(350, 550)">
+    <rect x="-110" y="0" width="260" height="320" fill="white" stroke="url(#medieval)" stroke-width="3" rx="10" filter="url(#cardShadow)"/>
+
+    <!-- Header -->
+    <rect x="-110" y="0" width="260" height="65" fill="url(#medieval)" rx="10"/>
+    <text class="card-header-title" x="0" y="35" text-anchor="middle">Medieval Era</text>
+    <text class="card-header-subtitle" x="0" y="60" text-anchor="middle">500 - 1500</text>
+
+    <!-- Success cases -->
+    <text class="case-title" x="20" y="110" text-anchor="middle" fill="#228B22">📚 Venetian Double-Entry</text>
+    <text class="case-desc" x="20" y="134" text-anchor="middle">Bookkeeping → Trade empire</text>
+    <text class="case-impact" x="20" y="156" text-anchor="middle">Impact: 500+ years dominance</text>
+
+    <text class="case-title" x="20" y="190" text-anchor="middle" fill="#228B22">🏥 Islamic Hospital Records</text>
+    <text class="case-desc" x="20" y="214" text-anchor="middle">Patient data → Medical advances</text>
+    <text class="case-impact" x="20" y="236" text-anchor="middle">Impact: Modern medicine basis</text>
+
+    <text class="case-title" x="20" y="270" text-anchor="middle" fill="#228B22">⚖️ Hanseatic League Trade</text>
+    <text class="case-desc" x="20" y="294" text-anchor="middle">Trade records → Commercial network</text>
+    <text class="case-impact" x="20" y="316" text-anchor="middle">Impact: 300 cities, 200 years</text>
+
+    <!-- Connection line -->
+    <line x1="0" y1="0" x2="0" y2="-40" stroke="#228B22" stroke-width="3"/>
+  </g>
+
+  <!-- Scientific Revolution Success Cases (Above Timeline) -->
+  <g transform="translate(500, 140)">
+    <rect x="-110" y="0" width="260" height="320" fill="white" stroke="url(#scientific)" stroke-width="3" rx="10" filter="url(#cardShadow)"/>
+
+    <!-- Header -->
+    <rect x="-110" y="0" width="260" height="65" fill="url(#scientific)" rx="10"/>
+    <text class="card-header-title" x="0" y="35" text-anchor="middle">Scientific Era</text>
+    <text class="card-header-subtitle" x="0" y="60" text-anchor="middle">1500 - 1750</text>
+
+    <!-- Success cases -->
+    <text class="case-title" x="20" y="110" text-anchor="middle" fill="#4682B4">💀 London Bills of Mortality</text>
+    <text class="case-desc" x="20" y="134" text-anchor="middle">Death records → Plague tracking</text>
+    <text class="case-impact" x="20" y="156" text-anchor="middle">Impact: Epidemiology birth</text>
+
+    <text class="case-title" x="20" y="190" text-anchor="middle" fill="#4682B4">🚢 Dutch East India Co.</text>
+    <text class="case-desc" x="20" y="214" text-anchor="middle">Trade data → Global optimization</text>
+    <text class="case-impact" x="20" y="236" text-anchor="middle">Impact: First global corporation</text>
+
+    <text class="case-title" x="20" y="270" text-anchor="middle" fill="#4682B4">📋 Halley's Life Tables</text>
+    <text class="case-desc" x="20" y="294" text-anchor="middle">Mortality data → Insurance</text>
+    <text class="case-impact" x="20" y="316" text-anchor="middle">Impact: Modern actuarial science</text>
+
+    <!-- Connection line -->
+    <line x1="0" y1="320" x2="0" y2="350" stroke="#4682B4" stroke-width="3"/>
+  </g>
+
+  <!-- Industrial Revolution Success Cases (Below Timeline) -->
+  <g transform="translate(700, 550)">
+    <rect x="-110" y="0" width="260" height="320" fill="white" stroke="url(#industrial)" stroke-width="3" rx="10" filter="url(#cardShadow)"/>
+
+    <!-- Header -->
+    <rect x="-110" y="0" width="260" height="65" fill="url(#industrial)" rx="10"/>
+    <text class="card-header-title" x="0" y="35" text-anchor="middle">Industrial Era</text>
+    <text class="card-header-subtitle" x="0" y="60" text-anchor="middle">1750 - 1900</text>
+
+    <!-- Success cases -->
+    <text class="case-title" x="20" y="110" text-anchor="middle" fill="#696969">🩺 Nightingale's Statistics</text>
+    <text class="case-desc" x="20" y="134" text-anchor="middle">Hospital data → Healthcare reform</text>
+    <text class="case-impact" x="20" y="156" text-anchor="middle">Impact: 40% mortality reduction</text>
+
+    <text class="case-title" x="20" y="190" text-anchor="middle" fill="#696969">🗳️ Hollerith Census Machine</text>
+    <text class="case-desc" x="20" y="214" text-anchor="middle">Automated counting → Demographics</text>
+    <text class="case-impact" x="20" y="236" text-anchor="middle">Impact: 1890 census in 2.5 years</text>
+
+    <text class="case-title" x="20" y="270" text-anchor="middle" fill="#696969">🚂 Railroad Timetables</text>
+    <text class="case-desc" x="20" y="294" text-anchor="middle">Schedule optimization → Efficiency</text>
+    <text class="case-impact" x="20" y="316" text-anchor="middle">Impact: 75% time reduction</text>
+
+    <!-- Connection line -->
+    <line x1="0" y1="0" x2="0" y2="-40" stroke="#696969" stroke-width="3"/>
+  </g>
+
+  <!-- Early Computing Success Cases (Above Timeline) -->
+  <g transform="translate(850, 140)">
+    <rect x="-110" y="0" width="260" height="320" fill="white" stroke="url(#computing)" stroke-width="3" rx="10" filter="url(#cardShadow)"/>
+
+    <!-- Header -->
+    <rect x="-110" y="0" width="260" height="65" fill="url(#computing)" rx="10"/>
+    <text class="card-header-title" x="0" y="35" text-anchor="middle">Computing Era</text>
+    <text class="card-header-subtitle" x="0" y="60" text-anchor="middle">1900 - 1960</text>
+
+    <!-- Success cases -->
+    <text class="case-title" x="20" y="110" text-anchor="middle" fill="#9370DB">⚔️ WWII Operations Research</text>
+    <text class="case-desc" x="20" y="134" text-anchor="middle">Mathematical models → Strategy</text>
+    <text class="case-impact" x="20" y="156" text-anchor="middle">Impact: War outcome decisive</text>
+
+    <text class="case-title" x="20" y="190" text-anchor="middle" fill="#9370DB">📊 Quality Control Charts</text>
+    <text class="case-desc" x="20" y="214" text-anchor="middle">Statistical process → Manufacturing</text>
+    <text class="case-impact" x="20" y="236" text-anchor="middle">Impact: 90% defect reduction</text>
+
+    <text class="case-title" x="20" y="270" text-anchor="middle" fill="#9370DB">🌤️ ENIAC Weather Prediction</text>
+    <text class="case-desc" x="20" y="294" text-anchor="middle">Computing power → Forecasting</text>
+    <text class="case-impact" x="20" y="316" text-anchor="middle">Impact: Modern meteorology</text>
+
+    <!-- Connection line -->
+    <line x1="0" y1="320" x2="0" y2="350" stroke="#9370DB" stroke-width="3"/>
+  </g>
+
+  <!-- Database Era Success Cases (Below Timeline) -->
+  <g transform="translate(1000, 550)">
+    <rect x="-110" y="0" width="260" height="320" fill="white" stroke="url(#database)" stroke-width="3" rx="10" filter="url(#cardShadow)"/>
+
+    <!-- Header -->
+    <rect x="-110" y="0" width="260" height="65" fill="url(#database)" rx="10"/>
+    <text class="card-header-title" x="0" y="35" text-anchor="middle">Database Era</text>
+    <text class="card-header-subtitle" x="0" y="60" text-anchor="middle">1960 - 1990</text>
+
+    <!-- Success cases -->
+    <text class="case-title" x="20" y="110" text-anchor="middle" fill="#FF8C00">🛒 Walmart Inventory System</text>
+    <text class="case-desc" x="20" y="134" text-anchor="middle">Real-time data → Retail revolution</text>
+    <text class="case-impact" x="20" y="156" text-anchor="middle">Impact: $500B+ revenue</text>
+
+    <text class="case-title" x="20" y="190" text-anchor="middle" fill="#FF8C00">📦 FedEx Package Tracking</text>
+    <text class="case-desc" x="20" y="214" text-anchor="middle">Database tracking → Logistics</text>
+    <text class="case-impact" x="20" y="236" text-anchor="middle">Impact: Global supply chains</text>
+
+    <text class="case-title" x="20" y="270" text-anchor="middle" fill="#FF8C00">💳 Credit Scoring Systems</text>
+    <text class="case-desc" x="20" y="294" text-anchor="middle">Risk models → Financial access</text>
+    <text class="case-impact" x="20" y="316" text-anchor="middle">Impact: $4T+ lending market</text>
+
+    <!-- Connection line -->
+    <line x1="0" y1="0" x2="0" y2="-40" stroke="#FF8C00" stroke-width="3"/>
+  </g>
+
+  <!-- Internet Era Success Cases (Above Timeline) -->
+  <g transform="translate(1200, 140)">
+    <rect x="-110" y="0" width="260" height="320" fill="white" stroke="url(#internet)" stroke-width="3" rx="10" filter="url(#cardShadow)"/>
+
+    <!-- Header -->
+    <rect x="-110" y="0" width="260" height="65" fill="url(#internet)" rx="10"/>
+    <text class="card-header-title" x="20" y="35" text-anchor="middle">Internet Era</text>
+    <text class="card-header-subtitle" x="20" y="60" text-anchor="middle">1990 - 2010</text>
+
+    <!-- Success cases -->
+    <text class="case-title" x="20" y="110" text-anchor="middle" fill="#00CED1">🛍️ Amazon Recommendations</text>
+    <text class="case-desc" x="20" y="134" text-anchor="middle">Collaborative filtering → Sales</text>
+    <text class="case-impact" x="20" y="156" text-anchor="middle">Impact: 35% revenue from recs</text>
+
+    <text class="case-title" x="20" y="190" text-anchor="middle" fill="#00CED1">🔍 Google PageRank</text>
+    <text class="case-desc" x="20" y="214" text-anchor="middle">Link analysis → Search quality</text>
+    <text class="case-impact" x="20" y="236" text-anchor="middle">Impact: 90%+ search market</text>
+
+    <text class="case-title" x="20" y="270" text-anchor="middle" fill="#00CED1">🎬 Netflix Algorithm</text>
+    <text class="case-desc" x="20" y="294" text-anchor="middle">Viewing patterns → Personalization</text>
+    <text class="case-impact" x="20" y="316" text-anchor="middle">Impact: 200M+ subscribers</text>
+
+    <!-- Connection line -->
+    <line x1="0" y1="320" x2="0" y2="350" stroke="#00CED1" stroke-width="3"/>
+  </g>
+
+  <!-- Big Data Era Success Cases (Below Timeline) -->
+  <g transform="translate(1400, 550)">
+    <rect x="-110" y="0" width="260" height="320" fill="white" stroke="url(#bigdata)" stroke-width="3" rx="10" filter="url(#cardShadow)"/>
+
+    <!-- Header -->
+    <rect x="-110" y="0" width="260" height="65" fill="url(#bigdata)" rx="10"/>
+    <text class="card-header-title" x="20" y="35" text-anchor="middle">Big Data Era</text>
+    <text class="card-header-subtitle" x="20" y="60" text-anchor="middle">2010 - 2020</text>
+
+    <!-- Success cases -->
+    <text class="case-title" x="20" y="110" text-anchor="middle" fill="#1E90FF">🚗 Uber Dynamic Pricing</text>
+    <text class="case-desc" x="20" y="134" text-anchor="middle">Real-time demand → Pricing</text>
+    <text class="case-impact" x="20" y="156" text-anchor="middle">Impact: $100B+ market value</text>
+
+    <text class="case-title" x="20" y="190" text-anchor="middle" fill="#1E90FF">📊 COVID-19 Dashboards</text>
+    <text class="case-desc" x="20" y="214" text-anchor="middle">Real-time tracking → Response</text>
+    <text class="case-impact" x="20" y="236" text-anchor="middle">Impact: Global pandemic mgmt</text>
+
+    <text class="case-title" x="20" y="270" text-anchor="middle" fill="#1E90FF">📱 Social Media Analytics</text>
+    <text class="case-desc" x="20" y="294" text-anchor="middle">Behavior patterns → Targeting</text>
+    <text class="case-impact" x="20" y="316" text-anchor="middle">Impact: $100B+ ad market</text>
+
+    <!-- Connection line -->
+    <line x1="0" y1="0" x2="0" y2="-40" stroke="#1E90FF" stroke-width="3"/>
+  </g>
+
+  <!-- AI Era Success Cases (Above Timeline) -->
+  <g transform="translate(1600, 140)">
+    <rect x="-110" y="0" width="260" height="320" fill="white" stroke="url(#ai)" stroke-width="3" rx="10" filter="url(#cardShadow)"/>
+
+    <!-- Header -->
+    <rect x="-110" y="0" width="260" height="65" fill="url(#ai)" rx="10"/>
+    <text class="card-header-title" x="20" y="35" text-anchor="middle">AI Era</text>
+    <text class="card-header-subtitle" x="20" y="60" text-anchor="middle">2020 - Present</text>
+
+    <!-- Success cases -->
+    <text class="case-title" x="20" y="110" text-anchor="middle" fill="#FF1493">🧬 AlphaFold Protein Folding</text>
+    <text class="case-desc"  x="20" y="134" text-anchor="middle">AI predictions → Drug discovery</text>
+    <text class="case-impact" x="20" y="156" text-anchor="middle">Impact: 200M+ proteins solved</text>
+
+    <text class="case-title" x="20" y="190" text-anchor="middle" fill="#FF1493">💬 GPT Applications</text>
+    <text class="case-desc" x="20" y="214" text-anchor="middle">Language models → Productivity</text>
+    <text class="case-impact" x="20" y="236" text-anchor="middle">Impact: 100M+ users in 2 months</text>
+
+    <text class="case-title" x="20" y="270" text-anchor="middle" fill="#FF1493">🌐 Real-time Translation</text>
+    <text class="case-desc" x="20" y="294" text-anchor="middle">Neural networks → Communication</text>
+    <text class="case-impact" x="20" y="316" text-anchor="middle">Impact: Global barrier removal</text>
+
+    <!-- Connection line -->
+    <line x1="0" y1="320" x2="0" y2="350" stroke="#FF1493" stroke-width="3"/>
+  </g>
+
+</svg>

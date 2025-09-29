@@ -1,0 +1,374 @@
+<svg viewBox="0 0 1800 880" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Gradients for different audiences -->
+    <linearGradient id="colleagueGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4A90E2"/>
+      <stop offset="100%" style="stop-color:#357ABD"/>
+    </linearGradient>
+
+    <linearGradient id="bossGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#E74C3C"/>
+      <stop offset="100%" style="stop-color:#C0392B"/>
+    </linearGradient>
+
+    <linearGradient id="publicGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#27AE60"/>
+      <stop offset="100%" style="stop-color:#229954"/>
+    </linearGradient>
+
+    <!-- Hexagon path for package icons -->
+    <path id="hexagon" d="M 0,-30 L 26,-15 L 26,15 L 0,30 L -26,15 L -26,-15 Z"/>
+
+    <!-- Shadow filter -->
+    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="3"/>
+      <feOffset dx="2" dy="2" result="offsetblur"/>
+      <feComponentTransfer>
+        <feFuncA type="linear" slope="0.3"/>
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Arrow marker -->
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#666"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1800" height="1200" fill="#F8F9FA"/>
+
+  <!-- Title -->
+  <text x="900" y="70" text-anchor="middle" font-family="Arial, sans-serif" font-size="38" font-weight="bold" fill="#2C3E50">
+    R Tidyverse Era: Data Science Outputs by Consumer Perspective
+  </text>
+
+  <text x="900" y="105" text-anchor="middle" font-family="Arial, sans-serif" font-size="23" fill="#7F8C8D">
+    Comprehensive Consumer Segmentation (2014-2020)
+  </text>
+
+  <!-- Central Tidyverse Hexagon -->
+  <g transform="translate(900, 630)">
+    <use href="#hexagon" transform="scale(3.5)" fill="#1A1A1A" opacity="0.1"/>
+    <use href="#hexagon" transform="scale(3.3)" fill="white" stroke="#4A90E2" stroke-width="3"/>
+    <text y="0" text-anchor="middle" font-family="monospace" font-size="28" font-weight="bold" fill="#4A90E2">tidyverse</text>
+    <text y="30" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" fill="#7F8C8D">ecosystem</text>
+  </g>
+
+  <!-- Technical Community Section -->
+  <g transform="translate(300, 200)">
+    <!-- Section Header -->
+    <rect x="-200" y="-50" width="400" height="90" rx="10" fill="url(#colleagueGradient)" filter="url(#shadow)"/>
+    <text x="0" y="-15" text-anchor="middle" font-family="Arial, sans-serif" font-size="27" font-weight="bold" fill="white">
+      👥 Technical Community
+    </text>
+    <text x="0" y="20" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" fill="white">
+      Developers, Researchers, Data Scientists
+    </text>
+
+    <!-- Primary Subgroup: Developers -->
+    <g transform="translate(-130, 60)">
+      <text x="0" y="20" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#4A90E2">
+        Software Developers
+      </text>
+
+      <g transform="translate(-50, 55)">
+        <use href="#hexagon" transform="scale(0.9)" fill="#E3F2FD" stroke="#4A90E2" stroke-width="2"/>
+        <text y="5" text-anchor="middle" font-family="monospace" font-size="16" fill="#4A90E2">Rmd</text>
+      </g>
+      <text x="50" y="55" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#666">R Markdown</text>
+      <text x="50" y="70" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" fill="#888">Literate Code</text>
+
+      <g transform="translate(-50, 125)">
+        <use href="#hexagon" transform="scale(0.9)" fill="#24292E" stroke="#4A90E2" stroke-width="2"/>
+        <text y="5" text-anchor="middle" font-family="monospace" font-size="16" fill="white">Git</text>
+      </g>
+      <text x="50" y="135" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#666">Version Control</text>
+
+      <g transform="translate(-50, 190)">
+        <use href="#hexagon" transform="scale(0.9)" fill="#FFF3E0" stroke="#4A90E2" stroke-width="2"/>
+        <text y="5" text-anchor="middle" font-family="monospace" font-size="16" fill="#4A90E2">pkg</text>
+      </g>
+      <text x="50" y="200" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#666">R Packages</text>
+    </g>
+
+    <!-- Secondary Subgroup: Academic Researchers -->
+    <g transform="translate(130, 60)">
+      <text x="0" y="20" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#4A90E2">
+        Academic Researchers
+      </text>
+
+      <g transform="translate(-50, 55)">
+        <use href="#hexagon" transform="scale(0.9)" fill="#F0F4F8" stroke="#4A90E2" stroke-width="2"/>
+        <text y="5" text-anchor="middle" font-family="monospace" font-size="16" fill="#4A90E2">book</text>
+      </g>
+      <text x="50" y="50" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#666">bookdown</text>
+      <text x="50" y="65" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" fill="#888">Academic Books</text>
+
+      <g transform="translate(-50, 120)">
+        <use href="#hexagon" transform="scale(0.9)" fill="#E8EAF6" stroke="#4A90E2" stroke-width="2"/>
+        <text y="5" text-anchor="middle" font-family="monospace" font-size="16" fill="#4A90E2">APA</text>
+      </g>
+      <text x="50" y="120" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#666">papaja</text>
+      <text x="50" y="135" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" fill="#888">Papers</text>
+
+      <g transform="translate(-50, 185)">
+        <use href="#hexagon" transform="scale(0.9)" fill="#FFF9C4" stroke="#4A90E2" stroke-width="2"/>
+        <text y="5" text-anchor="middle" font-family="monospace" font-size="16" fill="#4A90E2">cite</text>
+      </g>
+      <text x="50" y="195" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#666">Citations</text>
+    </g>
+
+    <!-- Tools Box -->
+    <g transform="translate(0, 50)">
+      <rect x="-180" y="280" width="360" height="120" rx="5" fill="white" stroke="#4A90E2" stroke-width="1"/>
+      <text x="0" y="305" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#4A90E2">
+        Key Packages &amp; Tools
+      </text>
+      <text x="-140" y="335" font-family="monospace" font-size="16" fill="#666">• dplyr, ggplot2, tidyr</text>
+      <text x="-140" y="352" font-family="monospace" font-size="16" fill="#666">• testthat, devtools, usethis</text>
+      <text x="-140" y="369" font-family="monospace" font-size="16" fill="#666">• bookdown, papaja, vitae</text>
+      <text x="-140" y="386" font-family="monospace" font-size="16" fill="#666">• targets (pipelines)</text>      
+    </g>
+  </g>
+
+  <!-- Business Stakeholders Section -->
+  <g transform="translate(900, 200)">
+    <!-- Section Header -->
+    <rect x="-220" y="-50" width="440" height="90" rx="10" fill="url(#bossGradient)" filter="url(#shadow)"/>
+    <text x="0" y="-15" text-anchor="middle" font-family="Arial, sans-serif" font-size="27" font-weight="bold" fill="white">
+      💼 Business Stakeholders
+    </text>
+    <text x="0" y="20" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" fill="white">
+      Management, Analysts, Domain Experts
+    </text>
+
+    <!-- Primary Subgroup: Executive Management -->
+    <g transform="translate(-150, 60)">
+      <text x="0" y="20" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#E74C3C">
+        Executives
+      </text>
+
+      <g transform="translate(0, 55)">
+        <use href="#hexagon" transform="scale(0.9)" fill="#FFF5F5" stroke="#E74C3C" stroke-width="2"/>
+        <text y="5" text-anchor="middle" font-family="Arial" font-size="16" fill="#E74C3C">PPT</text>
+      </g>
+      <text x="0" y="100" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#666">PowerPoint</text>
+      <text x="0" y="115" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" fill="#888">Board Reports</text>
+
+      <g transform="translate(0, 150)">
+        <use href="#hexagon" transform="scale(0.9)" fill="#FFEBEE" stroke="#E74C3C" stroke-width="2"/>
+        <text y="5" text-anchor="middle" font-family="Arial" font-size="16" fill="#E74C3C">Dash</text>
+      </g>
+      <text x="0" y="195" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#666">flexdashboard</text>
+      <text x="0" y="210" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" fill="#888">KPIs</text>
+    </g>
+
+    <!-- Secondary Subgroup: Business Analysts -->
+    <g transform="translate(0, 60)">
+      <text x="0" y="20" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#E74C3C">
+        Business Analysts
+      </text>
+
+      <g transform="translate(0, 55)">
+        <use href="#hexagon" transform="scale(0.9)" fill="#FFF0F0" stroke="#E74C3C" stroke-width="2"/>
+        <text y="5" text-anchor="middle" font-family="Arial" font-size="16" fill="#E74C3C">XLS</text>
+      </g>
+      <text x="0" y="100" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#666">Excel Reports</text>
+      <text x="0" y="115" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" fill="#888">openxlsx</text>
+
+      <g transform="translate(0, 150)">
+        <use href="#hexagon" transform="scale(0.9)" fill="#FFCDD2" stroke="#E74C3C" stroke-width="2"/>
+        <text y="5" text-anchor="middle" font-family="Arial" font-size="16" fill="#E74C3C">SQL</text>
+      </g>
+      <text x="0" y="195" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#666">Database</text>
+      <text x="0" y="210" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" fill="#888">DBI, dbplyr</text>
+    </g>
+
+    <!-- Tertiary Subgroup: Domain Specialists -->
+    <g transform="translate(170, 60)">
+      <text x="0" y="20" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#E74C3C">
+        Domain Experts
+      </text>
+
+      <g transform="translate(0, 55)">
+        <use href="#hexagon" transform="scale(0.9)" fill="#FCE4EC" stroke="#E74C3C" stroke-width="2"/>
+        <text y="5" text-anchor="middle" font-family="Arial" font-size="10" fill="#E74C3C">Med</text>
+      </g>
+      <text x="0" y="100" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#666">Clinical Trials</text>
+      <text x="0" y="115" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" fill="#888">survival</text>
+
+      <g transform="translate(0, 150)">
+        <use href="#hexagon" transform="scale(0.9)" fill="#FFEBEE" stroke="#E74C3C" stroke-width="2"/>
+        <text y="5" text-anchor="middle" font-family="Arial" font-size="16" fill="#E74C3C">Fin</text>
+      </g>
+      <text x="0" y="195" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#666">Risk Models</text>
+      <text x="0" y="210" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" fill="#888">quantmod</text>
+    </g>
+
+    <!-- Tools Box -->
+    <g transform="translate(0, 270)">
+      <rect x="-200" y="280" width="400" height="110" rx="5" fill="white" stroke="#E74C3C" stroke-width="1"/>
+      <text x="0" y="305" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#E74C3C">
+        Business Intelligence Tools
+      </text>
+      <text x="-150" y="325" font-family="Arial" font-size="16" fill="#666">• knitr, xaringan (presentations)</text>
+      <text x="-150" y="342" font-family="Arial" font-size="16" fill="#666">• flexdashboard, shinydashboard</text>
+      <text x="-150" y="359" font-family="Arial" font-size="16" fill="#666">• officer (MS Office integration)</text>
+      <text x="-150" y="376" font-family="Arial" font-size="16" fill="#666">• formattable, DT (tables)</text>
+    </g>
+  </g>
+
+  <!-- Public Audience Section -->
+  <g transform="translate(1500, 200)">
+    <!-- Section Header -->
+    <rect x="-200" y="-50" width="400" height="90" rx="10" fill="url(#publicGradient)" filter="url(#shadow)"/>
+    <text x="0" y="-15" text-anchor="middle" font-family="Arial, sans-serif" font-size="27" font-weight="bold" fill="white">
+      🌍 Public Audience
+    </text>
+    <text x="0" y="20" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" fill="white">
+      Citizens, Media, Students
+    </text>
+
+    <!-- Primary Subgroup: General Public -->
+    <g transform="translate(-150, 60)">
+      <text x="0" y="20" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#27AE60">
+        General Citizens
+      </text>
+
+      <g transform="translate(0, 55)">
+        <use href="#hexagon" transform="scale(0.9)" fill="#E8F5E9" stroke="#27AE60" stroke-width="2"/>
+        <text y="5" text-anchor="middle" font-family="monospace" font-size="15" fill="#27AE60">Shiny</text>
+      </g>
+      <text x="0" y="105" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#666">Interactive Apps</text>
+      <text x="0" y="120" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" fill="#888">Public Tools</text>
+
+      <g transform="translate(0, 155)">
+        <use href="#hexagon" transform="scale(0.9)" fill="#F0FFF0" stroke="#27AE60" stroke-width="2"/>
+        <text y="5" text-anchor="middle" font-family="Arial" font-size="16" fill="#27AE60">Web</text>
+      </g>
+      <text x="0" y="195" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#666">Websites</text>
+      <text x="0" y="210" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" fill="#888">Info Portals</text>
+    </g>
+
+    <!-- Secondary Subgroup: Data Journalists -->
+    <g transform="translate(0, 60)">
+      <text x="0" y="20" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#27AE60">
+        Data Journalists
+      </text>
+
+      <g transform="translate(0, 55)">
+        <use href="#hexagon" transform="scale(0.9)" fill="#C8E6C9" stroke="#27AE60" stroke-width="2"/>
+        <text y="5" text-anchor="middle" font-family="Arial" font-size="16" fill="#27AE60">News</text>
+      </g>
+      <text x="0" y="105" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#666">Data Stories</text>
+      <text x="0" y="120" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" fill="#888">ggplot2</text>
+
+      <g transform="translate(0, 155)">
+        <use href="#hexagon" transform="scale(0.9)" fill="#DCEDC8" stroke="#27AE60" stroke-width="2"/>
+        <text y="5" text-anchor="middle" font-family="Arial" font-size="16" fill="#27AE60">Map</text>
+      </g>
+      <text x="0" y="195" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#666">Maps/Charts</text>
+      <text x="0" y="210" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" fill="#888">leaflet, sf</text>
+    </g>
+
+    <!-- Tertiary Subgroup: Students -->
+    <g transform="translate(130, 60)">
+      <text x="0" y="20" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#27AE60">
+        Students
+      </text>
+
+      <g transform="translate(0, 55)">
+        <use href="#hexagon" transform="scale(0.9)" fill="#E0F2E0" stroke="#27AE60" stroke-width="2"/>
+        <text y="5" text-anchor="middle" font-family="Arial" font-size="16" fill="#27AE60">Blog</text>
+      </g>
+      <text x="0" y="105" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#666">blogdown</text>
+      <text x="0" y="120" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" fill="#888">Learning</text>
+
+      <g transform="translate(0, 155)">
+        <use href="#hexagon" transform="scale(0.9)" fill="#F1F8E9" stroke="#27AE60" stroke-width="2"/>
+        <text y="5" text-anchor="middle" font-family="Arial" font-size="16" fill="#27AE60">Learn</text>
+      </g>
+      <text x="0" y="195" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#666">learnr</text>
+      <text x="0" y="210" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" fill="#888">Tutorials</text>
+    </g>
+
+    <!-- Tools Box -->
+    <g transform="translate(0, 50)">
+      <rect x="-180" y="280" width="360" height="110" rx="5" fill="white" stroke="#27AE60" stroke-width="1"/>
+      <text x="0" y="305" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#27AE60">
+        Public Communication Tools
+      </text>
+      <text x="-150" y="325" font-family="Arial" font-size="17" fill="#666">• shiny (web applications)</text>
+      <text x="-150" y="342" font-family="Arial" font-size="17" fill="#666">• blogdown, distill (websites)</text>
+      <text x="-150" y="359" font-family="Arial" font-size="17" fill="#666">• plotly (interactive viz)</text>
+      <text x="-150" y="376" font-family="Arial" font-size="17" fill="#666">• rvest (web scraping)</text>    
+    </g>
+  </g>
+
+  <!-- Connecting arrows from center -->
+  <path d="M 820 580 L 480 420" stroke="#4A90E2" stroke-width="2.5" fill="none" marker-end="url(#arrow)" opacity="0.5"/>
+  <path d="M 900 520 L 900 470" stroke="#E74C3C" stroke-width="2.5" fill="none" marker-end="url(#arrow)" opacity="0.5"/>
+  <path d="M 980 580 L 1320 420" stroke="#27AE60" stroke-width="2.5" fill="none" marker-end="url(#arrow)" opacity="0.5"/>
+
+  <!-- Core Tidyverse Packages -->
+  <g transform="translate(350, 730)">
+    <rect x="-280" y="0" width="575" height="100" rx="10" fill="white" stroke="#4A90E2" stroke-width="2"/>
+    <text x="0" y="25" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#4A90E2">
+      Core Tidyverse Packages (2014-2020)
+    </text>
+    <g transform="translate(-240, 60)">
+      <use href="#hexagon" transform="scale(0.8)" fill="#E3F2FD" stroke="#4A90E2" stroke-width="1"/>
+      <text y="4" text-anchor="middle" font-family="monospace" font-size="12" fill="#4A90E2">dplyr</text>
+    </g>
+    <g transform="translate(-170, 60)">
+      <use href="#hexagon" transform="scale(0.8)" fill="#E3F2FD" stroke="#4A90E2" stroke-width="1"/>
+      <text y="4" text-anchor="middle" font-family="monospace" font-size="12" fill="#4A90E2">ggplot2</text>
+    </g>
+    <g transform="translate(-100, 60)">
+      <use href="#hexagon" transform="scale(0.8)" fill="#E3F2FD" stroke="#4A90E2" stroke-width="1"/>
+      <text y="4" text-anchor="middle" font-family="monospace" font-size="12" fill="#4A90E2">tidyr</text>
+    </g>
+    <g transform="translate(-30, 60)">
+      <use href="#hexagon" transform="scale(0.8)" fill="#E3F2FD" stroke="#4A90E2" stroke-width="1"/>
+      <text y="4" text-anchor="middle" font-family="monospace" font-size="12" fill="#4A90E2">readr</text>
+    </g>
+    <g transform="translate(40, 60)">
+      <use href="#hexagon" transform="scale(0.8)" fill="#E3F2FD" stroke="#4A90E2" stroke-width="1"/>
+      <text y="4" text-anchor="middle" font-family="monospace" font-size="12" fill="#4A90E2">purrr</text>
+    </g>
+    <g transform="translate(110, 60)">
+      <use href="#hexagon" transform="scale(0.8)" fill="#E3F2FD" stroke="#4A90E2" stroke-width="1"/>
+      <text y="4" text-anchor="middle" font-family="monospace" font-size="12" fill="#4A90E2">tibble</text>
+    </g>
+    <g transform="translate(180, 60)">
+      <use href="#hexagon" transform="scale(0.8)" fill="#E3F2FD" stroke="#4A90E2" stroke-width="1"/>
+      <text y="4" text-anchor="middle" font-family="monospace" font-size="12" fill="#4A90E2">forcats</text>
+    </g>
+    <g transform="translate(250, 60)">
+      <use href="#hexagon" transform="scale(0.8)" fill="#E3F2FD" stroke="#4A90E2" stroke-width="1"/>
+      <text y="4" text-anchor="middle" font-family="monospace" font-size="12" fill="#4A90E2">stringr</text>
+    </g>
+  </g>
+
+  <!-- Workflow & Key Insights -->
+
+
+  <!-- Timeline and Philosophy -->
+  <g transform="translate(550, -330)">
+    <text x="900" y="1100" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" fill="#95A5A6">
+      📅 Period: 2014-2020 | 🔧 Main IDE: RStudio | 📚 Philosophy: Tidy Data Principles
+    </text>
+    <text x="900" y="1125" text-anchor="middle" font-family="Arial, sans-serif" font-size="17" fill="#95A5A6">
+      💡 Key Innovation: Grammar of Graphics + Functional Programming + Reproducibility
+    </text>
+    <text x="900" y="1150" text-anchor="middle" font-family="monospace" font-size="17" fill="#34495E">
+      Import → Tidy → Transform → Visualize → Model → Communicate
+    </text>
+  </g>
+
+
+</svg>

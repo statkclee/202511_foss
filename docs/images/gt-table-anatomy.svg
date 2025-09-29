@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 50 700 370" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .title-text { font-family: 'Noto Sans KR', Arial, sans-serif; font-size: 16px; font-weight: bold; fill: #2c3e50; }
+      .bilingual-label { font-family: 'Noto Sans KR', Arial, sans-serif; font-size: 11px; font-weight: bold; fill: #2c3e50; }
+      .bilingual-sub { font-family: Arial, sans-serif; font-size: 9px; fill: #7f8c8d; font-style: italic; }
+      .table-text { font-family: 'Noto Sans KR', Arial, sans-serif; font-size: 11px; fill: #2c3e50; }
+      .annotation-kr { font-family: 'Noto Sans KR', Arial, sans-serif; font-size: 10px; fill: #e74c3c; font-weight: bold; }
+      .annotation-en { font-family: Arial, sans-serif; font-size: 8px; fill: #c0392b; font-style: italic; }
+    </style>
+  </defs>
+  
+  <!-- 테이블 배경 -->
+  <rect x="120" y="70" width="460" height="320" fill="#ffffff" stroke="#2c3e50" stroke-width="2" rx="3"/>
+  
+  <!-- 헤더 영역 -->
+  <rect x="120" y="70" width="460" height="50" fill="#d5c4f2" stroke="#9b59b6" stroke-width="1"/>
+  <text x="350" y="88" text-anchor="middle" class="bilingual-label">제목 (TITLE)</text>
+  <text x="350" y="105" text-anchor="middle" class="table-text">Palmer 펭귄 연구 결과</text>
+  
+  <!-- 부제목 영역 -->
+  <rect x="120" y="120" width="460" height="25" fill="#aed6f1" stroke="#3498db" stroke-width="1"/>
+  <text x="350" y="137" text-anchor="middle" class="table-text">부제목 (SUBTITLE)</text>
+  
+  <!-- 칼럼 라벨 영역 -->
+  <rect x="120" y="145" width="110" height="30" fill="#a9dfbf" stroke="#27ae60" stroke-width="1"/>
+  <rect x="230" y="145" width="110" height="30" fill="#f9e79f" stroke="#f39c12" stroke-width="1"/>
+  <rect x="340" y="145" width="110" height="30" fill="#f9e79f" stroke="#f39c12" stroke-width="1"/>
+  <rect x="450" y="145" width="130" height="30" fill="#f9e79f" stroke="#f39c12" stroke-width="1"/>
+  
+  <!-- 스터브헤드 -->
+  <text x="175" y="160" text-anchor="middle" class="bilingual-label">스터브헤드</text>
+  <text x="175" y="170" text-anchor="middle" class="bilingual-sub">STUBHEAD</text>
+  
+  <!-- 칼럼 라벨들 -->
+  <text x="285" y="155" text-anchor="middle" class="table-text">개체수</text>
+  <text x="285" y="165" text-anchor="middle" class="bilingual-sub">Count</text>
+  
+  <text x="395" y="155" text-anchor="middle" class="table-text">부리길이</text>
+  <text x="395" y="165" text-anchor="middle" class="bilingual-sub">Bill Length</text>
+  
+  <text x="515" y="155" text-anchor="middle" class="table-text">체중</text>
+  <text x="515" y="165" text-anchor="middle" class="bilingual-sub">Body Mass</text>
+  
+  <!-- 데이터 바디 -->
+  <!-- Adelie 그룹 -->
+  <rect x="120" y="175" width="110" height="25" fill="#e8f8f5" stroke="#2ecc71" stroke-width="1"/>
+  <rect x="230" y="175" width="350" height="25" fill="#fef9e7" stroke="#f1c40f" stroke-width="1"/>
+  <text x="140" y="190" class="table-text" font-weight="bold">Adelie</text>
+  <text x="285" y="190" text-anchor="middle" class="table-text">152</text>
+  <text x="395" y="190" text-anchor="middle" class="table-text">38.8±2.7</text>
+  <text x="515" y="190" text-anchor="middle" class="table-text">3701±459</text>
+  
+  <!-- Chinstrap 그룹 -->
+  <rect x="120" y="200" width="110" height="25" fill="#e8f8f5" stroke="#2ecc71" stroke-width="1"/>
+  <rect x="230" y="200" width="350" height="25" fill="#fef9e7" stroke="#f1c40f" stroke-width="1"/>
+  <text x="140" y="215" class="table-text" font-weight="bold">Chinstrap</text>
+  <text x="285" y="215" text-anchor="middle" class="table-text">68</text>
+  <text x="395" y="215" text-anchor="middle" class="table-text">48.8±3.3</text>
+  <text x="515" y="215" text-anchor="middle" class="table-text">3733±384</text>
+  
+  <!-- Gentoo 그룹 -->
+  <rect x="120" y="225" width="110" height="25" fill="#e8f8f5" stroke="#2ecc71" stroke-width="1"/>
+  <rect x="230" y="225" width="350" height="25" fill="#fef9e7" stroke="#f1c40f" stroke-width="1"/>
+  <text x="140" y="240" class="table-text" font-weight="bold">Gentoo</text>
+  <text x="285" y="240" text-anchor="middle" class="table-text">124</text>
+  <text x="395" y="240" text-anchor="middle" class="table-text">47.5±3.1</text>
+  <text x="515" y="240" text-anchor="middle" class="table-text">5076±504</text>
+  
+  <!-- 요약 행 -->
+  <rect x="120" y="250" width="460" height="25" fill="#fadbd8" stroke="#e74c3c" stroke-width="1"/>
+  <text x="140" y="265" class="table-text" font-weight="bold">전체 요약</text>
+  <text x="285" y="265" text-anchor="middle" class="table-text">344</text>
+  <text x="395" y="265" text-anchor="middle" class="table-text">43.9±5.5</text>
+  <text x="515" y="265" text-anchor="middle" class="table-text">4202±802</text>
+  
+  <!-- 각주 영역 -->
+  <rect x="120" y="275" width="460" height="45" fill="#f8f9fa" stroke="#95a5a6" stroke-width="1"/>
+  <text x="130" y="290" class="table-text">출처: Palmer Station LTER</text>
+  <text x="130" y="304" class="table-text">* 단위: 부리길이(mm), 체중(g)</text>
+  
+  <!-- 소스 노트 영역 -->
+  <rect x="120" y="320" width="460" height="25" fill="#ecf0f1" stroke="#95a5a6" stroke-width="1"/>
+  <text x="130" y="335" class="table-text">소스 노트 (SOURCE NOTES)</text>
+  
+  <!-- 라벨들 -->
+  <!-- 헤더 -->
+  <text x="50" y="95" class="annotation-kr">헤더</text>
+  <text x="50" y="107" class="annotation-en">(HEADER)</text>
+  <line x1="90" y1="95" x2="125" y2="95" stroke="#e74c3c" stroke-width="1" marker-end="url(#arrowhead)"/>
+  
+  <!-- 스터브 -->
+  <text x="40" y="210" class="annotation-kr">스터브</text>
+  <text x="40" y="222" class="annotation-en">(STUB)</text>
+  <line x1="90" y1="210" x2="125" y2="210" stroke="#e74c3c" stroke-width="1" marker-end="url(#arrowhead)"/>
+  
+  <!-- 칼럼 라벨 -->
+  <text x="610" y="155" class="annotation-kr">칼럼 라벨</text>
+  <text x="610" y="167" class="annotation-en">(COLUMN LABELS)</text>
+  <line x1="605" y1="160" x2="575" y2="160" stroke="#e74c3c" stroke-width="1" marker-end="url(#arrowhead)"/>
+  
+  <!-- 바디 -->
+  <text x="610" y="210" class="annotation-kr">바디</text>
+  <text x="610" y="222" class="annotation-en">(TABLE BODY)</text>
+  <line x1="605" y1="210" x2="575" y2="210" stroke="#e74c3c" stroke-width="1" marker-end="url(#arrowhead)"/>
+  
+  <!-- 요약 -->
+  <text x="610" y="260" class="annotation-kr">요약</text>
+  <text x="610" y="272" class="annotation-en">(SUMMARY)</text>
+  <line x1="605" y1="263" x2="575" y2="263" stroke="#e74c3c" stroke-width="1" marker-end="url(#arrowhead)"/>
+  
+  <!-- 각주 -->
+  <text x="40" y="295" class="annotation-kr">각주</text>
+  <text x="40" y="307" class="annotation-en">(FOOTNOTES)</text>
+  <line x1="90" y1="295" x2="125" y2="295" stroke="#e74c3c" stroke-width="1" marker-end="url(#arrowhead)"/>
+  
+  <!-- 테이블 푸터 -->
+  <text x="610" y="330" class="annotation-kr">테이블 푸터</text>
+  <text x="610" y="342" class="annotation-en">(TABLE FOOTER)</text>
+  <line x1="605" y1="332" x2="575" y2="332" stroke="#e74c3c" stroke-width="1" marker-end="url(#arrowhead)"/>
+  
+  <!-- 화살표 마커 정의 -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" 
+            refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#e74c3c"/>
+    </marker>
+    <marker id="arrowhead2" markerWidth="10" markerHeight="7" 
+            refX="1" refY="3.5" orient="auto">
+      <polygon points="10 0, 0 3.5, 10 7" fill="#e74c3c"/>
+    </marker>
+  </defs>
+  
+  <!-- 범례 -->
+  <rect x="20" y="360" width="660" height="35" fill="#f8f9fa" stroke="#bdc3c7" stroke-width="1" rx="3"/>
+  <text x="30" y="377" class="bilingual-label">구조별 색상 구분:</text>
+  <rect x="150" y="380" width="12" height="8" fill="#d5c4f2"/>
+  <text x="167" y="387" class="table-text" font-size="10px">헤더</text>
+  <rect x="205" y="380" width="12" height="8" fill="#a9dfbf"/>
+  <text x="222" y="387" class="table-text" font-size="10px">스터브헤드</text>
+  <rect x="285" y="380" width="12" height="8" fill="#f9e79f"/>
+  <text x="302" y="387" class="table-text" font-size="10px">라벨/바디</text>
+  <rect x="355" y="380" width="12" height="8" fill="#e8f8f5"/>
+  <text x="372" y="387" class="table-text" font-size="10px">스터브</text>
+  <rect x="410" y="380" width="12" height="8" fill="#fadbd8"/>
+  <text x="427" y="387" class="table-text" font-size="10px">요약</text>
+  <rect x="460" y="380" width="12" height="8" fill="#f8f9fa"/>
+  <text x="477" y="387" class="table-text" font-size="10px">푸터</text>
+</svg>

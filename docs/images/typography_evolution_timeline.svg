@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="900" height="720" viewBox="0 0 900 720" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- 그라디언트 정의 -->
+    <linearGradient id="classicGrad" x1="0%" y1="0%" x2="50%" y2="0%">
+      <stop offset="0%" style="stop-color:#8B4513;stop-opacity:0.06" />
+      <stop offset="100%" style="stop-color:#D2B48C;stop-opacity:0.06" />
+    </linearGradient>
+    <linearGradient id="industrialGrad" x1="0%" y1="50%" x2="50%" y2="100%">
+      <stop offset="0%" style="stop-color:#2C3E50;stop-opacity:0.06" />
+      <stop offset="100%" style="stop-color:#3498DB;stop-opacity:0.06" />
+    </linearGradient>
+    <linearGradient id="digitalGrad" x1="50%" y1="0%" x2="100%" y2="50%">
+      <stop offset="0%" style="stop-color:#27AE60;stop-opacity:0.06" />
+      <stop offset="100%" style="stop-color:#2ECC71;stop-opacity:0.06" />
+    </linearGradient>
+    <linearGradient id="aiGrad" x1="50%" y1="50%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#9B59B6;stop-opacity:0.06" />
+      <stop offset="100%" style="stop-color:#E67E22;stop-opacity:0.06" />
+    </linearGradient>
+    
+    <!-- 카드 그림자 효과 -->
+    <filter id="cardShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="1" dy="2" stdDeviation="3" flood-color="#000000" flood-opacity="0.12"/>
+    </filter>
+    
+    <style>
+      .timeline-line { stroke: #34495e; stroke-width: 3; opacity: 0.7; }
+      .timeline-dot-classic { fill: #8B4513; stroke: #fff; stroke-width: 2; filter: url(#cardShadow); }
+      .timeline-dot-industrial { fill: #2C3E50; stroke: #fff; stroke-width: 2; filter: url(#cardShadow); }
+      .timeline-dot-digital { fill: #27AE60; stroke: #fff; stroke-width: 2; filter: url(#cardShadow); }
+      .timeline-dot-ai { fill: #9B59B6; stroke: #fff; stroke-width: 2; filter: url(#cardShadow); }
+      
+      .title-text { font-family: 'Noto Serif KR', serif; font-size: 22px; font-weight: bold; fill: #2C3E50; text-anchor: middle; }
+      .era-text { font-family: 'Noto Sans KR', sans-serif; font-size: 14px; font-weight: bold; fill: #34495e; text-anchor: middle; }
+      .milestone-text { font-family: 'Noto Sans KR', sans-serif; font-size: 11px; font-weight: 600; fill: #2C3E50; }
+      .year-text { font-family: 'Noto Sans KR', sans-serif; font-size: 9px; font-weight: bold; fill: #7F8C8D; }
+      .description-text { font-family: 'Noto Sans KR', sans-serif; font-size: 8px; fill: #7F8C8D; }
+      .sample-text { font-size: 10px; opacity: 0.8; }
+      
+      .card-bg { fill: white; stroke: #E8E8E8; stroke-width: 1; filter: url(#cardShadow); rx: 4; }
+      .connector-line { stroke: #BDC3C7; stroke-width: 1; opacity: 0.6; }
+      .era-divider { stroke: #BDC3C7; stroke-width: 2; opacity: 0.4; stroke-dasharray: 5,5; }
+    </style>
+  </defs>
+
+  <!-- 배경 그라디언트 구역 (4분할) -->
+  <rect x="0" y="50" width="450" height="280" fill="url(#classicGrad)"/>
+  <rect x="0" y="330" width="450" height="280" fill="url(#industrialGrad)"/>
+  <rect x="450" y="50" width="450" height="280" fill="url(#digitalGrad)"/>
+  <rect x="450" y="330" width="450" height="280" fill="url(#aiGrad)"/>
+
+  <!-- 제목 -->
+  <text x="450" y="25" class="title-text">글꼴 진화의 역사 (1440-2020s)</text>
+
+  <!-- 중앙 구분선 -->
+  <line x1="450" y1="50" x2="450" y2="610" class="era-divider"/>
+
+  <!-- 좌측 타임라인 -->
+  <line x1="225" y1="70" x2="225" y2="590" class="timeline-line"/>
+  
+  <!-- 우측 타임라인 -->
+  <line x1="675" y1="70" x2="675" y2="590" class="timeline-line"/>
+
+  <!-- 시대 구분 텍스트 -->
+  <text x="225" y="85" class="era-text">고전 활자 시대</text>
+  <text x="675" y="85" class="era-text">디지털 혁명 시대</text>
+  <text x="225" y="345" class="era-text">산업 혁명 시대</text>
+  <text x="675" y="345" class="era-text">AI 글꼴 시대</text>
+
+  <!-- 좌측: 고전 활자 시대 -->
+  
+  <!-- 1440-1455: 구텐베르크 블랙레터 -->
+  <circle cx="225" cy="110" r="8" class="timeline-dot-classic"/>
+  <rect x="30" y="95" width="180" height="35" class="card-bg"/>
+  <line x1="210" y1="112" x2="217" y2="110" class="connector-line"/>
+  <text x="35" y="108" class="milestone-text">구텐베르크 블랙레터</text>
+  <text x="35" y="118" class="year-text">1440-1455</text>
+  <text x="35" y="126" class="description-text">최초의 금속 활자</text>
+  <text x="130" y="122" class="sample-text" style="font-family: serif; fill: #8B4513;">Gutenberg</text>
+
+  <!-- 1470: 니콜라스 젠슨 로만체 -->
+  <circle cx="225" cy="155" r="6" class="timeline-dot-classic"/>
+  <rect x="250" y="140" width="180" height="35" class="card-bg"/>
+  <line x1="233" y1="155" x2="250" y2="157" class="connector-line"/>
+  <text x="255" y="153" class="milestone-text">니콜라스 젠슨 로만체</text>
+  <text x="255" y="163" class="year-text">1470</text>
+  <text x="255" y="171" class="description-text">최초의 체계적 로만 서체</text>
+  <text x="340" y="167" class="sample-text" style="font-family: 'Times New Roman', serif; fill: #8B4513;">Jenson</text>
+
+  <!-- 1722: 윌리엄 캐슬론 -->
+  <circle cx="225" cy="200" r="6" class="timeline-dot-classic"/>
+  <rect x="30" y="185" width="180" height="35" class="card-bg"/>
+  <line x1="210" y1="202" x2="217" y2="200" class="connector-line"/>
+  <text x="35" y="198" class="milestone-text">윌리엄 캐슬론</text>
+  <text x="35" y="208" class="year-text">1722</text>
+  <text x="35" y="216" class="description-text">영국의 대표 구활자</text>
+  <text x="120" y="212" class="sample-text" style="font-family: 'Times New Roman', serif; fill: #8B4513;">Caslon</text>
+
+  <!-- 1757: 존 바스커빌 -->
+  <circle cx="225" cy="245" r="6" class="timeline-dot-classic"/>
+  <rect x="250" y="230" width="180" height="35" class="card-bg"/>
+  <line x1="233" y1="245" x2="250" y2="247" class="connector-line"/>
+  <text x="255" y="243" class="milestone-text">존 바스커빌</text>
+  <text x="255" y="253" class="year-text">1757</text>
+  <text x="255" y="261" class="description-text">전환기 서체의 대표</text>
+  <text x="330" y="257" class="sample-text" style="font-family: 'Times New Roman', serif; fill: #8B4513;">Baskerville</text>
+
+  <!-- 좌측: 산업 혁명 시대 -->
+  
+  <!-- 1920s: 바우하우스 - 푸투라 -->
+  <circle cx="225" cy="370" r="8" class="timeline-dot-industrial"/>
+  <rect x="30" y="355" width="180" height="35" class="card-bg"/>
+  <line x1="210" y1="372" x2="217" y2="370" class="connector-line"/>
+  <text x="35" y="368" class="milestone-text">바우하우스 - 푸투라</text>
+  <text x="35" y="378" class="year-text">1920년대</text>
+  <text x="35" y="386" class="description-text">기하학적 산세리프</text>
+  <text x="130" y="382" class="sample-text" style="font-family: 'Arial', sans-serif; fill: #2C3E50;">FUTURA</text>
+
+  <!-- 1957: 헬베티카 -->
+  <circle cx="225" cy="415" r="8" class="timeline-dot-industrial"/>
+  <rect x="250" y="400" width="180" height="35" class="card-bg"/>
+  <line x1="233" y1="415" x2="250" y2="417" class="connector-line"/>
+  <text x="255" y="413" class="milestone-text">헬베티카</text>
+  <text x="255" y="423" class="year-text">1957</text>
+  <text x="255" y="431" class="description-text">스위스 타이포그래피의 정점</text>
+  <text x="330" y="427" class="sample-text" style="font-family: 'Helvetica', sans-serif; fill: #2C3E50;">Helvetica</text>
+
+  <!-- 1960s: 포토타입세팅 -->
+  <circle cx="225" cy="460" r="6" class="timeline-dot-industrial"/>
+  <rect x="30" y="445" width="180" height="35" class="card-bg"/>
+  <line x1="210" y1="462" x2="217" y2="460" class="connector-line"/>
+  <text x="35" y="458" class="milestone-text">포토타입세팅</text>
+  <text x="35" y="468" class="year-text">1960년대</text>
+  <text x="35" y="476" class="description-text">광학적 활자 설정</text>
+  <text x="120" y="472" class="sample-text" style="font-family: 'Times New Roman', serif; fill: #2C3E50;">Photo Type</text>
+
+  <!-- 우측: 디지털 혁명 시대 -->
+  
+  <!-- 1980s: 포스트스크립트 -->
+  <circle cx="675" cy="110" r="8" class="timeline-dot-digital"/>
+  <rect x="480" y="95" width="180" height="35" class="card-bg"/>
+  <line x1="660" y1="112" x2="667" y2="110" class="connector-line"/>
+  <text x="485" y="108" class="milestone-text">포스트스크립트 폰트</text>
+  <text x="485" y="118" class="year-text">1980년대</text>
+  <text x="485" y="126" class="description-text">Adobe 디지털 폰트 혁명</text>
+  <text x="570" y="122" class="sample-text" style="font-family: 'Times New Roman', serif; fill: #27AE60;">PostScript</text>
+
+  <!-- 1991: 트루타입 -->
+  <circle cx="675" cy="155" r="6" class="timeline-dot-digital"/>
+  <rect x="700" y="140" width="180" height="35" class="card-bg"/>
+  <line x1="683" y1="155" x2="700" y2="157" class="connector-line"/>
+  <text x="705" y="153" class="milestone-text">트루타입 폰트</text>
+  <text x="705" y="163" class="year-text">1991</text>
+  <text x="705" y="171" class="description-text">Apple-Microsoft 공동개발</text>
+  <text x="780" y="167" class="sample-text" style="font-family: 'Arial', sans-serif; fill: #27AE60;">TrueType</text>
+
+  <!-- 1996: 오픈타입 -->
+  <circle cx="675" cy="200" r="6" class="timeline-dot-digital"/>
+  <rect x="480" y="185" width="180" height="35" class="card-bg"/>
+  <line x1="660" y1="202" x2="667" y2="200" class="connector-line"/>
+  <text x="485" y="198" class="milestone-text">오픈타입 표준</text>
+  <text x="485" y="208" class="year-text">1996</text>
+  <text x="485" y="216" class="description-text">Adobe-Microsoft 협력</text>
+  <text x="570" y="212" class="sample-text" style="font-family: 'Times New Roman', serif; fill: #27AE60;">OpenType</text>
+
+  <!-- 우측: AI 글꼴 시대 -->
+  
+  <!-- 2010: 웹폰트 @font-face -->
+  <circle cx="675" cy="370" r="8" class="timeline-dot-ai"/>
+  <rect x="480" y="355" width="180" height="35" class="card-bg"/>
+  <line x1="660" y1="372" x2="667" y2="370" class="connector-line"/>
+  <text x="485" y="368" class="milestone-text">웹폰트 @font-face</text>
+  <text x="485" y="378" class="year-text">2010</text>
+  <text x="485" y="386" class="description-text">웹에서 자유로운 글꼴 사용</text>
+  <text x="570" y="382" class="sample-text" style="font-family: 'Arial', sans-serif; fill: #9B59B6;">Web Fonts</text>
+
+  <!-- 2016: 가변 폰트 -->
+  <circle cx="675" cy="415" r="8" class="timeline-dot-ai"/>
+  <rect x="700" y="400" width="180" height="35" class="card-bg"/>
+  <line x1="683" y1="415" x2="700" y2="417" class="connector-line"/>
+  <text x="705" y="413" class="milestone-text">가변 폰트 표준</text>
+  <text x="705" y="423" class="year-text">2016</text>
+  <text x="705" y="431" class="description-text">하나의 파일로 무한 변주</text>
+  <text x="760" y="427" class="sample-text" style="font-family: 'Arial', sans-serif; fill: #9B59B6;">Variable Fonts</text>
+
+  <!-- 2020s: AI 글꼴 생성 -->
+  <circle cx="675" cy="470" r="8" class="timeline-dot-ai"/>
+  <rect x="480" y="450" width="180" height="45" class="card-bg"/>
+  <line x1="660" y1="472" x2="667" y2="470" class="connector-line"/>
+  <text x="485" y="463" class="milestone-text">AI 글꼴 생성 도구</text>
+  <text x="485" y="473" class="year-text">2020년대</text>
+  <text x="485" y="481" class="description-text">Fontjoy, FontGAN 등</text>
+  <text x="485" y="489" class="description-text">머신러닝 기반 생성</text>
+  <text x="570" y="480" class="sample-text" style="font-family: 'Arial', sans-serif; fill: #E67E22;">AI Fonts</text>
+
+  <!-- 하단 요약 -->
+  <text x="450" y="530" class="era-text">580년간 글꼴 기술의 진화</text>
+  <text x="450" y="545" class="description-text" style="font-size: 10px;">수작업 활자에서 인공지능 생성까지</text>
+
+  <!-- 범례 -->
+  <rect x="50" y="570" width="800" height="50" fill="white" stroke="#E8E8E8" stroke-width="1" rx="4" opacity="0.9"/>
+  <text x="60" y="585" class="milestone-text">범례:</text>
+  
+  <circle cx="80" cy="595" r="4" class="timeline-dot-classic"/>
+  <text x="90" y="599" class="description-text">고전 활자</text>
+  
+  <circle cx="170" cy="595" r="4" class="timeline-dot-industrial"/>
+  <text x="180" y="599" class="description-text">산업 혁명</text>
+  
+  <circle cx="260" cy="595" r="4" class="timeline-dot-digital"/>
+  <text x="270" y="599" class="description-text">디지털 혁명</text>
+  
+  <circle cx="350" cy="595" r="4" class="timeline-dot-ai"/>
+  <text x="360" y="599" class="description-text">AI 글꼴</text>
+
+  <text x="450" y="610" class="description-text">좌측: 전통 활자 기술 | 우측: 디지털 글꼴 기술</text>
+
+</svg>

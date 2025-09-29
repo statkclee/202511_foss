@@ -1,0 +1,436 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 30 2400 1250">
+  <defs>
+    <!-- Background gradient -->
+    <linearGradient id="backgroundGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#FEFEFE;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#F8F9FA;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#F0F2F5;stop-opacity:1" />
+    </linearGradient>
+
+    <!-- Main timeline gradient -->
+    <linearGradient id="timelineGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#FF6B35;stop-opacity:1" />
+      <stop offset="16.6%" style="stop-color:#F7931E;stop-opacity:1" />
+      <stop offset="33.3%" style="stop-color:#8E44AD;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#3498DB;stop-opacity:1" />
+      <stop offset="66.6%" style="stop-color:#27AE60;stop-opacity:1" />
+      <stop offset="83.3%" style="stop-color:#E74C3C;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1ABC9C;stop-opacity:1" />
+    </linearGradient>
+
+    <!-- Field-specific gradients -->
+    <linearGradient id="astronomy" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#FF8A65;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FF6B35;stop-opacity:1" />
+    </linearGradient>
+
+    <linearGradient id="physics" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFB74D;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#F7931E;stop-opacity:1" />
+    </linearGradient>
+
+    <linearGradient id="computing" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#BA68C8;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#8E44AD;stop-opacity:1" />
+    </linearGradient>
+
+    <linearGradient id="environment" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#66BB6A;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#27AE60;stop-opacity:1" />
+    </linearGradient>
+
+    <linearGradient id="ai" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#EF5350;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#E74C3C;stop-opacity:1" />
+    </linearGradient>
+
+    <linearGradient id="lifescience" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#4ECDC4;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1ABC9C;stop-opacity:1" />
+    </linearGradient>
+
+    <linearGradient id="internet" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#64B5F6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3498DB;stop-opacity:1" />
+    </linearGradient>
+
+    <!-- Drop shadow filter -->
+    <filter id="cardShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="3" dy="6" stdDeviation="5" flood-color="#000000" flood-opacity="0.15"/>
+    </filter>
+
+    <!-- Text shadow -->
+    <filter id="textShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="1" dy="2" stdDeviation="1" flood-color="#000000" flood-opacity="0.4"/>
+    </filter>
+
+    <style>
+      .main-title {
+        font-family: Georgia, serif;
+        font-size: 42px;
+        font-weight: bold;
+        fill: #2C3E50;
+      }
+
+      .subtitle {
+        font-family: Arial, sans-serif;
+        font-size: 22px;
+        fill: #7F8C8D;
+      }
+
+      .field-title {
+        font-family: Arial, sans-serif;
+        font-size: 26px;
+        font-weight: bold;
+        fill: #ffffff;
+      }
+
+      .field-subtitle {
+        font-family: Arial, sans-serif;
+        font-size: 20px;
+        fill: #F8F9FA;
+      }
+
+      .case-title {
+        font-family: Arial, sans-serif;
+        font-size: 20px;
+        font-weight: bold;
+      }
+
+      .case-desc {
+        font-family: Arial, sans-serif;
+        font-size: 18px;
+        fill: #2C3E50;
+      }
+
+      .case-impact {
+        font-family: Arial, sans-serif;
+        font-size: 16px;
+        font-weight: bold;
+        fill: #27AE60;
+      }
+
+      .case-data {
+        font-family: Arial, sans-serif;
+        font-size: 15px;
+        fill: #E74C3C;
+        font-weight: bold;
+      }
+
+      .year-label {
+        font-family: Arial, sans-serif;
+        font-size: 26px;
+        font-weight: bold;
+        fill: #34495E;
+      }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="2400" height="1400" fill="url(#backgroundGradient)"/>
+
+  <!-- Title Section -->
+  <text x="1200" y="100" text-anchor="middle" class="main-title" filter="url(#textShadow)">
+    Data-Driven Scientific Revolution: Breakthroughs That Transformed Humanity
+  </text>
+  <text x="1200" y="130" text-anchor="middle" class="subtitle">
+    From Cosmic Discoveries to AI: The Power of Data in Scientific Innovation (1929-2022)
+  </text>
+
+  <!-- Main Timeline -->
+  <rect x="150" y="695" width="2100" height="12" fill="url(#timelineGradient)" rx="6" filter="url(#cardShadow)"/>
+
+  <!-- Timeline markers -->
+  <circle cx="300" cy="701" r="10" fill="url(#astronomy)" filter="url(#cardShadow)"/>
+  <circle cx="500" cy="701" r="10" fill="url(#physics)" filter="url(#cardShadow)"/>
+  <circle cx="700" cy="701" r="10" fill="url(#computing)" filter="url(#cardShadow)"/>
+  <circle cx="900" cy="701" r="10" fill="url(#internet)" filter="url(#cardShadow)"/>
+  <circle cx="1100" cy="701" r="10" fill="url(#environment)" filter="url(#cardShadow)"/>
+  <circle cx="1400" cy="701" r="10" fill="url(#lifescience)" filter="url(#cardShadow)"/>
+  <circle cx="1700" cy="701" r="10" fill="url(#ai)" filter="url(#cardShadow)"/>
+  <circle cx="2000" cy="701" r="10" fill="url(#ai)" filter="url(#cardShadow)"/>
+
+  <!-- Year labels -->
+  <text x="300" y="735" text-anchor="middle" class="year-label">1929</text>
+  <text x="500" y="735" text-anchor="middle" class="year-label">1947</text>
+  <text x="700" y="735" text-anchor="middle" class="year-label">1969</text>
+  <text x="900" y="735" text-anchor="middle" class="year-label">1991</text>
+  <text x="1100" y="735" text-anchor="middle" class="year-label">1992</text>
+  <text x="1400" y="735" text-anchor="middle" class="year-label">2003</text>
+  <text x="1700" y="735" text-anchor="middle" class="year-label">2016</text>
+  <text x="2000" y="735" text-anchor="middle" class="year-label">2022</text>
+
+  <!-- 1. Hubble's Law (1929) - Astronomy -->
+  <g transform="translate(300, 200)">
+    <rect x="-130" y="0" width="300" height="450" fill="white" stroke="url(#astronomy)" stroke-width="4" rx="15" filter="url(#cardShadow)"/>
+
+    <!-- Header -->
+    <rect x="-130" y="0" width="300" height="70" fill="url(#astronomy)" rx="15"/>
+    <text class="field-title" x="0" y="30" text-anchor="middle">🌌 Astronomy</text>
+    <text class="field-subtitle" x="0" y="50" text-anchor="middle">Cosmic Data Revolution</text>
+
+    <!-- Content -->
+    <text class="case-title" x="20" y="105" text-anchor="middle" fill="#FF6B35">Hubble's Law Discovery</text>
+    <text class="case-desc" x="20" y="125" text-anchor="middle">(1929)</text>
+
+    <text class="case-desc" x="20" y="155" text-anchor="middle">🔭 24 galaxies analyzed</text>
+    <text class="case-desc" x="20" y="175" text-anchor="middle">📏 Hubble's Cepheid measurements</text>
+
+    <text class="case-desc" x="20" y="205" text-anchor="middle">📊 Redshift-distance correlation</text>
+    <text class="case-desc" x="20" y="225" text-anchor="middle">⚡ H₀ = 500 km/s/Mpc (Hubble 1929)</text>
+
+    <text class="case-impact" x="20" y="260" text-anchor="middle">Impact: Expanding universe proven</text>
+    <text class="case-impact" x="20" y="280" text-anchor="middle">Foundation of Big Bang theory</text>
+
+    <text class="case-data" x="20" y="315" text-anchor="middle">🌟 Combined redshift &amp; distance data</text>
+    <text class="case-data" x="20" y="335" text-anchor="middle">📈 Linear velocity-distance law</text>
+
+    <text class="case-title" x="20" y="370" text-anchor="middle" fill="#FF6B35">LIGO Gravitational Waves</text>
+    <text class="case-desc" x="20" y="390" text-anchor="middle">(2015)</text>
+    <text class="case-data" x="20" y="410" text-anchor="middle">🔊 GW150914: 1.3 billion light-years</text>
+    <text class="case-data" x="20" y="430" text-anchor="middle">⚡ 10⁻²¹ strain measurement</text>
+
+    <!-- Connection line -->
+    <line x1="0" y1="450" x2="0" y2="490" stroke="#FF6B35" stroke-width="4"/>
+  </g>
+
+  <!-- 2. Transistor &amp; Physics (1947) -->
+  <g transform="translate(500, 780)">
+    <rect x="-130" y="0" width="300" height="450" fill="white" stroke="url(#physics)" stroke-width="4" rx="15" filter="url(#cardShadow)"/>
+
+    <!-- Header -->
+    <rect x="-130" y="0" width="300" height="70" fill="url(#physics)" rx="15"/>
+    <text class="field-title" x="0" y="30" text-anchor="middle">⚛️ Physics</text>
+    <text class="field-subtitle" x="0" y="50" text-anchor="middle">Fundamental Discoveries</text>
+
+    <!-- Content -->
+    <text class="case-title" x="20" y="105" text-anchor="middle" fill="#F7931E">Transistor Revolution</text>
+    <text class="case-desc" x="20" y="125" text-anchor="middle">(1947)</text>
+
+    <text class="case-desc" x="20" y="155" text-anchor="middle">🔬 Bell Labs: Bardeen, Brattain, Shockley</text>
+    <text class="case-desc" x="20" y="175" text-anchor="middle">📊 Solid-state physics experiments</text>
+
+    <text class="case-desc" x="20" y="205" text-anchor="middle">⚡ Point-contact transistor</text>
+    <text class="case-desc" x="20" y="225" text-anchor="middle">🔢 Current amplification: 100x</text>
+
+    <text class="case-impact" x="20" y="260" text-anchor="middle">Impact: Digital age foundation</text>
+    <text class="case-impact" x="20" y="280" text-anchor="middle">Replaced vacuum tubes</text>
+
+    <text class="case-data" x="20" y="315" text-anchor="middle">💡 Semiconductor junction theory</text>
+    <text class="case-data" x="20" y="335" text-anchor="middle">🏭 Moore's Law begins (1965)</text>
+
+    <text class="case-title" x="20" y="370" text-anchor="middle" fill="#F7931E">Higgs Boson Discovery</text>
+    <text class="case-desc" x="20" y="390" text-anchor="middle">(2012)</text>
+    <text class="case-data" x="20" y="410" text-anchor="middle">🔬 ATLAS &amp; CMS: 5σ confidence</text>
+    <text class="case-data" x="20" y="430" text-anchor="middle">⚡ 7 &amp; 8 TeV (LHC Run 1) at 125 GeV</text>
+
+    <!-- Connection line -->
+    <line x1="0" y1="0" x2="0" y2="-50" stroke="#F7931E" stroke-width="4"/>
+  </g>
+
+  <!-- 3. ARPANET &amp; Computing (1969) -->
+  <g transform="translate(700, 200)">
+    <rect x="-130" y="0" width="300" height="450" fill="white" stroke="url(#computing)" stroke-width="4" rx="15" filter="url(#cardShadow)"/>
+
+    <!-- Header -->
+    <rect x="-130" y="0" width="300" height="70" fill="url(#computing)" rx="15"/>
+    <text class="field-title" x="0" y="30" text-anchor="middle">💻 Computing</text>
+    <text class="field-subtitle" x="0" y="50" text-anchor="middle">Digital Revolution</text>
+
+    <!-- Content -->
+    <text class="case-title" x="20" y="105" text-anchor="middle" fill="#8E44AD">ARPANET Birth</text>
+    <text class="case-desc" x="20" y="125" text-anchor="middle">(1969)</text>
+
+    <text class="case-desc" x="20" y="155" text-anchor="middle">🌐 UCLA ↔ SRI first message</text>
+    <text class="case-desc" x="20" y="175" text-anchor="middle">📦 Packet-switching protocol</text>
+
+    <text class="case-desc" x="20" y="205" text-anchor="middle">📊 Network topology algorithms</text>
+    <text class="case-desc" x="20" y="225" text-anchor="middle">🔗 TCP/IP development (1974)</text>
+
+    <text class="case-impact" x="20" y="260" text-anchor="middle">Impact: Internet foundation</text>
+    <text class="case-impact" x="20" y="280" text-anchor="middle">Global communication network</text>
+
+    <text class="case-data" x="20" y="315" text-anchor="middle">🚀 4 nodes (1969) → 213 (1981)</text>
+    <text class="case-data" x="20" y="335" text-anchor="middle">📈 Exponential growth model</text>
+
+    <text class="case-title" x="20" y="370" text-anchor="middle" fill="#8E44AD">Intel 4004 Microprocessor</text>
+    <text class="case-desc" x="20" y="390" text-anchor="middle">(1971)</text>
+    <text class="case-data" x="20" y="410" text-anchor="middle">🔢 2,300 transistors, 4-bit CPU</text>
+    <text class="case-data" x="20" y="430" text-anchor="middle">⚡ 740 kHz clock speed</text>
+
+    <!-- Connection line -->
+    <line x1="0" y1="450" x2="0" y2="490" stroke="#8E44AD" stroke-width="4"/>
+  </g>
+
+  <!-- 4. World Wide Web (1991) -->
+  <g transform="translate(900, 780)">
+    <rect x="-130" y="0" width="300" height="450" fill="white" stroke="url(#internet)" stroke-width="4" rx="15" filter="url(#cardShadow)"/>
+
+    <!-- Header -->
+    <rect x="-130" y="0" width="300" height="70" fill="url(#internet)" rx="15"/>
+    <text class="field-title" x="0" y="30" text-anchor="middle">🌐 Internet</text>
+    <text class="field-subtitle" x="0" y="50" text-anchor="middle">Web Revolution</text>
+
+    <!-- Content -->
+    <text class="case-title" x="20" y="105" text-anchor="middle" fill="#3498DB">World Wide Web</text>
+    <text class="case-desc" x="20" y="125" text-anchor="middle">(1991)</text>
+
+    <text class="case-desc" x="20" y="155" text-anchor="middle">🏛️ CERN: Tim Berners-Lee</text>
+    <text class="case-desc" x="20" y="175" text-anchor="middle">📄 HTML, HTTP, URLs</text>
+
+    <text class="case-desc" x="20" y="205" text-anchor="middle">🔗 Hyperlink data structure</text>
+    <text class="case-desc" x="20" y="225" text-anchor="middle">📊 First web browser &amp; server</text>
+
+    <text class="case-impact" x="20" y="260" text-anchor="middle">Impact: Information democracy</text>
+    <text class="case-impact" x="20" y="280" text-anchor="middle">Global knowledge sharing</text>
+
+    <text class="case-data" x="20" y="315" text-anchor="middle">📈 1 website (1991) → 1.7B (2022)</text>
+    <text class="case-data" x="20" y="335" text-anchor="middle">🌍 5 billion internet users</text>
+
+    <text class="case-title" x="20" y="370" text-anchor="middle" fill="#3498DB">iPhone Launch</text>
+    <text class="case-desc" x="20" y="390" text-anchor="middle">(2007)</text>
+    <text class="case-data" x="20" y="410" text-anchor="middle">📱 Multi-touch interface data</text>
+    <text class="case-data" x="20" y="430" text-anchor="middle">📊 6M units first year</text>
+
+    <!-- Connection line -->
+    <line x1="0" y1="0" x2="0" y2="-50" stroke="#3498DB" stroke-width="4"/>
+  </g>
+
+  <!-- 5. COBE &amp; Environment (1992) -->
+  <g transform="translate(1100, 200)">
+    <rect x="-130" y="0" width="300" height="450" fill="white" stroke="url(#environment)" stroke-width="4" rx="15" filter="url(#cardShadow)"/>
+
+    <!-- Header -->
+    <rect x="-130" y="0" width="300" height="70" fill="url(#environment)" rx="15"/>
+    <text class="field-title" x="0" y="30" text-anchor="middle">🌍 Environment</text>
+    <text class="field-subtitle" x="0" y="50" text-anchor="middle">Climate &amp; Space Data</text>
+
+    <!-- Content -->
+    <text class="case-title" x="20" y="105" text-anchor="middle" fill="#27AE60">COBE Mission</text>
+    <text class="case-desc" x="20" y="125" text-anchor="middle">(1992)</text>
+
+    <text class="case-desc" x="20" y="155" text-anchor="middle">🛰️ Cosmic Background Radiation</text>
+    <text class="case-desc" x="20" y="175" text-anchor="middle">📡 Differential Microwave Radiometer</text>
+
+    <text class="case-desc" x="20" y="205" text-anchor="middle">🌡️ 2.725K blackbody spectrum</text>
+    <text class="case-desc" x="20" y="225" text-anchor="middle">🗺️ Full-sky temperature map</text>
+
+    <text class="case-impact" x="20" y="260" text-anchor="middle">Impact: Big Bang confirmation</text>
+    <text class="case-impact" x="20" y="280" text-anchor="middle">First CMB anisotropy detection</text>
+
+    <text class="case-data" x="20" y="315" text-anchor="middle">📊 Temperature variations μK level</text>
+    <text class="case-data" x="20" y="335" text-anchor="middle">🎯 Cosmic structure formation seeds</text>
+
+    <text class="case-title" x="20" y="370" text-anchor="middle" fill="#27AE60">Keeling Curve</text>
+    <text class="case-desc" x="20" y="390" text-anchor="middle">(1958-present)</text>
+    <text class="case-data" x="20" y="410" text-anchor="middle">📈 CO₂: 315ppm → 421ppm</text>
+    <text class="case-data" x="20" y="430" text-anchor="middle">📊 Mauna Loa daily measurements</text>
+
+    <!-- Connection line -->
+    <line x1="0" y1="450" x2="0" y2="490" stroke="#27AE60" stroke-width="4"/>
+  </g>
+
+  <!-- 6. Human Genome Project (2003) -->
+  <g transform="translate(1400, 780)">
+    <rect x="-130" y="0" width="300" height="450" fill="white" stroke="url(#lifescience)" stroke-width="4" rx="15" filter="url(#cardShadow)"/>
+
+    <!-- Header -->
+    <rect x="-130" y="0" width="300" height="70" fill="url(#lifescience)" rx="15"/>
+    <text class="field-title" x="0" y="30" text-anchor="middle">🧬 Life Sciences</text>
+    <text class="field-subtitle" x="0" y="50" text-anchor="middle">Genomic Revolution</text>
+
+    <!-- Content -->
+    <text class="case-title" x="20" y="105" text-anchor="middle" fill="#1ABC9C">Human Genome Project</text>
+    <text class="case-desc" x="20" y="125" text-anchor="middle">(1990-2003)</text>
+
+    <text class="case-desc" x="20" y="155" text-anchor="middle">🧬 3.2 billion base pairs</text>
+    <text class="case-desc" x="20" y="175" text-anchor="middle">🔬 Sanger sequencing method</text>
+
+    <text class="case-desc" x="20" y="205" text-anchor="middle">🌍 20 countries collaboration</text>
+    <text class="case-desc" x="20" y="225" text-anchor="middle">💰 $2.7 billion investment</text>
+
+    <text class="case-impact" x="20" y="260" text-anchor="middle">Impact: Personalized medicine</text>
+    <text class="case-impact" x="20" y="280" text-anchor="middle">Genomic medicine era</text>
+
+    <text class="case-data" x="20" y="315" text-anchor="middle">🎯 20,000-25,000 genes identified</text>
+    <text class="case-data" x="20" y="335" text-anchor="middle">📉 Cost: $100M → &lt;$1,000</text>
+
+    <text class="case-title" x="20" y="370" text-anchor="middle" fill="#1ABC9C">DNA Double Helix</text>
+    <text class="case-desc" x="20" y="390" text-anchor="middle">(1953)</text>
+    <text class="case-data" x="20" y="410" text-anchor="middle">🔬 X-ray crystallography data</text>
+    <text class="case-data" x="20" y="430" text-anchor="middle">📏 Watson, Crick, Franklin</text>
+
+    <!-- Connection line -->
+    <line x1="0" y1="0" x2="0" y2="-50" stroke="#1ABC9C" stroke-width="4"/>
+  </g>
+
+  <!-- 7. AlphaGo &amp; AI (2016) -->
+  <g transform="translate(1700, 200)">
+    <rect x="-130" y="0" width="300" height="450" fill="white" stroke="url(#ai)" stroke-width="4" rx="15" filter="url(#cardShadow)"/>
+
+    <!-- Header -->
+    <rect x="-130" y="0" width="300" height="70" fill="url(#ai)" rx="15"/>
+    <text class="field-title" x="0" y="30" text-anchor="middle">🤖 Artificial Intelligence</text>
+    <text class="field-subtitle" x="0" y="50" text-anchor="middle">Machine Learning Era</text>
+
+    <!-- Content -->
+    <text class="case-title" x="20" y="105" text-anchor="middle" fill="#E74C3C">AlphaGo Victory</text>
+    <text class="case-desc" x="20" y="125" text-anchor="middle">(2016)</text>
+
+    <text class="case-desc" x="20" y="155" text-anchor="middle">🎯 vs Lee Sedol: 4-1 victory</text>
+    <text class="case-desc" x="20" y="175" text-anchor="middle">🧠 Deep reinforcement learning</text>
+
+    <text class="case-desc" x="20" y="205" text-anchor="middle">📊 30M Go game dataset</text>
+    <text class="case-desc" x="20" y="225" text-anchor="middle">🔢 Monte Carlo Tree Search</text>
+
+    <text class="case-impact" x="20" y="260" text-anchor="middle">Impact: AI breakthrough moment</text>
+    <text class="case-impact" x="20" y="280" text-anchor="middle">Complex strategy mastery</text>
+
+    <text class="case-data" x="20" y="315" text-anchor="middle">⚡ 1,920 CPUs, 280 GPUs</text>
+    <text class="case-data" x="20" y="335" text-anchor="middle">🎮 10³⁶⁰ possible positions</text>
+
+    <text class="case-title" x="20" y="370" text-anchor="middle" fill="#E74C3C">Deep Blue Chess</text>
+    <text class="case-desc" x="20" y="390" text-anchor="middle">(1997)</text>
+    <text class="case-data" x="20" y="410" text-anchor="middle">♔ vs Kasparov: 3.5-2.5</text>
+    <text class="case-data" x="20" y="430" text-anchor="middle">🔢 200M positions/second</text>
+
+    <!-- Connection line -->
+    <line x1="0" y1="450" x2="0" y2="490" stroke="#E74C3C" stroke-width="4"/>
+  </g>
+
+  <!-- 8. ChatGPT &amp; Modern AI (2022) -->
+  <g transform="translate(2000, 780)">
+    <rect x="-130" y="0" width="300" height="450" fill="white" stroke="url(#ai)" stroke-width="4" rx="15" filter="url(#cardShadow)"/>
+
+    <!-- Header -->
+    <rect x="-130" y="0" width="300" height="70" fill="url(#ai)" rx="15"/>
+    <text class="field-title" x="0" y="30" text-anchor="middle">🔥 Modern AI</text>
+    <text class="field-subtitle" x="0" y="50" text-anchor="middle">Language Models</text>
+
+    <!-- Content -->
+    <text class="case-title" x="20" y="105" text-anchor="middle" fill="#E74C3C">ChatGPT Launch</text>
+    <text class="case-desc" x="20" y="125" text-anchor="middle">(2022)</text>
+
+    <text class="case-desc" x="20" y="155" text-anchor="middle">🧠 GPT-3.5 Transformer model</text>
+    <text class="case-desc" x="20" y="175" text-anchor="middle">📚 175B parameters</text>
+
+    <text class="case-desc" x="20" y="205" text-anchor="middle">🌐 300B+ words training data</text>
+    <text class="case-desc" x="20" y="225" text-anchor="middle">👥 RLHF fine-tuning</text>
+
+    <text class="case-impact" x="20" y="260" text-anchor="middle">Impact: 100M users in 2 months</text>
+    <text class="case-impact" x="20" y="280" text-anchor="middle">AI democratization</text>
+
+    <text class="case-data" x="20" y="315" text-anchor="middle">📈 Fastest app to 100M users</text>
+    <text class="case-data" x="20" y="335" text-anchor="middle">🔥 $10B+ market impact</text>
+
+    <text class="case-title" x="20" y="370" text-anchor="middle" fill="#E74C3C">AlphaFold2</text>
+    <text class="case-desc" x="20" y="390" text-anchor="middle">(2020)</text>
+    <text class="case-data" x="20" y="410" text-anchor="middle">🧬 200M+ protein structures</text>
+    <text class="case-data" x="20" y="430" text-anchor="middle">🎯 90%+ accuracy prediction</text>
+
+    <!-- Connection line -->
+    <line x1="0" y1="0" x2="0" y2="-50" stroke="#E74C3C" stroke-width="4"/>
+  </g>
+
+</svg>

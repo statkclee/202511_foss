@@ -1,0 +1,209 @@
+<svg width="1200" height="500" viewBox="0 0 1200 500" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- 그라데이션 정의 -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f8f9ff;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#e8f2ff;stop-opacity:1"/>
+    </linearGradient>
+    
+    <linearGradient id="headerGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4f46e5;stop-opacity:0.1"/>
+      <stop offset="100%" style="stop-color:#6366f1;stop-opacity:0.05"/>
+    </linearGradient>
+
+    <!-- 그림자 필터 -->
+    <filter id="dropshadow">
+      <feDropShadow dx="1" dy="1" stdDeviation="2" flood-color="#000000" flood-opacity="0.1"/>
+    </filter>
+  </defs>
+  
+  <style>
+    .title { font-family: 'Noto Sans KR', sans-serif; font-size: 24px; font-weight: bold; fill: #1e293b; text-anchor: middle; }
+    .subtitle { font-family: 'Noto Sans KR', sans-serif; font-size: 16px; fill: #64748b; text-anchor: middle; }
+    .word-text { font-family: 'Times New Roman', serif; font-size: 18px; font-weight: 600; text-anchor: middle; }
+    .alphabet-box { font-family: 'Courier New', monospace; font-size: 16px; fill: #1e293b; text-anchor: middle; font-weight: bold; }
+    .alphabet-used { fill: #059669; }
+    .explanation { font-family: 'Noto Sans KR', sans-serif; font-size: 12px; fill: #475569; text-anchor: middle; }
+    .connection-line { stroke-width: 2; fill: none; opacity: 0.8; }
+  </style>
+
+  <!-- 배경 -->
+  <rect width="1200" height="500" fill="url(#bgGrad)"/>
+  
+  <!-- 상단 제목 -->
+  <rect x="50" y="20" width="1100" height="60" rx="10" fill="url(#headerGrad)" stroke="#e2e8f0" stroke-width="1" filter="url(#dropshadow)"/>
+  <text x="600" y="45" class="title">The Quick Brown Fox Jumps Over the Lazy Dog</text>
+  <text x="600" y="70" class="subtitle">모든 알파벳이 최소 한 번 연결됨</text>
+
+  <!-- 단어 배치 -->
+  <g id="words">
+    <rect x="80" y="110" width="60" height="30" rx="5" fill="#e0e7ff" stroke="#3730a3" stroke-width="1"/>
+    <text x="110" y="130" class="word-text" style="fill: #3730a3;">The</text>
+    
+    <rect x="170" y="110" width="70" height="30" rx="5" fill="#fef3c7" stroke="#d97706" stroke-width="1"/>
+    <text x="205" y="130" class="word-text" style="fill: #d97706;">quick</text>
+    
+    <rect x="270" y="110" width="70" height="30" rx="5" fill="#fecaca" stroke="#dc2626" stroke-width="1"/>
+    <text x="305" y="130" class="word-text" style="fill: #dc2626;">brown</text>
+    
+    <rect x="370" y="110" width="50" height="30" rx="5" fill="#dcfce7" stroke="#059669" stroke-width="1"/>
+    <text x="395" y="130" class="word-text" style="fill: #059669;">fox</text>
+    
+    <rect x="450" y="110" width="70" height="30" rx="5" fill="#f3e8ff" stroke="#7c3aed" stroke-width="1"/>
+    <text x="485" y="130" class="word-text" style="fill: #7c3aed;">jumps</text>
+    
+    <rect x="550" y="110" width="60" height="30" rx="5" fill="#fdf2f8" stroke="#db2777" stroke-width="1"/>
+    <text x="580" y="130" class="word-text" style="fill: #db2777;">over</text>
+    
+    <rect x="640" y="110" width="50" height="30" rx="5" fill="#e0f2fe" stroke="#0891b2" stroke-width="1"/>
+    <text x="665" y="130" class="word-text" style="fill: #0891b2;">the</text>
+    
+    <rect x="720" y="110" width="60" height="30" rx="5" fill="#fef7ed" stroke="#ea580c" stroke-width="1"/>
+    <text x="750" y="130" class="word-text" style="fill: #ea580c;">lazy</text>
+    
+    <rect x="810" y="110" width="50" height="30" rx="5" fill="#ecfdf5" stroke="#10b981" stroke-width="1"/>
+    <text x="835" y="130" class="word-text" style="fill: #10b981;">dog</text>
+  </g>
+
+  <!-- A부터 Z까지 알파벳 한 줄 배치 -->
+  <g id="alphabet-row" transform="translate(100, 400)">
+    <!-- A -->
+    <rect x="0" y="0" width="35" height="35" rx="3" fill="#dcfce7" stroke="#059669" stroke-width="2"/>
+    <text x="17.5" y="23" class="alphabet-box alphabet-used">A</text>
+    <!-- B -->
+    <rect x="40" y="0" width="35" height="35" rx="3" fill="#dcfce7" stroke="#059669" stroke-width="2"/>
+    <text x="57.5" y="23" class="alphabet-box alphabet-used">B</text>
+    <!-- C -->
+    <rect x="80" y="0" width="35" height="35" rx="3" fill="#dcfce7" stroke="#059669" stroke-width="2"/>
+    <text x="97.5" y="23" class="alphabet-box alphabet-used">C</text>
+    <!-- D -->
+    <rect x="120" y="0" width="35" height="35" rx="3" fill="#dcfce7" stroke="#059669" stroke-width="2"/>
+    <text x="137.5" y="23" class="alphabet-box alphabet-used">D</text>
+    <!-- E -->
+    <rect x="160" y="0" width="35" height="35" rx="3" fill="#dcfce7" stroke="#059669" stroke-width="2"/>
+    <text x="177.5" y="23" class="alphabet-box alphabet-used">E</text>
+    <!-- F -->
+    <rect x="200" y="0" width="35" height="35" rx="3" fill="#dcfce7" stroke="#059669" stroke-width="2"/>
+    <text x="217.5" y="23" class="alphabet-box alphabet-used">F</text>
+    <!-- G -->
+    <rect x="240" y="0" width="35" height="35" rx="3" fill="#dcfce7" stroke="#059669" stroke-width="2"/>
+    <text x="257.5" y="23" class="alphabet-box alphabet-used">G</text>
+    <!-- H -->
+    <rect x="280" y="0" width="35" height="35" rx="3" fill="#dcfce7" stroke="#059669" stroke-width="2"/>
+    <text x="297.5" y="23" class="alphabet-box alphabet-used">H</text>
+    <!-- I -->
+    <rect x="320" y="0" width="35" height="35" rx="3" fill="#dcfce7" stroke="#059669" stroke-width="2"/>
+    <text x="337.5" y="23" class="alphabet-box alphabet-used">I</text>
+    <!-- J -->
+    <rect x="360" y="0" width="35" height="35" rx="3" fill="#dcfce7" stroke="#059669" stroke-width="2"/>
+    <text x="377.5" y="23" class="alphabet-box alphabet-used">J</text>
+    <!-- K -->
+    <rect x="400" y="0" width="35" height="35" rx="3" fill="#dcfce7" stroke="#059669" stroke-width="2"/>
+    <text x="417.5" y="23" class="alphabet-box alphabet-used">K</text>
+    <!-- L -->
+    <rect x="440" y="0" width="35" height="35" rx="3" fill="#dcfce7" stroke="#059669" stroke-width="2"/>
+    <text x="457.5" y="23" class="alphabet-box alphabet-used">L</text>
+    <!-- M -->
+    <rect x="480" y="0" width="35" height="35" rx="3" fill="#dcfce7" stroke="#059669" stroke-width="2"/>
+    <text x="497.5" y="23" class="alphabet-box alphabet-used">M</text>
+    <!-- N -->
+    <rect x="520" y="0" width="35" height="35" rx="3" fill="#dcfce7" stroke="#059669" stroke-width="2"/>
+    <text x="537.5" y="23" class="alphabet-box alphabet-used">N</text>
+    <!-- O -->
+    <rect x="560" y="0" width="35" height="35" rx="3" fill="#dcfce7" stroke="#059669" stroke-width="2"/>
+    <text x="577.5" y="23" class="alphabet-box alphabet-used">O</text>
+    <!-- P -->
+    <rect x="600" y="0" width="35" height="35" rx="3" fill="#dcfce7" stroke="#059669" stroke-width="2"/>
+    <text x="617.5" y="23" class="alphabet-box alphabet-used">P</text>
+    <!-- Q -->
+    <rect x="640" y="0" width="35" height="35" rx="3" fill="#dcfce7" stroke="#059669" stroke-width="2"/>
+    <text x="657.5" y="23" class="alphabet-box alphabet-used">Q</text>
+    <!-- R -->
+    <rect x="680" y="0" width="35" height="35" rx="3" fill="#dcfce7" stroke="#059669" stroke-width="2"/>
+    <text x="697.5" y="23" class="alphabet-box alphabet-used">R</text>
+    <!-- S -->
+    <rect x="720" y="0" width="35" height="35" rx="3" fill="#dcfce7" stroke="#059669" stroke-width="2"/>
+    <text x="737.5" y="23" class="alphabet-box alphabet-used">S</text>
+    <!-- T -->
+    <rect x="760" y="0" width="35" height="35" rx="3" fill="#dcfce7" stroke="#059669" stroke-width="2"/>
+    <text x="777.5" y="23" class="alphabet-box alphabet-used">T</text>
+    <!-- U -->
+    <rect x="800" y="0" width="35" height="35" rx="3" fill="#dcfce7" stroke="#059669" stroke-width="2"/>
+    <text x="817.5" y="23" class="alphabet-box alphabet-used">U</text>
+    <!-- V -->
+    <rect x="840" y="0" width="35" height="35" rx="3" fill="#dcfce7" stroke="#059669" stroke-width="2"/>
+    <text x="857.5" y="23" class="alphabet-box alphabet-used">V</text>
+    <!-- W -->
+    <rect x="880" y="0" width="35" height="35" rx="3" fill="#dcfce7" stroke="#059669" stroke-width="2"/>
+    <text x="897.5" y="23" class="alphabet-box alphabet-used">W</text>
+    <!-- X -->
+    <rect x="920" y="0" width="35" height="35" rx="3" fill="#dcfce7" stroke="#059669" stroke-width="2"/>
+    <text x="937.5" y="23" class="alphabet-box alphabet-used">X</text>
+    <!-- Y -->
+    <rect x="960" y="0" width="35" height="35" rx="3" fill="#dcfce7" stroke="#059669" stroke-width="2"/>
+    <text x="977.5" y="23" class="alphabet-box alphabet-used">Y</text>
+    <!-- Z -->
+    <rect x="1000" y="0" width="35" height="35" rx="3" fill="#dcfce7" stroke="#059669" stroke-width="2"/>
+    <text x="1017.5" y="23" class="alphabet-box alphabet-used">Z</text>
+  </g>
+
+  <!-- 연결선들 -->
+  <g id="connections">
+    <!-- The (T, H, E) - 파란색 -->
+    <path d="M 110 140 Q 200 250 877.5 400" class="connection-line" stroke="#3730a3" stroke-dasharray="3,2"/>
+    <path d="M 110 140 Q 180 250 397.5 400" class="connection-line" stroke="#3730a3" stroke-dasharray="3,2"/>
+    <path d="M 110 140 Q 160 250 277.5 400" class="connection-line" stroke="#3730a3" stroke-dasharray="3,2"/>
+    
+    <!-- quick (Q, U, I, C, K) - 주황색 -->
+    <path d="M 205 140 Q 250 250 757.5 400" class="connection-line" stroke="#d97706"/>
+    <path d="M 205 140 Q 270 250 917.5 400" class="connection-line" stroke="#d97706"/>
+    <path d="M 205 140 Q 200 250 437.5 400" class="connection-line" stroke="#d97706"/>
+    <path d="M 205 140 Q 180 250 197.5 400" class="connection-line" stroke="#d97706"/>
+    <path d="M 205 140 Q 220 250 517.5 400" class="connection-line" stroke="#d97706"/>
+    
+    <!-- brown (B, R, O, W, N) - 빨간색 -->
+    <path d="M 305 140 Q 220 250 157.5 400" class="connection-line" stroke="#dc2626"/>
+    <path d="M 305 140 Q 350 250 797.5 400" class="connection-line" stroke="#dc2626"/>
+    <path d="M 305 140 Q 380 250 677.5 400" class="connection-line" stroke="#dc2626"/>
+    <path d="M 305 140 Q 400 250 997.5 400" class="connection-line" stroke="#dc2626"/>
+    <path d="M 305 140 Q 320 250 637.5 400" class="connection-line" stroke="#dc2626"/>
+    
+    <!-- fox (F, O, X) - 초록색 -->
+    <path d="M 395 140 Q 280 250 317.5 400" class="connection-line" stroke="#059669"/>
+    <path d="M 395 140 Q 420 250 677.5 400" class="connection-line" stroke="#059669"/>
+    <path d="M 395 140 Q 460 250 1037.5 400" class="connection-line" stroke="#059669"/>
+    
+    <!-- jumps (J, U, M, P, S) - 보라색 -->
+    <path d="M 485 140 Q 380 250 477.5 400" class="connection-line" stroke="#7c3aed"/>
+    <path d="M 485 140 Q 450 250 917.5 400" class="connection-line" stroke="#7c3aed"/>
+    <path d="M 485 140 Q 480 250 597.5 400" class="connection-line" stroke="#7c3aed"/>
+    <path d="M 485 140 Q 510 250 717.5 400" class="connection-line" stroke="#7c3aed"/>
+    <path d="M 485 140 Q 520 250 837.5 400" class="connection-line" stroke="#7c3aed"/>
+    
+    <!-- over (O, V, E, R) - 핑크색 -->
+    <path d="M 580 140 Q 560 250 677.5 400" class="connection-line" stroke="#db2777"/>
+    <path d="M 580 140 Q 600 250 957.5 400" class="connection-line" stroke="#db2777"/>
+    <path d="M 580 140 Q 520 250 277.5 400" class="connection-line" stroke="#db2777"/>
+    <path d="M 580 140 Q 620 250 797.5 400" class="connection-line" stroke="#db2777"/>
+    
+    <!-- the (T, H, E) - 하늘색 -->
+    <path d="M 665 140 Q 680 250 877.5 400" class="connection-line" stroke="#0891b2" stroke-dasharray="3,2"/>
+    <path d="M 665 140 Q 620 250 397.5 400" class="connection-line" stroke="#0891b2" stroke-dasharray="3,2"/>
+    <path d="M 665 140 Q 580 250 277.5 400" class="connection-line" stroke="#0891b2" stroke-dasharray="3,2"/>
+    
+    <!-- lazy (L, A, Z, Y) - 갈색 -->
+    <path d="M 750 140 Q 650 250 557.5 400" class="connection-line" stroke="#ea580c"/>
+    <path d="M 750 140 Q 600 250 117.5 400" class="connection-line" stroke="#ea580c"/>
+    <path d="M 750 140 Q 800 250 1117.5 400" class="connection-line" stroke="#ea580c"/>
+    <path d="M 750 140 Q 820 250 1077.5 400" class="connection-line" stroke="#ea580c"/>
+    
+    <!-- dog (D, O, G) - 진한 초록색 -->
+    <path d="M 835 140 Q 720 250 237.5 400" class="connection-line" stroke="#10b981"/>
+    <path d="M 835 140 Q 760 250 677.5 400" class="connection-line" stroke="#10b981"/>
+    <path d="M 835 140 Q 780 250 357.5 400" class="connection-line" stroke="#10b981"/>
+  </g>
+  
+  <!-- 하단 설명 -->
+  <rect x="200" y="460" width="800" height="30" rx="5" fill="#ffffff" stroke="#d1d5db" stroke-width="1" filter="url(#dropshadow)"/>
+  <text x="600" y="480" class="explanation" style="font-weight: bold; fill: #059669;">✓ 모든 26개 알파벳이 최소 1개 이상의 연결선을 가짐 → 완벽한 팬그램 증명</text>
+</svg>

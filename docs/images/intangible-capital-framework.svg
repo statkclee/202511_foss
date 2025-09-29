@@ -1,0 +1,199 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 900" width="1400" height="900">
+  <defs>
+    <style><![CDATA[
+      .title { font-family: Inter, Segoe UI, Arial, sans-serif; font-size: 40px; font-weight: 900; fill: #f8fafc; }
+      .subtitle { font-family: Inter, Segoe UI, Arial, sans-serif; font-size: 22px; font-weight: 600; fill: #cbd5e1; }
+      .h1 { font-family: Inter, Segoe UI, Arial, sans-serif; font-size: 24px; font-weight: 800; fill: #ffffff; }
+      .h2 { font-family: Inter, Segoe UI, Arial, sans-serif; font-size: 20px; font-weight: 800; fill: #f1f5f9; }
+      .p { font-family: Inter, Segoe UI, Arial, sans-serif; font-size: 16px; font-weight: 600; fill: #e5e7eb; }
+      .small { font-family: Inter, Segoe UI, Arial, sans-serif; font-size: 14px; font-weight: 700; fill: #cbd5e1; }
+    ]]></style>
+
+    <!-- Background -->
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+
+    <!-- Investment area gradients -->
+    <linearGradient id="gradHuman" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3b82f6"/>
+      <stop offset="100%" stop-color="#2563eb"/>
+    </linearGradient>
+
+    <linearGradient id="gradCulture" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10b981"/>
+      <stop offset="100%" stop-color="#059669"/>
+    </linearGradient>
+
+    <linearGradient id="gradProcess" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8b5cf6"/>
+      <stop offset="100%" stop-color="#7c3aed"/>
+    </linearGradient>
+
+    <linearGradient id="gradEthics" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#d97706"/>
+    </linearGradient>
+
+    <linearGradient id="gradEducation" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ef4444"/>
+      <stop offset="100%" stop-color="#dc2626"/>
+    </linearGradient>
+
+    <!-- Central core -->
+    <radialGradient id="gradCore" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#34d399"/>
+      <stop offset="100%" stop-color="#10b981"/>
+    </radialGradient>
+
+    <!-- Effects -->
+    <filter id="shadow"><feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#000" flood-opacity="0.4"/></filter>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge> 
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Arrow markers -->
+    <marker id="arrowIn" markerWidth="16" markerHeight="12" refX="14" refY="6" orient="auto">
+      <polygon points="0 0, 16 6, 0 12" fill="#34d399"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1400" height="900" fill="url(#bg)"/>
+
+  <!-- Header -->
+  <text x="700" y="60" text-anchor="middle" class="title">무형자본 투자 프레임워크</text>
+  <text x="700" y="95" text-anchor="middle" class="subtitle">Intangible Capital Investment Framework for AI Transformation</text>
+
+  <!-- Central AI Technology Core -->
+  <g transform="translate(700,450)">
+    <circle cx="0" cy="0" r="100" fill="url(#gradCore)" filter="url(#shadow)"/>
+    <text x="0" y="-15" text-anchor="middle" class="h1">생성형 AI</text>
+    <text x="0" y="10" text-anchor="middle" class="small">Generative AI</text>
+    <text x="0" y="30" text-anchor="middle" class="small">기술 핵심</text>
+  </g>
+
+  <!-- Investment Area 1: Human Capital (Top Left) -->
+  <g transform="translate(200,200)">
+    <rect x="0" y="0" width="300" height="180" rx="20" fill="url(#gradHuman)" filter="url(#shadow)" opacity="0.9"/>
+    <text x="150" y="30" text-anchor="middle" class="h1">인력 개발</text>
+    <text x="150" y="55" text-anchor="middle" class="small">Human Capital Development</text>
+    
+    <g transform="translate(20,80)" class="p">
+      <text x="0" y="0">• AI 활용 전문 인력 양성</text>
+      <text x="0" y="25">• 프롬프트 엔지니어링 교육</text>
+      <text x="0" y="50">• AI-인간 협업 스킬</text>
+      <text x="0" y="75">• 지속적 학습 체계</text>
+    </g>
+    
+    <!-- Arrow to center -->
+    <line x1="250" y1="150" x2="450" y2="320" stroke="#34d399" stroke-width="4" marker-end="url(#arrowIn)" filter="url(#glow)"/>
+  </g>
+
+  <!-- Investment Area 2: Organizational Culture (Top Right) -->
+  <g transform="translate(900,200)">
+    <rect x="0" y="0" width="300" height="180" rx="20" fill="url(#gradCulture)" filter="url(#shadow)" opacity="0.9"/>
+    <text x="150" y="30" text-anchor="middle" class="h1">조직 문화</text>
+    <text x="150" y="55" text-anchor="middle" class="small">Organizational Culture</text>
+    
+    <g transform="translate(20,80)" class="p">
+      <text x="0" y="0">• AI 협업 중심 문화 구축</text>
+      <text x="0" y="25">• 실험과 학습 장려</text>
+      <text x="0" y="50">• 실패 허용 환경</text>
+      <text x="0" y="75">• 혁신 마인드셋</text>
+    </g>
+    
+    <!-- Arrow to center -->
+    <line x1="950" y1="150" x2="750" y2="320" stroke="#34d399" stroke-width="4" marker-end="url(#arrowIn)" filter="url(#glow)"/>
+  </g>
+
+  <!-- Investment Area 3: Process Redesign (Left) -->
+  <g transform="translate(50,420)">
+    <rect x="0" y="0" width="300" height="180" rx="20" fill="url(#gradProcess)" filter="url(#shadow)" opacity="0.9"/>
+    <text x="150" y="30" text-anchor="middle" class="h1">프로세스 재설계</text>
+    <text x="150" y="55" text-anchor="middle" class="small">Process Redesign</text>
+    
+    <g transform="translate(20,80)" class="p">
+      <text x="0" y="0">• AI 네이티브 워크플로우</text>
+      <text x="0" y="25">• 자동화 통합 설계</text>
+      <text x="0" y="50">• 인간-AI 역할 분담</text>
+      <text x="0" y="75">• 효율성 최적화</text>
+    </g>
+    
+    <!-- Arrow to center -->
+    <line x1="350" y1="90" x2="590" y2="400" stroke="#34d399" stroke-width="4" marker-end="url(#arrowIn)" filter="url(#glow)"/>
+  </g>
+
+  <!-- Investment Area 4: Ethical Framework (Right) -->
+  <g transform="translate(1050,420)">
+    <rect x="0" y="0" width="300" height="180" rx="20" fill="url(#gradEthics)" filter="url(#shadow)" opacity="0.9"/>
+    <text x="150" y="30" text-anchor="middle" class="h1">윤리적 프레임워크</text>
+    <text x="150" y="55" text-anchor="middle" class="small">Ethical Framework</text>
+    
+    <g transform="translate(20,80)" class="p">
+      <text x="0" y="0">• 책임 있는 AI 사용</text>
+      <text x="0" y="25">• 편향성 방지 체계</text>
+      <text x="0" y="50">• 투명성 및 설명가능성</text>
+      <text x="0" y="75">• 개인정보 보호</text>
+    </g>
+    
+    <!-- Arrow to center -->
+    <line x1="1050" y1="90" x2="810" y2="400" stroke="#34d399" stroke-width="4" marker-end="url(#arrowIn)" filter="url(#glow)"/>
+  </g>
+
+  <!-- Investment Area 5: Education System (Bottom) -->
+  <g transform="translate(550,650)">
+    <rect x="0" y="0" width="300" height="180" rx="20" fill="url(#gradEducation)" filter="url(#shadow)" opacity="0.9"/>
+    <text x="150" y="30" text-anchor="middle" class="h1">교육 시스템</text>
+    <text x="150" y="55" text-anchor="middle" class="small">Education System</text>
+    
+    <g transform="translate(20,80)" class="p">
+      <text x="0" y="0">• AI 시대 역량 중심 교육</text>
+      <text x="0" y="25">• 비판적 사고 능력</text>
+      <text x="0" y="50">• 창의적 문제해결</text>
+      <text x="0" y="75">• 평생학습 체계</text>
+    </g>
+    
+    <!-- Arrow to center -->
+    <line x1="700" y1="650" x2="700" y2="560" stroke="#34d399" stroke-width="4" marker-end="url(#arrowIn)" filter="url(#glow)"/>
+  </g>
+
+  <!-- Time Investment Indicator -->
+  <g transform="translate(700,150)">
+    <rect x="-200" y="0" width="400" height="40" rx="20" fill="#1f2937" opacity="0.8"/>
+    <text x="0" y="27" text-anchor="middle" class="h2" fill="#fbbf24">투자 기간: 20-40년의 지속적 투자 필요</text>
+  </g>
+
+  <!-- ROI Indicator -->
+  <g transform="translate(100,750)">
+    <rect x="0" y="0" width="1200" height="80" rx="15" fill="#1f2937" opacity="0.8"/>
+    <text x="600" y="25" text-anchor="middle" class="h1">예상 ROI (Return on Investment)</text>
+    <text x="600" y="50" text-anchor="middle" class="p">무형자본 1달러 투자 → 생산성 3-5달러 증가 (전기화 경험 기준)</text>
+    <text x="600" y="70" text-anchor="middle" class="small">$1 intangible capital investment → $3-5 productivity increase (based on electrification experience)</text>
+  </g>
+
+  <!-- Success Factors -->
+  <g transform="translate(50,120)">
+    <rect x="0" y="0" width="200" height="120" rx="10" fill="#065f46" opacity="0.8"/>
+    <text x="100" y="25" text-anchor="middle" class="h2" fill="#6ee7b7">성공 요인</text>
+    <text x="20" y="50" class="small">• 동시 투자</text>
+    <text x="20" y="70" class="small">• 지속적 관리</text>
+    <text x="20" y="90" class="small">• 측정 및 개선</text>
+    <text x="20" y="110" class="small">• 경영진 리더십</text>
+  </g>
+
+  <!-- Risk Factors -->
+  <g transform="translate(1150,120)">
+    <rect x="0" y="0" width="200" height="120" rx="10" fill="#7f1d1d" opacity="0.8"/>
+    <text x="100" y="25" text-anchor="middle" class="h2" fill="#fca5a5">위험 요인</text>
+    <text x="20" y="50" class="small">• 부분적 투자</text>
+    <text x="20" y="70" class="small">• 조직 저항</text>
+    <text x="20" y="90" class="small">• 단기 성과 압박</text>
+    <text x="20" y="110" class="small">• 기술만 우선</text>
+  </g>
+</svg>

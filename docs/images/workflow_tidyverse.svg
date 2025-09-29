@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="300" viewBox="0 0 800 300" xmlns="http://www.w3.org/2000/svg">
+  <!-- Main container with border -->
+  <rect x="20" y="20" width="760" height="230" rx="15" ry="15" fill="none" stroke="#333" stroke-width="2"/>
+
+  <!-- Gray background for "Understand" section -->
+  <rect x="250" y="80" width="350" height="120" rx="10" ry="10" fill="#e5e5e5" opacity="0.7"/>
+
+  <!-- Import box -->
+  <text x="80" y="140" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#333">Import</text>
+
+  <!-- Arrow 1: Import to Tidy -->
+  <path d="M 120 135 L 160 135" stroke="#333" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+
+  <!-- Tidy box -->
+  <text x="200" y="140" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#333">Tidy</text>
+
+  <!-- Arrow 2: Tidy to Transform -->
+  <path d="M 230 135 L 280 135" stroke="#333" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+
+  <!-- Transform box -->
+  <text x="340" y="140" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#333">Transform</text>
+
+  <!-- Arrow 3: Transform to Visualise (curved up) -->
+  <path d="M 390 135 Q 410 90 475 110" stroke="#333" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+
+  <!-- Visualise box -->
+  <text x="520" y="120" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#333">Visualise</text>
+
+  <!-- Arrow 4: Visualise to Model (curved down) -->
+  <path d="M 520 130 Q 520 170 480 180" stroke="#333" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+
+  <!-- Model box (in blue) -->
+  <text x="440" y="185" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#007acc">Model</text>
+
+  <!-- Arrow 5: Model to Transform (curved left) -->
+  <path d="M 400 180 Q 370 180 340 160" stroke="#333" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+
+  <!-- Arrow 6: Transform to Communicate -->
+  <path d="M 610 135 L 650 135" stroke="#333" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+
+  <!-- Communicate box -->
+  <text x="715" y="140" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#333">Communicate</text>
+
+  <!-- Understand label -->
+  <text x="425" y="225" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="normal" fill="#666">Understand</text>
+
+  <!-- Program label -->
+  <text x="80" y="280" text-anchor="start" font-family="Arial, sans-serif" font-size="24" font-weight="normal" fill="#666">Program</text>
+
+  <!-- Arrow marker definition -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7"
+     refX="7" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#333" />
+    </marker>
+  </defs>
+</svg>

@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 1000 650" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .title { font: bold 22px 'Noto Sans KR', Arial, sans-serif; fill: #2c3e50; text-anchor: middle; }
+      .subtitle { font: bold 16px 'Noto Sans KR', Arial, sans-serif; fill: #34495e; text-anchor: middle; }
+      .section-title { font: bold 14px 'Noto Sans KR', Arial, sans-serif; fill: white; text-anchor: middle; text-shadow: 1px 1px 2px rgba(0,0,0,0.7); }
+      .emph-title { font: bold 12px 'Noto Sans KR', Arial, sans-serif; fill: white; text-anchor: middle; text-shadow: 1px 1px 2px rgba(0,0,0,0.7); }
+      .component-text { font: 12px 'Noto Sans KR', Arial, sans-serif; fill: #2c3e50; text-anchor: start; }
+      .component-text-small { font: 10px 'Noto Sans KR', Arial, sans-serif; fill: #5a5a5a; text-anchor: start; }
+      .numbering-text { font: 10px 'Courier New', monospace; fill: #6c757d; text-anchor: middle; }
+      .highlight-text { font: bold 11px 'Noto Sans KR', Arial, sans-serif; fill: #e74c3c; text-anchor: start; }
+      
+      .western-front { fill: #3498db; stroke: #2980b9; stroke-width: 2; rx: 4; }
+      .western-body { fill: #2ecc71; stroke: #27ae60; stroke-width: 2; rx: 4; }
+      .western-back { fill: #f39c12; stroke: #e67e22; stroke-width: 2; rx: 4; }
+      
+      .korean-front { fill: #e74c3c; stroke: #c0392b; stroke-width: 2; rx: 4; }
+      .korean-body { fill: #2ecc71; stroke: #27ae60; stroke-width: 2; rx: 4; }
+      .korean-back { fill: #9b59b6; stroke: #8e44ad; stroke-width: 2; rx: 4; }
+      
+      .unique-element { stroke: #e74c3c; stroke-width: 2; stroke-dasharray: 4,2; }
+      .divider { stroke: #bdc3c7; stroke-width: 2; }
+      .arrow { stroke: #34495e; stroke-width: 1.0; fill: none; marker-end: url(#arrowhead); }
+      .comparison-arrow { stroke: #e74c3c; stroke-width: 2; fill: none; marker-end: url(#comparison-arrowhead); stroke-dasharray: 8,4; }
+      .flow-text { font: 11px 'Noto Sans KR', Arial, sans-serif; fill: #34495e; text-anchor: middle; }
+    </style>
+    
+    <marker id="arrowhead" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto">
+      <polygon points="0 0, 10 4, 0 8" fill="#34495e" />
+    </marker>
+    <marker id="comparison-arrowhead" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#e74c3c" />
+    </marker>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1000" height="700" fill="#ffffff"/>
+  
+  <!-- Divider line -->
+  <line x1="500" y1="90" x2="500" y2="630" class="divider"/>
+  
+  <!-- Western Standard (Left Side) -->
+  <g transform="translate(50, 80)">
+    <text x="200" y="20" class="subtitle">서양 표준 (시카고 매뉴얼)</text>
+    
+    <!-- Front Matter -->
+    <rect x="0" y="40" width="400" height="180" class="western-front"/>
+    <text x="200" y="58" class="section-title">Front Matter</text>
+    
+    <!-- Page numbering indicator -->
+    <text x="20" y="28" class="numbering-text">i, ii, iii, iv...</text>
+    
+    <g transform="translate(15, 75)">
+      <text x="0" y="15" class="component-text">• Half-title page</text>
+      <text x="0" y="30" class="component-text">• Title page</text>
+      <text x="0" y="45" class="component-text">• Copyright page</text>
+      <text x="0" y="60" class="component-text">• Dedication</text>
+      <text x="0" y="75" class="component-text">• Table of Contents</text>
+      <text x="0" y="90" class="component-text">• List of Illustrations/Tables</text>
+      <text x="0" y="105" class="component-text">• Foreword (by others)</text>
+      <text x="0" y="120" class="component-text">• Preface (by author)</text>
+      <text x="0" y="135" class="component-text">• Acknowledgments</text>
+      <text x="250" y="30" class="emph-title">* Half-title(속표지) 독특</text>
+      <text x="250" y="45" class="emph-title">* 저자 중심적</text>
+    </g>
+    
+    <!-- Body Text -->
+    <rect x="0" y="240" width="400" height="120" class="western-body"/>
+    <text x="200" y="258" class="section-title">Body Text</text>
+    
+    <!-- Page numbering indicator -->
+    <text x="10" y="230" class="numbering-text">1, 2, 3, 4...</text>
+    
+    <g transform="translate(15, 285)">
+      <text x="0" y="15" class="component-text">• Chapters/Sections</text>
+      <text x="0" y="30" class="component-text">• Main content</text>
+      <text x="0" y="45" class="component-text">• Part divisions (if applicable)</text>
+      <text x="0" y="60" class="component-text">• Continuous Arabic numbering</text>
+    </g>
+    
+    <!-- Back Matter -->
+    <rect x="0" y="380" width="400" height="160" class="western-back"/>
+    <text x="200" y="398" class="section-title">Back Matter</text>
+    
+    <!-- Page numbering indicator -->
+    <text x="20" y="373" class="numbering-text">계속... 234, 235...</text>
+    
+    <g transform="translate(15, 425)">
+      <text x="0" y="15" class="component-text">• Appendices (A, B, C...)</text>
+      <text x="0" y="30" class="component-text">• Acknowledgments (선택적)</text>
+      <text x="0" y="45" class="component-text">• Abbreviations/Glossary</text>
+      <text x="0" y="60" class="component-text">• Bibliography/References</text>
+      <text x="0" y="75" class="component-text">• Contributors</text>
+      <text x="0" y="90" class="component-text">• Index</text>
+      <text x="270" y="15" class="emph-title">* Colophon(판권지) 위치 변동</text>
+    </g>
+    
+    <!-- Reading flow arrows -->
+    <line x1="380" y1="220" x2="380" y2="240" class="arrow"/>
+    <line x1="380" y1="360" x2="380" y2="380" class="arrow"/>
+  </g>
+  
+  <!-- Korean Standard (Right Side) -->
+  <g transform="translate(550, 80)">
+    <text x="200" y="20" class="subtitle">한국 표준 (KSX0003)</text>
+    
+    <!-- 앞표지 & 전문 -->
+    <rect x="0" y="40" width="400" height="180" class="korean-front"/>
+    <text x="200" y="58" class="section-title">앞표지 + 전문 (Front Matter)</text>
+    
+    <!-- Page numbering indicator -->
+    <text x="20" y="33" class="numbering-text">1, 2, 3, 4... (연속)</text>
+    
+    <g transform="translate(15, 85)">
+      <text x="0" y="15" class="component-text">• 앞표지 (Front Cover)</text>
+      <text x="0" y="30" class="component-text">• 속표지/권표제지 (Title page)</text>
+      <text x="0" y="45" class="component-text">• 판권지 (Copyright page)</text>
+      <text x="0" y="60" class="component-text">• 바치는 글 (Dedication)</text>
+      <text x="0" y="75" class="component-text">• 목차 (Table of Contents)</text>
+      <text x="0" y="90" class="component-text">• 머리말 (Preface)</text>
+      <text x="0" y="105" class="component-text">• 추천사/서문 (Foreword)</text>
+      <text x="0" y="120" class="component-text">• 감사의 글</text>
+      <text x="260" y="30" class="emph-title">* 띠지(Obi/Belly band) 독특</text>
+      <text x="250" y="45" class="emph-title">* 출판사 중심적</text>
+    </g>
+    
+    <!-- 본문 -->
+    <rect x="0" y="240" width="400" height="120" class="korean-body"/>
+    <text x="200" y="258" class="section-title">본문 (Body Text)</text>
+    
+    <!-- Page numbering indicator -->
+    <text x="20" y="235" class="numbering-text">계속... 45, 46, 47...</text>
+    
+    <g transform="translate(15, 285)">
+      <text x="0" y="15" class="component-text">• 부(部) / 편(篇) 구분</text>
+      <text x="0" y="30" class="component-text">• 장(章) 구성</text>
+      <text x="0" y="45" class="component-text">• 머리글/꼬리글 강조</text>
+      <text x="0" y="60" class="component-text">• 연속 아라비아 숫자</text>
+    </g>
+    
+    <!-- 후문 -->
+    <rect x="0" y="380" width="400" height="160" class="korean-back"/>
+    <text x="200" y="398" class="section-title">후문 (Back Matter)</text>
+    
+    <!-- Page numbering indicator -->
+    <text x="20" y="373" class="numbering-text">계속... 234, 235...</text>
+    
+    <g transform="translate(15, 425)">
+      <text x="0" y="15" class="component-text">• 부록 (Appendices)</text>
+      <text x="0" y="30" class="component-text">• 참고문헌 (References)</text>
+      <text x="0" y="45" class="component-text">• 색인 (Index)</text>
+      <text x="0" y="60" class="component-text">• 저자 소개</text>
+      <text x="0" y="75" class="component-text">• 판권지 (경우에 따라)</text>
+      <text x="0" y="90" class="component-text">• 뒤표지 (Back Cover)</text>
+      <text x="270" y="15" class="emph-title">* 책등(세네카) 강조</text>
+    </g>
+    
+    <!-- Reading flow arrows -->
+    <line x1="380" y1="220" x2="380" y2="240" class="arrow"/>
+    <line x1="380" y1="360" x2="380" y2="380" class="arrow"/>
+  </g>
+  
+  <!-- Comparison Arrows Between Sides -->
+  <g>
+    <!-- Front Matter comparison -->
+    <line x1="450" y1="210" x2="550" y2="210" class="comparison-arrow"/>
+    <text x="500" y="205" class="flow-text">구조 비교</text>
+    
+    <!-- Body Text comparison -->
+    <line x1="450" y1="360" x2="550" y2="360" class="comparison-arrow"/>
+    <text x="500" y="355" class="flow-text">본문 방식</text>
+    
+    <!-- Back Matter comparison -->
+    <line x1="450" y1="510" x2="550" y2="510" class="comparison-arrow"/>
+    <text x="500" y="505" class="flow-text">후문 차이</text>
+  </g>
+  
+  <!-- Key Differences Box -->
+  <g transform="translate(50, 10)">
+    <rect x="0" y="0" width="900" height="65" fill="#f8f9fa" stroke="#dee2e6" stroke-width="1" rx="8"/>
+    <text x="480" y="40" class="subtitle">주요 차이점</text>
+    
+    <g transform="translate(20, 35)">
+      <text x="0" y="-10" class="component-text">📖 페이지 번호: Western(로마숫자→아라비아) vs Korean(연속 아라비아)</text>
+      <text x="0" y="5" class="component-text">🎯 문화적 초점: Western(저자 중심) vs Korean(출판사/기관 중심)</text>
+      <text x="0" y="20" class="component-text">📚 독특한 요소: Western(Half-title, Colophon) vs Korean(띠지, 책등/세네카)</text>
+      <text x="550" y="-10" class="component-text">🔄 Quarto 통합: 두 전통을 YAML로 융합</text>
+      <text x="550" y="5" class="component-text">🌐 디지털 시대: 물리적 제약 없이 최적 독서 경험</text>
+      <text x="550" y="20" class="component-text">🤖 AI 협업: 일관된 구조화와 다국어 동시 출간</text>
+    </g>
+  </g>
+</svg>

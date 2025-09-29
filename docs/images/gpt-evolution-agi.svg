@@ -1,0 +1,174 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 700" width="900" height="700">
+  <defs>
+    <style><![CDATA[
+      .title { font-family: Inter, Segoe UI, Arial, sans-serif; font-size: 32px; font-weight: 900; fill: #f8fafc; }
+      .h1 { font-family: Inter, Segoe UI, Arial, sans-serif; font-size: 20px; font-weight: 800; fill: #ffffff; }
+      .h2 { font-family: Inter, Segoe UI, Arial, sans-serif; font-size: 18px; font-weight: 700; fill: #f1f5f9; }
+      .p { font-family: Inter, Segoe UI, Arial, sans-serif; font-size: 15px; font-weight: 600; fill: #e5e7eb; }
+      .small { font-family: Inter, Segoe UI, Arial, sans-serif; font-size: 13px; font-weight: 600; fill: #cbd5e1; }
+      .year { font-family: Inter, Segoe UI, Arial, sans-serif; font-size: 14px; font-weight: 700; fill: #fbbf24; }
+      .future-year { font-family: Inter, Segoe UI, Arial, sans-serif; font-size: 18px; font-weight: 900; fill: #34d399; }
+    ]]></style>
+
+    <!-- Background -->
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+
+    <!-- Revolution gradients -->
+    <linearGradient id="gradAgri" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#92400e"/>
+      <stop offset="100%" stop-color="#78350f"/>
+    </linearGradient>
+
+    <linearGradient id="gradIndustrial" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#059669"/>
+      <stop offset="100%" stop-color="#047857"/>
+    </linearGradient>
+
+    <linearGradient id="gradInfo" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3b82f6"/>
+      <stop offset="100%" stop-color="#2563eb"/>
+    </linearGradient>
+
+    <linearGradient id="gradCognitive" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8b5cf6"/>
+      <stop offset="100%" stop-color="#7c3aed"/>
+    </linearGradient>
+
+    <!-- Future glow -->
+    <linearGradient id="gradFuture" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10b981"/>
+      <stop offset="50%" stop-color="#34d399"/>
+      <stop offset="100%" stop-color="#6ee7b7"/>
+    </linearGradient>
+
+    <!-- Effects -->
+    <filter id="shadow"><feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#000" flood-opacity="0.3"/></filter>
+    <filter id="glow"><feDropShadow dx="0" dy="0" stdDeviation="8" flood-color="#34d399" flood-opacity="0.5"/></filter>
+
+    <!-- Arrow markers -->
+    <marker id="arrow" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#64748b"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="900" height="700" fill="url(#bg)"/>
+
+  <!-- Title -->
+  <text x="450" y="40" text-anchor="middle" class="title">GPT 진화의 미래</text>
+
+  <!-- Compact past timeline (top 20%) -->
+  <g transform="translate(450,80)">
+    <rect x="-400" y="0" width="800" height="80" rx="15" fill="#1f2937" opacity="0.6" stroke="#64748b" stroke-width="1"/>
+    <text x="0" y="20" text-anchor="middle" class="h2" fill="#cbd5e1">과거 진화 패턴</text>
+    
+    <!-- Mini timeline -->
+    <line x1="-300" y1="50" x2="300" y2="50" stroke="#64748b" stroke-width="2"/>
+    
+    <!-- Past milestones (small) -->
+    <g transform="translate(-300,50)">
+      <circle cx="0" cy="0" r="8" fill="url(#gradAgri)"/>
+      <text x="0" y="25" text-anchor="middle" class="small">농업</text>
+      <text x="0" y="38" text-anchor="middle" class="small">BC10K</text>
+    </g>
+    <g transform="translate(-100,50)">
+      <circle cx="0" cy="0" r="10" fill="url(#gradIndustrial)"/>
+      <text x="0" y="25" text-anchor="middle" class="small">산업</text>
+      <text x="0" y="38" text-anchor="middle" class="small">1750</text>
+    </g>
+    <g transform="translate(100,50)">
+      <circle cx="0" cy="0" r="12" fill="url(#gradInfo)"/>
+      <text x="0" y="25" text-anchor="middle" class="small">정보</text>
+      <text x="0" y="38" text-anchor="middle" class="small">1950</text>
+    </g>
+    <g transform="translate(300,50)">
+      <circle cx="0" cy="0" r="15" fill="url(#gradCognitive)" filter="url(#glow)"/>
+      <text x="0" y="25" text-anchor="middle" class="small" fill="#8b5cf6">인지</text>
+      <text x="0" y="38" text-anchor="middle" class="small" fill="#fbbf24">2020</text>
+    </g>
+  </g>
+
+  <!-- Current position marker -->
+  <g transform="translate(450,200)">
+    <polygon points="0 0, 25 -40, -25 -40" fill="#fbbf24" filter="url(#glow)"/>
+    <text x="0" y="-50" text-anchor="middle" class="h1" fill="#fbbf24">현재 우리 위치</text>
+    <text x="0" y="-30" text-anchor="middle" class="future-year">2025</text>
+  </g>
+
+  <!-- Future Phase 1: Near Future (2025-2030) -->
+  <g transform="translate(150,280)">
+    <rect x="0" y="0" width="220" height="160" rx="15" fill="url(#gradFuture)" filter="url(#shadow)" opacity="0.9"/>
+    <text x="110" y="25" text-anchor="middle" class="h1" fill="#000">🚀 근미래</text>
+    <text x="110" y="45" text-anchor="middle" class="future-year" fill="#000">2025-2030</text>
+    
+    <g transform="translate(15,60)" class="p">
+      <text x="0" y="0" class="h2" fill="#000">구체적 변화:</text>
+      <text x="0" y="20" fill="#000">• AI 에이전트가 업무 80% 처리</text>
+      <text x="0" y="35" fill="#000">• 모든 교육에 AI 튜터 필수</text>
+      <text x="0" y="50" fill="#000">• 창작의 90%는 AI 협업</text>
+      <text x="0" y="65" fill="#000">• 전문직 절반이 AI로 대체</text>
+      <text x="0" y="80" fill="#000">• 코딩 없는 소프트웨어 개발</text>
+    </g>
+  </g>
+
+  <!-- Future Phase 2: Mid Future (2030-2040) -->
+  <g transform="translate(400,280)">
+    <rect x="0" y="0" width="220" height="160" rx="15" fill="#7c3aed" filter="url(#shadow)" opacity="0.9"/>
+    <text x="110" y="25" text-anchor="middle" class="h1" fill="#e0e7ff">🌐 중기미래</text>
+    <text x="110" y="45" text-anchor="middle" class="future-year" fill="#c4b5fd">2030-2040</text>
+    
+    <g transform="translate(15,60)" class="p">
+      <text x="0" y="0" class="h2" fill="#c4b5fd">예상 전환:</text>
+      <text x="0" y="20" fill="#e0e7ff">• AGI 달성 가능성 높음</text>
+      <text x="0" y="35" fill="#e0e7ff">• 인간-AI 하이브리드 작업</text>
+      <text x="0" y="50" fill="#e0e7ff">• 새로운 경제 시스템 필요</text>
+      <text x="0" y="65" fill="#e0e7ff">• 물리적 AI 로봇 보편화</text>
+      <text x="0" y="80" fill="#e0e7ff">• 개인 맞춤 AI 보조원</text>
+    </g>
+  </g>
+
+  <!-- Future Phase 3: Far Future (2040+) -->
+  <g transform="translate(650,280)">
+    <rect x="0" y="0" width="220" height="160" rx="15" fill="#ef4444" filter="url(#shadow)" opacity="0.9"/>
+    <text x="110" y="25" text-anchor="middle" class="h1" fill="#fee2e2">⚡ 원미래</text>
+    <text x="110" y="45" text-anchor="middle" class="future-year" fill="#fef2f2">2040+</text>
+    
+    <g transform="translate(15,60)" class="p">
+      <text x="0" y="0" class="h2" fill="#fef2f2">가능한 시나리오:</text>
+      <text x="0" y="20" fill="#fee2e2">• 초지능 등장 가능성</text>
+      <text x="0" y="35" fill="#fee2e2">• 물리-디지털 완전 융합</text>
+      <text x="0" y="50" fill="#fee2e2">• 인간 능력의 지수적 확장</text>
+      <text x="0" y="65" fill="#fee2e2">• 새로운 종으로 진화?</text>
+      <text x="0" y="80" fill="#fee2e2">• 우주적 규모 사고</text>
+    </g>
+  </g>
+
+  <!-- Critical decision point -->
+  <g transform="translate(450,480)">
+    <rect x="-150" y="0" width="300" height="80" rx="15" fill="#dc2626" filter="url(#glow)" opacity="0.9"/>
+    <text x="0" y="25" text-anchor="middle" class="h1" fill="#fef2f2">⚠️ 결정적 기로</text>
+    <text x="0" y="45" text-anchor="middle" class="p" fill="#fee2e2">준비하는 자 vs 놓치는 자</text>
+    <text x="0" y="65" text-anchor="middle" class="p" fill="#fee2e2">기회의 창: 2025-2030 (5년)</text>
+  </g>
+
+  <!-- Action required panel -->
+  <g transform="translate(450,590)">
+    <rect x="-400" y="0" width="800" height="100" rx="15" fill="#1f2937" opacity="0.9" filter="url(#shadow)" stroke="#34d399" stroke-width="2"/>
+    <text x="0" y="25" text-anchor="middle" class="h1" fill="#34d399">지금 준비해야 할 것들</text>
+    
+    <g transform="translate(0,40)">
+      <text x="-300" y="0" text-anchor="middle" class="p" fill="#6ee7b7">📚 무형자본 투자</text>
+      <text x="-100" y="0" text-anchor="middle" class="p" fill="#6ee7b7">🧠 AI 활용 역량</text>
+      <text x="100" y="0" text-anchor="middle" class="p" fill="#6ee7b7">🔄 프로세스 재설계</text>
+      <text x="300" y="0" text-anchor="middle" class="p" fill="#6ee7b7">🤝 협업 마인드셋</text>
+      
+      <text x="-300" y="20" text-anchor="middle" class="small" fill="#a7f3d0">20-40년 지속</text>
+      <text x="-100" y="20" text-anchor="middle" class="small" fill="#a7f3d0">지금 시작</text>
+      <text x="100" y="20" text-anchor="middle" class="small" fill="#a7f3d0">조직 전체</text>
+      <text x="300" y="20" text-anchor="middle" class="small" fill="#a7f3d0">문화 혁신</text>
+    </g>
+  </g>
+</svg>

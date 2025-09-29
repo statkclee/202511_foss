@@ -1,0 +1,232 @@
+<svg viewBox="0 0 1200 750" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="traditionalGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#F5F5F5"/>
+      <stop offset="100%" style="stop-color:#757575"/>
+    </linearGradient>
+
+    <linearGradient id="dataScienceGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#E3F2FD"/>
+      <stop offset="100%" style="stop-color:#2196F3"/>
+    </linearGradient>
+
+    <linearGradient id="mlopsGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#E8F5E8"/>
+      <stop offset="100%" style="stop-color:#4CAF50"/>
+    </linearGradient>
+
+    <marker id="arrowhead" markerWidth="10" markerHeight="7"
+     refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#333"/>
+    </marker>
+
+    <filter id="shadow">
+      <feDropShadow dx="2" dy="2" stdDeviation="3" flood-color="#00000020"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect x="0" y="0" width="1200" height="800" fill="white"/>
+
+  <!-- Title -->
+  <text x="600" y="40" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="#333">
+    🏛️ Evolution of Data-Driven Decision Making in Public Administration
+  </text>
+
+  <!-- Subtitle -->
+  <text x="600" y="70" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#666">
+    From Manual Processes to Automated Intelligence in Government
+  </text>
+
+  <!-- Timeline -->
+  <line x1="100" y1="100" x2="1100" y2="100" stroke="#333" stroke-width="3"/>
+  <circle cx="200" cy="100" r="8" fill="#757575"/>
+  <circle cx="600" cy="100" r="8" fill="#2196F3"/>
+  <circle cx="1000" cy="100" r="8" fill="#4CAF50"/>
+
+  <text x="200" y="125" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#666">1970s-2000s</text>
+  <text x="200" y="140" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#999">(Legacy workflows to 2010s)</text>
+  <text x="600" y="125" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#666">2010s-2020</text>
+  <text x="1000" y="125" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#666">2020+ (Pilot Stage)</text>
+
+  <!-- Traditional Era Column -->
+  <rect x="45" y="150" width="310" height="500" fill="url(#traditionalGradient)" stroke="#757575" stroke-width="3" rx="15" filter="url(#shadow)"/>
+
+  <!-- Era Header -->
+  <text x="200" y="180" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="black">
+    📝 TRADITIONAL/LEGACY ERA
+  </text>
+  <text x="200" y="200" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="black">
+    Manual &amp; Reactive
+  </text>
+
+  <!-- Traditional Characteristics -->
+  <rect x="70" y="220" width="260" height="120" fill="#FFFFFF" stroke="#757575" stroke-width="2" rx="8"/>
+  <text x="200" y="240" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#333">Process Characteristics</text>
+
+  <circle cx="90" cy="260" r="4" fill="#757575"/>
+  <text x="105" y="265" font-family="Arial, sans-serif" font-size="12" fill="#333">Paper-based data collection</text>
+
+  <circle cx="90" cy="280" r="4" fill="#757575"/>
+  <text x="105" y="285" font-family="Arial, sans-serif" font-size="12" fill="#333">Excel spreadsheet analysis</text>
+
+  <circle cx="90" cy="300" r="4" fill="#757575"/>
+  <text x="105" y="305" font-family="Arial, sans-serif" font-size="12" fill="#333">Monthly/Quarterly reports</text>
+
+  <circle cx="90" cy="320" r="4" fill="#757575"/>
+  <text x="105" y="325" font-family="Arial, sans-serif" font-size="12" fill="#333">Departmental data silos</text>
+
+  <!-- Traditional Examples -->
+  <rect x="70" y="360" width="260" height="170" fill="#F8F8F8" stroke="#757575" stroke-width="2" rx="8"/>
+  <text x="200" y="380" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#333">Administrative Examples</text>
+
+  <text x="85" y="400" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#D32F2F">🚦 Traffic Management:</text>
+  <text x="85" y="415" font-family="Arial, sans-serif" font-size="10" fill="#333">Manual traffic counts, annual reports</text>
+
+  <text x="85" y="435" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#D32F2F">🏥 Public Health:</text>
+  <text x="85" y="450" font-family="Arial, sans-serif" font-size="10" fill="#333">Paper health forms, outbreak response</text>
+
+  <text x="85" y="470" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#D32F2F">👥 Citizen Services:</text>
+  <text x="85" y="485" font-family="Arial, sans-serif" font-size="10" fill="#333">In-person visits, phone inquiries</text>
+
+  <text x="85" y="505" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#D32F2F">💰 Budget Allocation:</text>
+  <text x="85" y="520" font-family="Arial, sans-serif" font-size="10" fill="#333">Annual budget reviews, static planning</text>
+
+  <!-- Traditional Metrics -->
+  <rect x="70" y="540" width="260" height="80" fill="#FFEBEE" stroke="#D32F2F" stroke-width="2" rx="8"/>
+  <text x="200" y="560" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#D32F2F">Decision Timeline</text>
+  <text x="200" y="575" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#D32F2F">WEEKS TO MONTHS</text>
+  <text x="200" y="590" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#D32F2F">Limited data, reactive responses</text>
+  <text x="200" y="605" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#D32F2F">Tools: Excel, Paper, Mainframes, On-prem DBs</text>
+
+  <!-- Data Science Era Column -->
+  <rect x="450" y="150" width="300" height="500" fill="url(#dataScienceGradient)" stroke="#2196F3" stroke-width="3" rx="15" filter="url(#shadow)"/>
+
+  <!-- Era Header -->
+  <text x="600" y="180" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="blue">
+    📊 DATA SCIENCE ERA
+  </text>
+  <text x="600" y="200" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="blue">
+    Digital &amp; Evidence-Based
+  </text>
+
+  <!-- Data Science Characteristics -->
+  <rect x="470" y="220" width="260" height="120" fill="#FFFFFF" stroke="#2196F3" stroke-width="2" rx="8"/>
+  <text x="600" y="240" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#333">Process Characteristics</text>
+
+  <circle cx="490" cy="260" r="4" fill="#2196F3"/>
+  <text x="505" y="265" font-family="Arial, sans-serif" font-size="12" fill="#333">Digital data collection systems</text>
+
+  <circle cx="490" cy="280" r="4" fill="#2196F3"/>
+  <text x="505" y="285" font-family="Arial, sans-serif" font-size="12" fill="#333">Statistical analysis &amp; dashboards</text>
+
+  <circle cx="490" cy="300" r="4" fill="#2196F3"/>
+  <text x="505" y="305" font-family="Arial, sans-serif" font-size="12" fill="#333">Weekly reporting cycles</text>
+
+  <circle cx="490" cy="320" r="4" fill="#2196F3"/>
+  <text x="505" y="325" font-family="Arial, sans-serif" font-size="12" fill="#333">Cross-department data sharing</text>
+
+  <!-- Data Science Examples -->
+  <rect x="470" y="360" width="260" height="170" fill="#F3F9FF" stroke="#2196F3" stroke-width="2" rx="8"/>
+  <text x="600" y="380" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#333">Administrative Examples</text>
+
+  <text x="485" y="400" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#1976D2">🚦 Traffic Management:</text>
+  <text x="485" y="415" font-family="Arial, sans-serif" font-size="10" fill="#333">Sensor data, traffic pattern analysis</text>
+
+  <text x="485" y="435" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#1976D2">🏥 Public Health:</text>
+  <text x="485" y="450" font-family="Arial, sans-serif" font-size="10" fill="#333">Digital health records, trend monitoring</text>
+
+  <text x="485" y="470" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#1976D2">👥 Citizen Services:</text>
+  <text x="485" y="485" font-family="Arial, sans-serif" font-size="10" fill="#333">Online portals, digital applications</text>
+
+  <text x="485" y="505" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#1976D2">💰 Budget Allocation:</text>
+  <text x="485" y="520" font-family="Arial, sans-serif" font-size="10" fill="#333">Quarterly analysis, performance metrics</text>
+
+  <!-- Data Science Metrics -->
+  <rect x="470" y="540" width="260" height="80" fill="#E3F2FD" stroke="#2196F3" stroke-width="2" rx="8"/>
+  <text x="600" y="560" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#1976D2">Decision Timeline</text>
+  <text x="600" y="575" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#1976D2">DAYS TO WEEKS</text>
+  <text x="600" y="590" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#1976D2">Evidence-based policy making</text>
+  <text x="600" y="605" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#1976D2">Tools: Python/R, SQL, Tableau, Data Warehouses</text>
+
+  <!-- MLOps/DataOps Era Column -->
+  <rect x="850" y="150" width="300" height="500" fill="url(#mlopsGradient)" stroke="#4CAF50" stroke-width="3" rx="15" filter="url(#shadow)"/>
+
+  <!-- Era Header -->
+  <text x="1000" y="180" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="green">
+    🤖 MLOPS/DATAOPS ERA
+  </text>
+  <text x="1000" y="198" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="green">
+    Automated &amp; Predictive (Pilot Stage)
+  </text>
+  <text x="1000" y="213" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="green">
+    *Limited production deployment
+  </text>
+
+  <!-- MLOps Characteristics -->
+  <rect x="870" y="220" width="260" height="120" fill="#FFFFFF" stroke="#4CAF50" stroke-width="2" rx="8"/>
+  <text x="1000" y="240" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#333">Process Characteristics</text>
+
+  <circle cx="890" cy="260" r="4" fill="#4CAF50"/>
+  <text x="905" y="265" font-family="Arial, sans-serif" font-size="12" fill="#333">Real-time data pipelines</text>
+
+  <circle cx="890" cy="280" r="4" fill="#4CAF50"/>
+  <text x="905" y="285" font-family="Arial, sans-serif" font-size="12" fill="#333">Automated anomaly detection</text>
+
+  <circle cx="890" cy="300" r="4" fill="#4CAF50"/>
+  <text x="905" y="305" font-family="Arial, sans-serif" font-size="12" fill="#333">Continuous monitoring dashboards</text>
+
+  <circle cx="890" cy="320" r="4" fill="#4CAF50"/>
+  <text x="905" y="325" font-family="Arial, sans-serif" font-size="12" fill="#333">Integrated data platforms</text>
+
+  <!-- MLOps Examples -->
+  <rect x="870" y="360" width="260" height="170" fill="#F1F8E9" stroke="#4CAF50" stroke-width="2" rx="8"/>
+  <text x="1000" y="380" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#333">Administrative Examples</text>
+
+  <text x="885" y="400" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#2E7D32">🚦 Traffic Management:</text>
+  <text x="885" y="415" font-family="Arial, sans-serif" font-size="11" fill="#333">LA Metro signal optimization (pilot)</text>
+
+  <text x="885" y="435" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#2E7D32">🏥 Public Health:</text>
+  <text x="885" y="450" font-family="Arial, sans-serif" font-size="11" fill="#333">Singapore dengue prediction, CDC surveillance</text>
+
+  <text x="885" y="470" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#2E7D32">👥 Citizen Services:</text>
+  <text x="885" y="485" font-family="Arial, sans-serif" font-size="11" fill="#333">AI chatbots (limited deployment)</text>
+
+  <text x="885" y="505" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#2E7D32">💰 Budget Allocation:</text>
+  <text x="885" y="520" font-family="Arial, sans-serif" font-size="11" fill="#333">Predictive models (pilot programs)</text>
+
+  <!-- MLOps Metrics -->
+  <rect x="870" y="540" width="260" height="100" fill="#E8F5E8" stroke="#4CAF50" stroke-width="2" rx="8"/>
+  <text x="1000" y="560" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#2E7D32">Decision Timeline</text>
+  <text x="1000" y="575" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#2E7D32">REAL-TIME TO HOURS</text>
+  <text x="1000" y="590" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#2E7D32">Predictive governance, proactive decisions</text>
+  <text x="1000" y="605" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#2E7D32">Tools: MLOps, Cloud Data Lakes, Feature Stores</text>
+
+  <!-- Governance Note -->
+  <text x="1000" y="620" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#FF5722">⚖️ Governance: GDPR, EU AI Act 2024</text>
+  <text x="1000" y="635" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#FF5722">Ethics &amp; Privacy safeguards required</text>
+
+  <!-- Evolution Arrows -->
+  <path d="M 360 400 L 440 400" stroke="#333" stroke-width="3" fill="none" marker-end="url(#arrowhead)"/>
+  <path d="M 760 400 L 840 400" stroke="#333" stroke-width="3" fill="none" marker-end="url(#arrowhead)"/>
+
+  <!-- Impact Summary -->
+  <g transform="translate(0, -110)">
+    <rect x="100" y="770" width="1000" height="25" fill="#F5F5F5" stroke="#E0E0E0" stroke-width="1" rx="5"/>
+    <text x="600" y="788" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#333">
+      🎯 Impact: From weeks/months to real-time decision making • From reactive to predictive governance • From siloed to integrated data platforms
+    </text>
+  </g>
+
+  <!-- Adoption Caveat -->
+  <g transform="translate(0, -105)">
+    <rect x="150" y="800" width="900" height="35" fill="#FFF3E0" stroke="#FF9800" stroke-width="1" rx="5"/>
+    <text x="600" y="815" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#E65100">
+      ⚠️ Adoption Reality Check
+    </text>
+    <text x="600" y="830" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#BF360C">
+      AI/ML adoption varies by region and depends on data readiness, privacy regulations (GDPR, EU AI Act 2024), and infrastructure maturity
+    </text>    
+  </g>
+
+</svg>

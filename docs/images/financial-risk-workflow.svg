@@ -1,0 +1,145 @@
+<svg width="1000" height="270" viewBox="0 10 1000 270" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Professional finance gradients -->
+    <linearGradient id="sqlFinGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#2c3e50" />
+      <stop offset="100%" stop-color="#34495e" />
+    </linearGradient>
+    <linearGradient id="pythonFinGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#e74c3c" />
+      <stop offset="100%" stop-color="#c0392b" />
+    </linearGradient>
+    <linearGradient id="juliaFinGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#f39c12" />
+      <stop offset="100%" stop-color="#e67e22" />
+    </linearGradient>
+    <linearGradient id="rFinGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#3498db" />
+      <stop offset="100%" stop-color="#2980b9" />
+    </linearGradient>
+    <linearGradient id="jsFinGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#27ae60" />
+      <stop offset="100%" stop-color="#229954" />
+    </linearGradient>
+    <linearGradient id="finBgGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f8f9fa" />
+      <stop offset="25%" stop-color="#ecf0f1" />
+      <stop offset="75%" stop-color="#ecf0f1" />
+      <stop offset="100%" stop-color="#f8f9fa" />
+    </linearGradient>
+    
+    <!-- Chart pattern -->
+    <pattern id="chartPattern" x="0" y="0" width="30" height="20" patternUnits="userSpaceOnUse">
+      <rect width="30" height="20" fill="none"/>
+      <path d="M5,15 L10,8 L15,12 L20,5 L25,10" stroke="#3498db" stroke-width="1.5" fill="none" opacity="0.3"/>
+      <circle cx="10" cy="8" r="1" fill="#3498db" opacity="0.4"/>
+      <circle cx="20" cy="5" r="1" fill="#e74c3c" opacity="0.4"/>
+    </pattern>
+    
+    <!-- Professional drop shadows -->
+    <filter id="finShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="3" dy="5" stdDeviation="4" flood-color="#00000030"/>
+    </filter>
+    
+    <!-- Gold arrow markers -->
+    <marker id="arrowGold" markerWidth="12" markerHeight="8" refX="10" refY="4" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,8 L12,4 z" fill="#f39c12"/>
+    </marker>
+    
+    <!-- Styles -->
+    <style>
+      .fin-title { font-family: 'IBM Plex Sans KR', sans-serif; font-size: 18px; font-weight: 700; fill: #2c3e50; }
+      .fin-lang-title { font-family: 'IBM Plex Sans KR', sans-serif; font-size: 14px; font-weight: 600; fill: white; }
+      .fin-lang-desc { font-family: 'IBM Plex Sans KR', sans-serif; font-size: 10px; fill: white; }
+      .fin-data-flow { font-family: 'IBM Plex Sans KR', sans-serif; font-size: 9px; fill: #8e44ad; font-style: italic; font-weight: 600; }
+      .fin-process-box { rx: 8; filter: url(#finShadow); }
+      .fin-flow-arrow { stroke: #f39c12; stroke-width: 1.5; fill: none; marker-end: url(#arrowGold); }
+      .fin-data-label { fill: #2c3e50; font-family: 'IBM Plex Sans KR', sans-serif; font-size: 8px; font-weight: 600; }
+      .chart-accent { fill: url(#chartPattern); opacity: 0.1; }
+    </style>
+  </defs>
+
+  <!-- Background with chart pattern -->
+  <rect width="100%" height="100%" fill="url(#finBgGrad)"/>
+  <rect width="100%" height="100%" class="chart-accent"/>
+  
+  <!-- Process boxes -->
+  <!-- SQL -->
+  <rect x="20" y="60" width="160" height="160" fill="url(#sqlFinGrad)" class="fin-process-box"/>
+  <circle cx="100" cy="90" r="22" fill="white" opacity="0.15"/>
+  <text x="100" y="95" style="font-size: 18px; fill: white; text-anchor: middle;">💾</text>
+  <text x="100" y="125" class="fin-lang-title" text-anchor="middle">SQL</text>
+  <text x="100" y="145" class="fin-lang-desc" text-anchor="middle">거래 데이터 웨어하우스</text>
+  <text x="100" y="160" class="fin-lang-desc" text-anchor="middle">• 실시간 거래 기록</text>
+  <text x="100" y="175" class="fin-lang-desc" text-anchor="middle">• 포트폴리오 정보</text>
+  <text x="100" y="190" class="fin-lang-desc" text-anchor="middle">• 시장 데이터 피드</text>
+  <text x="100" y="205" class="fin-lang-desc" text-anchor="middle">Output: 정규화 거래데이터</text>
+  
+  <!-- Python -->
+  <rect x="220" y="60" width="160" height="160" fill="url(#pythonFinGrad)" class="fin-process-box"/>
+  <circle cx="300" cy="90" r="22" fill="white" opacity="0.15"/>
+  <text x="300" y="95" style="font-size: 18px; fill: white; text-anchor: middle;">🔍</text>
+  <text x="300" y="125" class="fin-lang-title" text-anchor="middle">Python</text>
+  <text x="300" y="145" class="fin-lang-desc" text-anchor="middle">이상거래 탐지 엔진</text>
+  <text x="300" y="160" class="fin-lang-desc" text-anchor="middle">• Isolation Forest ML</text>
+  <text x="300" y="175" class="fin-lang-desc" text-anchor="middle">• 실시간 사기 탐지</text>
+  <text x="300" y="190" class="fin-lang-desc" text-anchor="middle">• 패턴 인식 (LSTM)</text>
+  <text x="300" y="205" class="fin-lang-desc" text-anchor="middle">Output: 리스크 스코어</text>
+  
+  <!-- Julia -->
+  <rect x="420" y="60" width="160" height="160" fill="url(#juliaFinGrad)" class="fin-process-box"/>
+  <circle cx="500" cy="90" r="22" fill="white" opacity="0.15"/>
+  <text x="500" y="95" style="font-size: 18px; fill: white; text-anchor: middle;">🎲</text>
+  <text x="500" y="125" class="fin-lang-title" text-anchor="middle">Julia</text>
+  <text x="500" y="145" class="fin-lang-desc" text-anchor="middle">고속 VaR 계산</text>
+  <text x="500" y="160" class="fin-lang-desc" text-anchor="middle">• 몬테카를로 시뮬레이션</text>
+  <text x="500" y="175" class="fin-lang-desc" text-anchor="middle">• 병렬 처리 (1M+ 시나리오)</text>
+  <text x="500" y="190" class="fin-lang-desc" text-anchor="middle">• 옵션 가격책정</text>
+  <text x="500" y="205" class="fin-lang-desc" text-anchor="middle">Output: VaR/CVaR 메트릭</text>
+  
+  <!-- R -->
+  <rect x="620" y="60" width="160" height="160" fill="url(#rFinGrad)" class="fin-process-box"/>
+  <circle cx="700" cy="90" r="22" fill="white" opacity="0.15"/>
+  <text x="700" y="95" style="font-size: 18px; fill: white; text-anchor: middle;">📊</text>
+  <text x="700" y="125" class="fin-lang-title" text-anchor="middle">R</text>
+  <text x="700" y="145" class="fin-lang-desc" text-anchor="middle">스트레스 테스트</text>
+  <text x="700" y="160" class="fin-lang-desc" text-anchor="middle">• 시나리오 분석</text>
+  <text x="700" y="175" class="fin-lang-desc" text-anchor="middle">• Basel III 규제준수</text>
+  <text x="700" y="190" class="fin-lang-desc" text-anchor="middle">• 백테스팅 검증</text>
+  <text x="700" y="205" class="fin-lang-desc" text-anchor="middle">Output: 규제 보고서</text>
+  
+  <!-- JavaScript -->
+  <rect x="820" y="60" width="160" height="160" fill="url(#jsFinGrad)" class="fin-process-box"/>
+  <circle cx="900" cy="90" r="22" fill="white" opacity="0.15"/>
+  <text x="900" y="95" style="font-size: 18px; fill: white; text-anchor: middle;">📈</text>
+  <text x="900" y="125" class="fin-lang-title" text-anchor="middle">JavaScript</text>
+  <text x="900" y="145" class="fin-lang-desc" text-anchor="middle">실시간 대시보드</text>
+  <text x="900" y="160" class="fin-lang-desc" text-anchor="middle">• Chart.js 위험도 차트</text>
+  <text x="900" y="175" class="fin-lang-desc" text-anchor="middle">• WebSocket 실시간</text>
+  <text x="900" y="190" class="fin-lang-desc" text-anchor="middle">• 알림 시스템</text>
+  <text x="900" y="205" class="fin-lang-desc" text-anchor="middle">Output: 경영진 대시보드</text>
+  
+  <!-- Professional flow arrows -->
+  <path d="M 185 140 L 215 140" class="fin-flow-arrow"/>
+  <path d="M 385 140 L 415 140" class="fin-flow-arrow"/>
+  <path d="M 585 140 L 615 140" class="fin-flow-arrow"/>
+  <path d="M 785 140 L 815 140" class="fin-flow-arrow"/>
+  
+  <!-- Data flow labels -->
+  <text x="200" y="125" class="fin-data-flow" text-anchor="middle">거래 스트림</text>
+  <text x="400" y="125" class="fin-data-flow" text-anchor="middle">탐지 결과</text>
+  <text x="600" y="125" class="fin-data-flow" text-anchor="middle">VaR 계산</text>
+  <text x="800" y="125" class="fin-data-flow" text-anchor="middle">테스트 결과</text>
+  
+  <!-- Risk indicator boxes -->
+  <rect x="30" y="35" width="15" height="15" fill="#e74c3c" rx="2"/>
+  <text x="50" y="46" class="fin-data-label">HIGH RISK</text>
+  <rect x="130" y="35" width="15" height="15" fill="#f39c12" rx="2"/>
+  <text x="150" y="46" class="fin-data-label">MEDIUM</text>
+  <rect x="220" y="35" width="15" height="15" fill="#27ae60" rx="2"/>
+  <text x="240" y="46" class="fin-data-label">LOW RISK</text>
+  
+  <!-- Bottom performance bar -->
+  <rect x="20" y="230" width="960" height="30" fill="#34495e" rx="5" opacity="0.8"/>
+  <text x="500" y="248" class="fin-data-label" fill="white" text-anchor="middle">💰 핵심 성과: 실시간 처리 10K TPS → 99.9% 이상 탐지율 → $2B 리스크 관리</text>
+</svg>

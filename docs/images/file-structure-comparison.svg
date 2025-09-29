@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="460" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .folder { fill: #FFD700; stroke: #B8860B; stroke-width: 2; }
+      .file-hwp { fill: #FF6B6B; stroke: #D63031; stroke-width: 1; }
+      .file-excel { fill: #00B894; stroke: #00A085; stroke-width: 1; }
+      .file-spss { fill: #9B59B6; stroke: #8E44AD; stroke-width: 1; }
+      .file-md { fill: #6C5CE7; stroke: #5A47D6; stroke-width: 1; }
+      .file-data { fill: #74B9FF; stroke: #0984E3; stroke-width: 1; }
+      .text { font-family: Arial, sans-serif; font-size: 11px; fill: #2D3436; }
+      .title { font-family: Arial, sans-serif; font-size: 14px; font-weight: bold; fill: #2D3436; }
+      .subtitle { font-family: Arial, sans-serif; font-size: 12px; font-weight: bold; fill: #636E72; }
+      .problem { fill: #E17055; }
+      .solution { fill: #00B894; }
+    </style>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="460" fill="#F8F9FA"/>
+  
+  <!-- Left side: Traditional HWP way -->
+  <text x="200" y="30" text-anchor="middle" class="subtitle problem">Traditional HWP Approach</text>
+  
+  <!-- Project folder (left) -->
+  <rect x="50" y="45" width="300" height="390" fill="#FFF" stroke="#DDD" stroke-width="1" rx="5"/>
+  
+  <!-- Main project folder -->
+  <rect x="60" y="55" width="20" height="15" class="folder" rx="2"/>
+  <text x="85" y="67" class="text">research-project_2024/</text>
+  
+  <!-- Files scattered everywhere -->
+  <rect x="80" y="80" width="15" height="12" class="file-hwp" rx="1"/>
+  <text x="100" y="90" class="text">final-report.hwp</text>
+  
+  <rect x="80" y="100" width="15" height="12" class="file-hwp" rx="1"/>
+  <text x="100" y="110" class="text">final-report_revised.hwp</text>
+  
+  <rect x="80" y="120" width="15" height="12" class="file-hwp" rx="1"/>
+  <text x="100" y="130" class="text">final-report_really-final.hwp</text>
+  
+  <rect x="80" y="140" width="15" height="12" class="file-hwp" rx="1"/>
+  <text x="100" y="150" class="text">final-report_really-final_v2.hwp</text>
+  
+  <rect x="80" y="165" width="15" height="12" class="file-excel" rx="1"/>
+  <text x="100" y="175" class="text">data_0315.xlsx</text>
+  
+  <rect x="80" y="185" width="15" height="12" class="file-excel" rx="1"/>
+  <text x="100" y="195" class="text">data_modified.csv</text>
+  
+  <rect x="80" y="205" width="15" height="12" class="file-excel" rx="1"/>
+  <text x="100" y="215" class="text">final_data_backup.xlsx</text>
+  
+  <rect x="80" y="225" width="15" height="12" class="file-excel" rx="1"/>
+  <text x="100" y="235" class="text">analysis-results_dr-kim.xlsx</text>
+  
+  <!-- SPSS files -->
+  <rect x="80" y="245" width="15" height="12" class="file-spss" rx="1"/>
+  <text x="100" y="255" class="text">survey_data.sav</text>
+  
+  <rect x="80" y="265" width="15" height="12" class="file-spss" rx="1"/>
+  <text x="100" y="275" class="text">analysis_output.sav</text>
+  
+  <!-- Images scattered -->
+  <rect x="80" y="290" width="15" height="12" fill="#FD79A8" stroke="#E84393" rx="1"/>
+  <text x="100" y="300" class="text">chart1.png</text>
+  
+  <rect x="80" y="310" width="15" height="12" fill="#FD79A8" stroke="#E84393" rx="1"/>
+  <text x="100" y="320" class="text">table_copy.png</text>
+  
+  <rect x="80" y="330" width="15" height="12" fill="#FD79A8" stroke="#E84393" rx="1"/>
+  <text x="100" y="340" class="text">final_chart_edited.jpg</text>
+  
+  <!-- Problems list -->
+  <text x="70" y="365" class="text problem">❌ No version control</text>
+  <text x="70" y="380" class="text problem">❌ Data-document separation</text>
+  <text x="70" y="395" class="text problem">❌ Not reproducible</text>
+  <text x="70" y="410" class="text problem">❌ Difficult collaboration</text>
+  <text x="70" y="425" class="text problem">❌ Platform dependent</text>  
+  
+  <!-- Right side: Document as Code way -->
+  <text x="600" y="30" text-anchor="middle" class="subtitle solution">Document as Code Approach</text>
+  
+  <!-- Project folder (right) -->
+  <rect x="450" y="45" width="300" height="390" fill="#FFF" stroke="#DDD" stroke-width="1" rx="5"/>
+  
+  <!-- Main project folder -->
+  <rect x="460" y="55" width="20" height="15" class="folder" rx="2"/>
+  <text x="485" y="67" class="text">research-project/</text>
+  
+  <!-- Organized structure -->
+  <rect x="480" y="80" width="18" height="13" class="folder" rx="2"/>
+  <text x="503" y="91" class="text">data/</text>
+  <rect x="500" y="100" width="12" height="10" class="file-data" rx="1"/>
+  <text x="517" y="108" class="text">raw_data.csv</text>
+  <rect x="500" y="115" width="12" height="10" class="file-data" rx="1"/>
+  <text x="517" y="123" class="text">processed_data.csv</text>
+  
+  <rect x="480" y="135" width="18" height="13" class="folder" rx="2"/>
+  <text x="503" y="146" class="text">images/</text>
+  <rect x="500" y="155" width="12" height="10" fill="#FD79A8" stroke="#E84393" rx="1"/>
+  <text x="517" y="163" class="text">generated plots</text>
+  
+  <rect x="480" y="175" width="18" height="13" class="folder" rx="2"/>
+  <text x="503" y="186" class="text">scripts/</text>
+  <rect x="500" y="195" width="12" height="10" fill="#A29BFE" stroke="#6C5CE7" rx="1"/>
+  <text x="517" y="203" class="text">analysis.R</text>
+  <rect x="500" y="210" width="12" height="10" fill="#A29BFE" stroke="#6C5CE7" rx="1"/>
+  <text x="517" y="218" class="text">visualization.py</text>
+  
+  <!-- Main documents -->
+  <rect x="480" y="235" width="15" height="12" class="file-md" rx="1"/>
+  <text x="500" y="245" class="text">report.qmd</text>
+  
+  <rect x="480" y="255" width="15" height="12" class="file-md" rx="1"/>
+  <text x="500" y="265" class="text">README.md</text>
+  
+  <!-- Version control -->
+  <rect x="480" y="280" width="18" height="13" class="folder" rx="2"/>
+  <text x="503" y="291" class="text">.git/</text>
+  <text x="500" y="305" class="text" style="font-size: 9px;">complete version history</text>
+  
+  <!-- Benefits list -->
+  <text x="470" y="330" class="text solution">✅ Complete version control</text>
+  <text x="470" y="345" class="text solution">✅ Data-code-document integration</text>
+  <text x="470" y="360" class="text solution">✅ Fully reproducible</text>
+  <text x="470" y="375" class="text solution">✅ Seamless collaboration</text>
+  <text x="470" y="390" class="text solution">✅ Platform independent</text>
+  
+  <!-- Arrow showing transformation -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" 
+     refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#00B894" />
+    </marker>
+  </defs>
+  <line x1="360" y1="240" x2="440" y2="240" stroke="#00B894" stroke-width="3" marker-end="url(#arrowhead)"/>
+  <text x="400" y="220" text-anchor="middle" class="text" style="font-size: 17px; font-weight: bold; fill: #00B894;">Transform</text>
+  
+</svg>

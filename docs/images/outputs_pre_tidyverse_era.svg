@@ -1,0 +1,358 @@
+<svg viewBox="0 0 1800 880" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Gradients for different audiences - muted colors for pre-tidyverse era -->
+    <linearGradient id="techGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#6B73FF"/>
+      <stop offset="100%" style="stop-color:#5A5FCF"/>
+    </linearGradient>
+
+    <linearGradient id="businessGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FF8A65"/>
+      <stop offset="100%" style="stop-color:#D84315"/>
+    </linearGradient>
+
+    <linearGradient id="publicGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#81C784"/>
+      <stop offset="100%" style="stop-color:#2E7D32"/>
+    </linearGradient>
+
+    <!-- Hexagon path for package/tool icons -->
+    <path id="hexagon" d="M 0,-30 L 26,-15 L 26,15 L 0,30 L -26,15 L -26,-15 Z"/>
+
+    <!-- Shadow filter -->
+    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="3"/>
+      <feOffset dx="2" dy="2" result="offsetblur"/>
+      <feComponentTransfer>
+        <feFuncA type="linear" slope="0.3"/>
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Arrow marker -->
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#666"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1800" height="880" fill="#F5F5F5"/>
+
+  <!-- Title -->
+  <text x="900" y="70" text-anchor="middle" font-family="Arial, sans-serif" font-size="38" font-weight="bold" fill="#2C3E50">
+    Pre-Tidyverse Era: Data Science Outputs by Consumer Perspective
+  </text>
+
+  <text x="900" y="105" text-anchor="middle" font-family="Arial, sans-serif" font-size="23" fill="#7F8C8D">
+    Traditional Statistical Computing Era (1990s-2013)
+  </text>
+
+  <!-- Central Logo Area -->
+  <g transform="translate(900, 630)">
+    <rect x="-100" y="-80" width="200" height="160" rx="15" fill="white" stroke="#7F8C8D" stroke-width="3" opacity="0.9"/>
+    <text y="-30" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#7F8C8D">STATISTICAL</text>
+    <text y="0" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#7F8C8D">COMPUTING</text>
+    <text y="40" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#95A5A6">SAS • SPSS • Stata</text>
+    <text y="60" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#95A5A6">Excel • Access • Crystal</text>
+  </g>
+
+  <!-- Technical Community Section -->
+  <g transform="translate(300, 200)">
+    <!-- Section Header -->
+    <rect x="-210" y="-50" width="420" height="90" rx="10" fill="url(#techGradient)" filter="url(#shadow)"/>
+    <text x="0" y="-15" text-anchor="middle" font-family="Arial, sans-serif" font-size="27" font-weight="bold" fill="white">
+      📊 Technical Community
+    </text>
+    <text x="0" y="20" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" fill="white">
+      Statisticians, Database Admins, Early R Users
+    </text>
+
+    <!-- Primary Subgroup: Statisticians -->
+    <g transform="translate(-130, 60)">
+      <text x="0" y="20" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#6B73FF">
+        Statisticians
+      </text>
+
+      <g transform="translate(-50, 55)">
+        <use href="#hexagon" transform="scale(0.9)" fill="#E8EAF6" stroke="#6B73FF" stroke-width="2"/>
+        <text y="5" text-anchor="middle" font-family="Arial" font-size="14" fill="#6B73FF">SAS</text>
+      </g>
+      <text x="50" y="55" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#666">SAS Scripts</text>
+      <text x="50" y="70" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" fill="#888">Proc Analysis</text>
+
+      <g transform="translate(-50, 125)">
+        <use href="#hexagon" transform="scale(0.9)" fill="#FFF3E0" stroke="#6B73FF" stroke-width="2"/>
+        <text y="5" text-anchor="middle" font-family="Arial" font-size="12" fill="#6B73FF">SPSS</text>
+      </g>
+      <text x="50" y="135" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#666">SPSS Syntax</text>
+
+      <g transform="translate(-50, 190)">
+        <use href="#hexagon" transform="scale(0.9)" fill="#E3F2FD" stroke="#6B73FF" stroke-width="2"/>
+        <text y="5" text-anchor="middle" font-family="Arial" font-size="13" fill="#6B73FF">Stata</text>
+      </g>
+      <text x="50" y="200" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#666">Stata Do-files</text>
+    </g>
+
+    <!-- Secondary Subgroup: Database Admins -->
+    <g transform="translate(130, 60)">
+      <text x="0" y="20" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#6B73FF">
+        Database Admins
+      </text>
+
+      <g transform="translate(-50, 55)">
+        <use href="#hexagon" transform="scale(0.9)" fill="#FFE0B2" stroke="#6B73FF" stroke-width="2"/>
+        <text y="5" text-anchor="middle" font-family="Arial" font-size="11" fill="#6B73FF">Oracle</text>
+      </g>
+      <text x="50" y="50" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#666">Oracle Reports</text>
+      <text x="50" y="65" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" fill="#888">SQL Queries</text>
+
+      <g transform="translate(-50, 120)">
+        <use href="#hexagon" transform="scale(0.9)" fill="#F3E5F5" stroke="#6B73FF" stroke-width="2"/>
+        <text y="5" text-anchor="middle" font-family="Arial" font-size="12" fill="#6B73FF">SQL</text>
+      </g>
+      <text x="50" y="120" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#666">SQL Server</text>
+      <text x="50" y="135" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" fill="#888">SSRS Reports</text>
+
+      <g transform="translate(-50, 185)">
+        <use href="#hexagon" transform="scale(0.9)" fill="#E8F5E9" stroke="#6B73FF" stroke-width="2"/>
+        <text y="5" text-anchor="middle" font-family="Arial" font-size="14" fill="#6B73FF">R</text>
+      </g>
+      <text x="50" y="195" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#666">Base R</text>
+    </g>
+
+    <!-- Tools Box -->
+    <g transform="translate(0, 50)">
+      <rect x="-180" y="280" width="360" height="120" rx="5" fill="white" stroke="#6B73FF" stroke-width="1"/>
+      <text x="0" y="305" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#6B73FF">
+        Statistical Software &amp; Tools
+      </text>
+      <text x="-140" y="335" font-family="Arial" font-size="16" fill="#666">• SAS Enterprise Guide, BASE</text>
+      <text x="-140" y="352" font-family="Arial" font-size="16" fill="#666">• SPSS Statistics, Modeler</text>
+      <text x="-140" y="369" font-family="Arial" font-size="16" fill="#666">• Stata, S-PLUS</text>
+      <text x="-140" y="386" font-family="Arial" font-size="16" fill="#666">• Oracle, Crystal Reports</text>
+    </g>
+  </g>
+
+  <!-- Business Stakeholders Section -->
+  <g transform="translate(900, 200)">
+    <!-- Section Header -->
+    <rect x="-220" y="-50" width="440" height="90" rx="10" fill="url(#businessGradient)" filter="url(#shadow)"/>
+    <text x="0" y="-15" text-anchor="middle" font-family="Arial, sans-serif" font-size="27" font-weight="bold" fill="white">
+      💼 Business Stakeholders
+    </text>
+    <text x="0" y="20" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" fill="white">
+      Executives, Analysts, Market Researchers
+    </text>
+
+    <!-- Primary Subgroup: Executives -->
+    <g transform="translate(-150, 60)">
+      <text x="0" y="20" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#FF8A65">
+        Executives
+      </text>
+
+      <g transform="translate(0, 55)">
+        <use href="#hexagon" transform="scale(0.9)" fill="#FFF5F5" stroke="#FF8A65" stroke-width="2"/>
+        <text y="5" text-anchor="middle" font-family="Arial" font-size="14" fill="#FF8A65">PDF</text>
+      </g>
+      <text x="0" y="100" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#666">Printed Reports</text>
+      <text x="0" y="115" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" fill="#888">Quarterly Docs</text>
+
+      <g transform="translate(0, 150)">
+        <use href="#hexagon" transform="scale(0.9)" fill="#FFEBEE" stroke="#FF8A65" stroke-width="2"/>
+        <text y="5" text-anchor="middle" font-family="Arial" font-size="14" fill="#FF8A65">PPT</text>
+      </g>
+      <text x="0" y="195" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#666">PowerPoint</text>
+      <text x="0" y="210" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" fill="#888">Static Charts</text>
+    </g>
+
+    <!-- Secondary Subgroup: Business Analysts -->
+    <g transform="translate(0, 60)">
+      <text x="0" y="20" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#FF8A65">
+        Business Analysts
+      </text>
+
+      <g transform="translate(0, 55)">
+        <use href="#hexagon" transform="scale(0.9)" fill="#E8F5E9" stroke="#FF8A65" stroke-width="2"/>
+        <text y="5" text-anchor="middle" font-family="Arial" font-size="14" fill="#FF8A65">XLS</text>
+      </g>
+      <text x="0" y="100" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#666">Excel Macros</text>
+      <text x="0" y="115" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" fill="#888">Pivot Tables</text>
+
+      <g transform="translate(0, 150)">
+        <use href="#hexagon" transform="scale(0.9)" fill="#F3E5F5" stroke="#FF8A65" stroke-width="2"/>
+        <text y="5" text-anchor="middle" font-family="Arial" font-size="12" fill="#FF8A65">Access</text>
+      </g>
+      <text x="0" y="195" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#666">MS Access</text>
+      <text x="0" y="210" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" fill="#888">Database Forms</text>
+    </g>
+
+    <!-- Tertiary Subgroup: Market Researchers -->
+    <g transform="translate(170, 60)">
+      <text x="0" y="20" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#FF8A65">
+        Market Research
+      </text>
+
+      <g transform="translate(0, 55)">
+        <use href="#hexagon" transform="scale(0.9)" fill="#FCE4EC" stroke="#FF8A65" stroke-width="2"/>
+        <text y="5" text-anchor="middle" font-family="Arial" font-size="11" fill="#FF8A65">Survey</text>
+      </g>
+      <text x="0" y="100" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#666">Survey Analysis</text>
+      <text x="0" y="115" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" fill="#888">Cross-tabs</text>
+
+      <g transform="translate(0, 150)">
+        <use href="#hexagon" transform="scale(0.9)" fill="#FFEBEE" stroke="#FF8A65" stroke-width="2"/>
+        <text y="5" text-anchor="middle" font-family="Arial" font-size="14" fill="#FF8A65">BI</text>
+      </g>
+      <text x="0" y="195" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#666">BI Tools</text>
+      <text x="0" y="210" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" fill="#888">Cognos, SSRS</text>
+    </g>
+
+    <!-- Tools Box -->
+    <g transform="translate(-50, 270)">
+      <rect x="-200" y="280" width="370" height="110" rx="5" fill="white" stroke="#FF8A65" stroke-width="1"/>
+      <text x="0" y="305" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#FF8A65">
+        Business Intelligence Tools
+      </text>
+      <text x="-170" y="325" font-family="Arial" font-size="16" fill="#666">• Excel VBA, Pivot Tables</text>
+      <text x="-170" y="342" font-family="Arial" font-size="16" fill="#666">• Crystal Reports, SSRS</text>
+      <text x="-170" y="359" font-family="Arial" font-size="16" fill="#666">• IBM Cognos, Microstrategy</text>
+      <text x="-170" y="376" font-family="Arial" font-size="16" fill="#666">• MS Access, FoxPro</text>
+    </g>
+  </g>
+
+  <!-- Public Audience Section -->
+  <g transform="translate(1500, 200)">
+    <!-- Section Header -->
+    <rect x="-200" y="-50" width="400" height="90" rx="10" fill="url(#publicGradient)" filter="url(#shadow)"/>
+    <text x="0" y="-15" text-anchor="middle" font-family="Arial, sans-serif" font-size="27" font-weight="bold" fill="white">
+      📄 Public Audience
+    </text>
+    <text x="0" y="20" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" fill="white">
+      Government, Academia, Traditional Media
+    </text>
+
+    <!-- Primary Subgroup: Government/NGOs -->
+    <g transform="translate(-150, 60)">
+      <text x="0" y="20" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#81C784">
+        Government/NGOs
+      </text>
+
+      <g transform="translate(0, 55)">
+        <use href="#hexagon" transform="scale(0.9)" fill="#E8F5E9" stroke="#81C784" stroke-width="2"/>
+        <text y="5" text-anchor="middle" font-family="Arial" font-size="11" fill="#81C784">Report</text>
+      </g>
+      <text x="0" y="105" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#666">White Papers</text>
+      <text x="0" y="120" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" fill="#888">Policy Docs</text>
+
+      <g transform="translate(0, 155)">
+        <use href="#hexagon" transform="scale(0.9)" fill="#F0FFF0" stroke="#81C784" stroke-width="2"/>
+        <text y="5" text-anchor="middle" font-family="Arial" font-size="14" fill="#81C784">Web</text>
+      </g>
+      <text x="0" y="205" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#666">Static Websites</text>
+      <text x="0" y="220" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" fill="#888">HTML Tables</text>
+    </g>
+
+    <!-- Secondary Subgroup: Academic Journals -->
+    <g transform="translate(0, 60)">
+      <text x="0" y="20" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#81C784">
+        Academia
+      </text>
+
+      <g transform="translate(0, 55)">
+        <use href="#hexagon" transform="scale(0.9)" fill="#C8E6C9" stroke="#81C784" stroke-width="2"/>
+        <text y="5" text-anchor="middle" font-family="Arial" font-size="13" fill="#81C784">Paper</text>
+      </g>
+      <text x="0" y="105" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#666">Journal Articles</text>
+      <text x="0" y="120" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" fill="#888">LaTeX/Word</text>
+
+      <g transform="translate(0, 155)">
+        <use href="#hexagon" transform="scale(0.9)" fill="#DCEDC8" stroke="#81C784" stroke-width="2"/>
+        <text y="5" text-anchor="middle" font-family="Arial" font-size="14" fill="#81C784">Conf</text>
+      </g>
+      <text x="0" y="205" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#666">Conferences</text>
+      <text x="0" y="220" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" fill="#888">Posters</text>
+    </g>
+
+    <!-- Tertiary Subgroup: Traditional Media -->
+    <g transform="translate(130, 60)">
+      <text x="0" y="20" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#81C784">
+        Traditional Media
+      </text>
+
+      <g transform="translate(0, 55)">
+        <use href="#hexagon" transform="scale(0.9)" fill="#E0F2E1" stroke="#81C784" stroke-width="2"/>
+        <text y="5" text-anchor="middle" font-family="Arial" font-size="12" fill="#81C784">Chart</text>
+      </g>
+      <text x="0" y="105" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#666">Static Charts</text>
+      <text x="0" y="120" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" fill="#888">Print Graphics</text>
+
+      <g transform="translate(0, 155)">
+        <use href="#hexagon" transform="scale(0.9)" fill="#F1F8E9" stroke="#81C784" stroke-width="2"/>
+        <text y="5" text-anchor="middle" font-family="Arial" font-size="14" fill="#81C784">Info</text>
+      </g>
+      <text x="0" y="205" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#666">Infographics</text>
+      <text x="0" y="220" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" fill="#888">Adobe Suite</text>
+    </g>
+
+    <!-- Tools Box -->
+    <g transform="translate(0, 50)">
+      <rect x="-180" y="280" width="360" height="110" rx="5" fill="white" stroke="#81C784" stroke-width="1"/>
+      <text x="0" y="305" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#81C784">
+        Publication Tools
+      </text>
+      <text x="-150" y="325" font-family="Arial" font-size="17" fill="#666">• LaTeX, Microsoft Word</text>
+      <text x="-150" y="342" font-family="Arial" font-size="17" fill="#666">• Adobe Illustrator, FreeHand</text>
+      <text x="-150" y="359" font-family="Arial" font-size="17" fill="#666">• Static HTML, FrontPage</text>
+      <text x="-150" y="376" font-family="Arial" font-size="17" fill="#666">• Print design software</text>
+    </g>
+  </g>
+
+  <!-- Connecting arrows from center -->
+  <path d="M 800 580 L 480 420" stroke="#6B73FF" stroke-width="2.5" fill="none" marker-end="url(#arrow)" opacity="0.5"/>
+  <path d="M 900 550 L 900 470" stroke="#FF8A65" stroke-width="2.5" fill="none" marker-end="url(#arrow)" opacity="0.5"/>
+  <path d="M 1000 580 L 1320 420" stroke="#81C784" stroke-width="2.5" fill="none" marker-end="url(#arrow)" opacity="0.5"/>
+
+  <!-- Main Statistical Software -->
+  <g transform="translate(350, 730)">
+    <rect x="-280" y="0" width="560" height="100" rx="10" fill="white" stroke="#7F8C8D" stroke-width="2"/>
+    <text x="0" y="25" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#7F8C8D">
+      Dominant Statistical Software (1990s-2013)
+    </text>
+    <g transform="translate(-200, 60)">
+      <rect x="-35" y="-20" width="70" height="40" rx="5" fill="#FFE0B2" stroke="#FF8A65" stroke-width="1"/>
+      <text y="4" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold" fill="#D84315">SAS</text>
+    </g>
+    <g transform="translate(-100, 60)">
+      <rect x="-35" y="-20" width="70" height="40" rx="5" fill="#E1BEE7" stroke="#9C27B0" stroke-width="1"/>
+      <text y="4" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold" fill="#4A148C">SPSS</text>
+    </g>
+    <g transform="translate(0, 60)">
+      <rect x="-35" y="-20" width="70" height="40" rx="5" fill="#BBDEFB" stroke="#2196F3" stroke-width="1"/>
+      <text y="4" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold" fill="#0D47A1">Stata</text>
+    </g>
+    <g transform="translate(100, 60)">
+      <rect x="-35" y="-20" width="70" height="40" rx="5" fill="#C8E6C9" stroke="#4CAF50" stroke-width="1"/>
+      <text y="4" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold" fill="#1B5E20">Excel</text>
+    </g>
+    <g transform="translate(200, 60)">
+      <rect x="-35" y="-20" width="70" height="40" rx="5" fill="#D7CCC8" stroke="#795548" stroke-width="1"/>
+      <text y="4" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold" fill="#3E2723">R</text>
+    </g>
+  </g>
+
+  <!-- Timeline and Characteristics -->
+  <g transform="translate(510, -330)">
+    <text x="900" y="1100" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" fill="#95A5A6">
+      📅 Period: 1990s-2013 | 💰 Licenses: Expensive Commercial | 📊 Focus: Statistical Analysis
+    </text>
+    <text x="900" y="1125" text-anchor="middle" font-family="Arial, sans-serif" font-size="17" fill="#95A5A6">
+      💡 Characteristics: Procedural Code + Static Outputs + Limited Reproducibility
+    </text>
+    <text x="900" y="1150" text-anchor="middle" font-family="monospace" font-size="17" fill="#34495E">
+      Data Entry → Manual Cleaning → Statistical Test → Report → Print/Email
+    </text>
+  </g>
+</svg>

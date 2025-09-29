@@ -1,0 +1,494 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 770">
+  <defs>
+    <!-- Consistent color scheme for similar task categories -->
+
+    <!-- Data-related tasks (Blue shades) -->
+    <linearGradient id="dataTask1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#3498DB;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2980B9;stop-opacity:1" />
+    </linearGradient>
+
+    <linearGradient id="dataTask2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#5DADE2;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3498DB;stop-opacity:1" />
+    </linearGradient>
+
+    <!-- Analysis/Modeling tasks (Green shades) -->
+    <linearGradient id="analysisTask1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#2ECC71;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#27AE60;stop-opacity:1" />
+    </linearGradient>
+
+    <linearGradient id="analysisTask2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#58D68D;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2ECC71;stop-opacity:1" />
+    </linearGradient>
+
+    <!-- Implementation tasks (Purple shades) -->
+    <linearGradient id="implementationTask1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#9B59B6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#8E44AD;stop-opacity:1" />
+    </linearGradient>
+
+    <linearGradient id="implementationTask2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#BB8FCE;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#9B59B6;stop-opacity:1" />
+    </linearGradient>
+
+    <!-- Communication tasks (Orange shades) -->
+    <linearGradient id="communicationTask1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#F39C12;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#E67E22;stop-opacity:1" />
+    </linearGradient>
+
+    <linearGradient id="communicationTask2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#F8C471;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#F39C12;stop-opacity:1" />
+    </linearGradient>
+
+    <!-- Optimization tasks (Red shades) -->
+    <linearGradient id="optimizationTask1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#E74C3C;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#C0392B;stop-opacity:1" />
+    </linearGradient>
+
+    <linearGradient id="optimizationTask2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#EC7063;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#E74C3C;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1400" height="800" fill="#FAFAFA"/>
+
+  <!-- Title -->
+  <text x="700" y="30" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#2C3E50">
+    Data Science Workforce Time Allocation (2024)
+  </text>
+  <text x="700" y="50" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#7F8C8D">
+    Survey of 3,493 practitioners across 133 countries | Ranges vary by company size &amp; industry
+  </text>
+
+  <!-- Percentage Scale -->
+  <g transform="translate(250, 80) scale(1.215)">
+    <text x="0" y="0" font-family="Arial, sans-serif" font-size="12" fill="#7F8C8D">0%</text>
+    <text x="225" y="0" font-family="Arial, sans-serif" font-size="12" fill="#7F8C8D">25%</text>
+    <text x="450" y="0" font-family="Arial, sans-serif" font-size="12" fill="#7F8C8D">50%</text>
+    <text x="675" y="0" font-family="Arial, sans-serif" font-size="12" fill="#7F8C8D">75%</text>
+    <text x="900" y="0" font-family="Arial, sans-serif" font-size="12" fill="#7F8C8D">100%</text>
+    <!-- Scale lines -->
+    <line x1="0" y1="5" x2="0" y2="10" stroke="#BDC3C7"     stroke-width="5"/>
+    <line x1="225" y1="5" x2="225" y2="10" stroke="#BDC3C7" stroke-width="5"/>
+    <line x1="450" y1="5" x2="450" y2="10" stroke="#BDC3C7" stroke-width="5"/>
+    <line x1="675" y1="5" x2="675" y2="10" stroke="#BDC3C7" stroke-width="5"/>
+    <line x1="900" y1="5" x2="900" y2="10" stroke="#BDC3C7" stroke-width="5"/>
+  </g>
+
+  <!-- Data Scientist -->
+  <g transform="translate(50, 110)">
+    <text x="-20" y="20" font-family="Arial, sans-serif" font-size="15" font-weight="bold" fill="#2C3E50">
+      Data Scientist ¹
+    </text>
+    <text x="-20" y="35" font-family="Arial, sans-serif" font-size="11" fill="#7F8C8D">
+      Extracts insights from data using statistical analysis &amp; ML
+    </text>
+    <text x="-20" y="48" font-family="Arial, sans-serif" font-size="10" fill="#95A5A6">
+      Tools: Python, R, Jupyter, Pandas, Scikit-learn
+    </text>
+
+    <!-- Full-width stacked horizontal bar -->
+    <g transform="translate(200, 10)">
+      <!-- Data Cleaning 45% -->
+      <rect x="0" y="0" width="495" height="45" fill="url(#dataTask1)" rx="2"/>
+      <text x="247" y="24" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="white" font-weight="bold">
+        Data Cleaning
+      </text>
+      <text x="247" y="38" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white" font-weight="bold">
+        45% (35-55%)
+      </text>
+
+      <!-- Visualization 21% -->
+      <rect x="495" y="0" width="231" height="45" fill="url(#communicationTask1)" rx="2"/>
+      <text x="610" y="24" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="white" font-weight="bold">
+        Visualization
+      </text>
+      <text x="610" y="38" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white" font-weight="bold">
+        21% (15-25%)
+      </text>
+
+      <!-- Modeling 12% -->
+      <rect x="726" y="0" width="132" height="45" fill="url(#analysisTask1)" rx="2"/>
+      <text x="792" y="24" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="white" font-weight="bold">
+        Modeling
+      </text>
+      <text x="792" y="38" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white" font-weight="bold">
+        12% + LLM
+      </text>
+
+      <!-- Deployment 11% -->
+      <rect x="858" y="0" width="121" height="45" fill="url(#implementationTask1)" rx="2"/>
+      <text x="918" y="24" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="white" font-weight="bold">
+        Deployment
+      </text>
+      <text x="918" y="38" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white" font-weight="bold">
+        11%
+      </text>
+
+      <!-- Communication 11% -->
+      <rect x="979" y="0" width="121" height="45" fill="url(#communicationTask2)" rx="2"/>
+      <text x="1039" y="27" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white" font-weight="bold">
+        Communication
+      </text>
+      <text x="1039" y="38" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white" font-weight="bold">
+        11%
+      </text>
+    </g>
+  </g>
+
+  <!-- Data Engineer -->
+  <g transform="translate(50, 200)">
+    <text x="-20" y="20" font-family="Arial, sans-serif" font-size="15" font-weight="bold" fill="#2C3E50">
+      Data Engineer ²
+    </text>
+    <text x="-20" y="35" font-family="Arial, sans-serif" font-size="11" fill="#7F8C8D">
+      Builds and maintains data infrastructure and processing pipelines
+    </text>
+    <text x="-20" y="48" font-family="Arial, sans-serif" font-size="10" fill="#95A5A6">
+      Tools: Spark, Kafka, Airflow, SQL, Docker, K8s
+    </text>
+
+    <g transform="translate(200, 10)">
+      <!-- Pipeline Building 35% -->
+      <rect x="0" y="0" width="385" height="45" fill="url(#dataTask1)" rx="2"/>
+      <text x="192" y="24" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="white" font-weight="bold">
+        Pipeline Building
+      </text>
+      <text x="192" y="38" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white" font-weight="bold">
+        35% (25-45%)
+      </text>
+
+      <!-- ETL Process 25% -->
+      <rect x="385" y="0" width="275" height="45" fill="url(#dataTask2)" rx="2"/>
+      <text x="522" y="24" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="white" font-weight="bold">
+        ETL Process
+      </text>
+      <text x="522" y="38" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white" font-weight="bold">
+        25%
+      </text>
+
+      <!-- Database Management 20% -->
+      <rect x="660" y="0" width="220" height="45" fill="url(#implementationTask1)" rx="2"/>
+      <text x="770" y="24" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="white" font-weight="bold">
+        DB Management
+      </text>
+      <text x="770" y="38" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white" font-weight="bold">
+        20%
+      </text>
+
+      <!-- Optimization 15% -->
+      <rect x="880" y="0" width="165" height="45" fill="url(#optimizationTask1)" rx="2"/>
+      <text x="962" y="24" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="white" font-weight="bold">
+        Optimization
+      </text>
+      <text x="962" y="38" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white" font-weight="bold">
+        15%
+      </text>
+
+      <!-- Collaboration 5% -->
+      <rect x="1045" y="0" width="55" height="45" fill="url(#communicationTask1)" rx="2"/>
+      <text x="1072" y="27" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="white" font-weight="bold">
+        Collaboration 5%
+      </text>
+    </g>
+  </g>
+
+  <!-- Data Analyst -->
+  <g transform="translate(50, 290)">
+    <text x="-20" y="20" font-family="Arial, sans-serif" font-size="15" font-weight="bold" fill="#2C3E50">
+      Data Analyst ³
+    </text>
+    <text x="-20" y="35" font-family="Arial, sans-serif" font-size="11" fill="#7F8C8D">
+      Analyzes data to generate business insights &amp; reports
+    </text>
+    <text x="-20" y="48" font-family="Arial, sans-serif" font-size="10" fill="#95A5A6">
+      Tools: Excel, SQL, Tableau, Power BI, Python
+    </text>
+
+    <g transform="translate(200, 10)">
+      <!-- Analysis &amp; Insights 30% -->
+      <rect x="0" y="0" width="330" height="45" fill="url(#analysisTask1)" rx="2"/>
+      <text x="165" y="25" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white" font-weight="bold">
+        Analysis &amp; Insights
+      </text>
+      <text x="165" y="39" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="white" font-weight="bold">
+        30%
+      </text>
+
+      <!-- Report Creation 25% -->
+      <rect x="330" y="0" width="275" height="45" fill="url(#communicationTask1)" rx="2"/>
+      <text x="467" y="25" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white" font-weight="bold">
+        Report Creation
+      </text>
+      <text x="467" y="39" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="white" font-weight="bold">
+        25%
+      </text>
+
+      <!-- Data Cleaning 20% -->
+      <rect x="605" y="0" width="220" height="45" fill="url(#dataTask1)" rx="2"/>
+      <text x="715" y="25" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white" font-weight="bold">
+        Data Cleaning
+      </text>
+      <text x="715" y="39" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="white" font-weight="bold">
+        20%
+      </text>
+
+      <!-- Stakeholder Communication 15% -->
+      <rect x="825" y="0" width="165" height="45" fill="url(#communicationTask2)" rx="2"/>
+      <text x="907" y="25" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white" font-weight="bold">
+        Stakeholder Comm.
+      </text>
+      <text x="907" y="39" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="white" font-weight="bold">
+        15%
+      </text>
+
+      <!-- Ad-hoc Requests 10% -->
+      <rect x="990" y="0" width="110" height="45" fill="url(#communicationTask1)" rx="2" opacity="0.7"/>
+      <text x="1045" y="25" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white" font-weight="bold">
+        Ad-hoc
+      </text>
+      <text x="1045" y="39" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="white" font-weight="bold">
+        10%
+      </text>
+    </g>
+  </g>
+
+  <!-- ML Engineer -->
+  <g transform="translate(50, 380)">
+    <text x="-20" y="20" font-family="Arial, sans-serif" font-size="15" font-weight="bold" fill="#2C3E50">
+      ML Engineer ⁴
+    </text>
+    <text x="-20" y="35" font-family="Arial, sans-serif" font-size="11" fill="#7F8C8D">
+      Deploys and maintains machine learning models in production
+    </text>
+    <text x="-20" y="48" font-family="Arial, sans-serif" font-size="10" fill="#95A5A6">
+      Tools: MLflow, Kubeflow, TensorFlow, PyTorch
+    </text>
+
+    <g transform="translate(200, 10)">
+      <!-- Model Deployment &amp; MLOps 30% -->
+      <rect x="0" y="0" width="330" height="45" fill="url(#implementationTask1)" rx="2"/>
+      <text x="165" y="25" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white" font-weight="bold">
+        Model Deployment &amp; MLOps
+      </text>
+      <text x="165" y="39" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="white" font-weight="bold">
+        30%
+      </text>
+
+      <!-- Model Optimization 25% -->
+      <rect x="330" y="0" width="275" height="45" fill="url(#optimizationTask1)" rx="2"/>
+      <text x="467" y="25" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white" font-weight="bold">
+        Model Optimization
+      </text>
+      <text x="467" y="39" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="white" font-weight="bold">
+        25%
+      </text>
+
+      <!-- System Integration 20% -->
+      <rect x="605" y="0" width="220" height="45" fill="url(#implementationTask2)" rx="2"/>
+      <text x="715" y="25" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white" font-weight="bold">
+        System Integration
+      </text>
+      <text x="715" y="39" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="white" font-weight="bold">
+        20%
+      </text>
+
+      <!-- Monitoring &amp; Maintenance 15% -->
+      <rect x="825" y="0" width="165" height="45" fill="url(#optimizationTask2)" rx="2"/>
+      <text x="907" y="25" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white" font-weight="bold">
+        Monitoring &amp; Maint.
+      </text>
+      <text x="907" y="39" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="white" font-weight="bold">
+        15%
+      </text>
+
+      <!-- Research &amp; Experiments 10% -->
+      <rect x="990" y="0" width="110" height="45" fill="url(#analysisTask2)" rx="2"/>
+      <text x="1045" y="25" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white" font-weight="bold">
+        Research
+      </text>
+      <text x="1045" y="39" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="white" font-weight="bold">
+        10%
+      </text>
+    </g>
+  </g>
+
+  <!-- Analytics Engineer -->
+  <g transform="translate(50, 470)">
+    <text x="-20" y="20" font-family="Arial, sans-serif" font-size="15" font-weight="bold" fill="#2C3E50">
+      Analytics Engineer ⁵
+    </text>
+    <text x="-20" y="35" font-family="Arial, sans-serif" font-size="11" fill="#7F8C8D">
+      Bridges data engineering and analytics with transformation logic
+    </text>
+    <text x="-20" y="48" font-family="Arial, sans-serif" font-size="10" fill="#95A5A6">
+      Tools: dbt, SQL, Git, Airflow, BigQuery, Snowflake
+    </text>
+
+    <g transform="translate(200, 10)">
+      <!-- Data Modeling 35% -->
+      <rect x="0" y="0" width="385" height="45" fill="url(#analysisTask1)" rx="2"/>
+      <text x="192" y="25" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white" font-weight="bold">
+        Data Modeling
+      </text>
+      <text x="192" y="39" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="white" font-weight="bold">
+        35%
+      </text>
+
+      <!-- Pipeline Development 25% -->
+      <rect x="385" y="0" width="275" height="45" fill="url(#dataTask1)" rx="2"/>
+      <text x="522" y="25" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white" font-weight="bold">
+        Pipeline Development
+      </text>
+      <text x="522" y="39" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="white" font-weight="bold">
+        25%
+      </text>
+
+      <!-- Data Quality &amp; Testing 20% -->
+      <rect x="660" y="0" width="220" height="45" fill="url(#optimizationTask1)" rx="2"/>
+      <text x="770" y="25" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white" font-weight="bold">
+        Data Quality &amp; Testing
+      </text>
+      <text x="770" y="39" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="white" font-weight="bold">
+        20%
+      </text>
+
+      <!-- Documentation 10% -->
+      <rect x="880" y="0" width="110" height="45" fill="url(#communicationTask1)" rx="2"/>
+      <text x="935" y="25" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white" font-weight="bold">
+        Documentation
+      </text>
+      <text x="935" y="39" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="white" font-weight="bold">
+        10%
+      </text>
+
+      <!-- Stakeholder Support 10% -->
+      <rect x="990" y="0" width="110" height="45" fill="url(#communicationTask2)" rx="2"/>
+      <text x="1045" y="25" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white" font-weight="bold">
+        Support
+      </text>
+      <text x="1045" y="39" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="white" font-weight="bold">
+        10%
+      </text>
+    </g>
+  </g>
+
+  <!-- Legend -->
+  <g transform="translate(50, 530)">
+    <text x="0" y="20" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#2C3E50">
+      Task Categories
+    </text>
+
+    <!-- Single row layout -->
+    <!-- Data Tasks -->
+    <rect x="0" y="35" width="20" height="15" fill="url(#dataTask1)" rx="2"/>
+    <text x="30" y="47" font-family="Arial, sans-serif" font-size="13" fill="#2C3E50">
+      Data Tasks
+    </text>
+
+    <!-- Analysis/Modeling -->
+    <rect x="150" y="35" width="20" height="15" fill="url(#analysisTask1)" rx="2"/>
+    <text x="180" y="47" font-family="Arial, sans-serif" font-size="13" fill="#2C3E50">
+      Analysis &amp; Modeling
+    </text>
+
+    <!-- Implementation -->
+    <rect x="330" y="35" width="20" height="15" fill="url(#implementationTask1)" rx="2"/>
+    <text x="360" y="47" font-family="Arial, sans-serif" font-size="13" fill="#2C3E50">
+      Implementation
+    </text>
+
+    <!-- Communication -->
+    <rect x="500" y="35" width="20" height="15" fill="url(#communicationTask1)" rx="2"/>
+    <text x="530" y="47" font-family="Arial, sans-serif" font-size="13" fill="#2C3E50">
+      Communication
+    </text>
+
+    <!-- Optimization -->
+    <rect x="650" y="35" width="20" height="15" fill="url(#optimizationTask1)" rx="2"/>
+    <text x="680" y="47" font-family="Arial, sans-serif" font-size="13" fill="#2C3E50">
+      Optimization
+    </text>
+  </g>
+
+  <!-- Governance Note -->
+  <g transform="translate(850, 530)">
+    <text x="0" y="15" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#E67E22">
+      + Governance &amp; Compliance: 5-10% across all roles (GDPR, SOX, Model Cards, AI Ethics)
+    </text>
+  </g>
+
+  <!-- Key Insights Box -->
+  <g transform="translate(100, 600)">
+    <rect x="0" y="0" width="1100" height="130" fill="#F8F9FA" stroke="#E9ECEF" stroke-width="2" rx="10"/>
+    <text x="550" y="25" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#2C3E50">
+      2024 Data Science Workforce Analysis &amp; Emerging Trends
+    </text>
+
+    <!-- Left column -->
+    <text x="20" y="50" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#E74C3C">
+      Role Evolution vs Pre-DS Era
+    </text>
+    <text x="20" y="68" font-family="Arial, sans-serif" font-size="11" fill="#2C3E50">
+      • Data cleaning time reduced from 80% to 45% (automation)
+    </text>
+    <text x="20" y="82" font-family="Arial, sans-serif" font-size="11" fill="#2C3E50">
+      • New hybrid roles bridging technical &amp; business gaps
+    </text>
+    <text x="20" y="96" font-family="Arial, sans-serif" font-size="11" fill="#2C3E50">
+      • Cross-functional collaboration increased 3x
+    </text>
+    <text x="20" y="110" font-family="Arial, sans-serif" font-size="11" fill="#2C3E50">
+      • Governance compliance now mandatory (5-10% time)
+    </text>
+
+    <!-- Middle column -->
+    <text x="380" y="50" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#27AE60">
+      2024 Emerging Tasks
+    </text>
+    <text x="380" y="68" font-family="Arial, sans-serif" font-size="11" fill="#2C3E50">
+      • LLM integration &amp; prompt engineering (5-15% added)
+    </text>
+    <text x="380" y="82" font-family="Arial, sans-serif" font-size="11" fill="#2C3E50">
+      • AI model evaluation &amp; bias detection
+    </text>
+    <text x="380" y="96" font-family="Arial, sans-serif" font-size="11" fill="#2C3E50">
+      • Responsible AI documentation &amp; ethics review
+    </text>
+    <text x="380" y="110" font-family="Arial, sans-serif" font-size="11" fill="#2C3E50">
+      • Real-time model monitoring &amp; drift detection
+    </text>
+
+    <!-- Right column -->
+    <text x="740" y="50" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#3498DB">
+      Survey Sources &amp; Footnotes
+    </text>
+    <text x="740" y="68" font-family="Arial, sans-serif" font-size="10" fill="#2C3E50">
+      ¹ Anaconda State of Data Science 2024 (n=3,493)
+    </text>
+    <text x="740" y="82" font-family="Arial, sans-serif" font-size="10" fill="#2C3E50">
+      ² Stack Overflow Developer Survey 2024
+    </text>
+    <text x="740" y="96" font-family="Arial, sans-serif" font-size="10" fill="#2C3E50">
+      ³ Tableau State of Data Culture 2024
+    </text>
+    <text x="740" y="110" font-family="Arial, sans-serif" font-size="10" fill="#2C3E50">
+      ⁴ MLOps Community Survey 2024 ⁵ dbt State of Analytics 2024
+    </text>
+  </g>
+
+  <!-- Data Source -->
+  <text x="600" y="750" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#95A5A6">
+    Compiled from multiple industry surveys 2024 | Ranges reflect company size (startup to enterprise) &amp; domain variance
+  </text>
+</svg>

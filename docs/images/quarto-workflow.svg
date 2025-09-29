@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="900" height="250" viewBox="0 70 900 250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Quarto 워크플로: QMD에서 Jupyter/knitr를 거쳐 Markdown, Pandoc, 최종 출력물까지">
+  <defs>
+    <!-- 전문적인 그라데이션 정의 -->
+    <linearGradient id="gradPurple" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#8B5CF6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#7C3AED;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="gradOrange" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#F97316;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#EA580C;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="gradBlue" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3B82F6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1D4ED8;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="gradGreen" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#10B981;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#059669;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="gradRed" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#EF4444;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#DC2626;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="gradGray" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#9CA3AF;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#6B7280;stop-opacity:1" />
+    </linearGradient>
+
+    <!-- 고급 그림자 필터 (살짝 완화) -->
+    <filter id="dropShadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="3"/>
+      <feOffset dx="2" dy="5" result="offsetblur"/>
+      <feComponentTransfer><feFuncA type="linear" slope="0.22"/></feComponentTransfer>
+      <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+
+    <!-- 글로우 효과 -->
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="3" result="coloredBlur"/>
+      <feMerge><feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+
+    <!-- 세련된 화살표 마커 -->
+    <marker id="arrow" markerWidth="14" markerHeight="14" refX="12" refY="7" orient="auto">
+      <path d="M2,2 L2,12 L12,7 z" fill="#374151" />
+    </marker>
+    <marker id="grayArrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M2,2 L2,10 L10,6 z" fill="#6B7280" />
+    </marker>
+    <!-- [① 강조] Markdown→Pandoc 전용 보라색 굵은 마커 -->
+    <marker id="purpleArrow" markerWidth="18" markerHeight="18" refX="15" refY="9" orient="auto">
+      <path d="M3,3 L3,15 L15,9 z" fill="#7C3AED"/>
+    </marker>
+
+    <!-- 폰트 스타일 (가독성 향상: 살짝 키움) -->
+    <style>
+      .title-text { font-family: "Noto Sans KR", sans-serif; font-size: 14px; font-weight: 700; text-anchor: middle; fill: white; }
+      .sub-text { font-family: "Noto Sans KR", sans-serif; font-size: 11px; text-anchor: middle; fill: white; opacity: 0.95; }
+      .icon-text { font-family: system-ui, sans-serif; font-size: 16px; text-anchor: middle; }
+      .output-text { font-family: "Noto Sans KR", sans-serif; font-size: 12px; font-weight: 600; text-anchor: middle; fill: white; }
+      .label-text { font-family: "Noto Sans KR", sans-serif; font-size: 10px; text-anchor: middle; fill: #6B7280; }
+    </style>
+  </defs>
+
+  <!-- 배경 -->
+  <rect width="900" height="320" fill="#FEFEFE" stroke="#E5E7EB" stroke-width="1" rx="14"/>
+
+  <!-- ① QMD 소스 -->
+  <g transform="translate(80, 160)">
+    <rect x="-50" y="-35" width="100" height="70" rx="18" fill="url(#gradPurple)" filter="url(#dropShadow)" stroke="#6D28D9" stroke-width="2"/>
+    <text x="0" y="-12" class="icon-text" fill="white">📝</text>
+    <text x="0" y="6" class="title-text">QMD</text>
+    <text x="0" y="22" class="sub-text">소스파일</text>
+  </g>
+
+  <!-- 주피터 경로 (상단, 중앙선 정렬) -->
+  <path d="M 130 140 H 180 V 110 H 205" stroke="#374151" stroke-width="1" marker-end="url(#arrow)" fill="none"/>
+  <g transform="translate(250, 110)">
+    <rect x="-45" y="-25" width="90" height="55" rx="12" fill="url(#gradOrange)" filter="url(#dropShadow)" stroke="#EA580C" stroke-width="2"/>
+    <text x="0" y="-6" class="icon-text" fill="white">🔧</text>
+    <text x="0" y="12" class="title-text">Jupyter</text>
+    <text x="0" y="26" class="sub-text" font-size="9">파이썬</text>
+  </g>
+
+  <!-- knitr 경로 (하단, 중앙선 정렬) -->
+  <path d="M 130 180 H 180 V 210 H 205" stroke="#374151" stroke-width="1" marker-end="url(#arrow)" fill="none"/>
+  <g transform="translate(250, 210)">
+    <rect x="-45" y="-25" width="90" height="55" rx="12" fill="url(#gradBlue)" filter="url(#dropShadow)" stroke="#1D4ED8" stroke-width="2"/>
+    <text x="0" y="-6" class="icon-text" fill="white">⚡</text>
+    <text x="0" y="12" class="title-text">knitr</text>
+    <text x="0" y="26" class="sub-text" font-size="9">R</text>
+  </g>
+
+  <!-- 마크다운 병합점 (양 경로 모두 중앙으로 수렴) -->
+  <path d="M 295 110 H 340 V 160 H 370" stroke="#6B7280" stroke-width="2" marker-end="url(#grayArrow)" fill="none"/>
+  <path d="M 295 210 H 340 V 160 H 370" stroke="#6B7280" stroke-width="2" marker-end="url(#grayArrow)" fill="none"/>
+  
+  <!-- Markdown -->
+  <g transform="translate(420, 160)">
+    <rect x="-50" y="-30" width="100" height="60" rx="15" fill="url(#gradGreen)" filter="url(#dropShadow)" stroke="#059669" stroke-width="2"/>
+    <text x="0" y="-8" class="icon-text" fill="white">📄</text>
+    <text x="0" y="10" class="title-text">Markdown</text>
+    <text x="0" y="26" class="sub-text">마크다운</text>
+  </g>
+
+  <!-- [① 강조] Markdown → Pandoc : 보라색 굵은 글로우 화살표 -->
+  <path d="M 470 160 L 535 160" stroke="#64748B" stroke-width="1.5" marker-end="url(#arrow)" opacity="0.7"/>
+
+
+  <!-- Pandoc 처리 엔진 (다이아몬드) -->
+  <g transform="translate(580, 160)">
+    <polygon points="0,-40 45,0 0,40 -45,0" fill="url(#gradRed)" filter="url(#dropShadow)" stroke="#DC2626" stroke-width="2"/>
+    <text x="0" y="-8" class="icon-text" fill="white">⚙️</text>
+    <text x="0" y="12" class="title-text">Pandoc</text>
+    <text x="0" y="26" class="sub-text">팬독</text>
+  </g>
+
+  <!-- 최종 출력물들 (중앙선 정렬, 간격 균등) -->
+  <path d="M 625 140 H 680 V 110 H 720" stroke="#6B7280" stroke-width="2" marker-end="url(#grayArrow)" fill="none"/>
+  <path d="M 625 160 H 720" stroke="#6B7280" stroke-width="2" marker-end="url(#grayArrow)" fill="none"/>
+  <path d="M 625 180 H 680 V 210 H 720" stroke="#6B7280" stroke-width="2" marker-end="url(#grayArrow)" fill="none"/>
+
+  <!-- PDF 출력 -->
+  <g transform="translate(770, 110)">
+    <rect x="-40" y="-22" width="80" height="44" rx="10" fill="url(#gradGray)" filter="url(#dropShadow)" stroke="#6B7280" stroke-width="2"/>
+    <text x="0" y="-4" class="icon-text" fill="white">📄</text>
+    <text x="0" y="14" class="output-text">PDF</text>
+  </g>
+
+  <!-- HTML 출력 -->
+  <g transform="translate(770, 160)">
+    <rect x="-40" y="-22" width="80" height="44" rx="10" fill="url(#gradGray)" filter="url(#dropShadow)" stroke="#6B7280" stroke-width="2"/>
+    <text x="0" y="-4" class="icon-text" fill="white">🌐</text>
+    <text x="0" y="14" class="output-text">HTML</text>
+  </g>
+
+  <!-- DOCX 출력 -->
+  <g transform="translate(770, 210)">
+    <rect x="-40" y="-22" width="80" height="44" rx="10" fill="url(#gradGray)" filter="url(#dropShadow)" stroke="#6B7280" stroke-width="2"/>
+    <text x="0" y="-4" class="icon-text" fill="white">📊</text>
+    <text x="0" y="14" class="output-text">DOCX</text>
+  </g>
+
+  <!-- [② 가독성 향상] 하단 설명 배너 (텍스트 색상/대비 강화) -->
+  <rect x="80" y="260" width="700" height="35" rx="15" fill="#8B5CF6" fill-opacity="0.08" stroke="#8B5CF6" stroke-width="1.5" stroke-dasharray="6,4"/>
+  <text x="430" y="283" font-family="Noto Sans KR, sans-serif" font-size="16" font-weight="800" fill="#4C1D95" text-anchor="middle">
+    쿼토 작업흐름: 저작 → 컴파일 → 출판
+  </text>
+</svg>

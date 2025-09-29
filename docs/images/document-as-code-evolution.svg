@@ -1,0 +1,110 @@
+<svg viewBox="0 70 1000 500" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .title { font: 24px 'Noto Sans KR', sans-serif; font-weight: 700; fill: #2c3e50; }
+      .subtitle { font: 16px 'Noto Sans KR', sans-serif; font-weight: 500; fill: #34495e; }
+      .content { font: 14px 'Noto Sans KR', sans-serif; fill: #2c3e50; }
+      .small-text { font: 12px 'Noto Sans KR', sans-serif; fill: #7f8c8d; }
+      .stage-title { font: 18px 'Noto Sans KR', sans-serif; font-weight: 600; }
+      .code-stage { fill: #3498db; }
+      .program-stage { fill: #e74c3c; }
+      .software-stage { fill: #27ae60; }
+      .arrow { fill: #95a5a6; }
+      .box-shadow { filter: drop-shadow(2px 2px 4px rgba(0,0,0,0.1)); }
+    </style>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1000" height="600" fill="#ffffff"/>
+  
+  <!-- Stage 1: Code -->
+  <g class="box-shadow">
+    <rect x="50" y="100" width="240" height="400" rx="15" fill="#ecf0f1" stroke="#3498db" stroke-width="3"/>
+    <rect x="60" y="110" width="220" height="60" rx="10" fill="#3498db" opacity="0.1"/>
+    <text x="170" y="135" class="stage-title code-stage" text-anchor="middle">Stage 1: Document ≈ Code</text>
+    <text x="170" y="155" class="small-text" text-anchor="middle">Document as Code</text>
+    
+    <!-- Code characteristics -->
+    <text x="80" y="190" class="content" font-weight="600">Features:</text>
+    <text x="80" y="210" class="content">• Markdown text files</text>
+    <text x="80" y="230" class="content">• Git version control</text>
+    <text x="80" y="250" class="content">• Text editor usage</text>
+    <text x="80" y="270" class="content">• Static content</text>
+    
+    <text x="80" y="310" class="content" font-weight="600">Tools:</text>
+    <text x="80" y="330" class="content">• Markdown</text>
+    <text x="80" y="350" class="content">• Pandoc</text>
+    <text x="80" y="370" class="content">• GitHub</text>
+    
+    <text x="80" y="410" class="content" font-weight="600">Output:</text>
+    <text x="80" y="430" class="content">• HTML, PDF</text>
+    <text x="80" y="450" class="content">• Static websites</text>
+    <text x="80" y="470" class="content">• Document files</text>
+  </g>
+  
+  <!-- Arrow 1 -->
+  <g class="arrow-one" transform="translate(-30, 0)">
+    <polygon points="340,295 380,285 380,295 410,295 380,305 380,315" class="arrow"/>
+    <text x="370" y="340" class="small-text" text-anchor="middle">Adding Executability</text>
+  </g>
+  
+  <!-- Stage 2: Program -->
+  <g class="box-shadow"  transform="translate(-40, 0)">
+    <rect x="440" y="100" width="240" height="400" rx="15" fill="#ecf0f1" stroke="#e74c3c" stroke-width="3"/>
+    <rect x="450" y="110" width="220" height="60" rx="10" fill="#e74c3c" opacity="0.1"/>
+    <text x="560" y="135" class="stage-title program-stage" text-anchor="middle">Stage 2: Document ≈ Program</text>
+    <text x="560" y="155" class="small-text" text-anchor="middle">Document as Program</text>
+    
+    <!-- Program characteristics -->
+    <text x="470" y="190" class="content" font-weight="600">Features:</text>
+    <text x="470" y="210" class="content">• Executable code chunks</text>
+    <text x="470" y="230" class="content">• Data processing + visualization</text>
+    <text x="470" y="250" class="content">• Dynamic content generation</text>
+    <text x="470" y="270" class="content">• Reproducible analysis</text>
+    
+    <text x="470" y="310" class="content" font-weight="600">Tools:</text>
+    <text x="470" y="330" class="content">• Jupyter Notebook</text>
+    <text x="470" y="350" class="content">• R Markdown</text>
+    <text x="470" y="370" class="content">• Quarto</text>
+    
+    <text x="470" y="410" class="content" font-weight="600">Output:</text>
+    <text x="470" y="430" class="content">• Interactive charts</text>
+    <text x="470" y="450" class="content">• Calculated reports</text>
+    <text x="470" y="470" class="content">• Data analysis results</text>
+  </g>
+  
+  <!-- Arrow 2 -->
+  <g class="arrow-two" transform="translate(-80, 0)">  
+    <polygon points="740,295 770,285 770,295 800,295 770,305 770,315" class="arrow"/>
+    <text x="770" y="340" class="small-text" text-anchor="middle">Complete Systemization</text>
+  </g>
+
+  <!-- Stage 3: Software -->
+  <g class="box-shadow" transform="translate(-80, 0)">  
+    <rect x="830" y="100" width="240" height="400" rx="15" fill="#ecf0f1" stroke="#27ae60" stroke-width="3"/>
+    <rect x="840" y="110" width="220" height="60" rx="10" fill="#27ae60" opacity="0.1"/>
+    <text x="955" y="135" class="stage-title software-stage" text-anchor="middle">Stage 3: Document ≈ Software</text>
+    <text x="955" y="155" class="small-text" text-anchor="middle">Document as Software</text>
+    
+    <!-- Software characteristics -->
+    <text x="850" y="210" class="content" font-weight="600">Features:</text>
+    <text x="850" y="230" class="content">• Complete UI</text>
+    <text x="850" y="250" class="content">• DB connection</text>
+    <text x="850" y="270" class="content">• API integration</text>
+    <text x="850" y="290" class="content">• Real-time response</text>
+    
+    <text x="850" y="330" class="content" font-weight="600">Tools:</text>
+    <text x="850" y="350" class="content">• Shiny</text>
+    <text x="850" y="370" class="content">• Streamlit</text>
+    <text x="850" y="390" class="content">• Dashboard</text>
+    
+    <text x="850" y="430" class="content" font-weight="600">Output:</text>
+    <text x="850" y="450" class="content">• Web apps</text>
+    <text x="850" y="470" class="content">• Dashboards</text>
+    <text x="850" y="490" class="content">• SaaS</text>
+  </g>
+  
+  <!-- Bottom example -->
+  <rect x="50" y="520" width="900" height="40" rx="10" fill="#f8f9fa" stroke="#dee2e6"/>
+  <text x="80" y="545" class="content" font-weight="600">[Sales Report] Code: report.md → Program: analysis.qmd → Software: sales_dashboard.qmd</text>
+</svg>

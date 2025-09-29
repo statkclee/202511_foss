@@ -1,0 +1,241 @@
+<svg viewBox="0 0 1000 670" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="traditionalGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#F5F5F5"/>
+      <stop offset="100%" style="stop-color:#757575"/>
+    </linearGradient>
+
+    <linearGradient id="dataScienceGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#E3F2FD"/>
+      <stop offset="100%" style="stop-color:#2196F3"/>
+    </linearGradient>
+
+    <linearGradient id="mlopsGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#E8F5E8"/>
+      <stop offset="100%" style="stop-color:#4CAF50"/>
+    </linearGradient>
+
+    <marker id="arrowhead" markerWidth="12" markerHeight="8"
+     refX="11" refY="4" orient="auto">
+      <polygon points="0 0, 12 4, 0 8" fill="#333"/>
+    </marker>
+
+    <marker id="traditionalArrow" markerWidth="12" markerHeight="8"
+     refX="11" refY="4" orient="auto">
+      <polygon points="0 0, 12 4, 0 8" fill="#757575"/>
+    </marker>
+
+    <marker id="dataScienceArrow" markerWidth="12" markerHeight="8"
+     refX="11" refY="4" orient="auto">
+      <polygon points="0 0, 12 4, 0 8" fill="#2196F3"/>
+    </marker>
+
+    <marker id="mlopsArrow" markerWidth="12" markerHeight="8"
+     refX="11" refY="4" orient="auto">
+      <polygon points="0 0, 12 4, 0 8" fill="#4CAF50"/>
+    </marker>
+
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect x="0" y="0" width="1000" height="700" fill="white"/>
+
+  <!-- Title -->
+  <text x="500" y="40" text-anchor="middle" font-family="Arial, sans-serif" font-size="26" font-weight="bold" fill="#333">
+    🔄 Evolution of Data-Driven Experimental Cycle
+  </text>
+
+  <!-- Subtitle -->
+  <text x="500" y="65" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#666">
+    From Manual Hypothesis Testing to AI-Driven Continuous Experimentation
+  </text>
+
+  <!-- Era Timeline -->
+  <line x1="100" y1="90" x2="900" y2="90" stroke="#333" stroke-width="2"/>
+  <circle cx="200" cy="90" r="6" fill="#757575"/>
+  <circle cx="500" cy="90" r="6" fill="#2196F3"/>
+  <circle cx="800" cy="90" r="6" fill="#4CAF50"/>
+
+  <text x="200" y="110" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#666">Traditional Era</text>
+  <text x="500" y="110" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#666">Data Science Era</text>
+  <text x="800" y="110" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#666">MLOps Era</text>
+
+  <!-- Traditional Era Cycle (Outer Ring) -->
+  <g transform="translate(200, 300)">
+    <!-- Cycle Background -->
+    <circle cx="0" cy="0" r="160" fill="none" stroke="#757575" stroke-width="2" stroke-dasharray="5,5" opacity="0.3"/>
+
+    <!-- Arrows -->
+    <g transform="rotate(60)">
+      <path d="M 0 -120 A 120 120 0 0 1 104 60" stroke="#757575"  stroke-width="2" fill="none" marker-end="url(#traditionalArrow)"/>
+      <path d="M 104 60 A 120 120 0 0 1 -104 60" stroke="#757575" stroke-width="2" fill="none" marker-end="url(#traditionalArrow)"/>
+      <path d="M -104 60 A 120 120 0 0 1 0 -120" stroke="#757575" stroke-width="2" fill="none" marker-end="url(#traditionalArrow)"/>
+    </g>
+
+    <text x="0" y="0" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" fill="black">Business Analysts</text>
+
+    <!-- Design Phase -->
+    <circle cx="0" cy="-120" r="50" fill="url(#traditionalGradient)" stroke="#757575" stroke-width="3"/>
+    <text x="0" y="-130" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="black">📋 DESIGN</text>
+    <text x="0" y="-118" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="black">Manual Planning</text>
+    <text x="0" y="-108" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="black">Business Analysts</text>
+    <text x="0" y="-98" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="black">Tools: SPSS, Excel, SAS</text>
+
+    <!-- Experiment Phase -->
+    <circle cx="104" cy="60" r="50" fill="url(#traditionalGradient)" stroke="#757575" stroke-width="3"/>
+    <text x="104" y="50" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="black">🧪 EXPERIMENT</text>
+    <text x="104" y="68" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="black">Physical Trials</text>
+    <text x="104" y="78" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="black">Limited Samples</text>
+
+    <!-- Analyze Phase -->
+    <circle cx="-104" cy="60" r="50" fill="url(#traditionalGradient)" stroke="#757575" stroke-width="3"/>
+    <text x="-104" y="50" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="black">📊 ANALYZE</text>
+    <text x="-104" y="68" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="black">Statistical Analysis</text>
+    <text x="-104" y="78" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="black">Paper Reports</text>
+
+    <!-- Cycle Time -->
+    <text x="0" y="140" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#757575">
+      Cycle Time: MONTHS TO YEARS
+    </text>
+  </g>
+
+  <!-- Data Science Era Cycle (Middle Ring) -->
+  <g transform="translate(530, 300)">
+    <!-- Cycle Background -->
+    <circle cx="0" cy="0" r="130" fill="none" stroke="#2196F3" stroke-width="2" stroke-dasharray="8,4" opacity="0.4"/>
+
+    <!-- Arrows -->
+    <g transform="translate(0,0) rotate(60) scale(0.8)">
+      <path d="M 0 -120 A 120 120 0 0 1 104 60" stroke="#2196F3"  stroke-width="2.5" fill="none" marker-end="url(#dataScienceArrow)"/>
+      <path d="M 104 60 A 120 120 0 0 1 -104 60" stroke="#2196F3" stroke-width="2.5" fill="none" marker-end="url(#dataScienceArrow)"/>
+      <path d="M -104 60 A 120 120 0 0 1 0 -120" stroke="#2196F3" stroke-width="2.5" fill="none" marker-end="url(#dataScienceArrow)"/>
+    </g>
+
+    <text x="0" y="0" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" fill="#1976D2">Data Scientists</text>
+
+    <!-- Design Phase -->
+    <circle cx="0" cy="-95" r="42" fill="url(#dataScienceGradient)" stroke="#2196F3" stroke-width="3"/>
+    <text x="0" y="-105" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#1976D2">🎯 DESIGN</text>
+    <text x="0" y="-95" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#1976D2">Data Scientists</text>
+    <text x="0" y="-85" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#1976D2">Tools: Python/R, Jupyter</text>
+
+    <!-- Experiment Phase -->
+    <circle cx="82" cy="47" r="42" fill="url(#dataScienceGradient)" stroke="#2196F3" stroke-width="3"/>
+    <text x="82" y="37" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#1976D2">⚡ EXPERIMENT</text>
+    <text x="82" y="52" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#1976D2">A/B Testing</text>
+    <text x="82" y="62" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#1976D2">Optimizely, LaunchDarkly</text>
+
+    <!-- Analyze Phase -->
+    <circle cx="-82" cy="47" r="42" fill="url(#dataScienceGradient)" stroke="#2196F3" stroke-width="3"/>
+    <text x="-82" y="37" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#1976D2">📈 ANALYZE</text>
+    <text x="-82" y="52" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#1976D2">Statistical Models</text>
+    <text x="-82" y="62" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#1976D2">Tableau, Snowflake</text>
+
+
+    <!-- Cycle Time -->
+    <text x="0" y="145" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#2196F3">
+      Cycle Time: HOURS TO DAYS (online)
+    </text>
+    <text x="0" y="158" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#2196F3">
+      WEEKS+ (regulated contexts)
+    </text>
+  </g>
+
+  <!-- MLOps Era Cycle (Inner Ring) -->
+  <g transform="translate(800, 300)">
+    <!-- Cycle Background -->
+    <circle cx="0" cy="0" r="100" fill="none" stroke="#4CAF50" stroke-width="3" opacity="0.5"/>
+
+    <!-- Arrows -->
+    <g transform="translate(0,0) rotate(60) scale(0.6)">
+      <path d="M 0 -120 A 120 120 0 0 1 104 60" stroke="#4CAF50"  stroke-width="2.5" fill="none" marker-end="url(#mlopsArrow)"/>
+      <path d="M 104 60 A 120 120 0 0 1 -104 60" stroke="#4CAF50" stroke-width="2.5" fill="none" marker-end="url(#mlopsArrow)"/>
+      <path d="M -104 60 A 120 120 0 0 1 0 -120" stroke="#4CAF50" stroke-width="2.5" fill="none" marker-end="url(#mlopsArrow)"/>
+    </g>
+
+    <text x="0" y="-5" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" fill="#2E7D32">ML Engineers</text>
+
+    <!-- Design Phase -->
+    <circle cx="0" cy="-70" r="35" fill="url(#mlopsGradient)" stroke="#4CAF50" stroke-width="3"/>
+    <text x="0" y="-80" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#2E7D32">🤖 DESIGN</text>
+    <text x="0" y="-71" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#2E7D32">ML Engineers</text>
+    <text x="0" y="-62" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#2E7D32">MLflow, Kubeflow</text>
+
+    <!-- Experiment Phase -->
+    <circle cx="61" cy="35" r="35" fill="url(#mlopsGradient)" stroke="#4CAF50" stroke-width="3"/>
+    <text x="61" y="25" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#2E7D32">🚀 EXPERIMENT</text>
+    <text x="61" y="38" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#2E7D32">Continuous</text>
+    <text x="61" y="48" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#2E7D32">Feature Stores</text>
+
+    <!-- Analyze Phase -->
+    <circle cx="-61" cy="35" r="35" fill="url(#mlopsGradient)" stroke="#4CAF50" stroke-width="3"/>
+    <text x="-61" y="25" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#2E7D32">⚡ ANALYZE</text>
+    <text x="-61" y="38" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#2E7D32">Automated</text>
+    <text x="-61" y="48" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#2E7D32">Observability</text>
+
+    <!-- Cycle Time -->
+    <text x="0" y="120" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#4CAF50">
+      Cycle Time: HOURS TO DAYS (automated)
+    </text>
+    <text x="0" y="133" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#4CAF50">
+      WEEKS+ (governance required)
+    </text>
+    <text x="0" y="146" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#FF5722">
+      *Pilot stage, human oversight required
+    </text>
+  </g>
+
+  <!-- Evolution Arrows Between Eras -->
+  <path d="M 340 300 L 400 300" stroke="#333" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  <path d="M 640 300 L 700 300" stroke="#333" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+
+  <!-- Acceleration Indicators -->
+  <g transform="translate(200, 480)">
+    <rect x="-80" y="0" width="160" height="60" fill="#FFEBEE" stroke="#D32F2F" stroke-width="2" rx="10"/>
+    <text x="0" y="20" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#D32F2F">🐌 SLOW CYCLE</text>
+    <text x="0" y="35" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#D32F2F">Large batches</text>
+    <text x="0" y="48" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#D32F2F">High cost per experiment</text>
+  </g>
+
+  <g transform="translate(500, 480)">
+    <rect x="-80" y="0" width="160" height="60" fill="#E3F2FD" stroke="#2196F3" stroke-width="2" rx="10"/>
+    <text x="0" y="20" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#2196F3">🚶 MODERATE CYCLE</text>
+    <text x="0" y="35" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#2196F3">Medium batches</text>
+    <text x="0" y="48" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#2196F3">Digital efficiency</text>
+  </g>
+
+  <g transform="translate(800, 480)">
+    <rect x="-80" y="0" width="160" height="60" fill="#E8F5E8" stroke="#4CAF50" stroke-width="2" rx="10"/>
+    <text x="0" y="20" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#4CAF50">🏃 FAST CYCLE</text>
+    <text x="0" y="35" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#4CAF50">Micro-batches</text>
+    <text x="0" y="48" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#4CAF50">AI-automated</text>
+  </g>
+
+  <!-- Key Innovation Callouts -->
+  <rect x="50" y="570" width="900" height="90" fill="#F5F5F5" stroke="#E0E0E0" stroke-width="1" rx="10"/>
+  <text x="500" y="590" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#333">
+    🎯 Key Evolution: From Sequential to Parallel to Continuous
+  </text>
+  <text x="500" y="610" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#666">
+    Traditional: One experiment at a time • Data Science: Multiple experiments • MLOps: Continuous experimentation
+  </text>
+  <text x="500" y="630" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#666">
+    Real Examples: Netflix A/B testing, Uber experimentation platform, Airbnb dynamic pricing
+  </text>
+  <text x="500" y="650" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#999">
+    ⚖️ Governance: GDPR compliance, EU AI Act 2024, explainability requirements still evolving
+  </text>
+
+  <!-- Timeline Labels -->
+  <text x="200" y="125" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#999">1970s-2000s</text>
+  <text x="500" y="125" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#999">2010s-2020</text>
+  <text x="800" y="125" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#999">2020+</text>
+
+</svg>

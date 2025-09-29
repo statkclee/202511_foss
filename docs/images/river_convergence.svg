@@ -1,0 +1,389 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 70 1000 750">
+  <defs>
+    <style>
+      .title-text { font-size: 24px; font-weight: bold; }
+      .stage-text { font-size: 18px; font-weight: bold; }
+      .description-text { font-size: 14px; }
+      .tool-text { font-size: 16px; }
+      .fusion-text { font-size: 20px; font-weight: bold; }
+    </style>
+    
+    <!-- River gradients -->
+    <linearGradient id="documentRiver" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#3b82f6;stop-opacity:0.8" />
+      <stop offset="50%" style="stop-color:#1d4ed8;stop-opacity:0.7" />
+      <stop offset="100%" style="stop-color:#1e40af;stop-opacity:0.9" />
+    </linearGradient>
+    
+    <linearGradient id="softwareRiver" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#10b981;stop-opacity:0.8" />
+      <stop offset="50%" style="stop-color:#059669;stop-opacity:0.7" />
+      <stop offset="100%" style="stop-color:#047857;stop-opacity:0.9" />
+    </linearGradient>
+    
+    <!-- Fusion ocean gradient -->
+    <radialGradient id="fusionOcean" cx="50%" cy="30%" r="70%">
+      <stop offset="0%" style="stop-color:#fbbf24;stop-opacity:1" />
+      <stop offset="40%" style="stop-color:#f59e0b;stop-opacity:0.9" />
+      <stop offset="70%" style="stop-color:#d97706;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#92400e;stop-opacity:0.7" />
+    </radialGradient>
+    
+    <!-- Simple glow effect -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1000" height="800" fill="linear-gradient(180deg, #f8fafc 0%, #e2e8f0 100%)"/>
+  
+  <!-- Catalyst Zone (Center) -->
+  <g id="catalystZone">
+    <!-- Background for catalyst area -->
+    <rect x="350" y="180" width="300" height="300" fill="rgba(255,255,255,0.1)" rx="20" opacity="0.8"/>
+    
+    <!-- Central catalyst elements -->
+    <!-- Internet/Web -->
+    <circle cx="450" cy="220" r="25" fill="#6366f1" opacity="0.8"/>
+    <text x="450" y="227" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white" font-weight="bold">WEB</text>
+    <text x="450" y="260" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#6366f1" font-weight="bold">Internet</text>
+    
+    <!-- Cloud Computing -->
+    <ellipse cx="550" cy="250" rx="30" ry="18" fill="#10b981" opacity="0.8"/>
+    <ellipse cx="545" cy="245" rx="15" ry="10" fill="#34d399" opacity="0.6"/>
+    <ellipse cx="555" cy="245" rx="15" ry="10" fill="#34d399" opacity="0.6"/>
+    <ellipse cx="550" cy="238" rx="12" ry="8" fill="#6ee7b7" opacity="0.7"/>
+    <text x="550" y="280" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#10b981" font-weight="bold">Cloud</text>
+    
+    <!-- Git/Version Control -->
+    <rect x="425" y="310" width="50" height="35" fill="#f59e0b" rx="8" opacity="0.8"/>
+    <circle cx="440" cy="320" r="4" fill="white"/>
+    <circle cx="450" cy="327" r="4" fill="white"/>
+    <circle cx="460" cy="335" r="4" fill="white"/>
+    <line x1="444" y1="322" x2="446" y2="325" stroke="white" stroke-width="2"/>
+    <line x1="454" y1="329" x2="456" y2="333" stroke="white" stroke-width="2"/>
+    <text x="450" y="360" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#f59e0b" font-weight="bold">Git</text>
+    
+    <!-- Open Source -->
+    <polygon points="520,320 535,305 550,320 535,335" fill="#8b5cf6" opacity="0.8"/>
+    <text x="535" y="325" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="white" font-weight="bold">OS</text>
+    <text x="535" y="355" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#8b5cf6" font-weight="bold">Open Source</text>
+    
+    <!-- Data Science -->
+    <circle cx="480" cy="370" r="20" fill="#ec4899" opacity="0.8"/>
+    <rect x="470" y="360" width="20" height="12" fill="white" rx="2"/>
+    <rect x="472" y="362" width="4" height="2" fill="#ec4899"/>
+    <rect x="472" y="365" width="8" height="2" fill="#ec4899"/>
+    <rect x="472" y="368" width="6" height="2" fill="#ec4899"/>
+    <text x="480" y="402" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#ec4899" font-weight="bold">Data Science</text>
+    
+    <!-- Connection ripples -->
+    <g opacity="0.4">
+      <!-- From document side -->
+      <circle cx="380" cy="280" r="40" fill="none" stroke="#3b82f6" stroke-width="2" stroke-dasharray="5,5"/>
+      <circle cx="380" cy="280" r="60" fill="none" stroke="#3b82f6" stroke-width="1" stroke-dasharray="3,3"/>
+      
+      <!-- From software side -->
+      <circle cx="620" cy="280" r="40" fill="none" stroke="#10b981" stroke-width="2" stroke-dasharray="5,5"/>
+      <circle cx="620" cy="280" r="60" fill="none" stroke="#10b981" stroke-width="1" stroke-dasharray="3,3"/>
+    </g>
+    
+    <!-- Catalyst label -->
+    <rect x="450" y="420" width="100" height="30" fill="rgba(255,255,255,0.9)" rx="10" stroke="#64748b" stroke-width="1"/>
+    <text x="500" y="440" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#1e293b" font-weight="bold">
+      Fusion Catalyst
+    </text>
+    
+    <!-- Cross-influence arrows -->
+    <g opacity="0.6" stroke="#64748b" stroke-width="2" marker-end="url(#arrowhead)">
+      <!-- Left to right -->
+      <line x1="320" y1="260" x2="380" y2="260" stroke-dasharray="4,4"/>
+      <line x1="320" y1="300" x2="380" y2="300" stroke-dasharray="4,4"/>
+      <line x1="320" y1="340" x2="380" y2="340" stroke-dasharray="4,4"/>
+      
+      <!-- Right to left -->
+      <line x1="680" y1="260" x2="620" y2="260" stroke-dasharray="4,4"/>
+      <line x1="680" y1="300" x2="620" y2="300" stroke-dasharray="4,4"/>
+      <line x1="680" y1="340" x2="620" y2="340" stroke-dasharray="4,4"/>
+    </g>
+  </g>
+  
+  <!-- Define arrowhead marker -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#64748b" opacity="0.6"/>
+    </marker>
+  </defs>
+
+  <!-- Document River (Left) -->
+  <g id="documentRiver">
+    <!-- 1.0 Level -->
+    <path d="M 150 100 Q 120 150 150 200 Q 180 250 150 300" 
+          stroke="url(#documentRiver)" stroke-width="60" fill="none" opacity="0.6"/>
+    
+    <circle cx="150" cy="150" r="50" fill="#3b82f6" opacity="0.9"/>
+    <rect x="125" y="125" width="50" height="35" fill="white" rx="3"/>
+    <rect x="132" y="132" width="8" height="3" fill="#3b82f6"/>
+    <rect x="132" y="137" width="16" height="3" fill="#3b82f6"/>
+    <rect x="132" y="142" width="12" height="3" fill="#3b82f6"/>
+    <rect x="132" y="147" width="20" height="3" fill="#3b82f6"/>
+    
+    <text x="220" y="140" font-family="Arial, sans-serif" class="stage-text" fill="#3b82f6">
+      Document 1.0
+    </text>
+    <text x="220" y="158" font-family="Arial, sans-serif" class="description-text" fill="#1e40af">
+      Word Processor Era
+    </text>
+    <text x="220" y="175" font-family="Arial, sans-serif" class="tool-text" fill="#64748b">
+      HWP, MS Word, PDF
+    </text>
+    
+    <!-- 2.0 Level -->
+    <path d="M 150 300 Q 160 350 150 400 Q 140 450 150 500" 
+          stroke="url(#documentRiver)" stroke-width="65" fill="none" opacity="0.7"/>
+    
+    <circle cx="150" cy="400" r="52" fill="#1d4ed8" opacity="0.9"/>
+    <rect x="115" y="375" width="75" height="50" fill="white" rx="5"/>
+    <rect x="125" y="383" width="20" height="4" fill="#1d4ed8"/>
+    <rect x="125" y="390" width="25" height="3" fill="#64748b"/>
+    <rect x="125" y="396" width="16" height="3" fill="#64748b"/>
+    <rect x="117" y="402" width="65" height="17" fill="#f3f4f6" rx="2"/>
+    <text x="120" y="415" font-family="monospace" font-size="12" fill="#1d4ed8">code+text</text>
+    
+    <text x="220" y="390" font-family="Arial, sans-serif" class="stage-text" fill="#1d4ed8">
+      Document 2.0
+    </text>
+    <text x="220" y="408" font-family="Arial, sans-serif" class="description-text" fill="#1e40af">
+      Data-Based Documents
+    </text>
+    <text x="220" y="425" font-family="Arial, sans-serif" class="tool-text" fill="#64748b">
+      R Markdown, Jupyter
+    </text>
+    
+    <!-- 3.0 Level -->
+    <path d="M 150 500 Q 200 550 250 600 Q 300 650 400 680" 
+          stroke="url(#documentRiver)" stroke-width="70" fill="none" opacity="0.8"/>
+    
+    <circle cx="200" cy="580" r="55" fill="#1e40af" opacity="0.9"/>
+    <rect x="165" y="545" width="75" height="50" fill="white" rx="8"/>
+    <rect x="175" y="550" width="55" height="15" fill="#e5e7eb" rx="3"/>
+    <text x="180" y="563" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#64748b">User Request</text>
+    <rect x="175" y="567" width="40" height="15" fill="#1e40af" rx="3"/>
+    <text x="180" y="579" font-family="Arial, sans-serif" font-size="11" fill="white">AI Generation</text>
+    <circle cx="225" cy="585" r="10" fill="#1e40af"/>
+    <text x="225" y="589" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="white" font-weight="bold">AI</text>
+    
+    <text x="280" y="570" font-family="Arial, sans-serif" class="stage-text" fill="#1e40af">
+      Document 3.0
+    </text>
+    <text x="280" y="588" font-family="Arial, sans-serif" class="description-text" fill="#1e40af">
+      AI Collaborative Writing
+    </text>
+    <text x="280" y="605" font-family="Arial, sans-serif" class="tool-text" fill="#64748b">
+      ChatGPT, Claude
+    </text>
+  </g>
+  
+  <!-- Software River (Right) -->
+  <g id="softwareRiver">
+    <!-- 1.0 Level -->
+    <path d="M 850 100 Q 880 150 850 200 Q 820 250 850 300" 
+          stroke="url(#softwareRiver)" stroke-width="60" fill="none" opacity="0.6"/>
+    
+    <circle cx="850" cy="150" r="50" fill="#10b981" opacity="0.9"/>
+    <text x="850" y="160" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" fill="white" font-weight="bold">&lt;/&gt;</text>
+    
+    <text x="780" y="140" text-anchor="end" font-family="Arial, sans-serif" class="stage-text" fill="#10b981">
+      Software 1.0
+    </text>
+    <text x="780" y="158" text-anchor="end" font-family="Arial, sans-serif" class="description-text" fill="#047857">
+      Traditional Programming
+    </text>
+    <text x="780" y="175" text-anchor="end" font-family="Arial, sans-serif" class="tool-text" fill="#64748b">
+      Python, C++, Java
+    </text>
+    
+    <!-- 2.0 Level -->
+    <path d="M 850 300 Q 840 350 850 400 Q 860 450 850 500" 
+          stroke="url(#softwareRiver)" stroke-width="65" fill="none" opacity="0.7"/>
+    
+    <circle cx="850" cy="400" r="52" fill="#059669" opacity="0.9"/>
+    <g fill="white" opacity="0.9">
+      <circle cx="835" cy="390" r="3"/>
+      <circle cx="835" cy="405" r="3"/>
+      <circle cx="850" cy="385" r="3"/>
+      <circle cx="850" cy="400" r="3"/>
+      <circle cx="850" cy="415" r="3"/>
+      <circle cx="865" cy="392" r="3"/>
+      <circle cx="865" cy="408" r="3"/>
+      <line x1="838" y1="390" x2="847" y2="385" stroke="white" stroke-width="1"/>
+      <line x1="838" y1="405" x2="847" y2="400" stroke="white" stroke-width="1"/>
+      <line x1="853" y1="400" x2="862" y2="392" stroke="white" stroke-width="1"/>
+      <line x1="853" y1="415" x2="862" y2="408" stroke="white" stroke-width="1"/>
+    </g>
+    
+    <text x="780" y="390" text-anchor="end" font-family="Arial, sans-serif" class="stage-text" fill="#059669">
+      Software 2.0
+    </text>
+    <text x="780" y="408" text-anchor="end" font-family="Arial, sans-serif" class="description-text" fill="#047857">
+      신경망/머신러닝
+    </text>
+    <text x="780" y="425" text-anchor="end" font-family="Arial, sans-serif" class="tool-text" fill="#64748b">
+      TensorFlow, PyTorch
+    </text>
+    
+    <!-- 3.0 Level -->
+    <path d="M 850 500 Q 800 550 750 600 Q 700 650 600 680" 
+          stroke="url(#softwareRiver)" stroke-width="70" fill="none" opacity="0.8"/>
+    
+    <circle cx="800" cy="580" r="55" fill="#047857" opacity="0.9"/>
+    <rect x="765" y="550" width="70" height="40" fill="white" rx="8"/>
+    <text x="800" y="567" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#047857" font-weight="bold">Natural Language</text>
+    <text x="790" y="583" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#64748b">→ Code</text>
+    <circle cx="820" cy="580" r="10" fill="#047857"/>
+    <text x="820" y="585" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white" font-weight="bold">AI</text>
+    
+    <text x="720" y="570" text-anchor="end" font-family="Arial, sans-serif" class="stage-text" fill="#047857">
+      Software 3.0
+    </text>
+    <text x="720" y="588" text-anchor="end" font-family="Arial, sans-serif" class="description-text" fill="#047857">
+      LLM 시대
+    </text>
+    <text x="720" y="605" text-anchor="end" font-family="Arial, sans-serif" class="tool-text" fill="#64748b">
+      GPT-5, Claude
+    </text>
+  </g>
+  
+  <!-- Vortex Convergence Zone -->
+  <g id="vortexConvergence">
+    <!-- Main vortex spiral -->
+    <defs>
+      <!-- Vortex gradient -->
+      <radialGradient id="vortexGradient" cx="50%" cy="50%" r="50%">
+        <stop offset="0%" style="stop-color:#ffffff;stop-opacity:0.9" />
+        <stop offset="30%" style="stop-color:#fbbf24;stop-opacity:0.8" />
+        <stop offset="60%" style="stop-color:#3b82f6;stop-opacity:0.7" />
+        <stop offset="80%" style="stop-color:#10b981;stop-opacity:0.6" />
+        <stop offset="100%" style="stop-color:#1e40af;stop-opacity:0.4" />
+      </radialGradient>
+      
+      <!-- Energy pulse effect -->
+      <filter id="energyPulse" x="-50%" y="-50%" width="200%" height="200%">
+        <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+        <feMerge>
+          <feMergeNode in="coloredBlur"/>
+          <feMergeNode in="SourceGraphic"/>
+        </feMerge>
+      </filter>
+    </defs>
+    
+    <!-- Outer spiral rings -->
+    <circle cx="500" cy="580" r="80" fill="none" stroke="url(#vortexGradient)" stroke-width="3" opacity="0.6"/>
+    <circle cx="500" cy="580" r="60" fill="none" stroke="url(#vortexGradient)" stroke-width="4" opacity="0.7"/>
+    <circle cx="500" cy="580" r="40" fill="none" stroke="url(#vortexGradient)" stroke-width="5" opacity="0.8"/>
+    
+    <!-- Spiral arms -->
+    <path d="M 500 580 m -70 0 A 70 70 0 0 1 500 510 A 50 50 0 0 0 500 580 A 30 30 0 0 1 500 610 A 10 10 0 0 0 500 580" 
+          stroke="#3b82f6" stroke-width="6" fill="none" opacity="0.7"/>
+    <path d="M 500 580 m 70 0 A 70 70 0 0 0 500 510 A 50 50 0 0 1 500 580 A 30 30 0 0 0 500 610 A 10 10 0 0 1 500 580" 
+          stroke="#10b981" stroke-width="6" fill="none" opacity="0.7"/>
+    
+    <!-- Energy core -->
+    <circle cx="500" cy="580" r="25" fill="url(#vortexGradient)" filter="url(#energyPulse)" opacity="0.9"/>
+    
+    <!-- Radiating energy lines -->
+    <g opacity="0.6" stroke="#fbbf24" stroke-width="2">
+      <line x1="500" y1="555" x2="500" y2="535" />
+      <line x1="525" y1="580" x2="545" y2="580" />
+      <line x1="500" y1="605" x2="500" y2="625" />
+      <line x1="475" y1="580" x2="455" y2="580" />
+      <line x1="518" y1="562" x2="530" y2="550" />
+      <line x1="518" y1="598" x2="530" y2="610" />
+      <line x1="482" y1="598" x2="470" y2="610" />
+      <line x1="482" y1="562" x2="470" y2="550" />
+    </g>
+    
+    <!-- Fusion elements swirling -->
+    <g opacity="0.8">
+      <!-- CODE text -->
+      <text x="465" y="550" font-family="monospace" font-size="14" fill="#3b82f6" font-weight="bold" 
+            transform="rotate(-15 465 550)">CODE</text>
+      <!-- DATA text -->
+      <text x="535" y="555" font-family="Arial, sans-serif" font-size="14" fill="#10b981" font-weight="bold" 
+            transform="rotate(25 535 555)">DATA</text>
+      <!-- TEXT -->
+      <text x="520" y="600" font-family="serif" font-size="16" fill="#1e40af" font-weight="bolder" 
+            transform="rotate(45 530 605)">TEXT</text>
+      <!-- AI -->
+      <text x="460" y="605" font-family="Arial, sans-serif" font-size="18" fill="#f59e0b" font-weight="bold" 
+            transform="rotate(-45 470 610)">AI</text>
+    </g>
+    
+    <!-- Central transformation indicator -->
+    <rect x="475" y="565" width="50" height="20" fill="rgba(255,255,255,0.95)" rx="10" stroke="#fbbf24" stroke-width="2"/>
+    <text x="500" y="580" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#f59e0b" font-weight="bold">
+      NOW
+    </text>
+    
+    <!-- Meeting point at bottom -->
+    <circle cx="500" cy="680" r="12" fill="#f59e0b" stroke="#ffffff" stroke-width="2" filter="url(#glow)"/>
+    <rect x="450" y="690" width="100" height="20" fill="rgba(255,255,255,0.9)" rx="10"/>
+    <text x="500" y="702" text-anchor="middle" font-family="Arial, sans-serif" class="description-text" fill="#000000" font-weight="bold">
+      Convergence Point
+    </text>
+  </g>
+  
+  <!-- Fusion Ocean -->
+  <g id="fusionOcean">
+    <ellipse cx="500" cy="750" rx="400" ry="60" fill="url(#fusionOcean)" opacity="0.8" filter="url(#glow)"/>
+    
+    <!-- Quarto at center -->
+    <circle cx="500" cy="740" r="30" fill="#ffffff" stroke="#92400e" stroke-width="3" filter="url(#glow)"/>
+    <text x="500" y="748" text-anchor="middle" font-family="Arial, sans-serif" class="fusion-text" fill="#1e293b" font-weight="bold">
+      Quarto
+    </text>
+    
+    <!-- Surrounding innovations -->
+    <circle cx="430" cy="730" r="25" fill="#fbbf24" opacity="1.0" stroke="#92400e" stroke-width="2"/>
+    <text x="430" y="735" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#000000" font-weight="bold" stroke="#ffffff" stroke-width="0.5">AI-DOC</text>
+    
+    <circle cx="570" cy="730" r="25" fill="#fbbf24" opacity="1.0" stroke="#92400e" stroke-width="2"/>
+    <text x="570" y="735" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#000000" font-weight="bold" stroke="#ffffff" stroke-width="0.5">LLM</text>
+    
+    <circle cx="460" cy="760" r="20" fill="#f59e0b" opacity="1.0" stroke="#000000" stroke-width="2"/>
+    <text x="460" y="765" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#ffffff" font-weight="bold" stroke="#000000" stroke-width="0.5">NLP</text>
+    
+    <circle cx="540" cy="760" r="20" fill="#f59e0b" opacity="1.0" stroke="#000000" stroke-width="2"/>
+    <text x="540" y="765" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#ffffff" font-weight="bold" stroke="#000000" stroke-width="0.5">GPT</text>
+    
+    <!-- Fusion description -->
+    <rect x="350" y="627" width="300" height="35" fill="rgba(255,255,255,0.9)" rx="12" stroke="#92400e" stroke-width="1"/>
+    <text x="500" y="650" text-anchor="middle" font-family="Arial, sans-serif" class="fusion-text" fill="#92400e" font-weight="bold">
+      🌊 Fusion - A New Ocean 🌊
+    </text>
+  </g>
+  
+  <!-- Flow arrows -->
+  <g opacity="0.6">
+    <!-- Document flow -->
+    <path d="M 180 280 L 175 295 L 185 290 Z" fill="#3b82f6"/>
+    <path d="M 180 480 L 175 495 L 185 490 Z" fill="#1d4ed8"/>
+    <path d="M 230 640 L 225 655 L 235 650 Z" fill="#1e40af"/>
+    
+    <!-- Software flow -->
+    <path d="M 820 280 L 815 295 L 825 290 Z" fill="#10b981"/>
+    <path d="M 820 480 L 815 495 L 825 490 Z" fill="#059669"/>
+    <path d="M 770 640 L 765 655 L 775 650 Z" fill="#047857"/>
+  </g>
+  
+  <!-- Final vision -->
+  <rect x="150" y="778" width="700" height="25" fill="rgba(255,255,255,0.95)" rx="10" stroke="#92400e" stroke-width="1"/>
+  <text x="500" y="793" text-anchor="middle" font-family="Arial, sans-serif" class="description-text" fill="#1e293b" font-weight="bold">
+    Future: An era where complete publications are instantly generated from a single natural language input
+  </text>
+</svg>

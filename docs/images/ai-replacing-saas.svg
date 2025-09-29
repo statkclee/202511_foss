@@ -1,0 +1,303 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1800 1200" width="1800" height="1200">
+  <defs>
+    <style><![CDATA[
+      .title { font-family: Inter, Segoe UI, Arial, sans-serif; font-size: 46px; font-weight: 900; fill: #f8fafc; }
+      .subtitle { font-family: Inter, Segoe UI, Arial, sans-serif; font-size: 24px; font-weight: 600; fill: #cbd5e1; }
+      .h1 { font-family: Inter, Segoe UI, Arial, sans-serif; font-size: 28px; font-weight: 800; fill: #ffffff; }
+      .h2 { font-family: Inter, Segoe UI, Arial, sans-serif; font-size: 24px; font-weight: 800; fill: #f1f5f9; }
+      .p { font-family: Inter, Segoe UI, Arial, sans-serif; font-size: 18px; font-weight: 600; fill: #e5e7eb; }
+      .small { font-family: Inter, Segoe UI, Arial, sans-serif; font-size: 16px; font-weight: 700; fill: #cbd5e1; }
+      .metric { font-family: Inter, Segoe UI, Arial, sans-serif; font-size: 20px; font-weight: 800; fill: #34d399; }
+    ]]></style>
+
+    <!-- Background -->
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+
+    <!-- Traditional SaaS (Red/Orange) -->
+    <linearGradient id="gradSaaS" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ef4444"/>
+      <stop offset="100%" stop-color="#dc2626"/>
+    </linearGradient>
+
+    <!-- AI Approach (Green/Teal) -->
+    <linearGradient id="gradAI" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10b981"/>
+      <stop offset="100%" stop-color="#059669"/>
+    </linearGradient>
+
+    <!-- Use Cases (Purple) -->
+    <linearGradient id="gradCase" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8b5cf6"/>
+      <stop offset="100%" stop-color="#7c3aed"/>
+    </linearGradient>
+
+    <!-- Timeline (Blue) -->
+    <linearGradient id="gradTimeline" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3b82f6"/>
+      <stop offset="100%" stop-color="#2563eb"/>
+    </linearGradient>
+
+    <!-- Effects -->
+    <filter id="shadow"><feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#000" flood-opacity="0.35"/></filter>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+      <feMerge> 
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Arrow markers -->
+    <marker id="arrowRight" markerWidth="20" markerHeight="16" refX="18" refY="8" orient="auto">
+      <polygon points="0 0, 20 8, 0 16" fill="#34d399"/>
+    </marker>
+    <marker id="arrowDown" markerWidth="16" markerHeight="20" refX="8" refY="18" orient="auto">
+      <polygon points="0 0, 16 0, 8 20" fill="#f59e0b"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1800" height="1200" fill="url(#bg)"/>
+
+  <!-- Header -->
+  <text x="900" y="70" text-anchor="middle" class="title">AI가 SaaS를 대체하는 과정</text>
+  <text x="900" y="105" text-anchor="middle" class="subtitle">From Software-as-a-Service to AI-as-a-Platform</text>
+
+  <!-- Top Section: Paradigm Comparison -->
+  <g transform="translate(50,140)">
+    <!-- Traditional SaaS (Left) -->
+    <g>
+      <rect x="0" y="0" width="800" height="280" rx="20" fill="url(#gradSaaS)" filter="url(#shadow)" opacity="0.9"/>
+      <text x="400" y="45" text-anchor="middle" class="h1">전통적 SaaS 모델</text>
+      <text x="400" y="75" text-anchor="middle" class="small">Traditional Software-as-a-Service</text>
+      
+      <!-- Features -->
+      <g transform="translate(50,100)" class="p">
+        <circle cx="8" cy="8" r="4" fill="#fbbf24"/>
+        <text x="24" y="14">고정된 기능 세트 (Fixed Feature Set)</text>
+        
+        <circle cx="8" cy="48" r="4" fill="#fbbf24"/>
+        <text x="24" y="54">월/연간 구독료 (Monthly/Annual Subscription)</text>
+        
+        <circle cx="8" cy="88" r="4" fill="#fbbf24"/>
+        <text x="24" y="94">벤더 종속성 (Vendor Lock-in)</text>
+        
+        <circle cx="8" cy="128" r="4" fill="#fbbf24"/>
+        <text x="24" y="134">복잡한 설정 및 통합 (Complex Setup)</text>
+        
+        <circle cx="8" cy="168" r="4" fill="#fbbf24"/>
+        <text x="24" y="174">제한된 커스터마이징 (Limited Customization)</text>
+      </g>
+
+      <!-- Problems -->
+      <g transform="translate(420,100)">
+        <rect x="0" y="0" width="320" height="140" rx="12" fill="#7f1d1d" opacity="0.6"/>
+        <text x="160" y="30" text-anchor="middle" class="h2" fill="#fca5a5">주요 문제점</text>
+        <text x="20" y="60" class="p" fill="#fca5a5">• 과도한 비용</text>
+        <text x="20" y="88" class="p" fill="#fca5a5">• 느린 구현</text>
+        <text x="20" y="116" class="p" fill="#fca5a5">• 경직된 워크플로우</text>
+      </g>
+    </g>
+
+    <!-- Arrow -->
+    <line x1="820" y1="140" x2="920" y2="140" stroke="#34d399" stroke-width="8" marker-end="url(#arrowRight)" filter="url(#glow)"/>
+    <text x="870" y="125" text-anchor="middle" class="small" fill="#34d399">전환</text>
+
+    <!-- AI Approach (Right) -->
+    <g transform="translate(950,0)">
+      <rect x="0" y="0" width="800" height="280" rx="20" fill="url(#gradAI)" filter="url(#shadow)" opacity="0.9"/>
+      <text x="400" y="45" text-anchor="middle" class="h1">AI 기반 접근</text>
+      <text x="400" y="75" text-anchor="middle" class="small">AI-as-a-Platform Approach</text>
+      
+      <!-- Features -->
+      <g transform="translate(50,100)" class="p">
+        <circle cx="8" cy="8" r="4" fill="#34d399"/>
+        <text x="24" y="14">동적 기능 생성 (Dynamic Feature Generation)</text>
+        
+        <circle cx="8" cy="48" r="4" fill="#34d399"/>
+        <text x="24" y="54">사용량 기반 과금 (Usage-based Pricing)</text>
+        
+        <circle cx="8" cy="88" r="4" fill="#34d399"/>
+        <text x="24" y="94">오픈 에코시스템 (Open Ecosystem)</text>
+        
+        <circle cx="8" cy="128" r="4" fill="#34d399"/>
+        <text x="24" y="134">자연어 설정 (Natural Language Setup)</text>
+        
+        <circle cx="8" cy="168" r="4" fill="#34d399"/>
+        <text x="24" y="174">무제한 맞춤화 (Unlimited Customization)</text>
+      </g>
+
+      <!-- Benefits -->
+      <g transform="translate(420,100)">
+        <rect x="0" y="0" width="320" height="140" rx="12" fill="#064e3b" opacity="0.6"/>
+        <text x="160" y="30" text-anchor="middle" class="h2" fill="#6ee7b7">핵심 장점</text>
+        <text x="20" y="60" class="p" fill="#6ee7b7">• 90% 비용 절감</text>
+        <text x="20" y="88" class="p" fill="#6ee7b7">• 즉시 구현</text>
+        <text x="20" y="116" class="p" fill="#6ee7b7">• 완전 맞춤형</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- Middle Section: Use Case Matrix -->
+  <g transform="translate(50,460)">
+    <text x="875" y="30" text-anchor="middle" class="h1">5가지 주요 SaaS 대체 사례</text>
+    <text x="875" y="60" text-anchor="middle" class="subtitle">AI Replacement Use Cases</text>
+
+    <!-- Case 1: CRM -->
+    <g transform="translate(0,80)">
+      <rect x="0" y="0" width="340" height="200" rx="16" fill="url(#gradCase)" filter="url(#shadow)"/>
+      <text x="170" y="35" text-anchor="middle" class="h2">CRM 시스템</text>
+      <text x="170" y="60" text-anchor="middle" class="small">Salesforce → AI Agent</text>
+      
+      <g transform="translate(20,80)" class="p">
+        <text x="0" y="0" fill="#fca5a5">Before:</text>
+        <text x="0" y="25">• 복잡한 설정 (6개월+)</text>
+        <text x="0" y="45">• 월 $150+ per user</text>
+        
+        <text x="0" y="80" fill="#6ee7b7">After:</text>
+        <text x="0" y="105">• AI가 자동 고객 관리</text>
+        <text x="0" y="125">• 월 $10-30 총비용</text>
+      </g>
+    </g>
+
+    <!-- Case 2: Project Management -->
+    <g transform="translate(360,80)">
+      <rect x="0" y="0" width="340" height="200" rx="16" fill="url(#gradCase)" filter="url(#shadow)"/>
+      <text x="170" y="35" text-anchor="middle" class="h2">프로젝트 관리</text>
+      <text x="170" y="60" text-anchor="middle" class="small">Jira → Custom AI</text>
+      
+      <g transform="translate(20,80)" class="p">
+        <text x="0" y="0" fill="#fca5a5">Before:</text>
+        <text x="0" y="25">• 경직된 워크플로우</text>
+        <text x="0" y="45">• 복잡한 규칙 설정</text>
+        
+        <text x="0" y="80" fill="#6ee7b7">After:</text>
+        <text x="0" y="105">• AI가 팀별 프로세스 생성</text>
+        <text x="0" y="125">• 실시간 최적화</text>
+      </g>
+    </g>
+
+    <!-- Case 3: Marketing -->
+    <g transform="translate(720,80)">
+      <rect x="0" y="0" width="340" height="200" rx="16" fill="url(#gradCase)" filter="url(#shadow)"/>
+      <text x="170" y="35" text-anchor="middle" class="h2">마케팅 자동화</text>
+      <text x="170" y="60" text-anchor="middle" class="small">HubSpot → AI Marketing</text>
+      
+      <g transform="translate(20,80)" class="p">
+        <text x="0" y="0" fill="#fca5a5">Before:</text>
+        <text x="0" y="25">• 템플릿 기반 캠페인</text>
+        <text x="0" y="45">• 수동 A/B 테스트</text>
+        
+        <text x="0" y="80" fill="#6ee7b7">After:</text>
+        <text x="0" y="105">• AI가 실시간 최적화</text>
+        <text x="0" y="125">• 개인화된 콘텐츠</text>
+      </g>
+    </g>
+
+    <!-- Case 4: Accounting -->
+    <g transform="translate(1080,80)">
+      <rect x="0" y="0" width="340" height="200" rx="16" fill="url(#gradCase)" filter="url(#shadow)"/>
+      <text x="170" y="35" text-anchor="middle" class="h2">회계 소프트웨어</text>
+      <text x="170" y="60" text-anchor="middle" class="small">QuickBooks → AI Accountant</text>
+      
+      <g transform="translate(20,80)" class="p">
+        <text x="0" y="0" fill="#fca5a5">Before:</text>
+        <text x="0" y="25">• 수동 입력 및 분류</text>
+        <text x="0" y="45">• 월말 정산 작업</text>
+        
+        <text x="0" y="80" fill="#6ee7b7">After:</text>
+        <text x="0" y="105">• AI가 자동 처리</text>
+        <text x="0" y="125">• 실시간 재무 분석</text>
+      </g>
+    </g>
+
+    <!-- Case 5: HR -->
+    <g transform="translate(1440,80)">
+      <rect x="0" y="0" width="310" height="200" rx="16" fill="url(#gradCase)" filter="url(#shadow)"/>
+      <text x="155" y="35" text-anchor="middle" class="h2">HR 플랫폼</text>
+      <text x="155" y="60" text-anchor="middle" class="small">Workday → AI HR</text>
+      
+      <g transform="translate(20,80)" class="p">
+        <text x="0" y="0" fill="#fca5a5">Before:</text>
+        <text x="0" y="25">• 복잡한 프로세스</text>
+        <text x="0" y="45">• 일괄적 관리</text>
+        
+        <text x="0" y="80" fill="#6ee7b7">After:</text>
+        <text x="0" y="105">• 맞춤형 직원 경험</text>
+        <text x="0" y="125">• 예측적 인사 관리</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- Bottom Section: Timeline -->
+  <g transform="translate(50,760)">
+    <text x="875" y="30" text-anchor="middle" class="h1">전환 타임라인과 영향</text>
+    <text x="875" y="60" text-anchor="middle" class="subtitle">Transformation Timeline &amp; Impact</text>
+
+    <!-- Timeline phases -->
+    <g transform="translate(0,90)">
+      <!-- Phase 1: 2023-2025 -->
+      <g>
+        <rect x="0" y="0" width="560" height="180" rx="16" fill="url(#gradTimeline)" filter="url(#shadow)" opacity="0.9"/>
+        <text x="280" y="35" text-anchor="middle" class="h2">2023-2025: Early Adopters</text>
+        <text x="280" y="65" text-anchor="middle" class="small">개발자 · 스타트업</text>
+        
+        <g transform="translate(30,85)" class="p">
+          <text x="0" y="0">• Claude Code, GitHub Copilot 확산</text>
+          <text x="0" y="28">• 개발도구 AI 통합</text>
+          <text x="0" y="56">• 첫 AI-native 기업 등장</text>
+        </g>
+      </g>
+
+      <!-- Phase 2: 2025-2027 -->
+      <g transform="translate(590,0)">
+        <rect x="0" y="0" width="560" height="180" rx="16" fill="url(#gradTimeline)" filter="url(#shadow)" opacity="0.9"/>
+        <text x="280" y="35" text-anchor="middle" class="h2">2025-2027: Mainstream</text>
+        <text x="280" y="65" text-anchor="middle" class="small">중소기업 채택</text>
+        
+        <g transform="translate(30,85)" class="p">
+          <text x="0" y="0">• AI CRM, PM 도구 대중화</text>
+          <text x="0" y="28">• SaaS 구독료 50% 절감</text>
+          <text x="0" y="56">• 맞춤형 AI 솔루션 확산</text>
+        </g>
+      </g>
+
+      <!-- Phase 3: 2027-2030 -->
+      <g transform="translate(1180,0)">
+        <rect x="0" y="0" width="570" height="180" rx="16" fill="url(#gradTimeline)" filter="url(#shadow)" opacity="0.9"/>
+        <text x="285" y="35" text-anchor="middle" class="h2">2027-2030: Enterprise</text>
+        <text x="285" y="65" text-anchor="middle" class="small">대기업 전환</text>
+        
+        <g transform="translate(30,85)" class="p">
+          <text x="0" y="0">• 레거시 SaaS 완전 대체</text>
+          <text x="0" y="28">• AI-first 기업 문화</text>
+          <text x="0" y="56">• 업무 프로세스 재발명</text>
+        </g>
+      </g>
+    </g>
+  </g>
+
+  <!-- Bottom metrics -->
+  <g transform="translate(100,1000)">
+    <rect x="0" y="0" width="1600" height="120" rx="18" fill="#0b1220" opacity="0.7"/>
+    <g transform="translate(40,30)">
+      <text x="0" y="0" class="h2">핵심 변화 지표 (Key Transformation Metrics)</text>
+      <g transform="translate(0,40)" class="metric">
+        <text x="0" y="0">비용 절감: 90%</text>
+        <text x="200" y="0">구현 시간: 몇 달 → 몇 시간</text>
+        <text x="500" y="0">맞춤화: 제한적 → 무제한</text>
+        <text x="800" y="0">통합: API 의존 → 자연어 연결</text>
+        <text x="1200" y="0">유지보수: 복잡 → 자동화</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- Footer -->
+  <g transform="translate(100,1140)">
+    <text x="800" y="20" text-anchor="middle" class="small">🤖 AI-First 세상에서는 소프트웨어를 '구매'하지 않고 '생성'합니다</text>
+    <text x="800" y="45" text-anchor="middle" class="small">We don't buy software, we generate it in the AI-First world</text>
+  </g>
+</svg>

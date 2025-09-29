@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 25 900 560" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .title { font: bold 24px sans-serif; text-anchor: middle; fill: #2c3e50; }
+    .subtitle { font: 16px sans-serif; text-anchor: middle; fill: #7f8c8d; }
+    .input-label { font: bold 18px sans-serif; text-anchor: middle; fill: #2c3e50; }
+    .core-title { font: bold 22px sans-serif; text-anchor: middle; fill: white; }
+    .core-subtitle { font: 13px sans-serif; text-anchor: middle; fill: rgba(255,255,255,0.95); }
+    .component-title { font: bold 14px sans-serif; text-anchor: middle; }
+    .component-subtitle { font: 11px sans-serif; text-anchor: middle; }
+    .component-english { font: 9px sans-serif; text-anchor: middle; }
+    .section-label { font: bold 12px sans-serif; fill: #7f8c8d; }
+    .arrow-label { font: bold 20px sans-serif; fill: #7f8c8d; }
+    .human-flow { fill: none; stroke: #3498db; stroke-width: 2; marker-end: url(#arrow-blue); }
+    .machine-flow { fill: none; stroke: #27ae60; stroke-width: 2; marker-end: url(#arrow-green); }
+    .ai-flow { fill: none; stroke: #e74c3c; stroke-width: 2; marker-end: url(#arrow-red); }
+    .output-flow { fill: none; stroke: #9b59b6; stroke-width: 1.5; marker-end: url(#arrow-purple); }
+  </style>
+  
+  <defs>
+    <!-- 화살표 마커들 -->
+    <marker id="arrow-blue" markerWidth="10" markerHeight="8" refX="10" refY="4" orient="auto">
+      <polygon points="0 0, 10 4, 0 8" fill="#3498db" />
+    </marker>
+    <marker id="arrow-green" markerWidth="10" markerHeight="8" refX="10" refY="4" orient="auto">
+      <polygon points="0 0, 10 4, 0 8" fill="#27ae60" />
+    </marker>
+    <marker id="arrow-red" markerWidth="10" markerHeight="8" refX="10" refY="4" orient="auto">
+      <polygon points="0 0, 10 4, 0 8" fill="#e74c3c" />
+    </marker>
+    <marker id="arrow-purple" markerWidth="10" markerHeight="8" refX="10" refY="4" orient="auto">
+      <polygon points="0 0, 10 4, 0 8" fill="#9b59b6" />
+    </marker>
+    
+    <!-- 그라디언트 정의 -->
+    <radialGradient id="quartoGrad">
+      <stop offset="0%" style="stop-color:#805ad5;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#553c9a;stop-opacity:1" />
+    </radialGradient>
+    
+    <linearGradient id="humanGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#5dade2;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3498db;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="machineGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#58d68d;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#27ae60;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="aiGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#ec7063;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#e74c3c;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="outputGrad" x1="0%" y1="0%" x2="0%" y2="70%">
+      <stop offset="0%" style="stop-color:#bb8fce;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#9b59b6;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- 드롭 섀도우 -->
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="2" dy="3" stdDeviation="3" flood-color="#34495e" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+
+  <!-- 배경 -->
+  <rect width="900" height="600" fill="#f8f9fa"/>
+  
+  <!-- 제목과 부제 -->
+  <text x="450" y="65" class="subtitle">전통적 입력(Human + Machine) + 혁신적 입력(AI) → 다중 출력</text>
+  
+  <!-- 3가지 입력 섹션 라벨 -->
+  <text x="150" y="100" class="input-label" fill="#3498db">사람 입력 (Human)</text>
+  <text x="150" y="120" class="section-label">사람이 작성하는 텍스트</text>
+  
+  <text x="450" y="100" class="input-label" fill="#27ae60">기계 입력 (Machine)</text>
+  <text x="450" y="120" class="section-label">프로그래밍 언어 코드</text>
+  
+  <text x="750" y="100" class="input-label" fill="#e74c3c">AI 입력 (AI)</text>
+  <text x="750" y="120" class="section-label">생성형 AI 콘텐츠</text>
+  
+  <!-- Human Input 섹션 (왼쪽) -->
+  <g id="human-input">
+    <rect x="80" y="140" width="140" height="50" rx="10" fill="url(#humanGrad)" filter="url(#shadow)"/>
+    <text x="150" y="158" class="component-title" fill="white">마크다운</text>
+    <text x="150" y="173" class="component-english" fill="rgba(255,255,255,0.7)">(Markdown)</text>
+    <text x="150" y="185" class="component-subtitle" fill="rgba(255,255,255,0.9)">논문, 보고서, 책</text>
+    
+    <rect x="80" y="200" width="140" height="50" rx="10" fill="url(#humanGrad)" filter="url(#shadow)"/>
+    <text x="150" y="218" class="component-title" fill="white">라텍스</text>
+    <text x="150" y="233" class="component-english" fill="rgba(255,255,255,0.7)">(LaTeX)</text>
+    <text x="150" y="245" class="component-subtitle" fill="rgba(255,255,255,0.9)">수식, 학술 문서</text>
+    
+    <rect x="80" y="260" width="140" height="50" rx="10" fill="url(#humanGrad)" filter="url(#shadow)"/>
+    <text x="150" y="278" class="component-title" fill="white">메타데이터</text>
+    <text x="150" y="293" class="component-english" fill="rgba(255,255,255,0.7)">(YAML)</text>
+    <text x="150" y="305" class="component-subtitle" fill="rgba(255,255,255,0.9)">설정, 구조 정의</text>
+  </g>
+  
+  <!-- Machine Input 섹션 (중앙) -->
+  <g id="machine-input">
+    <rect x="380" y="140" width="140" height="50" rx="10" fill="url(#machineGrad)" filter="url(#shadow)"/>
+    <text x="450" y="160" class="component-title" fill="white">R 언어</text>
+    <text x="450" y="178" class="component-subtitle" fill="rgba(255,255,255,0.9)">통계 분석, 시각화</text>
+
+  <g id="machine-input-python" transform="translate(-80, 0)">
+    <rect x="380" y="200" width="140" height="50" rx="10" fill="url(#machineGrad)" filter="url(#shadow)"/>
+    <text x="450" y="218" class="component-title" fill="white">파이썬</text>
+    <text x="450" y="233" class="component-english" fill="rgba(255,255,255,0.7)">(Python)</text>
+    <text x="450" y="245" class="component-subtitle" fill="rgba(255,255,255,0.9)">데이터 과학, ML</text>
+  </g>
+
+  <g id="machine-input-etc" transform="translate(80, -60)">
+    <rect x="380" y="260" width="140" height="50" rx="10" fill="url(#machineGrad)" filter="url(#shadow)"/>
+    <text x="450" y="280" class="component-title" fill="white">줄리아/SQL/JS</text>
+    <text x="450" y="298" class="component-subtitle" fill="rgba(255,255,255,0.9)">과학 계산, DB, 웹</text>
+  </g>
+  </g>
+  
+  <!-- AI Input 섹션 (오른쪽) - 새로운 혁신 강조 -->
+  <g id="ai-input">
+    <!-- 혁신 강조 박스 -->
+    <rect x="660" y="125" width="180" height="205" rx="15" fill="rgba(231,76,60,0.1)" stroke="#e74c3c" stroke-width="2" stroke-dasharray="5,5"/>
+    <text x="700" y="145" class="section-label" fill="#e74c3c">🔥 새로운 패러다임</text>
+    
+    <rect x="680" y="160" width="140" height="45" rx="10" fill="url(#aiGrad)" filter="url(#shadow)"/>
+    <text x="750" y="178" class="component-title" fill="white">ellmer + AI APIs</text>
+    <text x="750" y="195" class="component-subtitle" fill="rgba(255,255,255,0.9)">Claude, GPT, Gemini</text>
+    
+    <rect x="680" y="215" width="140" height="45" rx="10" fill="url(#aiGrad)" filter="url(#shadow)"/>
+    <text x="750" y="233" class="component-title" fill="white">ragnar + RAG</text>
+    <text x="750" y="250" class="component-subtitle" fill="rgba(255,255,255,0.9)">문서 기반 AI 생성</text>
+    
+    <rect x="680" y="270" width="140" height="45" rx="10" fill="url(#aiGrad)" filter="url(#shadow)"/>
+    <text x="750" y="288" class="component-title" fill="white">mall + chores</text>
+    <text x="750" y="305" class="component-subtitle" fill="rgba(255,255,255,0.9)">NLP 분석, 자동화</text>
+  </g>
+  
+  <!-- 중앙 Quarto 엔진 (확대 및 강조) -->
+  <g id="quarto-core">
+    <circle cx="450" cy="380" r="85" fill="url(#quartoGrad)" filter="url(#shadow)"/>
+    <text x="450" y="370" class="core-title">Quarto</text>
+    <text x="450" y="388" class="core-subtitle">통합 문서 엔진</text>
+    <text x="450" y="404" class="component-english" fill="rgba(255,255,255,0.7)">(Universal Document Engine)</text>
+    <text x="450" y="418" class="component-subtitle" fill="rgba(255,255,255,0.8)">사람 + 기계 + AI</text>
+  </g>
+  
+  <!-- 입력 화살표들 -->
+  <!-- Human → Quarto -->
+  <path d="M 220 250 Q 300 330 365 360" class="human-flow"/>
+  <text x="280" y="290" class="arrow-label" fill="#3498db">텍스트</text>
+  
+  <!-- Machine → Quarto -->
+  <path d="M 450 250 Q 450 230 450 295" class="machine-flow"/>
+  <text x="475" y="280" class="arrow-label" fill="#27ae60">코드</text>
+  
+  <!-- AI → Quarto (강조) -->
+  <path d="M 680 280 Q 600 330 535 360" class="ai-flow" stroke-width="4"/>
+  <text x="580" y="300" class="arrow-label" fill="#e74c3c">AI 생성</text>
+  
+  <!-- 출력 섹션 (하단) -->
+  <g id="output-formats">
+    <text x="398" y="495" class="input-label" fill="#9b59b6">다중 출력 형식</text>
+    <text x="455" y="495" fill="#040006" font="16px bold">Multi-Format</text>
+    
+    <rect x="180" y="520" width="90" height="50" rx="8" fill="url(#outputGrad)" filter="url(#shadow)"/>
+    <text x="225" y="535" class="component-title" fill="white">HTML</text>
+    <text x="225" y="547" class="component-english" fill="rgba(255,255,255,0.7)">(웹 문서)</text>
+    <text x="225" y="562" class="component-subtitle" fill="rgba(255,255,255,0.9)">인터랙티브</text>
+    
+    <rect x="290" y="520" width="90" height="50" rx="8" fill="url(#outputGrad)" filter="url(#shadow)"/>
+    <text x="335" y="535" class="component-title" fill="white">PDF</text>
+    <text x="335" y="547" class="component-english" fill="rgba(255,255,255,0.7)">(인쇄 문서)</text>
+    <text x="335" y="562" class="component-subtitle" fill="rgba(255,255,255,0.9)">출판 품질</text>
+    
+    <rect x="400" y="520" width="100" height="50" rx="8" fill="url(#outputGrad)" filter="url(#shadow)"/>
+    <text x="450" y="535" class="component-title" fill="white">revealJS</text>
+    <text x="450" y="547" class="component-english" fill="rgba(255,255,255,0.7)">(RevealJS)</text>
+    <text x="450" y="562" class="component-subtitle" fill="rgba(255,255,255,0.9)">프레젠테이션</text>
+    
+    <rect x="520" y="520" width="100" height="50" rx="8" fill="url(#outputGrad)" filter="url(#shadow)"/>
+    <text x="570" y="535" class="component-title" fill="white">대시보드</text>
+    <text x="570" y="547" class="component-english" fill="rgba(255,255,255,0.7)">(Dashboard)</text>
+    <text x="570" y="562" class="component-subtitle" fill="rgba(255,255,255,0.9)">실시간 분석</text>
+    
+    <rect x="630" y="520" width="90" height="50" rx="8" fill="url(#outputGrad)" filter="url(#shadow)"/>
+    <text x="675" y="535" class="component-title" fill="white">웹사이트</text>
+    <text x="675" y="547" class="component-english" fill="rgba(255,255,255,0.7)">(Website)</text>
+    <text x="675" y="562" class="component-subtitle" fill="rgba(255,255,255,0.9)">정적 사이트</text>
+  </g>
+  
+  <!-- Quarto → 출력 화살표들 -->
+  <path d="M 400 450 Q 250 490 225 520" class="output-flow"/>
+  <path d="M 420 455 Q 350 490 335 520" class="output-flow"/>
+  <path d="M 450 465 L 450 520" class="output-flow"/>
+  <path d="M 480 455 Q 550 490 570 520" class="output-flow"/>
+  <path d="M 500 450 Q 650 490 675 520" class="output-flow"/>
+  
+  <!-- 혁신 포인트 강조 -->
+  <g id="innovation-highlight">
+    <circle cx="820" cy="145" r="10" fill="#e74c3c"/>
+    <text x="835" y="150" class="arrow-label" fill="#e74c3c">신상품!</text>
+  </g>
+  
+</svg>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1000" height="550" viewBox="0 35 1000 550" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="1000" height="600" fill="#f8f9fa"/>
+  
+  <!-- Timeline arrow -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#2c3e50"/>
+    </marker>
+  </defs>
+  
+  <!-- Main timeline -->
+  <line x1="50" y1="550" x2="950" y2="550" stroke="#2c3e50" stroke-width="3" marker-end="url(#arrowhead)"/>
+  
+  <!-- Time markers -->
+  <text x="100" y="570" font-family="Arial, sans-serif" font-size="14" fill="#7f8c8d" text-anchor="middle">2010</text>
+  <text x="350" y="570" font-family="Arial, sans-serif" font-size="14" fill="#7f8c8d" text-anchor="middle">2015</text>
+  <text x="600" y="570" font-family="Arial, sans-serif" font-size="14" fill="#7f8c8d" text-anchor="middle">2020</text>
+  <text x="850" y="570" font-family="Arial, sans-serif" font-size="14" fill="#7f8c8d" text-anchor="middle">2024</text>
+  
+  <!-- Generation 1: extrafont (2010-2020) -->
+  <rect x="80" y="80" width="300" height="400" fill="#e74c3c" opacity="0.1" stroke="#e74c3c" stroke-width="2" rx="10"/>
+  <text x="230" y="110" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#e74c3c" text-anchor="middle">1세대: extrafont</text>
+  <text x="230" y="135" font-family="Arial, sans-serif" font-size="14" fill="#c0392b" text-anchor="middle">(2010년대 초-2020년)</text>
+  
+  <!-- extrafont features -->
+  <text x="100" y="170" font-family="Arial, sans-serif" font-size="13" fill="#2c3e50">특징:</text>
+  <text x="100" y="190" font-family="Arial, sans-serif" font-size="12" fill="#34495e">• TrueType 글꼴(.ttf) 지원</text>
+  <text x="100" y="210" font-family="Arial, sans-serif" font-size="12" fill="#34495e">• PDF/PostScript 출력 특화</text>
+  <text x="100" y="230" font-family="Arial, sans-serif" font-size="12" fill="#34495e">• font_import() → loadfonts()</text>
+  
+  <text x="100" y="270" font-family="Arial, sans-serif" font-size="13" fill="#2c3e50">한계:</text>
+  <text x="100" y="290" font-family="Arial, sans-serif" font-size="12" fill="#e74c3c">• Ghostscript 의존성</text>
+  <text x="100" y="310" font-family="Arial, sans-serif" font-size="12" fill="#e74c3c">• 알려진 버그들</text>
+  <text x="100" y="330" font-family="Arial, sans-serif" font-size="12" fill="#e74c3c">• 시간 소모적인 import</text>
+  <text x="100" y="350" font-family="Arial, sans-serif" font-size="12" fill="#e74c3c">• 웹폰트 미지원</text>
+  
+  <!-- Generation 2: showtext (2015-current) -->
+  <rect x="330" y="120" width="300" height="360" fill="#f39c12" opacity="0.1" stroke="#f39c12" stroke-width="2" rx="10"/>
+  <text x="480" y="150" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#f39c12" text-anchor="middle">2세대: showtext</text>
+  <text x="480" y="175" font-family="Arial, sans-serif" font-size="14" fill="#e67e22" text-anchor="middle">(2015년-현재)</text>
+  
+  <!-- showtext features -->
+  <text x="350" y="210" font-family="Arial, sans-serif" font-size="13" fill="#2c3e50">혁신:</text>
+  <text x="350" y="230" font-family="Arial, sans-serif" font-size="12" fill="#27ae60">• Google Fonts 직접 연동</text>
+  <text x="350" y="250" font-family="Arial, sans-serif" font-size="12" fill="#27ae60">• font_add_google()</text>
+  <text x="350" y="270" font-family="Arial, sans-serif" font-size="12" fill="#27ae60">• 모든 그래픽 장치 지원</text>
+  <text x="350" y="290" font-family="Arial, sans-serif" font-size="12" fill="#27ae60">• 웹폰트 다운로드</text>
+  
+  <text x="350" y="330" font-family="Arial, sans-serif" font-size="13" fill="#2c3e50">한계:</text>
+  <text x="350" y="350" font-family="Arial, sans-serif" font-size="12" fill="#f39c12">• 성능 이슈</text>
+  <text x="350" y="370" font-family="Arial, sans-serif" font-size="12" fill="#f39c12">• 플랫폼별 일관성 부족</text>
+  <text x="350" y="390" font-family="Arial, sans-serif" font-size="12" fill="#f39c12">• 복잡한 텍스트 처리 한계</text>
+  
+  <!-- Generation 3: systemfonts + ragg + textshaping (2020-2024) -->
+  <rect x="580" y="60" width="350" height="420" fill="#27ae60" opacity="0.1" stroke="#27ae60" stroke-width="2" rx="10"/>
+  <text x="755" y="90" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#27ae60" text-anchor="middle">3세대: systemfonts + ragg</text>
+  <text x="755" y="115" font-family="Arial, sans-serif" font-size="14" fill="#229954" text-anchor="middle">(2020-2024년, Thomas Lin Pedersen)</text>
+  
+  <!-- 3rd gen features -->
+  <text x="600" y="150" font-family="Arial, sans-serif" font-size="13" fill="#2c3e50">혁명적 개선:</text>
+  <text x="600" y="170" font-family="Arial, sans-serif" font-size="12" fill="#27ae60">• 시스템 글꼴 직접 접근</text>
+  <text x="600" y="190" font-family="Arial, sans-serif" font-size="12" fill="#27ae60">• 크로스 플랫폼 완벽 일관성</text>
+  <text x="600" y="210" font-family="Arial, sans-serif" font-size="12" fill="#27ae60">• OpenType 기능 지원</text>
+  <text x="600" y="230" font-family="Arial, sans-serif" font-size="12" fill="#27ae60">• Right-to-Left 텍스트</text>
+  <text x="600" y="250" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#27ae60">• HarfBuzz 텍스트 처리</text>
+  
+  <text x="600" y="290" font-family="Arial, sans-serif" font-size="13" fill="#2c3e50">웹폰트 지원:</text>
+  <text x="600" y="310" font-family="Arial, sans-serif" font-size="12" fill="#3498db">• require_font() 자동 다운로드</text>
+  <text x="600" y="330" font-family="Arial, sans-serif" font-size="12" fill="#3498db">• register_font() 런타임 등록</text>
+  <text x="600" y="350" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#3498db">• Google Fonts 통합</text>
+  <text x="600" y="370" font-family="Arial, sans-serif" font-size="12" fill="#3498db">• TTF/OTF 런타임 로딩</text>
+  
+  <text x="600" y="410" font-family="Arial, sans-serif" font-size="15" font-weight="bold" fill="#2c3e50">현재 표준:</text>
+  <text x="600" y="430" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#229954">• ragg (래스터)</text>
+  <text x="700" y="430" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#229954">• svglite (벡터)</text>
+  
+  <!-- Evolution arrows
+  <path d="M 380 300 Q 420 280 460 300" fill="none" stroke="#34495e" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <path d="M 630 300 Q 670 280 710 300" fill="none" stroke="#34495e" stroke-width="2" marker-end="url(#arrowhead)"/> -->
+  
+  <!-- Web font evolution highlight -->
+  <g transform="translate(0,85)">
+    <rect x="320" y="400" width="620" height="55" fill="#3498db" opacity="0.1" stroke="#3498db" stroke-width="1" rx="5"/>
+    <text x="630" y="420" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#2980b9" text-anchor="middle">웹폰트 처리 진화</text>
+    <text x="420" y="440" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#2980b9">showtext: 수동 다운로드</text>
+    <text x="630" y="440" font-family="Arial, sans-serif" font-size="12" fill="#2980b9">→</text>
+    <text x="730" y="440" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#2980b9">systemfonts: 자동 통합</text>
+  </g>
+  <!-- Title -->
+  <!-- <text x="500" y="50" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#2c3e50" text-anchor="middle">시스템 글꼴에서 웹폰트까지 기술 혁신</text> -->
+</svg>

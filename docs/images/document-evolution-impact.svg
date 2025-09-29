@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 30 1000 570" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .title-text { font-family: 'IBM Plex Sans KR', sans-serif; font-size: 20px; font-weight: bold; fill: #2c3e50; }
+      .section-title { font-family: 'IBM Plex Sans KR', sans-serif; font-size: 16px; font-weight: 600; fill: #34495e; }
+      .year-text { font-family: 'IBM Plex Sans KR', sans-serif; font-size: 18px; font-weight: bold; fill: #e74c3c; }
+      .desc-text { font-family: 'Noto Sans KR', sans-serif; font-size: 14px; fill: #2c3e50; }
+      .before-box { fill: #ecf0f1; stroke: #bdc3c7; stroke-width: 2; }
+      .after-box { fill: #e8f6f3; stroke: #27ae60; stroke-width: 2; }
+      .divider-line { stroke: #34495e; stroke-width: 2; fill: none; }
+      .arrow { stroke: #27ae60; stroke-width: 3; fill: none; }
+    </style>
+    
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" 
+            refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#27ae60" />
+    </marker>
+  </defs>
+
+  <!-- 구분선 -->
+  <!-- <line x1="500" y1="50" x2="500" y2="580" class="divider-line"/> -->
+  
+  <!-- 연도 표시 -->
+  <text x="250" y="70" text-anchor="middle" class="year-text">2024년 (현재)</text>
+  <text x="750" y="70" text-anchor="middle" class="year-text">2030년 (미래)</text>
+
+  <!-- 교육 영역 -->
+  <g id="education">
+    <text x="500" y="110" text-anchor="middle" class="section-title">교육 혁명</text>
+    
+    <!-- 2024년 교육 -->
+    <rect x="50" y="120" width="400" height="110" rx="8" class="before-box"/>
+    <text x="70" y="155" class="desc-text">• HWP/워드 파일을 이메일/LMS로 제출</text>
+    <text x="70" y="175" class="desc-text">• 교수가 파일 다운로드 후 평가</text>
+    <text x="70" y="195" class="desc-text">• 표절 검사 별도 실시</text>
+    <text x="70" y="215" class="desc-text">• 완성된 결과물만 평가</text>
+    
+    <!-- 2030년 교육 -->
+    <rect x="550" y="120" width="400" height="110" rx="8" class="after-box"/>
+    <text x="570" y="155" class="desc-text">• AI 튜터와 함께 작성한 지능형 문서</text>
+    <text x="570" y="175" class="desc-text">• 사고 과정 실시간 추적 및 피드백</text>
+    <text x="570" y="195" class="desc-text">• 개인화된 학습 경로 자동 조정</text>
+    <text x="570" y="215" class="desc-text">• 표절 불가능 (모든 과정 기록)</text>
+    
+    <!-- 화살표 -->
+    <line x1="460" y1="160" x2="540" y2="160" class="arrow" marker-end="url(#arrowhead)"/>
+  </g>
+
+  <!-- 업무 영역 -->
+  <g id="business">
+    <text x="500" y="250" text-anchor="middle" class="section-title">업무 환경 혁신</text>
+    
+    <!-- 2024년 업무 -->
+    <rect x="50" y="260" width="400" height="110" rx="8" class="before-box"/>
+    <text x="70" y="295" class="desc-text">• 데이터팀에 자료 요청</text>
+    <text x="70" y="315" class="desc-text">• 엑셀 차트 → 파워포인트 슬라이드</text>
+    <text x="70" y="335" class="desc-text">• 회의에서 발표 후 추가 질문 보류</text>
+    <text x="70" y="355" class="desc-text">• 정적 문서 기반 의사결정</text>
+    
+    <!-- 2030년 업무 -->
+    <rect x="550" y="260" width="400" height="110" rx="8" class="after-box"/>
+    <text x="570" y="295" class="desc-text">• 음성 명령으로 즉시 보고서 생성</text>
+    <text x="570" y="315" class="desc-text">• AI가 실시간 데이터 분석 및 시각화</text>
+    <text x="570" y="335" class="desc-text">• 회의 중 모든 질문에 즉시 답변</text>
+    <text x="570" y="355" class="desc-text">• 동적 대시보드 기반 의사결정</text>
+    
+    <!-- 화살표 -->
+    <line x1="460" y1="300" x2="540" y2="300" class="arrow" marker-end="url(#arrowhead)"/>
+  </g>
+
+  <!-- 창작/연구 영역 -->
+  <g id="research">
+    <text x="500" y="390" text-anchor="middle" class="section-title">창작과 연구 민주화</text>
+    
+    <!-- 2024년 연구 -->
+    <rect x="50" y="400" width="400" height="110" rx="8" class="before-box"/>
+    <text x="70" y="435" class="desc-text">• 프로그래밍 지식 필수</text>
+    <text x="70" y="455" class="desc-text">• 전문 도구 사용법 학습 필요</text>
+    <text x="70" y="475" class="desc-text">• 복잡한 시각화는 전문가 영역</text>
+    <text x="70" y="495" class="desc-text">• 아이디어 → 구현까지 긴 시간</text>
+    
+    <!-- 2030년 연구 -->
+    <rect x="550" y="400" width="400" height="110" rx="8" class="after-box"/>
+    <text x="570" y="435" class="desc-text">• 자연어로 복잡한 시각화 요청</text>
+    <text x="570" y="455" class="desc-text">• AI가 전문가 수준 결과물 생성</text>
+    <text x="570" y="475" class="desc-text">• 시민 과학자, 독립 연구자 부상</text>
+    <text x="570" y="495" class="desc-text">• 아이디어 → 구현까지 수분</text>
+    
+    <!-- 화살표 -->
+    <line x1="460" y1="440" x2="540" y2="440" class="arrow" marker-end="url(#arrowhead)"/>
+  </g>
+
+  <!-- 핵심 변화 요약 -->
+  <g id="current-status" transform = "translate(0, 15)">  
+    <rect x="200" y="510" width="600" height="60" rx="10" fill="#fff3cd" stroke="#ffc107" stroke-width="2"/>
+    <text x="500" y="535" text-anchor="middle" class="section-title">핵심 변화</text>
+    <text x="220" y="555" class="desc-text">정적 문서 → 지능형 파트너  |  일방향 소통 → 대화형 협업  |  전문가 독점 → 창작 민주화</text>
+  </g>  
+
+</svg>

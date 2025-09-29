@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 650">
+  <defs>
+    <!-- Consistent color scheme for similar task categories -->
+
+    <!-- Data Management tasks (Blue shades) -->
+    <linearGradient id="dataTask1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#3498DB;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2980B9;stop-opacity:1" />
+    </linearGradient>
+
+    <linearGradient id="dataTask2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#5DADE2;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3498DB;stop-opacity:1" />
+    </linearGradient>
+
+    <!-- Manual Processing tasks (Green shades) -->
+    <linearGradient id="manualTask1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#2ECC71;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#27AE60;stop-opacity:1" />
+    </linearGradient>
+
+    <linearGradient id="manualTask2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#58D68D;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2ECC71;stop-opacity:1" />
+    </linearGradient>
+
+    <!-- Analysis tasks (Purple shades) -->
+    <linearGradient id="analysisTask1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#9B59B6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#8E44AD;stop-opacity:1" />
+    </linearGradient>
+
+    <linearGradient id="analysisTask2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#BB8FCE;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#9B59B6;stop-opacity:1" />
+    </linearGradient>
+
+    <!-- Communication tasks (Orange shades) -->
+    <linearGradient id="communicationTask1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#F39C12;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#E67E22;stop-opacity:1" />
+    </linearGradient>
+
+    <linearGradient id="communicationTask2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#F8C471;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#F39C12;stop-opacity:1" />
+    </linearGradient>
+
+    <!-- Administrative tasks (Red shades) -->
+    <linearGradient id="adminTask1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#E74C3C;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#C0392B;stop-opacity:1" />
+    </linearGradient>
+
+    <linearGradient id="adminTask2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#EC7063;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#E74C3C;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1400" height="750" fill="#FAFAFA"/>
+
+  <!-- Title -->
+  <text x="700" y="30" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#2C3E50">
+    Pre-Data Science Era: Workforce Time Allocation (1990s-2000s)
+  </text>
+  <text x="700" y="50" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#7F8C8D">
+    Siloed departments &amp; manual processes | Typical allocation based on organizational studies
+  </text>
+
+  <!-- Percentage Scale -->
+  <g transform="translate(250, 80) scale(1.215)">
+    <text x="0" y="0" font-family="Arial, sans-serif" font-size="12" fill="#7F8C8D">0%</text>
+    <text x="225" y="0" font-family="Arial, sans-serif" font-size="12" fill="#7F8C8D">25%</text>
+    <text x="450" y="0" font-family="Arial, sans-serif" font-size="12" fill="#7F8C8D">50%</text>
+    <text x="675" y="0" font-family="Arial, sans-serif" font-size="12" fill="#7F8C8D">75%</text>
+    <text x="900" y="0" font-family="Arial, sans-serif" font-size="12" fill="#7F8C8D">100%</text>
+    <!-- Scale lines -->
+    <line x1="0" y1="5" x2="0" y2="10" stroke="#BDC3C7" stroke-width="5"/>
+    <line x1="225" y1="5" x2="225" y2="10" stroke="#BDC3C7" stroke-width="5"/>
+    <line x1="450" y1="5" x2="450" y2="10" stroke="#BDC3C7" stroke-width="5"/>
+    <line x1="675" y1="5" x2="675" y2="10" stroke="#BDC3C7" stroke-width="5"/>
+    <line x1="900" y1="5" x2="900" y2="10" stroke="#BDC3C7" stroke-width="5"/>
+  </g>
+
+  <!-- Database Administrator -->
+  <g transform="translate(50, 110)">
+    <text x="-20" y="20" font-family="Arial, sans-serif" font-size="15" font-weight="bold" fill="#2C3E50">
+      Database Administrator ¹
+    </text>
+    <text x="-20" y="35" font-family="Arial, sans-serif" font-size="11" fill="#7F8C8D">
+      Manages databases, backups &amp; SQL queries
+    </text>
+    <text x="-20" y="48" font-family="Arial, sans-serif" font-size="10" fill="#95A5A6">
+      Tools: Oracle, SQL Server, PL/SQL, Backup Software
+    </text>
+
+    <g transform="translate(200, 10)">
+      <!-- Database Maintenance 40% -->
+      <rect x="0" y="0" width="440" height="45" fill="url(#dataTask1)" rx="2"/>
+      <text x="220" y="24" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="white" font-weight="bold">
+        Database Maintenance
+      </text>
+      <text x="220" y="38" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white" font-weight="bold">
+        40%
+      </text>
+
+      <!-- Backup &amp; Recovery 30% -->
+      <rect x="440" y="0" width="330" height="45" fill="url(#dataTask2)" rx="2"/>
+      <text x="605" y="24" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="white" font-weight="bold">
+        Backup &amp; Recovery
+      </text>
+      <text x="605" y="38" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white" font-weight="bold">
+        30%
+      </text>
+
+      <!-- SQL Queries 20% -->
+      <rect x="770" y="0" width="220" height="45" fill="url(#analysisTask1)" rx="2"/>
+      <text x="880" y="24" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="white" font-weight="bold">
+        SQL Queries
+      </text>
+      <text x="880" y="38" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white" font-weight="bold">
+        20%
+      </text>
+
+      <!-- Documentation 10% -->
+      <rect x="990" y="0" width="110" height="45" fill="url(#adminTask1)" rx="2"/>
+      <text x="1045" y="27" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white" font-weight="bold">
+        Documentation
+      </text>
+      <text x="1045" y="38" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white" font-weight="bold">
+        10%
+      </text>
+    </g>
+  </g>
+
+  <!-- System Administrator -->
+  <g transform="translate(50, 190)">
+    <text x="-20" y="20" font-family="Arial, sans-serif" font-size="15" font-weight="bold" fill="#2C3E50">
+      System Administrator ²
+    </text>
+    <text x="-20" y="35" font-family="Arial, sans-serif" font-size="11" fill="#7F8C8D">
+      Manages servers, infrastructure &amp; user support
+    </text>
+    <text x="-20" y="48" font-family="Arial, sans-serif" font-size="10" fill="#95A5A6">
+      Tools: Windows Server, Unix, Network Management
+    </text>
+
+    <g transform="translate(200, 10)">
+      <!-- Server Management 50% -->
+      <rect x="0" y="0" width="550" height="45" fill="url(#dataTask1)" rx="2"/>
+      <text x="275" y="24" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="white" font-weight="bold">
+        Server Management
+      </text>
+      <text x="275" y="38" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white" font-weight="bold">
+        50%
+      </text>
+
+      <!-- User Support 30% -->
+      <rect x="550" y="0" width="330" height="45" fill="url(#communicationTask1)" rx="2"/>
+      <text x="715" y="24" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="white" font-weight="bold">
+        User Support
+      </text>
+      <text x="715" y="38" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white" font-weight="bold">
+        30%
+      </text>
+
+      <!-- Security 20% -->
+      <rect x="880" y="0" width="220" height="45" fill="url(#adminTask1)" rx="2"/>
+      <text x="990" y="27" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white" font-weight="bold">
+        Security
+      </text>
+      <text x="990" y="38" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white" font-weight="bold">
+        20%
+      </text>
+    </g>
+  </g>
+
+  <!-- Business Analyst -->
+  <g transform="translate(50, 270)">
+    <text x="-20" y="20" font-family="Arial, sans-serif" font-size="15" font-weight="bold" fill="#2C3E50">
+      Business Analyst ³
+    </text>
+    <text x="-20" y="35" font-family="Arial, sans-serif" font-size="11" fill="#7F8C8D">
+      Creates business reports &amp; spreadsheet analysis
+    </text>
+    <text x="-20" y="48" font-family="Arial, sans-serif" font-size="10" fill="#95A5A6">
+      Tools: Excel, Access, PowerPoint, Email
+    </text>
+
+    <g transform="translate(200, 10)">
+      <!-- Manual Data Entry 60% -->
+      <rect x="0" y="0" width="660" height="45" fill="url(#manualTask1)" rx="2"/>
+      <text x="330" y="24" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="white" font-weight="bold">
+        Manual Data Entry
+      </text>
+      <text x="330" y="38" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white" font-weight="bold">
+        60%
+      </text>
+
+      <!-- Excel Reports 25% -->
+      <rect x="660" y="0" width="275" height="45" fill="url(#analysisTask1)" rx="2"/>
+      <text x="797" y="24" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="white" font-weight="bold">
+        Excel Reports
+      </text>
+      <text x="797" y="38" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white" font-weight="bold">
+        25%
+      </text>
+
+      <!-- Meetings 15% -->
+      <rect x="935" y="0" width="165" height="45" fill="url(#communicationTask1)" rx="2"/>
+      <text x="1017" y="27" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white" font-weight="bold">
+        Meetings
+      </text>
+      <text x="1017" y="38" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white" font-weight="bold">
+        15%
+      </text>
+    </g>
+  </g>
+
+  <!-- Report Analyst -->
+  <g transform="translate(50, 350)">
+    <text x="-20" y="20" font-family="Arial, sans-serif" font-size="15" font-weight="bold" fill="#2C3E50">
+      Report Analyst ⁴
+    </text>
+    <text x="-20" y="35" font-family="Arial, sans-serif" font-size="11" fill="#7F8C8D">
+      Produces weekly/monthly business reports
+    </text>
+    <text x="-20" y="48" font-family="Arial, sans-serif" font-size="10" fill="#95A5A6">
+      Tools: Excel, Crystal Reports, Mainframe queries
+    </text>
+
+    <g transform="translate(200, 10)">
+      <!-- Data Collection 45% -->
+      <rect x="0" y="0" width="495" height="45" fill="url(#manualTask1)" rx="2"/>
+      <text x="247" y="24" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="white" font-weight="bold">
+        Data Collection
+      </text>
+      <text x="247" y="38" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white" font-weight="bold">
+        45%
+      </text>
+
+      <!-- Report Creation 35% -->
+      <rect x="495" y="0" width="385" height="45" fill="url(#analysisTask1)" rx="2"/>
+      <text x="687" y="24" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="white" font-weight="bold">
+        Report Creation
+      </text>
+      <text x="687" y="38" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white" font-weight="bold">
+        35%
+      </text>
+
+      <!-- Distribution 20% -->
+      <rect x="880" y="0" width="220" height="45" fill="url(#communicationTask1)" rx="2"/>
+      <text x="990" y="27" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white" font-weight="bold">
+        Distribution
+      </text>
+      <text x="990" y="38" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white" font-weight="bold">
+        20%
+      </text>
+    </g>
+  </g>
+
+  <!-- Statistician -->
+  <g transform="translate(50, 430)">
+    <text x="-20" y="20" font-family="Arial, sans-serif" font-size="15" font-weight="bold" fill="#2C3E50">
+      Statistician ⁵
+    </text>
+    <text x="-20" y="35" font-family="Arial, sans-serif" font-size="11" fill="#7F8C8D">
+      Performs statistical analysis &amp; hypothesis testing
+    </text>
+    <text x="-20" y="48" font-family="Arial, sans-serif" font-size="10" fill="#95A5A6">
+      Tools: SAS, SPSS, Minitab, Fortran
+    </text>
+
+    <g transform="translate(200, 10)">
+      <!-- Data Preparation 30% -->
+      <rect x="0" y="0" width="330" height="45" fill="url(#manualTask1)" rx="2"/>
+      <text x="165" y="24" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="white" font-weight="bold">
+        Data Preparation
+      </text>
+      <text x="165" y="38" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white" font-weight="bold">
+        30%
+      </text>
+
+      <!-- Statistical Tests 40% -->
+      <rect x="330" y="0" width="440" height="45" fill="url(#analysisTask1)" rx="2"/>
+      <text x="550" y="24" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="white" font-weight="bold">
+        Statistical Tests
+      </text>
+      <text x="550" y="38" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white" font-weight="bold">
+        40%
+      </text>
+
+      <!-- Report Writing 30% -->
+      <rect x="770" y="0" width="330" height="45" fill="url(#communicationTask1)" rx="2"/>
+      <text x="935" y="24" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="white" font-weight="bold">
+        Report Writing
+      </text>
+      <text x="935" y="38" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white" font-weight="bold">
+        30%
+      </text>
+    </g>
+  </g>
+
+  <!-- Task Categories Legend -->
+  <g transform="translate(100, 490)">
+    <text x="0" y="40" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#2C3E50">
+      Task Categories
+    </text>
+    
+    <g transform="translate(120, 0)">
+      <!-- Data Management/Infrastructure -->
+      <rect x="0" y="25" width="25" height="15" fill="url(#dataTask1)" rx="2"/>
+      <text x="35" y="37" font-family="Arial, sans-serif" font-size="12" fill="#2C3E50">Data Management/Infrastructure</text>
+
+      <!-- Manual Processing -->
+      <rect x="240" y="25" width="25" height="15" fill="url(#manualTask1)" rx="2"/>
+      <text x="275" y="37" font-family="Arial, sans-serif" font-size="12" fill="#2C3E50">Manual Processing/Data Entry</text>
+
+      <!-- Analysis/Reporting -->
+      <rect x="480" y="25" width="25" height="15" fill="url(#analysisTask1)" rx="2"/>
+      <text x="515" y="37" font-family="Arial, sans-serif" font-size="12" fill="#2C3E50">Analysis/Reporting</text>
+
+      <!-- Communication -->
+      <rect x="680" y="25" width="25" height="15" fill="url(#communicationTask1)" rx="2"/>
+      <text x="715" y="37" font-family="Arial, sans-serif" font-size="12" fill="#2C3E50">Communication/Support</text>
+
+      <!-- Administrative -->
+      <rect x="880" y="25" width="25" height="15" fill="url(#adminTask1)" rx="2"/>
+      <text x="915" y="37" font-family="Arial, sans-serif" font-size="12" fill="#2C3E50">Administrative/Documentation</text>      
+    </g>
+  </g>
+
+  <!-- Typical Workflow Timeline -->
+  <g transform="translate(100, 550)">
+    <text x="400" y="20" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#2C3E50">
+      Typical Analysis Workflow Timeline
+    </text>
+
+    <!-- Timeline -->
+    <line x1="50" y1="50" x2="1150" y2="50" stroke="#BDC3C7" stroke-width="2"/>
+
+    <!-- Week markers -->
+    <text x="50" y="45" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#7F8C8D">Week 1</text>
+    <text x="350" y="45" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#7F8C8D">Week 2</text>
+    <text x="650" y="45" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#7F8C8D">Week 3</text>
+    <text x="950" y="45" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#7F8C8D">Week 4</text>
+
+    <!-- Process steps -->
+    <rect x="50" y="60" width="250" height="25" fill="url(#manualTask1)" rx="2"/>
+    <text x="175" y="76" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="white" font-weight="bold">
+      Business requests data
+    </text>
+
+    <rect x="300" y="60" width="300" height="25" fill="url(#dataTask1)" rx="2"/>
+    <text x="450" y="76" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="white" font-weight="bold">
+      IT extracts &amp; prepares data
+    </text>
+
+    <rect x="600" y="60" width="250" height="25" fill="url(#manualTask1)" rx="2"/>
+    <text x="725" y="76" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="white" font-weight="bold">
+      Business cleans in Excel
+    </text>
+
+    <rect x="850" y="60" width="200" height="25" fill="url(#analysisTask1)" rx="2"/>
+    <text x="950" y="76" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="white" font-weight="bold">
+      Stats analyzes (if needed)
+    </text>
+
+    <rect x="1050" y="60" width="100" height="25" fill="url(#communicationTask1)" rx="2"/>
+    <text x="1100" y="76" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="white" font-weight="bold">
+      Final report
+    </text>
+
+    <!-- Total time -->
+    <text x="700" y="20" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#C0392B">
+      Total Time: 3-4 weeks for one analysis
+    </text>
+  </g>
+
+</svg>

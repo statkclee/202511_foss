@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 120 1400 860" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Timeline gradient -->
+    <linearGradient id="timelineGradient" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#1E40AF"/>
+      <stop offset="50%" stop-color="#7C3AED"/>
+      <stop offset="100%" stop-color="#DC2626"/>
+    </linearGradient>
+
+    <!-- Era gradients -->
+    <linearGradient id="era1Gradient" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#DBEAFE"/>
+      <stop offset="100%" stop-color="#BFDBFE"/>
+    </linearGradient>
+
+    <linearGradient id="era2Gradient" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#E9D5FF"/>
+      <stop offset="100%" stop-color="#DDD6FE"/>
+    </linearGradient>
+
+    <linearGradient id="era3Gradient" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FED7AA"/>
+      <stop offset="100%" stop-color="#FDBA74"/>
+    </linearGradient>
+
+    <linearGradient id="era4Gradient" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FCA5A5"/>
+      <stop offset="100%" stop-color="#F87171"/>
+    </linearGradient>
+
+    <!-- Arrow marker -->
+    <marker id="arrow" markerWidth="12" markerHeight="9" refX="11" refY="4.5" orient="auto">
+      <polygon points="0 0, 12 4.5, 0 9" fill="#374151"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1400" height="980" fill="#F9FAFB"/>
+
+  <!-- Main Timeline -->
+  <rect x="100" y="140" width="1200" height="8" fill="url(#timelineGradient)" rx="4"/>
+
+  <!-- Era 1: Pre-Digital (3000 BCE - 1950s) -->
+  <g transform="translate(100, 180)">
+    <rect width="280" height="500" fill="url(#era1Gradient)" stroke="#3B82F6" stroke-width="2" rx="10"/>
+    <text x="140" y="35" text-anchor="middle" font-size="20" font-weight="bold" fill="#1E40AF">Pre-Digital Era</text>
+    <text x="140" y="55" text-anchor="middle" font-size="14" fill="#3730A3">3000 BCE - 1950s</text>
+
+    <!-- Timeline points -->
+    <circle cx="30" cy="90" r="8" fill="#1E40AF"/>
+    <text x="50" y="95" font-size="12" font-weight="bold" fill="#1E3A8A">3000 BCE</text>
+    <text x="50" y="110" font-size="11" fill="#3730A3">Clay tablets (Cuneiform)</text>
+    <text x="50" y="125" font-size="10" fill="#6B7280">First written records</text>
+
+    <circle cx="30" cy="160" r="8" fill="#1E40AF"/>
+    <text x="50" y="165" font-size="12" font-weight="bold" fill="#1E3A8A">2000 BCE</text>
+    <text x="50" y="180" font-size="11" fill="#3730A3">Papyrus scrolls</text>
+    <text x="50" y="195" font-size="10" fill="#6B7280">Portable data storage</text>
+
+    <circle cx="30" cy="230" r="8" fill="#1E40AF"/>
+    <text x="50" y="235" font-size="12" font-weight="bold" fill="#1E3A8A">200 BCE</text>
+    <text x="50" y="250" font-size="11" fill="#3730A3">Paper (China)</text>
+    <text x="50" y="265" font-size="10" fill="#6B7280">Mass producible medium</text>
+
+    <circle cx="30" cy="300" r="8" fill="#1E40AF"/>
+    <text x="50" y="305" font-size="12" font-weight="bold" fill="#1E3A8A">1450</text>
+    <text x="50" y="320" font-size="11" fill="#3730A3">Printing press</text>
+    <text x="50" y="335" font-size="10" fill="#6B7280">Data replication at scale</text>
+
+    <circle cx="30" cy="370" r="8" fill="#1E40AF"/>
+    <text x="50" y="375" font-size="12" font-weight="bold" fill="#1E3A8A">1890</text>
+    <text x="50" y="390" font-size="11" fill="#3730A3">Hollerith punch cards</text>
+    <text x="50" y="405" font-size="10" fill="#6B7280">Machine-readable data</text>
+
+    <circle cx="30" cy="440" r="8" fill="#1E40AF"/>
+    <text x="50" y="445" font-size="12" font-weight="bold" fill="#1E3A8A">1928</text>
+    <text x="50" y="460" font-size="11" fill="#3730A3">Magnetic tape</text>
+    <text x="50" y="475" font-size="10" fill="#6B7280">Sequential access storage</text>
+
+    <!-- Key Characteristics Box -->
+    <g transform="translate(0, -30)">
+      <rect x="15" y="520" width="250" height="100" fill="white" stroke="#93C5FD" stroke-width="1" rx="5"/>
+      <text x="140" y="545" text-anchor="middle" font-size="14" font-weight="bold" fill="#1E40AF">Characteristics</text>
+      <text x="25" y="565" font-size="11" fill="#4B5563">• Physical media</text>
+      <text x="25" y="580" font-size="11" fill="#4B5563">• Manual processing</text>
+      <text x="25" y="595" font-size="11" fill="#4B5563">• Limited accessibility</text>
+      <text x="25" y="610" font-size="11" fill="#4B5563">• Sequential storage</text>
+
+    </g>
+  </g>
+
+  <!-- Era 2: Early Digital (1960s - 1990s) -->
+  <g transform="translate(400, 180)">
+    <rect width="280" height="500" fill="url(#era2Gradient)" stroke="#8B5CF6" stroke-width="2" rx="10"/>
+    <text x="140" y="35" text-anchor="middle" font-size="20" font-weight="bold" fill="#6D28D9">Early Digital Era</text>
+    <text x="140" y="55" text-anchor="middle" font-size="14" fill="#5B21B6">1960s - 1990s</text>
+
+    <!-- Timeline points -->
+    <circle cx="30" cy="90" r="8" fill="#6D28D9"/>
+    <text x="50" y="95" font-size="12" font-weight="bold" fill="#5B21B6">1956</text>
+    <text x="50" y="110" font-size="11" fill="#6D28D9">Hard disk drive (IBM)</text>
+    <text x="50" y="125" font-size="10" fill="#6B7280">5MB capacity</text>
+
+    <circle cx="30" cy="160" r="8" fill="#6D28D9"/>
+    <text x="50" y="165" font-size="12" font-weight="bold" fill="#5B21B6">1960s</text>
+    <text x="50" y="180" font-size="11" fill="#6D28D9">CODASYL databases</text>
+    <text x="50" y="195" font-size="10" fill="#6B7280">Network &amp; hierarchical</text>
+
+    <circle cx="30" cy="230" r="8" fill="#6D28D9"/>
+    <text x="50" y="235" font-size="12" font-weight="bold" fill="#5B21B6">1970</text>
+    <text x="50" y="250" font-size="11" fill="#6D28D9">Relational model (Codd)</text>
+    <text x="50" y="265" font-size="10" fill="#6B7280">SQL databases</text>
+
+    <circle cx="30" cy="300" r="8" fill="#6D28D9"/>
+    <text x="50" y="305" font-size="12" font-weight="bold" fill="#5B21B6">1979</text>
+    <text x="50" y="320" font-size="11" fill="#6D28D9">Oracle Database</text>
+    <text x="50" y="335" font-size="10" fill="#6B7280">Commercial RDBMS</text>
+
+    <circle cx="30" cy="370" r="8" fill="#6D28D9"/>
+    <text x="50" y="375" font-size="12" font-weight="bold" fill="#5B21B6">1980s</text>
+    <text x="50" y="390" font-size="11" fill="#6D28D9">Data Warehousing</text>
+    <text x="50" y="405" font-size="10" fill="#6B7280">OLAP, Star Schema</text>
+
+    <circle cx="30" cy="440" r="8" fill="#6D28D9"/>
+    <text x="50" y="445" font-size="12" font-weight="bold" fill="#5B21B6">1990s</text>
+    <text x="50" y="460" font-size="11" fill="#6D28D9">Enterprise systems</text>
+    <text x="50" y="475" font-size="10" fill="#6B7280">ERP, CRM, BI tools</text>
+
+    <!-- Key Characteristics Box -->
+    <g transform="translate(0, -30)">
+      <rect x="15" y="520" width="250" height="100" fill="white" stroke="#C4B5FD" stroke-width="1" rx="5"/>
+      <text x="140" y="545" text-anchor="middle" font-size="14" font-weight="bold" fill="#6D28D9">Characteristics</text>
+      <text x="25" y="565" font-size="11" fill="#4B5563">• Structured data (RDBMS)</text>
+      <text x="25" y="580" font-size="11" fill="#4B5563">• ACID transactions</text>
+      <text x="25" y="595" font-size="11" fill="#4B5563">• Centralized systems</text>
+      <text x="25" y="610" font-size="11" fill="#4B5563">• Batch processing</text>
+
+    </g>
+  </g>
+
+  <!-- Era 3: Big Data (2000s - 2010s) -->
+  <g transform="translate(700, 180)">
+    <rect width="280" height="500" fill="url(#era3Gradient)" stroke="#F97316" stroke-width="2" rx="10"/>
+    <text x="140" y="35" text-anchor="middle" font-size="20" font-weight="bold" fill="#EA580C">Big Data Era</text>
+    <text x="140" y="55" text-anchor="middle" font-size="14" fill="#C2410C">2000s - 2010s</text>
+
+    <!-- Timeline points -->
+    <circle cx="30" cy="90" r="8" fill="#EA580C"/>
+    <text x="50" y="95" font-size="12" font-weight="bold" fill="#C2410C">2003</text>
+    <text x="50" y="110" font-size="11" fill="#EA580C">Google File System</text>
+    <text x="50" y="125" font-size="10" fill="#6B7280">Distributed storage</text>
+
+    <circle cx="30" cy="160" r="8" fill="#EA580C"/>
+    <text x="50" y="165" font-size="12" font-weight="bold" fill="#C2410C">2004</text>
+    <text x="50" y="180" font-size="11" fill="#EA580C">MapReduce</text>
+    <text x="50" y="195" font-size="10" fill="#6B7280">Parallel processing</text>
+
+    <circle cx="30" cy="230" r="8" fill="#EA580C"/>
+    <text x="50" y="235" font-size="12" font-weight="bold" fill="#C2410C">2006</text>
+    <text x="50" y="250" font-size="11" fill="#EA580C">Hadoop</text>
+    <text x="50" y="265" font-size="10" fill="#6B7280">Open source big data</text>
+
+    <circle cx="30" cy="300" r="8" fill="#EA580C"/>
+    <text x="50" y="305" font-size="12" font-weight="bold" fill="#C2410C">2009</text>
+    <text x="50" y="320" font-size="11" fill="#EA580C">NoSQL movement</text>
+    <text x="50" y="335" font-size="10" fill="#6B7280">MongoDB, Cassandra</text>
+
+    <circle cx="30" cy="370" r="8" fill="#EA580C"/>
+    <text x="50" y="375" font-size="12" font-weight="bold" fill="#C2410C">2012</text>
+    <text x="50" y="390" font-size="11" fill="#EA580C">Cloud data platforms</text>
+    <text x="50" y="405" font-size="10" fill="#6B7280">AWS Redshift, BigQuery</text>
+
+    <circle cx="30" cy="440" r="8" fill="#EA580C"/>
+    <text x="50" y="445" font-size="12" font-weight="bold" fill="#C2410C">2014</text>
+    <text x="50" y="460" font-size="11" fill="#EA580C">Apache Spark</text>
+    <text x="50" y="475" font-size="10" fill="#6B7280">In-memory processing</text>
+
+    <!-- Key Characteristics Box -->
+    <g transform="translate(0, -30)">
+      <rect x="15" y="520" width="250" height="100" fill="white" stroke="#FDBA74" stroke-width="1" rx="5"/>
+      <text x="140" y="545" text-anchor="middle" font-size="14" font-weight="bold" fill="#EA580C">Characteristics</text>
+      <text x="25" y="565" font-size="11" fill="#4B5563">• 3Vs: Volume, Velocity, Variety</text>
+      <text x="25" y="580" font-size="11" fill="#4B5563">• Distributed computing</text>
+      <text x="25" y="595" font-size="11" fill="#4B5563">• Schema-on-read</text>
+      <text x="25" y="610" font-size="11" fill="#4B5563">• Real-time streaming</text>
+
+    </g>
+  </g>
+
+  <!-- Era 4: AI & Intelligence (2020s+) -->
+  <g transform="translate(1000, 180)">
+    <rect width="280" height="500" fill="url(#era4Gradient)" stroke="#EF4444" stroke-width="2" rx="10"/>
+    <text x="140" y="35" text-anchor="middle" font-size="20" font-weight="bold" fill="#DC2626">AI &amp; Intelligence Era</text>
+    <text x="140" y="55" text-anchor="middle" font-size="14" fill="#B91C1C">2020s - Present</text>
+
+    <!-- Timeline points -->
+    <circle cx="30" cy="90" r="8" fill="#DC2626"/>
+    <text x="50" y="95" font-size="12" font-weight="bold" fill="#B91C1C">2017</text>
+    <text x="50" y="110" font-size="11" fill="#DC2626">Transformer architecture</text>
+    <text x="50" y="125" font-size="10" fill="#6B7280">Foundation for LLMs</text>
+
+    <circle cx="30" cy="160" r="8" fill="#DC2626"/>
+    <text x="50" y="165" font-size="12" font-weight="bold" fill="#B91C1C">2020</text>
+    <text x="50" y="180" font-size="11" fill="#DC2626">GPT-3 launch</text>
+    <text x="50" y="195" font-size="10" fill="#6B7280">Large language models</text>
+
+    <circle cx="30" cy="230" r="8" fill="#DC2626"/>
+    <text x="50" y="235" font-size="12" font-weight="bold" fill="#B91C1C">2021</text>
+    <text x="50" y="250" font-size="11" fill="#DC2626">Vector databases</text>
+    <text x="50" y="265" font-size="10" fill="#6B7280">Pinecone, Weaviate</text>
+
+    <circle cx="30" cy="300" r="8" fill="#DC2626"/>
+    <text x="50" y="305" font-size="12" font-weight="bold" fill="#B91C1C">2022</text>
+    <text x="50" y="320" font-size="11" fill="#DC2626">ChatGPT revolution</text>
+    <text x="50" y="335" font-size="10" fill="#6B7280">Conversational AI</text>
+
+    <circle cx="30" cy="370" r="8" fill="#DC2626"/>
+    <text x="50" y="375" font-size="12" font-weight="bold" fill="#B91C1C">2023</text>
+    <text x="50" y="390" font-size="11" fill="#DC2626">Multi-modal AI</text>
+    <text x="50" y="405" font-size="10" fill="#6B7280">GPT-4, Gemini, Claude</text>
+
+    <circle cx="30" cy="440" r="8" fill="#DC2626"/>
+    <text x="50" y="445" font-size="12" font-weight="bold" fill="#B91C1C">2024-25</text>
+    <text x="50" y="460" font-size="11" fill="#DC2626">Agentic AI</text>
+    <text x="50" y="475" font-size="10" fill="#6B7280">Autonomous systems</text>
+
+    <!-- Key Characteristics Box -->
+    <g transform="translate(0, -30)">
+      <rect x="15" y="520" width="250" height="100" fill="white" stroke="#F87171" stroke-width="1" rx="5"/>
+      <text x="140" y="545" text-anchor="middle" font-size="14" font-weight="bold" fill="#DC2626">Characteristics</text>
+      <text x="25" y="565" font-size="11" fill="#4B5563">• Unstructured data processing</text>
+      <text x="25" y="580" font-size="11" fill="#4B5563">• Semantic understanding</text>
+      <text x="25" y="595" font-size="11" fill="#4B5563">• Real-time intelligence</text>
+      <text x="25" y="610" font-size="11" fill="#4B5563">• Self-learning systems</text>
+
+    </g>
+  </g>
+
+  <!-- Unified Storage & Volume Comparison Table -->
+  <g transform="translate(50, 720)">
+    <!-- Column headers -->
+    <rect x="0" y="60" width="220" height="40" fill="#F3F4F6" stroke="#D1D5DB" stroke-width="1" rx="6"/>
+    <text x="110" y="85" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="bold" fill="#374151">Metric</text>
+
+    <rect x="220" y="60" width="245" height="40" fill="#EFF6FF" stroke="#93C5FD" stroke-width="1" rx="6"/>
+    <text x="342.5" y="85" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="bold" fill="#1E40AF">Pre-Digital</text>
+
+    <rect x="465" y="60" width="245" height="40" fill="#F3F4F6" stroke="#C4B5FD" stroke-width="1" rx="6"/>
+    <text x="587.5" y="85" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="bold" fill="#6D28D9">Early Digital</text>
+
+    <rect x="710" y="60" width="245" height="40" fill="#FFF7ED" stroke="#FDBA74" stroke-width="1" rx="6"/>
+    <text x="832.5" y="85" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="bold" fill="#EA580C">Big Data</text>
+
+    <rect x="955" y="60" width="245" height="40" fill="#FEF2F2" stroke="#F87171" stroke-width="1" rx="6"/>
+    <text x="1077.5" y="85" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="bold" fill="#DC2626">AI &amp; Intelligence</text>
+
+    <!-- Row: Storage Capacity -->
+    <rect x="0" y="110" width="220" height="40" fill="#F9FAFB" stroke="#D1D5DB" stroke-width="1" rx="6"/>
+    <text x="110" y="135" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="600" fill="#374151">Storage Capacity</text>
+
+    <rect x="220" y="110" width="245" height="40" fill="#EFF6FF" stroke="#93C5FD" stroke-width="1" rx="6"/>
+    <text x="342.5" y="135" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="12" fill="#1F3B8A">Bytes → Kilobytes</text>
+
+    <rect x="465" y="110" width="245" height="40" fill="#F3F4F6" stroke="#C4B5FD" stroke-width="1" rx="6"/>
+    <text x="587.5" y="135" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="12" fill="#5B21B6">Megabytes → Gigabytes</text>
+
+    <rect x="710" y="110" width="245" height="40" fill="#FFF7ED" stroke="#FDBA74" stroke-width="1" rx="6"/>
+    <text x="832.5" y="135" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="12" fill="#C2410C">Terabytes → Petabytes</text>
+
+    <rect x="955" y="110" width="245" height="40" fill="#FEF2F2" stroke="#F87171" stroke-width="1" rx="6"/>
+    <text x="1077.5" y="135" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="12" fill="#B91C1C">Exabytes → Zettabytes</text>
+
+    <!-- Row: Data Volume -->
+    <rect x="0" y="160" width="220" height="40" fill="#F9FAFB" stroke="#D1D5DB" stroke-width="1" rx="6"/>
+    <text x="110" y="185" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="600" fill="#374151">Data Volume</text>
+
+    <rect x="220" y="160" width="245" height="40" fill="#EFF6FF" stroke="#93C5FD" stroke-width="1" rx="6"/>
+    <text x="342.5" y="185" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="12" fill="#1F3B8A">Thousands of records</text>
+
+    <rect x="465" y="160" width="245" height="40" fill="#F3F4F6" stroke="#C4B5FD" stroke-width="1" rx="6"/>
+    <text x="587.5" y="185" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="12" fill="#5B21B6">Millions of records</text>
+
+    <rect x="710" y="160" width="245" height="40" fill="#FFF7ED" stroke="#FDBA74" stroke-width="1" rx="6"/>
+    <text x="832.5" y="185" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="12" fill="#C2410C">Billions of records/events</text>
+
+    <rect x="955" y="160" width="245" height="40" fill="#FEF2F2" stroke="#F87171" stroke-width="1" rx="6"/>
+    <text x="1077.5" y="185" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="12" fill="#B91C1C">Trillions of tokens/embeddings</text>
+  </g>
+
+  <!-- Bottom Summary Banner -->
+  <rect x="100" y="930" width="1200" height="40" fill="#4338CA" rx="10"/>
+  <text x="700" y="955" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="600" fill="white">Key Evolution Trends: Physical → Digital • Structured → Unstructured • Centralized → Distributed • Storage → Intelligence • Reactive → Predictive</text>
+</svg>

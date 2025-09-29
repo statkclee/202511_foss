@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 1400 970" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Central gradient for data definition -->
+    <radialGradient id="centralGradient" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#3B82F6"/>
+      <stop offset="100%" stop-color="#1E40AF"/>
+    </radialGradient>
+
+    <!-- Perspective gradients -->
+    <linearGradient id="scientificGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#10B981"/>
+      <stop offset="100%" stop-color="#059669"/>
+    </linearGradient>
+
+    <linearGradient id="computingGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#8B5CF6"/>
+      <stop offset="100%" stop-color="#7C3AED"/>
+    </linearGradient>
+
+    <linearGradient id="businessGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#F59E0B"/>
+      <stop offset="100%" stop-color="#D97706"/>
+    </linearGradient>
+
+    <linearGradient id="philGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#EF4444"/>
+      <stop offset="100%" stop-color="#DC2626"/>
+    </linearGradient>
+
+    <linearGradient id="statsGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#06B6D4"/>
+      <stop offset="100%" stop-color="#0891B2"/>
+    </linearGradient>
+
+    <!-- DIKW gradient -->
+    <linearGradient id="dikwGradient" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0%" stop-color="#1F2937"/>
+      <stop offset="33%" stop-color="#4B5563"/>
+      <stop offset="66%" stop-color="#9CA3AF"/>
+      <stop offset="100%" stop-color="#F3F4F6"/>
+    </linearGradient>
+
+    <!-- Arrow markers -->
+    <marker id="arrow" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#6B7280"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1400" height="1200" fill="#F8FAFC"/>
+
+  <!-- Title -->
+  <rect x="50" y="20" width="1300" height="80" fill="white" stroke="#E5E7EB" stroke-width="2" rx="12"/>
+  <text x="700" y="55" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="36" font-weight="bold" fill="#111827">What is Data?</text>
+  <text x="700" y="85" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="16" fill="#6B7280">Exploring the Fundamental Nature of Information*</text>
+
+  <!-- Central Definition Circle -->
+  <circle cx="700" cy="350" r="180" fill="url(#centralGradient)" stroke="#1E40AF" stroke-width="4"/>
+  <text x="700" y="320" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="bold" fill="white">DATA</text>
+  <text x="700" y="350" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="600" fill="#E0E7FF">Latin: "datum" = given (Oxford Dictionary)</text>
+  <text x="700" y="375" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="14" fill="#BFDBFE">Facts, observations, or</text>
+  <text x="700" y="395" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="14" fill="#BFDBFE">measurements that can be</text>
+  <text x="700" y="415" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="14" fill="#BFDBFE">recorded and processed</text>
+
+  <!-- Scientific Perspective (top) -->
+  <g transform="translate(570, 120)">
+    <rect width="260" height="100" fill="url(#scientificGrad)" stroke="#059669" stroke-width="2" rx="12"/>
+    <text x="130" y="25" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="20" font-weight="bold" fill="white">Scientific Perspective</text>
+    <text x="20" y="50" font-family="Inter, Arial, sans-serif" font-size="12" fill="#D1FAE5">• Empirical observations</text>
+    <text x="20" y="68" font-family="Inter, Arial, sans-serif" font-size="12" fill="#D1FAE5">• Measurements &amp; experiments</text>
+    <text x="20" y="86" font-family="Inter, Arial, sans-serif" font-size="12" fill="#D1FAE5">• Reproducible evidence</text>
+  </g>
+
+  <!-- Computing Perspective (top right) -->
+  <g transform="translate(950, 200)">
+    <rect width="260" height="100" fill="url(#computingGrad)" stroke="#7C3AED" stroke-width="2" rx="12"/>
+    <text x="130" y="25" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="20" font-weight="bold" fill="white">Computing Perspective</text>
+    <text x="20" y="50" font-family="Inter, Arial, sans-serif" font-size="12" fill="#EDE9FE">• Binary representations (0s &amp; 1s)</text>
+    <text x="20" y="68" font-family="Inter, Arial, sans-serif" font-size="12" fill="#EDE9FE">• Analog signals digitized; storage &amp; transmission</text>
+    <text x="20" y="86" font-family="Inter, Arial, sans-serif" font-size="12" fill="#EDE9FE">• Algorithmic processing</text>
+  </g>
+
+  <!-- Business Perspective (bottom right) -->
+  <g transform="translate(950, 450)">
+    <rect width="260" height="100" fill="url(#businessGrad)" stroke="#D97706" stroke-width="2" rx="12"/>
+    <text x="130" y="25" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="20" font-weight="bold" fill="white">Business Perspective</text>
+    <text x="20" y="50" font-family="Inter, Arial, sans-serif" font-size="12" fill="#FEF3C7">• Strategic asset</text>
+    <text x="20" y="68" font-family="Inter, Arial, sans-serif" font-size="12" fill="#FEF3C7">• Decision-making input</text>
+    <text x="20" y="86" font-family="Inter, Arial, sans-serif" font-size="12" fill="#FEF3C7">• Competitive advantage</text>
+  </g>
+
+  <!-- Philosophical Perspective (bottom left) -->
+  <g transform="translate(190, 450)">
+    <rect width="260" height="100" fill="url(#philGrad)" stroke="#DC2626" stroke-width="2" rx="12"/>
+    <text x="130" y="25" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="20" font-weight="bold" fill="white">Philosophical Perspective</text>
+    <text x="20" y="50" font-family="Inter, Arial, sans-serif" font-size="12" fill="#FEE2E2">• Raw material of knowledge</text>
+    <text x="20" y="68" font-family="Inter, Arial, sans-serif" font-size="12" fill="#FEE2E2">• Context-dependent meaning</text>
+    <text x="20" y="86" font-family="Inter, Arial, sans-serif" font-size="12" fill="#FEE2E2">• Truth vs interpretation</text>
+  </g>
+
+  <!-- Data Governance & Ethics -->
+  <g transform="translate(570, 570)">
+    <rect width="260" height="110" fill="#F1F5F9" stroke="#2563EB" stroke-width="2" rx="12"/>
+    <text x="130" y="28" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="20" font-weight="bold" fill="#1D4ED8">Governance &amp; Ethics</text>
+    <text x="20" y="55" font-family="Inter, Arial, sans-serif" font-size="12" fill="#1E3A8A">• Privacy &amp; consent management</text>
+    <text x="20" y="73" font-family="Inter, Arial, sans-serif" font-size="12" fill="#1E3A8A">• Bias detection &amp; mitigation</text>
+    <text x="20" y="91" font-family="Inter, Arial, sans-serif" font-size="12" fill="#1E3A8A">• Stewardship, lineage, accountability</text>
+  </g>
+
+  <!-- Statistical Perspective (left) -->
+  <g transform="translate(190, 200)">
+    <rect width="260" height="100" fill="url(#statsGrad)" stroke="#0891B2" stroke-width="2" rx="12"/>
+    <text x="130" y="25" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="20" font-weight="bold" fill="white">Statistical Perspective</text>
+    <text x="20" y="50" font-family="Inter, Arial, sans-serif" font-size="12" fill="#CFFAFE">• Variables &amp; observations</text>
+    <text x="20" y="68" font-family="Inter, Arial, sans-serif" font-size="12" fill="#CFFAFE">• Samples from populations</text>
+    <text x="20" y="86" font-family="Inter, Arial, sans-serif" font-size="12" fill="#CFFAFE">• Patterns &amp; distributions</text>
+  </g>
+
+  <!-- Connection lines from perspectives to center -->
+  <!-- Scientific (top) to center -->
+  <path d="M 700 220 L 700 280" stroke="#9CA3AF" stroke-width="3" stroke-dasharray="5,5" opacity="0.7" marker-end="url(#arrow)"/>
+
+  <!-- Computer Science (top-right) to center -->
+  <path d="M 950 250 L 800 340" stroke="#9CA3AF" stroke-width="3" stroke-dasharray="5,5" opacity="0.7" marker-end="url(#arrow)"/>
+
+  <!-- Statistical (bottom-right) to center -->
+  <path d="M 950 500 L 800 400" stroke="#9CA3AF" stroke-width="3" stroke-dasharray="5,5" opacity="0.7" marker-end="url(#arrow)"/>
+
+  <!-- Business (bottom-left) to center -->
+  <path d="M 450 500 L 600 400" stroke="#9CA3AF" stroke-width="3" stroke-dasharray="5,5" opacity="0.7" marker-end="url(#arrow)"/>
+
+  <!-- Humanities (top-left) to center -->
+  <path d="M 450 250 L 600 340" stroke="#9CA3AF" stroke-width="3" stroke-dasharray="5,5" opacity="0.7" marker-end="url(#arrow)"/>
+
+  <!-- Governance (bottom-top) to center -->
+  <path d="M 690 560 L 690 450" stroke="#4B5563" stroke-width="3" stroke-dasharray="5,5" opacity="0.6" marker-end="url(#arrow)"/>
+
+
+  <!-- Data Characteristics Section -->
+  <g transform="translate(150, 700)">
+    <rect width="1100" height="200" fill="white" stroke="#E5E7EB" stroke-width="2" rx="12"/>
+    <text x="525" y="35" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="20" font-weight="bold" fill="#111827">Data Characteristics</text>
+
+    <!-- Structured vs Unstructured -->
+    <g transform="translate(50, 60)">
+      <rect width="270" height="110" fill="#F0F9FF" stroke="#0EA5E9" stroke-width="1" rx="8"/>
+      <text x="135" y="25" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="bold" fill="#0C4A6E">Structure</text>
+      <rect x="15" y="35" width="100" height="25" fill="#DBEAFE" stroke="#3B82F6" stroke-width="1" rx="4"/>
+      <text x="65" y="52" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="11" font-weight="600" fill="#1E40AF">Structured</text>
+      <text x="15" y="72" font-family="Inter, Arial, sans-serif" font-size="10" fill="#374151">Tables, databases</text>
+      <text x="15" y="86" font-family="Inter, Arial, sans-serif" font-size="10" fill="#374151">Organized format</text>
+
+      <rect x="155" y="35" width="100" height="25" fill="#FEF3F2" stroke="#EF4444" stroke-width="1" rx="4"/>
+      <text x="205" y="52" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="11" font-weight="600" fill="#DC2626">Unstructured</text>
+      <text x="155" y="72" font-family="Inter, Arial, sans-serif" font-size="10" fill="#374151">Text, images, videos</text>
+      <text x="155" y="86" font-family="Inter, Arial, sans-serif" font-size="10" fill="#374151">No fixed schema</text>
+    </g>
+
+    <!-- Quantitative vs Qualitative -->
+    <g transform="translate(400, 60)">
+      <rect width="270" height="110" fill="#F0FDF4" stroke="#22C55E" stroke-width="1" rx="8"/>
+      <text x="135" y="25" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="bold" fill="#14532D">Nature</text>
+      <rect x="15" y="35" width="100" height="25" fill="#DCFCE7" stroke="#16A34A" stroke-width="1" rx="4"/>
+      <text x="65" y="52" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="11" font-weight="600" fill="#15803D">Quantitative</text>
+      <text x="15" y="72" font-family="Inter, Arial, sans-serif" font-size="10" fill="#374151">Numbers, measures</text>
+      <text x="15" y="86" font-family="Inter, Arial, sans-serif" font-size="10" fill="#374151">Can be counted</text>
+
+      <rect x="155" y="35" width="100" height="25" fill="#FEF7FF" stroke="#A855F7" stroke-width="1" rx="4"/>
+      <text x="205" y="52" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="11" font-weight="600" fill="#7C2D92">Qualitative</text>
+      <text x="155" y="72" font-family="Inter, Arial, sans-serif" font-size="10" fill="#374151">Categories, descriptions</text>
+      <text x="155" y="86" font-family="Inter, Arial, sans-serif" font-size="10" fill="#374151">Attributes, qualities</text>
+    </g>
+
+    <!-- Static vs Dynamic -->
+    <g transform="translate(750, 60)">
+      <rect width="270" height="110" fill="#FFFBEB" stroke="#F59E0B" stroke-width="1" rx="8"/>
+      <text x="135" y="25" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="bold" fill="#92400E">Temporality</text>
+      <rect x="15" y="35" width="100" height="25" fill="#FEF3C7" stroke="#D97706" stroke-width="1" rx="4"/>
+      <text x="65" y="52" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="11" font-weight="600" fill="#B45309">Static</text>
+      <text x="15" y="72" font-family="Inter, Arial, sans-serif" font-size="10" fill="#374151">Fixed, historical</text>
+      <text x="15" y="86" font-family="Inter, Arial, sans-serif" font-size="10" fill="#374151">Doesn't change</text>
+
+      <rect x="155" y="35" width="100" height="25" fill="#F0FDFA" stroke="#14B8A6" stroke-width="1" rx="4"/>
+      <text x="205" y="52" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="11" font-weight="600" fill="#0F766E">Dynamic</text>
+      <text x="155" y="72" font-family="Inter, Arial, sans-serif" font-size="10" fill="#374151">Real-time, streaming</text>
+      <text x="155" y="86" font-family="Inter, Arial, sans-serif" font-size="10" fill="#374151">Continuously updates</text>
+    </g>
+  </g>
+
+
+  <!-- Key Properties Footer -->
+  <g transform="translate(0, -240)">
+    <rect x="50" y="1150" width="1300" height="40" fill="#1F2937" rx="8"/>
+    <text x="700" y="1175" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="600" fill="white">
+      Key Properties: Can be stored • Can be transmitted • Can be copied • Requires context for meaning • Has potential value when processed
+    </text>
+  </g>
+
+</svg>

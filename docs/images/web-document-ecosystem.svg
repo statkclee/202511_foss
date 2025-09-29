@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 45 1000 400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .title-text { font-family: 'IBM Plex Sans KR', sans-serif; font-size: 24px; font-weight: bold; fill: #2c3e50; }
+      .stage-text { font-family: 'IBM Plex Sans KR', sans-serif; font-size: 16px; font-weight: 600; fill: #34495e; }
+      .desc-text-middle { font-family: 'Noto Sans KR', sans-serif; font-size: 15px; fill: #7f8c8d; }
+      .desc-text { font-family: 'Noto Sans KR', sans-serif; font-size: 13px; fill: #7f8c8d; }
+      .desc-text-html { font-family: 'Noto Sans KR', sans-serif; font-size: 14px; fill: "black" }
+      .center-doc { fill: #3498db; stroke: #2980b9; stroke-width: 3; }
+      .connected-doc { fill: #e8f4fd; stroke: #3498db; stroke-width: 2; }
+      .hyperlink { stroke: #e74c3c; stroke-width: 2; fill: none; }
+      .multimedia { fill: #f39c12; stroke: #d68910; stroke-width: 1; }
+      .search-engine { fill: #27ae60; stroke: #229954; stroke-width: 2; }
+      .globe { fill: #8e44ad; stroke: #7d3c98; stroke-width: 2; }
+    </style>
+    
+    <!-- 화살표 마커 정의 -->
+    <marker id="hyperlink-arrow" markerWidth="8" markerHeight="6" 
+            refX="7" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#e74c3c" />
+    </marker>
+    <marker id="search-arrow" markerWidth="8" markerHeight="6" 
+            refX="7" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#27ae60" />
+    </marker>
+    <marker id="globe-arrow" markerWidth="8" markerHeight="6" 
+            refX="7" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#8e44ad" />
+    </marker>
+  </defs>
+
+  <!-- 중앙 웹 문서 -->
+  <g id="center-document">
+    <rect x="425" y="160" width="150" height="100" rx="10" class="center-doc"/>
+    <text x="500" y="185" text-anchor="middle" class="stage-text" fill="white">Web Document</text>
+    <text x="500" y="205" text-anchor="middle" class="desc-text-html" fill="white">HTML</text>
+    
+    <!-- HTML 태그 시뮬레이션 -->
+    <text x="435" y="220" class="desc-text-html" fill="white">&lt;h1&gt;Title&lt;/h1&gt;</text>
+    <text x="435" y="235" class="desc-text-html" fill="white">&lt;p&gt;Content&lt;/p&gt;</text>
+    <text x="435" y="250" class="desc-text-html" fill="white">&lt;a&gt;Link&lt;/a&gt;</text>
+  </g>
+
+  <!-- 연결된 문서들 -->
+  <!-- 좌상단 -->
+  <g id="doc1">
+    <rect x="200" y="90" width="80" height="60" rx="5" class="connected-doc"/>
+    <text x="240" y="115" text-anchor="middle" class="desc-text">Paper</text>
+    <text x="240" y="130" text-anchor="middle" class="desc-text">PDF</text>
+  </g>
+
+  <!-- 우상단 -->
+  <g id="doc2">
+    <rect x="720" y="90" width="80" height="60" rx="5" class="connected-doc"/>
+    <text x="760" y="115" text-anchor="middle" class="desc-text">News</text>
+    <text x="760" y="130" text-anchor="middle" class="desc-text">Article</text>
+  </g>
+
+  <!-- 좌하단 -->
+  <g id="doc3">
+    <rect x="200" y="280" width="80" height="60" rx="5" class="connected-doc"/>
+    <text x="240" y="305" text-anchor="middle" class="desc-text">Blog</text>
+    <text x="240" y="320" text-anchor="middle" class="desc-text">Post</text>
+  </g>
+
+  <!-- 우하단 -->
+  <g id="doc4">
+    <rect x="720" y="280" width="80" height="60" rx="5" class="connected-doc"/>
+    <text x="760" y="305" text-anchor="middle" class="desc-text">Wiki</text>
+    <text x="760" y="320" text-anchor="middle" class="desc-text">Page</text>
+  </g>
+
+  <!-- 하이퍼링크 연결선들 -->
+  <line x1="280" y1="120" x2="425" y2="180" class="hyperlink" marker-end="url(#hyperlink-arrow)"/>
+  <line x1="720" y1="120" x2="575" y2="180" class="hyperlink" marker-end="url(#hyperlink-arrow)"/>
+  <line x1="280" y1="310" x2="425" y2="240" class="hyperlink" marker-end="url(#hyperlink-arrow)"/>
+  <line x1="720" y1="310" x2="575" y2="240" class="hyperlink" marker-end="url(#hyperlink-arrow)"/>
+
+  <!-- 멀티미디어 요소들 -->
+  <g id="multimedia-elements">
+    <!-- 이미지 -->
+    <rect x="350" y="80" width="40" height="30" rx="3" class="multimedia"/>
+    <text x="370" y="100" text-anchor="middle" class="desc-text" fill="white">IMG</text>
+    
+    <!-- 비디오 -->
+    <rect x="610" y="80" width="40" height="30" rx="3" class="multimedia"/>
+    <text x="630" y="100" text-anchor="middle" class="desc-text" fill="white">VIDEO</text>
+    
+    <!-- 오디오 -->
+    <rect x="350" y="270" width="40" height="30" rx="3" class="multimedia"/>
+    <text x="370" y="290" text-anchor="middle" class="desc-text" fill="white">AUDIO</text>
+  </g>
+
+  <!-- 검색 엔진 (구글) -->
+  <g id="search-engine">
+    <rect x="450" y="60" width="100" height="40" rx="20" class="search-engine"/>
+    <text x="500" y="85" text-anchor="middle" class="stage-text" fill="white">Search Engine</text>
+    
+    <!-- 검색 화살표 -->
+    <line x1="500" y1="100" x2="500" y2="150" stroke="#27ae60" stroke-width="3" marker-end="url(#search-arrow)"/>
+  </g>
+
+  <!-- 전역 접근성 (지구본) -->
+  <g id="global-access">
+    <circle cx="500" cy="300" r="30" class="globe"/>
+    <text x="500" y="305" text-anchor="middle" class="stage-text" fill="white">🌍</text>
+    <text x="500" y="340" text-anchor="middle" class="desc-text">Global access</text>
+    
+    <!-- 접근 화살표 -->
+    <line x1="500" y1="270" x2="500" y2="260" stroke="#8e44ad" stroke-width="3" marker-end="url(#globe-arrow)"/>
+  </g>
+
+  <!-- 특징 설명 박스들 -->
+  <g id="characteristics">
+    <!-- 하이퍼텍스트 -->
+    <rect x="50" y="350" width="200" height="80" rx="8" fill="#fdebeb" stroke="#e74c3c" stroke-width="2"/>
+    <text x="150" y="375" text-anchor="middle" class="stage-text">Hypertext</text>
+    <text x="60" y="395" class="desc-text">Non-linear navigation</text>
+    <text x="60" y="410" class="desc-text">Connection through links</text>
+    <text x="60" y="425" class="desc-text">Democratization of knowledge</text>
+
+    <!-- 멀티미디어 통합 -->
+    <rect x="270" y="350" width="200" height="80" rx="8" fill="#fdf6e3" stroke="#f39c12" stroke-width="2"/>
+    <text x="370" y="375" text-anchor="middle" class="stage-text">Multimedia Integration</text>
+    <text x="280" y="395" class="desc-text">Text + Image</text>
+    <text x="280" y="410" class="desc-text">Video + Audio</text>
+    <text x="280" y="425" class="desc-text">Immersive experience</text>
+
+    <!-- 전역 접근성 -->
+    <rect x="490" y="350" width="200" height="80" rx="8" fill="#f4f8fd" stroke="#8e44ad" stroke-width="2"/>
+    <text x="590" y="375" text-anchor="middle" class="stage-text">Global Accessibility</text>
+    <text x="500" y="395" class="desc-text">Global public resource</text>
+    <text x="500" y="410" class="desc-text">Timezone independent</text>
+    <text x="500" y="425" class="desc-text">Instant access</text>
+
+    <!-- 검색 가능성 -->
+    <rect x="710" y="350" width="200" height="80" rx="8" fill="#eaf7f0" stroke="#27ae60" stroke-width="2"/>
+    <text x="810" y="375" text-anchor="middle" class="stage-text">Searchability</text>
+    <text x="720" y="395" class="desc-text">Keyword search</text>
+    <text x="720" y="410" class="desc-text">Google revolution</text>
+    <text x="720" y="425" class="desc-text">Information exploration change</text>
+  </g>
+
+</svg>

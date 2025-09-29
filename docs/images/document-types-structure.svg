@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 10 1200 550" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .title { font: bold 16px 'Noto Sans KR', Arial, sans-serif; fill: #2c3e50; text-anchor: middle; }
+      .section-title { font: bold 14px 'Noto Sans KR', Arial, sans-serif; fill: white; text-anchor: middle; text-shadow: 1px 1px 2px rgba(0,0,0,0.7); }
+      .component-text { font: 11px 'Noto Sans KR', Arial, sans-serif; fill: #2c3e50; text-anchor: middle; }
+      .bottom-text { font: 11px 'Noto Sans KR', Arial, sans-serif; fill: #2c3e50; text-anchor: left; }
+      .small-text { font: 9px 'Noto Sans KR', Arial, sans-serif; fill: #5a5a5a; text-anchor: middle; }
+      .emph-text { font: 12px 'Noto Sans KR', Arial, sans-serif; fill: #5a5a5a; text-anchor: middle; font-weight: bold}
+      .flow-text { font: 10px 'Noto Sans KR', Arial, sans-serif; fill: #34495e; text-anchor: middle; }
+      
+      .book-color { fill: #3498db; stroke: #2980b9; stroke-width: 2; rx: 4; }
+      .article-color { fill: #2ecc71; stroke: #27ae60; stroke-width: 2; rx: 4; }
+      .report-color { fill: #f39c12; stroke: #e67e22; stroke-width: 2; rx: 4; }
+      .ppt-color { fill: #9b59b6; stroke: #8e44ad; stroke-width: 2; rx: 4; }
+      
+      .divider { stroke: #bdc3c7; stroke-width: 1; stroke-dasharray: 3,3; }
+      .flow-arrow { stroke: #34495e; stroke-width: 1.5; fill: none; marker-end: url(#arrowhead); }
+      .connection { stroke: #95a5a6; stroke-width: 1; stroke-dasharray: 2,2; fill: none; }
+    </style>
+    
+    <marker id="arrowhead" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#34495e" />
+    </marker>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1200" height="600" fill="#ffffff"/>
+  
+  <!-- Vertical dividers -->
+  <line x1="300" y1="50" x2="300" y2="500" class="divider"/>
+  <line x1="600" y1="50" x2="600" y2="500" class="divider"/>
+  <line x1="900" y1="50" x2="900" y2="500" class="divider"/>
+  
+  <!-- 📚 BOOK Section -->
+  <g transform="translate(20, 20)">
+    <text x="140" y="25" class="title">📚 책 (Book)</text>
+    <text x="140" y="45" class="emph-text">지적 여정 · 선형적 서사</text>
+    
+    <!-- Book structure -->
+    <!-- Cover -->
+    <rect x="50" y="70" width="180" height="25" class="book-color"/>
+    <text x="140" y="85" class="section-title">표지 &amp; 전문</text>
+    
+    <!-- Part 1 -->
+    <rect x="60" y="110" width="160" height="20" class="book-color" opacity="0.8"/>
+    <text x="140" y="123" class="component-text">제1부: 기초 이론</text>
+    
+    <!-- Chapters in Part 1 -->
+    <rect x="70" y="140" width="140" height="15" fill="#5dade2" stroke="#3498db" stroke-width="1" rx="2"/>
+    <text x="140" y="150" class="small-text">제1장: 개론</text>
+    
+    <rect x="70" y="160" width="140" height="15" fill="#5dade2" stroke="#3498db" stroke-width="1" rx="2"/>
+    <text x="140" y="170" class="small-text">제2장: 원리</text>
+    
+    <rect x="70" y="180" width="140" height="15" fill="#5dade2" stroke="#3498db" stroke-width="1" rx="2"/>
+    <text x="140" y="190" class="small-text">제3장: 실습</text>
+    
+    <!-- Part 2 -->
+    <rect x="60" y="210" width="160" height="20" class="book-color" opacity="0.8"/>
+    <text x="140" y="223" class="component-text">제2부: 실전 응용</text>
+    
+    <!-- Chapters in Part 2 -->
+    <rect x="70" y="240" width="140" height="15" fill="#5dade2" stroke="#3498db" stroke-width="1" rx="2"/>
+    <text x="140" y="250" class="small-text">제4장: 사례연구</text>
+    
+    <rect x="70" y="260" width="140" height="15" fill="#5dade2" stroke="#3498db" stroke-width="1" rx="2"/>
+    <text x="140" y="270" class="small-text">제5장: 프로젝트</text>
+    
+    <!-- Back matter -->
+    <rect x="50" y="290" width="180" height="25" class="book-color"/>
+    <text x="140" y="305" class="section-title">부록 &amp; 색인</text>
+    
+    <!-- Flow arrows -->
+    <line x1="240" y1="82" x2="240" y2="105" class="flow-arrow"/>
+    <line x1="240" y1="130" x2="240" y2="205" class="flow-arrow"/>
+    <line x1="240" y1="230" x2="240" y2="285" class="flow-arrow"/>
+    
+    <!-- Cross-references -->
+    <line x1="80" y1="147" x2="80" y2="247" class="connection"/>
+    <line x1="200" y1="167" x2="200" y2="267" class="connection"/>
+    
+    <text x="140" y="340" class="emph-text">순차적 읽기 · 교차참조</text>
+    
+    <!-- Icons -->
+    <text x="25" y="85" style="font-size:16px;">📖</text>
+    <text x="25" y="220" style="font-size:14px;">🔗</text>
+    <text x="25" y="305" style="font-size:14px;">📑</text>
+  </g>
+  
+  <!-- 📄 ARTICLE Section -->
+  <g transform="translate(320, 20)">
+    <text x="140" y="25" class="title">📄 논문 (Article)</text>
+    <text x="140" y="45" class="emph-text">지식 검증 · IMRAD 구조</text>
+    
+    <!-- Abstract -->
+    <rect x="50" y="70" width="180" height="30" fill="#58d68d" stroke="#2ecc71" stroke-width="2" rx="4"/>
+    <text x="140" y="88" class="section-title">초록 (Abstract)</text>
+    
+    <!-- Introduction -->
+    <rect x="50" y="120" width="180" height="40" class="article-color"/>
+    <text x="140" y="143" class="section-title">서론 (Introduction)</text>
+    <text x="140" y="155" class="small-text">연구 배경 · 목적</text>
+    
+    <!-- Methods -->
+    <rect x="50" y="180" width="180" height="40" class="article-color"/>
+    <text x="140" y="203" class="section-title">방법 (Methods)</text>
+    <text x="140" y="215" class="small-text">연구 설계 · 절차</text>
+    
+    <!-- Results -->
+    <rect x="50" y="240" width="180" height="40" class="article-color"/>
+    <text x="140" y="263" class="section-title">결과 (Results)</text>
+    <text x="140" y="275" class="small-text">데이터 분석</text>
+    
+    <!-- Discussion -->
+    <rect x="50" y="300" width="180" height="40" class="article-color"/>
+    <text x="140" y="323" class="section-title">토의 (Discussion)</text>
+    <text x="140" y="335" class="small-text">해석 · 함의</text>
+    
+    <!-- References -->
+    <rect x="50" y="360" width="180" height="25" fill="#58d68d" stroke="#2ecc71" stroke-width="2" rx="4"/>
+    <text x="140" y="375" class="section-title">참고문헌</text>
+    
+    <!-- Flow arrows -->
+    <line x1="240" y1="100" x2="240" y2="115" class="flow-arrow"/>
+    <line x1="240" y1="160" x2="240" y2="175" class="flow-arrow"/>
+    <line x1="240" y1="220" x2="240" y2="235" class="flow-arrow"/>
+    <line x1="240" y1="280" x2="240" y2="295" class="flow-arrow"/>
+    <line x1="240" y1="340" x2="240" y2="355" class="flow-arrow"/>
+    
+    <text x="140" y="410" class="emph-text">검증 가능한 구조</text>
+    
+    <!-- Peer review indicators -->
+    <text x="25" y="88" style="font-size:14px;">📊</text>
+    <text x="25" y="143" style="font-size:12px;">❓</text>
+    <text x="25" y="203" style="font-size:12px;">🔬</text>
+    <text x="25" y="263" style="font-size:12px;">📈</text>
+    <text x="25" y="323" style="font-size:12px;">💡</text>
+    <text x="25" y="375" style="font-size:12px;">📚</text>
+  </g>
+  
+  <!-- 📊 REPORT Section -->
+  <g transform="translate(620, 20)">
+    <text x="140" y="25" class="title">📊 보고서 (Report)</text>
+    <text x="140" y="45" class="emph-text">의사결정 지원 · 실행 중심</text>
+    
+    <!-- Executive Summary -->
+    <rect x="50" y="70" width="180" height="40" fill="#f7dc6f" stroke="#f39c12" stroke-width="3" rx="4"/>
+    <text x="140" y="93" class="section-title">경영진 요약</text>
+    <text x="140" y="105" class="small-text">핵심 정보</text>
+    
+    <!-- Key Findings -->
+    <rect x="50" y="130" width="180" height="35" class="report-color"/>
+    <text x="140" y="150" class="section-title">주요 발견사항</text>
+    
+    <!-- Data Analysis -->
+    <rect x="60" y="180" width="80" height="60" fill="#fdeaa7" stroke="#f39c12" stroke-width="1" rx="2"/>
+    <text x="100" y="200" class="component-text">데이터</text>
+    <text x="100" y="215" class="component-text">분석</text>
+    <!-- Chart icon -->
+    <rect x="70" y="220" width="60" height="15" fill="none" stroke="#e67e22" stroke-width="1"/>
+    <polyline points="75,232 85,225 95,230 105,222 115,228 125,220" fill="none" stroke="#e67e22" stroke-width="2"/>
+    
+    <rect x="150" y="180" width="80" height="60" fill="#fdeaa7" stroke="#f39c12" stroke-width="1" rx="2"/>
+    <text x="190" y="200" class="component-text">시각화</text>
+    <text x="190" y="215" class="component-text">자료</text>
+    <!-- Bar chart icon -->
+    <rect x="160" y="220" width="8" height="15" fill="#e67e22"/>
+    <rect x="172" y="225" width="8" height="10" fill="#e67e22"/>
+    <rect x="184" y="222" width="8" height="13" fill="#e67e22"/>
+    <rect x="196" y="227" width="8" height="8" fill="#e67e22"/>
+    <rect x="208" y="224" width="8" height="11" fill="#e67e22"/>
+    
+    <!-- Recommendations -->
+    <rect x="50" y="260" width="180" height="35" class="report-color"/>
+    <text x="140" y="280" class="section-title">권고사항</text>
+    
+    <!-- Action Items -->
+    <rect x="50" y="315" width="180" height="35" fill="#f7dc6f" stroke="#f39c12" stroke-width="2" rx="4"/>
+    <text x="140" y="335" class="section-title">실행 방안</text>
+    
+    <!-- Appendices -->
+    <rect x="50" y="370" width="180" height="25" class="report-color" opacity="0.7"/>
+    <text x="140" y="385" class="section-title">세부 자료</text>
+    
+    <!-- Flow arrows -->
+    <line x1="240" y1="110" x2="240" y2="125" class="flow-arrow"/>
+    <line x1="240" y1="165" x2="240" y2="175" class="flow-arrow"/>
+    <line x1="240" y1="240" x2="240" y2="255" class="flow-arrow"/>
+    <line x1="240" y1="295" x2="240" y2="310" class="flow-arrow"/>
+    <line x1="240" y1="350" x2="240" y2="365" class="flow-arrow"/>
+    
+    <text x="140" y="420" class="emph-text">Top-down 정보 전달</text>
+    
+    <!-- Icons -->
+    <text x="25" y="93" style="font-size:16px;">⚡</text>
+    <text x="25" y="150" style="font-size:12px;">🔍</text>
+    <text x="25" y="210" style="font-size:12px;">📊</text>
+    <text x="25" y="280" style="font-size:12px;">💡</text>
+    <text x="25" y="335" style="font-size:12px;">✅</text>
+  </g>
+  
+  <!-- 🎯 PPT Section -->
+  <g transform="translate(920, 20)">
+    <text x="140" y="25" class="title">🎯 PPT (Presentation)</text>
+    <text x="140" y="45" class="emph-text">실시간 상호작용 · 동적 소통</text>
+    
+    <!-- Title Slide -->
+    <rect x="50" y="70" width="180" height="35" class="ppt-color"/>
+    <text x="140" y="90" class="section-title">제목 슬라이드</text>
+    
+    <!-- Content Slides -->
+    <g transform="translate(60, 120)">
+      <!-- Slide 1 -->
+      <rect x="0" y="0" width="40" height="30" fill="#d2b4de" stroke="#9b59b6" stroke-width="1" rx="2"/>
+      <text x="20" y="18" class="small-text">1</text>
+      
+      <!-- Slide 2 -->
+      <rect x="50" y="0" width="40" height="30" fill="#d2b4de" stroke="#9b59b6" stroke-width="1" rx="2"/>
+      <text x="70" y="18" class="small-text">2</text>
+      
+      <!-- Slide 3 -->
+      <rect x="100" y="0" width="40" height="30" fill="#d2b4de" stroke="#9b59b6" stroke-width="1" rx="2"/>
+      <text x="120" y="18" class="small-text">3</text>
+      
+      <!-- Slide 4 -->
+      <rect x="150" y="0" width="40" height="30" fill="#d2b4de" stroke="#9b59b6" stroke-width="1" rx="2"/>
+      <text x="170" y="18" class="small-text">4</text>
+    </g>
+    
+    <text x="140" y="165" class="component-text">콘텐츠 슬라이드</text>
+    
+    <!-- Interactive Elements -->
+    <rect x="50" y="170" width="180" height="30" fill="#bb8fce" stroke="#9b59b6" stroke-width="2" rx="4"/>
+    <text x="140" y="188" class="section-title">대화형 구성요소</text>
+    
+    <!-- Speaker Notes -->
+    <rect x="60" y="220" width="80" height="40" fill="#e8daef" stroke="#9b59b6" stroke-width="1" rx="2"/>
+    <text x="100" y="235" class="component-text">발표자</text>
+    <text x="100" y="248" class="component-text">노트</text>
+    
+    <!-- Audience Interaction -->
+    <rect x="150" y="220" width="80" height="40" fill="#e8daef" stroke="#9b59b6" stroke-width="1" rx="2"/>
+    <text x="190" y="235" class="component-text">청중</text>
+    <text x="190" y="248" class="component-text">반응</text>
+    
+    <!-- Q문서 코드화A -->
+    <rect x="50" y="280" width="180" height="30" class="ppt-color"/>
+    <text x="140" y="298" class="section-title">질의응답</text>
+    
+    <!-- Non-linear navigation -->
+    <path d="M 70,160 Q 40,180 70,210" fill="none" stroke="#8e44ad" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+    <path d="M 210,160 Q 240,180 210,210" fill="none" stroke="#8e44ad" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+    
+    <!-- Bidirectional arrows between speaker and audience -->
+    <line x1="100" y1="270" x2="190" y2="270" stroke="#8e44ad" stroke-width="1.5"/>
+    <polygon points="185,267 195,270 185,273" fill="#8e44ad"/>
+    <polygon points="105,267 95,270 105,273" fill="#8e44ad"/>
+    
+    <text x="140" y="340" class="emph-text">비선형 네비게이션</text>
+    <text x="140" y="355" class="emph-text">실시간 피드백</text>
+    
+    <!-- Icons -->
+    <text x="25" y="90" style="font-size:14px;">🎬</text>
+    <text x="25" y="135" style="font-size:12px;">📱</text>
+    <text x="25" y="188" style="font-size:12px;">⚡</text>
+    <text x="25" y="240" style="font-size:12px;">🗣️</text>
+    <text x="25" y="298" style="font-size:12px;">❓</text>
+  </g>
+  
+  <!-- Bottom comparison summary -->
+  <g transform="translate(50, 460)">
+    <rect x="0" y="0" width="1100" height="80" fill="#f8f9fa" stroke="#dee2e6" stroke-width="1" rx="8"/>
+    <text x="550" y="20" class="title">문서 유형별 구조적 특징 비교</text>
+    
+    <!-- Column 1: Traditional Documents -->
+    <text x="50" y="40" class="bottom-text" text-anchor="start">📚 <tspan style="font-weight:bold;">책</tspan>: 계층적 구조(부→장→절) · 순차적 읽기</text>
+    <text x="50" y="55" class="bottom-text" text-anchor="start">📄 <tspan style="font-weight:bold;">논문</tspan>: IMRAD 표준화 · 검증 가능성</text>
+    <text x="50" y="70" class="bottom-text" text-anchor="start">📖 <tspan style="font-weight:bold;">학술성</tspan>: 교차참조 네트워크 · 엄격한 논리적 흐름</text>
+    
+    <!-- Column 2: Interactive Documents -->
+    <text x="400" y="40" class="bottom-text" text-anchor="start">📊 <tspan style="font-weight:bold;">보고서</tspan>: 요약 우선 · 시각적 데이터 중심</text>
+    <text x="400" y="55" class="bottom-text" text-anchor="start">🎯 <tspan style="font-weight:bold;">PPT</tspan>: 모듈형 슬라이드 · 비선형 탐색</text>
+    <text x="400" y="70" class="bottom-text" text-anchor="start">⚡ <tspan style="font-weight:bold;">실용성</tspan>: 실행 가능한 권고 · 발표자-청중 상호작용</text>
+    
+    <!-- Column 3: Modern Integration -->
+    <text x="750" y="40" class="bottom-text" text-anchor="start">🔧 <tspan style="font-weight:bold;">Quarto</tspan>: 단일 소스 → 다중 출력 변환</text>
+    <text x="750" y="55" class="bottom-text" text-anchor="start">🤖 <tspan style="font-weight:bold;">AI 시대</tspan>: 문서 간 자동 변환 · 구조 최적화</text>
+    <text x="750" y="70" class="bottom-text" text-anchor="start">🌐 <tspan style="font-weight:bold;">미래</tspan>: 맞춤형 독자 경험 · 지능형 콘텐츠 적응</text>
+  </g>
+</svg>

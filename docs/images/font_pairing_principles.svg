@@ -1,0 +1,136 @@
+<svg viewBox="0 75 1200 690" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Gradient definitions -->
+    <linearGradient id="balanceGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#fefefe;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#f1f5f9;stop-opacity:1"/>
+    </linearGradient>
+    
+    <radialGradient id="contrastGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#fef2f2;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#fecaca;stop-opacity:1"/>
+    </radialGradient>
+    
+    <radialGradient id="harmonyGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#f0fdf4;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#bbf7d0;stop-opacity:1"/>
+    </radialGradient>
+    
+    <radialGradient id="hierarchyGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#eff6ff;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#bfdbfe;stop-opacity:1"/>
+    </radialGradient>
+    
+    <radialGradient id="consistencyGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#fefce8;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#fde047;stop-opacity:1"/>
+    </radialGradient>
+    
+    <radialGradient id="readabilityGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#f3e8ff;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#c4b5fd;stop-opacity:1"/>
+    </radialGradient>
+    
+    <!-- Arrow markers -->
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#64748b"/>
+    </marker>
+    
+    <!-- Drop shadow filter -->
+    <filter id="dropshadow">
+      <feDropShadow dx="2" dy="2" stdDeviation="3" flood-color="#000000" flood-opacity="0.2"/>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1200" height="800" fill="#fafbfc"/>
+  
+  <!-- Central Balance Circle - Enhanced -->
+  <circle cx="600" cy="280" r="100" fill="url(#balanceGrad)" stroke="#334155" stroke-width="4" filter="url(#dropshadow)"/>
+  <text x="600" y="270" font-family="Noto Sans KR, Arial, sans-serif" font-size="28" font-weight="bold" text-anchor="middle" fill="#1e293b">균형</text>
+  <text x="600" y="305" font-family="Noto Sans KR, Arial, sans-serif" font-size="18" text-anchor="middle" fill="#475569">Balance</text>
+  
+  <!-- Balance elements around center -->
+  <g transform="translate(600,280)">
+    <text x="0" y="-120" font-family="Noto Sans KR, Arial, sans-serif"   font-weight="bold" font-size="24" text-anchor="middle" fill="#475569">시각적 무게감</text>
+    <text x="190" y="-90" font-family="Noto Sans KR, Arial, sans-serif"  font-weight="bold" font-size="18" text-anchor="middle" fill="#475569">간격과 여백</text>
+    <text x="170" y="110" font-family="Noto Sans KR, Arial, sans-serif"   font-weight="bold" font-size="18" text-anchor="middle" fill="#475569">기능과 미학</text>
+    <text x="-100" y="130" font-family="Noto Sans KR, Arial, sans-serif"    font-weight="bold" font-size="18" text-anchor="middle" fill="#475569">읽기 편의성</text>
+    <text x="-200" y="60" font-family="Noto Sans KR, Arial, sans-serif"  font-weight="bold" font-size="18" text-anchor="middle" fill="#475569">문화적 맥락</text>
+    <text x="-230" y="-100" font-family="Noto Sans KR, Arial, sans-serif" font-weight="bold" font-size="18" text-anchor="middle" fill="#475569">디지털/인쇄</text>
+  </g>
+  
+  <!-- Contrast (Top Left) -->
+  <g transform="translate(200,200)">
+    <circle cx="0" cy="0" r="80" fill="url(#contrastGrad)" stroke="#dc2626" stroke-width="3" filter="url(#dropshadow)"/>
+    <text x="0" y="-10" font-family="Noto Sans KR, Arial, sans-serif" font-size="20" font-weight="bold" text-anchor="middle" fill="#dc2626">대비</text>
+    <text x="0" y="10" font-family="Noto Sans KR, Arial, sans-serif" font-size="14" text-anchor="middle" fill="#7f1d1d">Contrast</text>
+    <text x="0" y="30" font-family="Noto Sans KR, Arial, sans-serif" font-size="12" text-anchor="middle" fill="#374151">크기 • 굵기 • 스타일</text>
+  </g>
+  
+  <!-- Harmony (Top Right) -->
+  <g transform="translate(1000,200)">
+    <circle cx="0" cy="0" r="80" fill="url(#harmonyGrad)" stroke="#16a34a" stroke-width="3" filter="url(#dropshadow)"/>
+    <text x="0" y="-10" font-family="Noto Sans KR, Arial, sans-serif" font-size="20" font-weight="bold" text-anchor="middle" fill="#16a34a">조화</text>
+    <text x="0" y="10" font-family="Noto Sans KR, Arial, sans-serif" font-size="14" text-anchor="middle" fill="#15803d">Harmony</text>
+    <text x="0" y="30" font-family="Noto Sans KR, Arial, sans-serif" font-size="12" text-anchor="middle" fill="#374151">비율 • 색상 • 스타일</text>
+  </g>
+  
+  <!-- Hierarchy (Mid Left) -->
+  <g transform="translate(250,380)">
+    <circle cx="0" cy="0" r="75" fill="url(#hierarchyGrad)" stroke="#2563eb" stroke-width="3" filter="url(#dropshadow)"/>
+    <text x="0" y="-10" font-family="Noto Sans KR, Arial, sans-serif" font-size="20" font-weight="bold" text-anchor="middle" fill="#2563eb">계층</text>
+    <text x="0" y="10" font-family="Noto Sans KR, Arial, sans-serif" font-size="14" text-anchor="middle" fill="#1d4ed8">Hierarchy</text>
+    <text x="0" y="30" font-family="Noto Sans KR, Arial, sans-serif" font-size="12" text-anchor="middle" fill="#374151">정보 우선순위</text>
+  </g>
+  
+  <!-- Consistency (Mid Right) -->
+  <g transform="translate(950,380)">
+    <circle cx="0" cy="0" r="75" fill="url(#consistencyGrad)" stroke="#eab308" stroke-width="3" filter="url(#dropshadow)"/>
+    <text x="0" y="-10" font-family="Noto Sans KR, Arial, sans-serif" font-size="20" font-weight="bold" text-anchor="middle" fill="#a16207">일관성</text>
+    <text x="0" y="10" font-family="Noto Sans KR, Arial, sans-serif" font-size="14" text-anchor="middle" fill="#a16207">Consistency</text>
+    <text x="0" y="30" font-family="Noto Sans KR, Arial, sans-serif" font-size="12" text-anchor="middle" fill="#374151">문서 통일감</text>
+  </g>
+  
+  <!-- Readability (Bottom) -->
+  <g transform="translate(600,480)">
+    <circle cx="0" cy="0" r="80" fill="url(#readabilityGrad)" stroke="#7c3aed" stroke-width="3" filter="url(#dropshadow)"/>
+    <text x="0" y="-10" font-family="Noto Sans KR, Arial, sans-serif" font-size="20" font-weight="bold" text-anchor="middle" fill="#7c3aed">가독성</text>
+    <text x="0" y="10" font-family="Noto Sans KR, Arial, sans-serif" font-size="14" text-anchor="middle" fill="#6d28d9">Readability</text>
+    <text x="0" y="30" font-family="Noto Sans KR, Arial, sans-serif" font-size="12" text-anchor="middle" fill="#374151">읽기 쉬움 보장</text>
+  </g>
+  
+  <!-- Connection lines to center -->
+  <path d="M 280 180 Q 400 200 500 250" stroke="#64748b" stroke-width="2" fill="none" opacity="0.6"/>
+  <path d="M 920 180 Q 800 200 695 250" stroke="#64748b" stroke-width="2" fill="none" opacity="0.6"/>
+  <path d="M 325 380 Q 350 380 505 310" stroke="#64748b" stroke-width="2" fill="none" opacity="0.6"/>
+  <path d="M 875 380 Q 800 390 695 310" stroke="#64748b" stroke-width="2" fill="none" opacity="0.6"/>
+  <path d="M 600 400 Q 600 400 600 380" stroke="#64748b" stroke-width="2" fill="none" opacity="0.6"/>
+  
+  <!-- Examples section -->
+  <g transform="translate(100,570)">
+    <rect x="0" y="0" width="1000" height="160" rx="15" fill="#ffffff" stroke="#e2e8f0" stroke-width="2" filter="url(#dropshadow)"/>
+ 
+    <!-- Good example -->
+    <g transform="translate(50,20)">
+      <rect x="0" y="0" width="400" height="120" rx="10" fill="#f0fdf4" stroke="#16a34a" stroke-width="2"/>
+      <text x="20" y="25" font-family="Noto Sans KR, Arial, sans-serif" font-size="14" font-weight="bold" fill="#16a34a">✅ 효과적인 조합</text>
+      
+      <text x="20" y="50" font-family="Noto Sans KR, Arial, sans-serif" font-size="18" font-weight="bold" fill="#1e293b">과학기술 연구 제목</text>
+      <text x="20" y="70" font-family="Noto Serif KR, Times, serif" font-size="14" fill="#374151">본문은 세리프 글꼴로 장시간 읽기에 적합하며</text>
+      <text x="20" y="90" font-family="D2Coding, Consolas, monospace" font-size="12" fill="#059669">result = analyze_data(dataset)</text>
+      <text x="20" y="110" font-family="Noto Sans KR, Arial, sans-serif" font-size="11" fill="#64748b">그림 1. 캡션은 산세리프로 명확하게</text>
+    </g>
+    
+    <!-- Bad example -->
+    <g transform="translate(550,20)">
+      <rect x="0" y="0" width="400" height="120" rx="10" fill="#fef2f2" stroke="#dc2626" stroke-width="2"/>
+      <text x="20" y="25" font-family="Noto Sans KR, Arial, sans-serif" font-size="14" font-weight="bold" fill="#dc2626">❌ 부조화로운 조합</text>
+      
+      <text x="20" y="50" font-family="Comic Sans MS, cursive" font-size="18" font-weight="bold" fill="#1e293b">과학기술 연구 제목</text>
+      <text x="20" y="70" font-family="Impact, Arial Black, sans-serif" font-size="14" fill="#374151">본문이 임팩트 폰트로 읽기 어려움</text>
+      <text x="20" y="90" font-family="Times, serif" font-size="12" fill="#059669">result = analyze_data(dataset)</text>
+      <text x="20" y="110" font-family="Brush Script MT, cursive" font-size="11" fill="#64748b">그림 1. 캡션도 일관성 없음</text>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1200" height="780" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .title { font-family: 'IBM Plex Sans KR', sans-serif; font-size: 24px; font-weight: bold; fill: #2c3e50; }
+      .subtitle { font-family: 'IBM Plex Sans KR', sans-serif; font-size: 18px; font-weight: 600; fill: #34495e; }
+      .section-title { font-family: 'IBM Plex Sans KR', sans-serif; font-size: 16px; font-weight: 600; }
+      .feature-name { font-family: 'IBM Plex Sans KR', sans-serif; font-size: 14px; font-weight: 500; }
+      .syntax { font-family: 'Nanum Gothic Coding', monospace; font-size: 12px; fill: #2c3e50; }
+      .result { font-family: 'Noto Serif KR', serif; font-size: 12px; fill: #555; font-style: italic; }
+      .output { font-family: 'Noto Serif KR', serif; font-size: 12px; fill: #333; }
+      .output-bg { fill: #f5f5f5; stroke: #ddd; stroke-width: 1; rx: 3; }
+      .arrow { fill: #999; }
+      
+      .basic-section { fill: #e8f4f8; stroke: #3498db; stroke-width: 2; }
+      .basic-text { fill: #2980b9; }
+      .advanced-section { fill: #f3e8ff; stroke: #9b59b6; stroke-width: 2; }
+      .advanced-text { fill: #8e44ad; }
+      .missing-section { fill: #fff3e0; stroke: #e67e22; stroke-width: 2; }
+      .missing-text { fill: #d35400; }
+    </style>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1200" height="800" fill="#f8f9fa"/>
+  
+  <!-- Basic Markdown Section -->
+  <rect x="30" y="20" width="360" height="660" rx="15" class="basic-section"/>
+  <text x="210" y="50" text-anchor="middle" class="section-title basic-text">Basic Markdown</text>
+  
+  <!-- YAML Metadata -->
+  <text x="50" y="80" class="feature-name basic-text">📋 YAML Metadata</text>
+  <text x="50" y="100" class="syntax">---</text>
+  <text x="50" y="115" class="syntax">title: "Document Title"</text>
+  <text x="50" y="130" class="syntax">author: "Author Name"</text>
+  <text x="50" y="145" class="syntax">---</text>
+  
+  <!-- Headings -->
+  <text x="50" y="175" class="feature-name basic-text">📝 Headings</text>
+  <text x="50" y="195" class="syntax"># Heading 1</text>
+  <polygon points="210,190 220,195 210,200" class="arrow"/>
+  <rect x="230" y="185" width="150" height="45" class="output-bg"/>
+  <text x="240" y="200" class="output" font-size="18" font-weight="bold">Heading 1</text>
+  <text x="240" y="215" class="output" font-size="14">Heading 2</text>
+  <text x="240" y="225" class="output" font-size="12">Heading 3</text>
+  
+  <text x="50" y="210" class="syntax">## Heading 2</text>
+  <text x="50" y="225" class="syntax">### Heading 3</text>
+  
+  <!-- Text Formatting -->
+  <text x="50" y="255" class="feature-name basic-text">🎨 Text Formatting</text>
+  <text x="50" y="275" class="syntax">*italic*</text>
+  <polygon points="210,270 220,275 210,280" class="arrow"/>
+  <rect x="230" y="265" width="150" height="40" class="output-bg"/>
+  <text x="240" y="280" class="output" font-style="italic">italic</text>
+  <text x="240" y="295" class="output" font-weight="bold">bold</text>
+  
+  <text x="50" y="290" class="syntax">**bold**</text>
+  <text x="50" y="305" class="syntax">***bold italic***</text>
+  
+  <!-- Code -->
+  <text x="50" y="335" class="feature-name basic-text">💻 Code</text>
+  <text x="50" y="355" class="syntax">`inline code`</text>
+  <polygon points="210,350 220,355 210,360" class="arrow"/>
+  <rect x="230" y="345" width="150" height="35" class="output-bg"/>
+  <rect x="240" y="350" width="80" height="15" fill="#e8e8e8" rx="2"/>
+  <text x="245" y="360" class="output" font-size="10" font-family="monospace">inline code</text>
+  
+  <text x="50" y="375" class="syntax">```</text>
+  <text x="50" y="390" class="syntax">code block</text>
+  <text x="50" y="405" class="syntax">```</text>
+  
+  <!-- Links -->
+  <text x="50" y="435" class="feature-name basic-text">🔗 Links</text>
+  <text x="50" y="455" class="syntax">[text](URL)</text>
+  <polygon points="210,450 220,455 210,460" class="arrow"/>
+  <rect x="230" y="445" width="150" height="25" class="output-bg"/>
+  <text x="240" y="460" class="output" fill="#0066cc" text-decoration="underline">text</text>
+  
+  <text x="50" y="470" class="syntax">[reference link][ref]</text>
+  <text x="50" y="485" class="syntax">[ref]: URL</text>
+  
+  <!-- Lists -->
+  <text x="50" y="515" class="feature-name basic-text">📋 Lists</text>
+  <text x="50" y="535" class="syntax">- unordered list</text>
+  <polygon points="210,530 220,535 210,540" class="arrow"/>
+  <rect x="230" y="525" width="150" height="50" class="output-bg"/>
+  <text x="240" y="540" class="output">• unordered list</text>
+  <text x="240" y="555" class="output">1. ordered list</text>
+  <text x="240" y="570" class="output">2. numbered list</text>
+  
+  <text x="50" y="550" class="syntax">1. ordered list</text>
+  <text x="50" y="565" class="syntax">2. numbered list</text>
+  
+  <!-- Blockquotes -->
+  <text x="50" y="595" class="feature-name basic-text">💬 Blockquotes</text>
+  <text x="50" y="615" class="syntax">> quote text</text>
+  <polygon points="210,610 220,615 210,620" class="arrow"/>
+  <rect x="230" y="605" width="150" height="25" class="output-bg"/>
+  <rect x="235" y="610" width="3" height="15" fill="#999"/>
+  <text x="245" y="620" class="output" fill="#666">quote text</text>
+  
+  <!-- Horizontal Rule -->
+  <text x="50" y="645" class="feature-name basic-text">➖ Horizontal Rule</text>
+  <text x="50" y="665" class="syntax">--- or ***</text>
+  <polygon points="210,660 220,665 210,670" class="arrow"/>
+  <rect x="230" y="655" width="150" height="20" class="output-bg"/>
+  <line x1="240" y1="665" x2="370" y2="665" stroke="#999" stroke-width="2"/>
+  
+  <!-- Advanced Markdown Section -->
+  <rect x="420" y="20" width="360" height="660" rx="15" class="advanced-section"/>
+  <text x="600" y="50" text-anchor="middle" class="section-title advanced-text">Advanced Markdown</text>
+  급
+  <!-- Math -->
+  <text x="440" y="80" class="feature-name advanced-text">🔢 Math</text>
+  <text x="440" y="100" class="syntax">$x^2 + y^2 = z^2$</text>
+  <polygon points="600,95 610,100 600,105" class="arrow"/>
+  <rect x="620" y="90" width="150" height="25" class="output-bg"/>
+  <text x="630" y="105" class="output" font-style="italic">x² + y² = z²</text>
+  
+  <text x="440" y="120" class="syntax">$$</text>
+  <text x="440" y="135" class="syntax">\sum_{i=1}^n x_i</text>
+  <text x="440" y="150" class="syntax">$$</text>
+  
+  <!-- Tables -->
+  <text x="440" y="180" class="feature-name advanced-text">📊 Tables</text>
+  <text x="440" y="200" class="syntax">| Header1 | Header2 |</text>
+  <text x="440" y="215" class="syntax">|---------|---------|</text>
+  <text x="440" y="230" class="syntax">| Data1 | Data2 |</text>
+  <polygon points="600,215 610,220 600,225" class="arrow"/>
+  <rect x="620" y="195" width="150" height="50" class="output-bg"/>
+  <rect x="625" y="200" width="140" height="40" fill="none" stroke="#999"/>
+  <line x1="695" y1="200" x2="695" y2="240" stroke="#999"/>
+  <line x1="625" y1="215" x2="765" y2="215" stroke="#999"/>
+  <text x="635" y="210" class="output" font-weight="bold" font-size="10">Header1</text>
+  <text x="705" y="210" class="output" font-weight="bold" font-size="10">Header2</text>
+  <text x="635" y="230" class="output" font-size="10">Data1</text>
+  <text x="705" y="230" class="output" font-size="10">Data2</text>
+  
+  <!-- Images -->
+  <text x="440" y="270" class="feature-name advanced-text">🖼️ Images</text>
+  <text x="440" y="290" class="syntax">![alt text](path)</text>
+  <text x="440" y="305" class="syntax">![caption]{#fig-id}</text>
+  <polygon points="600,295 610,300 600,305" class="arrow"/>
+  <rect x="620" y="275" width="150" height="48" class="output-bg"/>
+  <rect x="630" y="283" width="40" height="25" fill="#e0e0e0" stroke="#999" rx="2"/>
+  <text x="680" y="295" class="output" font-size="10">image</text>
+  <text x="630" y="320" class="output" font-size="9" fill="#666">Figure 1: caption</text>
+  
+  <!-- References -->
+  <text x="440" y="345" class="feature-name advanced-text">📚 References</text>
+  <text x="440" y="365" class="syntax">@CitationKey</text>
+  <text x="440" y="380" class="syntax">[@cite1; @cite2]</text>
+  <polygon points="600,375 610,380 600,385" class="arrow"/>
+  <rect x="620" y="360" width="150" height="35" class="output-bg"/>
+  <text x="630" y="375" class="output">(Author, 2024)</text>
+  <text x="630" y="390" class="output">(Lee et al., 2023)</text>
+  
+  <!-- Cross-reference -->
+  <text x="440" y="415" class="feature-name advanced-text">🔗 Cross-reference</text>
+  <text x="440" y="435" class="syntax">@fig-id</text>
+  <text x="440" y="450" class="syntax">@tbl-id</text>
+  <text x="440" y="465" class="syntax">@eq-id</text>
+  <polygon points="600,445 610,450 600,455" class="arrow"/>
+  <rect x="620" y="430" width="150" height="45" class="output-bg"/>
+  <text x="630" y="445" class="output" fill="#0066cc">Figure 1</text>
+  <text x="630" y="457" class="output" fill="#0066cc">Table 2</text>
+  <text x="630" y="469" class="output" fill="#0066cc">Equation 3</text>
+  
+  <!-- Callout -->
+  <text x="440" y="495" class="feature-name advanced-text">💡 Callout blocks</text>
+  <text x="440" y="515" class="syntax">::: {.callout-note}</text>
+  <text x="440" y="530" class="syntax">content</text>
+  <text x="440" y="545" class="syntax">:::</text>
+  <polygon points="600,525 610,530 600,535" class="arrow"/>
+  <rect x="620" y="510" width="150" height="40" class="output-bg"/>
+  <rect x="625" y="515" width="140" height="30" fill="#e3f2fd" stroke="#2196f3" stroke-width="2" rx="3"/>
+  <text x="630" y="525" class="output" fill="#1976d2" font-size="10" font-weight="bold">📝 Note</text>
+  <text x="630" y="540" class="output" font-size="10">content</text>
+  
+  <!-- Div/Span -->
+  <text x="440" y="575" class="feature-name advanced-text">🏷️ Div/Span</text>
+  <text x="440" y="595" class="syntax">::: {.class}</text>
+  <text x="440" y="610" class="syntax">[text]{.class}</text>
+  <polygon points="600,600 610,605 600,610" class="arrow"/>
+  <rect x="620" y="590" width="150" height="25" class="output-bg"/>
+  <rect x="630" y="595" width="50" height="15" fill="#fff3e0" stroke="#ff9800" rx="2"/>
+  <text x="635" y="605" class="output" font-size="10">text</text>
+  
+  <!-- Missing Elements Section -->
+  <rect x="810" y="20" width="360" height="660" rx="15" class="missing-section"/>
+  <text x="990" y="50" text-anchor="middle" class="section-title missing-text">Additional Elements</text>
+  
+  <!-- Task lists -->
+  <text x="830" y="80" class="feature-name missing-text">☑️ Task lists</text>
+  <text x="830" y="100" class="syntax">- [ ] incomplete task</text>
+  <text x="830" y="115" class="syntax">- [x] completed task</text>
+  <polygon points="990,105 1000,110 990,115" class="arrow"/>
+  <rect x="1010" y="95" width="150" height="30" class="output-bg"/>
+  <rect x="1020" y="102" width="10" height="10" fill="none" stroke="#666"/>
+  <rect x="1020" y="117" width="10" height="10" fill="#4caf50" stroke="#4caf50"/>
+  <text x="1035" y="125" class="output" font-size="10" fill="#666">checked task</text>
+  <text x="1035" y="108" class="output" font-size="10">incomplete task</text>
+  <text x="1023" y="125" class="output" font-size="10">✓</text>
+  
+  <!-- Strikethrough -->
+  <text x="830" y="145" class="feature-name missing-text">❌ Strikethrough</text>
+  <text x="830" y="165" class="syntax">~~crossed out text~~</text>
+  <polygon points="990,160 1000,165 990,170" class="arrow"/>
+  <rect x="1010" y="155" width="150" height="20" class="output-bg"/>
+  <text x="1020" y="168" class="output" text-decoration="line-through">crossed out text</text>
+  
+  <!-- Emoji -->
+  <text x="830" y="195" class="feature-name missing-text">😀 Emoji</text>
+  <text x="830" y="215" class="syntax">:smile: :heart:</text>
+  <polygon points="990,210 1000,215 990,220" class="arrow"/>
+  <rect x="1010" y="205" width="150" height="20" class="output-bg"/>
+  <text x="1020" y="218" class="output">😀 ❤️</text>
+  
+  <!-- Footnotes -->
+  <text x="830" y="245" class="feature-name missing-text">📎 Footnotes</text>
+  <text x="830" y="265" class="syntax">text[^1]</text>
+  <text x="830" y="280" class="syntax">[^1]: footnote content</text>
+  <polygon points="990,270 1000,275 990,280" class="arrow"/>
+  <rect x="1010" y="260" width="150" height="35" class="output-bg"/>
+  <text x="1020" y="273" class="output">text</text>
+  <text x="1090" y="268" class="output" font-size="8" baseline-shift="super">1</text>
+  <line x1="1020" y1="285" x2="1150" y2="285" stroke="#ccc"/>
+  <text x="1025" y="290" class="output" font-size="9" fill="#666">1. footnote content</text>
+  
+  <!-- Escape -->
+  <text x="830" y="310" class="feature-name missing-text">🔒 Escape</text>
+  <text x="830" y="330" class="syntax">\* \# \[ \]</text>
+  <polygon points="990,325 1000,330 990,335" class="arrow"/>
+  <rect x="1010" y="320" width="150" height="20" class="output-bg"/>
+  <text x="1020" y="333" class="output">* # [ ]</text>
+  
+  <!-- Nested lists -->
+  <text x="830" y="360" class="feature-name missing-text">🔗 Nested lists</text>
+  <text x="830" y="380" class="syntax">- item 1</text>
+  <text x="830" y="395" class="syntax">  - sub item</text>
+  <text x="830" y="410" class="syntax">    - sub sub item</text>
+  <polygon points="990,390 1000,395 990,400" class="arrow"/>
+  <rect x="1010" y="375" width="150" height="45" class="output-bg"/>
+  <text x="1020" y="388" class="output" font-size="10">• item 1</text>
+  <text x="1030" y="400" class="output" font-size="10">◦ sub item</text>
+  <text x="1040" y="412" class="output" font-size="10">▪ sub sub item</text>
+  
+  <!-- Definition lists -->
+  <text x="830" y="440" class="feature-name missing-text">📖 Definition lists</text>
+  <text x="830" y="460" class="syntax">term</text>
+  <text x="830" y="475" class="syntax">: definition</text>
+  <polygon points="990,465 1000,470 990,475" class="arrow"/>
+  <rect x="1010" y="455" width="150" height="30" class="output-bg"/>
+  <text x="1020" y="468" class="output" font-weight="bold" font-size="10">term</text>
+  <text x="1025" y="478" class="output" font-size="10">definition content</text>
+  
+  <!-- Highlight -->
+  <text x="830" y="505" class="feature-name missing-text">🖍️ Highlight</text>
+  <text x="830" y="525" class="syntax">==highlight==</text>
+  <polygon points="990,520 1000,525 990,530" class="arrow"/>
+  <rect x="1010" y="515" width="150" height="20" class="output-bg"/>
+  <rect x="1020" y="518" width="70" height="12" fill="#ffeb3b" rx="2"/>
+  <text x="1025" y="527" class="output" font-size="10">highlight</text>
+  
+  <!-- Super/subscript -->
+  <text x="830" y="555" class="feature-name missing-text">🔢 Super/subscript</text>
+  <text x="830" y="575" class="syntax">H~2~O (subscript)</text>
+  <text x="830" y="590" class="syntax">X^2^ (superscript)</text>
+  <polygon points="990,580 1000,585 990,590" class="arrow"/>
+  <rect x="1010" y="570" width="150" height="30" class="output-bg"/>
+  <text x="1020" y="583" class="output" font-size="10">H</text>
+  <text x="1030" y="590" class="output" font-size="8" baseline-shift="sub">2</text>
+  <text x="1045" y="583" class="output" font-size="10">O</text>
+  <text x="1020" y="595" class="output" font-size="10">X</text>
+  <text x="1030" y="588" class="output" font-size="8" baseline-shift="super">2</text>
+  
+  <!-- Legend -->
+  <rect x="30" y="690" width="1140" height="70" fill="none" stroke="#ddd"/>
+  <rect x="50" y="700" width="15" height="10" fill="#3498db"/>
+  <text x="75" y="708" class="syntax">Basic Markdown: All platforms supported</text>
+  
+  <rect x="350" y="700" width="15" height="10" fill="#9b59b6"/>
+  <text x="375" y="708" class="syntax">Advanced Markdown: Quarto/Pandoc specialized</text>
+  
+  <rect x="650" y="700" width="15" height="10" fill="#e67e22"/>
+  <text x="675" y="708" class="syntax">Additional Elements: Further considerations</text>
+  
+  <!-- Additional notes -->
+  <text x="50" y="730" class="syntax" font-size="10" fill="#666">💡 Arrows (→) show how markdown input is converted to actual output.</text>
+  <text x="50" y="745" class="syntax" font-size="10" fill="#666">📝 Elements included in current document are shown in blue and purple, elements requiring additional consideration are shown in orange.</text>
+</svg>

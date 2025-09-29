@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1150 800">
+  <defs>
+    <!-- Database Administrator colors (Blue shades) -->
+    <linearGradient id="dbaColor" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#3498DB;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2980B9;stop-opacity:1" />
+    </linearGradient>
+
+    <!-- Business Analyst colors (Orange shades) -->
+    <linearGradient id="businessAnalystColor" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#F39C12;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#E67E22;stop-opacity:1" />
+    </linearGradient>
+
+    <!-- Statistician colors (Purple shades) -->
+    <linearGradient id="statisticianColor" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#9B59B6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#8E44AD;stop-opacity:1" />
+    </linearGradient>
+
+    <!-- Minimal/Missing capability (Gray) -->
+    <linearGradient id="minimalColor" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#BDC3C7;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#95A5A6;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1150" height="800" fill="#FAFAFA"/>
+
+  <!-- Title -->
+  <text x="575" y="40" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="#2C3E50">
+    Pre-Data Science Era: Fragmented Specialist Capabilities
+  </text>
+  <text x="575" y="65" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#7F8C8D">
+    Siloed departments with limited cross-functional collaboration (1990s-2000s)
+  </text>
+
+  <!-- Individual Profiles Section -->
+  <g transform="translate(0, 100)">
+    <!-- Database Administrator Profile -->
+    <g transform="translate(50, 20)">
+      <rect x="-10" y="-10" width="320" height="180" fill="white" stroke="#BDC3C7" stroke-width="1" rx="5"/>
+      <text x="150" y="15" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#2C3E50">
+        Database Administrator
+      </text>
+
+      <!-- Grid lines -->
+      <g stroke="#E8E8E8" stroke-width="0.5">
+        <line x1="10" y1="30" x2="290" y2="30"/>
+        <line x1="10" y1="60" x2="290" y2="60"/>
+        <line x1="10" y1="90" x2="290" y2="90"/>
+        <line x1="10" y1="120" x2="290" y2="120"/>
+        <line x1="10" y1="150" x2="290" y2="150"/>
+      </g>
+
+      <!-- Bars -->
+      <rect x="10" y="145" width="25" height="5" fill="url(#minimalColor)"/>   <!-- Reporting: Minimal -->
+      <rect x="50" y="145" width="25" height="5" fill="url(#minimalColor)"/>   <!-- Analysis: Minimal -->
+      <rect x="90" y="135" width="25" height="15" fill="url(#minimalColor)"/>  <!-- Math: Low -->
+      <rect x="130" y="130" width="25" height="20" fill="url(#dbaColor)"/>     <!-- Stats: Low-Med -->
+      <rect x="170" y="60" width="25" height="90" fill="url(#dbaColor)"/>      <!-- Database: Very High -->
+      <rect x="210" y="140" width="25" height="10" fill="url(#minimalColor)"/> <!-- Comm: Minimal -->
+      <rect x="250" y="135" width="25" height="15" fill="url(#minimalColor)"/> <!-- Domain: Low -->
+
+      <!-- Labels -->
+      <text x="22" y="165" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#2C3E50">Reporting</text>
+      <text x="62" y="165" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#2C3E50">Analysis</text>
+      <text x="102" y="165" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#2C3E50">Math</text>
+      <text x="142" y="165" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#2C3E50">Stats</text>
+      <text x="182" y="165" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#2C3E50">Database</text>
+      <text x="222" y="165" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#2C3E50">Comm</text>
+      <text x="262" y="165" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#2C3E50">Domain</text>
+    </g>
+
+    <!-- Business Analyst Profile -->
+    <g transform="translate(420, 20)">
+      <rect x="-10" y="-10" width="320" height="180" fill="white" stroke="#BDC3C7" stroke-width="1" rx="5"/>
+      <text x="150" y="15" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#2C3E50">
+        Business Analyst
+      </text>
+
+      <!-- Grid lines -->
+      <g stroke="#E8E8E8" stroke-width="0.5">
+        <line x1="10" y1="30" x2="290" y2="30"/>
+        <line x1="10" y1="60" x2="290" y2="60"/>
+        <line x1="10" y1="90" x2="290" y2="90"/>
+        <line x1="10" y1="120" x2="290" y2="120"/>
+        <line x1="10" y1="150" x2="290" y2="150"/>
+      </g>
+
+      <!-- Bars -->
+      <rect x="10" y="70" width="25" height="80" fill="url(#businessAnalystColor)"/>  <!-- Reporting: High -->
+      <rect x="50" y="90" width="25" height="60" fill="url(#businessAnalystColor)"/>  <!-- Analysis: Medium-High -->
+      <rect x="90" y="135" width="25" height="15" fill="url(#minimalColor)"/>         <!-- Math: Low -->
+      <rect x="130" y="130" width="25" height="20" fill="url(#minimalColor)"/>        <!-- Stats: Low -->
+      <rect x="170" y="140" width="25" height="10" fill="url(#minimalColor)"/>        <!-- Database: Minimal -->
+      <rect x="210" y="100" width="25" height="50" fill="url(#businessAnalystColor)"/><!-- Comm: Medium-High -->
+      <rect x="250" y="80" width="25" height="70" fill="url(#businessAnalystColor)"/> <!-- Domain: High -->
+
+      <!-- Labels -->
+      <text x="22" y="165" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#2C3E50">Reporting</text>
+      <text x="62" y="165" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#2C3E50">Analysis</text>
+      <text x="102" y="165" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#2C3E50">Math</text>
+      <text x="142" y="165" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#2C3E50">Stats</text>
+      <text x="182" y="165" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#2C3E50">Database</text>
+      <text x="222" y="165" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#2C3E50">Comm</text>
+      <text x="262" y="165" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#2C3E50">Domain</text>
+    </g>
+
+    <!-- Statistician Profile -->
+    <g transform="translate(790, 20)">
+      <rect x="-10" y="-10" width="320" height="180" fill="white" stroke="#BDC3C7" stroke-width="1" rx="5"/>
+      <text x="150" y="15" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#2C3E50">
+        Statistician
+      </text>
+
+      <!-- Grid lines -->
+      <g stroke="#E8E8E8" stroke-width="0.5">
+        <line x1="10" y1="30" x2="290" y2="30"/>
+        <line x1="10" y1="60" x2="290" y2="60"/>
+        <line x1="10" y1="90" x2="290" y2="90"/>
+        <line x1="10" y1="120" x2="290" y2="120"/>
+        <line x1="10" y1="150" x2="290" y2="150"/>
+      </g>
+
+      <!-- Bars -->
+      <rect x="10" y="125" width="25" height="25" fill="url(#statisticianColor)"/>  <!-- Reporting: Medium -->
+      <rect x="50" y="100" width="25" height="50" fill="url(#statisticianColor)"/>  <!-- Analysis: Medium-High -->
+      <rect x="90" y="60" width="25" height="90" fill="url(#statisticianColor)"/>   <!-- Math: Very High -->
+      <rect x="130" y="50" width="25" height="100" fill="url(#statisticianColor)"/> <!-- Stats: Very High -->
+      <rect x="170" y="140" width="25" height="10" fill="url(#minimalColor)"/>      <!-- Database: Minimal -->
+      <rect x="210" y="135" width="25" height="15" fill="url(#minimalColor)"/>      <!-- Comm: Low -->
+      <rect x="250" y="130" width="25" height="20" fill="url(#minimalColor)"/>      <!-- Domain: Low -->
+
+      <!-- Labels -->
+      <text x="22" y="165" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#2C3E50">Reporting</text>
+      <text x="62" y="165" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#2C3E50">Analysis</text>
+      <text x="102" y="165" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#2C3E50">Math</text>
+      <text x="142" y="165" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#2C3E50">Stats</text>
+      <text x="182" y="165" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#2C3E50">Database</text>
+      <text x="222" y="165" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#2C3E50">Comm</text>
+      <text x="262" y="165" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#2C3E50">Domain</text>
+    </g>
+  </g>
+
+  <!-- Team Message -->
+  <g transform="translate(-50, 320)">
+    <!-- Solid arrows showing workflow progression -->
+    <path d="M 200 50 Q 300 30 400 50" stroke="#27AE60" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+    <path d="M 450 50 Q 550 30 650 50" stroke="#27AE60" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+    <path d="M 700 50 Q 800 30 900 50" stroke="#27AE60" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+
+    <!-- Arrow marker -->
+    <defs>
+      <marker id="arrowhead" markerWidth="10" markerHeight="7"
+              refX="10" refY="3.5" orient="auto">
+        <polygon points="0 0, 10 3.5, 0 7" fill="#27AE60"/>
+      </marker>
+    </defs>
+
+    <!-- Process indicators -->
+    <text x="350" y="40" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#27AE60" font-weight="bold">PROCESS</text>
+    <text x="575" y="40" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#27AE60" font-weight="bold">REVIEW</text>
+    <text x="800" y="40" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#27AE60" font-weight="bold">DELIVER</text>
+
+    <text x="600" y="90" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#2C3E50">
+      Specialists collaborated through structured processes to deliver results
+    </text>
+  </g>
+
+  <!-- Specialized Team Capabilities -->
+  <g transform="translate(100, 450)">
+    <rect x="-30" y="-20" width="1000" height="300" fill="white" stroke="#BDC3C7" stroke-width="2" rx="8"/>
+    <text x="485" y="10" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#2C3E50">
+      Specialized Organizational Capabilities
+    </text>
+
+    <!-- Grid lines -->
+    <g stroke="#E8E8E8" stroke-width="1">
+      <line x1="80" y1="40" x2="900" y2="40"/>
+      <line x1="80" y1="80" x2="900" y2="80"/>
+      <line x1="80" y1="120" x2="900" y2="120"/>
+      <line x1="80" y1="160" x2="900" y2="160"/>
+      <line x1="80" y1="200" x2="900" y2="200"/>
+      <line x1="80" y1="240" x2="900" y2="240"/>
+    </g>
+
+    <!-- Baseline -->
+    <line x1="80" y1="240" x2="900" y2="240" stroke="#2C3E50" stroke-width="2"/>
+
+    <!-- Y-axis labels -->
+    <text x="70" y="45" text-anchor="end" font-family="Arial, sans-serif" font-size="10" fill="#7F8C8D">High</text>
+    <text x="70" y="125" text-anchor="end" font-family="Arial, sans-serif" font-size="10" fill="#7F8C8D">Medium</text>
+    <text x="70" y="205" text-anchor="end" font-family="Arial, sans-serif" font-size="10" fill="#7F8C8D">Low</text>
+
+    <!-- Specialized capabilities by department -->
+    <!-- Business Reporting -->
+    <g transform="translate(130, 0)">
+      <rect x="0" y="140" width="45" height="100" fill="url(#businessAnalystColor)"/>
+      <text x="22" y="255" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#2C3E50">Business Reporting</text>
+      <text x="22" y="125" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#27AE60">EXCEL MASTERY</text>
+    </g>
+
+    <!-- Statistical Modeling -->
+    <g transform="translate(250, 0)">
+      <rect x="0" y="120" width="45" height="120" fill="url(#statisticianColor)"/>
+      <text x="22" y="255" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#2C3E50">Statistical Modeling</text>
+      <text x="22" y="105" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#27AE60">SAS/SPSS EXPERT</text>
+    </g>
+
+    <!-- Data Management -->
+    <g transform="translate(370, 0)">
+      <rect x="0" y="100" width="45" height="140" fill="url(#dbaColor)"/>
+      <text x="22" y="255" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#2C3E50">Data Management</text>
+      <text x="22" y="85" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#27AE60">SQL PROFICIENCY</text>
+    </g>
+
+    <!-- Programming -->
+    <g transform="translate(490, 0)">
+      <rect x="0" y="190" width="45" height="50" fill="url(#minimalColor)"/>
+      <text x="22" y="255" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#2C3E50">Programming</text>
+      <text x="22" y="175" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#7F8C8D">COBOL/VB</text>
+    </g>
+
+    <!-- Charts &amp; Graphs -->
+    <g transform="translate(610, 0)">
+      <rect x="0" y="180" width="45" height="60" fill="url(#businessAnalystColor)"/>
+      <text x="22" y="255" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#2C3E50">Charts &amp; Graphs</text>
+      <text x="22" y="165" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#7F8C8D">EXCEL CHARTS</text>
+    </g>
+
+    <!-- Documentation -->
+    <g transform="translate(730, 0)">
+      <rect x="0" y="170" width="45" height="70" fill="url(#businessAnalystColor)"/>
+      <text x="22" y="255" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#2C3E50">Documentation</text>
+      <text x="22" y="155" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#27AE60">WORD/REPORTS</text>
+    </g>
+
+    <!-- Quality Control -->
+    <g transform="translate(850, 0)">
+      <rect x="0" y="160" width="45" height="80" fill="url(#statisticianColor)"/>
+      <text x="22" y="255" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#2C3E50">Quality Control</text>
+      <text x="22" y="145" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#27AE60">RIGOROUS TESTING</text>
+    </g>
+  </g>
+
+  <!-- Legend -->
+  <g transform="translate(350, 750)">
+    <rect x="0" y="0" width="20" height="15" fill="url(#dbaColor)"/>
+    <text x="25" y="12" font-family="Arial, sans-serif" font-size="12" fill="#2C3E50">Database Admin</text>
+
+    <rect x="140" y="0" width="20" height="15" fill="url(#businessAnalystColor)"/>
+    <text x="165" y="12" font-family="Arial, sans-serif" font-size="12" fill="#2C3E50">Business Analyst</text>
+
+    <rect x="280" y="0" width="20" height="15" fill="url(#statisticianColor)"/>
+    <text x="305" y="12" font-family="Arial, sans-serif" font-size="12" fill="#2C3E50">Statistician</text>
+
+    <rect x="400" y="0" width="20" height="15" fill="url(#minimalColor)"/>
+    <text x="425" y="12" font-family="Arial, sans-serif" font-size="12" fill="#2C3E50">Minimal/Missing</text>
+  </g>
+
+</svg>

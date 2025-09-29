@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 60 1000 410" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .title-text { font-family: 'IBM Plex Sans KR', sans-serif; font-size: 24px; font-weight: bold; fill: #2c3e50; }
+      .stage-text { font-family: 'IBM Plex Sans KR', sans-serif; font-size: 16px; font-weight: 600; fill: #34495e; }
+      .desc-text-middle { font-family: 'Noto Sans KR', sans-serif; font-size: 15px; fill: #7f8c8d; }
+      .desc-text { font-family: 'Noto Sans KR', sans-serif; font-size: 13px; fill: #000000; }
+      .desc-text-code { font-family: 'Noto Sans KR', sans-serif; font-size: 13px; fill: #000000; }
+      .r-ecosystem { fill: #3498db; stroke: #2980b9; stroke-width: 1; }
+      .python-ecosystem { fill: #f39c12; stroke: #e67e22; stroke-width: 1; }
+      .js-ecosystem { fill: #e74c3c; stroke: #c0392b; stroke-width: 1; }
+      .code-flow { stroke: #27ae60; stroke-width: 1.5; fill: none; }
+      .interactive-element { fill: #9b59b6; stroke: #8e44ad; stroke-width: 1; }
+    </style>
+    
+    <!-- 화살표 마커 정의 -->
+    <marker id="flow-arrow" markerWidth="10" markerHeight="7" 
+            refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#27ae60" />
+    </marker>
+  </defs>
+
+  <!-- 중앙 인터랙티브 문서 -->
+  <g id="center-interactive-doc">
+    <rect x="400" y="130" width="200" height="120" rx="15" fill="#ecf0f1" stroke="#bdc3c7" stroke-width="3"/>
+    <text x="500" y="155" text-anchor="middle" class="stage-text">Interactive Document</text>
+    <text x="500" y="175" text-anchor="middle" class="desc-text">Code + Text + Results</text>
+    
+    <!-- 문서 내용 시뮬레이션 -->
+    <rect x="420" y="185" width="160" height="50" rx="5" fill="#ffffff" stroke="#dee2e6" stroke-width="1"/>
+    <text x="430" y="200" class="desc-text">## Data Analysis</text>
+    <text x="430" y="215" class="desc-text">```python</text>
+    <text x="430" y="230" class="desc-text">plot(data)</text>
+  </g>
+
+  <!-- R 생태계 (선구자) -->
+  <g id="r-ecosystem">
+    <rect x="80" y="80" width="120" height="80" rx="10" class="r-ecosystem"/>
+    <text x="140" y="105" text-anchor="middle" class="stage-text" fill="white">R Ecosystem</text>
+    <text x="140" y="125" text-anchor="middle" class="desc-text" fill="white">Pioneer (2012)</text>
+    <text x="90" y="140" class="desc-text-code" fill="white">• knitr</text>
+    <text x="90" y="155" class="desc-text-code" fill="white">• R Markdown</text>
+  </g>
+
+  <!-- Python 생태계 -->
+  <g id="python-ecosystem">
+    <rect x="80" y="180" width="120" height="80" rx="10" class="python-ecosystem"/>
+    <text x="140" y="205" text-anchor="middle" class="stage-text" fill="white">Python Ecosystem</text>
+    <text x="140" y="225" text-anchor="middle" class="desc-text" fill="white">(2011)</text>
+    <text x="90" y="240" class="desc-text-code" fill="white">• Jupyter</text>
+    <text x="90" y="255" class="desc-text-code" fill="white">• IPython</text>
+  </g>
+
+  <!-- JavaScript 생태계 -->
+  <g id="js-ecosystem">
+    <rect x="80" y="280" width="120" height="80" rx="10" class="js-ecosystem"/>
+    <text x="140" y="305" text-anchor="middle" class="stage-text" fill="white">JavaScript Ecosystem</text>
+    <text x="140" y="325" text-anchor="middle" class="desc-text" fill="white">(2017)</text>
+    <text x="90" y="340" class="desc-text-code" fill="white">• Observable</text>
+    <text x="90" y="355" class="desc-text-code" fill="white">• D3.js</text>
+  </g>
+
+  <!-- 연결선들 -->
+  <line x1="200" y1="120" x2="380" y2="170" class="code-flow" marker-end="url(#flow-arrow)"/>
+  <line x1="200" y1="220" x2="380" y2="190" class="code-flow" marker-end="url(#flow-arrow)"/>
+  <line x1="200" y1="320" x2="380" y2="210" class="code-flow" marker-end="url(#flow-arrow)"/>
+
+  <!-- 실행 흐름 -->
+  <g id="execution-flow">
+    <rect x="650" y="110" width="100" height="40" rx="20" fill="#27ae60"/>
+    <text x="700" y="135" text-anchor="middle" class="stage-text" fill="white">Code Execution</text>
+    
+    <rect x="650" y="170" width="100" height="40" rx="20" fill="#f39c12"/>
+    <text x="700" y="195" text-anchor="middle" class="stage-text" fill="white">Result Generation</text>
+    
+    <rect x="650" y="230" width="100" height="40" rx="20" fill="#e74c3c"/>
+    <text x="700" y="255" text-anchor="middle" class="stage-text" fill="white">Document Update</text>
+    
+    <!-- 흐름 화살표 -->
+    <line x1="700" y1="150" x2="700" y2="173" class="code-flow" marker-end="url(#flow-arrow)"/>
+    <line x1="700" y1="210" x2="700" y2="230" class="code-flow" marker-end="url(#flow-arrow)"/>
+  </g>
+
+  <!-- 연결선 (문서에서 실행 흐름으로) -->
+  <line x1="600" y1="190" x2="640" y2="180" class="code-flow" marker-end="url(#flow-arrow)"/>
+
+  <!-- 사용자 상호작용 요소들 -->
+  <g id="interaction-elements">
+    <text x="820" y="130" class="stage-text">User Interaction</text>
+    
+    <!-- 슬라이더 -->
+    <rect x="800" y="140" width="80" height="8" rx="4" fill="#bdc3c7"/>
+    <circle cx="850" cy="144" r="6" class="interactive-element"/>
+    <text x="840" y="165" text-anchor="middle" class="desc-text">Slider</text>
+    
+    <!-- 버튼 -->
+    <rect x="820" y="180" width="40" height="20" rx="5" class="interactive-element"/>
+    <text x="840" y="195" text-anchor="middle" class="desc-text" fill="white">실행</text>
+    <text x="840" y="215" text-anchor="middle" class="desc-text">Button</text>
+    
+    <!-- 입력창 -->
+    <rect x="810" y="230" width="60" height="15" rx="3" fill="#ffffff" stroke="#bdc3c7" stroke-width="1"/>
+    <text x="840" y="265" text-anchor="middle" class="desc-text">Input Field</text>
+  </g>
+
+  <!-- 특징 설명 박스들 -->
+  <g id="characteristics" transform="translate(0, 90)">
+    <!-- 실행 가능한 코드 -->
+    <rect x="50" y="280" width="200" height="80" rx="8" fill="#e8f6f3" stroke="#27ae60" stroke-width="2"/>
+    <text x="150" y="305" text-anchor="middle" class="stage-text">Executable Code</text>
+    <text x="60" y="325" class="desc-text">Document = Program</text>
+    <text x="60" y="340" class="desc-text">Real-time computation</text>
+    <text x="60" y="355" class="desc-text">Dynamic results</text>
+
+    <!-- 반응형 인터페이스 -->
+    <rect x="280" y="280" width="200" height="80" rx="8" fill="#fdf2e9" stroke="#e67e22" stroke-width="2"/>
+    <text x="380" y="305" text-anchor="middle" class="stage-text">Reactive Interface</text>
+    <text x="290" y="325" class="desc-text">User input response</text>
+    <text x="290" y="340" class="desc-text">Real-time updates</text>
+    <text x="290" y="355" class="desc-text">Instant feedback</text>
+
+    <!-- 탐색 가능한 설명 -->
+    <rect x="510" y="280" width="200" height="80" rx="8" fill="#fdebeb" stroke="#e74c3c" stroke-width="2"/>
+    <text x="610" y="305" text-anchor="middle" class="stage-text">Explorable Explanations</text>
+    <text x="520" y="325" class="desc-text">Direct experimentation</text>
+    <text x="520" y="340" class="desc-text">Parameter manipulation</text>
+    <text x="520" y="355" class="desc-text">Active learning</text>
+
+    <!-- 재현 가능한 연구 -->
+    <rect x="740" y="280" width="200" height="80" rx="8" fill="#f4f8fd" stroke="#3498db" stroke-width="2"/>
+    <text x="840" y="305" text-anchor="middle" class="stage-text">Reproducible Research</text>
+    <text x="750" y="325" class="desc-text">Code+Data+Explanation</text>
+    <text x="750" y="340" class="desc-text">Complete transparency</text>
+    <text x="750" y="355" class="desc-text">Verifiability</text>
+  </g>
+
+</svg>

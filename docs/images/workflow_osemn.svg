@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 50 1000 180" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Green gradient for boxes -->
+    <linearGradient id="stageGradient" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#4CAF50"/>
+      <stop offset="100%" stop-color="#2E7D32"/>
+    </linearGradient>
+
+    <!-- Light background gradient -->
+    <linearGradient id="bgGradient" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#F1F8E9"/>
+      <stop offset="100%" stop-color="#E8F5E8"/>
+    </linearGradient>
+
+    <!-- Arrow marker -->
+    <marker id="arrow" markerWidth="12" markerHeight="9" refX="8" refY="4.5" orient="auto">
+      <polygon points="0 0, 12 4.5, 0 9" fill="#388E3C"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1000" height="250" fill="url(#bgGradient)"/>
+
+  <!-- Title -->
+  <text x="200" y="100" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="bold" fill="#1B5E20">OSEMN Process</text>
+  <text x="750" y="100" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="500" fill="#2E7D32">Pronounced as "Awesome" - Data Science Workflow</text>
+
+  <!-- Obtain -->
+  <g transform="translate(50, 120)">
+    <rect width="150" height="80" rx="15" fill="url(#stageGradient)" stroke="#1B5E20" stroke-width="2"/>
+    <text x="75" y="25" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="10" font-weight="600" fill="#C8E6C9">STEP 01</text>
+    <text x="75" y="50" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="20" font-weight="bold" fill="white">Obtain</text>
+    <text x="75" y="70" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="500" fill="#E8F5E8">Data Collection</text>
+  </g>
+
+  <!-- Arrow 1 -->
+  <path d="M 200 160 L 240 160" stroke="#388E3C" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+
+  <!-- Scrub -->
+  <g transform="translate(250, 120)">
+    <rect width="150" height="80" rx="15" fill="url(#stageGradient)" stroke="#1B5E20" stroke-width="2"/>
+    <text x="75" y="25" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="10" font-weight="600" fill="#C8E6C9">STEP 02</text>
+    <text x="75" y="50" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="20" font-weight="bold" fill="white">Scrub</text>
+    <text x="75" y="70" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="500" fill="#E8F5E8">Data Cleaning</text>
+  </g>
+
+  <!-- Arrow 2 -->
+  <path d="M 400 160 L 440 160" stroke="#388E3C" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+
+  <!-- Explore -->
+  <g transform="translate(450, 120)">
+    <rect width="150" height="80" rx="15" fill="url(#stageGradient)" stroke="#1B5E20" stroke-width="2"/>
+    <text x="75" y="25" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="10" font-weight="600" fill="#C8E6C9">STEP 03</text>
+    <text x="75" y="50" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="20" font-weight="bold" fill="white">Explore</text>
+    <text x="75" y="70" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="500" fill="#E8F5E8">Data Analysis</text>
+  </g>
+
+  <!-- Arrow 3 -->
+  <path d="M 600 160 L 640 160" stroke="#388E3C" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+
+  <!-- Model -->
+  <g transform="translate(650, 120)">
+    <rect width="150" height="80" rx="15" fill="url(#stageGradient)" stroke="#1B5E20" stroke-width="2"/>
+    <text x="75" y="25" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="10" font-weight="600" fill="#C8E6C9">STEP 04</text>
+    <text x="75" y="50" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="20" font-weight="bold" fill="white">Model</text>
+    <text x="75" y="70" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="500" fill="#E8F5E8">Build Models</text>
+  </g>
+
+  <!-- Arrow 4 -->
+  <path d="M 800 160 L 840 160" stroke="#388E3C" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+
+  <!-- iNterpret -->
+  <g transform="translate(850, 120)">
+    <rect width="120" height="80" rx="15" fill="url(#stageGradient)" stroke="#1B5E20" stroke-width="2"/>
+    <text x="60" y="25" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="10" font-weight="600" fill="#C8E6C9">STEP 05</text>
+    <text x="60" y="50" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="20" font-weight="bold" fill="white">iNterpret</text>
+    <text x="60" y="70" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="500" fill="#E8F5E8">Results</text>
+  </g>
+
+
+  <!-- Pronunciation note -->
+  <g transform="translate(-50, 0)">
+    <ellipse cx="500" cy="95" rx="80" ry="20" fill="#66BB6A" opacity="0.8"/>
+    <text x="500" y="100" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="bold" fill="white">"Awesome"</text>
+  </g>
+</svg>

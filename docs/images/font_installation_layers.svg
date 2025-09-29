@@ -1,0 +1,217 @@
+<svg width="1400" height="650" viewBox="0 90 1400 650" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- 그라데이션 정의 -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#fefefe;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#f8fafc;stop-opacity:1"/>
+    </linearGradient>
+    
+    <linearGradient id="headerGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e293b;stop-opacity:0.1"/>
+      <stop offset="100%" style="stop-color:#334155;stop-opacity:0.05"/>
+    </linearGradient>
+
+    <!-- OS별 그라데이션 -->
+    <linearGradient id="windowsGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#dbeafe;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#93c5fd;stop-opacity:1"/>
+    </linearGradient>
+
+    <linearGradient id="macGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f3f4f6;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#d1d5db;stop-opacity:1"/>
+    </linearGradient>
+
+    <linearGradient id="linuxGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#fef3c7;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#fde68a;stop-opacity:1"/>
+    </linearGradient>
+
+    <linearGradient id="appGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#dcfce7;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#bbf7d0;stop-opacity:1"/>
+    </linearGradient>
+
+    <!-- 그림자 필터 -->
+    <filter id="dropshadow">
+      <feDropShadow dx="2" dy="2" stdDeviation="3" flood-color="#000000" flood-opacity="0.15"/>
+    </filter>
+
+    <!-- 화살표 마커 -->
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" 
+            refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#6b7280"/>
+    </marker>
+  </defs>
+  
+  <style>
+    .main-title { font-family: 'Noto Sans KR', sans-serif; font-size: 28px; font-weight: bold; fill: #1e293b; text-anchor: middle; }
+    .subtitle { font-family: 'Noto Sans KR', sans-serif; font-size: 16px; fill: #64748b; text-anchor: middle; }
+    .layer-title { font-family: 'Noto Sans KR', sans-serif; font-size: 18px; font-weight: bold; fill: #374151; text-anchor: start; }
+    .os-title { font-family: 'Noto Sans KR', sans-serif; font-size: 16px; font-weight: bold; text-anchor: middle; }
+    .path-text { font-family: 'Courier New', monospace; font-size: 11px; fill: #4b5563; text-anchor: middle; }
+    .app-text { font-family: 'Noto Sans KR', sans-serif; font-size: 12px; fill: #374151; text-anchor: middle; font-weight: 500; }
+    .desc-text { font-family: 'Noto Sans KR', sans-serif; font-size: 10px; fill: #6b7280; text-anchor: middle; }
+    .arrow { stroke: #6b7280; stroke-width: 2; fill: none; marker-end: url(#arrowhead); }
+  </style>
+
+  <!-- 배경 -->
+  <rect width="1400" height="900" fill="url(#bgGrad)"/>
+  
+  <!-- Layer 4: 최종 출력 -->
+  <text x="70" y="130" class="layer-title">Layer 4: 최종 출력</text>
+  
+  <rect x="80" y="150" width="1240" height="80" rx="10" fill="#fef3c7" stroke="#f59e0b" stroke-width="2" filter="url(#dropshadow)"/>
+  <text x="700" y="175" class="layer-title" style="fill: #d97706; text-anchor: middle;">최종 렌더링 결과물</text>
+  
+  <!-- 출력 형태들 -->
+  <rect x="120" y="190" width="140" height="30" rx="5" fill="#ffffff" stroke="#f59e0b" stroke-width="1"/>
+  <text x="190" y="210" class="app-text" style="fill: #d97706;">PDF 문서</text>
+  
+  <rect x="280" y="190" width="140" height="30" rx="5" fill="#ffffff" stroke="#f59e0b" stroke-width="1"/>
+  <text x="350" y="210" class="app-text" style="fill: #d97706;">HTML 웹페이지</text>
+  
+  <rect x="440" y="190" width="140" height="30" rx="5" fill="#ffffff" stroke="#f59e0b" stroke-width="1"/>
+  <text x="510" y="210" class="app-text" style="fill: #d97706;">PNG/SVG 이미지</text>
+  
+  <rect x="600" y="190" width="140" height="30" rx="5" fill="#ffffff" stroke="#f59e0b" stroke-width="1"/>
+  <text x="670" y="210" class="app-text" style="fill: #d97706;">프레젠테이션</text>
+  
+  <rect x="760" y="190" width="140" height="30" rx="5" fill="#ffffff" stroke="#f59e0b" stroke-width="1"/>
+  <text x="830" y="210" class="app-text" style="fill: #d97706;">대시보드</text>
+  
+  <rect x="920" y="190" width="140" height="30" rx="5" fill="#ffffff" stroke="#f59e0b" stroke-width="1"/>
+  <text x="990" y="210" class="app-text" style="fill: #d97706;">인쇄물</text>
+
+  <rect x="1080" y="190" width="140" height="30" rx="5" fill="#ffffff" stroke="#f59e0b" stroke-width="1"/>
+  <text x="1150" y="210" class="app-text" style="fill: #d97706;">보고서</text>
+
+  <!-- Layer 3: 응용프로그램 계층 -->
+  <text x="70" y="275" class="layer-title">Layer 3: 응용프로그램</text>
+  
+  <!-- R/RStudio 그룹 -->
+  <rect x="80" y="300" width="300" height="120" rx="10" fill="url(#appGrad)" stroke="#059669" stroke-width="2" filter="url(#dropshadow)"/>
+  <text x="230" y="325" class="layer-title" style="fill: #047857; text-anchor: middle;">R 생태계</text>
+  
+  <rect x="100" y="335" width="120" height="35" rx="5" fill="#ffffff" stroke="#059669" stroke-width="1"/>
+  <text x="160" y="357" class="app-text" style="fill: #047857;">ggplot2</text>
+  
+  <rect x="240" y="335" width="120" height="35" rx="5" fill="#ffffff" stroke="#059669" stroke-width="1"/>
+  <text x="300" y="357" class="app-text" style="fill: #047857;">gt tables</text>
+  
+  <rect x="100" y="380" width="120" height="35" rx="5" fill="#ffffff" stroke="#059669" stroke-width="1"/>
+  <text x="160" y="402" class="app-text" style="fill: #047857;">showtext</text>
+  
+  <rect x="240" y="380" width="120" height="35" rx="5" fill="#ffffff" stroke="#059669" stroke-width="1"/>
+  <text x="300" y="402" class="app-text" style="fill: #047857;">extrafont</text>
+
+  <!-- 문서 작성 도구 -->
+  <rect x="400" y="300" width="300" height="120" rx="10" fill="url(#appGrad)" stroke="#059669" stroke-width="2" filter="url(#dropshadow)"/>
+  <text x="550" y="325" class="layer-title" style="fill: #047857; text-anchor: middle;">문서 작성 도구</text>
+  
+  <rect x="420" y="335" width="120" height="35" rx="5" fill="#ffffff" stroke="#059669" stroke-width="1"/>
+  <text x="480" y="357" class="app-text" style="fill: #047857;">Pandoc</text>
+  
+  <rect x="560" y="335" width="120" height="35" rx="5" fill="#ffffff" stroke="#059669" stroke-width="1"/>
+  <text x="620" y="357" class="app-text" style="fill: #047857;">Markdown</text>
+  
+  <rect x="420" y="380" width="120" height="35" rx="5" fill="#ffffff" stroke="#059669" stroke-width="1"/>
+  <text x="480" y="402" class="app-text" style="fill: #047857;">LaTeX</text>
+  
+  <rect x="560" y="380" width="120" height="35" rx="5" fill="#ffffff" stroke="#059669" stroke-width="1"/>
+  <text x="620" y="402" class="app-text" style="fill: #047857;">Quarto</text>
+
+  <!-- 웹 및 그래픽 도구 -->
+  <rect x="720" y="300" width="300" height="120" rx="10" fill="url(#appGrad)" stroke="#059669" stroke-width="2" filter="url(#dropshadow)"/>
+  <text x="870" y="325" class="layer-title" style="fill: #047857; text-anchor: middle;">웹/그래픽 도구</text>
+  
+  <rect x="740" y="335" width="120" height="35" rx="5" fill="#ffffff" stroke="#059669" stroke-width="1"/>
+  <text x="800" y="357" class="app-text" style="fill: #047857;">SVG</text>
+  
+  <rect x="880" y="335" width="120" height="35" rx="5" fill="#ffffff" stroke="#059669" stroke-width="1"/>
+  <text x="940" y="357" class="app-text" style="fill: #047857;">Mermaid</text>
+  
+  <rect x="740" y="380" width="120" height="35" rx="5" fill="#ffffff" stroke="#059669" stroke-width="1"/>
+  <text x="800" y="402" class="app-text" style="fill: #047857;">HTML/CSS</text>
+  
+  <rect x="880" y="380" width="120" height="35" rx="5" fill="#ffffff" stroke="#059669" stroke-width="1"/>
+  <text x="940" y="402" class="app-text" style="fill: #047857;">D3.js</text>
+
+  <!-- 오피스 응용프로그램 -->
+  <rect x="1040" y="300" width="300" height="120" rx="10" fill="url(#appGrad)" stroke="#059669" stroke-width="2" filter="url(#dropshadow)"/>
+  <text x="1190" y="325" class="layer-title" style="fill: #047857; text-anchor: middle;">오피스 응용프로그램</text>
+  
+  <rect x="1060" y="335" width="120" height="35" rx="5" fill="#ffffff" stroke="#059669" stroke-width="1"/>
+  <text x="1120" y="357" class="app-text" style="fill: #047857;">MS Office</text>
+  
+  <rect x="1200" y="335" width="120" height="35" rx="5" fill="#ffffff" stroke="#059669" stroke-width="1"/>
+  <text x="1260" y="357" class="app-text" style="fill: #047857;">LibreOffice</text>
+  
+  <rect x="1060" y="380" width="120" height="35" rx="5" fill="#ffffff" stroke="#059669" stroke-width="1"/>
+  <text x="1120" y="402" class="app-text" style="fill: #047857;">웹브라우저</text>
+  
+  <rect x="1200" y="380" width="120" height="35" rx="5" fill="#ffffff" stroke="#059669" stroke-width="1"/>
+  <text x="1260" y="402" class="app-text" style="fill: #047857;">IDE/에디터</text>
+
+  <!-- Layer 2: 폰트 관리 시스템 -->
+  <text x="70" y="470" class="layer-title">Layer 2: 폰트 관리 시스템</text>
+  
+  <rect x="100" y="490" width="360" height="60" rx="8" fill="#ffffff" stroke="#2563eb" stroke-width="2" opacity="0.9"/>
+  <text x="280" y="515" class="app-text" style="fill: #1e40af;">Font Manager, DirectWrite API</text>
+  <text x="280" y="535" class="desc-text">폰트 캐싱 및 렌더링</text>
+
+  <rect x="520" y="490" width="360" height="60" rx="8" fill="#ffffff" stroke="#6b7280" stroke-width="2" opacity="0.9"/>
+  <text x="700" y="515" class="app-text" style="fill: #374151;">Font Book, Core Text</text>
+  <text x="700" y="535" class="desc-text">시스템 폰트 관리</text>
+
+  <rect x="940" y="490" width="360" height="60" rx="8" fill="#ffffff" stroke="#d97706" stroke-width="2" opacity="0.9"/>
+  <text x="1120" y="515" class="app-text" style="fill: #92400e;">Fontconfig, FreeType</text>
+  <text x="1120" y="535" class="desc-text">폰트 검색 및 매칭</text>
+
+  <!-- Layer 1: 운영체제 -->
+  <text x="70" y="595" class="layer-title">Layer 1: 운영체제</text>
+  
+  <!-- Windows -->
+  <rect x="100" y="610" width="360" height="80" rx="10" fill="url(#windowsGrad)" stroke="#2563eb" stroke-width="2" filter="url(#dropshadow)"/>
+  <text x="280" y="635" class="os-title" style="fill: #1e40af;">Windows</text>
+  <text x="280" y="655" class="path-text">C:\Windows\Fonts</text>
+  <text x="280" y="670" class="path-text">C:\Users\[User]\AppData\Local\Microsoft\Windows\Fonts</text>
+  <text x="280" y="685" class="desc-text">시스템 폰트 폴더</text>
+
+  <!-- macOS -->
+  <rect x="520" y="610" width="360" height="80" rx="10" fill="url(#macGrad)" stroke="#6b7280" stroke-width="2" filter="url(#dropshadow)"/>
+  <text x="700" y="635" class="os-title" style="fill: #374151;">macOS</text>
+  <text x="700" y="655" class="path-text">/System/Library/Fonts</text>
+  <text x="700" y="670" class="path-text">~/Library/Fonts</text>
+  <text x="700" y="685" class="desc-text">시스템 및 사용자 폰트</text>
+
+  <!-- Linux -->
+  <rect x="940" y="610" width="360" height="80" rx="10" fill="url(#linuxGrad)" stroke="#d97706" stroke-width="2" filter="url(#dropshadow)"/>
+  <text x="1120" y="635" class="os-title" style="fill: #92400e;">Linux</text>
+  <text x="1120" y="655" class="path-text">/usr/share/fonts</text>
+  <text x="1120" y="670" class="path-text">~/.fonts, ~/.local/share/fonts</text>
+  <text x="1120" y="685" class="desc-text">시스템 및 사용자 폰트</text>
+
+  <!-- 연결 화살표들 (아래에서 위로) -->
+  <!-- OS → Font Management -->
+  <path d="M 280 605 L 280 555" class="arrow"/>
+  <path d="M 700 605 L 700 555" class="arrow"/>
+  <path d="M 1120 605 L 1120 555" class="arrow"/>
+  
+  <!-- Font Management → Applications -->
+  <path d="M 280 485 Q 250 450 230 425" class="arrow"/>
+  <path d="M 700 485 L 700 425" class="arrow"/>
+  <path d="M 1120 485 Q 1150 450 1190 425" class="arrow"/>
+  
+  <!-- Applications → Output -->
+  <path d="M 230 295 Q 400 250 700 235" class="arrow"/>
+  <path d="M 550 295 Q 600 250 700 235" class="arrow"/>
+  <path d="M 870 295 Q 800 250 700 235" class="arrow"/>
+  <path d="M 1190 295 Q 1000 250 700 235" class="arrow"/>
+
+  <!-- 하단 설명 -->
+  <text x="120" y="710" class="desc-text" style="text-anchor: start;">*. <tspan style="font-weight: bold;">운영체제</tspan>: 각 OS의 시스템 폰트 디렉터리에 글꼴 파일 저장 (기반층)</text>
+  <text x="120" y="570" class="desc-text" style="text-anchor: start;">*. <tspan style="font-weight: bold;">폰트 관리</tspan>: OS별 폰트 엔진이 글꼴을 인덱싱하고 캐싱</text>
+  <text x="120" y="440" class="desc-text" style="text-anchor: start;">*. <tspan style="font-weight: bold;">응용프로그램</tspan>: R/ggplot2, Pandoc, SVG 등이 폰트 API를 통해 글꼴 요청</text>
+  <text x="120" y="250" class="desc-text" style="text-anchor: start;">*. <tspan style="font-weight: bold;">최종 출력</tspan>: 문서, 웹페이지, 이미지 등으로 렌더링되어 사용자에게 표시 (최상위층)</text>
+</svg>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 85 1000 270" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .title-text { font-family: 'IBM Plex Sans KR', sans-serif; font-size: 24px; font-weight: bold; fill: #2c3e50; }
+      .stage-text { font-family: 'IBM Plex Sans KR', sans-serif; font-size: 16px; font-weight: 600; fill: #0000ff; }
+      .desc-text { font-family: 'Noto Sans KR', sans-serif; font-size: 13px; fill: #000000; }
+      .target-text { font-family: 'Noto Sans KR', sans-serif; font-size: 19px; fill: #000000; }
+      .traditional-path { fill: #95a5a6; stroke: #7f8c8d; stroke-width: 2; }
+      .korea-path { fill: #e74c3c; stroke: #c0392b; stroke-width: 1.5; }
+      .leap-arrow { stroke: #27ae60; stroke-width: 2; fill: none; stroke-dasharray: 10,5; }
+      .traditional-arrow { stroke: #95a5a6; stroke-width: 2; fill: none; }
+    </style>
+    
+    <marker id="traditional-arrow" markerWidth="8" markerHeight="6" 
+            refX="7" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#95a5a6" />
+    </marker>
+    
+    <marker id="leap-arrow" markerWidth="12" markerHeight="8" 
+            refX="11" refY="4" orient="auto">
+      <polygon points="0 0, 12 4, 0 8" fill="#27ae60" />
+    </marker>
+  </defs>
+
+  <!-- 전통적 진화 경로 (상단) -->
+  <g id="traditional-path">
+    <text x="500" y="120" text-anchor="middle" class="stage-text" fill="#7f8c8d">전통적 진화 경로 (점진적)</text>
+    
+    <!-- HWP (시작점) -->
+    <rect x="80" y="140" width="80" height="50" rx="8" class="traditional-path"/>
+    <text x="120" y="160" text-anchor="middle" class="stage-text" fill="white">HWP</text>
+    <text x="120" y="175" text-anchor="middle" class="desc-text" fill="white">1990년대</text>
+    
+    <!-- MS Office -->
+    <rect x="200" y="140" width="80" height="50" rx="8" class="traditional-path"/>
+    <text x="240" y="160" text-anchor="middle" class="stage-text" fill="white">MS Office</text>
+    <text x="240" y="175" text-anchor="middle" class="desc-text" fill="white">2000년대</text>
+    
+    <!-- Google Docs -->
+    <rect x="320" y="140" width="80" height="50" rx="8" class="traditional-path"/>
+    <text x="360" y="155" text-anchor="middle" class="stage-text" fill="white">Google</text>
+    <text x="360" y="170" text-anchor="middle" class="stage-text" fill="white">Docs</text>
+    <text x="360" y="185" text-anchor="middle" class="desc-text" fill="white">2010년대</text>
+    
+    <!-- Notion -->
+    <rect x="440" y="140" width="80" height="50" rx="8" class="traditional-path"/>
+    <text x="480" y="160" text-anchor="middle" class="stage-text" fill="white">Notion</text>
+    <text x="480" y="175" text-anchor="middle" class="desc-text" fill="white">2020년대</text>
+    
+    <!-- ??? -->
+    <rect x="560" y="140" width="80" height="50" rx="8" fill="#ecf0f1" stroke="#bdc3c7" stroke-width="2" stroke-dasharray="5,5"/>
+    <text x="600" y="160" text-anchor="middle" class="stage-text">???</text>
+    <text x="600" y="175" text-anchor="middle" class="desc-text">미래</text>
+    
+    <!-- 전통적 경로 화살표들 -->
+    <line x1="160" y1="165" x2="195" y2="165" class="traditional-arrow" marker-end="url(#traditional-arrow)"/>
+    <line x1="280" y1="165" x2="315" y2="165" class="traditional-arrow" marker-end="url(#traditional-arrow)"/>
+    <line x1="400" y1="165" x2="435" y2="165" class="traditional-arrow" marker-end="url(#traditional-arrow)"/>
+    <line x1="520" y1="165" x2="555" y2="165" class="traditional-arrow" marker-end="url(#traditional-arrow)"/>
+  </g>
+
+  <!-- 한국의 도약 경로 (하단) -->
+  <g id="korea-path">
+    <text x="500" y="250" text-anchor="middle" class="stage-text" fill="#c0392b">한국의 도약 전략 (혁신적)</text>
+    
+    <!-- HWP (현재) -->
+    <rect x="120" y="270" width="80" height="60" rx="8" class="korea-path"/>
+    <text x="160" y="290" text-anchor="middle" class="stage-text" fill="white">HWP</text>
+    <text x="160" y="305" text-anchor="middle" class="desc-text" fill="white">현재 상황</text>
+    <text x="160" y="320" text-anchor="middle" class="desc-text" fill="white">대부분 조직</text>
+    
+    <!-- Quarto (중간) -->
+    <rect x="360" y="270" width="80" height="60" rx="8" class="korea-path"/>
+    <text x="400" y="290" text-anchor="middle" class="stage-text" fill="white">Quarto</text>
+    <text x="400" y="305" text-anchor="middle" class="desc-text" fill="white">Document</text>
+    <text x="400" y="320" text-anchor="middle" class="desc-text" fill="white">as Code</text>
+    
+    <!-- AI 문서 (미래) -->
+    <rect x="600" y="270" width="120" height="60" rx="8" fill="#9b59b6" stroke="#8e44ad" stroke-width="3"/>
+    <text x="660" y="290" text-anchor="middle" class="stage-text" fill="white">AI 지능형 문서</text>
+    <text x="660" y="305" text-anchor="middle" class="desc-text" fill="white">자가 진화</text>
+    <text x="660" y="320" text-anchor="middle" class="desc-text" fill="white">생성형 인터페이스</text>
+    
+    <!-- 도약 화살표들 -->
+    <path d="M 200 300 Q 280 250 360 300" class="leap-arrow" marker-end="url(#leap-arrow)"/>
+    <path d="M 440 300 Q 520 250 600 300" class="leap-arrow" marker-end="url(#leap-arrow)"/>
+  </g>
+
+  <!-- 현 상황 표시 -->
+  <g id="current-status">
+    <circle cx="160" cy="240" r="8" fill="#f39c12"/>
+    <text x="160" y="220" text-anchor="middle" class="target-text" fill="#f39c12">현재 위치</text>
+  </g>
+
+  <!-- 목표 표시 -->
+  <g id="target">
+    <circle cx="660" cy="240" r="8" fill="#27ae60"/>
+    <text x="660" y="220" text-anchor="middle" class="target-text" fill="#27ae60">목표 지점</text>
+  </g>
+
+</svg>
