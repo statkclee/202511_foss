@@ -1,0 +1,423 @@
+@import url('https://fonts.googleapis.com/css2?family=Cute+Font&family=IBM+Plex+Sans+KR&display=swap');
+
+/*-- scss:defaults --*/
+
+$body-bg: #fff;
+$body-color: #414042;
+$link-color: #3124DC;
+$code-color: #9795E6;
+$code-block-border-color: #9795E6;
+
+$presentation-heading-color: #174F99;
+$presentation-font-size-root: 30px;
+
+// h2, h3 폰트 크기 70% 축소
+$presentation-h2-font-size: 1.1em; // 기존 1.6em의 70%
+$presentation-h3-font-size: 0.9em; // 기존 1.3em의 70%
+
+$font-family-sans-serif: "IBM Plex Sans KR";
+
+$presentation-slide-text-align: left;
+
+$code-block-font-size: 1em;
+
+h1 {
+  text-align: center;
+}
+
+/*-- scss:rules --*/
+
+.reveal .slide blockquote {
+  border-left: 3px solid #6c757d;
+  padding-left: 0.5em;
+}
+
+code, pre {
+  font-size: 12px;
+  overflow: hidden !important;
+}
+
+.scrollable {
+  overflow-y: auto;
+  height: 90vh;
+}
+
+.output {
+  overflow-x: hidden !important;
+  overflow-y: hidden !important;
+}
+
+.output3 {
+  font-size: 10px;
+}
+
+.output-font {
+  font-size: 8px;
+}
+
+.sourceCode.r {
+  font-family: "IBM Plex Sans KR", Courier, monospace;
+  font-size: 12px;
+  letter-spacing: -0.3px;
+}
+
+/*-- 제목 슬라이드 스타일 --*/
+.reveal .slides section.center h1 {
+  text-align: center;
+  font-size: 2.5em;
+  color: #174F99;
+  margin-bottom: 0.3em;
+}
+
+.reveal .slides section.center h2 {
+  text-align: center;
+  font-size: 1.4em;
+  color: #6c757d;
+  font-weight: 400;
+  margin-bottom: 0.8em;
+}
+
+/*-- 배경색이 있는 섹션 제목 --*/
+.reveal .slides section[data-background-color] h1 {
+  color: #ffffff !important;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+
+.reveal .slides section[data-background-color] h2,
+.reveal .slides section[data-background-color] h3,
+.reveal .slides section[data-background-color] p,
+.reveal .slides section[data-background-color] li {
+  color: #ffffff;
+}
+
+.reveal .slides section[data-background-color] strong {
+  color: #ffeb3b;
+}
+
+/*-- 2칼럼 레이아웃 --*/
+.reveal .columns {
+  display: flex;
+  gap: 2em;
+  align-items: flex-start;
+}
+
+.reveal .column {
+  flex: 1;
+}
+
+.reveal .column h3 {
+  color: #174F99;
+  border-bottom: 2px solid #174F99;
+  padding-bottom: 0.2em;
+  margin-bottom: 0.8em;
+  font-size: 0.9em;
+}
+
+.reveal h2 {
+  font-size: 1.1em;
+  margin-bottom: 0.5em;
+}
+
+.reveal h3 {
+  font-size: 0.9em;
+}
+
+/*-- Fragment 애니메이션 효과 --*/
+.reveal .fragment {
+  transition: all 0.3s ease;
+}
+
+.reveal .fragment.fade-in-then-semi-out {
+  opacity: 0;
+}
+
+.reveal .fragment.fade-in-then-semi-out.visible {
+  opacity: 1;
+}
+
+.reveal .fragment.fade-in-then-semi-out.current-fragment {
+  opacity: 1;
+}
+
+/*-- 특수 클래스 --*/
+.reveal .r-fit-text {
+  font-size: 3em !important;
+  font-weight: 700 !important;
+  color: #174F99 !important;
+  text-align: center !important;
+  margin: 0.5em 0 !important;
+}
+
+/*-- 강조 텍스트 스타일 --*/
+.reveal strong {
+  color: #174F99;
+  font-weight: 600;
+}
+
+.reveal em {
+  color: #3124DC;
+  font-style: normal;
+  font-weight: 500;
+}
+
+/*-- 이미지 스타일 --*/
+.reveal img {
+  border: none;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  border-radius: 8px;
+  max-width: 100%;
+  height: auto;
+}
+
+/*-- 테이블 스타일 --*/
+.reveal table {
+  margin: auto;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.reveal table th {
+  background: #174F99;
+  color: #ffffff;
+  font-weight: 600;
+  padding: 0.8em 1em;
+}
+
+.reveal table td {
+  padding: 0.6em 1em;
+  border-bottom: 1px solid #dee2e6;
+}
+
+.reveal table tr:nth-child(even) {
+  background: rgba(0,0,0,0.02);
+}
+
+/*-- 링크 스타일 --*/
+.reveal a {
+  color: #3124DC;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.reveal a:hover {
+  color: #174F99;
+  border-bottom: 1px solid #174F99;
+}
+
+/*-- 슬라이드 번호 스타일 --*/
+.reveal .slide-number {
+  font-family: 'IBM Plex Sans KR', sans-serif;
+  font-size: 18px;
+  color: #6c757d;
+  background: rgba(255,255,255,0.8);
+  padding: 5px 10px;
+  border-radius: 15px;
+}
+
+/*-- 진행률 바 --*/
+.reveal .progress {
+  height: 4px;
+}
+
+.reveal .progress span {
+  background: #174F99;
+  transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
+}
+
+/*-- 리스트 스타일 --*/
+.reveal ul {
+  margin-left: 0;
+  padding-left: 1.2em;
+}
+
+.reveal ul li {
+  font-size: 0.9em;
+  line-height: 1.5;
+  margin-bottom: 0.5em;
+  list-style-type: none;
+  position: relative;
+}
+
+.reveal ul li:before {
+  content: "•";
+  color: #174F99;
+  font-size: 1.2em;
+  position: absolute;
+  left: -1.2em;
+  top: 0;
+}
+
+/*-- 이모지가 있는 리스트는 bullet 숨김 --*/
+.reveal .slides section li:first-child:before {
+  display: none;
+}
+
+/*-- 코드 블록 개선 --*/
+.reveal pre {
+  background: linear-gradient(145deg, #f8f9fa, #e9ecef);
+  border: 1px solid #9795E6;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  padding: 1em;
+  margin: 1em 0;
+}
+
+.reveal pre code {
+  font-family: 'IBM Plex Sans KR', Courier, monospace;
+  font-size: 12px;
+  line-height: 1.4;
+  background: none;
+  padding: 0;
+  color: #414042;
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+/*-- 코드 하이라이팅 스타일 --*/
+.reveal .sourceCode {
+  font-size: 12px;
+}
+
+.reveal .sourceCode .kw { color: #007020; font-weight: bold; } /* Keyword */
+.reveal .sourceCode .dt { color: #902000; } /* DataType */
+.reveal .sourceCode .dv { color: #40a070; } /* DecVal */
+.reveal .sourceCode .bn { color: #40a070; } /* BaseN */
+.reveal .sourceCode .fl { color: #40a070; } /* Float */
+.reveal .sourceCode .ch { color: #4070a0; } /* Char */
+.reveal .sourceCode .st { color: #4070a0; } /* String */
+.reveal .sourceCode .co { color: #60a0b0; font-style: italic; } /* Comment */
+.reveal .sourceCode .ot { color: #007020; } /* Other */
+.reveal .sourceCode .al { color: #ff0000; font-weight: bold; } /* Alert */
+.reveal .sourceCode .fu { color: #06287e; } /* Function */
+.reveal .sourceCode .er { color: #ff0000; font-weight: bold; } /* Error */
+
+.reveal code {
+  background: rgba(151, 149, 230, 0.1);
+  padding: 0.2em 0.4em;
+  border-radius: 4px;
+  color: #9795E6;
+}
+
+/*-- 반응형 디자인 --*/
+@media (max-width: 768px) {
+  .reveal {
+    font-size: 24px;
+  }
+  
+  .reveal h1 {
+    font-size: 1.8em;
+  }
+  
+  .reveal h2 {
+    font-size: 1.2em;
+  }
+
+  .reveal h3 {
+    font-size: 1.1em;
+  }
+  .reveal .columns {
+    flex-direction: column;
+    gap: 1em;
+  }
+  
+  .reveal pre code {
+    font-size: 10px;
+  }
+}
+
+/*-- 애니메이션 키프레임 --*/
+@keyframes slideInUp {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInScale {
+  from {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/*-- Fragment 사용자 정의 애니메이션 --*/
+.reveal .fragment.slide-in-up {
+  animation: slideInUp 0.6s ease-out;
+}
+
+.reveal .fragment.fade-in-scale {
+  animation: fadeInScale 0.5s ease-out;
+}
+
+/*-- 접근성 개선 --*/
+.reveal .slides section {
+  text-align: left;
+}
+
+.reveal .slides section.center {
+  text-align: center;
+}
+
+/*-- 고대비 모드 지원 --*/
+@media (prefers-contrast: high) {
+  .reveal {
+    background: #ffffff;
+    color: #000000;
+  }
+  
+  .reveal h1, .reveal h2, .reveal h3 {
+    color: #000000;
+  }
+  
+  .reveal strong {
+    color: #000000;
+    font-weight: 700;
+  }
+}
+
+/*-- Lightbox 이미지 크기 강제 --*/
+.glightbox-container .gslide-image img {
+  min-width: 800px !important;
+  min-height: 600px !important;
+  max-width: 90vw !important;
+  max-height: 90vh !important;
+  object-fit: contain;
+}
+
+.lightbox-large .gslide-image img {
+  width: auto !important;
+  height: auto !important;
+  min-width: 800px !important;
+}
+
+.glightbox-container .gslide-media svg {
+  min-width: 800px !important;
+  min-height: 600px !important;
+  width: 800px !important;
+  height: 600px !important;
+}
+
+/*-- Tabset bullet point 제거 --*/
+.reveal .panel-tabset ul {
+  list-style: none !important;
+  padding-left: 0 !important;
+  margin-left: 0 !important;
+}
+
+.reveal .panel-tabset ul li {
+  list-style-type: none !important;
+}
+
+.reveal .panel-tabset ul li:before {
+  display: none !important;
+}
+
