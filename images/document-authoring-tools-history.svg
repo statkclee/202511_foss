@@ -1,0 +1,353 @@
+<svg viewBox="0 0 1800 1100" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .title { font-family: 'Noto Sans KR', sans-serif; font-size: 34px; font-weight: 700; fill: #1e3a8a; }
+      .subtitle { font-family: 'Noto Sans KR', sans-serif; font-size: 17px; font-weight: 600; fill: #475569; }
+      .era-title { font-family: 'Noto Sans KR', sans-serif; font-size: 18px; font-weight: 700; fill: white; }
+      .category { font-family: 'Noto Sans KR', sans-serif; font-size: 15px; font-weight: 700; fill: #1e293b; }
+      .year { font-family: 'Noto Sans KR', sans-serif; font-size: 14px; font-weight: 700; }
+      .product { font-family: 'Noto Sans KR', sans-serif; font-size: 12px; font-weight: 600; fill: #1e293b; }
+      .detail { font-family: 'Noto Sans KR', sans-serif; font-size: 11px; fill: #475569; }
+      .note { font-family: 'Noto Sans KR', sans-serif; font-size: 10px; fill: #64748b; }
+    </style>
+
+    <linearGradient id="eraGradient1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color: #7c3aed; stop-opacity: 1" />
+      <stop offset="100%" style="stop-color: #a78bfa; stop-opacity: 1" />
+    </linearGradient>
+
+    <linearGradient id="eraGradient2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color: #0078d4; stop-opacity: 1" />
+      <stop offset="100%" style="stop-color: #50e6ff; stop-opacity: 1" />
+    </linearGradient>
+
+    <linearGradient id="eraGradient3" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color: #18a303; stop-opacity: 1" />
+      <stop offset="100%" style="stop-color: #4ade80; stop-opacity: 1" />
+    </linearGradient>
+
+    <linearGradient id="eraGradient4" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color: #ea580c; stop-opacity: 1" />
+      <stop offset="100%" style="stop-color: #fb923c; stop-opacity: 1" />
+    </linearGradient>
+
+    <linearGradient id="eraGradient5" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color: #dc2626; stop-opacity: 1" />
+      <stop offset="100%" style="stop-color: #f87171; stop-opacity: 1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Title -->
+  <text x="900" y="40" text-anchor="middle" class="title">디지털 문서 저작 도구의 역사</text>
+  <text x="900" y="65" text-anchor="middle" class="subtitle">상용·오픈소스·마크업 언어까지: 1960년대~2025 (60년 진화)</text>
+
+  <!-- Timeline Axis -->
+  <line x1="80" y1="950" x2="1720" y2="950" stroke="#94a3b8" stroke-width="3"/>
+  <text x="80" y="975" text-anchor="middle" class="year" style="fill: #64748b;">1960</text>
+  <text x="350" y="975" text-anchor="middle" class="year" style="fill: #64748b;">1975</text>
+  <text x="620" y="975" text-anchor="middle" class="year" style="fill: #64748b;">1985</text>
+  <text x="900" y="975" text-anchor="middle" class="year" style="fill: #64748b;">1995</text>
+  <text x="1180" y="975" text-anchor="middle" class="year" style="fill: #64748b;">2005</text>
+  <text x="1450" y="975" text-anchor="middle" class="year" style="fill: #64748b;">2015</text>
+  <text x="1720" y="975" text-anchor="middle" class="year" style="fill: #64748b;">2025</text>
+
+  <!-- Era 1: 태동기 (1960s-1970s) -->
+  <g id="era1">
+    <rect x="50" y="100" width="300" height="800" rx="10" fill="url(#eraGradient1)" opacity="0.1"/>
+    <rect x="50" y="100" width="300" height="40" rx="10" fill="url(#eraGradient1)"/>
+    <text x="200" y="128" text-anchor="middle" class="era-title">1️⃣ 태동기 (1960~1979)</text>
+
+    <!-- Text Editors -->
+    <rect x="70" y="160" width="260" height="180" rx="8" fill="#faf5ff" stroke="#7c3aed" stroke-width="2"/>
+    <text x="200" y="185" text-anchor="middle" class="category">📝 텍스트 에디터·조판</text>
+
+    <text x="85" y="210" class="year" style="fill: #7c3aed;">1969</text>
+    <text x="85" y="227" class="product">UNIX ed</text>
+    <text x="95" y="242" class="detail">• 최초 라인 에디터</text>
+
+    <text x="85" y="262" class="year" style="fill: #7c3aed;">1971</text>
+    <text x="85" y="279" class="product">Emacs 전신 (TECO)</text>
+
+    <text x="85" y="299" class="year" style="fill: #7c3aed;">1976</text>
+    <text x="85" y="316" class="product">vi 출시</text>
+    <text x="95" y="331" class="detail">• Bill Joy 개발</text>
+
+    <!-- Markup Languages -->
+    <rect x="70" y="360" width="260" height="180" rx="8" fill="#fef3c7" stroke="#f59e0b" stroke-width="2"/>
+    <text x="200" y="385" text-anchor="middle" class="category">🏷️ 마크업 언어</text>
+
+    <text x="85" y="410" class="year" style="fill: #d97706;">1969</text>
+    <text x="85" y="427" class="product">GML (Generalized Markup)</text>
+    <text x="95" y="442" class="detail">• IBM, 문서 구조화</text>
+
+    <text x="85" y="462" class="year" style="fill: #d97706;">1978</text>
+    <text x="85" y="479" class="product">TeX 출시</text>
+    <text x="95" y="494" class="detail">• Donald Knuth</text>
+    <text x="95" y="509" class="detail">• 수학 조판 혁명</text>
+    <text x="95" y="524" class="detail">• 오픈소스 철학</text>
+
+    <!-- Commercial -->
+    <rect x="70" y="560" width="260" height="120" rx="8" fill="#e0f2fe" stroke="#0284c7" stroke-width="2"/>
+    <text x="200" y="585" text-anchor="middle" class="category">💼 초기 상용 SW</text>
+
+    <text x="85" y="610" class="year" style="fill: #0284c7;">1979</text>
+    <text x="85" y="627" class="product">WordStar</text>
+    <text x="95" y="642" class="detail">• CP/M 최초 히트작</text>
+    <text x="95" y="657" class="detail">• WYSIWYG 아님</text>
+  </g>
+
+  <!-- Era 2: GUI 혁명기 (1980s) -->
+  <g id="era2">
+    <rect x="360" y="100" width="270" height="800" rx="10" fill="url(#eraGradient2)" opacity="0.1"/>
+    <rect x="360" y="100" width="270" height="40" rx="10" fill="url(#eraGradient2)"/>
+    <text x="495" y="128" text-anchor="middle" class="era-title">2️⃣ GUI 혁명 (1980~1989)</text>
+
+    <!-- WYSIWYG -->
+    <rect x="380" y="160" width="230" height="200" rx="8" fill="#e0f2fe" stroke="#0078d4" stroke-width="2"/>
+    <text x="495" y="185" text-anchor="middle" class="category">🖥️ WYSIWYG 시대</text>
+
+    <text x="395" y="210" class="year" style="fill: #0078d4;">1983</text>
+    <text x="395" y="227" class="product">MS Word (Multi-Tool)</text>
+    <text x="405" y="242" class="detail">• Xerox Alto용</text>
+
+    <text x="395" y="262" class="year" style="fill: #0078d4;">1984</text>
+    <text x="395" y="279" class="product">MacWrite (Apple)</text>
+    <text x="405" y="294" class="detail">• Mac 최초 워드</text>
+
+    <text x="395" y="314" class="year" style="fill: #0078d4;">1985</text>
+    <text x="395" y="331" class="product">StarWriter</text>
+    <text x="405" y="346" class="detail">• 독일 StarDivision</text>
+
+    <!-- Markup Evolution -->
+    <rect x="380" y="380" width="230" height="180" rx="8" fill="#fef3c7" stroke="#f59e0b" stroke-width="2"/>
+    <text x="495" y="405" text-anchor="middle" class="category">🏷️ 마크업 진화</text>
+
+    <text x="395" y="430" class="year" style="fill: #d97706;">1984</text>
+    <text x="395" y="447" class="product">LaTeX 출시</text>
+    <text x="405" y="462" class="detail">• Leslie Lamport</text>
+    <text x="405" y="477" class="detail">• TeX 매크로 패키지</text>
+    <text x="405" y="492" class="detail">• 학술 논문 표준</text>
+
+    <text x="395" y="512" class="year" style="fill: #d97706;">1986</text>
+    <text x="395" y="529" class="product">SGML (ISO 8879)</text>
+    <text x="405" y="544" class="detail">• 국제 표준 마크업</text>
+
+    <!-- Korea -->
+    <rect x="380" y="580" width="230" height="100" rx="8" fill="#ffe4e6" stroke="#f43f5e" stroke-width="2"/>
+    <text x="495" y="605" text-anchor="middle" class="category">🇰🇷 한국</text>
+
+    <text x="395" y="630" class="year" style="fill: #e11d48;">1989</text>
+    <text x="395" y="647" class="product">아래한글 1.0</text>
+    <text x="405" y="662" class="detail">• 이찬진, DOS용</text>
+  </g>
+
+  <!-- Era 3: 표준화·인터넷 (1990s) -->
+  <g id="era3">
+    <rect x="640" y="100" width="270" height="800" rx="10" fill="url(#eraGradient3)" opacity="0.1"/>
+    <rect x="640" y="100" width="270" height="40" rx="10" fill="url(#eraGradient3)"/>
+    <text x="775" y="128" text-anchor="middle" class="era-title">3️⃣ 표준화·인터넷 (1990~1999)</text>
+
+    <!-- Web Era -->
+    <rect x="660" y="160" width="230" height="200" rx="8" fill="#dbeafe" stroke="#3b82f6" stroke-width="2"/>
+    <text x="775" y="185" text-anchor="middle" class="category">🌐 웹 시대</text>
+
+    <text x="675" y="210" class="year" style="fill: #2563eb;">1991</text>
+    <text x="675" y="227" class="product">HTML 탄생</text>
+    <text x="685" y="242" class="detail">• Tim Berners-Lee</text>
+
+    <text x="675" y="262" class="year" style="fill: #2563eb;">1993</text>
+    <text x="675" y="279" class="product">Mosaic 브라우저</text>
+
+    <text x="675" y="299" class="year" style="fill: #2563eb;">1998</text>
+    <text x="675" y="316" class="product">CSS 2.0</text>
+    <text x="685" y="331" class="detail">• 디자인 분리</text>
+
+    <text x="675" y="351" class="year" style="fill: #2563eb;">1998</text>
+    <text x="675" y="368" class="product">XML 1.0 (W3C)</text>
+
+    <!-- Commercial -->
+    <rect x="660" y="380" width="230" height="180" rx="8" fill="#e0f2fe" stroke="#0078d4" stroke-width="2"/>
+    <text x="775" y="405" text-anchor="middle" class="category">💼 상용 전성기</text>
+
+    <text x="675" y="430" class="year" style="fill: #0078d4;">1997</text>
+    <text x="675" y="447" class="product">MS Office 97</text>
+    <text x="685" y="462" class="detail">• VBA, HTML 지원</text>
+
+    <text x="675" y="482" class="year" style="fill: #0078d4;">1997</text>
+    <text x="675" y="499" class="product">HWP 97 (Windows)</text>
+
+    <text x="675" y="519" class="year" style="fill: #0078d4;">1999</text>
+    <text x="675" y="536" class="product">Sun, StarOffice 인수</text>
+    <text x="685" y="551" class="detail">• 오픈소스 전환 예고</text>
+
+    <!-- Open Source -->
+    <rect x="660" y="580" width="230" height="100" rx="8" fill="#dcfce7" stroke="#18a303" stroke-width="2"/>
+    <text x="775" y="605" text-anchor="middle" class="category">🆓 오픈소스 태동</text>
+
+    <text x="675" y="630" class="year" style="fill: #18a303;">1991</text>
+    <text x="675" y="647" class="product">Linux 출시</text>
+
+    <text x="675" y="667" class="year" style="fill: #18a303;">1998</text>
+    <text x="675" y="684" class="product">OSI 설립</text>
+  </g>
+
+  <!-- Era 4: 개방·협업 (2000s) -->
+  <g id="era4">
+    <rect x="920" y="100" width="270" height="800" rx="10" fill="url(#eraGradient4)" opacity="0.1"/>
+    <rect x="920" y="100" width="270" height="40" rx="10" fill="url(#eraGradient4)"/>
+    <text x="1055" y="128" text-anchor="middle" class="era-title">4️⃣ 개방·협업 (2000~2009)</text>
+
+    <!-- Open Standards -->
+    <rect x="940" y="160" width="230" height="200" rx="8" fill="#dcfce7" stroke="#18a303" stroke-width="2"/>
+    <text x="1055" y="185" text-anchor="middle" class="category">📖 개방형 표준</text>
+
+    <text x="955" y="210" class="year" style="fill: #18a303;">2000</text>
+    <text x="955" y="227" class="product">OpenOffice.org</text>
+    <text x="965" y="242" class="detail">• LGPL 오픈소스</text>
+
+    <text x="955" y="262" class="year" style="fill: #18a303;">2002</text>
+    <text x="955" y="279" class="product">ODF 1.0 발표</text>
+
+    <text x="955" y="299" class="year" style="fill: #18a303;">2006</text>
+    <text x="955" y="316" class="product">ODF ISO 표준 인증</text>
+    <text x="965" y="331" class="detail">• ISO/IEC 26300</text>
+
+    <text x="955" y="351" class="year" style="fill: #18a303;">2007</text>
+    <text x="955" y="368" class="product">OOXML ISO 인증</text>
+
+    <!-- Commercial Evolution -->
+    <rect x="940" y="380" width="230" height="140" rx="8" fill="#e0f2fe" stroke="#0078d4" stroke-width="2"/>
+    <text x="1055" y="405" text-anchor="middle" class="category">💼 상용 진화</text>
+
+    <text x="955" y="430" class="year" style="fill: #0078d4;">2007</text>
+    <text x="955" y="447" class="product">MS Office 2007</text>
+    <text x="965" y="462" class="detail">• Ribbon UI</text>
+    <text x="965" y="477" class="detail">• DOCX 포맷</text>
+
+    <text x="955" y="497" class="year" style="fill: #0078d4;">2007</text>
+    <text x="955" y="514" class="product">HWP 공공 강제화</text>
+
+    <!-- Modern Markup -->
+    <rect x="940" y="540" width="230" height="140" rx="8" fill="#fef3c7" stroke="#f59e0b" stroke-width="2"/>
+    <text x="1055" y="565" text-anchor="middle" class="category">🏷️ 현대 마크업</text>
+
+    <text x="955" y="590" class="year" style="fill: #d97706;">2004</text>
+    <text x="955" y="607" class="product">Markdown (John Gruber)</text>
+    <text x="965" y="622" class="detail">• 경량 마크업 혁명</text>
+
+    <text x="955" y="642" class="year" style="fill: #d97706;">2002</text>
+    <text x="955" y="659" class="product">reStructuredText</text>
+    <text x="965" y="674" class="detail">• Python Docutils</text>
+  </g>
+
+  <!-- Era 5: 클라우드·AI (2010s-현재) -->
+  <g id="era5">
+    <rect x="1200" y="100" width="550" height="800" rx="10" fill="url(#eraGradient5)" opacity="0.1"/>
+    <rect x="1200" y="100" width="550" height="40" rx="10" fill="url(#eraGradient5)"/>
+    <text x="1475" y="128" text-anchor="middle" class="era-title">5️⃣ 클라우드·AI·협업 (2010~2025)</text>
+
+    <!-- Cloud Native -->
+    <rect x="1220" y="160" width="250" height="220" rx="8" fill="#dbeafe" stroke="#3b82f6" stroke-width="2"/>
+    <text x="1345" y="185" text-anchor="middle" class="category">☁️ 클라우드 네이티브</text>
+
+    <text x="1235" y="210" class="year" style="fill: #2563eb;">2010</text>
+    <text x="1235" y="227" class="product">Office Web Apps</text>
+
+    <text x="1235" y="247" class="year" style="fill: #2563eb;">2013</text>
+    <text x="1235" y="264" class="product">Office 365 (SaaS)</text>
+
+    <text x="1235" y="284" class="year" style="fill: #2563eb;">2006</text>
+    <text x="1235" y="301" class="product">Google Docs</text>
+    <text x="1245" y="316" class="detail">• 실시간 협업 혁명</text>
+
+    <text x="1235" y="336" class="year" style="fill: #2563eb;">2012</text>
+    <text x="1235" y="353" class="product">Notion</text>
+
+    <text x="1235" y="373" class="year" style="fill: #2563eb;">2016</text>
+    <text x="1235" y="390" class="product">Overleaf (LaTeX 온라인)</text>
+
+    <!-- Open Source -->
+    <rect x="1220" y="400" width="250" height="140" rx="8" fill="#dcfce7" stroke="#18a303" stroke-width="2"/>
+    <text x="1345" y="425" text-anchor="middle" class="category">🆓 오픈소스</text>
+
+    <text x="1235" y="450" class="year" style="fill: #18a303;">2010</text>
+    <text x="1235" y="467" class="product">LibreOffice 독립</text>
+    <text x="1245" y="482" class="detail">• TDF 설립</text>
+
+    <text x="1235" y="502" class="year" style="fill: #18a303;">2015</text>
+    <text x="1235" y="519" class="product">LibreOffice Online</text>
+
+    <!-- Modern Tools -->
+    <rect x="1220" y="560" width="250" height="220" rx="8" fill="#fef3c7" stroke="#f59e0b" stroke-width="2"/>
+    <text x="1345" y="585" text-anchor="middle" class="category">🚀 현대 도구</text>
+
+    <text x="1235" y="610" class="year" style="fill: #d97706;">2012</text>
+    <text x="1235" y="627" class="product">Pandoc</text>
+    <text x="1245" y="642" class="detail">• 범용 변환기</text>
+
+    <text x="1235" y="662" class="year" style="fill: #d97706;">2012</text>
+    <text x="1235" y="679" class="product">Jupyter Notebook</text>
+
+    <text x="1235" y="699" class="year" style="fill: #d97706;">2013</text>
+    <text x="1235" y="716" class="product">R Markdown</text>
+
+    <text x="1235" y="736" class="year" style="fill: #d97706;">2022</text>
+    <text x="1235" y="753" class="product">Quarto</text>
+    <text x="1245" y="768" class="detail">• 차세대 과학 출판</text>
+
+    <!-- AI Era -->
+    <rect x="1490" y="160" width="240" height="220" rx="8" fill="#fee2e2" stroke="#dc2626" stroke-width="2"/>
+    <text x="1610" y="185" text-anchor="middle" class="category">🤖 AI 시대</text>
+
+    <text x="1505" y="210" class="year" style="fill: #dc2626;">2023</text>
+    <text x="1505" y="227" class="product">MS Copilot</text>
+    <text x="1515" y="242" class="detail">• GPT-4 통합</text>
+
+    <text x="1505" y="262" class="year" style="fill: #dc2626;">2023</text>
+    <text x="1505" y="279" class="product">Google Duet AI</text>
+
+    <text x="1505" y="299" class="year" style="fill: #dc2626;">2023</text>
+    <text x="1505" y="316" class="product">Notion AI</text>
+
+    <text x="1505" y="336" class="year" style="fill: #dc2626;">2024</text>
+    <text x="1505" y="353" class="product">Claude Code</text>
+    <text x="1515" y="368" class="detail">• 코드 기반 문서화</text>
+
+    <!-- API/Automation -->
+    <rect x="1490" y="400" width="240" height="140" rx="8" fill="#f3e8ff" stroke="#9333ea" stroke-width="2"/>
+    <text x="1610" y="425" text-anchor="middle" class="category">🔌 API·자동화</text>
+
+    <text x="1505" y="450" class="year" style="fill: #9333ea;">2015~</text>
+    <text x="1505" y="467" class="product">Headless CMS</text>
+
+    <text x="1505" y="487" class="year" style="fill: #9333ea;">2020~</text>
+    <text x="1505" y="504" class="product">JAMstack</text>
+    <text x="1515" y="519" class="detail">• Static Site Gen</text>
+
+    <!-- Standards -->
+    <rect x="1490" y="560" width="240" height="100" rx="8" fill="#dbeafe" stroke="#0284c7" stroke-width="2"/>
+    <text x="1610" y="585" text-anchor="middle" class="category">📋 현대 표준</text>
+
+    <text x="1505" y="610" class="product">Markdown (CommonMark)</text>
+    <text x="1505" y="630" class="product">ODF 1.3 (2020)</text>
+    <text x="1505" y="650" class="product">OOXML ISO 29500</text>
+  </g>
+
+  <!-- Bottom Summary -->
+  <rect x="50" y="1000" width="1700" height="90" rx="10" fill="#1e3a8a" stroke="#1e40af" stroke-width="3"/>
+
+  <text x="900" y="1030" text-anchor="middle" style="font-size: 18px; font-weight: 700; fill: white;">
+    📊 60년 진화의 핵심 트렌드
+  </text>
+
+  <text x="70" y="1055" style="font-size: 12px; fill: #dbeafe;">
+    <tspan font-weight="700">1960~1979 태동:</tspan> 텍스트 에디터·TeX →
+    <tspan font-weight="700">1980~1989 GUI:</tspan> WYSIWYG·상용SW 폭발 →
+    <tspan font-weight="700">1990~1999 표준:</tspan> HTML·XML·오픈소스 →
+  </text>
+
+  <text x="70" y="1075" style="font-size: 12px; fill: #dbeafe;">
+    <tspan font-weight="700">2000~2009 개방:</tspan> ODF/OOXML ISO 표준·OpenOffice →
+    <tspan font-weight="700">2010~현재 클라우드·AI:</tspan> 실시간 협업·Markdown·Copilot·자동화
+  </text>
+</svg>

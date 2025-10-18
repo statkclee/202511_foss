@@ -1,0 +1,258 @@
+<svg viewBox="0 0 1400 1100" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .title { font-family: 'Noto Sans KR', sans-serif; font-size: 32px; font-weight: 700; fill: #7f1d1d; }
+      .subtitle { font-family: 'Noto Sans KR', sans-serif; font-size: 18px; font-weight: 600; fill: #991b1b; }
+      .dimension { font-family: 'Noto Sans KR', sans-serif; font-size: 16px; font-weight: 700; fill: white; }
+      .criterion { font-family: 'Noto Sans KR', sans-serif; font-size: 12px; font-weight: 600; fill: #1e293b; }
+      .description { font-family: 'Noto Sans KR', sans-serif; font-size: 11px; fill: #475569; }
+      .score { font-family: 'Noto Sans KR', sans-serif; font-size: 20px; font-weight: 700; }
+      .verdict { font-family: 'Noto Sans KR', sans-serif; font-size: 28px; font-weight: 700; }
+      .note { font-family: 'Noto Sans KR', sans-serif; font-size: 12px; fill: #64748b; }
+    </style>
+
+    <linearGradient id="evilGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#7f1d1d;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#991b1b;stop-opacity:1" />
+    </linearGradient>
+
+    <radialGradient id="dangerGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#dc2626;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#7f1d1d;stop-opacity:0" />
+    </radialGradient>
+  </defs>
+
+  <!-- Background Glow Effect -->
+  <circle cx="700" cy="550" r="500" fill="url(#dangerGlow)" opacity="0.15"/>
+
+  <!-- Title -->
+  <text x="700" y="45" text-anchor="middle" class="title">HWP 일원화: '악(Evil)' 판정 종합 평가</text>
+  <text x="700" y="75" text-anchor="middle" class="subtitle">행정 투명성·AI 전환·국제 호환성 세 축의 구조적 폐해 분석</text>
+
+  <!-- Central Question -->
+  <rect x="250" y="100" width="900" height="70" rx="10" fill="#7f1d1d" stroke="#450a0a" stroke-width="3"/>
+  <text x="700" y="135" text-anchor="middle" style="font-size: 22px; font-weight: 700; fill: #fef2f2;">
+    🤔 질문: "아래한글 강제는 '불편'인가, '악'인가?"
+  </text>
+  <text x="700" y="160" text-anchor="middle" style="font-size: 14px; fill: #fca5a5;">
+    → 아래 8가지 차원에서 '악'의 요건을 검증
+  </text>
+
+  <!-- 8 Dimensions Grid -->
+  <!-- Row 1 -->
+  <g id="dimension1">
+    <rect x="50" y="190" width="320" height="160" rx="8" fill="#fee2e2" stroke="#dc2626" stroke-width="2"/>
+    <rect x="50" y="190" width="320" height="35" rx="8" fill="#dc2626"/>
+    <text x="210" y="213" text-anchor="middle" class="dimension">1️⃣ 정보접근권 침해</text>
+
+    <text x="65" y="245" class="criterion">• 누구나 열람 가능한가?</text>
+    <text x="75" y="262" class="description">❌ 전용 SW 설치 강요</text>
+
+    <text x="65" y="282" class="criterion">• 장애인 접근성 보장?</text>
+    <text x="75" y="299" class="description">❌ 스크린리더 불안정</text>
+
+    <text x="65" y="319" class="criterion">• 민원권 저해 여부?</text>
+    <text x="75" y="336" class="description">✓ 공문·자료 열람 제약</text>
+
+    <circle cx="330" cy="275" r="25" fill="#991b1b"/>
+    <text x="330" y="285" text-anchor="middle" class="score" fill="white">악</text>
+  </g>
+
+  <g id="dimension2">
+    <rect x="390" y="190" width="320" height="160" rx="8" fill="#fee2e2" stroke="#dc2626" stroke-width="2"/>
+    <rect x="390" y="190" width="320" height="35" rx="8" fill="#dc2626"/>
+    <text x="550" y="213" text-anchor="middle" class="dimension">2️⃣ 행정 투명성 저하</text>
+
+    <text x="405" y="245" class="criterion">• 공문·자료 공시 용이?</text>
+    <text x="415" y="262" class="description">❌ 범용 포맷 아님</text>
+
+    <text x="405" y="282" class="criterion">• 감시·검증 가능?</text>
+    <text x="415" y="299" class="description">❌ 재사용·분석 제한</text>
+
+    <text x="405" y="319" class="criterion">• 부패 방지 기여?</text>
+    <text x="415" y="336" class="description">❌ 오히려 은폐 용이</text>
+
+    <circle cx="670" cy="275" r="25" fill="#991b1b"/>
+    <text x="670" y="285" text-anchor="middle" class="score" fill="white">악</text>
+  </g>
+
+  <g id="dimension3">
+    <rect x="730" y="190" width="320" height="160" rx="8" fill="#fee2e2" stroke="#dc2626" stroke-width="2"/>
+    <rect x="730" y="190" width="320" height="35" rx="8" fill="#dc2626"/>
+    <text x="890" y="213" text-anchor="middle" class="dimension">3️⃣ AI 데이터 전환 지연</text>
+
+    <text x="745" y="245" class="criterion">• 기계가독 가능?</text>
+    <text x="755" y="262" class="description">❌ 바이너리, 파싱 곤란</text>
+
+    <text x="745" y="282" class="criterion">• LLM 통합 가능?</text>
+    <text x="755" y="299" class="description">❌ RAG 파이프라인 단절</text>
+
+    <text x="745" y="319" class="criterion">• 행정 데이터 구축?</text>
+    <text x="755" y="336" class="description">✓ 지연·차질 심각</text>
+
+    <circle cx="1010" cy="275" r="25" fill="#991b1b"/>
+    <text x="1010" y="285" text-anchor="middle" class="score" fill="white">악</text>
+  </g>
+
+  <g id="dimension4">
+    <rect x="1070" y="190" width="280" height="160" rx="8" fill="#fee2e2" stroke="#dc2626" stroke-width="2"/>
+    <rect x="1070" y="190" width="280" height="35" rx="8" fill="#dc2626"/>
+    <text x="1210" y="213" text-anchor="middle" class="dimension">4️⃣ 국제 호환 단절</text>
+
+    <text x="1085" y="245" class="criterion">• 글로벌 표준 준수?</text>
+    <text x="1095" y="262" class="description">❌ 독자 포맷</text>
+
+    <text x="1085" y="282" class="criterion">• 해외 협업 가능?</text>
+    <text x="1095" y="299" class="description">❌ 실질적 불가</text>
+
+    <text x="1085" y="319" class="criterion">• 재외국민 배려?</text>
+    <text x="1095" y="336" class="description">❌ 소외·차별</text>
+
+    <circle cx="1310" cy="275" r="25" fill="#991b1b"/>
+    <text x="1310" y="285" text-anchor="middle" class="score" fill="white">악</text>
+  </g>
+
+  <!-- Row 2 -->
+  <g id="dimension5">
+    <rect x="50" y="370" width="320" height="160" rx="8" fill="#fff7ed" stroke="#ea580c" stroke-width="2"/>
+    <rect x="50" y="370" width="320" height="35" rx="8" fill="#ea580c"/>
+    <text x="210" y="393" text-anchor="middle" class="dimension">5️⃣ 경제적 손실 누적</text>
+
+    <text x="65" y="425" class="criterion">• 비용 전가 여부?</text>
+    <text x="75" y="442" class="description">✓ 개인·기업에 강요</text>
+
+    <text x="65" y="462" class="criterion">• 생산성 저해?</text>
+    <text x="75" y="479" class="description">✓ 연 1조 원+ 손실</text>
+
+    <text x="65" y="499" class="criterion">• 혁신 생태계 위축?</text>
+    <text x="75" y="516" class="description">✓ 스타트업 진입장벽</text>
+
+    <circle cx="330" cy="455" r="25" fill="#c2410c"/>
+    <text x="330" y="465" text-anchor="middle" class="score" fill="white">악</text>
+  </g>
+
+  <g id="dimension6">
+    <rect x="390" y="370" width="320" height="160" rx="8" fill="#fff7ed" stroke="#ea580c" stroke-width="2"/>
+    <rect x="390" y="370" width="320" height="35" rx="8" fill="#ea580c"/>
+    <text x="550" y="393" text-anchor="middle" class="dimension">6️⃣ 기술 종속 심화</text>
+
+    <text x="405" y="425" class="criterion">• 독점 강화 여부?</text>
+    <text x="415" y="442" class="description">✓ 행정 의존 고착화</text>
+
+    <text x="405" y="462" class="criterion">• 탈출 비용 증가?</text>
+    <text x="415" y="479" class="description">✓ 시간 지날수록 누적</text>
+
+    <text x="405" y="499" class="criterion">• 선택권 박탈?</text>
+    <text x="415" y="516" class="description">✓ 대안 사용 불가</text>
+
+    <circle cx="670" cy="455" r="25" fill="#c2410c"/>
+    <text x="670" y="465" text-anchor="middle" class="score" fill="white">악</text>
+  </g>
+
+  <g id="dimension7">
+    <rect x="730" y="370" width="320" height="160" rx="8" fill="#fef3c7" stroke="#ca8a04" stroke-width="2"/>
+    <rect x="730" y="370" width="320" height="35" rx="8" fill="#ca8a04"/>
+    <text x="890" y="393" text-anchor="middle" class="dimension">7️⃣ 문서 신뢰도 붕괴</text>
+
+    <text x="745" y="425" class="criterion">• 재현 가능성?</text>
+    <text x="755" y="442" class="description">❌ PC마다 다름</text>
+
+    <text x="745" y="462" class="criterion">• 진본성 보장?</text>
+    <text x="755" y="479" class="description">❌ 검증 불가</text>
+
+    <text x="745" y="499" class="criterion">• 장기 보존 가능?</text>
+    <text x="755" y="516" class="description">❌ 10~20년 의문</text>
+
+    <circle cx="1010" cy="455" r="25" fill="#a16207"/>
+    <text x="1010" y="465" text-anchor="middle" class="score" fill="white">악</text>
+  </g>
+
+  <g id="dimension8">
+    <rect x="1070" y="370" width="280" height="160" rx="8" fill="#fef3c7" stroke="#ca8a04" stroke-width="2"/>
+    <rect x="1070" y="370" width="280" height="35" rx="8" fill="#ca8a04"/>
+    <text x="1210" y="393" text-anchor="middle" class="dimension">8️⃣ 개선 의지 부재</text>
+
+    <text x="1085" y="425" class="criterion">• 품질 개선 노력?</text>
+    <text x="1095" y="442" class="description">❌ 수십 년 동일 결함</text>
+
+    <text x="1085" y="462" class="criterion">• 사용자 피드백 반영?</text>
+    <text x="1095" y="479" class="description">❌ 독점 환경, 무시</text>
+
+    <text x="1085" y="499" class="criterion">• 표준 준수 의지?</text>
+    <text x="1095" y="516" class="description">❌ 자체 생태계 고수</text>
+
+    <circle cx="1310" cy="455" r="25" fill="#a16207"/>
+    <text x="1310" y="465" text-anchor="middle" class="score" fill="white">악</text>
+  </g>
+
+  <!-- Scoring Summary -->
+  <rect x="100" y="560" width="1200" height="100" rx="10" fill="#1e3a8a" stroke="#1e40af" stroke-width="3"/>
+
+  <text x="700" y="595" text-anchor="middle" style="font-size: 22px; font-weight: 700; fill: white;">
+    📊 종합 평가 스코어보드
+  </text>
+
+  <text x="150" y="625" style="font-size: 16px; fill: #dbeafe;">
+    <tspan font-weight="700" fill="#fecaca">치명적 '악' (4개)</tspan>: 정보접근권·투명성·AI전환·국제호환
+  </text>
+
+  <text x="150" y="650" style="font-size: 16px; fill: #dbeafe;">
+    <tspan font-weight="700" fill="#fed7aa">중대한 '악' (4개)</tspan>: 경제손실·기술종속·신뢰도·개선의지
+  </text>
+
+  <text x="850" y="625" style="font-size: 18px; font-weight: 700; fill: #fef2f2;">
+    ⚠️ 8개 차원 모두 '악' 판정
+  </text>
+  <text x="850" y="650" style="font-size: 16px; fill: #fca5a5;">
+    (긍정 요소 전무)
+  </text>
+
+  <!-- Final Verdict Box -->
+  <rect x="150" y="690" width="1100" height="140" rx="15" fill="url(#evilGradient)" stroke="#450a0a" stroke-width="5"/>
+
+  <text x="700" y="735" text-anchor="middle" class="verdict" style="font-size: 36px; fill: #fef2f2;">
+    ⚖️ 최종 판정: 아래한글 강제는 '악(Evil)'
+  </text>
+
+  <text x="700" y="770" text-anchor="middle" style="font-size: 16px; fill: #fecaca;">
+    단순 '불편'을 넘어, 정보접근·투명성·디지털전환을 체계적으로 저해하는
+  </text>
+  <text x="700" y="795" text-anchor="middle" style="font-size: 16px; fill: #fecaca;">
+    <tspan font-weight="700">'구조적 폭력'이자 '보이지 않는 세금'</tspan>으로 규정되어야 한다.
+  </text>
+  <text x="700" y="820" text-anchor="middle" style="font-size: 14px; fill: #fca5a5; font-style: italic;">
+    → 정책적·윤리적 개입이 필요한 '비도덕·비양심적' 관행
+  </text>
+
+  <!-- Bottom Context Box -->
+  <rect x="50" y="860" width="1300" height="220" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="2"/>
+
+  <text x="700" y="890" text-anchor="middle" style="font-size: 18px; font-weight: 700; fill: #1e3a8a;">
+    📌 '악' 판정의 근거와 맥락
+  </text>
+
+  <text x="70" y="920" style="font-size: 13px; fill: #334155;">
+    <tspan font-weight="700">1. 피해의 광범위성</tspan>: 개인·기업·정부·학계 전체에 걸쳐 시간·비용·기회 착취. 특정 집단이 아닌 '국가 전체'가 피해자.
+  </text>
+
+  <text x="70" y="945" style="font-size: 13px; fill: #334155;">
+    <tspan font-weight="700">2. 선택권 박탈</tspan>: 공공조달·입찰·공모에서 HWP 강제 → 시민·기업이 거부하면 권리 행사 불가. 이는 '강압'에 해당.
+  </text>
+
+  <text x="70" y="970" style="font-size: 13px; fill: #334155;">
+    <tspan font-weight="700">3. 시대 역행</tspan>: AI·데이터·오픈사이언스 시대에 기계가독·자동화·글로벌호환을 방해 → 한국 디지털 전환 속도 지연.
+  </text>
+
+  <text x="70" y="995" style="font-size: 13px; fill: #334155;">
+    <tspan font-weight="700">4. 장기 누적</tspan>: 단기 손실이 아닌, 매년 반복·누적. 전환 시기 늦어질수록 '탈출 비용' 증가 → 악순환 고착화.
+  </text>
+
+  <text x="70" y="1020" style="font-size: 13px; fill: #334155;">
+    <tspan font-weight="700">5. 대안 존재</tspan>: ODF·DOCX·HTML 등 범용 표준이 존재하며, 기술적으로 전환 가능. HWP 고수는 '선택'이지 '불가피'가 아님.
+  </text>
+
+  <rect x="70" y="1035" width="1260" height="35" rx="5" fill="#fef2f2" stroke="#dc2626" stroke-width="2"/>
+  <text x="700" y="1058" text-anchor="middle" style="font-size: 14px; font-weight: 700; fill: #991b1b;">
+    💡 결론: HWP 강제는 '기술 부채'가 아닌 '사회적 부채'로, 정책적·윤리적 차원에서 반드시 해결해야 할 '악'이다.
+  </text>
+</svg>

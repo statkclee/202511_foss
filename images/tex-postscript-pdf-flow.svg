@@ -1,0 +1,370 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2800 1500">
+  <defs>
+    <!-- Gradients -->
+    <linearGradient id="headerGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#1e40af;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+
+    <linearGradient id="latexBg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#dbeafe;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#bfdbfe;stop-opacity:1" />
+    </linearGradient>
+
+    <linearGradient id="psBg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#fef3c7;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#fde68a;stop-opacity:1" />
+    </linearGradient>
+
+    <linearGradient id="pdfBg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#d1fae5;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#a7f3d0;stop-opacity:1" />
+    </linearGradient>
+
+    <!-- Arrow marker -->
+    <marker id="arrowSuccess" markerWidth="12" markerHeight="12" refX="11" refY="6" orient="auto">
+      <path d="M0,0 L0,12 L12,6 z" fill="#10b981" />
+    </marker>
+
+    <!-- Styles -->
+    <style>
+      text { font-family: 'Noto Sans KR', 'Monaco', 'Courier New', monospace; }
+      .title { font-size: 38px; font-weight: 700; fill: white; }
+      .subtitle { font-size: 18px; font-weight: 600; fill: white; }
+      .section-title { font-size: 28px; font-weight: 700; }
+      .section-subtitle { font-size: 16px; font-weight: 600; fill: #4b5563; }
+      .code { font-family: 'Monaco', 'Courier New', monospace; font-size: 13px; fill: #1f2937; }
+      .code-comment { font-family: 'Monaco', 'Courier New', monospace; font-size: 12px; fill: #6b7280; font-style: italic; }
+      .label { font-size: 14px; font-weight: 600; fill: #374151; }
+      .value { font-size: 13px; fill: #4b5563; }
+      .arrow-label { font-size: 16px; font-weight: 700; fill: #10b981; }
+      .tool-name { font-size: 14px; font-weight: 600; fill: #059669; }
+      .year { font-size: 13px; font-weight: 600; fill: #6b7280; }
+      .paradigm { font-size: 15px; font-weight: 700; }
+      .comparison-text { font-size: 13px; fill: #374151; }
+      .highlight { font-size: 14px; font-weight: 700; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="2800" height="1500" fill="#f8fafc"/>
+
+  <!-- Header -->
+  <rect x="40" y="20" width="2720" height="100" rx="12" fill="url(#headerGrad)"/>
+  <text x="1400" y="65" text-anchor="middle" class="title">TeX → PostScript → PDF: 성공한 패러다임 전환</text>
+  <text x="1400" y="95" text-anchor="middle" class="subtitle">Typesetting (논리적 구조) → Drawing (물리적 렌더링): 왜 이 흐름이 성공했는가?</text>
+
+  <!-- Three main sections -->
+
+  <!-- Section 1: LaTeX/TeX (Left) -->
+  <g id="latex-section">
+    <rect x="70" y="160" width="720" height="900" rx="15" fill="url(#latexBg)" stroke="#3b82f6" stroke-width="4"/>
+
+    <!-- Title -->
+    <text x="430" y="200" text-anchor="middle" class="section-title" fill="#1e40af">LaTeX / TeX</text>
+    <text x="430" y="225" text-anchor="middle" class="section-subtitle">Typesetting 패러다임</text>
+    <text x="430" y="245" text-anchor="middle" class="year">(1978 - Donald Knuth)</text>
+
+    <!-- Code example box -->
+    <rect x="100" y="270" width="660" height="280" rx="8" fill="white" stroke="#60a5fa" stroke-width="2"/>
+    <text x="430" y="295" text-anchor="middle" class="label" fill="#1e40af">LaTeX 소스 코드 예제:</text>
+
+    <!-- LaTeX code -->
+    <text x="120" y="325" class="code">\documentclass{article}</text>
+    <text x="120" y="350" class="code">\usepackage[utf8]{inputenc}</text>
+    <text x="120" y="375" class="code">\usepackage{amsmath}</text>
+    <text x="120" y="400" class="code"></text>
+    <text x="120" y="425" class="code">\begin{document}</text>
+    <text x="120" y="450" class="code"></text>
+    <text x="120" y="475" class="code">\section{Introduction}</text>
+    <text x="120" y="500" class="code">Hello \textbf{World}! This is $E=mc^2$.</text>
+    <text x="120" y="525" class="code"></text>
+    <text x="120" y="550" class="code">\end{document}</text>
+
+    <!-- Characteristics -->
+    <rect x="100" y="570" width="660" height="220" rx="8" fill="#eff6ff" stroke="#60a5fa" stroke-width="1"/>
+    <text x="120" y="600" class="label" fill="#1e40af">핵심 특성:</text>
+
+    <text x="140" y="630" class="value">✓ 논리적 구조 정의</text>
+    <text x="160" y="650" class="value" style="font-size: 11px;">(\section, \textbf, \emph)</text>
+
+    <text x="140" y="680" class="value">✓ 내용과 형식 분리</text>
+    <text x="160" y="700" class="value" style="font-size: 11px;">(의미론적 마크업)</text>
+
+    <text x="140" y="730" class="value">✓ 편집 가능 (plain text)</text>
+    <text x="160" y="750" class="value" style="font-size: 11px;">(버전 관리, 협업 가능)</text>
+
+    <text x="140" y="780" class="value">✓ 재컴파일 가능</text>
+    <text x="160" y="800" class="value" style="font-size: 11px;">(수정 → 재생성)</text>
+
+    <!-- Paradigm label -->
+    <rect x="100" y="810" width="660" height="50" rx="8" fill="#3b82f6" fill-opacity="0.2"/>
+    <text x="430" y="845" text-anchor="middle" class="paradigm" fill="#1e40af">패러다임: Typesetting</text>
+
+    <!-- Role -->
+    <rect x="100" y="880" width="660" height="160" rx="8" fill="white" stroke="#60a5fa" stroke-width="2"/>
+    <text x="120" y="910" class="label" fill="#1e40af">역할:</text>
+    <text x="140" y="940" class="value">• 문서 작성 및 조판</text>
+    <text x="140" y="965" class="value">• 레이아웃 자동 계산</text>
+    <text x="140" y="990" class="value">• 수학 수식 처리</text>
+    <text x="140" y="1015" class="value">• 학술 논문 표준</text>
+  </g>
+
+  <!-- Arrow 1: LaTeX -> PostScript -->
+  <g id="arrow1">
+    <path d="M 790 550 L 1010 550" stroke="#10b981" stroke-width="6" fill="none" marker-end="url(#arrowSuccess)"/>
+    <text x="900" y="535" text-anchor="middle" class="arrow-label">변환</text>
+
+    <!-- Tools -->
+    <rect x="820" y="565" width="150" height="80" rx="8" fill="white" stroke="#10b981" stroke-width="2"/>
+    <text x="895" y="590" text-anchor="middle" class="tool-name">latex</text>
+    <text x="895" y="605" text-anchor="middle" class="tool-name">→ DVI</text>
+    <text x="895" y="625" text-anchor="middle" class="tool-name">dvips</text>
+    <text x="895" y="640" text-anchor="middle" class="tool-name">→ PS</text>
+  </g>
+
+  <!-- Section 2: PostScript (Center) -->
+  <g id="postscript-section">
+    <rect x="1010" y="160" width="720" height="900" rx="15" fill="url(#psBg)" stroke="#f59e0b" stroke-width="4"/>
+
+    <!-- Title -->
+    <text x="1370" y="200" text-anchor="middle" class="section-title" fill="#d97706">PostScript</text>
+    <text x="1370" y="225" text-anchor="middle" class="section-subtitle">Drawing 패러다임</text>
+    <text x="1370" y="245" text-anchor="middle" class="year">(1982 - Adobe Systems)</text>
+
+    <!-- Code example box -->
+    <rect x="1040" y="270" width="660" height="280" rx="8" fill="white" stroke="#fbbf24" stroke-width="2"/>
+    <text x="1370" y="295" text-anchor="middle" class="label" fill="#d97706">PostScript 명령어 예제:</text>
+
+    <!-- PostScript code -->
+    <text x="1060" y="325" class="code">%!PS-Adobe-3.0</text>
+    <text x="1060" y="350" class="code"></text>
+    <text x="1060" y="375" class="code">/Times-Roman findfont</text>
+    <text x="1470" y="375" class="code-comment">% 폰트 선택</text>
+    <text x="1060" y="400" class="code">24 scalefont setfont</text>
+    <text x="1470" y="400" class="code-comment">% 24pt 크기</text>
+    <text x="1060" y="425" class="code"></text>
+    <text x="1060" y="450" class="code">100 200 moveto</text>
+    <text x="1470" y="450" class="code-comment">% 펜 이동</text>
+    <text x="1060" y="475" class="code">(Hello World) show</text>
+    <text x="1470" y="475" class="code-comment">% 텍스트 그리기</text>
+    <text x="1060" y="500" class="code"></text>
+    <text x="1060" y="525" class="code">50 50 moveto</text>
+    <text x="1470" y="525" class="code-comment">% 선 시작점</text>
+    <text x="1060" y="550" class="code">150 50 lineto stroke</text>
+    <text x="1470" y="550" class="code-comment">% 선 그리기</text>
+
+    <!-- Characteristics -->
+    <rect x="1040" y="570" width="660" height="220" rx="8" fill="#fffbeb" stroke="#fbbf24" stroke-width="1"/>
+    <text x="1060" y="600" class="label" fill="#d97706">핵심 특성:</text>
+
+    <text x="1080" y="630" class="value">✓ 벡터 그래픽 명령어</text>
+    <text x="1100" y="650" class="value" style="font-size: 11px;">(moveto, lineto, stroke)</text>
+
+    <text x="1080" y="680" class="value">✓ 물리적 좌표 기반</text>
+    <text x="1100" y="700" class="value" style="font-size: 11px;">(x, y 절대 위치)</text>
+
+    <text x="1080" y="730" class="value">✓ 프린터 표준 언어</text>
+    <text x="1100" y="750" class="value" style="font-size: 11px;">(HP-GL 계승)</text>
+
+    <text x="1080" y="780" class="value">✓ 페이지 기술 언어</text>
+    <text x="1100" y="800" class="value" style="font-size: 11px;">(화면/인쇄 렌더링)</text>
+
+    <!-- Paradigm label -->
+    <rect x="1040" y="810" width="660" height="50" rx="8" fill="#f59e0b" fill-opacity="0.2"/>
+    <text x="1370" y="845" text-anchor="middle" class="paradigm" fill="#d97706">패러다임: Drawing Language</text>
+
+    <!-- Heritage -->
+    <rect x="1040" y="880" width="660" height="160" rx="8" fill="white" stroke="#fbbf24" stroke-width="2"/>
+    <text x="1060" y="910" class="label" fill="#d97706">역사적 계보:</text>
+    <text x="1080" y="940" class="value">1959 - CalComp 플로터</text>
+    <text x="1100" y="960" class="value" style="font-size: 11px;">↓ (벡터 그래픽 원조)</text>
+    <text x="1080" y="985" class="value">1977 - HP-GL 표준화</text>
+    <text x="1100" y="1005" class="value" style="font-size: 11px;">↓ (Drawing Language 확립)</text>
+    <text x="1080" y="1030" class="value">1982 - PostScript</text>
+  </g>
+
+  <!-- Arrow 2: PostScript -> PDF -->
+  <g id="arrow2">
+    <path d="M 1730 550 L 1950 550" stroke="#10b981" stroke-width="6" fill="none" marker-end="url(#arrowSuccess)"/>
+    <text x="1840" y="535" text-anchor="middle" class="arrow-label">단순화</text>
+
+    <!-- Tools -->
+    <rect x="1760" y="565" width="150" height="80" rx="8" fill="white" stroke="#10b981" stroke-width="2"/>
+    <text x="1835" y="590" text-anchor="middle" class="tool-name">ps2pdf</text>
+    <text x="1835" y="610" text-anchor="middle" class="year" style="font-size: 11px;">또는</text>
+    <text x="1835" y="630" text-anchor="middle" class="tool-name">pdflatex</text>
+    <text x="1835" y="645" text-anchor="middle" class="year" style="font-size: 11px;">(직접 변환)</text>
+  </g>
+
+  <!-- Section 3: PDF (Right) -->
+  <g id="pdf-section">
+    <rect x="1950" y="160" width="720" height="900" rx="15" fill="url(#pdfBg)" stroke="#10b981" stroke-width="4"/>
+
+    <!-- Title -->
+    <text x="2310" y="200" text-anchor="middle" class="section-title" fill="#059669">PDF</text>
+    <text x="2310" y="225" text-anchor="middle" class="section-subtitle">Drawing 패러다임 (휴대용)</text>
+    <text x="2310" y="245" text-anchor="middle" class="year">(1993 - Adobe Systems)</text>
+
+    <!-- Code example box -->
+    <rect x="1980" y="270" width="660" height="280" rx="8" fill="white" stroke="#34d399" stroke-width="2"/>
+    <text x="2310" y="295" text-anchor="middle" class="label" fill="#059669">PDF 내부 구조 예제:</text>
+
+    <!-- PDF code -->
+    <text x="2000" y="325" class="code">%PDF-1.7</text>
+    <text x="2000" y="350" class="code"></text>
+    <text x="2000" y="375" class="code">/F1 12 Tf</text>
+    <text x="2410" y="375" class="code-comment">% 폰트 설정</text>
+    <text x="2000" y="400" class="code">100 200 Td</text>
+    <text x="2410" y="400" class="code-comment">% 위치 이동</text>
+    <text x="2000" y="425" class="code">(Hello World) Tj</text>
+    <text x="2410" y="425" class="code-comment">% 텍스트 렌더링</text>
+    <text x="2000" y="450" class="code"></text>
+    <text x="2000" y="475" class="code">50 50 m</text>
+    <text x="2410" y="475" class="code-comment">% moveto (이동)</text>
+    <text x="2000" y="500" class="code">150 50 l</text>
+    <text x="2410" y="500" class="code-comment">% lineto (선)</text>
+    <text x="2000" y="525" class="code">S</text>
+    <text x="2410" y="525" class="code-comment">% stroke (그리기)</text>
+    <text x="2000" y="550" class="code"></text>
+
+    <!-- Characteristics -->
+    <rect x="1980" y="570" width="660" height="220" rx="8" fill="#f0fdf4" stroke="#34d399" stroke-width="1"/>
+    <text x="2000" y="600" class="label" fill="#059669">핵심 특성:</text>
+
+    <text x="2020" y="630" class="value">✓ PostScript 단순화 버전</text>
+    <text x="2040" y="650" class="value" style="font-size: 11px;">(압축, 최적화)</text>
+
+    <text x="2020" y="680" class="value">✓ 휴대성 (Portable)</text>
+    <text x="2040" y="700" class="value" style="font-size: 11px;">(모든 플랫폼 동일 렌더링)</text>
+
+    <text x="2020" y="730" class="value">✓ 최종 출력물</text>
+    <text x="2040" y="750" class="value" style="font-size: 11px;">(편집 불가, 고정됨)</text>
+
+    <text x="2020" y="780" class="value">✓ 문서 표준</text>
+    <text x="2040" y="800" class="value" style="font-size: 11px;">(ISO 32000)</text>
+
+    <!-- Paradigm label -->
+    <rect x="1980" y="810" width="660" height="50" rx="8" fill="#10b981" fill-opacity="0.2"/>
+    <text x="2310" y="845" text-anchor="middle" class="paradigm" fill="#059669">패러다임: Drawing Language</text>
+
+    <!-- Purpose -->
+    <rect x="1980" y="880" width="660" height="160" rx="8" fill="white" stroke="#34d399" stroke-width="2"/>
+    <text x="2000" y="910" class="label" fill="#059669">용도:</text>
+    <text x="2020" y="940" class="value">• 문서 배포 및 공유</text>
+    <text x="2020" y="965" class="value">• 인쇄 및 아카이빙</text>
+    <text x="2020" y="990" class="value">• 크로스 플랫폼 호환</text>
+    <text x="2020" y="1015" class="value">• 최종 출력 표준</text>
+  </g>
+
+  <!-- Comparison table (bottom) -->
+  <rect x="70" y="1090" width="2600" height="360" rx="15" fill="white" stroke="#6b7280" stroke-width="3"/>
+
+  <text x="1370" y="1130" text-anchor="middle" class="section-title" style="font-size: 26px;">패러다임 전환 비교: 왜 이 흐름이 성공했는가?</text>
+  <line x1="100" y1="1150" x2="2640" y2="1150" stroke="#e5e7eb" stroke-width="2"/>
+
+  <!-- Table header -->
+  <rect x="100" y="1170" width="220" height="40" fill="#f1f5f9"/>
+  <text x="210" y="1195" text-anchor="middle" class="label" style="font-size: 15px;">구분</text>
+
+  <rect x="320" y="1170" width="550" height="40" fill="#dbeafe"/>
+  <text x="595" y="1195" text-anchor="middle" class="label" style="font-size: 15px;" fill="#1e40af">LaTeX (Typesetting)</text>
+
+  <rect x="870" y="1170" width="550" height="40" fill="#fef3c7"/>
+  <text x="1145" y="1195" text-anchor="middle" class="label" style="font-size: 15px;" fill="#d97706">PostScript (Drawing)</text>
+
+  <rect x="1420" y="1170" width="550" height="40" fill="#d1fae5"/>
+  <text x="1695" y="1195" text-anchor="middle" class="label" style="font-size: 15px;" fill="#059669">PDF (Drawing)</text>
+
+  <rect x="1970" y="1170" width="670" height="40" fill="#f8fafc"/>
+  <text x="2305" y="1195" text-anchor="middle" class="label" style="font-size: 15px;">전환 의미</text>
+
+  <!-- Row 1: 패러다임 -->
+  <rect x="100" y="1210" width="220" height="50" fill="#f8fafc"/>
+  <text x="210" y="1240" text-anchor="middle" class="comparison-text" font-weight="700">패러다임</text>
+
+  <rect x="320" y="1210" width="550" height="50" fill="#eff6ff"/>
+  <text x="595" y="1240" text-anchor="middle" class="comparison-text" fill="#1e40af">Typesetting (조판)</text>
+
+  <rect x="870" y="1210" width="550" height="50" fill="#fffbeb"/>
+  <text x="1145" y="1240" text-anchor="middle" class="comparison-text" fill="#d97706">Drawing (그리기)</text>
+
+  <rect x="1420" y="1210" width="550" height="50" fill="#f0fdf4"/>
+  <text x="1695" y="1240" text-anchor="middle" class="comparison-text" fill="#059669">Drawing (그리기)</text>
+
+  <rect x="1970" y="1210" width="670" height="50" fill="#fef3c7"/>
+  <text x="2305" y="1235" text-anchor="middle" class="comparison-text" style="font-size: 12px;">논리 → 물리</text>
+
+  <!-- Row 2: 본질 -->
+  <rect x="100" y="1260" width="220" height="50" fill="#f8fafc"/>
+  <text x="210" y="1290" text-anchor="middle" class="comparison-text" font-weight="700">본질</text>
+
+  <rect x="320" y="1260" width="550" height="50" fill="#eff6ff"/>
+  <text x="595" y="1290" text-anchor="middle" class="comparison-text">논리적 구조 정의</text>
+
+  <rect x="870" y="1260" width="550" height="50" fill="#fffbeb"/>
+  <text x="1145" y="1290" text-anchor="middle" class="comparison-text">벡터 그래픽 명령어</text>
+
+  <rect x="1420" y="1260" width="550" height="50" fill="#f0fdf4"/>
+  <text x="1695" y="1290" text-anchor="middle" class="comparison-text">최적화된 렌더링</text>
+
+  <rect x="1970" y="1260" width="670" height="50" fill="#fef3c7"/>
+  <text x="2305" y="1285" text-anchor="middle" class="comparison-text" style="font-size: 12px;">구조 → 시각화</text>
+
+  <!-- Row 3: 편집 -->
+  <rect x="100" y="1310" width="220" height="50" fill="#f8fafc"/>
+  <text x="210" y="1340" text-anchor="middle" class="comparison-text" font-weight="700">편집 가능</text>
+
+  <rect x="320" y="1310" width="550" height="50" fill="#eff6ff"/>
+  <text x="595" y="1340" text-anchor="middle" class="comparison-text">✅ 가능 (소스 수정)</text>
+
+  <rect x="870" y="1310" width="550" height="50" fill="#fffbeb"/>
+  <text x="1145" y="1340" text-anchor="middle" class="comparison-text">❌ 불가 (렌더링됨)</text>
+
+  <rect x="1420" y="1310" width="550" height="50" fill="#f0fdf4"/>
+  <text x="1695" y="1340" text-anchor="middle" class="comparison-text">❌ 불가 (최종본)</text>
+
+  <rect x="1970" y="1310" width="670" height="50" fill="#fef3c7"/>
+  <text x="2305" y="1335" text-anchor="middle" class="comparison-text" style="font-size: 12px;">편집 → 고정</text>
+
+  <!-- Row 4: 역할 -->
+  <rect x="100" y="1360" width="220" height="50" fill="#f8fafc"/>
+  <text x="210" y="1390" text-anchor="middle" class="comparison-text" font-weight="700">주요 역할</text>
+
+  <rect x="320" y="1360" width="550" height="50" fill="#eff6ff"/>
+  <text x="595" y="1390" text-anchor="middle" class="comparison-text">문서 작성</text>
+
+  <rect x="870" y="1360" width="550" height="50" fill="#fffbeb"/>
+  <text x="1145" y="1390" text-anchor="middle" class="comparison-text">프린터 출력</text>
+
+  <rect x="1420" y="1360" width="550" height="50" fill="#f0fdf4"/>
+  <text x="1695" y="1390" text-anchor="middle" class="comparison-text">문서 배포</text>
+
+  <rect x="1970" y="1360" width="670" height="50" fill="#fef3c7"/>
+  <text x="2305" y="1385" text-anchor="middle" class="comparison-text" style="font-size: 12px;">생성 → 출력 → 공유</text>
+
+  <!-- Success reason box -->
+  <rect x="100" y="1430" width="2540" height="2" fill="#10b981"/>
+  <rect x="100" y="1432" width="2540" height="8" fill="#10b981" fill-opacity="0.3"/>
+
+  <text x="1370" y="1415" text-anchor="middle" class="highlight" fill="#10b981" style="font-size: 18px;">✅ 성공 요인</text>
+
+  <!-- Success points in 3 columns -->
+  <g id="success-points">
+    <!-- Column 1 -->
+    <text x="250" y="1425" class="comparison-text" font-weight="700" fill="#059669">1. 명확한 역할 분담</text>
+    <text x="120" y="1445" class="comparison-text" style="font-size: 11px;">• TeX: 레이아웃 계산</text>
+    <text x="120" y="1460" class="comparison-text" style="font-size: 11px;">• PS/PDF: 시각 렌더링</text>
+
+    <!-- Column 2 -->
+    <text x="1100" y="1425" class="comparison-text" font-weight="700" fill="#059669">2. 자연스러운 전환</text>
+    <text x="950" y="1445" class="comparison-text" style="font-size: 11px;">• 논리 → 물리 (일방향)</text>
+    <text x="950" y="1460" class="comparison-text" style="font-size: 11px;">• 역변환 불필요</text>
+
+    <!-- Column 3 -->
+    <text x="2000" y="1425" class="comparison-text" font-weight="700" fill="#059669">3. 패러다임 존중</text>
+    <text x="1820" y="1445" class="comparison-text" style="font-size: 11px;">• Drawing이 Typesetting 침범 안함</text>
+    <text x="1820" y="1460" class="comparison-text" style="font-size: 11px;">• 각자의 강점 활용</text>
+  </g>
+
+</svg>

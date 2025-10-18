@@ -1,0 +1,170 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900">
+  <defs>
+    <style>
+      .title-text { font-family: monospace; font-size: 52px; font-weight: bold; fill: #2c3e50; }
+      .center-text { font-family: monospace; font-size: 36px; font-weight: bold; fill: #fff; }
+      .problem-title { font-family: monospace; font-size: 26px; font-weight: bold; fill: #9c27b0; }
+      .desc-text { font-family: monospace; font-size: 16px; fill: #555; line-height: 1.5; }
+      .impact-text { font-family: monospace; font-size: 19px; fill: #3f51b5; font-weight: bold; }
+      .problem-card { fill: #f3e5f5; stroke: #9c27b0; stroke-width: 3; }
+      .center-circle { fill: #9c27b0; stroke: #6a1b9a; stroke-width: 4; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1600" height="900" fill="#fafafa"/>
+
+  <!-- Title -->
+  <text x="800" y="50" class="title-text" text-anchor="middle">MS Word AI Era Problems</text>
+
+  <!-- Central Circle with Word Logo + AI -->
+  <circle cx="800" cy="480" r="140" class="center-circle"/>
+
+  <!-- MS Word Logo in center -->
+  <g transform="translate(750, 420) scale(3.5)">
+    <path d="M18.536,2.323V4.868c3.4.019,7.12-.035,10.521.019a.783.783,0,0,1,.912.861c.054,6.266-.013,12.89.032,19.157-.02.4.009,1.118-.053,1.517-.079.509-.306.607-.817.676-.286.039-.764.034-1.045.047-2.792-.014-5.582-.011-8.374-.01l-1.175,0v2.547L2,27.133Q2,16,2,4.873L18.536,2.322" style="fill:#fff"/><path d="M18.536,5.822h10.5V26.18h-10.5V23.635h8.27V22.363h-8.27v-1.59h8.27V19.5h-8.27v-1.59h8.27V16.637h-8.27v-1.59h8.27V13.774h-8.27v-1.59h8.27V10.911h-8.27V9.321h8.27V8.048h-8.27V5.822" style="fill:#9c27b0"/><path d="M8.573,11.443c.6-.035,1.209-.06,1.813-.092.423,2.147.856,4.291,1.314,6.429.359-2.208.757-4.409,1.142-6.613.636-.022,1.272-.057,1.905-.1-.719,3.082-1.349,6.19-2.134,9.254-.531.277-1.326-.013-1.956.032-.423-2.106-.916-4.2-1.295-6.314C8.99,16.1,8.506,18.133,8.08,20.175q-.916-.048-1.839-.111c-.528-2.8-1.148-5.579-1.641-8.385.544-.025,1.091-.048,1.635-.067.328,2.026.7,4.043.986,6.072.448-2.08.907-4.161,1.352-6.241" style="fill:#9c27b0"/>
+  </g>
+
+  <!-- AI Badge -->
+  <rect x="755" y="375" width="90" height="35" fill="#7b1fa2" rx="8"/>
+  <text x="800" y="400" style="font-family: monospace; font-size: 24px; font-weight: bold; fill: #fff; text-anchor: middle;">AI ERA</text>
+
+  <!-- Central warning text -->
+  <text x="800" y="650" class="center-text" text-anchor="middle">6 NEW</text>
+  <text x="800" y="685" class="center-text" text-anchor="middle">THREATS</text>
+
+  <!-- Problem cards arranged in circular pattern -->
+
+  <!-- TOP: Problem 1 - AI Black Box -->
+  <g transform="translate(575, 80)">
+    <rect x="0" y="0" width="450" height="190" class="problem-card" rx="10"/>
+    <text x="225" y="35" class="problem-title" text-anchor="middle">🤖 AI Black Box</text>
+    <line x1="20" y1="45" x2="430" y2="45" stroke="#9c27b0" stroke-width="2"/>
+
+    <text x="20" y="75" class="desc-text">• No audit trail for AI content 🕵️</text>
+    <text x="20" y="100" class="desc-text">• Same prompt → Different result 🎲</text>
+    <text x="20" y="125" class="desc-text">• Can't verify AI contributions</text>
+    <text x="20" y="145" class="desc-text">• Non-deterministic outputs</text>
+
+    <text x="225" y="175" class="impact-text" text-anchor="middle">💥 Scientific integrity compromised</text>
+  </g>
+
+  <!-- TOP RIGHT: Problem 2 - Data Privacy -->
+  <g transform="translate(1110, 170)">
+    <rect x="0" y="0" width="460" height="190" class="problem-card" rx="10"/>
+    <text x="230" y="35" class="problem-title" text-anchor="middle">🔐 Data Privacy Nightmare</text>
+    <line x1="20" y1="45" x2="440" y2="45" stroke="#9c27b0" stroke-width="2"/>
+
+    <text x="20" y="75" class="desc-text">• Your data → Microsoft cloud ☁️</text>
+    <text x="20" y="100" class="desc-text">• Copilot trains on your docs 🧠</text>
+    <text x="20" y="125" class="desc-text">• Medical/Legal data exposed? ⚕️⚖️</text>
+    <text x="20" y="145" class="desc-text">• No on-premise option available</text>
+
+    <text x="230" y="175" class="impact-text" text-anchor="middle">💥 GDPR violations, espionage risk</text>
+  </g>
+
+  <!-- BOTTOM RIGHT: Problem 3 - Skill Degradation -->
+  <g transform="translate(1110, 555)">
+    <rect x="0" y="0" width="460" height="190" class="problem-card" rx="10"/>
+    <text x="230" y="35" class="problem-title" text-anchor="middle">📉 Skill Degradation</text>
+    <line x1="20" y1="45" x2="440" y2="45" stroke="#9c27b0" stroke-width="2"/>
+
+    <text x="20" y="75" class="desc-text">• "AI wrote it, I don't understand" 🤷</text>
+    <text x="20" y="100" class="desc-text">• Critical thinking ↓ Writing ability ↓</text>
+    <text x="20" y="125" class="desc-text">• Students learn nothing 🎓❌</text>
+    <text x="20" y="145" class="desc-text">• Academic integrity crisis</text>
+
+    <text x="230" y="175" class="impact-text" text-anchor="middle">💥 Intellectual dependency on AI</text>
+  </g>
+
+  <!-- BOTTOM: Problem 4 - Cost Explosion -->
+  <g transform="translate(575, 660)">
+    <rect x="0" y="0" width="450" height="190" class="problem-card" rx="10"/>
+    <text x="225" y="35" class="problem-title" text-anchor="middle">💸 Cost Explosion</text>
+    <line x1="20" y1="45" x2="430" y2="45" stroke="#9c27b0" stroke-width="2"/>
+
+    <text x="20" y="75" class="desc-text">• MS 365: $6-10/month</text>
+    <text x="20" y="100" class="desc-text">• +Copilot: +$30/month (300% ↑) 📈</text>
+    <text x="20" y="125" class="desc-text">• 100 users = $36,000/year 💰💰💰</text>
+    <text x="20" y="145" class="desc-text">• Small orgs priced out completely</text>
+
+    <text x="225" y="175" class="impact-text" text-anchor="middle">💥 5 years: $180,000+ total cost</text>
+  </g>
+
+  <!-- BOTTOM LEFT: Problem 5 - AI Hallucinations -->
+  <g transform="translate(30, 555)">
+    <rect x="0" y="0" width="460" height="190" class="problem-card" rx="10"/>
+    <text x="230" y="35" class="problem-title" text-anchor="middle">🤥 AI Hallucinations</text>
+    <line x1="20" y1="45" x2="440" y2="45" stroke="#9c27b0" stroke-width="2"/>
+
+    <text x="20" y="75" class="desc-text">• Fake citations, made-up facts 📚❌</text>
+    <text x="20" y="100" class="desc-text">• Statistics fabricated confidently 📊🎭</text>
+    <text x="20" y="125" class="desc-text">• Legal/Medical errors = Liability 🚨</text>
+    <text x="20" y="145" class="desc-text">• No way to detect AI mistakes</text>
+
+    <text x="230" y="175" class="impact-text" text-anchor="middle">💥 Trust erosion in documents</text>
+  </g>
+
+  <!-- TOP LEFT: Problem 6 - Double Lock-in (EMPHASIZED) -->
+  <g transform="translate(30, 170)">
+    <!-- Explosion effect background -->
+    <circle cx="230" cy="95" r="90" fill="#ff1744" opacity="0.15"/>
+    <circle cx="230" cy="95" r="70" fill="#ff1744" opacity="0.2"/>
+    <circle cx="230" cy="95" r="50" fill="#ff1744" opacity="0.25"/>
+
+    <!-- Danger border -->
+    <rect x="0" y="0" width="460" height="190" class="problem-card" rx="10" stroke="#d50000" stroke-width="4"/>
+
+    <!-- Warning stripes -->
+    <defs>
+      <pattern id="warningStripes" patternUnits="userSpaceOnUse" width="20" height="20" patternTransform="rotate(45)">
+        <rect width="10" height="20" fill="#ff6f00" opacity="0.1"/>
+      </pattern>
+    </defs>
+    <rect x="5" y="5" width="450" height="180" rx="8" fill="url(#warningStripes)"/>
+
+    <!-- Content box overlay -->
+    <rect x="5" y="5" width="450" height="180" class="problem-card" rx="8" fill="#fff9f0"/>
+
+    <!-- Explosion burst rays -->
+    <g opacity="0.3">
+      <line x1="230" y1="95" x2="180" y2="50" stroke="#ff1744" stroke-width="3"/>
+      <line x1="230" y1="95" x2="280" y2="50" stroke="#ff1744" stroke-width="3"/>
+      <line x1="230" y1="95" x2="180" y2="140" stroke="#ff1744" stroke-width="3"/>
+      <line x1="230" y1="95" x2="280" y2="140" stroke="#ff1744" stroke-width="3"/>
+      <line x1="230" y1="95" x2="150" y2="95" stroke="#ff1744" stroke-width="3"/>
+      <line x1="230" y1="95" x2="310" y2="95" stroke="#ff1744" stroke-width="3"/>
+    </g>
+
+    <!-- Chain symbols -->
+    <text x="40" y="30" style="font-size: 30px; opacity: 0.2;">🔗</text>
+    <text x="400" y="30" style="font-size: 30px; opacity: 0.2;">🔗</text>
+    <text x="40" y="170" style="font-size: 30px; opacity: 0.2;">🔗</text>
+    <text x="400" y="170" style="font-size: 30px; opacity: 0.2;">🔗</text>
+
+    <text x="230" y="35" class="problem-title" text-anchor="middle" fill="#d50000" style="font-size: 28px; font-weight: bold;">⚠️ 🔒² Double Lock-in 🔒² ⚠️</text>
+    <line x1="20" y1="45" x2="440" y2="45" stroke="#d50000" stroke-width="3"/>
+
+    <text x="20" y="75" class="desc-text" style="font-weight: bold;">• Locked to format AND AI provider 🔗🔗</text>
+    <text x="20" y="100" class="desc-text" style="font-weight: bold;">• LibreOffice? Loses AI features ❌</text>
+    <text x="20" y="125" class="desc-text" style="font-weight: bold;">• Entire workflow MS-dependent</text>
+    <text x="20" y="145" class="desc-text" style="font-weight: bold;">• AI features non-portable</text>
+
+    <text x="230" y="175" class="impact-text" text-anchor="middle" fill="#d50000" style="font-size: 17px; font-weight: bold;">💥💥💥 Zero migration path to FOSS 💥💥💥</text>
+  </g>
+
+  <!-- Connecting lines from center to problems -->
+  <line x1="800" y1="340" x2="800" y2="270" stroke="#9c27b0" stroke-width="3" stroke-dasharray="8,4" opacity="0.5"/>
+  <line x1="920" y1="380" x2="1110" y2="250" stroke="#9c27b0" stroke-width="3" stroke-dasharray="8,4" opacity="0.5"/>
+  <line x1="920" y1="580" x2="1110" y2="650" stroke="#9c27b0" stroke-width="3" stroke-dasharray="8,4" opacity="0.5"/>
+  <line x1="800" y1="620" x2="800" y2="665" stroke="#9c27b0" stroke-width="3" stroke-dasharray="8,4" opacity="0.5"/>
+  <line x1="680" y1="580" x2="490" y2="650" stroke="#9c27b0" stroke-width="3" stroke-dasharray="8,4" opacity="0.5"/>
+  <line x1="680" y1="380" x2="490" y2="250" stroke="#9c27b0" stroke-width="3" stroke-dasharray="8,4" opacity="0.5"/>
+
+  <!-- Robot icons around center -->
+  <text x="720" y="395" style="font-size: 32px;">🤖</text>
+  <text x="850" y="395" style="font-size: 32px;">🤖</text>
+  <text x="720" y="565" style="font-size: 32px;">🤖</text>
+  <text x="850" y="565" style="font-size: 32px;">🤖</text>
+
+</svg>

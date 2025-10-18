@@ -1,0 +1,440 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3200 1650">
+  <defs>
+    <!-- Gradient definitions -->
+    <linearGradient id="headerGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#7c3aed;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#a855f7;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#7c3aed;stop-opacity:1" />
+    </linearGradient>
+
+    <linearGradient id="drawingLane" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#fef3c7;stop-opacity:0.3" />
+      <stop offset="100%" style="stop-color:#fef3c7;stop-opacity:0.8" />
+    </linearGradient>
+
+    <linearGradient id="typesetLane" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#dbeafe;stop-opacity:0.3" />
+      <stop offset="100%" style="stop-color:#dbeafe;stop-opacity:0.8" />
+    </linearGradient>
+
+    <linearGradient id="markupLane" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#d1fae5;stop-opacity:0.3" />
+      <stop offset="100%" style="stop-color:#d1fae5;stop-opacity:0.8" />
+    </linearGradient>
+
+    <linearGradient id="wysiwygLane" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#f3e8ff;stop-opacity:0.3" />
+      <stop offset="100%" style="stop-color:#f3e8ff;stop-opacity:0.8" />
+    </linearGradient>
+
+    <linearGradient id="convergenceLane" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#e9d5ff;stop-opacity:0.3" />
+      <stop offset="100%" style="stop-color:#e9d5ff;stop-opacity:0.8" />
+    </linearGradient>
+
+    <!-- Arrow markers -->
+    <marker id="successArrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#10b981" />
+    </marker>
+    <marker id="failureArrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#ef4444" />
+    </marker>
+    <marker id="ongoingArrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#a855f7" />
+    </marker>
+
+    <!-- Font and Text Styles -->
+    <style>
+      text {
+        font-family: 'Noto Sans KR', 'Malgun Gothic', 'Apple SD Gothic Neo', sans-serif;
+      }
+      .main-title {
+        font-size: 52px;
+        font-weight: 900;
+        fill: white;
+      }
+      .subtitle {
+        font-size: 24px;
+        font-weight: 600;
+        fill: white;
+      }
+      .lane-label {
+        font-size: 32px;
+        font-weight: 800;
+      }
+      .decade-label {
+        font-size: 40px;
+        font-weight: 700;
+        fill: #64748b;
+      }
+      .tech-name {
+        font-size: 26px;
+        font-weight: 700;
+      }
+      .tech-year {
+        font-size: 19px;
+        font-weight: 600;
+        fill: #475569;
+      }
+      .tech-desc {
+        font-size: 17px;
+        fill: #64748b;
+      }
+      .convergence-name {
+        font-size: 24px;
+        font-weight: 700;
+        fill: #7c3aed;
+      }
+      .convergence-desc {
+        font-size: 18px;
+        fill: #6b21a8;
+      }
+      .legend-text {
+        font-size: 18px;
+        fill: #475569;
+      }
+    </style>
+  </defs>
+
+  <!-- Header -->
+  <rect x="30" y="20" width="3140" height="100" rx="15" fill="url(#headerGrad)"/>
+  <text x="1600" y="70" text-anchor="middle" class="main-title">
+    문서 패러다임 진화: 4개 언어 역사 (1950-2025)
+  </text>
+  <text x="1600" y="105" text-anchor="middle" class="subtitle">
+    Drawing · Typesetting · Markup · WYSIWYG - 독립 발전과 실패한 침범
+  </text>
+  <!-- ===== LANE 1: Drawing (저수준 외양 - 좌표 기반) ===== -->
+  <rect x="220" y="180" width="2900" height="230" fill="url(#drawingLane)" stroke="#f59e0b" stroke-width="3" rx="8"/>
+  <text x="60" y="300" text-anchor="start" class="lane-label" fill="#d97706">Drawing</text>
+  <text x="60" y="330" text-anchor="start" style="font-size: 16px; fill: #92400e; font-weight: 600;">저수준 외양</text>
+  <text x="60" y="355" text-anchor="start" style="font-size: 14px; fill: #92400e;">(좌표 제어)</text>
+
+  <!-- CalComp Plotter (1959) -->
+  <rect x="240" y="200" width="140" height="190" rx="8" fill="white" stroke="#f59e0b" stroke-width="3"/>
+  <text x="310" y="230" text-anchor="middle" class="tech-name" fill="#d97706">CalComp</text>
+  <text x="310" y="255" text-anchor="middle" class="tech-name" fill="#d97706">Plotter</text>
+  <text x="310" y="290" text-anchor="middle" class="tech-year">1959</text>
+  <text x="310" y="320" text-anchor="middle" class="tech-desc">기계적 펜 제어</text>
+  <text x="310" y="350" text-anchor="middle" class="tech-desc" font-weight="700" fill="#d97706">Drawing 원조</text>
+
+  <!-- HP-GL (1977) -->
+  <rect x="950" y="200" width="140" height="190" rx="8" fill="white" stroke="#f59e0b" stroke-width="3"/>
+  <text x="1020" y="240" text-anchor="middle" class="tech-name" fill="#d97706">HP-GL</text>
+  <text x="1020" y="280" text-anchor="middle" class="tech-year">1977</text>
+  <text x="1020" y="315" text-anchor="middle" class="tech-desc">벡터 그래픽</text>
+  <text x="1020" y="345" text-anchor="middle" class="tech-desc">PU, PD, moveto</text>
+
+  <!-- PostScript (1982) -->
+  <rect x="1180" y="200" width="140" height="190" rx="8" fill="white" stroke="#f59e0b" stroke-width="3"/>
+  <text x="1250" y="240" text-anchor="middle" class="tech-name" fill="#d97706">PostScript</text>
+  <text x="1250" y="280" text-anchor="middle" class="tech-year">1982 Adobe</text>
+  <text x="1250" y="320" text-anchor="middle" class="tech-desc">프로그래밍 언어</text>
+  <text x="1250" y="350" text-anchor="middle" class="tech-desc">프린터 표준</text>
+
+  <!-- PDF (1993) -->
+  <rect x="1550" y="200" width="140" height="190" rx="8" fill="white" stroke="#f59e0b" stroke-width="3"/>
+  <text x="1620" y="245" text-anchor="middle" class="tech-name" fill="#d97706">PDF</text>
+  <text x="1620" y="285" text-anchor="middle" class="tech-year">1993 Adobe</text>
+  <text x="1620" y="325" text-anchor="middle" class="tech-desc">PS 기반</text>
+  <text x="1620" y="355" text-anchor="middle" class="tech-desc">사실상 표준</text>
+
+  <!-- SVG (2001) -->
+  <rect x="1830" y="200" width="140" height="190" rx="8" fill="white" stroke="#f59e0b" stroke-width="3"/>
+  <text x="1900" y="245" text-anchor="middle" class="tech-name" fill="#d97706">SVG</text>
+  <text x="1900" y="285" text-anchor="middle" class="tech-year">2001 W3C</text>
+  <text x="1900" y="325" text-anchor="middle" class="tech-desc">웹 벡터 그래픽</text>
+  <text x="1900" y="355" text-anchor="middle" class="tech-desc">XML 기반</text>
+
+  <!-- Success arrows in Drawing lane -->
+  <line x1="380" y1="295" x2="950" y2="295" stroke="#10b981" stroke-width="3" stroke-dasharray="8,4" marker-end="url(#successArrow)"/>
+  <line x1="1090" y1="295" x2="1180" y2="295" stroke="#10b981" stroke-width="3" marker-end="url(#successArrow)"/>
+  <line x1="1320" y1="295" x2="1550" y2="295" stroke="#10b981" stroke-width="3" marker-end="url(#successArrow)"/>
+  <line x1="1690" y1="295" x2="1830" y2="295" stroke="#10b981" stroke-width="3" marker-end="url(#successArrow)"/>
+
+  <!-- ===== LANE 2: Typesetting (고수준 외양 - 규칙 기반) ===== -->
+  <rect x="220" y="440" width="2900" height="230" fill="url(#typesetLane)" stroke="#1e40af" stroke-width="3" rx="8"/>
+  <text x="20" y="560" text-anchor="start" class="lane-label" fill="#1e40af">Typesetting</text>
+  <text x="20" y="590" text-anchor="start" style="font-size: 16px; fill: #1e3a8a; font-weight: 600;">고수준 외양</text>
+  <text x="20" y="615" text-anchor="start" style="font-size: 14px; fill: #1e3a8a;">(규칙 기반)</text>
+
+  <!-- Gutenberg (1440) - Historical context -->
+  <rect x="240" y="460" width="140" height="190" rx="8" fill="#f1f5f9" stroke="#94a3b8" stroke-width="2" stroke-dasharray="4,4"/>
+  <text x="310" y="500" text-anchor="middle" class="tech-name" fill="#64748b">Gutenberg</text>
+  <text x="310" y="540" text-anchor="middle" class="tech-year">1440</text>
+  <text x="310" y="580" text-anchor="middle" class="tech-desc">금속 활자 조판</text>
+  <text x="310" y="615" text-anchor="middle" class="tech-desc" style="font-size: 15px; fill: #94a3b8;">(디지털 이전)</text>
+
+  <!-- TeX (1978) -->
+  <rect x="1010" y="460" width="140" height="190" rx="8" fill="white" stroke="#1e40af" stroke-width="3"/>
+  <text x="1080" y="500" text-anchor="middle" class="tech-name" fill="#1e40af">TeX</text>
+  <text x="1080" y="540" text-anchor="middle" class="tech-year">1978 Knuth</text>
+  <text x="1080" y="580" text-anchor="middle" class="tech-desc">디지털 조판</text>
+  <text x="1080" y="615" text-anchor="middle" class="tech-desc" font-weight="700" fill="#1e40af">수학 전문 혁명</text>
+
+  <!-- LaTeX (1984) -->
+  <rect x="1220" y="460" width="140" height="190" rx="8" fill="white" stroke="#1e40af" stroke-width="3"/>
+  <text x="1290" y="500" text-anchor="middle" class="tech-name" fill="#1e40af">LaTeX</text>
+  <text x="1290" y="540" text-anchor="middle" class="tech-year">1984</text>
+  <text x="1290" y="580" text-anchor="middle" class="tech-desc">TeX 매크로</text>
+  <text x="1290" y="615" text-anchor="middle" class="tech-desc">학술 표준</text>
+
+  <!-- Success arrows in Typesetting lane -->
+  <line x1="1150" y1="555" x2="1220" y2="555" stroke="#10b981" stroke-width="3" marker-end="url(#successArrow)"/>
+
+  <!-- TeX → PostScript (successful cross-paradigm) -->
+  <path d="M 1080 650 Q 1080 720, 1180 720 Q 1250 720, 1250 400"
+        stroke="#10b981" stroke-width="3" fill="none" marker-end="url(#successArrow)"/>
+  <g transform="translate(-100, 0)">
+    <rect x="1090" y="690" width="140" height="60" rx="8" fill="#d1fae5" stroke="#4aad8cff" stroke-width="2"/>
+    <text x="1160" y="715" text-anchor="middle" style="font-size: 24px; font-weight: 700; fill: #000806ff;">✓ 성공</text>
+    <text x="1160" y="738" text-anchor="middle" style="font-size: 20px; fill: #000201ff;">논리→물리</text>  
+  </g>
+
+
+  <!-- ===== LANE 3: Markup (의미/구조) ===== -->
+  <rect x="220" y="700" width="2900" height="230" fill="url(#markupLane)" stroke="#059669" stroke-width="3" rx="8"/>
+  <text x="50" y="820" text-anchor="start" class="lane-label" fill="#059669">Markup</text>
+  <text x="50" y="850" text-anchor="start" style="font-size: 16px; fill: #065f46; font-weight: 600;">의미/구조</text>
+  <text x="50" y="875" text-anchor="start" style="font-size: 14px; fill: #065f46;">(논리 표현)</text>
+
+  <!-- IBM GML (1969) -->
+  <rect x="820" y="720" width="140" height="190" rx="8" fill="white" stroke="#059669" stroke-width="3"/>
+  <text x="890" y="755" text-anchor="middle" class="tech-name" fill="#059669">IBM GML</text>
+  <text x="890" y="795" text-anchor="middle" class="tech-year">1969</text>
+  <text x="890" y="835" text-anchor="middle" class="tech-desc">법률/의료 문서</text>
+  <text x="890" y="875" text-anchor="middle" class="tech-desc" font-weight="700" fill="#059669">Markup 원조</text>
+
+  <!-- SGML (1986) -->
+  <rect x="1280" y="720" width="140" height="190" rx="8" fill="white" stroke="#059669" stroke-width="3"/>
+  <text x="1350" y="760" text-anchor="middle" class="tech-name" fill="#059669">SGML</text>
+  <text x="1350" y="800" text-anchor="middle" class="tech-year">1986 ISO</text>
+  <text x="1350" y="840" text-anchor="middle" class="tech-desc">DTD 정의</text>
+  <text x="1350" y="875" text-anchor="middle" class="tech-desc">복잡하지만 강력</text>
+
+  <!-- HTML (1991) -->
+  <rect x="1500" y="720" width="140" height="190" rx="8" fill="white" stroke="#059669" stroke-width="3"/>
+  <text x="1570" y="760" text-anchor="middle" class="tech-name" fill="#059669">HTML</text>
+  <text x="1570" y="800" text-anchor="middle" class="tech-year">1991</text>
+  <text x="1570" y="840" text-anchor="middle" class="tech-desc">웹 표준</text>
+  <text x="1570" y="875" text-anchor="middle" class="tech-desc">SGML 단순화</text>
+
+  <!-- Markdown (2004) -->
+  <rect x="1910" y="720" width="140" height="190" rx="8" fill="white" stroke="#059669" stroke-width="3"/>
+  <text x="1980" y="760" text-anchor="middle" class="tech-name" fill="#059669">Markdown</text>
+  <text x="1980" y="800" text-anchor="middle" class="tech-year">2004</text>
+  <text x="1980" y="840" text-anchor="middle" class="tech-desc">경량 마크업</text>
+  <text x="1980" y="875" text-anchor="middle" class="tech-desc">사실상 표준</text>
+
+  <!-- Success arrows in Markup lane -->
+  <line x1="960" y1="815" x2="1280" y2="815" stroke="#10b981" stroke-width="3" stroke-dasharray="8,4" marker-end="url(#successArrow)"/>
+  <line x1="1420" y1="815" x2="1500" y2="815" stroke="#10b981" stroke-width="3" marker-end="url(#successArrow)"/>
+  <line x1="1640" y1="815" x2="1910" y2="815" stroke="#10b981" stroke-width="3" stroke-dasharray="8,4" marker-end="url(#successArrow)"/>
+
+  <!-- ===== LANE 4: WYSIWYG (시각적 편집) ===== -->
+  <rect x="220" y="960" width="2900" height="230" fill="url(#wysiwygLane)" stroke="#a855f7" stroke-width="3" rx="8"/>
+  <text x="20" y="1080" text-anchor="start" class="lane-label" fill="#7c3aed">WYSIWYG</text>
+  <text x="20" y="1110" text-anchor="start" style="font-size: 16px; fill: #6b21a8; font-weight: 600;">시각적 편집</text>
+  <text x="20" y="1135" text-anchor="start" style="font-size: 14px; fill: #6b21a8;">(GUI 기반)</text>
+
+  <!-- WordStar (1978) -->
+  <rect x="930" y="980" width="140" height="190" rx="8" fill="white" stroke="#a855f7" stroke-width="3"/>
+  <text x="1000" y="1020" text-anchor="middle" class="tech-name" fill="#7c3aed">WordStar</text>
+  <text x="1000" y="1060" text-anchor="middle" class="tech-year">1978</text>
+  <text x="1000" y="1100" text-anchor="middle" class="tech-desc">초기 워드</text>
+  <text x="1000" y="1135" text-anchor="middle" class="tech-desc">프로세서</text>
+
+  <!-- WordPerfect (1982) -->
+  <rect x="1080" y="980" width="150" height="190" rx="8" fill="white" stroke="#a855f7" stroke-width="3"/>
+  <text x="1145" y="1020" text-anchor="middle" class="tech-name" fill="#7c3aed">WordPerfect</text>
+  <text x="1145" y="1060" text-anchor="middle" class="tech-year">1982</text>
+  <text x="1145" y="1100" text-anchor="middle" class="tech-desc">Reveal Codes</text>
+  <text x="1145" y="1135" text-anchor="middle" class="tech-desc">준-WYSIWYG</text>
+
+  <!-- MacWrite (1984) -->
+  <rect x="1240" y="980" width="140" height="190" rx="8" fill="white" stroke="#a855f7" stroke-width="3"/>
+  <text x="1310" y="1020" text-anchor="middle" class="tech-name" fill="#7c3aed">MacWrite</text>
+  <text x="1310" y="1060" text-anchor="middle" class="tech-year">1984 Apple</text>
+  <text x="1310" y="1100" text-anchor="middle" class="tech-desc">최초 진정한</text>
+  <text x="1310" y="1135" text-anchor="middle" class="tech-desc">WYSIWYG</text>
+
+  <!-- MS Word (1985) -->
+  <rect x="1400" y="980" width="140" height="190" rx="8" fill="white" stroke="#a855f7" stroke-width="3"/>
+  <text x="1470" y="1020" text-anchor="middle" class="tech-name" fill="#7c3aed">MS Word</text>
+  <text x="1470" y="1060" text-anchor="middle" class="tech-year">1985</text>
+  <text x="1470" y="1100" text-anchor="middle" class="tech-desc">PC WYSIWYG</text>
+  <text x="1470" y="1135" text-anchor="middle" class="tech-desc">사실상 표준</text>
+
+  <!-- Google Docs (2006) -->
+  <rect x="1970" y="980" width="140" height="190" rx="8" fill="white" stroke="#a855f7" stroke-width="3"/>
+  <text x="2040" y="1020" text-anchor="middle" class="tech-name" fill="#7c3aed">Google Docs</text>
+  <text x="2040" y="1060" text-anchor="middle" class="tech-year">2006</text>
+  <text x="2040" y="1100" text-anchor="middle" class="tech-desc">클라우드 협업</text>
+  <text x="2040" y="1135" text-anchor="middle" class="tech-desc">웹 기반</text>
+
+  <!-- Success arrows in WYSIWYG lane -->
+  <line x1="1150" y1="1075" x2="1170" y2="1075" stroke="#10b981" stroke-width="3" marker-end="url(#successArrow)"/>
+  <line x1="1320" y1="1075" x2="1400" y2="1075" stroke="#10b981" stroke-width="3" marker-end="url(#successArrow)"/>
+  <line x1="1540" y1="1075" x2="1970" y2="1075" stroke="#10b981" stroke-width="3" stroke-dasharray="8,4" marker-end="url(#successArrow)"/>
+
+  <!-- ===== LANE 5: Convergence (선택적 융합) ===== -->
+  <rect x="220" y="1220" width="2900" height="230" fill="url(#convergenceLane)" stroke="#9333ea" stroke-width="3" rx="8"/>
+  <text x="10" y="1340" text-anchor="start" class="lane-label" fill="#6b21a8">Convergence</text>
+  <text x="10" y="1370" text-anchor="start" style="font-size: 16px; fill: #581c87; font-weight: 600;">선택적 융합</text>
+  <text x="10" y="1395" text-anchor="start" style="font-size: 14px; fill: #581c87;">(패러다임 존중)</text>
+
+  <!-- Literate Programming (1984) -->
+  <rect x="1220" y="1240" width="180" height="190" rx="8" fill="white" stroke="#9333ea" stroke-width="3"/>
+  <text x="1310" y="1275" text-anchor="middle" class="convergence-name">Literate</text>
+  <text x="1310" y="1305" text-anchor="middle" class="convergence-name">Programming</text>
+  <text x="1310" y="1345" text-anchor="middle" class="tech-year">1984 Knuth</text>
+  <text x="1310" y="1380" text-anchor="middle" class="convergence-desc">코드+문서</text>
+  <rect x="1235" y="1405" width="50" height="20" fill="#dbeafe" rx="3"/>
+  <text x="1260" y="1420" text-anchor="middle" style="font-size: 13px; font-weight: 700; fill: #1e40af;">Type</text>
+  <rect x="1290" y="1405" width="50" height="20" fill="#d1fae5" rx="3"/>
+  <text x="1315" y="1420" text-anchor="middle" style="font-size: 13px; font-weight: 700; fill: #059669;">Mark</text>
+
+  <!-- Pandoc (2006) -->
+  <rect x="1970" y="1240" width="180" height="190" rx="8" fill="white" stroke="#9333ea" stroke-width="3"/>
+  <text x="2060" y="1290" text-anchor="middle" class="convergence-name">Pandoc</text>
+  <text x="2060" y="1335" text-anchor="middle" class="tech-year">2006</text>
+  <text x="2060" y="1375" text-anchor="middle" class="convergence-desc">범용 변환기</text>
+  <rect x="1980" y="1405" width="50" height="20" fill="#fef3c7" rx="3"/>
+  <text x="2005" y="1420" text-anchor="middle" style="font-size: 13px; font-weight: 700; fill: #d97706;">Draw</text>
+  <rect x="2035" y="1405" width="50" height="20" fill="#dbeafe" rx="3"/>
+  <text x="2060" y="1420" text-anchor="middle" style="font-size: 13px; font-weight: 700; fill: #1e40af;">Type</text>
+  <rect x="2090" y="1405" width="50" height="20" fill="#d1fae5" rx="3"/>
+  <text x="2115" y="1420" text-anchor="middle" style="font-size: 13px; font-weight: 700; fill: #059669;">Mark</text>
+
+  <!-- Quarto (2022) -->
+  <rect x="2380" y="1240" width="180" height="190" rx="8" fill="white" stroke="#9333ea" stroke-width="3"/>
+  <text x="2470" y="1290" text-anchor="middle" class="convergence-name">Quarto</text>
+  <text x="2470" y="1335" text-anchor="middle" class="tech-year">2022 Posit</text>
+  <text x="2470" y="1375" text-anchor="middle" class="convergence-desc">과학 출판</text>
+  <rect x="2390" y="1405" width="50" height="20" fill="#fef3c7" rx="3"/>
+  <text x="2415" y="1420" text-anchor="middle" style="font-size: 13px; font-weight: 700; fill: #d97706;">Draw</text>
+  <rect x="2445" y="1405" width="50" height="20" fill="#dbeafe" rx="3"/>
+  <text x="2470" y="1420" text-anchor="middle" style="font-size: 13px; font-weight: 700; fill: #1e40af;">Type</text>
+  <rect x="2500" y="1405" width="50" height="20" fill="#d1fae5" rx="3"/>
+  <text x="2525" y="1420" text-anchor="middle" style="font-size: 13px; font-weight: 700; fill: #059669;">Mark</text>
+
+  <!-- Gen AI (2022~) -->
+  <rect x="2640" y="1240" width="180" height="190" rx="8" fill="white" stroke="#9333ea" stroke-width="3"/>
+  <text x="2730" y="1285" text-anchor="middle" class="convergence-name">Generative</text>
+  <text x="2730" y="1315" text-anchor="middle" class="convergence-name">AI</text>
+  <text x="2730" y="1355" text-anchor="middle" class="tech-year">2022~ ChatGPT</text>
+  <rect x="2650" y="1405" width="50" height="20" fill="#fef3c7" rx="3"/>
+  <text x="2675" y="1420" text-anchor="middle" style="font-size: 13px; font-weight: 700; fill: #d97706;">Draw</text>
+  <rect x="2705" y="1405" width="50" height="20" fill="#dbeafe" rx="3"/>
+  <text x="2730" y="1420" text-anchor="middle" style="font-size: 13px; font-weight: 700; fill: #1e40af;">Type</text>
+  <rect x="2760" y="1405" width="50" height="20" fill="#d1fae5" rx="3"/>
+  <text x="2785" y="1420" text-anchor="middle" style="font-size: 13px; font-weight: 700; fill: #059669;">Mark</text>
+
+  <!-- Convergence connections (respecting paradigms) -->
+  <path d="M 1310 1240 L 1310 1190" stroke="#9333ea" stroke-width="2" stroke-dasharray="4,4"/>
+  <path d="M 1310 1190 L 1080 650" stroke="#9333ea" stroke-width="2" stroke-dasharray="4,4"/>
+
+  <path d="M 2060 1240 L 1980 1170" stroke="#9333ea" stroke-width="2" stroke-dasharray="4,4"/>
+
+  <path d="M 2470 1240 L 2470 1190" stroke="#9333ea" stroke-width="2" stroke-dasharray="4,4"/>
+  <path d="M 2470 1190 L 2060 1335" stroke="#9333ea" stroke-width="2" stroke-dasharray="4,4"/>
+
+  <!-- ===== 실패 화살표 (Failed Paradigm Invasions) ===== -->
+
+  <!-- Failure 1: WYSIWYG ↔ TeX (양방향 실패) -->
+  <!-- MS Word → TeX (위에서 아래로) -->
+  <path d="M 1470 1170 Q 1470 900, 1080 650"
+        stroke="#ef4444" stroke-width="4" fill="none"
+        marker-end="url(#failureArrow)" stroke-dasharray="10,5"/>
+  <g transform="translate(-100, 0)">
+    <rect x="1250" y="870" width="140" height="60" rx="8" fill="#fee2e2" stroke="#dc2626" stroke-width="2"/>
+    <text x="1320" y="895" text-anchor="middle" style="font-size: 20px; font-weight: 700; fill: #dc2626;">❌ MathType</text>
+    <text x="1320" y="918" text-anchor="middle" style="font-size: 16px; fill: #991b1b;">패러다임 충돌</text>
+  </g>
+
+
+  <!-- TeX → WYSIWYG (아래에서 위로) -->
+  <path d="M 1150 650 Q 1200 900, 1400 980"
+        stroke="#ef4444" stroke-width="4" fill="none"
+        marker-end="url(#failureArrow)" stroke-dasharray="10,5"/>
+
+  <!-- Failure 2: PDF/PostScript → TeX (역변환 불가) -->
+  <path d="M 1620 400 Q 1500 500, 1200 650"
+        stroke="#ef4444" stroke-width="4" fill="none"
+        marker-end="url(#failureArrow)" stroke-dasharray="10,5"/>
+  <rect x="1420" y="480" width="140" height="60" rx="8" fill="#fee2e2" stroke="#dc2626" stroke-width="2"/>
+  <text x="1490" y="505" text-anchor="middle" style="font-size: 16px; font-weight: 700; fill: #dc2626;">❌ PDF→TeX</text>
+  <text x="1490" y="528" text-anchor="middle" style="font-size: 14px; fill: #991b1b;">정보 손실</text>
+
+  <!-- Failure 3: Word → HTML (구조 손실) -->
+  <path d="M 1540 1075 Q 1600 950, 1570 815"
+        stroke="#ef4444" stroke-width="4" fill="none"
+        marker-end="url(#failureArrow)" stroke-dasharray="10,5"/>      
+  <rect x="1580" y="920" width="180" height="60" rx="8" fill="#fee2e2" stroke="#dc2626" stroke-width="2"/>
+  <text x="1670" y="945" text-anchor="middle" style="font-size: 20px; font-weight: 700; fill: #dc2626;">❌ Word→HTML</text>
+  <text x="1670" y="968" text-anchor="middle" style="font-size: 16px; fill: #991b1b;">구조 손실</text>
+
+  <!-- Timeline axis -->
+  <line x1="250" y1="1550" x2="3100" y2="1550" stroke="#94a3b8" stroke-width="3"/>
+
+  <!-- Decade markers -->
+  <text x="250" y="1600" text-anchor="middle" class="decade-label">1950</text>
+  <line x1="250" y1="1545" x2="250" y2="1555" stroke="#94a3b8" stroke-width="3"/>
+
+  <text x="550" y="1600" text-anchor="middle" class="decade-label">1960</text>
+  <line x1="550" y1="1545" x2="550" y2="1555" stroke="#94a3b8" stroke-width="3"/>
+
+  <text x="850" y="1600" text-anchor="middle" class="decade-label">1970</text>
+  <line x1="850" y1="1545" x2="850" y2="1555" stroke="#94a3b8" stroke-width="3"/>
+
+  <text x="1150" y="1600" text-anchor="middle" class="decade-label">1980</text>
+  <line x1="1150" y1="1545" x2="1150" y2="1555" stroke="#94a3b8" stroke-width="3"/>
+
+  <text x="1450" y="1600" text-anchor="middle" class="decade-label">1990</text>
+  <line x1="1450" y1="1545" x2="1450" y2="1555" stroke="#94a3b8" stroke-width="3"/>
+
+  <text x="1750" y="1600" text-anchor="middle" class="decade-label">2000</text>
+  <line x1="1750" y1="1545" x2="1750" y2="1555" stroke="#94a3b8" stroke-width="3"/>
+
+  <text x="2050" y="1600" text-anchor="middle" class="decade-label">2010</text>
+  <line x1="2050" y1="1545" x2="2050" y2="1555" stroke="#94a3b8" stroke-width="3"/>
+
+  <text x="2350" y="1600" text-anchor="middle" class="decade-label">2020</text>
+  <line x1="2350" y1="1545" x2="2350" y2="1555" stroke="#94a3b8" stroke-width="3"/>
+
+  <text x="2650" y="1600" text-anchor="middle" class="decade-label">2025</text>
+  <line x1="2650" y1="1545" x2="2650" y2="1555" stroke="#94a3b8" stroke-width="3"/>
+
+  <!-- Legend -->
+  <rect x="2850" y="180" width="290" height="380" rx="10" fill="white" stroke="#64748b" stroke-width="2"/>
+  <text x="2995" y="220" text-anchor="middle" style="font-size: 22px; font-weight: 800; fill: #1e293b;">범례</text>
+
+  <!-- 4개 패러다임 색상 -->
+  <text x="2870" y="260" style="font-size: 20px; font-weight: 700; fill: #1e293b;">패러다임:</text>
+  <rect x="2880" y="270" width="50" height="20" fill="#fef3c7" stroke="#f59e0b" stroke-width="2" rx="3"/>
+  <text x="2940" y="285" style="font-size: 15px; fill: #d97706;">Drawing</text>
+
+  <rect x="2880" y="300" width="50" height="20" fill="#dbeafe" stroke="#1e40af" stroke-width="2" rx="3"/>
+  <text x="2940" y="315" style="font-size: 18px; fill: #1e40af;">Typesetting</text>
+
+  <rect x="2880" y="330" width="50" height="20" fill="#d1fae5" stroke="#059669" stroke-width="2" rx="3"/>
+  <text x="2940" y="345" style="font-size: 18px; fill: #059669;">Markup</text>
+
+  <rect x="2880" y="360" width="50" height="20" fill="#f3e8ff" stroke="#a855f7" stroke-width="2" rx="3"/>
+  <text x="2940" y="375" style="font-size: 18px; fill: #7c3aed;">WYSIWYG</text>
+
+  <!-- 화살표 설명 -->
+  <text x="2870" y="420" style="font-size: 20px; font-weight: 700; fill: #1e293b;">화살표:</text>
+  <line x1="2880" y1="440" x2="2950" y2="440" stroke="#10b981" stroke-width="3" marker-end="url(#successArrow)"/>
+  <text x="2970" y="447" class="legend-text">성공 (같은 패러다임)</text>
+
+  <line x1="2880" y1="470" x2="2950" y2="470" stroke="#10b981" stroke-width="3" stroke-dasharray="8,4" marker-end="url(#successArrow)"/>
+  <text x="2970" y="477" class="legend-text">성공 (자연 진화)</text>
+
+  <line x1="2880" y1="500" x2="2950" y2="500" stroke="#ef4444" stroke-width="4" stroke-dasharray="10,5" marker-end="url(#failureArrow)"/>
+  <text x="2970" y="507" class="legend-text" fill="#dc2626">실패 (패러다임 침범)</text>
+
+  <line x1="2880" y1="530" x2="2950" y2="530" stroke="#9333ea" stroke-width="2" stroke-dasharray="4,4"/>
+  <text x="2970" y="537" class="legend-text">융합 (패러다임 존중)</text>
+
+</svg>

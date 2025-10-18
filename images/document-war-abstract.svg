@@ -1,0 +1,262 @@
+<svg viewBox="0 0 1600 1400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .title { font-family: 'Noto Sans KR', system-ui, sans-serif; font-size: 52px; font-weight: 800; fill: #0f172a; }
+      .subtitle { font-family: 'Noto Sans KR', system-ui, sans-serif; font-size: 26px; font-weight: 600; fill: #475569; }
+      .force-label { font-family: 'Noto Sans KR', system-ui, sans-serif; font-size: 28px; font-weight: 700; fill: white; }
+      .force-size { font-family: 'Noto Sans KR', system-ui, sans-serif; font-size: 22px; font-weight: 600; }
+      .force-desc { font-family: 'Noto Sans KR', system-ui, sans-serif; font-size: 18px; font-weight: 500; }
+      .connection-label { font-family: 'Noto Sans KR', system-ui, sans-serif; font-size: 20px; font-weight: 700; }
+      .note { font-family: 'Noto Sans KR', system-ui, sans-serif; font-size: 18px; fill: #64748b; }
+      .conclusion { font-family: 'Noto Sans KR', system-ui, sans-serif; font-size: 24px; font-weight: 700; }
+    </style>
+
+    <!-- Glows -->
+    <filter id="glow-strong">
+      <feGaussianBlur stdDeviation="8" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="glow-weak">
+      <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#0f172a" flood-opacity="0.3"/>
+    </filter>
+
+    <!-- Arrow markers -->
+    <marker id="arrow-attack" markerWidth="14" markerHeight="14" refX="12" refY="7" orient="auto">
+      <polygon points="0 0, 14 7, 0 14, 3 7" fill="#ef4444" stroke="#991b1b" stroke-width="2"/>
+    </marker>
+
+    <marker id="arrow-alliance" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <polygon points="0 0, 12 6, 0 12" fill="none" stroke="#22c55e" stroke-width="3"/>
+    </marker>
+
+    <marker id="arrow-block" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <polygon points="0 0, 12 6, 0 12" fill="none" stroke="#94a3b8" stroke-width="2"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1600" height="1400" fill="#f8fafc"/>
+
+  <!-- Title -->
+  <text x="800" y="65" text-anchor="middle" class="title">AI 시대 문서편집기 세력도</text>
+  <text x="800" y="105" text-anchor="middle" class="subtitle">3대 진영 + 고립국의 생존 게임</text>
+
+  <!-- Center: Microsoft Empire (Dominant force) -->
+  <g id="microsoft-center">
+    <!-- Giant circle representing dominance -->
+    <circle cx="800" cy="400" r="180" fill="#0078d4" opacity="0.15" filter="url(#glow-strong)"/>
+    <circle cx="800" cy="400" r="140" fill="#0078d4" opacity="0.3"/>
+    <circle cx="800" cy="400" r="100" fill="#0078d4" filter="url(#shadow)"/>
+
+    <text x="800" y="390" text-anchor="middle" class="force-label">🏰 MS</text>
+    <text x="800" y="425" text-anchor="middle" class="force-size" fill="white">85%</text>
+
+    <!-- Radiating dominance lines -->
+    <circle cx="800" cy="400" r="210" fill="none" stroke="#0078d4" stroke-width="3" stroke-dasharray="10,5" opacity="0.5"/>
+    <circle cx="800" cy="400" r="240" fill="none" stroke="#0078d4" stroke-width="2" stroke-dasharray="15,8" opacity="0.3"/>
+
+    <!-- Labels around MS -->
+    <text x="800" y="510" text-anchor="middle" class="force-desc" fill="#0078d4">Copilot AI + 글로벌 지배</text>
+  </g>
+
+  <!-- Left: Western Alliance (Resistance) -->
+  <g id="western-alliance">
+    <!-- Google circle -->
+    <circle cx="250" cy="650" r="75" fill="#4285f4" opacity="0.25"/>
+    <circle cx="250" cy="650" r="55" fill="#4285f4" filter="url(#shadow)"/>
+    <text x="250" y="660" text-anchor="middle" class="force-label" style="font-size: 24px;">🚀</text>
+    <text x="250" y="735" text-anchor="middle" class="force-size" fill="#1967d2">10%</text>
+    <text x="250" y="760" text-anchor="middle" class="force-desc" fill="#1967d2">Google</text>
+
+    <!-- LibreOffice circle -->
+    <circle cx="250" cy="900" r="75" fill="#18a303" opacity="0.25"/>
+    <circle cx="250" cy="900" r="55" fill="#18a303" filter="url(#shadow)"/>
+    <text x="250" y="910" text-anchor="middle" class="force-label" style="font-size: 24px;">🛡️</text>
+    <text x="250" y="985" text-anchor="middle" class="force-size" fill="#166534">5%</text>
+    <text x="250" y="1010" text-anchor="middle" class="force-desc" fill="#166534">LibreOffice</text>
+
+    <!-- Alliance connection -->
+    <line x1="250" y1="725" x2="250" y2="825" stroke="#22c55e" stroke-width="6" stroke-dasharray="12,6" marker-end="url(#arrow-alliance)"/>
+    <rect x="160" y="760" width="180" height="50" rx="10" fill="white" stroke="#22c55e" stroke-width="3"/>
+    <text x="250" y="780" text-anchor="middle" class="connection-label" fill="#16a34e">🤝 서방동맹</text>
+    <text x="250" y="800" text-anchor="middle" style="font-size: 16px; fill: #166534;">ODF 표준</text>
+
+    <!-- Combined territory -->
+    <ellipse cx="250" cy="775" rx="180" ry="270" fill="none" stroke="#22c55e" stroke-width="4" stroke-dasharray="15,10" opacity="0.6"/>
+    <text x="80" y="780" text-anchor="middle" class="force-desc" fill="#16a34e">🇪🇺 EU</text>
+    <text x="80" y="805" text-anchor="middle" style="font-size: 16px; fill: #166534;">디지털주권</text>
+  </g>
+
+  <!-- Right: Eastern Bloc (Regional Power) -->
+  <g id="eastern-bloc">
+    <!-- China WPS circle -->
+    <circle cx="1350" cy="650" r="75" fill="#f97316" opacity="0.25"/>
+    <circle cx="1350" cy="650" r="55" fill="#f97316" filter="url(#shadow)"/>
+    <text x="1350" y="660" text-anchor="middle" class="force-label" style="font-size: 24px;">🐉</text>
+    <text x="1350" y="735" text-anchor="middle" class="force-size" fill="#c2410c">4%</text>
+    <text x="1350" y="760" text-anchor="middle" class="force-desc" fill="#c2410c">중국 WPS</text>
+
+    <!-- Russia MyOffice circle -->
+    <circle cx="1350" cy="900" r="65" fill="#8b5cf6" opacity="0.25"/>
+    <circle cx="1350" cy="900" r="45" fill="#8b5cf6" filter="url(#shadow)"/>
+    <text x="1350" y="910" text-anchor="middle" class="force-label" style="font-size: 20px;">🛡️</text>
+    <text x="1350" y="975" text-anchor="middle" class="force-size" fill="#6b21a8">1%</text>
+    <text x="1350" y="1000" text-anchor="middle" class="force-desc" fill="#6b21a8">러시아</text>
+
+    <!-- Alliance connection -->
+    <line x1="1350" y1="725" x2="1350" y2="835" stroke="#f59e0b" stroke-width="6" stroke-dasharray="12,6" marker-end="url(#arrow-alliance)"/>
+    <rect x="1260" y="765" width="180" height="50" rx="10" fill="white" stroke="#f59e0b" stroke-width="3"/>
+    <text x="1350" y="785" text-anchor="middle" class="connection-label" fill="#c2410c">🤝 동방연합</text>
+    <text x="1350" y="805" text-anchor="middle" style="font-size: 16px; fill: #c2410c;">반서방</text>
+
+    <!-- Combined territory -->
+    <ellipse cx="1350" cy="775" rx="180" ry="260" fill="none" stroke="#f59e0b" stroke-width="4" stroke-dasharray="15,10" opacity="0.6"/>
+    <text x="1520" y="780" text-anchor="middle" class="force-desc" fill="#c2410c">🇨🇳 중화권</text>
+    <text x="1520" y="805" text-anchor="middle" style="font-size: 16px; fill: #c2410c;">기술자립</text>
+  </g>
+
+  <!-- Bottom: Korea HWP (Isolated) -->
+  <g id="korea-isolated">
+    <!-- Isolation circles -->
+    <circle cx="800" cy="1100" r="130" fill="none" stroke="#dc2626" stroke-width="4" stroke-dasharray="8,4" opacity="0.6"/>
+    <circle cx="800" cy="1100" r="100" fill="none" stroke="#991b1b" stroke-width="3" stroke-dasharray="5,5" opacity="0.5"/>
+    <circle cx="800" cy="1100" r="70" fill="none" stroke="#7f1d1d" stroke-width="2" opacity="0.4"/>
+
+    <!-- HWP island -->
+    <circle cx="800" cy="1100" r="50" fill="#dc2626" opacity="0.3"/>
+    <circle cx="800" cy="1100" r="35" fill="#dc2626" filter="url(#shadow)"/>
+    <text x="800" y="1110" text-anchor="middle" class="force-label" style="font-size: 20px;">🏝️</text>
+    <text x="800" y="1165" text-anchor="middle" class="force-size" fill="#7f1d1d">0.1%</text>
+    <text x="800" y="1190" text-anchor="middle" class="force-desc" fill="#7f1d1d">한국 HWP</text>
+
+    <!-- Isolation barriers -->
+    <text x="680" y="1105" text-anchor="middle" style="font-size: 22px; fill: #dc2626; font-weight: 700;">🚫</text>
+    <text x="920" y="1105" text-anchor="middle" style="font-size: 22px; fill: #dc2626; font-weight: 700;">🚫</text>
+    <text x="800" y="1000" text-anchor="middle" style="font-size: 22px; fill: #dc2626; font-weight: 700;">🚫</text>
+    <text x="800" y="1230" text-anchor="middle" style="font-size: 20px; fill: #7f1d1d; font-weight: 700;">완전 고립</text>
+  </g>
+
+  <!-- Attack arrows from MS to all -->
+  <g id="attack-lines">
+    <!-- MS attacking Western Alliance -->
+    <path d="M 660 420 Q 450 500 300 620" stroke="#ef4444" stroke-width="5" fill="none" marker-end="url(#arrow-attack)" opacity="0.7"/>
+    <text x="470" y="500" text-anchor="middle" style="font-size: 18px; fill: #991b1b; font-weight: 700;">💰 가격전</text>
+
+    <!-- MS attacking Eastern Bloc -->
+    <path d="M 940 420 Q 1150 500 1300 620" stroke="#ef4444" stroke-width="5" fill="none" marker-end="url(#arrow-attack)" opacity="0.7"/>
+    <text x="1130" y="500" text-anchor="middle" style="font-size: 18px; fill: #991b1b; font-weight: 700;">🌐 시장침투</text>
+
+    <!-- MS attacking Korea (strongest) -->
+    <path d="M 800 500 L 800 1040" stroke="#ef4444" stroke-width="8" fill="none" marker-end="url(#arrow-attack)" opacity="0.8"/>
+    <text x="840" y="770" text-anchor="start" style="font-size: 22px; fill: #991b1b; font-weight: 800;">⚔️</text>
+    <text x="840" y="800" text-anchor="start" style="font-size: 18px; fill: #991b1b; font-weight: 700;">표준전쟁</text>
+  </g>
+
+  <!-- Blocked connections -->
+  <g id="blocked-lines">
+    <!-- MS blocked by China firewall -->
+    <path d="M 940 380 Q 1150 380 1290 600" stroke="#94a3b8" stroke-width="3" fill="none" stroke-dasharray="8,4" opacity="0.6"/>
+    <text x="1115" y="360" text-anchor="middle" style="font-size: 16px; fill: #64748b; font-style: italic;">❌ 방화벽 차단</text>
+
+    <!-- LibreOffice trying to help Korea (ignored) -->
+    <path d="M 325 930 Q 550 1000 735 1100" stroke="#94a3b8" stroke-width="3" fill="none" stroke-dasharray="8,4" opacity="0.6"/>
+    <text x="520" y="1015" text-anchor="middle" style="font-size: 16px; fill: #64748b; font-style: italic;">📞 지원 제안 (무응답)</text>
+
+    <!-- Russia-LibreOffice ODF loose cooperation -->
+    <path d="M 325 870 Q 800 820 1285 870" stroke="#22c55e" stroke-width="2" fill="none" stroke-dasharray="12,8" opacity="0.4"/>
+    <text x="800" y="805" text-anchor="middle" style="font-size: 15px; fill: #166534; font-style: italic;">🔗 ODF 느슨한 협력</text>
+  </g>
+
+  <!-- Size comparison legend -->
+  <g id="legend" transform="translate(50, 180)">
+    <rect x="0" y="0" width="280" height="320" rx="12" fill="white" stroke="#cbd5e1" stroke-width="3" filter="url(#shadow)"/>
+    <text x="140" y="35" text-anchor="middle" style="font-size: 22px; font-weight: 700; fill: #1e293b;">⚖️ 세력 비교</text>
+
+    <!-- MS -->
+    <circle cx="50" cy="80" r="28" fill="#0078d4"/>
+    <text x="90" y="70" style="font-size: 18px; font-weight: 700; fill: #0078d4;">MS Office</text>
+    <text x="90" y="90" style="font-size: 16px; fill: #64748b;">85% | 3조$</text>
+
+    <!-- Google -->
+    <circle cx="50" cy="135" r="18" fill="#4285f4"/>
+    <text x="80" y="130" style="font-size: 17px; font-weight: 700; fill: #1967d2;">Google</text>
+    <text x="80" y="148" style="font-size: 15px; fill: #64748b;">10% | 교육</text>
+
+    <!-- LibreOffice -->
+    <circle cx="50" cy="185" r="16" fill="#18a303"/>
+    <text x="78" y="180" style="font-size: 17px; font-weight: 700; fill: #166534;">LibreOffice</text>
+    <text x="78" y="198" style="font-size: 15px; fill: #64748b;">5% | EU</text>
+
+    <!-- China -->
+    <circle cx="50" cy="233" r="15" fill="#f97316"/>
+    <text x="77" y="228" style="font-size: 17px; font-weight: 700; fill: #c2410c;">중국 WPS</text>
+    <text x="77" y="246" style="font-size: 15px; fill: #64748b;">4% | 중화권</text>
+
+    <!-- Russia -->
+    <circle cx="50" cy="280" r="12" fill="#8b5cf6"/>
+    <text x="74" y="276" style="font-size: 17px; font-weight: 700; fill: #6b21a8;">러시아</text>
+    <text x="74" y="294" style="font-size: 15px; fill: #64748b;">1% | 공공</text>
+
+    <!-- HWP -->
+    <circle cx="50" cy="320" r="6" fill="#dc2626"/>
+    <text x="66" y="318" style="font-size: 17px; font-weight: 700; fill: #7f1d1d;">HWP 🏝️</text>
+    <text x="66" y="336" style="font-size: 15px; fill: #991b1b;">0.1% | 고립</text>
+  </g>
+
+  <!-- Strategy comparison -->
+  <g id="strategy-comparison" transform="translate(1270, 180)">
+    <rect x="0" y="0" width="280" height="320" rx="12" fill="white" stroke="#cbd5e1" stroke-width="3" filter="url(#shadow)"/>
+    <text x="140" y="35" text-anchor="middle" style="font-size: 22px; font-weight: 700; fill: #1e293b;">🎯 생존 전략</text>
+
+    <!-- MS -->
+    <text x="15" y="70" style="font-size: 17px; font-weight: 700; fill: #0078d4;">🏰 MS</text>
+    <text x="15" y="88" style="font-size: 14px; fill: #475569;">AI 선점 + 락인</text>
+    <rect x="15" y="92" width="240" height="8" rx="4" fill="#0078d4"/>
+    <text x="260" y="100" text-anchor="end" style="font-size: 13px; fill: #0078d4; font-weight: 700;">승리 95%</text>
+
+    <!-- Western -->
+    <text x="15" y="130" style="font-size: 17px; font-weight: 700; fill: #22c55e;">🤝 서방</text>
+    <text x="15" y="148" style="font-size: 14px; fill: #475569;">ODF + 협력</text>
+    <rect x="15" y="152" width="160" height="8" rx="4" fill="#22c55e"/>
+    <text x="180" y="160" text-anchor="end" style="font-size: 13px; fill: #16a34e; font-weight: 700;">생존 65%</text>
+
+    <!-- Eastern -->
+    <text x="15" y="190" style="font-size: 17px; font-weight: 700; fill: #f59e0b;">🤝 동방</text>
+    <text x="15" y="208" style="font-size: 14px; fill: #475569;">자립 + 방어</text>
+    <rect x="15" y="212" width="200" height="8" rx="4" fill="#f59e0b"/>
+    <text x="220" y="220" text-anchor="end" style="font-size: 13px; fill: #c2410c; font-weight: 700;">방어 80%</text>
+
+    <!-- HWP -->
+    <text x="15" y="260" style="font-size: 17px; font-weight: 700; fill: #dc2626;">🏝️ HWP</text>
+    <text x="15" y="278" style="font-size: 14px; fill: #991b1b;">고립 + 낙후</text>
+    <rect x="15" y="282" width="30" height="8" rx="4" fill="#dc2626"/>
+    <text x="50" y="290" text-anchor="start" style="font-size: 13px; fill: #7f1d1d; font-weight: 700;">패배 95%</text>
+
+    <line x1="15" y1="305" x2="265" y2="305" stroke="#cbd5e1" stroke-width="2"/>
+    <text x="140" y="328" text-anchor="middle" style="font-size: 15px; fill: #0f172a; font-weight: 700;">핵심: 동맹 vs 고립</text>
+  </g>
+
+  <!-- Bottom conclusion -->
+  <rect x="50" y="1270" width="1500" height="110" rx="15" fill="white" stroke="#1e3a8a" stroke-width="4" filter="url(#shadow)"/>
+  <text x="800" y="1310" text-anchor="middle" class="conclusion" fill="#1e3a8a">
+    ⚔️ 결론: AI 시대는 "표준 + 협력 + AI" 진영이 승리
+  </text>
+  <text x="800" y="1343" text-anchor="middle" style="font-size: 22px; fill: #0f172a; font-weight: 600;">
+    🏰 MS 제국 지배 vs 🤝 동맹 생존 vs 🏝️ 고립 멸망
+  </text>
+  <text x="800" y="1370" text-anchor="middle" style="font-size: 18px; fill: #dc2626; font-weight: 700;">
+    💀 한국 HWP: 세계 유일 "동맹 제로" 고립국 → ISO ODF 전환만이 유일한 생존 전략
+  </text>
+</svg>

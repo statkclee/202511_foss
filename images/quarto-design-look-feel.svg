@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 1000 600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .title { font-family: 'ET Book', 'Palatino Linotype', 'Book Antiqua', Palatino, serif; font-size: 18px; font-weight: bold; fill: #333; }
+      .subtitle { font-family: 'ET Book', 'Palatino Linotype', 'Book Antiqua', Palatino, serif; font-size: 16px; font-weight: 600; fill: #555; }
+      .label { font-family: 'ET Book', 'Palatino Linotype', 'Book Antiqua', Palatino, serif; font-size: 15px; font-weight: 500; fill: #333; }
+      .sub-label { font-family: 'ET Book', 'Palatino Linotype', 'Book Antiqua', Palatino, serif; font-size: 13px; fill: #555; }
+      .code { font-family: 'Consolas', 'Monaco', 'Courier New', monospace; font-size: 12px; fill: #666; }
+      .small-code { font-family: 'Consolas', 'Monaco', 'Courier New', monospace; font-size: 11px; fill: #666; }
+    </style>
+  </defs>
+
+  <!-- 배경 -->
+  <rect width="1000" height="600" fill="#fafafa"/>
+
+  <!-- 제목 -->
+  <text x="500" y="40" text-anchor="middle" class="title">Quarto Design: Look and Feel</text>
+  <text x="500" y="65" text-anchor="middle" class="sub-label">테마, 스타일, 레이아웃 제어</text>
+
+  <!-- 왼쪽: YAML 설정 -->
+  <rect x="50" y="100" width="280" height="450" rx="3" fill="#F7FBFF" stroke="#4A90E2" stroke-width="2"/>
+  <text x="190" y="130" text-anchor="middle" class="subtitle">YAML 설정</text>
+
+  <!-- YAML 코드 블록 -->
+  <rect x="70" y="150" width="240" height="380" rx="3" fill="#ffffff" stroke="#ddd" stroke-width="1"/>
+
+  <text x="80" y="170" class="code">---</text>
+  <text x="80" y="187" class="small-code">title: "연구 보고서"</text>
+  <text x="80" y="204" class="small-code">author: "홍길동"</text>
+  <text x="80" y="221" class="small-code">format:</text>
+
+  <text x="80" y="243" class="small-code" fill="#4A90E2">  html:</text>
+  <text x="90" y="260" class="small-code">    theme: cosmo</text>
+  <text x="90" y="277" class="small-code">    toc: true</text>
+  <text x="90" y="294" class="small-code">    code-fold: true</text>
+
+  <text x="80" y="316" class="small-code" fill="#4A90E2">  pdf:</text>
+  <text x="90" y="333" class="small-code">    documentclass: article</text>
+  <text x="90" y="350" class="small-code">    fontsize: 11pt</text>
+  <text x="90" y="367" class="small-code">    geometry: margin=1in</text>
+
+  <text x="80" y="389" class="small-code" fill="#4A90E2">  docx:</text>
+  <text x="90" y="406" class="small-code">    reference-doc: custom.docx</text>
+
+  <text x="80" y="428" class="small-code">execute:</text>
+  <text x="90" y="445" class="small-code">  echo: false</text>
+  <text x="80" y="462" class="code">---</text>
+
+  <!-- 중앙: 테마 옵션 -->
+  <rect x="360" y="100" width="280" height="220" rx="3" fill="#F8F4FF" stroke="#8E44AD" stroke-width="2"/>
+  <text x="500" y="130" text-anchor="middle" class="subtitle">내장 테마</text>
+
+  <g transform="translate(380, 160)">
+    <text x="0" y="0" class="sub-label">HTML 테마:</text>
+    <text x="10" y="20" class="small-code">• default, cosmo, flatly</text>
+    <text x="10" y="36" class="small-code">• darkly, minty, litera</text>
+    <text x="10" y="52" class="small-code">• pulse, sandstone, sketchy</text>
+
+    <text x="0" y="78" class="sub-label">PDF 엔진:</text>
+    <text x="10" y="98" class="small-code">• pdflatex, xelatex, lualatex</text>
+
+    <text x="0" y="124" class="sub-label">문서 클래스:</text>
+    <text x="10" y="144" class="small-code">• article, report, book</text>
+  </g>
+
+  <!-- 중앙 하단: 커스텀 스타일 -->
+  <rect x="360" y="330" width="280" height="220" rx="3" fill="#F5F5F5" stroke="#999" stroke-width="1.5"/>
+  <text x="500" y="360" text-anchor="middle" class="subtitle">커스텀 스타일</text>
+
+  <g transform="translate(380, 385)">
+    <text x="0" y="0" class="sub-label">CSS/SCSS:</text>
+    <text x="10" y="20" class="small-code">theme: [cosmo, custom.scss]</text>
+
+    <text x="0" y="46" class="sub-label">LaTeX 템플릿:</text>
+    <text x="10" y="66" class="small-code">template: custom.tex</text>
+
+    <text x="0" y="92" class="sub-label">Word 참조 문서:</text>
+    <text x="10" y="112" class="small-code">reference-doc: style.docx</text>
+
+    <text x="0" y="138" class="sub-label">필터 및 확장:</text>
+    <text x="10" y="158" class="small-code">filters: [custom-filter.lua]</text>
+  </g>
+
+  <!-- 우측: 레이아웃 제어 -->
+  <rect x="670" y="100" width="280" height="450" rx="3" fill="#F7FBFF" stroke="#4A90E2" stroke-width="2"/>
+  <text x="810" y="130" text-anchor="middle" class="subtitle">레이아웃 제어</text>
+
+  <g transform="translate(690, 160)">
+    <text x="0" y="0" class="label">페이지 설정</text>
+    <text x="10" y="22" class="small-code">page-layout: article</text>
+    <text x="10" y="38" class="small-code">            full</text>
+    <text x="10" y="54" class="small-code">            custom</text>
+
+    <text x="0" y="82" class="label">목차 (TOC)</text>
+    <text x="10" y="104" class="small-code">toc: true</text>
+    <text x="10" y="120" class="small-code">toc-depth: 3</text>
+    <text x="10" y="136" class="small-code">toc-location: left</text>
+
+    <text x="0" y="164" class="label">코드 블록</text>
+    <text x="10" y="186" class="small-code">code-fold: true</text>
+    <text x="10" y="202" class="small-code">code-tools: true</text>
+    <text x="10" y="218" class="small-code">code-line-numbers: true</text>
+
+    <text x="0" y="246" class="label">그림 및 표</text>
+    <text x="10" y="268" class="small-code">fig-width: 8</text>
+    <text x="10" y="284" class="small-code">fig-height: 6</text>
+    <text x="10" y="300" class="small-code">fig-align: center</text>
+
+    <text x="0" y="328" class="label">다단 레이아웃</text>
+    <text x="10" y="350" class="small-code">::: {.columns}</text>
+    <text x="10" y="366" class="small-code">::: {.column width="50%"}</text>
+  </g>
+
+  <!-- 하단 주석 -->
+  <rect x="50" y="570" width="900" height="20" fill="#f8f9fa" stroke="#ddd" stroke-width="1" rx="3"/>
+  <text x="500" y="585" text-anchor="middle" class="code" fill="#999">
+    한 번의 YAML 설정으로 모든 출력 형식의 디자인을 일관되게 제어
+  </text>
+</svg>

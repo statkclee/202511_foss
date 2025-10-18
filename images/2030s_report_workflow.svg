@@ -1,0 +1,202 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 30 1200 930">
+  <defs>
+    <style>
+      .title { font-family: monospace; font-size: 28px; font-weight: bold; fill: #2c3e50; }
+      .subtitle { font-family: monospace; font-size: 16px; fill: #7f8c8d; }
+      .box-title { font-family: monospace; font-size: 18px; font-weight: bold; fill: #2c3e50; }
+      .box-text { font-family: monospace; font-size: 12px; fill: #34495e; }
+      .tool-text { font-family: monospace; font-size: 11px; fill: #16a085; font-weight: bold; }
+      .agi-box { fill: #e8eaf6; stroke: #3f51b5; stroke-width: 4; }
+      .agent-box { fill: #f3e5f5; stroke: #9c27b0; stroke-width: 3; }
+      .human-box { fill: #fff9c4; stroke: #f57f17; stroke-width: 3; }
+      .quantum-box { fill: #e0f2f1; stroke: #00695c; stroke-width: 3; }
+      .question { font-family: monospace; font-size: 11px; fill: #e74c3c; font-style: italic; }
+    </style>
+    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#7f8c8d" />
+    </marker>
+    <marker id="bidirectional" markerWidth="10" markerHeight="10" refX="5" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#9c27b0" />
+    </marker>
+  </defs>
+
+  <!-- Title -->
+  <text x="600" y="70" class="title" text-anchor="middle">The AGI Era: From Human-in-the-Loop to Human-on-the-Loop?</text>
+
+  <!-- Layer 0: Intent Layer -->
+  <rect x="30" y="95" width="540" height="65" class="human-box" rx="5"/>
+  <text x="300" y="118" class="box-title" text-anchor="middle">Human Intent Layer</text>
+  <text x="300" y="138" class="tool-text" text-anchor="middle">Natural Language → Multimodal Input</text>
+  <text x="300" y="153" class="box-text" text-anchor="middle">"Analyze Q3 revenue trends and prepare board report"</text>
+
+  <!-- Arrow to AGI -->
+  <line x1="570" y1="127" x2="610" y2="127" stroke="#9c27b0" stroke-width="2" marker-end="url(#bidirectional)"/>
+  <line x1="610" y1="127" x2="570" y2="127" stroke="#9c27b0" stroke-width="2" marker-start="url(#bidirectional)"/>
+  <text x="590" y="120" class="tool-text" text-anchor="middle" font-size="20">Dialog</text>
+
+  <!-- AGI Orchestrator -->
+  <rect x="610" y="95" width="560" height="65" class="agi-box" rx="5"/>
+  <text x="890" y="118" class="box-title" text-anchor="middle">🧠 AGI Orchestrator</text>
+  <text x="890" y="138" class="tool-text" text-anchor="middle">GPT-7? | Claude Opus 5? | Gemini Ultra 3?</text>
+  <text x="890" y="153" class="box-text" text-anchor="middle">Reasoning | Planning | Verification | Self-Correction | Multi-Agent Coordination</text>
+
+  <!-- Arrow Down -->
+  <line x1="600" y1="165" x2="600" y2="195" stroke="#7f8c8d" stroke-width="2" marker-end="url(#arrowhead)"/>
+
+  <!-- Layer 1: Autonomous Data Pipeline -->
+  <rect x="30" y="195" width="1140" height="35" class="agent-box" rx="3"/>
+  <text x="600" y="218" class="box-title" text-anchor="middle">1. Autonomous Data Agents: Self-Assembling Pipelines</text>
+
+  <rect x="50" y="245" width="220" height="135" class="agent-box" rx="5"/>
+  <text x="160" y="268" class="tool-text" text-anchor="middle">Data Discovery Agent</text>
+  <text x="160" y="288" class="box-text" text-anchor="middle">Semantic Search</text>
+  <text x="160" y="303" class="box-text" text-anchor="middle">Auto Data Catalog</text>
+  <text x="160" y="318" class="box-text" text-anchor="middle">Privacy-Aware</text>
+  <text x="160" y="333" class="box-text" text-anchor="middle">Cross-Org Federated</text>
+  <text x="160" y="348" class="box-text" text-anchor="middle">Real-time Lineage</text>
+  <text x="160" y="363" class="box-text" text-anchor="middle">Blockchain Audit</text>
+
+  <rect x="290" y="245" width="220" height="135" class="quantum-box" rx="5"/>
+  <text x="400" y="268" class="tool-text" text-anchor="middle">Quantum Computing</text>
+  <text x="400" y="288" class="box-text" text-anchor="middle">Quantum ML</text>
+  <text x="400" y="303" class="box-text" text-anchor="middle">Optimization</text>
+  <text x="400" y="318" class="box-text" text-anchor="middle">Cryptography</text>
+  <text x="400" y="333" class="box-text" text-anchor="middle">Simulation</text>
+  <text x="400" y="348" class="box-text" text-anchor="middle">Post-Quantum</text>
+  <text x="400" y="363" class="question">Maybe?</text>
+
+  <rect x="530" y="245" width="220" height="135" class="agent-box" rx="5"/>
+  <text x="640" y="268" class="tool-text" text-anchor="middle">Ethical AI Agent</text>
+  <text x="640" y="288" class="box-text" text-anchor="middle">Bias Detection</text>
+  <text x="640" y="303" class="box-text" text-anchor="middle">Fairness Check</text>
+  <text x="640" y="318" class="box-text" text-anchor="middle">Privacy Preserve</text>
+  <text x="640" y="333" class="box-text" text-anchor="middle">Explainability</text>
+  <text x="640" y="348" class="box-text" text-anchor="middle">EU AI Act Compliance</text>
+  <text x="640" y="363" class="box-text" text-anchor="middle">Auto Documentation</text>
+
+  <rect x="770" y="245" width="200" height="135" class="agent-box" rx="5"/>
+  <text x="870" y="268" class="tool-text" text-anchor="middle">Synthesis Agent</text>
+  <text x="870" y="288" class="box-text" text-anchor="middle">Multi-Modal Fusion</text>
+  <text x="870" y="303" class="box-text" text-anchor="middle">Text/Image/Video</text>
+  <text x="870" y="318" class="box-text" text-anchor="middle">Sensor/IoT</text>
+  <text x="870" y="333" class="box-text" text-anchor="middle">Brain-Computer</text>
+  <text x="870" y="348" class="box-text" text-anchor="middle">Interface?</text>
+  <text x="870" y="363" class="question">Sci-Fi?</text>
+
+  <rect x="990" y="245" width="180" height="135" class="agent-box" rx="5"/>
+  <text x="1080" y="268" class="tool-text" text-anchor="middle">Verification Agent</text>
+  <text x="1080" y="288" class="box-text" text-anchor="middle">Formal Methods</text>
+  <text x="1080" y="303" class="box-text" text-anchor="middle">Proof Generation</text>
+  <text x="1080" y="318" class="box-text" text-anchor="middle">Causal Inference</text>
+  <text x="1080" y="333" class="box-text" text-anchor="middle">Counterfactual</text>
+  <text x="1080" y="348" class="box-text" text-anchor="middle">P-hacking Detect</text>
+
+  <!-- Arrow Down -->
+  <line x1="600" y1="385" x2="600" y2="415" stroke="#7f8c8d" stroke-width="2" marker-end="url(#arrowhead)"/>
+
+  <!-- Layer 2: Analysis -->
+  <rect x="30" y="415" width="1140" height="35" class="agi-box" rx="3"/>
+  <text x="600" y="438" class="box-title" text-anchor="middle">2. Foundation Model Everything: Models as Infrastructure</text>
+
+  <rect x="50" y="465" width="270" height="135" class="agi-box" rx="5"/>
+  <text x="185" y="488" class="tool-text" text-anchor="middle">Multimodal Foundation Models</text>
+  <text x="185" y="508" class="box-text" text-anchor="middle">Vision-Language-Action</text>
+  <text x="185" y="523" class="box-text" text-anchor="middle">Code-Math-Science</text>
+  <text x="185" y="538" class="box-text" text-anchor="middle">World Models</text>
+  <text x="185" y="553" class="box-text" text-anchor="middle">Embodied AI</text>
+  <text x="185" y="568" class="box-text" text-anchor="middle">AGI-as-a-Service</text>
+  <text x="185" y="583" class="box-text" text-anchor="middle">Pay-per-Inference</text>
+
+  <rect x="340" y="465" width="250" height="135" class="agent-box" rx="5"/>
+  <text x="465" y="488" class="tool-text" text-anchor="middle">Specialized Domain Agents</text>
+  <text x="465" y="508" class="box-text" text-anchor="middle">BioStats Expert</text>
+  <text x="465" y="523" class="box-text" text-anchor="middle">Econometrics Specialist</text>
+  <text x="465" y="538" class="box-text" text-anchor="middle">Physics Simulator</text>
+  <text x="465" y="553" class="box-text" text-anchor="middle">Climate Modeler</text>
+  <text x="465" y="568" class="box-text" text-anchor="middle">Custom Fine-tuned</text>
+  <text x="465" y="583" class="box-text" text-anchor="middle">Human-Level Expertise</text>
+
+  <rect x="610" y="465" width="270" height="135" class="agent-box" rx="5"/>
+  <text x="745" y="488" class="tool-text" text-anchor="middle">Swarm Intelligence</text>
+  <text x="745" y="508" class="box-text" text-anchor="middle">1000s of Micro-Agents</text>
+  <text x="745" y="523" class="box-text" text-anchor="middle">Parallel Exploration</text>
+  <text x="745" y="538" class="box-text" text-anchor="middle">Consensus Building</text>
+  <text x="745" y="553" class="box-text" text-anchor="middle">Evolutionary Search</text>
+  <text x="745" y="568" class="box-text" text-anchor="middle">Automated Peer Review</text>
+  <text x="745" y="583" class="box-text" text-anchor="middle">Scientific Discovery</text>
+
+  <rect x="900" y="465" width="250" height="135" class="agi-box" rx="5"/>
+  <text x="1025" y="488" class="tool-text" text-anchor="middle">Meta-Learning Systems</text>
+  <text x="1025" y="508" class="box-text" text-anchor="middle">Learn to Learn</text>
+  <text x="1025" y="523" class="box-text" text-anchor="middle">Few-shot Adaptation</text>
+  <text x="1025" y="538" class="box-text" text-anchor="middle">Continual Learning</text>
+  <text x="1025" y="553" class="box-text" text-anchor="middle">Never Forgets</text>
+  <text x="1025" y="568" class="box-text" text-anchor="middle">Auto Curriculum</text>
+  <text x="1025" y="583" class="box-text" text-anchor="middle">Self-Improvement</text>
+
+  <!-- Arrow Down -->
+  <line x1="600" y1="605" x2="600" y2="635" stroke="#7f8c8d" stroke-width="2" marker-end="url(#arrowhead)"/>
+
+  <!-- Layer 3: Document Generation -->
+  <rect x="30" y="635" width="1140" height="35" class="human-box" rx="3"/>
+  <text x="600" y="658" class="box-title" text-anchor="middle">3. Hyper-Personalized Reports: Audience of One</text>
+
+  <rect x="50" y="685" width="260" height="145" class="human-box" rx="5"/>
+  <text x="180" y="708" class="tool-text" text-anchor="middle">Adaptive Content</text>
+  <text x="180" y="728" class="box-text" text-anchor="middle">Reader Profile</text>
+  <text x="180" y="743" class="box-text" text-anchor="middle">CEO → High-level</text>
+  <text x="180" y="758" class="box-text" text-anchor="middle">Analyst → Details</text>
+  <text x="180" y="773" class="box-text" text-anchor="middle">Real-time Rewrite</text>
+  <text x="180" y="788" class="box-text" text-anchor="middle">Interactive Dialog</text>
+  <text x="180" y="803" class="box-text" text-anchor="middle">Question → Answer</text>
+  <text x="180" y="818" class="box-text" text-anchor="middle">Dynamic Visualizations</text>
+
+  <rect x="330" y="685" width="260" height="145" class="agi-box" rx="5"/>
+  <text x="460" y="708" class="tool-text" text-anchor="middle">No-Code Science</text>
+  <text x="460" y="728" class="box-text" text-anchor="middle">Thought → Paper</text>
+  <text x="460" y="743" class="box-text" text-anchor="middle">Voice Commands</text>
+  <text x="460" y="758" class="box-text" text-anchor="middle">Gesture Control</text>
+  <text x="460" y="773" class="box-text" text-anchor="middle">AR/VR Interface</text>
+  <text x="460" y="788" class="box-text" text-anchor="middle">Spatial Computing</text>
+  <text x="460" y="803" class="box-text" text-anchor="middle">3D Data Exploration</text>
+  <text x="460" y="818" class="box-text" text-anchor="middle">Holographic Reports</text>
+
+  <rect x="610" y="685" width="260" height="145" class="agent-box" rx="5"/>
+  <text x="740" y="708" class="tool-text" text-anchor="middle">Living Documents</text>
+  <text x="740" y="728" class="box-text" text-anchor="middle">Self-Updating</text>
+  <text x="740" y="743" class="box-text" text-anchor="middle">Real-time Data Sync</text>
+  <text x="740" y="758" class="box-text" text-anchor="middle">Version Tree</text>
+  <text x="740" y="773" class="box-text" text-anchor="middle">Time-Travel Debug</text>
+  <text x="740" y="788" class="box-text" text-anchor="middle">Collaborative AI</text>
+  <text x="740" y="803" class="box-text" text-anchor="middle">Human + AI Co-author</text>
+  <text x="740" y="818" class="box-text" text-anchor="middle">Blockchain Provenance</text>
+
+  <rect x="890" y="685" width="260" height="145" class="agent-box" rx="5"/>
+  <text x="1020" y="708" class="tool-text" text-anchor="middle">Universal Translator</text>
+  <text x="1020" y="728" class="box-text" text-anchor="middle">Any Language</text>
+  <text x="1020" y="743" class="box-text" text-anchor="middle">Any Domain Jargon</text>
+  <text x="1020" y="758" class="box-text" text-anchor="middle">Technical ↔ Layman</text>
+  <text x="1020" y="773" class="box-text" text-anchor="middle">Code ↔ Math ↔ Text</text>
+  <text x="1020" y="788" class="box-text" text-anchor="middle">Cross-Cultural</text>
+  <text x="1020" y="803" class="box-text" text-anchor="middle">Context-Aware</text>
+  <text x="1020" y="818" class="box-text" text-anchor="middle">Automatic Localization</text>
+
+  <!-- Layer 4: Distribution -->
+  <rect x="30" y="850" width="1140" height="35" class="agi-box" rx="3"/>
+  <text x="600" y="873" class="box-title" text-anchor="middle">4. Direct Brain-to-Brain? Knowledge Transfer as Instant Download?</text>
+
+  <rect x="100" y="900" width="240" height="40" class="human-box" rx="5"/>
+  <text x="220" y="925" class="box-text" text-anchor="middle">Traditional: Web/PDF/Email</text>
+
+  <rect x="360" y="900" width="240" height="40" class="agi-box" rx="5"/>
+  <text x="480" y="925" class="box-text" text-anchor="middle">AI Chatbot Endpoints</text>
+
+  <rect x="620" y="900" width="240" height="40" class="agent-box" rx="5"/>
+  <text x="740" y="925" class="box-text" text-anchor="middle">Metaverse/Digital Twin</text>
+
+  <rect x="880" y="900" width="220" height="40" class="quantum-box" rx="5"/>
+  <text x="990" y="925" class="question" text-anchor="middle">Neural Interface??</text>
+
+  <!-- Bottom Note -->
+  <text x="595" y="620" class="subtitle" text-anchor="middle">The End of "Writing"? Or the Beginning of True Literate Programming for All?</text>
+</svg>

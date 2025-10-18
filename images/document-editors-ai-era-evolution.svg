@@ -1,0 +1,345 @@
+<svg viewBox="0 0 1800 1200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .title { font-family: 'Noto Sans KR', sans-serif; font-size: 32px; font-weight: 700; fill: #1e3a8a; }
+      .subtitle { font-family: 'Noto Sans KR', sans-serif; font-size: 16px; font-weight: 600; fill: #475569; }
+      .section-title { font-family: 'Noto Sans KR', sans-serif; font-size: 18px; font-weight: 700; fill: #1e293b; }
+      .product { font-family: 'Noto Sans KR', sans-serif; font-size: 14px; font-weight: 700; fill: #1e293b; }
+      .factor { font-family: 'Noto Sans KR', sans-serif; font-size: 13px; font-weight: 600; fill: #1e293b; }
+      .detail { font-family: 'Noto Sans KR', sans-serif; font-size: 11px; fill: #475569; }
+      .prediction { font-family: 'Noto Sans KR', sans-serif; font-size: 12px; font-weight: 600; fill: #1e293b; }
+      .source { font-family: 'Noto Sans KR', sans-serif; font-size: 9px; fill: #94a3b8; font-style: italic; }
+    </style>
+
+    <!-- Gradients -->
+    <linearGradient id="msGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color: #0078d4; stop-opacity: 1" />
+      <stop offset="100%" style="stop-color: #50e6ff; stop-opacity: 1" />
+    </linearGradient>
+
+    <linearGradient id="googleGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color: #4285f4; stop-opacity: 1" />
+      <stop offset="100%" style="stop-color: #34a853; stop-opacity: 1" />
+    </linearGradient>
+
+    <linearGradient id="libreGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color: #18a303; stop-opacity: 1" />
+      <stop offset="100%" style="stop-color: #4ade80; stop-opacity: 1" />
+    </linearGradient>
+
+    <linearGradient id="hwpGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color: #dc2626; stop-opacity: 1" />
+      <stop offset="100%" style="stop-color: #f87171; stop-opacity: 1" />
+    </linearGradient>
+
+    <linearGradient id="aiGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color: #8b5cf6; stop-opacity: 1" />
+      <stop offset="50%" style="stop-color: #ec4899; stop-opacity: 1" />
+      <stop offset="100%" style="stop-color: #f59e0b; stop-opacity: 1" />
+    </linearGradient>
+
+    <!-- Arrow marker -->
+    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#64748b" />
+    </marker>
+
+    <marker id="arrowSuccess" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#22c55e" />
+    </marker>
+
+    <marker id="arrowDanger" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#ef4444" />
+    </marker>
+  </defs>
+
+  <!-- Title -->
+  <text x="900" y="40" text-anchor="middle" class="title">AI 시대 문서편집기 진화 전망 (2025-2030)</text>
+  <text x="900" y="65" text-anchor="middle" class="subtitle">정치·경제·기술 융합 분석: 표준 데이터 vs 폐쇄 포맷의 운명</text>
+
+  <!-- AI Era Requirements Banner -->
+  <rect x="50" y="90" width="1700" height="80" rx="10" fill="url(#aiGradient)" stroke="#8b5cf6" stroke-width="3"/>
+  <text x="900" y="120" text-anchor="middle" style="font-size: 24px; font-weight: 700; fill: white;">
+    🤖 AI 시대 핵심 요구사항
+  </text>
+  <text x="180" y="150" text-anchor="middle" style="font-size: 13px; font-weight: 600; fill: white;">
+    📊 기계 판독 가능 데이터
+  </text>
+  <text x="480" y="150" text-anchor="middle" style="font-size: 13px; font-weight: 600; fill: white;">
+    🔄 API 자동화 통합
+  </text>
+  <text x="760" y="150" text-anchor="middle" style="font-size: 13px; font-weight: 600; fill: white;">
+    🌍 국경 없는 협업
+  </text>
+  <text x="1040" y="150" text-anchor="middle" style="font-size: 13px; font-weight: 600; fill: white;">
+    🧠 LLM 학습 데이터
+  </text>
+  <text x="1320" y="150" text-anchor="middle" style="font-size: 13px; font-weight: 600; fill: white;">
+    📖 ISO 개방표준 준수
+  </text>
+  <text x="1600" y="150" text-anchor="middle" style="font-size: 13px; font-weight: 600; fill: white;">
+    ⚡ 실시간 다자 편집
+  </text>
+
+  <!-- MS Office Track -->
+  <g id="ms-office-track">
+    <rect x="50" y="200" width="830" height="280" rx="10" fill="#dbeafe" stroke="#0078d4" stroke-width="3"/>
+    <rect x="50" y="200" width="830" height="40" rx="10" fill="url(#msGradient)"/>
+    <text x="465" y="228" text-anchor="middle" style="font-size: 18px; font-weight: 700; fill: white;">
+      💼 Microsoft Office 365 + Copilot
+    </text>
+
+    <!-- Political-Economic Factors -->
+    <rect x="70" y="255" width="390" height="205" rx="8" fill="white" stroke="#3b82f6" stroke-width="2"/>
+    <text x="265" y="278" text-anchor="middle" class="factor" style="fill: #0078d4;">🌍 정치·경제적 요인</text>
+
+    <text x="85" y="300" class="detail" style="font-weight: 600;">✅ 막강한 자본력 (MS 시가총액 3조 달러)</text>
+    <text x="85" y="316" class="detail">• OpenAI 130억 달러 투자, GPT-4 독점 활용</text>
+    <text x="85" y="331" class="detail">• Azure AI 인프라로 클라우드 생태계 장악</text>
+
+    <text x="85" y="352" class="detail" style="font-weight: 600;">✅ 기업 시장 지배력 (Fortune 500 기업 95%)</text>
+    <text x="85" y="368" class="detail">• 기존 워크플로우·ERP 통합 (SAP·Oracle)</text>
+    <text x="85" y="383" class="detail">• 전환 비용(Switching Cost) 극도로 높음</text>
+
+    <text x="85" y="404" class="detail" style="font-weight: 600;">✅ ISO/IEC 29500 (OOXML) 국제 표준</text>
+    <text x="85" y="420" class="detail">• 정부·공공 조달 요건 충족</text>
+    <text x="85" y="435" class="detail">• AI 학습 데이터로 적합 (구조화 XML)</text>
+
+    <!-- AI Era Prediction -->
+    <rect x="470" y="255" width="390" height="205" rx="8" fill="white" stroke="#3b82f6" stroke-width="2"/>
+    <text x="665" y="278" text-anchor="middle" class="factor" style="fill: #0078d4;">🔮 AI 시대 전망 (2025-2030)</text>
+
+    <text x="485" y="305" class="prediction" style="fill: #16a34e;">📈 시장 지배력 강화 예상 (85%→90%)</text>
+
+    <text x="490" y="328" class="detail">🤖 Copilot AI 기능 폭발적 확장</text>
+    <text x="500" y="343" class="detail" style="font-size: 10px;">• Word: 문서 자동 작성·요약·번역·스타일 통일</text>
+    <text x="500" y="356" class="detail" style="font-size: 10px;">• Excel: 데이터 분석·예측 모델·차트 자동 생성</text>
+    <text x="500" y="369" class="detail" style="font-size: 10px;">• PowerPoint: 스토리보드 AI 디자인</text>
+
+    <text x="490" y="390" class="detail">🌐 국경 없는 협업 가속화</text>
+    <text x="500" y="405" class="detail" style="font-size: 10px;">• 실시간 다국어 번역 (140개 언어)</text>
+    <text x="500" y="418" class="detail" style="font-size: 10px;">• Teams 통합으로 전 세계 동시 편집</text>
+
+    <text x="490" y="439" class="detail">⚠️ 독과점 우려 증가</text>
+    <text x="500" y="454" class="detail" style="font-size: 10px;">• EU: 디지털시장법(DMA) 규제 강화</text>
+  </g>
+
+  <!-- Google Workspace + LibreOffice Track -->
+  <g id="google-libre-track">
+    <rect x="920" y="200" width="830" height="280" rx="10" fill="#f0fdf4" stroke="#18a303" stroke-width="3"/>
+    <rect x="920" y="200" width="830" height="40" rx="10" fill="url(#googleGradient)"/>
+    <text x="1335" y="228" text-anchor="middle" style="font-size: 18px; font-weight: 700; fill: white;">
+      🌱 Google Workspace + LibreOffice (오픈소스)
+    </text>
+
+    <!-- Political-Economic Factors -->
+    <rect x="940" y="255" width="390" height="205" rx="8" fill="white" stroke="#22c55e" stroke-width="2"/>
+    <text x="1135" y="278" text-anchor="middle" class="factor" style="fill: #16a34e;">🌍 정치·경제적 요인</text>
+
+    <text x="955" y="300" class="detail" style="font-weight: 600;">✅ 디지털 주권·독립성 추구</text>
+    <text x="955" y="316" class="detail">• EU: 미국 빅테크 의존 탈피 (GAIA-X 프로젝트)</text>
+    <text x="955" y="331" class="detail">• 프랑스·독일: 공공부문 LibreOffice 의무화</text>
+
+    <text x="955" y="352" class="detail" style="font-weight: 600;">✅ 비용 절감 압박 (중남미·동유럽·아프리카)</text>
+    <text x="955" y="368" class="detail">• LibreOffice 무료, Google 저렴 ($6/월)</text>
+    <text x="955" y="383" class="detail">• MS Office 구독료 부담 (연 $150/인)</text>
+
+    <text x="955" y="404" class="detail" style="font-weight: 600;">✅ ISO/IEC 26300 (ODF) 국제 표준</text>
+    <text x="955" y="420" class="detail">• LibreOffice: 완전 오픈소스 (GPL/MPL)</text>
+    <text x="955" y="435" class="detail">• 정부·공공 조달 법적 요건 충족</text>
+
+    <!-- AI Era Prediction -->
+    <rect x="1340" y="255" width="390" height="205" rx="8" fill="white" stroke="#22c55e" stroke-width="2"/>
+    <text x="1535" y="278" text-anchor="middle" class="factor" style="fill: #16a34e;">🔮 AI 시대 전망 (2025-2030)</text>
+
+    <text x="1355" y="305" class="prediction" style="fill: #16a34e;">📈 공공·교육 부문 확대 (20%→30%)</text>
+
+    <text x="1360" y="328" class="detail">🤖 Google AI (Gemini) 통합 가속</text>
+    <text x="1370" y="343" class="detail" style="font-size: 10px;">• Docs: "Help me write" AI 작성 도우미</text>
+    <text x="1370" y="356" class="detail" style="font-size: 10px;">• Sheets: AI 인사이트, 자동 데이터 정리</text>
+    <text x="1370" y="369" class="detail" style="font-size: 10px;">• 교육 시장 K-12 강세 유지</text>
+
+    <text x="1360" y="390" class="detail">🌍 LibreOffice: 오픈소스 AI 통합</text>
+    <text x="1370" y="405" class="detail" style="font-size: 10px;">• 로컬 LLM (Llama, Mistral) 플러그인 개발</text>
+    <text x="1370" y="418" class="detail" style="font-size: 10px;">• 유럽 공공부문 AI 독립성 확보</text>
+
+    <text x="1360" y="439" class="detail">⚖️ 정치적 지원 증가</text>
+    <text x="1370" y="454" class="detail" style="font-size: 10px;">• EU·프랑스: 디지털 주권 법제화 강화</text>
+  </g>
+
+  <!-- HWP Track (Korea Isolation) -->
+  <g id="hwp-track">
+    <rect x="50" y="510" width="1700" height="280" rx="10" fill="#fee2e2" stroke="#dc2626" stroke-width="3"/>
+    <rect x="50" y="510" width="1700" height="40" rx="10" fill="url(#hwpGradient)"/>
+    <text x="900" y="538" text-anchor="middle" style="font-size: 18px; font-weight: 700; fill: white;">
+      🇰🇷 한글과컴퓨터 (HWP) - 한국 특수 사례
+    </text>
+
+    <!-- Current Status -->
+    <rect x="70" y="565" width="530" height="205" rx="8" fill="white" stroke="#dc2626" stroke-width="2"/>
+    <text x="335" y="588" text-anchor="middle" class="factor" style="fill: #dc2626;">📍 현재 상황 (2025)</text>
+
+    <text x="85" y="610" class="detail" style="font-weight: 600; fill: #991b1b;">⚠️ 정치·경제적 고착화</text>
+    <text x="85" y="626" class="detail">• 공공영역 HWP 요구 관행 광범위 (30년 지속)</text>
+    <text x="85" y="641" class="detail">• 독점적 시장 지위 (정부·공공 입찰 사실상 필수)</text>
+    <text x="85" y="656" class="detail">• 연간 1조 1,250억 원 보이지 않는 세금</text>
+
+    <text x="85" y="677" class="detail" style="font-weight: 600; fill: #991b1b;">⚠️ 기술적 한계</text>
+    <text x="85" y="693" class="detail">• 독자 포맷 (.hwp, .hwpx), ISO 표준 불완전 지원</text>
+    <text x="85" y="708" class="detail">• AI 시대 필수 요건 미충족</text>
+    <text x="95" y="723" class="detail" style="font-size: 10px;">- XML 구조화 불완전 → LLM 학습 데이터 부적합</text>
+    <text x="95" y="736" class="detail" style="font-size: 10px;">- API 자동화 미비 → AI 워크플로우 통합 불가</text>
+    <text x="95" y="749" class="detail" style="font-size: 10px;">- 국제 협업 도구(Slack·Notion·GitHub) 호환 불가</text>
+
+    <!-- AI Era Crisis -->
+    <rect x="620" y="565" width="530" height="205" rx="8" fill="#fef2f2" stroke="#dc2626" stroke-width="2"/>
+    <text x="885" y="588" text-anchor="middle" class="factor" style="fill: #dc2626;">🔮 AI 시대 전망: 위기 심화</text>
+
+    <text x="635" y="615" class="prediction" style="fill: #dc2626;">📉 시장 고립 가속화 (2025-2030)</text>
+
+    <text x="645" y="638" class="detail" style="fill: #991b1b;">❌ AI 통합 실패 시나리오</text>
+    <text x="655" y="653" class="detail" style="font-size: 10px;">• HWP AI 기능 제한적 (자본력·인프라 부족)</text>
+    <text x="655" y="666" class="detail" style="font-size: 10px;">• 글로벌 LLM (GPT-4, Gemini) HWP 포맷 학습 불가</text>
+    <text x="655" y="679" class="detail" style="font-size: 10px;">• 국제 협업 요구 증가 → HWP 사용 기업 경쟁력 하락</text>
+
+    <text x="645" y="700" class="detail" style="fill: #991b1b;">⚖️ 정치적 압박 예상</text>
+    <text x="655" y="715" class="detail" style="font-size: 10px;">• 재외국민·해외 기업 민원 증가</text>
+    <text x="655" y="728" class="detail" style="font-size: 10px;">• OECD·UN 등 국제기구와 문서 교환 마찰</text>
+    <text x="655" y="741" class="detail" style="font-size: 10px;">• 청년층·IT 업계 ISO 표준 전환 요구 고조</text>
+
+    <text x="635" y="762" class="detail" style="font-weight: 600; fill: #7f1d1d;">💀 최악 시나리오: 디지털 갈라파고스 고착</text>
+
+    <!-- Policy Reform -->
+    <rect x="1170" y="565" width="560" height="205" rx="8" fill="white" stroke="#22c55e" stroke-width="2"/>
+    <text x="1450" y="588" text-anchor="middle" class="factor" style="fill: #16a34e;">💡 돌파구: 정책 전환 시나리오</text>
+
+    <text x="1185" y="615" class="prediction" style="fill: #16a34e;">✅ ISO 표준 전면 전환 (ODF/OOXML)</text>
+
+    <text x="1195" y="638" class="detail" style="font-weight: 600;">1단계: 공공부문 ISO 표준 의무화 (2025-2026)</text>
+    <text x="1205" y="653" class="detail" style="font-size: 10px;">• 정부·공공기관 ODF/OOXML 제출 허용 법제화</text>
+    <text x="1205" y="666" class="detail" style="font-size: 10px;">• 한시적 HWP 병행 인정 (3년 유예기간)</text>
+
+    <text x="1195" y="685" class="detail" style="font-weight: 600;">2단계: 교육·훈련 프로그램 (2026-2027)</text>
+    <text x="1205" y="700" class="detail" style="font-size: 10px;">• 공무원·교사 LibreOffice/MS Office 교육</text>
+    <text x="1205" y="713" class="detail" style="font-size: 10px;">• 대학·기업 AI 협업 도구 전환 지원</text>
+
+    <text x="1195" y="732" class="detail" style="font-weight: 600;">3단계: 완전 전환 (2028-2030)</text>
+    <text x="1205" y="747" class="detail" style="font-size: 10px;">• HWP 선택 사항화, ISO 표준이 기본값</text>
+    <text x="1205" y="760" class="detail" style="font-size: 10px;">• AI 시대 국제 경쟁력 회복</text>
+  </g>
+
+  <!-- Bottom Summary: Global Trend -->
+  <rect x="50" y="820" width="1700" height="360" rx="12" fill="#1e3a8a" stroke="#1e40af" stroke-width="3"/>
+
+  <text x="900" y="860" text-anchor="middle" style="font-size: 24px; font-weight: 700; fill: white;">
+    🌍 결론: AI 시대 문서편집기 진화의 정치경제학
+  </text>
+
+  <!-- Three columns -->
+  <rect x="70" y="885" width="530" height="270" rx="8" fill="#dbeafe" stroke="#3b82f6" stroke-width="2"/>
+  <text x="335" y="915" text-anchor="middle" style="font-size: 16px; font-weight: 700; fill: #1e3a8a;">
+    💼 승자: 자본 + 표준 + AI
+  </text>
+  <text x="90" y="945" style="font-size: 12px; fill: #1e293b; font-weight: 600;">
+    Microsoft Office 365
+  </text>
+  <text x="100" y="965" style="font-size: 11px; fill: #475569;">
+    • OpenAI 독점 투자 (130억 달러)
+  </text>
+  <text x="100" y="982" style="font-size: 11px; fill: #475569;">
+    • Fortune 500 기업 95% 사용
+  </text>
+  <text x="100" y="999" style="font-size: 11px; fill: #475569;">
+    • OOXML ISO 표준 (정부 조달 필수)
+  </text>
+  <text x="100" y="1016" style="font-size: 11px; fill: #475569;">
+    • AI Copilot 생태계 선점
+  </text>
+  <text x="100" y="1033" style="font-size: 11px; fill: #475569;">
+    • 전환 비용 극대화로 고객 락인
+  </text>
+
+  <text x="90" y="1065" style="font-size: 12px; fill: #1e293b; font-weight: 600;">
+    📈 전망: 시장 지배력 90%+ 예상
+  </text>
+  <text x="100" y="1082" style="font-size: 10px; fill: #64748b;">
+    ⚠️ 독과점 우려로 EU 규제 강화 필요
+  </text>
+
+  <rect x="620" y="885" width="530" height="270" rx="8" fill="#f0fdf4" stroke="#22c55e" stroke-width="2"/>
+  <text x="885" y="915" text-anchor="middle" style="font-size: 16px; font-weight: 700; fill: #16a34e;">
+    🌱 대항마: 주권 + 오픈소스
+  </text>
+  <text x="640" y="945" style="font-size: 12px; fill: #1e293b; font-weight: 600;">
+    Google Workspace + LibreOffice
+  </text>
+  <text x="650" y="965" style="font-size: 11px; fill: #475569;">
+    • EU 디지털 주권 정책 지원
+  </text>
+  <text x="650" y="982" style="font-size: 11px; fill: #475569;">
+    • 공공·교육 부문 비용 압박
+  </text>
+  <text x="650" y="999" style="font-size: 11px; fill: #475569;">
+    • ODF ISO 표준 (정부 법적 요건)
+  </text>
+  <text x="650" y="1016" style="font-size: 11px; fill: #475569;">
+    • Google Gemini AI 통합
+  </text>
+  <text x="650" y="1033" style="font-size: 11px; fill: #475569;">
+    • LibreOffice 로컬 LLM 독립성
+  </text>
+
+  <text x="640" y="1065" style="font-size: 12px; fill: #1e293b; font-weight: 600;">
+    📈 전망: 공공 부문 30%로 성장
+  </text>
+  <text x="650" y="1082" style="font-size: 10px; fill: #64748b;">
+    ✅ 중남미·동유럽·아프리카 확산 지속
+  </text>
+  <text x="650" y="1097" style="font-size: 10px; fill: #64748b;">
+    ✅ 프랑스·독일 정부 의무화 확대
+  </text>
+
+  <rect x="1170" y="885" width="560" height="270" rx="8" fill="#fee2e2" stroke="#dc2626" stroke-width="2"/>
+  <text x="1450" y="915" text-anchor="middle" style="font-size: 16px; font-weight: 700; fill: #dc2626;">
+    🇰🇷 한국 HWP: 고립 vs 전환
+  </text>
+  <text x="1190" y="945" style="font-size: 12px; fill: #7f1d1d; font-weight: 600;">
+    ⚠️ 현재: 디지털 갈라파고스 위기
+  </text>
+  <text x="1200" y="965" style="font-size: 11px; fill: #991b1b;">
+    • 독자 포맷, ISO 표준 불완전 지원
+  </text>
+  <text x="1200" y="982" style="font-size: 11px; fill: #991b1b;">
+    • AI 통합 실패 (LLM 학습 불가)
+  </text>
+  <text x="1200" y="999" style="font-size: 11px; fill: #991b1b;">
+    • 국제 협업 단절, 청년 경쟁력 하락
+  </text>
+  <text x="1200" y="1016" style="font-size: 11px; fill: #991b1b;">
+    • 연 1조+ 원 보이지 않는 세금
+  </text>
+
+  <text x="1190" y="1048" style="font-size: 12px; fill: #16a34e; font-weight: 600;">
+    💡 해법: ISO 표준 전면 전환
+  </text>
+  <text x="1200" y="1068" style="font-size: 11px; fill: #475569;">
+    1. 공공부문 ODF/OOXML 의무화
+  </text>
+  <text x="1200" y="1085" style="font-size: 11px; fill: #475569;">
+    2. 교육·훈련 프로그램 (3년)
+  </text>
+  <text x="1200" y="1102" style="font-size: 11px; fill: #475569;">
+    3. AI 시대 국제 경쟁력 회복
+  </text>
+  <text x="1200" y="1119" style="font-size: 11px; fill: #475569;">
+    4. 한시적 HWP 병행 인정 (유예기간)
+  </text>
+
+  <text x="1190" y="1145" style="font-size: 11px; fill: #64748b; font-style: italic;">
+    ⏰ 전환 시기: 지금이 마지막 기회 (2025-2028)
+  </text>
+
+  <!-- Bottom note -->
+  <text x="900" y="1170" text-anchor="middle" style="font-size: 11px; fill: #cbd5e1; font-style: italic;">
+    출처: EU OSOR, Reuters, ComputerWeekly, Yahoo Finance (2024-2025), 정치경제 분석 종합
+  </text>
+</svg>

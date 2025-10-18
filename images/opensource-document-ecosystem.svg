@@ -1,0 +1,285 @@
+<svg viewBox="0 0 2000 1600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .title { font-family: 'Noto Sans KR', sans-serif; font-size: 38px; font-weight: 700; fill: #1e3a8a; }
+      .subtitle { font-family: 'Noto Sans KR', sans-serif; font-size: 16px; font-weight: 600; fill: #475569; }
+      .section-title { font-family: 'Noto Sans KR', sans-serif; font-size: 20px; font-weight: 700; }
+      .component { font-family: 'Noto Sans KR', sans-serif; font-size: 16px; font-weight: 600; }
+      .description { font-family: 'Noto Sans KR', sans-serif; font-size: 13px; }
+      .feature { font-family: 'Noto Sans KR', sans-serif; font-size: 12px; }
+      .benefit { font-family: 'Noto Sans KR', sans-serif; font-size: 14px; font-weight: 600; }
+    </style>
+
+    <!-- Gradients -->
+    <linearGradient id="coreGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color: #18a303; stop-opacity: 1" />
+      <stop offset="100%" style="stop-color: #0d5c02; stop-opacity: 1" />
+    </linearGradient>
+
+    <linearGradient id="latexGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color: #0891b2; stop-opacity: 1" />
+      <stop offset="100%" style="stop-color: #0e7490; stop-opacity: 1" />
+    </linearGradient>
+
+    <linearGradient id="rGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color: #2563eb; stop-opacity: 1" />
+      <stop offset="100%" style="stop-color: #1e40af; stop-opacity: 1" />
+    </linearGradient>
+
+    <linearGradient id="pythonGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color: #f59e0b; stop-opacity: 1" />
+      <stop offset="100%" style="stop-color: #d97706; stop-opacity: 1" />
+    </linearGradient>
+
+    <linearGradient id="quartoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color: #8b5cf6; stop-opacity: 1" />
+      <stop offset="100%" style="stop-color: #6d28d9; stop-opacity: 1" />
+    </linearGradient>
+
+    <linearGradient id="mdGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color: #64748b; stop-opacity: 1" />
+      <stop offset="100%" style="stop-color: #475569; stop-opacity: 1" />
+    </linearGradient>
+
+    <linearGradient id="pandocGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color: #dc2626; stop-opacity: 1" />
+      <stop offset="100%" style="stop-color: #991b1b; stop-opacity: 1" />
+    </linearGradient>
+
+    <!-- Arrow markers -->
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto">
+      <polygon points="0 0, 10 5, 0 10, 3 5" fill="#16a34e" />
+    </marker>
+
+    <marker id="dataArrow" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto">
+      <polygon points="0 0, 10 5, 0 10, 3 5" fill="#3b82f6" />
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="2000" height="1600" fill="#f8fafc"/>
+
+  <!-- Title -->
+  <rect x="50" y="20" width="1900" height="100" rx="15" fill="white" stroke="#18a303" stroke-width="4"/>
+  <text x="1000" y="60" text-anchor="middle" class="title">🌱 차세대 오픈소스 문서 생태계</text>
+  <text x="1000" y="90" text-anchor="middle" class="subtitle">LibreOffice + LaTeX + R/Python + Quarto + Markdown + Pandoc 통합 플랫폼</text>
+
+  <!-- Central Core: LibreOffice -->
+  <g id="core-libreoffice">
+    <ellipse cx="1000" cy="400" rx="180" ry="120" fill="url(#coreGrad)" stroke="#0d5c02" stroke-width="4"/>
+    <text x="1000" y="380" text-anchor="middle" style="font-size: 24px; font-weight: 700; fill: white;">🏛️ LibreOffice Core</text>
+    <text x="1000" y="405" text-anchor="middle" style="font-size: 14px; fill: white;">통합 문서 엔진</text>
+    <text x="1000" y="425" text-anchor="middle" style="font-size: 12px; fill: #d4f5d4;">• WYSIWYG 편집기</text>
+    <text x="1000" y="442" text-anchor="middle" style="font-size: 12px; fill: #d4f5d4;">• ODF 네이티브 지원</text>
+    <text x="1000" y="459" text-anchor="middle" style="font-size: 12px; fill: #d4f5d4;">• 확장 프레임워크</text>
+  </g>
+
+  <!-- Component 1: LaTeX (Top Left) -->
+  <g id="latex-component">
+    <rect x="100" y="200" width="300" height="200" rx="12" fill="url(#latexGrad)" stroke="#0e7490" stroke-width="3"/>
+    <text x="250" y="235" text-anchor="middle" style="font-size: 20px; font-weight: 700; fill: white;">📐 LaTeX 엔진</text>
+
+    <rect x="120" y="255" width="260" height="130" rx="8" fill="white" opacity="0.95"/>
+    <text x="250" y="280" text-anchor="middle" class="component" fill="#0e7490">수식·논문 전문</text>
+    <text x="130" y="300" class="feature" fill="#475569;">✓ 수학 수식 최고 품질</text>
+    <text x="130" y="318" class="feature" fill="#475569;">✓ 학술 논문 템플릿</text>
+    <text x="130" y="336" class="feature" fill="#475569;">✓ BibTeX 참고문헌</text>
+    <text x="130" y="354" class="feature" fill="#475569;">✓ TikZ 그래픽</text>
+    <text x="130" y="372" class="feature" fill="#475569;">✓ PDF 고품질 출력</text>
+
+    <!-- Arrow to Core -->
+    <path d="M 400 300 Q 700 350 820 380" stroke="#16a34e" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+    <text x="610" y="330" text-anchor="middle" style="font-size: 11px; fill: #16a34e; font-weight: 600;">LaTeX 컴파일</text>
+  </g>
+
+  <!-- Component 2: R (Top Right) -->
+  <g id="r-component">
+    <rect x="1600" y="200" width="300" height="200" rx="12" fill="url(#rGrad)" stroke="#1e40af" stroke-width="3"/>
+    <text x="1750" y="235" text-anchor="middle" style="font-size: 20px; font-weight: 700; fill: white;">📊 R 통계 엔진</text>
+
+    <rect x="1620" y="255" width="260" height="130" rx="8" fill="white" opacity="0.95"/>
+    <text x="1750" y="280" text-anchor="middle" class="component" fill="#1e40af">데이터 분석·시각화</text>
+    <text x="1630" y="300" class="feature" fill="#475569;">✓ ggplot2 그래프</text>
+    <text x="1630" y="318" class="feature" fill="#475569;">✓ dplyr 데이터 처리</text>
+    <text x="1630" y="336" class="feature" fill="#475569;">✓ knitr 동적 문서</text>
+    <text x="1630" y="354" class="feature" fill="#475569;">✓ Shiny 대시보드</text>
+    <text x="1630" y="372" class="feature" fill="#475569;">✓ 재현가능 연구</text>
+
+    <!-- Arrow to Core -->
+    <path d="M 1600 300 Q 1300 350 1180 380" stroke="#16a34e" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+    <text x="1390" y="330" text-anchor="middle" style="font-size: 11px; fill: #16a34e; font-weight: 600;">R 코드 실행</text>
+  </g>
+
+  <!-- Component 3: Python (Left) -->
+  <g id="python-component">
+    <rect x="100" y="550" width="300" height="220" rx="12" fill="url(#pythonGrad)" stroke="#d97706" stroke-width="3"/>
+    <text x="250" y="585" text-anchor="middle" style="font-size: 20px; font-weight: 700; fill: white;">🐍 Python 엔진</text>
+
+    <rect x="120" y="605" width="260" height="150" rx="8" fill="white" opacity="0.95"/>
+    <text x="250" y="630" text-anchor="middle" class="component" fill="#d97706">AI·ML·데이터과학</text>
+    <text x="130" y="650" class="feature" fill="#475569;">✓ NumPy/Pandas 분석</text>
+    <text x="130" y="668" class="feature" fill="#475569;">✓ Matplotlib/Seaborn</text>
+    <text x="130" y="686" class="feature" fill="#475569;">✓ Jupyter Notebook</text>
+    <text x="130" y="704" class="feature" fill="#475569;">✓ Scikit-learn/PyTorch</text>
+    <text x="130" y="722" class="feature" fill="#475569;">✓ 자연어 처리 (NLTK)</text>
+    <text x="130" y="740" class="feature" fill="#475569;">✓ LLM API 통합</text>
+
+    <!-- Arrow to Core -->
+    <path d="M 400 660 Q 700 530 820 420" stroke="#16a34e" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+    <text x="610" y="550" text-anchor="middle" style="font-size: 11px; fill: #16a34e; font-weight: 600;">Python 실행</text>
+  </g>
+
+  <!-- Component 4: Quarto (Right) -->
+  <g id="quarto-component">
+    <rect x="1600" y="550" width="300" height="220" rx="12" fill="url(#quartoGrad)" stroke="#6d28d9" stroke-width="3"/>
+    <text x="1750" y="585" text-anchor="middle" style="font-size: 20px; font-weight: 700; fill: white;">📚 Quarto 출판</text>
+
+    <rect x="1620" y="605" width="260" height="150" rx="8" fill="white" opacity="0.95"/>
+    <text x="1750" y="630" text-anchor="middle" class="component" fill="#6d28d9">멀티포맷 출판 시스템</text>
+    <text x="1630" y="650" class="feature" fill="#475569;">✓ HTML/PDF/DOCX 동시</text>
+    <text x="1630" y="668" class="feature" fill="#475569;">✓ RevealJS 프레젠테이션</text>
+    <text x="1630" y="686" class="feature" fill="#475569;">✓ 웹사이트/블로그</text>
+    <text x="1630" y="704" class="feature" fill="#475569;">✓ 책·논문 출판</text>
+    <text x="1630" y="722" class="feature" fill="#475569;">✓ 인터랙티브 위젯</text>
+    <text x="1630" y="740" class="feature" fill="#475569;">✓ Observable JS 통합</text>
+
+    <!-- Arrow to Core -->
+    <path d="M 1600 660 Q 1300 530 1180 420" stroke="#16a34e" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+    <text x="1390" y="550" text-anchor="middle" style="font-size: 11px; fill: #16a34e; font-weight: 600;">Quarto 렌더링</text>
+  </g>
+
+  <!-- Component 5: Markdown (Bottom Left) -->
+  <g id="markdown-component">
+    <rect x="350" y="900" width="280" height="180" rx="12" fill="url(#mdGrad)" stroke="#475569" stroke-width="3"/>
+    <text x="490" y="935" text-anchor="middle" style="font-size: 20px; font-weight: 700; fill: white;">✍️ Markdown</text>
+
+    <rect x="370" y="955" width="240" height="110" rx="8" fill="white" opacity="0.95"/>
+    <text x="490" y="980" text-anchor="middle" class="component" fill="#475569">경량 마크업 언어</text>
+    <text x="380" y="1000" class="feature" fill="#475569;">✓ 간단한 문법</text>
+    <text x="380" y="1018" class="feature" fill="#475569;">✓ Git 친화적</text>
+    <text x="380" y="1036" class="feature" fill="#475569;">✓ 범용성 높음</text>
+    <text x="380" y="1054" class="feature" fill="#475569;">✓ 빠른 작성</text>
+
+    <!-- Arrow to Core -->
+    <path d="M 490 900 Q 700 650 900 480" stroke="#16a34e" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+    <text x="695" y="690" text-anchor="middle" style="font-size: 11px; fill: #16a34e; font-weight: 600;">Markdown 파싱</text>
+  </g>
+
+  <!-- Component 6: Pandoc (Bottom Right) -->
+  <g id="pandoc-component">
+    <rect x="1370" y="900" width="280" height="180" rx="12" fill="url(#pandocGrad)" stroke="#991b1b" stroke-width="3"/>
+    <text x="1510" y="935" text-anchor="middle" style="font-size: 20px; font-weight: 700; fill: white;">🔄 Pandoc</text>
+
+    <rect x="1390" y="955" width="240" height="110" rx="8" fill="white" opacity="0.95"/>
+    <text x="1510" y="980" text-anchor="middle" class="component" fill="#991b1b">범용 변환 엔진</text>
+    <text x="1400" y="1000" class="feature" fill="#475569;">✓ 40+ 포맷 지원</text>
+    <text x="1400" y="1018" class="feature" fill="#475569;">✓ Markdown → 모든것</text>
+    <text x="1400" y="1036" class="feature" fill="#475569;">✓ LaTeX 통합</text>
+    <text x="1400" y="1054" class="feature" fill="#475569;">✓ 필터 확장</text>
+
+    <!-- Arrow to Core -->
+    <path d="M 1510 900 Q 1300 650 1100 480" stroke="#16a34e" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+    <text x="1305" y="690" text-anchor="middle" style="font-size: 11px; fill: #16a34e; font-weight: 600;">Pandoc 변환</text>
+  </g>
+
+  <!-- Integration Layer -->
+  <rect x="700" y="580" width="600" height="120" rx="12" fill="#ecfdf5" stroke="#16a34e" stroke-width="3"/>
+  <text x="1000" y="610" text-anchor="middle" style="font-size: 18px; font-weight: 700; fill: #166534;">🔗 통합 레이어 (Extension Framework)</text>
+  <text x="1000" y="635" text-anchor="middle" style="font-size: 13px; fill: #475569;">• 코드 블록 실행 엔진 (Jupyter Kernel 통합)</text>
+  <text x="1000" y="655" text-anchor="middle" style="font-size: 13px; fill: #475569;">• 실시간 렌더링 (수식, 그래프, 테이블)</text>
+  <text x="1000" y="675" text-anchor="middle" style="font-size: 13px; fill: #475569;">• Git 버전 관리 통합 (변경 추적, 협업)</text>
+
+  <!-- Benefits Section -->
+  <rect x="50" y="1120" width="1900" height="450" rx="15" fill="white" stroke="#1e3a8a" stroke-width="4"/>
+  <text x="1000" y="1165" text-anchor="middle" style="font-size: 26px; font-weight: 700; fill: #1e3a8a;">
+    ✨ 통합 생태계의 장점
+  </text>
+
+  <!-- 4 columns -->
+  <rect x="80" y="1190" width="430" height="360" rx="10" fill="#f0fdf4" stroke="#16a34e" stroke-width="2"/>
+  <text x="295" y="1220" text-anchor="middle" style="font-size: 18px; font-weight: 700; fill: #166534;">🎯 학술·연구 최적화</text>
+  <text x="100" y="1250" class="benefit" fill="#166534;">재현가능 연구 (Reproducible Research)</text>
+  <text x="110" y="1275" class="description" fill="#475569;">• 데이터 + 분석 + 문서 단일 파일</text>
+  <text x="110" y="1295" class="description" fill="#475569;">• 코드 실행 결과 자동 업데이트</text>
+  <text x="110" y="1315" class="description" fill="#475569;">• LaTeX 수준의 수식 + R/Python 분석</text>
+  <text x="110" y="1335" class="description" fill="#475569;">• BibTeX 참고문헌 자동 관리</text>
+
+  <text x="100" y="1365" class="benefit" fill="#166534;">학술 출판 워크플로우</text>
+  <text x="110" y="1390" class="description" fill="#475569;">• arXiv, bioRxiv 프리프린트</text>
+  <text x="110" y="1410" class="description" fill="#475569;">• JOSS, JOSE 오픈 저널</text>
+  <text x="110" y="1430" class="description" fill="#475569;">• Springer, Elsevier 템플릿</text>
+  <text x="110" y="1450" class="description" fill="#475569;">• 학위논문 (박사·석사)</text>
+
+  <text x="100" y="1480" class="benefit" fill="#166534;">데이터 과학 통합</text>
+  <text x="110" y="1505" class="description" fill="#475569;">• Jupyter Notebook 완전 대체</text>
+  <text x="110" y="1525" class="description" fill="#475569;">• R Markdown 호환</text>
+
+  <rect x="530" y="1190" width="430" height="360" rx="10" fill="#eff6ff" stroke="#3b82f6" stroke-width="2"/>
+  <text x="745" y="1220" text-anchor="middle" style="font-size: 18px; font-weight: 700; fill: #1e40af;">💼 실무 생산성</text>
+  <text x="550" y="1250" class="benefit" fill="#1e40af;">멀티포맷 동시 출력</text>
+  <text x="560" y="1275" class="description" fill="#475569;">• PDF (LaTeX 품질) ← 동일 소스</text>
+  <text x="560" y="1295" class="description" fill="#475569;">• HTML (웹 게시) ← 동일 소스</text>
+  <text x="560" y="1315" class="description" fill="#475569;">• DOCX (MS Word) ← 동일 소스</text>
+  <text x="560" y="1335" class="description" fill="#475569;">• RevealJS (프레젠테이션) ← 동일</text>
+
+  <text x="550" y="1365" class="benefit" fill="#1e40af;">협업 친화적</text>
+  <text x="560" y="1390" class="description" fill="#475569;">• Git으로 변경 추적 (diff)</text>
+  <text x="560" y="1410" class="description" fill="#475569;">• GitHub/GitLab CI/CD 자동 빌드</text>
+  <text x="560" y="1430" class="description" fill="#475569;">• Markdown 기반 → 병합 쉬움</text>
+  <text x="560" y="1450" class="description" fill="#475569;">• 코드 리뷰 가능</text>
+
+  <text x="550" y="1480" class="benefit" fill="#1e40af;">AI 시대 대응</text>
+  <text x="560" y="1505" class="description" fill="#475569;">• LLM 코드 생성 → 즉시 실행</text>
+  <text x="560" y="1525" class="description" fill="#475569;">• 텍스트 포맷 → AI 학습 용이</text>
+
+  <rect x="980" y="1190" width="430" height="360" rx="10" fill="#fef2f2" stroke="#dc2626" stroke-width="2"/>
+  <text x="1195" y="1220" text-anchor="middle" style="font-size: 18px; font-weight: 700; fill: #991b1b;">🆓 오픈소스 장점</text>
+  <text x="1000" y="1250" class="benefit" fill="#991b1b;">완전 무료 + 독립성</text>
+  <text x="1010" y="1275" class="description" fill="#475569;">• 라이선스 비용 제로 (영구 무료)</text>
+  <text x="1010" y="1295" class="description" fill="#475569;">• 공급업체 종속 없음</text>
+  <text x="1010" y="1315" class="description" fill="#475569;">• 전 세계 커뮤니티 지원</text>
+  <text x="1010" y="1335" class="description" fill="#475569;">• 소스 코드 완전 공개</text>
+
+  <text x="1000" y="1365" class="benefit" fill="#991b1b;">표준 준수</text>
+  <text x="1010" y="1390" class="description" fill="#475569;">• ODF (ISO/IEC 26300) 네이티브</text>
+  <text x="1010" y="1410" class="description" fill="#475569;">• OOXML (ISO/IEC 29500) 읽기</text>
+  <text x="1010" y="1430" class="description" fill="#475569;">• UTF-8, Unicode 완벽 지원</text>
+  <text x="1010" y="1450" class="description" fill="#475569;">• 웹 표준 (HTML5, CSS3)</text>
+
+  <text x="1000" y="1480" class="benefit" fill="#991b1b;">확장성</text>
+  <text x="1010" y="1505" class="description" fill="#475569;">• Python/Lua 플러그인</text>
+  <text x="1010" y="1525" class="description" fill="#475569;">• 사용자 맞춤 기능 추가</text>
+
+  <rect x="1430" y="1190" width="490" height="360" rx="10" fill="#fefce8" stroke="#f59e0b" stroke-width="2"/>
+  <text x="1675" y="1220" text-anchor="middle" style="font-size: 18px; font-weight: 700; fill: #d97706;">🌍 사용 사례</text>
+
+  <text x="1450" y="1250" class="benefit" fill="#d97706;">교육 기관</text>
+  <text x="1460" y="1275" class="description" fill="#475569;">• 대학 강의노트 (수식 + 코드 + 그래프)</text>
+  <text x="1460" y="1295" class="description" fill="#475569;">• 실습 교재 (학생이 직접 코드 실행)</text>
+  <text x="1460" y="1315" class="description" fill="#475569;">• 온라인 교과서 (HTML 버전 무료 배포)</text>
+
+  <text x="1450" y="1345" class="benefit" fill="#d97706;">연구소·기업</text>
+  <text x="1460" y="1370" class="description" fill="#475569;">• 기술 보고서 (분석 결과 자동 반영)</text>
+  <text x="1460" y="1390" class="description" fill="#475569;">• 데이터 분석 대시보드</text>
+  <text x="1460" y="1410" class="description" fill="#475569;">• API 문서 자동 생성</text>
+
+  <text x="1450" y="1440" class="benefit" fill="#d97706;">개인·블로거</text>
+  <text x="1460" y="1465" class="description" fill="#475569;">• 기술 블로그 (코드 + 설명)</text>
+  <text x="1460" y="1485" class="description" fill="#475569;">• 전자책 출판 (PDF + EPUB)</text>
+  <text x="1460" y="1505" class="description" fill="#475569;">• 프레젠테이션 (발표자료)</text>
+
+  <text x="1450" y="1535" class="benefit" fill="#d97706;">공공부문</text>
+  <text x="1460" y="1560" class="description" fill="#475569;">• 정책 보고서 (투명성 확보)</text>
+
+  <!-- Bottom Summary -->
+  <rect x="700" y="750" width="600" height="100" rx="12" fill="#1e3a8a" stroke="#1e40af" stroke-width="3"/>
+  <text x="1000" y="785" text-anchor="middle" style="font-size: 20px; font-weight: 700; fill: white;">
+    🚀 핵심 철학
+  </text>
+  <text x="1000" y="810" text-anchor="middle" style="font-size: 14px; fill: #dbeafe;">
+    "Plain Text + Version Control + Open Standards = 지속가능한 문서"
+  </text>
+  <text x="1000" y="832" text-anchor="middle" style="font-size: 13px; fill: #bfdbfe;">
+    한번 작성하면 모든 포맷으로 출력 (Write Once, Publish Anywhere)
+  </text>
+</svg>

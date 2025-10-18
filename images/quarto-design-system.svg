@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 70 1000 670" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .title { font-family: 'ET Book', 'Palatino Linotype', 'Book Antiqua', Palatino, serif; font-size: 26px; font-weight: 600; fill: #111111; }
+      .layer-title { font-family: 'ET Book', 'Palatino Linotype', 'Book Antiqua', Palatino, serif; font-size: 18px; font-weight: 600; fill: #222222; }
+      .layer-subtitle { font-family: 'ET Book', 'Palatino Linotype', 'Book Antiqua', Palatino, serif; font-size: 14px; fill: #555555; font-style: italic; }
+      .code-text { font-family: 'Consolas', 'Monaco', 'Courier New', monospace; font-size: 11px; fill: #444444; }
+      .desc-text { font-family: 'ET Book', 'Palatino Linotype', 'Book Antiqua', Palatino, serif; font-size: 13px; fill: #555555; }
+      .output-label { font-family: 'ET Book', 'Palatino Linotype', 'Book Antiqua', Palatino, serif; font-size: 15px; font-weight: 600; fill: #333333; }
+      .output-desc { font-family: 'ET Book', 'Palatino Linotype', 'Book Antiqua', Palatino, serif; font-size: 12px; fill: #666666; }
+
+      .layer1-box { fill: #F0F8FF; stroke: #4A90E2; stroke-width: 1.5; }
+      .layer2-box { fill: #F0FFF0; stroke: #50B83C; stroke-width: 1.5; }
+      .layer3-box { fill: #FFFEF0; stroke: #F39C12; stroke-width: 1.5; }
+      .layer4-box { fill: #FFF5F5; stroke: #E74C3C; stroke-width: 1.5; }
+      .layer5-box { fill: #F8F8F8; stroke: #999999; stroke-width: 1.5; }
+      .output-box { fill: #FFFFFF; stroke: #666666; stroke-width: 1.5; }
+
+      .cascade-arrow { stroke: #AAAAAA; stroke-width: 2; fill: none; marker-end: url(#arrowhead); }
+      .branch-arrow { stroke: #AAAAAA; stroke-width: 1.5; fill: none; marker-end: url(#arrowhead); }
+    </style>
+
+    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#AAAAAA" />
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1000" height="750" fill="#FEFEFE"/>
+
+  <!-- Layer 1: Built-in Themes -->
+  <g id="layer1">
+    <rect x="200" y="85" width="600" height="85" rx="4" class="layer1-box"/>
+    <text x="220" y="110" class="layer-title">Layer 1: Built-in Themes</text>
+    <text x="730" y="110" text-anchor="end" class="layer-subtitle">즉시 사용 가능</text>
+
+    <text x="220" y="130" class="code-text">theme: cosmo | flatly | darkly | journal | litera | lumen | minty | pulse | sandstone ...</text>
+    <text x="220" y="147" class="desc-text">• 25+ Bootswatch themes • Default typography &amp; colors • Responsive layouts</text>
+    <text x="220" y="162" class="desc-text">• Zero configuration required • Production-ready appearance</text>
+  </g>
+
+  <!-- Cascade Arrow 1 -->
+  <line x1="500" y1="170" x2="500" y2="190" class="cascade-arrow"/>
+
+  <!-- Layer 2: Project Configuration -->
+  <g id="layer2">
+    <rect x="200" y="190" width="600" height="85" rx="4" class="layer2-box"/>
+    <text x="220" y="215" class="layer-title">Layer 2: Project Configuration</text>
+    <text x="730" y="215" text-anchor="end" class="layer-subtitle">_quarto.yml</text>
+
+    <text x="220" y="235" class="code-text">format:</text>
+    <text x="240" y="250" class="code-text">  html: { theme: cosmo, toc: true, code-fold: true }</text>
+    <text x="220" y="267" class="desc-text">• Project-wide settings • Theme selection &amp; layout options • Shared configuration</text>
+  </g>
+
+  <!-- Cascade Arrow 2 -->
+  <line x1="500" y1="275" x2="500" y2="295" class="cascade-arrow"/>
+
+  <!-- Layer 3: Custom Styling -->
+  <g id="layer3">
+    <rect x="200" y="295" width="600" height="85" rx="4" class="layer3-box"/>
+    <text x="220" y="320" class="layer-title">Layer 3: Custom Styling</text>
+    <text x="730" y="320" text-anchor="end" class="layer-subtitle">CSS/SCSS</text>
+
+    <text x="220" y="340" class="code-text">format: { html: { theme: [cosmo, custom.scss] } }</text>
+    <text x="220" y="355" class="code-text">$body-bg: #f8f9fa; $link-color: #0d6efd;</text>
+    <text x="220" y="368" class="code-text">$font-family-sans-serif: "Noto Sans KR";</text>
+  </g>
+
+  <!-- Cascade Arrow 3 -->
+  <line x1="500" y1="380" x2="500" y2="400" class="cascade-arrow"/>
+
+  <!-- Layer 4: Brand System -->
+  <g id="layer4">
+    <rect x="200" y="400" width="600" height="85" rx="4" class="layer4-box"/>
+    <text x="220" y="425" class="layer-title">Layer 4: Brand Identity System</text>
+    <text x="730" y="425" text-anchor="end" class="layer-subtitle">brand.yml</text>
+
+    <text x="220" y="445" class="code-text">brand:</text>
+    <text x="240" y="458" class="code-text">  color: { primary: "#0d6efd", secondary: "#6c757d" }</text>
+    <text x="240" y="471" class="code-text">  typography: { base: "Noto Sans KR", headings: "Noto Serif KR" }</text>
+  </g>
+
+  <!-- Cascade Arrow 4 -->
+  <line x1="500" y1="485" x2="500" y2="505" class="cascade-arrow"/>
+
+  <!-- Layer 5: Document-level -->
+  <g id="layer5">
+    <rect x="200" y="505" width="600" height="65" rx="4" class="layer5-box"/>
+    <text x="220" y="530" class="layer-title">Layer 5: Document-level Customization</text>
+    <text x="730" y="530" text-anchor="end" class="layer-subtitle">Per-document YAML</text>
+
+    <text x="220" y="549" class="code-text">title: "My Report"</text>
+    <text x="220" y="562" class="code-text">format: { html: { css: inline-styles.css } }</text>
+  </g>
+
+  <!-- Branch Arrow to Outputs -->
+  <line x1="500" y1="570" x2="500" y2="595" class="cascade-arrow"/>
+
+  <!-- Output Branching -->
+  <g id="output-branch">
+    <!-- Center point -->
+    <circle cx="500" cy="595" r="4" fill="#666666"/>
+
+    <!-- Branch to HTML -->
+    <line x1="500" y1="595" x2="250" y2="620" class="branch-arrow"/>
+
+    <!-- Branch to PDF -->
+    <line x1="500" y1="595" x2="500" y2="620" class="branch-arrow"/>
+
+    <!-- Branch to Slides -->
+    <line x1="500" y1="595" x2="750" y2="620" class="branch-arrow"/>
+  </g>
+
+  <!-- Output Formats -->
+  <g id="outputs">
+    <!-- HTML Output -->
+    <rect x="50" y="620" width="280" height="110" rx="4" class="output-box"/>
+    <text x="190" y="643" text-anchor="middle" class="output-label">HTML Output</text>
+    <text x="65" y="663" class="output-desc">• Responsive web pages</text>
+    <text x="65" y="678" class="output-desc">• Interactive elements</text>
+    <text x="65" y="693" class="output-desc">• Search &amp; navigation</text>
+    <text x="65" y="708" class="output-desc">• Modern web features</text>
+    <text x="65" y="723" class="code-text">format: html</text>
+
+    <!-- PDF Output -->
+    <rect x="360" y="620" width="280" height="110" rx="4" class="output-box"/>
+    <text x="500" y="643" text-anchor="middle" class="output-label">PDF Output</text>
+    <text x="375" y="663" class="output-desc">• Print-ready documents</text>
+    <text x="375" y="678" class="output-desc">• Typography excellence</text>
+    <text x="375" y="693" class="output-desc">• Professional formatting</text>
+    <text x="375" y="708" class="output-desc">• Academic standards</text>
+    <text x="375" y="723" class="code-text">format: pdf</text>
+
+    <!-- Slides Output -->
+    <rect x="670" y="620" width="280" height="110" rx="4" class="output-box"/>
+    <text x="810" y="643" text-anchor="middle" class="output-label">Presentation Slides</text>
+    <text x="685" y="663" class="output-desc">• RevealJS (interactive)</text>
+    <text x="685" y="678" class="output-desc">• PowerPoint (MS Office)</text>
+    <text x="685" y="693" class="output-desc">• Beamer (LaTeX)</text>
+    <text x="685" y="708" class="output-desc">• Impress (LibreOffice)</text>
+    <text x="685" y="723" class="code-text">format: revealjs</text>
+  </g>
+
+</svg>

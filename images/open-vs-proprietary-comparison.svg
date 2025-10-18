@@ -1,0 +1,176 @@
+<svg viewBox="0 0 1600 1100" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .title { font-family: 'Noto Sans KR', sans-serif; font-size: 36px; font-weight: 700; fill: #1e3a8a; }
+      .subtitle { font-family: 'Noto Sans KR', sans-serif; font-size: 18px; font-weight: 600; fill: #475569; }
+      .column-title { font-family: 'Noto Sans KR', sans-serif; font-size: 28px; font-weight: 700; fill: white; }
+      .category { font-family: 'Noto Sans KR', sans-serif; font-size: 18px; font-weight: 700; }
+      .detail { font-family: 'Noto Sans KR', sans-serif; font-size: 16px; }
+      .emphasis { font-family: 'Noto Sans KR', sans-serif; font-size: 17px; font-weight: 700; }
+      .note { font-family: 'Noto Sans KR', sans-serif; font-size: 14px; font-style: italic; }
+      .example { font-family: 'Noto Sans KR', sans-serif; font-size: 15px; }
+    </style>
+
+    <!-- Gradients -->
+    <linearGradient id="openGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color: #18a303; stop-opacity: 1" />
+      <stop offset="100%" style="stop-color: #4ade80; stop-opacity: 1" />
+    </linearGradient>
+
+    <linearGradient id="proprietaryGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color: #dc2626; stop-opacity: 1" />
+      <stop offset="100%" style="stop-color: #f87171; stop-opacity: 1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Title -->
+  <text x="800" y="50" text-anchor="middle" class="title">개방 표준 vs 독점 포맷</text>
+  <text x="800" y="80" text-anchor="middle" class="subtitle">무엇을 선택할 것인가? 지금의 선택이 미래를 결정합니다</text>
+
+  <!-- ========================================== -->
+  <!-- LEFT COLUMN: Open Standards -->
+  <!-- ========================================== -->
+  <g id="open-standards">
+    <rect x="50" y="120" width="720" height="80" rx="12" fill="url(#openGradient)"/>
+    <text x="410" y="170" text-anchor="middle" class="column-title">✓ 개방 표준 (ODF/OOXML)</text>
+
+    <!-- Comparison Items -->
+    <rect x="50" y="220" width="720" height="660" rx="12" fill="white" stroke="#18a303" stroke-width="3"/>
+
+    <!-- Item 1: International Standard -->
+    <rect x="70" y="240" width="680" height="80" rx="8" fill="#f0fdf4" stroke="#18a303" stroke-width="1"/>
+    <text x="90" y="270" class="category" style="fill: #14532d;">🌍 국제 표준</text>
+    <text x="100" y="295" class="detail" style="fill: #166534;">✓ ISO/IEC 26300 (ODF)</text>
+    <text x="100" y="315" class="detail" style="fill: #166534;">✓ ISO/IEC 29500 (OOXML)</text>
+
+    <!-- Item 2: Compatibility -->
+    <rect x="70" y="335" width="680" height="80" rx="8" fill="#f0fdf4" stroke="#18a303" stroke-width="1"/>
+    <text x="90" y="365" class="category" style="fill: #14532d;">🔗 호환성</text>
+    <text x="100" y="390" class="detail" style="fill: #166534;">✓ 전 세계 어디서나 열림</text>
+    <text x="100" y="410" class="detail" style="fill: #166534;">✓ 다양한 소프트웨어 지원</text>
+
+    <!-- Item 3: AI Support -->
+    <rect x="70" y="430" width="680" height="80" rx="8" fill="#f0fdf4" stroke="#18a303" stroke-width="1"/>
+    <text x="90" y="460" class="category" style="fill: #14532d;">🤖 AI 지원</text>
+    <text x="100" y="485" class="detail" style="fill: #166534;">✓ MS Copilot, Google Gemini 완벽 지원</text>
+    <text x="100" y="505" class="detail" style="fill: #166534;">✓ 모든 AI 도구 활용 가능</text>
+
+    <!-- Item 4: Long-term Preservation -->
+    <rect x="70" y="525" width="680" height="80" rx="8" fill="#f0fdf4" stroke="#18a303" stroke-width="1"/>
+    <text x="90" y="555" class="category" style="fill: #14532d;">📚 장기 보존성</text>
+    <text x="100" y="580" class="detail" style="fill: #166534;">✓ ISO 표준으로 영구 보장</text>
+    <text x="100" y="600" class="detail" style="fill: #166534;">✓ 미래 세대 접근 가능</text>
+
+    <!-- Item 5: Vendor Independence -->
+    <rect x="70" y="620" width="680" height="80" rx="8" fill="#f0fdf4" stroke="#18a303" stroke-width="1"/>
+    <text x="90" y="650" class="category" style="fill: #14532d;">🆓 벤더 독립성</text>
+    <text x="100" y="675" class="detail" style="fill: #166534;">✓ 다양한 선택권 (LibreOffice, MS Office, Google Docs 등)</text>
+    <text x="100" y="695" class="detail" style="fill: #166534;">✓ 가격 협상력 확보</text>
+
+    <!-- Item 6: Cost -->
+    <rect x="70" y="715" width="680" height="80" rx="8" fill="#f0fdf4" stroke="#18a303" stroke-width="1"/>
+    <text x="90" y="745" class="category" style="fill: #14532d;">💰 비용</text>
+    <text x="100" y="770" class="detail" style="fill: #166534;">✓ 무료 FOSS 옵션 (LibreOffice)</text>
+    <text x="100" y="790" class="detail" style="fill: #166534;">✓ 상업 옵션도 저렴 (경쟁)</text>
+
+    <!-- Item 7: Transparency -->
+    <rect x="70" y="810" width="680" height="60" rx="8" fill="#f0fdf4" stroke="#18a303" stroke-width="1"/>
+    <text x="90" y="840" class="category" style="fill: #14532d;">🔓 투명성</text>
+    <text x="100" y="860" class="detail" style="fill: #166534;">✓ 공개된 명세서, 누구나 구현 가능</text>
+  </g>
+
+  <!-- ========================================== -->
+  <!-- RIGHT COLUMN: Proprietary Format -->
+  <!-- ========================================== -->
+  <g id="proprietary-format">
+    <rect x="830" y="120" width="720" height="80" rx="12" fill="url(#proprietaryGradient)"/>
+    <text x="1190" y="170" text-anchor="middle" class="column-title">✗ 독점 포맷 (HWP 등)</text>
+
+    <!-- Comparison Items -->
+    <rect x="830" y="220" width="720" height="660" rx="12" fill="white" stroke="#dc2626" stroke-width="3"/>
+
+    <!-- Item 1: International Standard -->
+    <rect x="850" y="240" width="680" height="80" rx="8" fill="#fef2f2" stroke="#dc2626" stroke-width="1"/>
+    <text x="870" y="270" class="category" style="fill: #991b1b;">🌍 국제 표준</text>
+    <text x="880" y="295" class="detail" style="fill: #991b1b;">✗ ISO 표준 아님</text>
+    <text x="880" y="315" class="detail" style="fill: #991b1b;">✗ 독자적 포맷</text>
+
+    <!-- Item 2: Compatibility -->
+    <rect x="850" y="335" width="680" height="80" rx="8" fill="#fef2f2" stroke="#dc2626" stroke-width="1"/>
+    <text x="870" y="365" class="category" style="fill: #991b1b;">🔗 호환성</text>
+    <text x="880" y="390" class="detail" style="fill: #991b1b;">✗ 특정 지역에서만 사용</text>
+    <text x="880" y="410" class="detail" style="fill: #991b1b;">✗ 재외국민 접근 불가</text>
+
+    <!-- Item 3: AI Support -->
+    <rect x="850" y="430" width="680" height="80" rx="8" fill="#fef2f2" stroke="#dc2626" stroke-width="1"/>
+    <text x="870" y="460" class="category" style="fill: #991b1b;">🤖 AI 지원</text>
+    <text x="880" y="485" class="detail" style="fill: #991b1b;">✗ AI 도구 미지원 또는 제한적</text>
+    <text x="880" y="505" class="detail" style="fill: #991b1b;">✗ 글로벌 AI 생태계 배제</text>
+
+    <!-- Item 4: Long-term Preservation -->
+    <rect x="850" y="525" width="680" height="80" rx="8" fill="#fef2f2" stroke="#dc2626" stroke-width="1"/>
+    <text x="870" y="555" class="category" style="fill: #991b1b;">📚 장기 보존성</text>
+    <text x="880" y="580" class="detail" style="fill: #991b1b;">✗ 벤더 존속에 의존</text>
+    <text x="880" y="600" class="detail" style="fill: #991b1b;">✗ 미래 접근성 불확실</text>
+
+    <!-- Item 5: Vendor Independence -->
+    <rect x="850" y="620" width="680" height="80" rx="8" fill="#fef2f2" stroke="#dc2626" stroke-width="1"/>
+    <text x="870" y="650" class="category" style="fill: #991b1b;">🆓 벤더 독립성</text>
+    <text x="880" y="675" class="detail" style="fill: #991b1b;">✗ 단일 벤더 종속 (Lock-in)</text>
+    <text x="880" y="695" class="detail" style="fill: #991b1b;">✗ 가격 협상력 없음</text>
+
+    <!-- Item 6: Cost -->
+    <rect x="850" y="715" width="680" height="80" rx="8" fill="#fef2f2" stroke="#dc2626" stroke-width="1"/>
+    <text x="870" y="745" class="category" style="fill: #991b1b;">💰 비용</text>
+    <text x="880" y="770" class="detail" style="fill: #991b1b;">✗ 라이선스 비용 필수</text>
+    <text x="880" y="790" class="detail" style="fill: #991b1b;">✗ 업그레이드 추가 비용</text>
+
+    <!-- Item 7: Transparency -->
+    <rect x="850" y="810" width="680" height="60" rx="8" fill="#fef2f2" stroke="#dc2626" stroke-width="1"/>
+    <text x="870" y="840" class="category" style="fill: #991b1b;">🔓 투명성</text>
+    <text x="880" y="860" class="detail" style="fill: #991b1b;">✗ 비공개 명세, 제한된 구현</text>
+  </g>
+
+  <!-- ========================================== -->
+  <!-- Bottom: Real-world Examples -->
+  <!-- ========================================== -->
+  <rect x="50" y="900" width="1500" height="180" rx="12" fill="#1e3a8a" stroke="#1e40af" stroke-width="3"/>
+
+  <text x="800" y="935" text-anchor="middle" class="emphasis" style="fill: white; font-size: 24px;">
+    실제 사례
+  </text>
+
+  <!-- Left: Open Standards Success -->
+  <g id="success-examples">
+    <rect x="80" y="955" width="680" height="110" rx="8" fill="#dcfce7" stroke="#18a303" stroke-width="2"/>
+    <text x="420" y="985" text-anchor="middle" class="emphasis" style="fill: #14532d; font-size: 18px;">
+      ✓ 개방 표준 채택 국가
+    </text>
+    <text x="100" y="1010" class="example" style="fill: #166534;">
+      🇪🇺 유럽연합: ODF 우선 정책
+    </text>
+    <text x="100" y="1030" class="example" style="fill: #166534;">
+      🇩🇪 독일: 뮌헨시 등 70+ 도시 LibreOffice
+    </text>
+    <text x="100" y="1050" class="example" style="fill: #166534;">
+      🇫🇷 프랑스: 국방부·경찰청 72,000대 LibreOffice
+    </text>
+  </g>
+
+  <!-- Right: Proprietary Problems -->
+  <g id="problem-examples">
+    <rect x="800" y="955" width="680" height="110" rx="8" fill="#fee2e2" stroke="#dc2626" stroke-width="2"/>
+    <text x="1140" y="985" text-anchor="middle" class="emphasis" style="fill: #991b1b; font-size: 18px;">
+      ✗ 독점 포맷 문제: 한국의 HWP
+    </text>
+    <text x="820" y="1010" class="example" style="fill: #991b1b;">
+      ⚠️ 재외국민 300만+ 문서 접근 불가
+    </text>
+    <text x="820" y="1030" class="example" style="fill: #991b1b;">
+      ⚠️ 국제 협업 프로젝트에서 장벽
+    </text>
+    <text x="820" y="1050" class="example" style="fill: #991b1b;">
+      ⚠️ AI 시대에 글로벌 도구와 단절
+    </text>
+  </g>
+</svg>

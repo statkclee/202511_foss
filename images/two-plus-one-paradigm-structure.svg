@@ -1,0 +1,240 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2400 2200">
+  <defs>
+    <!-- Gradients -->
+    <linearGradient id="headerGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#7c3aed;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#a855f7;stop-opacity:1" />
+    </linearGradient>
+
+    <linearGradient id="semanticGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#d1fae5;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#a7f3d0;stop-opacity:1" />
+    </linearGradient>
+
+    <linearGradient id="presentationGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#f3e8ff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#e9d5ff;stop-opacity:1" />
+    </linearGradient>
+
+    <linearGradient id="drawingGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#fef3c7;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#fde68a;stop-opacity:1" />
+    </linearGradient>
+
+    <linearGradient id="typesetGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#dbeafe;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#bfdbfe;stop-opacity:1" />
+    </linearGradient>
+
+    <!-- Arrow markers -->
+    <marker id="arrowDown" markerWidth="12" markerHeight="12" refX="6" refY="11" orient="auto">
+      <path d="M0,0 L12,0 L6,12 z" fill="#7c3aed" />
+    </marker>
+
+    <!-- Styles -->
+    <style>
+      text { font-family: 'Noto Sans KR', 'Noto Sans', sans-serif; }
+      .title { font-size: 38px; font-weight: 700; fill: white; }
+      .subtitle { font-size: 18px; font-weight: 600; fill: white; }
+      .section-title { font-size: 28px; font-weight: 700; }
+      .level-title { font-size: 24px; font-weight: 700; }
+      .box-title { font-size: 22px; font-weight: 700; }
+      .label { font-size: 16px; font-weight: 600; fill: #374151; }
+      .value { font-size: 14px; fill: #4b5563; }
+      .code { font-family: 'Monaco', 'Courier New', monospace; font-size: 12px; fill: #1f2937; }
+      .question { font-size: 20px; font-weight: 700; fill: #7c3aed; }
+      .answer { font-size: 16px; font-weight: 600; }
+      .reason { font-size: 15px; fill: #4b5563; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="2400" height="2200" fill="#f8fafc"/>
+
+  <!-- Header -->
+  <rect x="40" y="20" width="2320" height="100" rx="12" fill="url(#headerGrad)"/>
+  <text x="1200" y="65" text-anchor="middle" class="title">문서 패러다임의 진짜 구조: 2 + 1 = 3</text>
+  <text x="1200" y="95" text-anchor="middle" class="subtitle">근본적으로는 2개 (의미 vs 외양), 하지만 외양이 필연적으로 2개로 나뉘는 이유</text>
+
+  <!-- Level 1: Fundamental Dichotomy -->
+  <text x="1200" y="170" text-anchor="middle" class="level-title" fill="#7c3aed">레벨 1: 근본적 이분법</text>
+
+  <g id="level1">
+    <!-- Semantic (Left) -->
+    <rect x="120" y="200" width="900" height="280" rx="15" fill="url(#semanticGrad)" stroke="#10b981" stroke-width="4"/>
+    <text x="570" y="250" text-anchor="middle" class="box-title" fill="#059669">의미 / 구조</text>
+    <text x="570" y="280" text-anchor="middle" class="label" fill="#059669">(Semantic / Structure)</text>
+    <text x="570" y="310" text-anchor="middle" class="section-title" fill="#065f46">Markup</text>
+
+    <rect x="160" y="340" width="820" height="110" rx="8" fill="white" stroke="#10b981" stroke-width="2"/>
+    <text x="570" y="370" text-anchor="middle" class="question" fill="#059669">무엇인가?</text>
+    <text x="180" y="400" class="value">• 이것은 제목이다, 이것은 본문이다</text>
+    <text x="180" y="425" class="value">• 논리적 구조, 계층, 관계</text>
+
+    <!-- VS -->
+    <text x="1200" y="340" text-anchor="middle" style="font-size: 80px; font-weight: 700; fill: #7c3aed;">VS</text>
+
+    <!-- Presentation (Right) -->
+    <rect x="1380" y="200" width="900" height="280" rx="15" fill="url(#presentationGrad)" stroke="#a855f7" stroke-width="4"/>
+    <text x="1830" y="250" text-anchor="middle" class="box-title" fill="#7c3aed">외양 / 표현</text>
+    <text x="1830" y="280" text-anchor="middle" class="label" fill="#7c3aed">(Presentation / Appearance)</text>
+    <text x="1830" y="310" text-anchor="middle" class="section-title" fill="#6b21a8">Rendering</text>
+
+    <rect x="1420" y="340" width="820" height="110" rx="8" fill="white" stroke="#a855f7" stroke-width="2"/>
+    <text x="1830" y="370" text-anchor="middle" class="question" fill="#7c3aed">어떻게 보여줄까?</text>
+    <text x="1440" y="400" class="value">• 화면/종이에 시각적으로 표현</text>
+    <text x="1440" y="425" class="value">• 위치, 크기, 색상, 폰트</text>
+  </g>
+
+  <!-- Arrow down -->
+  <path d="M 1200 480 L 1200 540" stroke="#7c3aed" stroke-width="6" fill="none" marker-end="url(#arrowDown)"/>
+  <text x="1200" y="520" text-anchor="middle" class="question" fill="#7c3aed">왜 외양이 2개로 나뉘는가?</text>
+
+  <!-- Level 2: Presentation Split -->
+  <text x="1200" y="580" text-anchor="middle" class="level-title" fill="#7c3aed">레벨 2: 외양의 필연적 분화</text>
+
+  <g id="level2">
+    <!-- Presentation box (top) -->
+    <rect x="700" y="610" width="800" height="80" rx="12" fill="url(#presentationGrad)" stroke="#a855f7" stroke-width="3"/>
+    <text x="1100" y="655" text-anchor="middle" class="box-title" fill="#7c3aed">외양 (Presentation)</text>
+
+    <!-- Arrow split -->
+    <line x1="1100" y1="690" x2="1100" y2="730" stroke="#7c3aed" stroke-width="4"/>
+    <line x1="1100" y1="730" x2="600" y2="800" stroke="#7c3aed" stroke-width="4"/>
+    <line x1="1100" y1="730" x2="1600" y2="800" stroke="#7c3aed" stroke-width="4"/>
+
+    <!-- Drawing (Left) -->
+    <rect x="150" y="800" width="900" height="280" rx="15" fill="url(#drawingGrad)" stroke="#f59e0b" stroke-width="4"/>
+    <text x="600" y="850" text-anchor="middle" class="box-title" fill="#d97706">Drawing</text>
+    <text x="600" y="880" text-anchor="middle" class="label" fill="#d97706">저수준 외양 (Low-level)</text>
+
+    <rect x="190" y="910" width="820" height="140" rx="8" fill="white" stroke="#f59e0b" stroke-width="2"/>
+    <text x="210" y="940" class="label" fill="#d97706">특성:</text>
+    <text x="230" y="970" class="value">• 직접 제어: 좌표 명시 (x, y)</text>
+    <text x="230" y="995" class="value">• 대상: 도형, 선, 이미지</text>
+    <text x="230" y="1020" class="value">• 예: moveto(100, 200), lineto(300, 200)</text>
+    <text x="230" y="1045" class="code">→ "정확히 여기에 그려"</text>
+
+    <!-- Typesetting (Right) -->
+    <rect x="1350" y="800" width="900" height="280" rx="15" fill="url(#typesetGrad)" stroke="#3b82f6" stroke-width="4"/>
+    <text x="1800" y="850" text-anchor="middle" class="box-title" fill="#1e40af">Typesetting</text>
+    <text x="1800" y="880" text-anchor="middle" class="label" fill="#1e40af">고수준 외양 (High-level)</text>
+
+    <rect x="1390" y="910" width="820" height="140" rx="8" fill="white" stroke="#3b82f6" stroke-width="2"/>
+    <text x="1410" y="940" class="label" fill="#1e40af">특성:</text>
+    <text x="1430" y="970" class="value">• 자동 계산: 규칙으로 위치 계산</text>
+    <text x="1430" y="995" class="value">• 대상: 텍스트 전문 (문단, 페이지)</text>
+    <text x="1430" y="1020" class="value">• 예: \section{Title}</text>
+    <text x="1430" y="1045" class="code">→ "적절하게 배치해줘"</text>
+  </g>
+
+  <!-- Level 3: Why Split? -->
+  <text x="1200" y="1140" text-anchor="middle" class="level-title" fill="#7c3aed">레벨 3: 분화 이유 분석</text>
+
+  <!-- Four reasons (2x2 grid) -->
+  <g id="reasons">
+    <!-- Reason 1: Abstraction Level -->
+    <rect x="100" y="1170" width="1050" height="380" rx="12" fill="white" stroke="#6b7280" stroke-width="3"/>
+    <text x="625" y="1210" text-anchor="middle" class="box-title" fill="#7c3aed">1. 추상화 레벨 차이</text>
+
+    <rect x="140" y="1240" width="470" height="280" rx="8" fill="#fffbeb"/>
+    <text x="375" y="1270" text-anchor="middle" class="label" fill="#d97706">Drawing (저수준)</text>
+    <text x="160" y="1300" class="value" font-weight="700">직접 좌표 지정:</text>
+    <text x="180" y="1325" class="code">moveto(100, 200)</text>
+    <text x="180" y="1348" class="code">lineto(300, 200)</text>
+    <text x="180" y="1371" class="code">stroke</text>
+    <text x="160" y="1401" class="value">결과: (100,200)에서 (300,200)까지 선</text>
+    <text x="160" y="1431" class="reason">→ 모든 것을 명시해야 함</text>
+    <text x="160" y="1456" class="reason">→ 유연하지만 복잡함</text>
+    <text x="160" y="1481" class="reason">→ 줄바꿈, 정렬 등 직접 계산</text>
+
+    <rect x="640" y="1240" width="470" height="280" rx="8" fill="#eff6ff"/>
+    <text x="875" y="1270" text-anchor="middle" class="label" fill="#1e40af">Typesetting (고수준)</text>
+    <text x="660" y="1300" class="value" font-weight="700">규칙으로 자동 계산:</text>
+    <text x="680" y="1325" class="code">\section{Title}</text>
+    <text x="680" y="1348" class="code">This is a paragraph.</text>
+    <text x="660" y="1378" class="value">결과: 적절한 위치, 크기, 간격</text>
+    <text x="660" y="1408" class="reason">→ 규칙만 정의</text>
+    <text x="660" y="1433" class="reason">→ 위치는 자동 계산</text>
+    <text x="660" y="1458" class="reason">→ 줄바꿈, 하이픈 자동</text>
+    <text x="660" y="1483" class="reason">→ 복잡도 숨김</text>
+
+    <!-- Reason 2: Control Method -->
+    <rect x="1200" y="1170" width="1100" height="380" rx="12" fill="white" stroke="#6b7280" stroke-width="3"/>
+    <text x="1750" y="1210" text-anchor="middle" class="box-title" fill="#7c3aed">2. 제어 방식 차이</text>
+
+    <rect x="1240" y="1240" width="490" height="140" rx="8" fill="#fffbeb"/>
+    <text x="1485" y="1270" text-anchor="middle" class="label" fill="#d97706">Drawing: 명시적</text>
+    <text x="1260" y="1300" class="value">(Imperative / Explicit)</text>
+    <text x="1280" y="1330" class="reason">→ "어떻게" 해야 하는지 명령</text>
+    <text x="1280" y="1355" class="reason">→ 프로그래밍 스타일</text>
+
+    <rect x="1760" y="1240" width="500" height="140" rx="8" fill="#eff6ff"/>
+    <text x="2010" y="1270" text-anchor="middle" class="label" fill="#1e40af">Typesetting: 선언적</text>
+    <text x="1780" y="1300" class="value">(Declarative / Rule-based)</text>
+    <text x="1800" y="1330" class="reason">→ "무엇"인지만 선언</text>
+    <text x="1800" y="1355" class="reason">→ 알고리즘이 처리</text>
+
+    <!-- Example comparison -->
+    <rect x="1240" y="1400" width="1020" height="130" rx="8" fill="#faf5ff"/>
+    <text x="1750" y="1430" text-anchor="middle" class="label" fill="#7c3aed">같은 결과, 다른 접근:</text>
+    <text x="1260" y="1465" class="code" fill="#d97706">Drawing: for i in lines: moveto(x, y+i*20); show(text[i])</text>
+    <text x="1260" y="1490" class="code" fill="#1e40af">Typesetting: \begin{document} text \end{document}</text>
+    <text x="1260" y="1515" class="reason">→ Drawing은 반복문 필요, Typesetting은 자동</text>
+
+    <!-- Reason 3: Target Difference -->
+    <rect x="100" y="1590" width="1050" height="350" rx="12" fill="white" stroke="#6b7280" stroke-width="3"/>
+    <text x="625" y="1630" text-anchor="middle" class="box-title" fill="#7c3aed">3. 대상의 본질적 차이</text>
+
+    <rect x="140" y="1660" width="470" height="120" rx="8" fill="#fffbeb"/>
+    <text x="375" y="1690" text-anchor="middle" class="label" fill="#d97706">Drawing: 자유로운 도형</text>
+    <text x="160" y="1720" class="reason">• 선, 원, 사각형, 곡선</text>
+    <text x="160" y="1745" class="reason">• 규칙이 적음</text>
+    <text x="160" y="1770" class="reason">• 좌표로 충분</text>
+
+    <rect x="640" y="1660" width="470" height="120" rx="8" fill="#eff6ff"/>
+    <text x="875" y="1690" text-anchor="middle" class="label" fill="#1e40af">Typesetting: 텍스트 특수성</text>
+    <text x="660" y="1720" class="reason">• 선형적 (왼쪽→오른쪽)</text>
+    <text x="660" y="1745" class="reason">• 규칙이 많음</text>
+    <text x="660" y="1770" class="reason">• 복잡한 알고리즘 필요</text>
+
+    <rect x="140" y="1800" width="970" height="120" rx="8" fill="#fef3c7" stroke="#f59e0b" stroke-width="2"/>
+    <text x="625" y="1830" text-anchor="middle" class="label" fill="#d97706">텍스트 조판의 특수한 복잡도:</text>
+    <text x="160" y="1860" class="reason" style="font-size: 13px;">• 줄바꿈 (line breaking): 단어 단위, 하이픈 처리</text>
+    <text x="160" y="1885" class="reason" style="font-size: 13px;">• 정렬 (justification): 단어 간격 자동 조정</text>
+    <text x="160" y="1910" class="reason" style="font-size: 13px;">• 커닝 (kerning): 글자 간 미세 조정 (AV, To...)</text>
+    <text x="625" y="1905" text-anchor="middle" class="value" fill="#d97706" font-weight="700">→ Drawing으로는 해결 불가능!</text>
+
+    <!-- Reason 4: Historical Origin -->
+    <rect x="1200" y="1590" width="1100" height="350" rx="12" fill="white" stroke="#6b7280" stroke-width="3"/>
+    <text x="1750" y="1630" text-anchor="middle" class="box-title" fill="#7c3aed">4. 역사적 기원의 독립성</text>
+
+    <rect x="1240" y="1660" width="490" height="120" rx="8" fill="#fffbeb"/>
+    <text x="1485" y="1690" text-anchor="middle" class="label" fill="#d97706">Drawing</text>
+    <text x="1260" y="1720" class="reason">기원: 공학/건축 (정밀 도면)</text>
+    <text x="1260" y="1745" class="reason">필요: 정확한 측정과 제어</text>
+    <text x="1260" y="1770" class="reason">1959: CalComp 플로터</text>
+
+    <rect x="1760" y="1660" width="500" height="120" rx="8" fill="#eff6ff"/>
+    <text x="2010" y="1690" text-anchor="middle" class="label" fill="#1e40af">Typesetting</text>
+    <text x="1780" y="1720" class="reason">기원: 출판/인쇄 (활판인쇄)</text>
+    <text x="1780" y="1745" class="reason">필요: 아름다운 타이포그래피</text>
+    <text x="1780" y="1770" class="reason">1440: 구텐베르크</text>
+
+    <rect x="1240" y="1800" width="1020" height="120" rx="8" fill="#ddd6fe" stroke="#7c3aed" stroke-width="2"/>
+    <text x="1750" y="1830" text-anchor="middle" class="label" fill="#7c3aed">독립적 발전 → 컴퓨터 시대에 만남:</text>
+    <text x="1260" y="1860" class="reason">• 서로 다른 사용자, 다른 목적</text>
+    <text x="1260" y="1885" class="reason">• 수백 년간 독립적으로 발전</text>
+    <text x="1260" y="1910" class="reason">• 1970-1980년대 컴퓨터에서 만남 → 별개 패러다임 유지</text>
+  </g>
+
+  <!-- Bottom: Key Insight -->
+  <rect x="100" y="1980" width="2200" height="180" rx="15" fill="#fef3c7" stroke="#f59e0b" stroke-width="4"/>
+  <text x="1200" y="2030" text-anchor="middle" class="section-title" fill="#d97706">💡 핵심 통찰: 왜 외양을 하나로 합칠 수 없는가?</text>
+
+  <text x="150" y="2075" class="value" style="font-size: 16px; font-weight: 700;">텍스트 조판은 Drawing으로 해결 불가능:</text>
+  <text x="170" y="2105" class="reason" style="font-size: 14px;">• 문단을 Drawing 명령어로 렌더링하려면: 모든 단어의 위치를 직접 계산해야 함 (줄바꿈, 하이픈, 정렬, 커닝...)</text>
+  <text x="170" y="2130" class="reason" style="font-size: 14px;">• 너무 복잡해서 실용적이지 않음 → Typesetting 전문 시스템 필요</text>
+  <text x="170" y="2155" class="answer" style="font-size: 16px; fill: #d97706;">결론: <tspan font-weight="700">2 (의미 vs 외양)</tspan> + <tspan font-weight="700">1 (외양이 2개로 분화)</tspan> = <tspan font-weight="700" style="font-size: 20px;">3개 패러다임</tspan></text>
+
+</svg>

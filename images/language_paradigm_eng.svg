@@ -1,0 +1,268 @@
+<svg width="1200" height="350" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="1200" height="350" fill="#f8f9fa"/>
+
+  <!-- Drawing Language -->
+  <g>
+    <!-- Box 1 background -->
+    <rect x="10" y="10" width="280" height="330" rx="10" fill="#fff" stroke="#ddd" stroke-width="2"/>
+
+    <!-- Title -->
+    <text x="150" y="40" text-anchor="middle" font-family="Noto Sans, Arial" font-size="18" font-weight="bold">Drawing Language</text>
+
+    <!-- Plotter image (more intuitive representation) -->
+    <g transform="translate(150, 70)">
+      <!-- Plotter basic structure -->
+      <!-- Base stand -->
+      <rect x="-60" y="50" width="120" height="8" fill="#34495e" rx="4"/>
+
+      <!-- Left support -->
+      <rect x="-55" y="20" width="8" height="40" fill="#2c3e50"/>
+      <!-- Right support -->
+      <rect x="47" y="20" width="8" height="40" fill="#2c3e50"/>
+
+      <!-- Top rail -->
+      <rect x="-50" y="15" width="100" height="6" fill="#7f8c8d" rx="3"/>
+
+      <!-- Pen holder (side view) -->
+      <g transform="translate(-10, 0)">
+        <!-- Holder body -->
+        <rect x="-8" y="8" width="16" height="12" fill="#3498db" rx="2"/>
+        <!-- Pen -->
+        <rect x="-1" y="16" width="2" height="20" fill="#e74c3c"/>
+        <circle cx="0" cy="36" r="1.5" fill="#c0392b"/>
+      </g>
+
+      <!-- Paper (roll form) -->
+      <!-- Paper roll -->
+      <ellipse cx="0" cy="-5" rx="35" ry="3" fill="#ecf0f1"/>
+      <rect x="-35" y="-5" width="70" height="45" fill="#fff" stroke="#bdc3c7" stroke-width="1"/>
+
+      <!-- Paper grid pattern -->
+      <defs>
+        <pattern id="grid" width="10" height="10" patternUnits="userSpaceOnUse">
+          <path d="M 10 0 L 0 0 0 10" fill="none" stroke="#e8e8e8" stroke-width="0.5"/>
+        </pattern>
+      </defs>
+      <rect x="-35" y="-5" width="70" height="45" fill="url(#grid)"/>
+
+      <!-- Drawn graph (more sophisticated) -->
+      <path d="M-25 10 Q-10 5 0 15 Q10 25 25 20" stroke="#e74c3c" stroke-width="2" fill="none"/>
+      <path d="M-30 25 L30 25" stroke="#2c3e50" stroke-width="1" stroke-dasharray="2,2"/>
+      <path d="M0 5 L0 35" stroke="#2c3e50" stroke-width="1" stroke-dasharray="2,2"/>
+
+      <!-- Coordinate axis label points -->
+      <circle cx="-20" cy="25" r="1" fill="#e74c3c"/>
+      <circle cx="-10" cy="15" r="1" fill="#e74c3c"/>
+      <circle cx="0" cy="15" r="1" fill="#e74c3c"/>
+      <circle cx="10" cy="25" r="1" fill="#e74c3c"/>
+      <circle cx="20" cy="20" r="1" fill="#e74c3c"/>
+
+      <!-- Arrow showing pen movement -->
+      <path d="M-15 0 Q0 -5 15 0" stroke="#95a5a6" stroke-width="1" fill="none" marker-end="url(#smallArrow)"/>
+    </g>
+
+    <!-- Small arrow marker definition -->
+    <defs>
+      <marker id="smallArrow" markerWidth="6" markerHeight="4"
+              refX="6" refY="2" orient="auto">
+        <polygon points="0 0, 6 2, 0 4" fill="#95a5a6" />
+      </marker>
+    </defs>
+
+    <!-- Code example -->
+    <rect x="20" y="200" width="260" height="130" fill="#f8f9fa" stroke="#e9ecef" rx="5"/>
+    <text x="30" y="220" font-family="Monaco, monospace" font-size="12" fill="#2c3e50">PU;</text>
+    <text x="30" y="240" font-family="Monaco, monospace" font-size="12" fill="#2c3e50">PA200,150;</text>
+    <text x="30" y="260" font-family="Monaco, monospace" font-size="12" fill="#2c3e50">PD;</text>
+    <text x="30" y="280" font-family="Monaco, monospace" font-size="12" fill="#2c3e50">PA250,250;</text>
+
+    <text x="30" y="305" font-family="Noto Sans, Arial" font-size="10" fill="#666">Pen up, move to (x, y),</text>
+    <text x="30" y="318" font-family="Noto Sans, Arial" font-size="10" fill="#666">pen down</text>
+  </g>
+
+  <!-- Typesetting Language -->
+  <g>
+    <!-- Box 2 background -->
+    <rect x="310" y="10" width="280" height="330" rx="10" fill="#fff" stroke="#ddd" stroke-width="2"/>
+
+    <!-- Title -->
+    <text x="450" y="40" text-anchor="middle" font-family="Noto Sans, Arial" font-size="18" font-weight="bold">Typesetting Language</text>
+
+    <!-- Typewriter image (more realistic representation) -->
+    <g transform="translate(450, 85)">
+      <!-- Typewriter main body (side view) -->
+      <rect x="-55" y="25" width="110" height="35" fill="#2c3e50" rx="3"/>
+      <!-- Top case -->
+      <rect x="-50" y="15" width="100" height="15" fill="#34495e" rx="2"/>
+
+      <!-- Paper roller and paper -->
+      <circle cx="0" cy="10" r="8" fill="#7f8c8d"/>
+      <circle cx="0" cy="10" r="6" fill="#95a5a6"/>
+      <!-- Paper -->
+      <rect x="-35" y="-15" width="70" height="30" fill="#fff" stroke="#bdc3c7" stroke-width="1"/>
+
+      <!-- Typed text (typesetting language style) -->
+      <text x="-30" y="-8" font-family="Monaco, monospace" font-size="6" fill="#2c3e50">.TH MANUAL 1</text>
+      <text x="-30" y="-1" font-family="Monaco, monospace" font-size="6" fill="#2c3e50">.SH DESCRIPTION</text>
+      <text x="-30" y="6" font-family="Monaco, monospace" font-size="6" fill="#2c3e50">This is formatted</text>
+
+      <!-- Type bars -->
+      <g transform="translate(0, 20)">
+        <line x1="-10" y1="0" x2="-5" y2="-10" stroke="#34495e" stroke-width="2"/>
+        <line x1="-3" y1="0" x2="2" y2="-10" stroke="#34495e" stroke-width="2"/>
+        <line x1="4" y1="0" x2="9" y2="-10" stroke="#34495e" stroke-width="2"/>
+        <!-- Type heads -->
+        <circle cx="-5" cy="-10" r="1.5" fill="#7f8c8d"/>
+        <circle cx="2" cy="-10" r="1.5" fill="#7f8c8d"/>
+        <circle cx="9" cy="-10" r="1.5" fill="#7f8c8d"/>
+      </g>
+
+      <!-- Keyboard (QWERTY hint) -->
+      <rect x="-50" y="35" width="100" height="22" fill="#34495e" rx="2"/>
+      <!-- Key rows -->
+      <!-- First row -->
+      <rect x="-45" y="38" width="4" height="4" fill="#7f8c8d" rx="1"/>
+      <rect x="-39" y="38" width="4" height="4" fill="#7f8c8d" rx="1"/>
+      <rect x="-33" y="38" width="4" height="4" fill="#7f8c8d" rx="1"/>
+      <rect x="-27" y="38" width="4" height="4" fill="#7f8c8d" rx="1"/>
+      <rect x="-21" y="38" width="4" height="4" fill="#7f8c8d" rx="1"/>
+      <rect x="-15" y="38" width="4" height="4" fill="#7f8c8d" rx="1"/>
+      <rect x="-9" y="38" width="4" height="4" fill="#7f8c8d" rx="1"/>
+      <rect x="-3" y="38" width="4" height="4" fill="#7f8c8d" rx="1"/>
+      <rect x="3" y="38" width="4" height="4" fill="#7f8c8d" rx="1"/>
+      <rect x="9" y="38" width="4" height="4" fill="#7f8c8d" rx="1"/>
+
+      <!-- Second row (QWERTY) -->
+      <rect x="-42" y="44" width="4" height="4" fill="#7f8c8d" rx="1"/>
+      <rect x="-36" y="44" width="4" height="4" fill="#7f8c8d" rx="1"/>
+      <rect x="-30" y="44" width="4" height="4" fill="#7f8c8d" rx="1"/>
+      <rect x="-24" y="44" width="4" height="4" fill="#7f8c8d" rx="1"/>
+      <rect x="-18" y="44" width="4" height="4" fill="#7f8c8d" rx="1"/>
+      <rect x="-12" y="44" width="4" height="4" fill="#7f8c8d" rx="1"/>
+      <rect x="-6" y="44" width="4" height="4" fill="#7f8c8d" rx="1"/>
+      <rect x="0" y="44" width="4" height="4" fill="#7f8c8d" rx="1"/>
+      <rect x="6" y="44" width="4" height="4" fill="#7f8c8d" rx="1"/>
+
+      <!-- Third row -->
+      <rect x="-39" y="50" width="4" height="4" fill="#7f8c8d" rx="1"/>
+      <rect x="-33" y="50" width="4" height="4" fill="#7f8c8d" rx="1"/>
+      <rect x="-27" y="50" width="4" height="4" fill="#7f8c8d" rx="1"/>
+      <rect x="-21" y="50" width="4" height="4" fill="#7f8c8d" rx="1"/>
+      <rect x="-15" y="50" width="4" height="4" fill="#7f8c8d" rx="1"/>
+      <rect x="-9" y="50" width="4" height="4" fill="#7f8c8d" rx="1"/>
+      <rect x="-3" y="50" width="4" height="4" fill="#7f8c8d" rx="1"/>
+
+      <!-- Space bar -->
+      <rect x="-25" y="56" width="50" height="4" fill="#95a5a6" rx="2"/>
+
+      <!-- Ribbon (ink ribbon) -->
+      <rect x="-20" y="8" width="40" height="2" fill="#2c3e50" rx="1"/>
+    </g>
+
+    <!-- Code example (actual typesetting language troff/nroff) -->
+    <rect x="320" y="200" width="260" height="130" fill="#f8f9fa" stroke="#e9ecef" rx="5"/>
+    <text x="330" y="220" font-family="Monaco, monospace" font-size="11" fill="#2c3e50">.TH PAPER 1</text>
+    <text x="330" y="240" font-family="Monaco, monospace" font-size="11" fill="#2c3e50">.SH NAME</text>
+    <text x="330" y="255" font-family="Monaco, monospace" font-size="11" fill="#2c3e50">paper \\- scientific document</text>
+    <text x="330" y="275" font-family="Monaco, monospace" font-size="11" fill="#2c3e50">.PP</text>
+    <text x="330" y="290" font-family="Monaco, monospace" font-size="11" fill="#2c3e50">This paragraph has</text>
+    <text x="330" y="305" font-family="Monaco, monospace" font-size="11" fill="#2c3e50">.I italic</text>
+    <text x="330" y="315" font-family="Monaco, monospace" font-size="10" fill="#666">Text formatting &amp; layout control</text>
+  </g>
+
+  <!-- Markup Language -->
+  <g>
+    <!-- Box 3 background -->
+    <rect x="610" y="10" width="280" height="330" rx="10" fill="#fff" stroke="#ddd" stroke-width="2"/>
+
+    <!-- Title -->
+    <text x="750" y="40" text-anchor="middle" font-family="Noto Sans, Arial" font-size="18" font-weight="bold">Markup Language</text>
+
+    <!-- Computer/database image -->
+    <g transform="translate(750, 80)">
+      <!-- Monitor -->
+      <rect x="-45" y="-10" width="90" height="60" fill="#2c3e50" rx="3"/>
+      <rect x="-40" y="-5" width="80" height="45" fill="#3498db" rx="2"/>
+      <!-- Stand -->
+      <rect x="-5" y="50" width="10" height="15" fill="#2c3e50"/>
+      <rect x="-20" y="65" width="40" height="5" fill="#2c3e50"/>
+      <!-- Screen content (data) -->
+      <text x="0" y="10" text-anchor="middle" font-family="Monaco, monospace" font-size="8" fill="#fff">&amp;lt;data&amp;gt;</text>
+      <text x="0" y="22" text-anchor="middle" font-family="Monaco, monospace" font-size="8" fill="#fff">content</text>
+      <text x="0" y="34" text-anchor="middle" font-family="Monaco, monospace" font-size="8" fill="#fff">&amp;lt;/data&amp;gt;</text>
+    </g>
+
+    <!-- Code example -->
+    <rect x="620" y="200" width="260" height="130" fill="#f8f9fa" stroke="#e9ecef" rx="5"/>
+    <text x="630" y="220" font-family="Monaco, monospace" font-size="11" fill="#2c3e50">&amp;lt;person&amp;gt;Derstmann&amp;lt;/person&amp;gt;</text>
+    <text x="630" y="240" font-family="Monaco, monospace" font-size="11" fill="#2c3e50">still questions the</text>
+    <text x="630" y="260" font-family="Monaco, monospace" font-size="11" fill="#2c3e50">importance of</text>
+    <text x="630" y="280" font-family="Monaco, monospace" font-size="11" fill="#2c3e50">&amp;lt;chemical&amp;gt;methane&amp;lt;/chemical&amp;gt;</text>
+    <text x="630" y="300" font-family="Monaco, monospace" font-size="11" fill="#2c3e50">release in &amp;lt;event&amp;gt;the</text>
+    <text x="630" y="315" font-family="Monaco, monospace" font-size="11" fill="#2c3e50">Fukuyama disaster&amp;lt;/event&amp;gt;.</text>
+  </g>
+
+  <!-- Generative Language -->
+  <g>
+    <!-- Box 4 background -->
+    <rect x="910" y="10" width="280" height="330" rx="10" fill="#fff" stroke="#ddd" stroke-width="2"/>
+
+    <!-- Title -->
+    <text x="1050" y="40" text-anchor="middle" font-family="Noto Sans, Arial" font-size="18" font-weight="bold">Generative Language</text>
+
+    <!-- AI/robot image -->
+    <g transform="translate(1050, 80)">
+      <!-- Robot head -->
+      <rect x="-25" y="-10" width="50" height="40" fill="#9b59b6" rx="20"/>
+      <!-- Eyes -->
+      <circle cx="-10" cy="5" r="4" fill="#fff"/>
+      <circle cx="10" cy="5" r="4" fill="#fff"/>
+      <circle cx="-10" cy="5" r="2" fill="#3498db"/>
+      <circle cx="10" cy="5" r="2" fill="#3498db"/>
+      <!-- Mouth -->
+      <rect x="-8" y="15" width="16" height="3" fill="#fff" rx="1"/>
+      <!-- Antenna -->
+      <line x1="-10" y1="-10" x2="-10" y2="-20" stroke="#e74c3c" stroke-width="2"/>
+      <line x1="10" y1="-10" x2="10" y2="-20" stroke="#e74c3c" stroke-width="2"/>
+      <circle cx="-10" cy="-20" r="2" fill="#e74c3c"/>
+      <circle cx="10" cy="-20" r="2" fill="#e74c3c"/>
+      <!-- Body -->
+      <rect x="-30" y="30" width="60" height="40" fill="#8e44ad" rx="5"/>
+      <!-- Arms -->
+      <rect x="-45" y="40" width="12" height="20" fill="#8e44ad" rx="6"/>
+      <rect x="33" y="40" width="12" height="20" fill="#8e44ad" rx="6"/>
+    </g>
+
+    <!-- Code example -->
+    <rect x="920" y="180" width="260" height="150" fill="#f8f9fa" stroke="#e9ecef" rx="5"/>
+    <text x="930" y="200" font-family="Noto Sans, Arial" font-size="11" fill="#2c3e50">"Analyze climate_data.csv</text>
+    <text x="930" y="215" font-family="Noto Sans, Arial" font-size="11" fill="#2c3e50">file, visualize monthly</text>
+    <text x="930" y="230" font-family="Noto Sans, Arial" font-size="11" fill="#2c3e50">average temperature trends,</text>
+    <text x="930" y="245" font-family="Noto Sans, Arial" font-size="11" fill="#2c3e50">and write insights in</text>
+    <text x="930" y="260" font-family="Noto Sans, Arial" font-size="11" fill="#2c3e50">English"</text>
+
+    <!-- Arrow -->
+    <text x="1050" y="280" text-anchor="middle" font-family="Arial" font-size="16" fill="#e74c3c">↓</text>
+
+    <text x="930" y="300" font-family="Noto Sans, Arial" font-size="10" fill="#666">AI automatically generates</text>
+    <text x="930" y="315" font-family="Noto Sans, Arial" font-size="10" fill="#666">code, executes &amp; interprets</text>
+  </g>
+
+  <!-- Evolution arrows -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7"
+            refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#95a5a6" />
+    </marker>
+  </defs>
+
+  <!-- Arrow 1 -->
+  <line x1="290" y1="200" x2="310" y2="200" stroke="#95a5a6" stroke-width="1" marker-end="url(#arrowhead)"/>
+
+  <!-- Arrow 2 -->
+  <line x1="590" y1="200" x2="610" y2="200" stroke="#95a5a6" stroke-width="1" marker-end="url(#arrowhead)"/>
+
+  <!-- Arrow 3 -->
+  <line x1="890" y1="200" x2="910" y2="200" stroke="#95a5a6" stroke-width="1" marker-end="url(#arrowhead)"/>
+</svg>

@@ -1,0 +1,323 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3000 1500">
+  <defs>
+    <!-- Gradients -->
+    <linearGradient id="headerGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#059669;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#10b981;stop-opacity:1" />
+    </linearGradient>
+
+    <linearGradient id="gmlBg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#d1fae5;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#a7f3d0;stop-opacity:1" />
+    </linearGradient>
+
+    <linearGradient id="sgmlBg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#86efac;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#4ade80;stop-opacity:1" />
+    </linearGradient>
+
+    <linearGradient id="htmlBg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#bbf7d0;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#86efac;stop-opacity:1" />
+    </linearGradient>
+
+    <linearGradient id="mdBg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#ecfdf5;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#d1fae5;stop-opacity:1" />
+    </linearGradient>
+
+    <!-- Arrow marker -->
+    <marker id="arrowSuccess" markerWidth="12" markerHeight="12" refX="11" refY="6" orient="auto">
+      <path d="M0,0 L0,12 L12,6 z" fill="#10b981" />
+    </marker>
+
+    <!-- Styles -->
+    <style>
+      text { font-family: 'Noto Sans KR', 'Monaco', 'Courier New', monospace; }
+      .title { font-size: 38px; font-weight: 700; fill: white; }
+      .subtitle { font-size: 18px; font-weight: 600; fill: white; }
+      .section-title { font-size: 26px; font-weight: 700; }
+      .section-subtitle { font-size: 15px; font-weight: 600; fill: #4b5563; }
+      .code { font-family: 'Monaco', 'Courier New', monospace; font-size: 12px; fill: #1f2937; }
+      .code-comment { font-family: 'Monaco', 'Courier New', monospace; font-size: 11px; fill: #6b7280; font-style: italic; }
+      .label { font-size: 14px; font-weight: 600; fill: #374151; }
+      .value { font-size: 13px; fill: #4b5563; }
+      .arrow-label { font-size: 16px; font-weight: 700; fill: #10b981; }
+      .year { font-size: 13px; font-weight: 600; fill: #6b7280; }
+      .paradigm { font-size: 15px; font-weight: 700; }
+      .comparison-text { font-size: 13px; fill: #374151; }
+      .highlight { font-size: 14px; font-weight: 700; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="3000" height="1500" fill="#f8fafc"/>
+
+  <!-- Header -->
+  <rect x="40" y="20" width="2920" height="100" rx="12" fill="url(#headerGrad)"/>
+  <text x="1500" y="65" text-anchor="middle" class="title">GML → SGML → HTML → Markdown: Markup 패러다임의 진화</text>
+  <text x="1500" y="95" text-anchor="middle" class="subtitle">같은 패러다임 내 점진적 단순화: 복잡함에서 간결함으로</text>
+
+  <!-- Four main sections -->
+
+  <!-- Section 1: GML (1969) -->
+  <g id="gml-section">
+    <rect x="70" y="160" width="640" height="880" rx="15" fill="url(#gmlBg)" stroke="#059669" stroke-width="4"/>
+
+    <text x="390" y="200" text-anchor="middle" class="section-title" fill="#065f46">GML</text>
+    <text x="390" y="225" text-anchor="middle" class="section-subtitle">Generalized Markup Language</text>
+    <text x="390" y="245" text-anchor="middle" class="year">1969 - IBM</text>
+    <text x="390" y="263" text-anchor="middle" class="year">Charles Goldfarb, Ed Mosher, Ray Lorie</text>
+
+    <!-- Code example -->
+    <rect x="100" y="285" width="580" height="320" rx="8" fill="white" stroke="#10b981" stroke-width="2"/>
+    <text x="390" y="310" text-anchor="middle" class="label" fill="#059669">GML 코드 예제:</text>
+
+    <text x="120" y="340" class="code">:h1.Document Title</text>
+    <text x="120" y="365" class="code">:p.This is a paragraph with</text>
+    <text x="120" y="390" class="code">:hp2.bold text:ehp2.</text>
+    <text x="120" y="415" class="code">and :hp1.italic text:ehp1..</text>
+    <text x="120" y="440" class="code"></text>
+    <text x="120" y="465" class="code">:ul.</text>
+    <text x="120" y="490" class="code">:li.First item</text>
+    <text x="120" y="515" class="code">:li.Second item</text>
+    <text x="120" y="540" class="code">:eul.</text>
+    <text x="120" y="565" class="code"></text>
+    <text x="120" y="590" class="code">:note.This is a note.</text>
+
+    <!-- Characteristics -->
+    <rect x="100" y="625" width="580" height="185" rx="8" fill="#f0fdf4" stroke="#10b981" stroke-width="1"/>
+    <text x="120" y="655" class="label" fill="#059669">핵심 특성:</text>
+    <text x="140" y="685" class="value">✓ 문서 구조 정의 (태그 기반)</text>
+    <text x="140" y="710" class="value">✓ 내용과 형식 분리 개념 도입</text>
+    <text x="140" y="735" class="value">✓ 법률/의료 문서용</text>
+    <text x="140" y="760" class="value">✓ IBM 내부 표준</text>
+    <text x="140" y="785" class="value">✓ Markup 패러다임의 원조</text>
+
+    <!-- Paradigm -->
+    <rect x="100" y="830" width="580" height="50" rx="8" fill="#059669" fill-opacity="0.2"/>
+    <text x="390" y="863" text-anchor="middle" class="paradigm" fill="#065f46">패러다임: Markup (문서 구조)</text>
+
+    <!-- Purpose -->
+    <rect x="100" y="900" width="580" height="120" rx="8" fill="white" stroke="#10b981" stroke-width="2"/>
+    <text x="120" y="930" class="label" fill="#059669">목적:</text>
+    <text x="140" y="960" class="value">• 전문 문서 구조화</text>
+    <text x="140" y="985" class="value">• 재사용 가능한 컨텐츠</text>
+    <text x="140" y="1010" class="value">• 출판 자동화</text>
+  </g>
+
+  <!-- Arrow 1: GML -> SGML -->
+  <g id="arrow1">
+    <path d="M 710 600 L 770 600" stroke="#10b981" stroke-width="6" fill="none" marker-end="url(#arrowSuccess)"/>
+    <text x="740" y="585" text-anchor="middle" class="arrow-label">표준화</text>
+    <text x="740" y="625" text-anchor="middle" class="year">17년</text>
+  </g>
+
+  <!-- Section 2: SGML (1986) -->
+  <g id="sgml-section">
+    <rect x="770" y="160" width="640" height="880" rx="15" fill="url(#sgmlBg)" stroke="#059669" stroke-width="4"/>
+
+    <text x="1090" y="200" text-anchor="middle" class="section-title" fill="#065f46">SGML</text>
+    <text x="1090" y="225" text-anchor="middle" class="section-subtitle">Standard Generalized Markup Language</text>
+    <text x="1090" y="245" text-anchor="middle" class="year">1986 - ISO 8879 국제 표준</text>
+    <text x="1090" y="263" text-anchor="middle" class="year">Charles Goldfarb</text>
+
+    <!-- Code example -->
+    <rect x="800" y="285" width="580" height="320" rx="8" fill="white" stroke="#10b981" stroke-width="2"/>
+    <text x="1090" y="310" text-anchor="middle" class="label" fill="#059669">SGML 코드 예제:</text>
+
+    <text x="820" y="340" class="code">&lt;!DOCTYPE doc [</text>
+    <text x="820" y="365" class="code">  &lt;!ELEMENT doc (title, para+)&gt;</text>
+    <text x="820" y="390" class="code">  &lt;!ELEMENT title (#PCDATA)&gt;</text>
+    <text x="820" y="415" class="code">  &lt;!ELEMENT para (#PCDATA)&gt;</text>
+    <text x="820" y="440" class="code">]&gt;</text>
+    <text x="820" y="465" class="code"></text>
+    <text x="820" y="490" class="code">&lt;doc&gt;</text>
+    <text x="820" y="515" class="code">  &lt;title&gt;Document Title&lt;/title&gt;</text>
+    <text x="820" y="540" class="code">  &lt;para&gt;This is text.&lt;/para&gt;</text>
+    <text x="820" y="565" class="code">&lt;/doc&gt;</text>
+
+    <!-- Characteristics -->
+    <rect x="800" y="625" width="580" height="185" rx="8" fill="#f0fdf4" stroke="#10b981" stroke-width="1"/>
+    <text x="820" y="655" class="label" fill="#059669">핵심 특성:</text>
+    <text x="840" y="685" class="value">✓ ISO 국제 표준 (ISO 8879)</text>
+    <text x="840" y="710" class="value">✓ DTD (Document Type Definition)</text>
+    <text x="840" y="735" class="value">✓ 매우 복잡하고 강력함</text>
+    <text x="840" y="760" class="value">✓ 출판 산업 표준</text>
+    <text x="840" y="785" class="value">✓ XML/HTML의 조상</text>
+
+    <!-- Paradigm -->
+    <rect x="800" y="830" width="580" height="50" rx="8" fill="#059669" fill-opacity="0.2"/>
+    <text x="1090" y="863" text-anchor="middle" class="paradigm" fill="#065f46">패러다임: Markup (문서 구조)</text>
+
+    <!-- Purpose -->
+    <rect x="800" y="900" width="580" height="120" rx="8" fill="white" stroke="#10b981" stroke-width="2"/>
+    <text x="820" y="930" class="label" fill="#059669">특징:</text>
+    <text x="840" y="960" class="value">• 복잡한 문서 검증</text>
+    <text x="840" y="985" class="value">• 엄격한 타입 시스템</text>
+    <text x="840" y="1010" class="value">• 대규모 출판 지원</text>
+  </g>
+
+  <!-- Arrow 2: SGML -> HTML -->
+  <g id="arrow2">
+    <path d="M 1410 600 L 1470 600" stroke="#10b981" stroke-width="6" fill="none" marker-end="url(#arrowSuccess)"/>
+    <text x="1440" y="585" text-anchor="middle" class="arrow-label">웹 단순화</text>
+    <text x="1440" y="625" text-anchor="middle" class="year">5년</text>
+  </g>
+
+  <!-- Section 3: HTML (1991) -->
+  <g id="html-section">
+    <rect x="1470" y="160" width="640" height="880" rx="15" fill="url(#htmlBg)" stroke="#059669" stroke-width="4"/>
+
+    <text x="1790" y="200" text-anchor="middle" class="section-title" fill="#065f46">HTML</text>
+    <text x="1790" y="225" text-anchor="middle" class="section-subtitle">HyperText Markup Language</text>
+    <text x="1790" y="245" text-anchor="middle" class="year">1991 - Tim Berners-Lee</text>
+    <text x="1790" y="263" text-anchor="middle" class="year">SGML 기반 웹 표준</text>
+
+    <!-- Code example -->
+    <rect x="1500" y="285" width="580" height="320" rx="8" fill="white" stroke="#10b981" stroke-width="2"/>
+    <text x="1790" y="310" text-anchor="middle" class="label" fill="#059669">HTML 코드 예제:</text>
+
+    <text x="1520" y="340" class="code">&lt;!DOCTYPE html&gt;</text>
+    <text x="1520" y="365" class="code">&lt;html&gt;</text>
+    <text x="1520" y="390" class="code">&lt;head&gt;</text>
+    <text x="1520" y="415" class="code">  &lt;title&gt;Page Title&lt;/title&gt;</text>
+    <text x="1520" y="440" class="code">&lt;/head&gt;</text>
+    <text x="1520" y="465" class="code">&lt;body&gt;</text>
+    <text x="1520" y="490" class="code">  &lt;h1&gt;Heading&lt;/h1&gt;</text>
+    <text x="1520" y="515" class="code">  &lt;p&gt;This is &lt;b&gt;bold&lt;/b&gt;.&lt;/p&gt;</text>
+    <text x="1520" y="540" class="code">  &lt;a href="url"&gt;Link&lt;/a&gt;</text>
+    <text x="1520" y="565" class="code">&lt;/body&gt;</text>
+    <text x="1520" y="590" class="code">&lt;/html&gt;</text>
+
+    <!-- Characteristics -->
+    <rect x="1500" y="625" width="580" height="185" rx="8" fill="#f0fdf4" stroke="#10b981" stroke-width="1"/>
+    <text x="1520" y="655" class="label" fill="#059669">핵심 특성:</text>
+    <text x="1540" y="685" class="value">✓ SGML의 단순화된 애플리케이션</text>
+    <text x="1540" y="710" class="value">✓ 하이퍼링크 지원</text>
+    <text x="1540" y="735" class="value">✓ 배우기 쉬움</text>
+    <text x="1540" y="760" class="value">✓ 웹 브라우저 표준</text>
+    <text x="1540" y="785" class="value">✅ 대성공 - 웹의 기초</text>
+
+    <!-- Paradigm -->
+    <rect x="1500" y="830" width="580" height="50" rx="8" fill="#059669" fill-opacity="0.2"/>
+    <text x="1790" y="863" text-anchor="middle" class="paradigm" fill="#065f46">패러다임: Markup (문서 구조)</text>
+
+    <!-- Purpose -->
+    <rect x="1500" y="900" width="580" height="120" rx="8" fill="white" stroke="#10b981" stroke-width="2"/>
+    <text x="1520" y="930" class="label" fill="#059669">혁명:</text>
+    <text x="1540" y="960" class="value">• 인터넷 문서 표준</text>
+    <text x="1540" y="985" class="value">• 접근성 향상</text>
+    <text x="1540" y="1010" class="value">• 전 세계 채택</text>
+  </g>
+
+  <!-- Arrow 3: HTML -> Markdown -->
+  <g id="arrow3">
+    <path d="M 2110 600 L 2170 600" stroke="#10b981" stroke-width="6" fill="none" marker-end="url(#arrowSuccess)"/>
+    <text x="2140" y="585" text-anchor="middle" class="arrow-label">더 간소화</text>
+    <text x="2140" y="625" text-anchor="middle" class="year">13년</text>
+  </g>
+
+  <!-- Section 4: Markdown (2004) -->
+  <g id="markdown-section">
+    <rect x="2170" y="160" width="640" height="880" rx="15" fill="url(#mdBg)" stroke="#059669" stroke-width="4"/>
+
+    <text x="2490" y="200" text-anchor="middle" class="section-title" fill="#065f46">Markdown</text>
+    <text x="2490" y="225" text-anchor="middle" class="section-subtitle">경량 Markup 언어</text>
+    <text x="2490" y="245" text-anchor="middle" class="year">2004 - John Gruber</text>
+    <text x="2490" y="263" text-anchor="middle" class="year">HTML로 변환 가능</text>
+
+    <!-- Code example -->
+    <rect x="2200" y="285" width="580" height="320" rx="8" fill="white" stroke="#10b981" stroke-width="2"/>
+    <text x="2490" y="310" text-anchor="middle" class="label" fill="#059669">Markdown 코드 예제:</text>
+
+    <text x="2220" y="340" class="code"># Heading</text>
+    <text x="2220" y="365" class="code"></text>
+    <text x="2220" y="390" class="code">This is **bold** and *italic*.</text>
+    <text x="2220" y="415" class="code"></text>
+    <text x="2220" y="440" class="code">- First item</text>
+    <text x="2220" y="465" class="code">- Second item</text>
+    <text x="2220" y="490" class="code"></text>
+    <text x="2220" y="515" class="code">[Link text](http://url)</text>
+    <text x="2220" y="540" class="code"></text>
+    <text x="2220" y="565" class="code">```python</text>
+    <text x="2220" y="590" class="code">print("Hello")</text>
+
+    <!-- Characteristics -->
+    <rect x="2200" y="625" width="580" height="185" rx="8" fill="#f0fdf4" stroke="#10b981" stroke-width="1"/>
+    <text x="2220" y="655" class="label" fill="#059669">핵심 특성:</text>
+    <text x="2240" y="685" class="value">✓ 읽기 쉬운 plain text</text>
+    <text x="2240" y="710" class="value">✓ HTML로 자동 변환</text>
+    <text x="2240" y="735" class="value">✓ 초간단 문법</text>
+    <text x="2240" y="760" class="value">✓ GitHub, Stack Overflow 채택</text>
+    <text x="2240" y="785" class="value">✅ 대중화 성공</text>
+
+    <!-- Paradigm -->
+    <rect x="2200" y="830" width="580" height="50" rx="8" fill="#059669" fill-opacity="0.2"/>
+    <text x="2490" y="863" text-anchor="middle" class="paradigm" fill="#065f46">패러다임: Markup (문서 구조)</text>
+
+    <!-- Purpose -->
+    <rect x="2200" y="900" width="580" height="120" rx="8" fill="white" stroke="#10b981" stroke-width="2"/>
+    <text x="2220" y="930" class="label" fill="#059669">혁신:</text>
+    <text x="2240" y="960" class="value">• 개발자 친화적</text>
+    <text x="2240" y="985" class="value">• 버전 관리 최적화</text>
+    <text x="2240" y="1010" class="value">• 보편적 채택</text>
+  </g>
+
+  <!-- Summary box (bottom) -->
+  <rect x="70" y="1080" width="2740" height="370" rx="15" fill="white" stroke="#10b981" stroke-width="3"/>
+
+  <text x="1440" y="1125" text-anchor="middle" class="section-title" style="font-size: 28px;" fill="#065f46">✅ 성공 요인: 점진적 단순화</text>
+  <line x1="100" y1="1145" x2="2780" y2="1145" stroke="#a7f3d0" stroke-width="2"/>
+
+  <!-- Evolution diagram -->
+  <g id="evolution">
+    <text x="1440" y="1185" text-anchor="middle" class="label" style="font-size: 18px;" fill="#059669">진화 방향:</text>
+
+    <!-- Complexity arrow -->
+    <line x1="300" y1="1220" x2="2580" y2="1220" stroke="#10b981" stroke-width="3"/>
+    <polygon points="2580,1220 2560,1210 2560,1230" fill="#10b981"/>
+
+    <text x="300" y="1210" text-anchor="middle" class="value" fill="#dc2626" font-weight="700">복잡</text>
+    <text x="2580" y="1210" text-anchor="middle" class="value" fill="#10b981" font-weight="700">간단</text>
+
+    <!-- Points -->
+    <circle cx="600" cy="1220" r="8" fill="#059669"/>
+    <text x="600" y="1250" text-anchor="middle" class="value">GML</text>
+    <text x="600" y="1268" text-anchor="middle" class="value" style="font-size: 11px;">IBM 전용</text>
+
+    <circle cx="1100" cy="1220" r="8" fill="#059669"/>
+    <text x="1100" y="1250" text-anchor="middle" class="value">SGML</text>
+    <text x="1100" y="1268" text-anchor="middle" class="value" style="font-size: 11px;">국제 표준</text>
+
+    <circle cx="1700" cy="1220" r="8" fill="#059669"/>
+    <text x="1700" y="1250" text-anchor="middle" class="value">HTML</text>
+    <text x="1700" y="1268" text-anchor="middle" class="value" style="font-size: 11px;">웹 대중화</text>
+
+    <circle cx="2300" cy="1220" r="8" fill="#059669"/>
+    <text x="2300" y="1250" text-anchor="middle" class="value">Markdown</text>
+    <text x="2300" y="1268" text-anchor="middle" class="value" style="font-size: 11px;">초간단</text>
+  </g>
+
+  <!-- Success factors in 3 columns -->
+  <g id="success-factors">
+    <rect x="100" y="1300" width="800" height="130" rx="8" fill="#f0fdf4"/>
+    <text x="500" y="1330" text-anchor="middle" class="label" fill="#059669" style="font-size: 16px;">1. 같은 패러다임 내 진화</text>
+    <text x="120" y="1360" class="value">• 모두 Markup (문서 구조 정의)</text>
+    <text x="120" y="1385" class="value">• 태그 기반 마크업 개념 유지</text>
+    <text x="120" y="1410" class="value">• 핵심 아이디어 계승</text>
+
+    <rect x="950" y="1300" width="800" height="130" rx="8" fill="#f0fdf4"/>
+    <text x="1350" y="1330" text-anchor="middle" class="label" fill="#059669" style="font-size: 16px;">2. 점진적 단순화</text>
+    <text x="970" y="1360" class="value">• 복잡함 → 간단함 (자연스러운 방향)</text>
+    <text x="970" y="1385" class="value">• 각 단계마다 학습 곡선 완화</text>
+    <text x="970" y="1410" class="value">• 사용성 개선</text>
+
+    <rect x="1800" y="1300" width="980" height="130" rx="8" fill="#f0fdf4"/>
+    <text x="2290" y="1330" text-anchor="middle" class="label" fill="#059669" style="font-size: 16px;">3. 역호환성과 변환</text>
+    <text x="1820" y="1360" class="value">• HTML은 SGML의 서브셋</text>
+    <text x="1820" y="1385" class="value">• Markdown → HTML 자동 변환</text>
+    <text x="1820" y="1410" class="value">• 상위 호환 가능 (손실 최소화)</text>
+  </g>
+
+</svg>

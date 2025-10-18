@@ -1,0 +1,292 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1800 1000">
+  <defs>
+    <style>
+      .main-title { font-family: 'Arial', sans-serif; font-size: 48px; font-weight: bold; fill: #1a1a1a; }
+      .subtitle { font-family: 'Arial', sans-serif; font-size: 22px; fill: #555; }
+      .card-year { font-family: 'Arial', sans-serif; font-size: 32px; font-weight: bold; fill: #333; }
+      .card-title { font-family: 'Arial', sans-serif; font-size: 18px; font-weight: bold; fill: #1a1a1a; }
+      .tool-label { font-family: 'Arial', sans-serif; font-size: 14px; fill: #333; }
+      .price-label { font-family: 'Arial', sans-serif; font-size: 14px; font-weight: bold; }
+      .event-text { font-family: 'Arial', sans-serif; font-size: 13px; fill: #666; }
+      .percent-text { font-family: 'Arial', sans-serif; font-size: 16px; font-weight: bold; }
+      .insight-title { font-family: 'Arial', sans-serif; font-size: 20px; font-weight: bold; fill: #1a1a1a; }
+      .insight-text { font-family: 'Arial', sans-serif; font-size: 15px; fill: #333; }
+      .card { fill: #ffffff; stroke: #ddd; stroke-width: 2; filter: drop-shadow(3px 3px 5px rgba(0,0,0,0.15)); }
+      .card-commercial { fill: #ffebee; }
+      .card-transition { fill: #fff9c4; }
+      .card-foss { fill: #e8f5e9; }
+      .commercial-color { fill: #ef5350; }
+      .foss-color { fill: #66bb6a; }
+      .timeline-line { stroke: #999; stroke-width: 4; }
+    </style>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#f8f9fa;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#e9ecef;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1800" height="1000" fill="url(#bgGradient)"/>
+
+  <!-- Header -->
+  <text x="900" y="60" class="main-title" text-anchor="middle">FOSS vs Commercial: 40 Years Journey</text>
+  <text x="900" y="90" class="subtitle" text-anchor="middle">From Expensive Monopoly to Open Source Revolution</text>
+
+  <!-- Timeline -->
+  <line x1="100" y1="150" x2="1700" y2="150" class="timeline-line"/>
+  <circle cx="100" cy="150" r="8" fill="#ef5350"/>
+  <circle cx="1700" cy="150" r="8" fill="#66bb6a"/>
+
+  <!-- ============ 1980s Card ============ -->
+  <g transform="translate(50, 180)">
+    <rect class="card card-commercial" x="0" y="0" width="240" height="480" rx="10"/>
+
+    <!-- Icon -->
+    <text x="120" y="50" font-size="48" text-anchor="middle">📊</text>
+    <text x="120" y="80" class="card-year" text-anchor="middle">1980s</text>
+    <text x="120" y="105" class="card-title" text-anchor="middle">Mainframe Era</text>
+
+    <!-- Commercial -->
+    <circle cx="30" cy="130" r="8" class="commercial-color"/>
+    <text x="45" y="137" class="tool-label">Commercial</text>
+    <text x="20" y="158" class="tool-label">SAS, SPSS</text>
+    <text x="20" y="178" class="price-label" fill="#d32f2f">💰 $10K+/year</text>
+
+    <!-- FOSS -->
+    <circle cx="30" cy="210" r="8" class="foss-color"/>
+    <text x="45" y="217" class="tool-label">FOSS</text>
+    <text x="20" y="238" class="tool-label">TeX, Unix Tools</text>
+    <text x="20" y="258" class="price-label" fill="#388e3c">✓ FREE</text>
+
+    <!-- Market Share -->
+    <text x="120" y="290" class="card-title" text-anchor="middle">Market Share</text>
+    <rect x="20" y="300" width="200" height="25" fill="#ffcdd2" rx="3"/>
+    <rect x="20" y="300" width="190" height="25" fill="#ef5350" rx="3"/>
+    <text x="120" y="318" class="percent-text" text-anchor="middle" fill="#fff">95%</text>
+
+    <rect x="20" y="335" width="200" height="25" fill="#c8e6c9" rx="3"/>
+    <rect x="20" y="335" width="10" height="25" fill="#66bb6a" rx="3"/>
+    <text x="120" y="353" class="percent-text" text-anchor="middle" fill="#2e7d32">5%</text>
+
+    <!-- Key Event -->
+    <text x="120" y="385" class="card-title" text-anchor="middle">⚡ Key Event</text>
+    <text x="120" y="408" class="event-text" text-anchor="middle">1978: TeX released</text>
+    <text x="120" y="428" class="event-text" text-anchor="middle">FOSS foundation</text>
+
+    <!-- Winner -->
+    <text x="120" y="465" font-size="32" text-anchor="middle">🔴</text>
+  </g>
+
+  <!-- ============ 1990s Card ============ -->
+  <g transform="translate(320, 180)">
+    <rect class="card card-commercial" x="0" y="0" width="240" height="480" rx="10"/>
+
+    <text x="120" y="50" font-size="48" text-anchor="middle">💻</text>
+    <text x="120" y="80" class="card-year" text-anchor="middle">1990s</text>
+    <text x="120" y="105" class="card-title" text-anchor="middle">PC Revolution</text>
+
+    <circle cx="30" cy="130" r="8" class="commercial-color"/>
+    <text x="45" y="137" class="tool-label">Commercial</text>
+    <text x="20" y="158" class="tool-label">MS Office, Excel</text>
+    <text x="20" y="178" class="price-label" fill="#d32f2f">💰 $500/year</text>
+
+    <circle cx="30" cy="210" r="8" class="foss-color"/>
+    <text x="45" y="217" class="tool-label">FOSS</text>
+    <text x="20" y="238" class="tool-label">LaTeX, Python</text>
+    <text x="20" y="258" class="price-label" fill="#388e3c">✓ FREE</text>
+
+    <text x="120" y="290" class="card-title" text-anchor="middle">Market Share</text>
+    <rect x="20" y="300" width="200" height="25" fill="#ffcdd2" rx="3"/>
+    <rect x="20" y="300" width="180" height="25" fill="#ef5350" rx="3"/>
+    <text x="120" y="318" class="percent-text" text-anchor="middle" fill="#fff">90%</text>
+
+    <rect x="20" y="335" width="200" height="25" fill="#c8e6c9" rx="3"/>
+    <rect x="20" y="335" width="20" height="25" fill="#66bb6a" rx="3"/>
+    <text x="120" y="353" class="percent-text" text-anchor="middle" fill="#2e7d32">10%</text>
+
+    <text x="120" y="385" class="card-title" text-anchor="middle">⚡ Key Event</text>
+    <text x="120" y="408" class="event-text" text-anchor="middle">1991: Linux born</text>
+    <text x="120" y="428" class="event-text" text-anchor="middle">GUI dominates</text>
+
+    <text x="120" y="465" font-size="32" text-anchor="middle">🔴</text>
+  </g>
+
+  <!-- ============ 2000s Card ============ -->
+  <g transform="translate(590, 180)">
+    <rect class="card card-transition" x="0" y="0" width="240" height="480" rx="10"/>
+
+    <text x="120" y="50" font-size="48" text-anchor="middle">🌐</text>
+    <text x="120" y="80" class="card-year" text-anchor="middle">2000s</text>
+    <text x="120" y="105" class="card-title" text-anchor="middle">Web 2.0 Era</text>
+
+    <circle cx="30" cy="130" r="8" class="commercial-color"/>
+    <text x="45" y="137" class="tool-label">Commercial</text>
+    <text x="20" y="158" class="tool-label">Tableau, SPSS</text>
+    <text x="20" y="178" class="price-label" fill="#d32f2f">💰 $3K/year</text>
+
+    <circle cx="30" cy="210" r="8" class="foss-color"/>
+    <text x="45" y="217" class="tool-label">FOSS</text>
+    <text x="20" y="238" class="tool-label">R, ggplot2</text>
+    <text x="20" y="258" class="price-label" fill="#388e3c">✓ FREE</text>
+
+    <text x="120" y="290" class="card-title" text-anchor="middle">Market Share</text>
+    <rect x="20" y="300" width="200" height="25" fill="#ffcdd2" rx="3"/>
+    <rect x="20" y="300" width="140" height="25" fill="#ef5350" rx="3"/>
+    <text x="100" y="318" class="percent-text" text-anchor="middle" fill="#fff">70%</text>
+
+    <rect x="20" y="335" width="200" height="25" fill="#c8e6c9" rx="3"/>
+    <rect x="20" y="335" width="60" height="25" fill="#66bb6a" rx="3"/>
+    <text x="70" y="353" class="percent-text" text-anchor="middle" fill="#fff">30%</text>
+
+    <text x="120" y="385" class="card-title" text-anchor="middle">⚡ Key Event</text>
+    <text x="120" y="408" class="event-text" text-anchor="middle">2002: Sweave</text>
+    <text x="120" y="428" class="event-text" text-anchor="middle">Reproducibility!</text>
+
+    <text x="120" y="465" font-size="32" text-anchor="middle">🟡</text>
+  </g>
+
+  <!-- ============ 2010s Card ============ -->
+  <g transform="translate(860, 180)">
+    <rect class="card card-foss" x="0" y="0" width="240" height="480" rx="10"/>
+
+    <text x="120" y="50" font-size="48" text-anchor="middle">📱</text>
+    <text x="120" y="80" class="card-year" text-anchor="middle">2010s</text>
+    <text x="120" y="105" class="card-title" text-anchor="middle">Notebook Era</text>
+
+    <circle cx="30" cy="130" r="8" class="commercial-color"/>
+    <text x="45" y="137" class="tool-label">Commercial</text>
+    <text x="20" y="158" class="tool-label">PowerBI, Tableau</text>
+    <text x="20" y="178" class="price-label" fill="#d32f2f">💰 $1K/year</text>
+
+    <circle cx="30" cy="210" r="8" class="foss-color"/>
+    <text x="45" y="217" class="tool-label">FOSS</text>
+    <text x="20" y="238" class="tool-label">Jupyter, R MD</text>
+    <text x="20" y="258" class="price-label" fill="#388e3c">✓ FREE</text>
+
+    <text x="120" y="290" class="card-title" text-anchor="middle">Market Share</text>
+    <rect x="20" y="300" width="200" height="25" fill="#ffcdd2" rx="3"/>
+    <rect x="20" y="300" width="100" height="25" fill="#ef5350" rx="3"/>
+    <text x="70" y="318" class="percent-text" text-anchor="middle" fill="#fff">50%</text>
+
+    <rect x="20" y="335" width="200" height="25" fill="#c8e6c9" rx="3"/>
+    <rect x="20" y="335" width="100" height="25" fill="#66bb6a" rx="3"/>
+    <text x="70" y="353" class="percent-text" text-anchor="middle" fill="#fff">50%</text>
+
+    <text x="120" y="385" class="card-title" text-anchor="middle">⚡ Key Event</text>
+    <text x="120" y="408" class="event-text" text-anchor="middle">2014: Jupyter</text>
+    <text x="120" y="428" class="event-text" text-anchor="middle" font-weight="bold">GAME CHANGER!</text>
+
+    <text x="120" y="465" font-size="32" text-anchor="middle">🎯</text>
+  </g>
+
+  <!-- ============ 2020s Card ============ -->
+  <g transform="translate(1130, 180)">
+    <rect class="card card-foss" x="0" y="0" width="240" height="480" rx="10"/>
+
+    <text x="120" y="50" font-size="48" text-anchor="middle">🤖</text>
+    <text x="120" y="80" class="card-year" text-anchor="middle">2020s</text>
+    <text x="120" y="105" class="card-title" text-anchor="middle">AI Revolution</text>
+
+    <circle cx="30" cy="130" r="8" class="commercial-color"/>
+    <text x="45" y="137" class="tool-label">Commercial</text>
+    <text x="20" y="158" class="tool-label">ChatGPT, Copilot</text>
+    <text x="20" y="178" class="price-label" fill="#d32f2f">💰 $50/mo</text>
+
+    <circle cx="30" cy="210" r="8" class="foss-color"/>
+    <text x="45" y="217" class="tool-label">FOSS</text>
+    <text x="20" y="238" class="tool-label">Quarto, Jupyter AI</text>
+    <text x="20" y="258" class="price-label" fill="#388e3c">✓ FREE</text>
+
+    <text x="120" y="290" class="card-title" text-anchor="middle">Market Share</text>
+    <rect x="20" y="300" width="200" height="25" fill="#ffcdd2" rx="3"/>
+    <rect x="20" y="300" width="80" height="25" fill="#ef5350" rx="3"/>
+    <text x="60" y="318" class="percent-text" text-anchor="middle" fill="#fff">40%</text>
+
+    <rect x="20" y="335" width="200" height="25" fill="#c8e6c9" rx="3"/>
+    <rect x="20" y="335" width="120" height="25" fill="#66bb6a" rx="3"/>
+    <text x="80" y="353" class="percent-text" text-anchor="middle" fill="#fff">60%</text>
+
+    <text x="120" y="385" class="card-title" text-anchor="middle">⚡ Key Event</text>
+    <text x="120" y="408" class="event-text" text-anchor="middle">2022: Quarto +</text>
+    <text x="120" y="428" class="event-text" text-anchor="middle">ChatGPT</text>
+
+    <text x="120" y="465" font-size="32" text-anchor="middle">🟢</text>
+  </g>
+
+  <!-- ============ 2030s Card ============ -->
+  <g transform="translate(1400, 180)">
+    <rect class="card card-foss" x="0" y="0" width="240" height="480" rx="10"/>
+
+    <text x="120" y="50" font-size="48" text-anchor="middle">🧠</text>
+    <text x="120" y="80" class="card-year" text-anchor="middle">2030s</text>
+    <text x="120" y="105" class="card-title" text-anchor="middle">AGI Era?</text>
+
+    <circle cx="30" cy="130" r="8" class="commercial-color"/>
+    <text x="45" y="137" class="tool-label">Commercial</text>
+    <text x="20" y="158" class="tool-label">AGI Services</text>
+    <text x="20" y="178" class="price-label" fill="#d32f2f">💰 $200/mo?</text>
+
+    <circle cx="30" cy="210" r="8" class="foss-color"/>
+    <text x="45" y="217" class="tool-label">FOSS</text>
+    <text x="20" y="238" class="tool-label">Open AGI?</text>
+    <text x="20" y="258" class="price-label" fill="#388e3c">✓ FREE?</text>
+
+    <text x="120" y="290" class="card-title" text-anchor="middle">Market Share</text>
+    <rect x="20" y="300" width="200" height="25" fill="#ffcdd2" rx="3"/>
+    <rect x="20" y="300" width="60" height="25" fill="#ef5350" rx="3"/>
+    <text x="50" y="318" class="percent-text" text-anchor="middle" fill="#fff">30%</text>
+
+    <rect x="20" y="335" width="200" height="25" fill="#c8e6c9" rx="3"/>
+    <rect x="20" y="335" width="140" height="25" fill="#66bb6a" rx="3"/>
+    <text x="90" y="353" class="percent-text" text-anchor="middle" fill="#fff">70%</text>
+
+    <text x="120" y="385" class="card-title" text-anchor="middle">⚡ Key Event</text>
+    <text x="120" y="408" class="event-text" text-anchor="middle">Open AGI</text>
+    <text x="120" y="428" class="event-text" text-anchor="middle">models?</text>
+
+    <text x="120" y="465" font-size="32" text-anchor="middle">🟢❓</text>
+  </g>
+
+  <!-- Bottom Insights -->
+  <rect x="50" y="700" width="1700" height="260" fill="#fff" stroke="#ccc" stroke-width="2" rx="10" filter="drop-shadow(3px 3px 5px rgba(0,0,0,0.1))"/>
+
+  <text x="900" y="740" class="main-title" text-anchor="middle" font-size="36">Key Insights</text>
+
+  <!-- Insight 1 -->
+  <g transform="translate(100, 770)">
+    <circle cx="30" cy="30" r="25" fill="#ffd54f"/>
+    <text x="30" y="42" font-size="32" text-anchor="middle">💰</text>
+    <text x="70" y="35" class="insight-title">Cost Savings</text>
+    <text x="70" y="60" class="insight-text">40 years of FOSS: $0</text>
+    <text x="70" y="80" class="insight-text">40 years of Commercial: $50K+</text>
+    <text x="70" y="100" class="insight-text" font-weight="bold" fill="#388e3c">Savings: $50,000+</text>
+  </g>
+
+  <!-- Insight 2 -->
+  <g transform="translate(650, 770)">
+    <circle cx="30" cy="30" r="25" fill="#81c784"/>
+    <text x="30" y="42" font-size="32" text-anchor="middle">🚀</text>
+    <text x="70" y="35" class="insight-title">Innovation Leader</text>
+    <text x="70" y="60" class="insight-text">2014: Jupyter revolutionized</text>
+    <text x="70" y="80" class="insight-text">2022: Quarto multi-language</text>
+    <text x="70" y="100" class="insight-text" font-weight="bold" fill="#388e3c">FOSS drives innovation</text>
+  </g>
+
+  <!-- Insight 3 -->
+  <g transform="translate(1200, 770)">
+    <circle cx="30" cy="30" r="25" fill="#64b5f6"/>
+    <text x="30" y="42" font-size="32" text-anchor="middle">🌍</text>
+    <text x="70" y="35" class="insight-title">Community Power</text>
+    <text x="70" y="60" class="insight-text">Open source community</text>
+    <text x="70" y="80" class="insight-text">Reproducible research</text>
+    <text x="70" y="100" class="insight-text" font-weight="bold" fill="#388e3c">Collaboration wins</text>
+  </g>
+
+  <!-- Footer -->
+  <text x="900" y="945" class="event-text" text-anchor="middle" font-style="italic">
+    From expensive monopoly to open source dominance in just 40 years
+  </text>
+  <text x="900" y="970" class="event-text" text-anchor="middle" font-weight="bold" font-size="16" fill="#388e3c">
+    The Future is Open 🌱
+  </text>
+</svg>

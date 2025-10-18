@@ -1,0 +1,231 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900">
+  <defs>
+    <style>
+      .title-text { font-family: monospace; font-size: 48px; font-weight: bold; fill: #2c3e50; }
+      .section-title { font-family: monospace; font-size: 26px; font-weight: bold; fill: #c62828; }
+      .subtitle-text { font-family: monospace; font-size: 20px; font-weight: bold; fill: #555; }
+      .desc-text { font-family: monospace; font-size: 16px; fill: #555; }
+      .code-text { font-family: 'Courier New', monospace; font-size: 13px; fill: #333; }
+      .label-text { font-family: monospace; font-size: 14px; fill: #666; }
+      .problem-box { fill: #ffebee; stroke: #c62828; stroke-width: 4; }
+      .example-box { fill: #fff3e0; stroke: #e65100; stroke-width: 2; }
+      .impact-box { fill: #f3e5f5; stroke: #7b1fa2; stroke-width: 2; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1600" height="900" fill="#fafafa"/>
+
+  <!-- MS Word Logo with warning -->
+  <g transform="translate(50, 15) scale(2.2)">
+    <path d="M18.536,2.323V4.868c3.4.019,7.12-.035,10.521.019a.783.783,0,0,1,.912.861c.054,6.266-.013,12.89.032,19.157-.02.4.009,1.118-.053,1.517-.079.509-.306.607-.817.676-.286.039-.764.034-1.045.047-2.792-.014-5.582-.011-8.374-.01l-1.175,0v2.547L2,27.133Q2,16,2,4.873L18.536,2.322" style="fill:#c62828"/><path d="M18.536,5.822h10.5V26.18h-10.5V23.635h8.27V22.363h-8.27v-1.59h8.27V19.5h-8.27v-1.59h8.27V16.637h-8.27v-1.59h8.27V13.774h-8.27v-1.59h8.27V10.911h-8.27V9.321h8.27V8.048h-8.27V5.822" style="fill:#fff"/><path d="M8.573,11.443c.6-.035,1.209-.06,1.813-.092.423,2.147.856,4.291,1.314,6.429.359-2.208.757-4.409,1.142-6.613.636-.022,1.272-.057,1.905-.1-.719,3.082-1.349,6.19-2.134,9.254-.531.277-1.326-.013-1.956.032-.423-2.106-.916-4.2-1.295-6.314C8.99,16.1,8.506,18.133,8.08,20.175q-.916-.048-1.839-.111c-.528-2.8-1.148-5.579-1.641-8.385.544-.025,1.091-.048,1.635-.067.328,2.026.7,4.043.986,6.072.448-2.08.907-4.161,1.352-6.241" style="fill:#fff"/>
+  </g>
+
+  <!-- Warning icon -->
+  <text x="180" y="60" style="font-size: 48px;">⚠️</text>
+
+  <!-- Title -->
+  <text x="250" y="55" class="title-text">MS Word: Traditional Problems</text>
+  <text x="250" y="90" class="desc-text" font-style="italic">
+    Issues that have plagued Word users for decades
+  </text>
+
+  <!-- ==================== PROBLEM 1: Version Control ==================== -->
+
+  <rect x="30" y="120" width="760" height="230" class="problem-box" rx="12"/>
+  <text x="410" y="160" class="section-title" text-anchor="middle">
+    ❌ Problem 1: Version Control Nightmare
+  </text>
+  <line x1="50" y1="170" x2="770" y2="170" stroke="#c62828" stroke-width="2"/>
+
+  <!-- Description -->
+  <rect x="50" y="185" width="720" height="70" fill="#fff" stroke="#c62828" stroke-width="2" rx="5"/>
+  <g transform="translate(70, 205)">
+    <text x="0" y="0" class="desc-text" font-weight="bold">Binary format makes tracking changes difficult:</text>
+    <text x="10" y="25" class="desc-text">• Git diff shows: "Binary files differ"</text>
+    <text x="10" y="50" class="desc-text">• Collaboration = Email ping-pong with "final_v2_REAL_FINAL.docx"</text>
+  </g>
+
+  <!-- Example -->
+  <rect x="50" y="270" width="340" height="70" class="example-box" rx="5"/>
+  <g transform="translate(65, 290)">
+    <text x="0" y="0" class="label-text" font-weight="bold">Typical filename chaos:</text>
+    <text x="0" y="20" class="code-text">report.docx</text>
+    <text x="0" y="35" class="code-text">report_v2.docx</text>
+    <text x="0" y="50" class="code-text">report_final_john_edits.docx</text>
+  </g>
+
+  <!-- Impact -->
+  <rect x="410" y="270" width="360" height="70" class="impact-box" rx="5"/>
+  <g transform="translate(425, 290)">
+    <text x="0" y="0" class="subtitle-text" fill="#7b1fa2">💥 Impact:</text>
+    <text x="0" y="25" class="desc-text" font-size="14">Lost work, confusion, conflicts</text>
+    <text x="0" y="45" class="desc-text" font-size="14">Team productivity ↓ 30-40%</text>
+  </g>
+
+  <!-- ==================== PROBLEM 2: Vendor Lock-in ==================== -->
+
+  <rect x="30" y="370" width="760" height="230" class="problem-box" rx="12"/>
+  <text x="410" y="410" class="section-title" text-anchor="middle">
+    🔒 Problem 2: Vendor Lock-in
+  </text>
+  <line x1="50" y1="420" x2="770" y2="420" stroke="#c62828" stroke-width="2"/>
+
+  <!-- Description -->
+  <rect x="50" y="435" width="720" height="70" fill="#fff" stroke="#c62828" stroke-width="2" rx="5"/>
+  <g transform="translate(70, 455)">
+    <text x="0" y="0" class="desc-text" font-weight="bold">Proprietary format creates dependencies:</text>
+    <text x="10" y="25" class="desc-text">• Must have MS Office to edit properly</text>
+    <text x="10" y="50" class="desc-text">• Open in LibreOffice → Formatting breaks, styles lost</text>
+  </g>
+
+  <!-- Example -->
+  <rect x="50" y="520" width="340" height="70" class="example-box" rx="5"/>
+  <g transform="translate(65, 540)">
+    <text x="0" y="0" class="label-text" font-weight="bold">Subscription cost:</text>
+    <text x="0" y="20" class="desc-text" font-size="14">MS 365: $70-100/year/user</text>
+    <text x="0" y="40" class="desc-text" font-size="14">10 users × 5 years = $3,500-$5,000</text>
+  </g>
+
+  <!-- Impact -->
+  <rect x="410" y="520" width="360" height="70" class="impact-box" rx="5"/>
+  <g transform="translate(425, 540)">
+    <text x="0" y="0" class="subtitle-text" fill="#7b1fa2">💥 Impact:</text>
+    <text x="0" y="25" class="desc-text" font-size="14">Forced upgrades, ongoing costs</text>
+    <text x="0" y="45" class="desc-text" font-size="14">Can't switch tools easily</text>
+  </g>
+
+  <!-- ==================== PROBLEM 3: Reproducibility ==================== -->
+
+  <rect x="30" y="620" width="760" height="250" class="problem-box" rx="12"/>
+  <text x="410" y="660" class="section-title" text-anchor="middle">
+    🔄 Problem 3: No Reproducibility
+  </text>
+  <line x1="50" y1="670" x2="770" y2="670" stroke="#c62828" stroke-width="2"/>
+
+  <!-- Description -->
+  <rect x="50" y="685" width="720" height="90" fill="#fff" stroke="#c62828" stroke-width="2" rx="5"/>
+  <g transform="translate(70, 705)">
+    <text x="0" y="0" class="desc-text" font-weight="bold">Manual process = Not reproducible:</text>
+    <text x="10" y="25" class="desc-text">• Copy Excel chart → Paste into Word → Manual adjustment</text>
+    <text x="10" y="50" class="desc-text">• Data changes? Redo EVERYTHING manually</text>
+    <text x="10" y="75" class="desc-text">• Different person = Different result (inconsistency)</text>
+  </g>
+
+  <!-- Example -->
+  <rect x="50" y="790" width="340" height="70" class="example-box" rx="5"/>
+  <g transform="translate(65, 810)">
+    <text x="0" y="0" class="label-text" font-weight="bold">Typical scenario:</text>
+    <text x="0" y="20" class="desc-text" font-size="14">Update Q3 data → 2 hours of work</text>
+    <text x="0" y="40" class="desc-text" font-size="14">Paste charts, fix layout, update text</text>
+  </g>
+
+  <!-- Impact -->
+  <rect x="410" y="790" width="360" height="70" class="impact-box" rx="5"/>
+  <g transform="translate(425, 810)">
+    <text x="0" y="0" class="subtitle-text" fill="#7b1fa2">💥 Impact:</text>
+    <text x="0" y="25" class="desc-text" font-size="14">Scientific papers can't be verified</text>
+    <text x="0" y="45" class="desc-text" font-size="14">Time wasted on manual updates</text>
+  </g>
+
+  <!-- ==================== PROBLEM 4: Complex Documents ==================== -->
+
+  <rect x="820" y="120" width="750" height="230" class="problem-box" rx="12"/>
+  <text x="1195" y="160" class="section-title" text-anchor="middle">
+    📄 Problem 4: Complex Document Hell
+  </text>
+  <line x1="840" y1="170" x2="1550" y2="170" stroke="#c62828" stroke-width="2"/>
+
+  <!-- Description -->
+  <rect x="840" y="185" width="710" height="70" fill="#fff" stroke="#c62828" stroke-width="2" rx="5"/>
+  <g transform="translate(860, 205)">
+    <text x="0" y="0" class="desc-text" font-weight="bold">Large documents become unstable:</text>
+    <text x="10" y="25" class="desc-text">• 100+ pages → Slow, crashes, corruption</text>
+    <text x="10" y="50" class="desc-text">• Cross-references break, page numbers go wrong</text>
+  </g>
+
+  <!-- Example -->
+  <rect x="840" y="270" width="340" height="70" class="example-box" rx="5"/>
+  <g transform="translate(855, 290)">
+    <text x="0" y="0" class="label-text" font-weight="bold">PhD thesis disaster:</text>
+    <text x="0" y="20" class="desc-text" font-size="14">300 pages → Word crashes</text>
+    <text x="0" y="40" class="desc-text" font-size="14">Table of contents won't update</text>
+  </g>
+
+  <!-- Impact -->
+  <rect x="1200" y="270" width="350" height="70" class="impact-box" rx="5"/>
+  <g transform="translate(1215, 290)">
+    <text x="0" y="0" class="subtitle-text" fill="#7b1fa2">💥 Impact:</text>
+    <text x="0" y="25" class="desc-text" font-size="14">Stress, deadline pressure</text>
+    <text x="0" y="45" class="desc-text" font-size="14">Hours lost debugging formatting</text>
+  </g>
+
+  <!-- ==================== PROBLEM 5: Collaboration ==================== -->
+
+  <rect x="820" y="370" width="750" height="230" class="problem-box" rx="12"/>
+  <text x="1195" y="410" class="section-title" text-anchor="middle">
+    👥 Problem 5: Poor Collaboration
+  </text>
+  <line x1="840" y1="420" x2="1550" y2="420" stroke="#c62828" stroke-width="2"/>
+
+  <!-- Description -->
+  <rect x="840" y="435" width="710" height="70" fill="#fff" stroke="#c62828" stroke-width="2" rx="5"/>
+  <g transform="translate(860, 455)">
+    <text x="0" y="0" class="desc-text" font-weight="bold">Real-time collaboration issues:</text>
+    <text x="10" y="25" class="desc-text">• "Track Changes" = messy, hard to review</text>
+    <text x="10" y="50" class="desc-text">• Merge conflicts when multiple editors</text>
+  </g>
+
+  <!-- Example -->
+  <rect x="840" y="520" width="340" height="70" class="example-box" rx="5"/>
+  <g transform="translate(855, 540)">
+    <text x="0" y="0" class="label-text" font-weight="bold">Team pain:</text>
+    <text x="0" y="20" class="desc-text" font-size="14">3 people edit same doc</text>
+    <text x="0" y="40" class="desc-text" font-size="14">→ 3 versions, manual merge needed</text>
+  </g>
+
+  <!-- Impact -->
+  <rect x="1200" y="520" width="350" height="70" class="impact-box" rx="5"/>
+  <g transform="translate(1215, 540)">
+    <text x="0" y="0" class="subtitle-text" fill="#7b1fa2">💥 Impact:</text>
+    <text x="0" y="25" class="desc-text" font-size="14">Team bottlenecks</text>
+    <text x="0" y="45" class="desc-text" font-size="14">Lost edits, frustration</text>
+  </g>
+
+  <!-- ==================== PROBLEM 6: Automation ==================== -->
+
+  <rect x="820" y="620" width="750" height="250" class="problem-box" rx="12"/>
+  <text x="1195" y="660" class="section-title" text-anchor="middle">
+    🤖 Problem 6: Hard to Automate
+  </text>
+  <line x1="840" y1="670" x2="1550" y2="670" stroke="#c62828" stroke-width="2"/>
+
+  <!-- Description -->
+  <rect x="840" y="685" width="710" height="90" fill="#fff" stroke="#c62828" stroke-width="2" rx="5"/>
+  <g transform="translate(860, 705)">
+    <text x="0" y="0" class="desc-text" font-weight="bold">Programmatic access is difficult:</text>
+    <text x="10" y="25" class="desc-text">• VBA macros: Outdated, security risks, Windows-only</text>
+    <text x="10" y="50" class="desc-text">• Python-docx: Limited, can't handle complex formatting</text>
+    <text x="10" y="75" class="desc-text">• No simple way to generate reports from code</text>
+  </g>
+
+  <!-- Example -->
+  <rect x="840" y="790" width="340" height="70" class="example-box" rx="5"/>
+  <g transform="translate(855, 810)">
+    <text x="0" y="0" class="label-text" font-weight="bold">Developer frustration:</text>
+    <text x="0" y="20" class="desc-text" font-size="14">Generate 100 reports? Good luck!</text>
+    <text x="0" y="40" class="desc-text" font-size="14">Manual work or fragile scripts</text>
+  </g>
+
+  <!-- Impact -->
+  <rect x="1200" y="790" width="350" height="70" class="impact-box" rx="5"/>
+  <g transform="translate(1215, 810)">
+    <text x="0" y="0" class="subtitle-text" fill="#7b1fa2">💥 Impact:</text>
+    <text x="0" y="25" class="desc-text" font-size="14">Can't scale document generation</text>
+    <text x="0" y="45" class="desc-text" font-size="14">DevOps/CI integration difficult</text>
+  </g>
+
+  <!-- Bottom summary -->
+  <rect x="30" y="880" width="1540" height="1" fill="none"/>
+
+</svg>

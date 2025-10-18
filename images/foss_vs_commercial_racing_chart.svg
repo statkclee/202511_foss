@@ -1,0 +1,215 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="30 0 1770 800">
+  <defs>
+    <style>
+      .main-title { font-family: 'Arial', sans-serif; font-size: 52px; font-weight: bold; fill: #1a1a1a; }
+      .subtitle { font-family: 'Arial', sans-serif; font-size: 24px; fill: #555; }
+      .year-label { font-family: 'Arial', sans-serif; font-size: 28px; font-weight: bold; fill: #333; }
+      .milestone-title { font-family: 'Arial', sans-serif; font-size: 18px; font-weight: bold; fill: #1a1a1a; }
+      .milestone-text { font-family: 'Arial', sans-serif; font-size: 14px; fill: #666; }
+      .racer-label { font-family: 'Arial', sans-serif; font-size: 20px; font-weight: bold; }
+      .speed-text { font-family: 'Arial', sans-serif; font-size: 24px; font-style: italic; }
+      .event-text { font-family: 'Arial', sans-serif; font-size: 20px; fill: #333; }
+      .victory-text { font-family: 'Arial', sans-serif; font-size: 32px; font-weight: bold; }
+      .track { fill: none; stroke-width: 60; opacity: 0.3; }
+      .track-commercial { stroke: #ef5350; }
+      .track-foss { stroke: #66bb6a; }
+      .racer-dot { stroke-width: 3; stroke: #333; }
+    </style>
+    <linearGradient id="skyGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#87ceeb;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#e0f7fa;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="groundGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#a5d6a7;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#81c784;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1800" height="600" fill="url(#skyGradient)"/>
+  <rect y="600" width="1800" height="400" fill="url(#groundGradient)"/>
+
+  <!-- Clouds -->
+  <ellipse cx="200" cy="100" rx="50" ry="30" fill="#fff" opacity="0.6"/>
+  <ellipse cx="230" cy="110" rx="60" ry="35" fill="#fff" opacity="0.6"/>
+  <ellipse cx="1600" cy="150" rx="70" ry="40" fill="#fff" opacity="0.6"/>
+  <ellipse cx="1550" cy="140" rx="50" ry="30" fill="#fff" opacity="0.6"/>
+
+  <!-- Title -->
+  <rect x="400" y="30" width="1000" height="80" fill="#fff" opacity="0.9" rx="10"/>
+  <text x="900" y="85" class="main-title" text-anchor="middle">The Great Race: FOSS vs Commercial</text>
+
+  <!-- Racing Track - Commercial (starts high, gradually declines) -->
+  <path class="track track-commercial"
+        d="M 100 250
+           Q 300 230, 450 240
+           Q 600 250, 750 280
+           Q 900 310, 1050 360
+           Q 1200 410, 1350 470
+           Q 1500 530, 1650 600"/>
+
+  <!-- Racing Track - FOSS (starts low, rises dramatically) -->
+  <path class="track track-foss"
+        d="M 100 500
+           Q 300 480, 450 450
+           Q 600 410, 750 350
+           Q 900 290, 1050 250
+           Q 1200 210, 1350 190
+           Q 1500 170, 1650 150"/>
+
+  <!-- Year Markers on Ground -->
+  <line x1="100" y1="600" x2="100" y2="1000" stroke="#333" stroke-width="3" stroke-dasharray="10,5"/>
+  <text x="100" y="590" class="year-label" text-anchor="middle">1980s</text>
+
+  <line x1="450" y1="600" x2="450" y2="1000" stroke="#333" stroke-width="3" stroke-dasharray="10,5"/>
+  <text x="450" y="590" class="year-label" text-anchor="middle">1990s</text>
+
+  <line x1="750" y1="600" x2="750" y2="1000" stroke="#333" stroke-width="3" stroke-dasharray="10,5"/>
+  <text x="750" y="590" class="year-label" text-anchor="middle">2000s</text>
+
+  <line x1="1050" y1="600" x2="1050" y2="1000" stroke="#333" stroke-width="3" stroke-dasharray="10,5"/>
+  <text x="1050" y="590" class="year-label" text-anchor="middle">2010s</text>
+
+  <line x1="1350" y1="600" x2="1350" y2="1000" stroke="#333" stroke-width="3" stroke-dasharray="10,5"/>
+  <text x="1350" y="590" class="year-label" text-anchor="middle">2020s</text>
+
+  <line x1="1650" y1="600" x2="1650" y2="1000" stroke="#333" stroke-width="3" stroke-dasharray="10,5"/>
+  <text x="1650" y="570" class="year-label" text-anchor="middle">2030s</text>
+
+  <!-- Racer Positions -->
+  <!-- 1980s -->
+  <circle cx="100" cy="250" r="25" fill="#ef5350" class="racer-dot"/>
+  <text x="100" y="260" font-size="30" text-anchor="middle">🔴</text>
+  <circle cx="100" cy="500" r="20" fill="#66bb6a" class="racer-dot"/>
+  <text x="100" y="508" font-size="24" text-anchor="middle">🟢</text>
+
+  <!-- 1990s -->
+  <circle cx="450" cy="240" r="25" fill="#ef5350" class="racer-dot"/>
+  <text x="450" y="250" font-size="30" text-anchor="middle">🔴</text>
+  <circle cx="450" cy="450" r="22" fill="#66bb6a" class="racer-dot"/>
+  <text x="450" y="460" font-size="26" text-anchor="middle">🟢</text>
+
+  <!-- 2000s -->
+  <circle cx="750" cy="280" r="25" fill="#ef5350" class="racer-dot"/>
+  <text x="750" y="290" font-size="30" text-anchor="middle">🔴</text>
+  <circle cx="750" cy="350" r="24" fill="#66bb6a" class="racer-dot"/>
+  <text x="750" y="362" font-size="28" text-anchor="middle">🟢</text>
+
+  <!-- 2010s - CROSSOVER POINT! -->
+  <circle cx="1050" cy="360" r="26" fill="#ef5350" class="racer-dot"/>
+  <text x="1050" y="372" font-size="32" text-anchor="middle">🔴</text>
+  <circle cx="1050" cy="250" r="28" fill="#66bb6a" class="racer-dot"/>
+  <text x="1050" y="264" font-size="34" text-anchor="middle">🟢</text>
+
+  <!-- Explosion/Impact at crossover -->
+  <circle cx="1050" cy="305" r="50" fill="none" stroke="#ffd54f" stroke-width="6" opacity="0.6"/>
+  <circle cx="1050" cy="305" r="70" fill="none" stroke="#ffd54f" stroke-width="4" opacity="0.4"/>
+  <circle cx="1050" cy="305" r="90" fill="none" stroke="#ffd54f" stroke-width="2" opacity="0.2"/>
+  <text x="1050" y="200" class="victory-text" text-anchor="middle" fill="#f57f17">💥 OVERTAKE!</text>
+
+  <!-- 2020s -->
+  <circle cx="1350" cy="470" r="24" fill="#ef5350" class="racer-dot"/>
+  <text x="1350" y="482" font-size="30" text-anchor="middle">🔴</text>
+  <circle cx="1350" cy="190" r="30" fill="#66bb6a" class="racer-dot"/>
+  <text x="1350" y="205" font-size="36" text-anchor="middle">🟢</text>
+
+  <!-- 2030s -->
+  <circle cx="1650" cy="600" r="22" fill="#ef5350" class="racer-dot"/>
+  <text x="1650" y="612" font-size="28" text-anchor="middle">🔴</text>
+  <circle cx="1650" cy="150" r="32" fill="#66bb6a" class="racer-dot"/>
+  <text x="1650" y="168" font-size="38" text-anchor="middle">🟢</text>
+
+  <!-- Labels for racers -->
+  <rect x="50" y="200" width="120" height="35" fill="#ef5350" rx="5"/>
+  <text x="110" y="223" class="racer-label" text-anchor="middle" fill="#fff">Commercial</text>
+
+  <rect x="30" y="530" width="80" height="35" fill="#66bb6a" rx="5"/>
+  <text x="70" y="553" class="racer-label" text-anchor="middle" fill="#fff">FOSS</text>
+
+  <!-- Victory Flag at finish -->
+  <rect x="1720" y="120" width="60" height="80" fill="#66bb6a" opacity="0.8"/>
+  <text x="1750" y="165" font-size="48" text-anchor="middle">🏁</text>
+
+  <!-- ========== Milestone Cards ========== -->
+  <g transform="translate(-30, -40)">
+    <!-- 1980s Milestone -->
+    <g transform="translate(80, 680)">
+      <rect width="280" height="100" fill="#fff" stroke="#333" stroke-width="2" rx="8" filter="drop-shadow(2px 2px 4px rgba(0,0,0,0.2))"/>
+      <text x="140" y="25" class="milestone-title" text-anchor="middle">📊 1978: TeX</text>
+      <text x="140" y="48" class="event-text" text-anchor="middle">FOSS foundation laid</text>
+      <text x="140" y="68" class="milestone-text" text-anchor="middle">Commercial: $10K+</text>
+      <text x="140" y="86" class="milestone-text" text-anchor="middle">FOSS: Free, but hard</text>
+    </g>
+
+    <!-- 1990s Milestone -->
+    <g transform="translate(380, 680)">
+      <rect width="280" height="100" fill="#fff" stroke="#333" stroke-width="2" rx="8" filter="drop-shadow(2px 2px 4px rgba(0,0,0,0.2))"/>
+      <text x="140" y="25" class="milestone-title" text-anchor="middle">💻 1991: Linux</text>
+      <text x="140" y="48" class="event-text" text-anchor="middle">Open source gains ground</text>
+      <text x="140" y="68" class="milestone-text" text-anchor="middle">MS Office dominates</text>
+      <text x="140" y="86" class="milestone-text" text-anchor="middle">FOSS: CLI warriors</text>
+    </g>
+
+    <!-- 2000s Milestone -->
+    <g transform="translate(680, 680)">
+      <rect width="280" height="100" fill="#fff" stroke="#333" stroke-width="2" rx="8" filter="drop-shadow(2px 2px 4px rgba(0,0,0,0.2))"/>
+      <text x="140" y="25" class="milestone-title" text-anchor="middle">🌐 2002: Sweave</text>
+      <text x="140" y="48" class="event-text" text-anchor="middle">Reproducibility revolution</text>
+      <text x="140" y="68" class="milestone-text" text-anchor="middle">R + ggplot2 mature</text>
+      <text x="140" y="86" class="milestone-text" text-anchor="middle">Gap closing fast</text>
+    </g>
+
+    <!-- 2010s Milestone - GAME CHANGER -->
+    <g transform="translate(980, 680)">
+      <rect width="280" height="100" fill="#fff9c4" stroke="#f57f17" stroke-width="4" rx="8" filter="drop-shadow(2px 2px 4px rgba(0,0,0,0.3))"/>
+      <text x="140" y="25" class="milestone-title" text-anchor="middle" fill="#f57f17">📱 2014: Jupyter</text>
+      <text x="140" y="48" class="event-text" text-anchor="middle" font-weight="bold">GAME CHANGER!</text>
+      <text x="140" y="68" class="milestone-text" text-anchor="middle">Notebooks everywhere</text>
+      <text x="140" y="86" class="milestone-text" text-anchor="middle" font-weight="bold">50/50 Market Share</text>
+    </g>
+
+    <!-- 2020s Milestone -->
+    <g transform="translate(1280, 680)">
+      <rect width="280" height="100" fill="#e8f5e9" stroke="#388e3c" stroke-width="3" rx="8" filter="drop-shadow(2px 2px 4px rgba(0,0,0,0.2))"/>
+      <text x="140" y="25" class="milestone-title" text-anchor="middle" fill="#2e7d32">🤖 2022: Quarto</text>
+      <text x="140" y="48" class="event-text" text-anchor="middle">Multi-language publish</text>
+      <text x="140" y="68" class="milestone-text" text-anchor="middle">ChatGPT + FOSS AI</text>
+      <text x="140" y="86" class="milestone-text" text-anchor="middle" font-weight="bold">FOSS leads: 60%</text>
+    </g>
+
+    <!-- 2030s Milestone -->
+    <g transform="translate(1575, 680)">
+      <rect width="220" height="100" fill="#e8f5e9" stroke="#388e3c" stroke-width="3" rx="8" filter="drop-shadow(2px 2px 4px rgba(0,0,0,0.2))"/>
+      <text x="110" y="25" class="milestone-title" text-anchor="middle" fill="#2e7d32">🧠 2030s</text>
+      <text x="110" y="48" class="event-text" text-anchor="middle">Open AGI?</text>
+      <text x="110" y="68" class="milestone-text" text-anchor="middle">Community wins</text>
+      <text x="110" y="86" class="milestone-text" text-anchor="middle" font-weight="bold">FOSS: 70%+</text>
+    </g>
+  </g>
+
+
+  <!-- Speed indicators -->
+  <g transform="translate(100, 340)">
+    <text x="0" y="0" class="speed-text" fill="#ef5350">🔴 Speed: Fast start → Slow</text>
+  </g>
+
+  <g transform="translate(100, 380)">
+    <text x="0" y="0" class="speed-text" fill="#66bb6a">🟢 Speed: Slow start → ACCELERATING!</text>
+  </g>
+
+  <!-- Crowd/Community cheering -->
+  <text x="1600" y="340" font-size="32">👏</text>
+  <text x="1550" y="360" font-size="28">👏</text>
+  <text x="1650" y="350" font-size="30">👏</text>
+  <text x="1620" y="400" font-size="26">👏</text>
+
+  <text x="1580" y="280" class="event-text" fill="#388e3c" font-weight="bold">Community</text>
+  <text x="1580" y="300" class="event-text" fill="#388e3c" font-weight="bold">Power!</text>
+
+  <!-- Final Message -->
+  <g transform="translate(0, -430)">
+    <rect x="600" y="920" width="600" height="60" fill="#66bb6a" rx="10" opacity="0.9"/>
+    <text x="900" y="960" class="victory-text" text-anchor="middle" fill="#fff">🏆 The Future is Open! 🏆</text>
+  </g>
+
+</svg>

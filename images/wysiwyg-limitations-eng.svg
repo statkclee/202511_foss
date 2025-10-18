@@ -1,0 +1,215 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1800 1000">
+  <defs>
+    <!-- Gradient definitions -->
+    <linearGradient id="headerGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#dc2626;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#991b1b;stop-opacity:1" />
+    </linearGradient>
+
+    <linearGradient id="problemGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#fee2e2;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#fecaca;stop-opacity:1" />
+    </linearGradient>
+
+    <!-- Font and Text Styles -->
+    <style>
+      text {
+        font-family: 'Noto Sans', 'Arial', sans-serif;
+      }
+      .title {
+        font-size: 42px;
+        font-weight: 700;
+        fill: white;
+      }
+      .box-title {
+        font-size: 32px;
+        font-weight: 700;
+        fill: #991b1b;
+      }
+      .section-title {
+        font-size: 24px;
+        font-weight: 600;
+        fill: #1e293b;
+      }
+      .item-text {
+        font-size: 19px;
+        fill: #475569;
+      }
+      .item-text-small {
+        font-size: 18px;
+        fill: #475569;
+      }
+      .conclusion-text {
+        font-size: 22px;
+        font-weight: 700;
+        fill: #7f1d1d;
+      }
+      .conclusion-emphasis {
+        font-size: 54px;
+        font-weight: 900;
+      }
+    </style>
+  </defs>
+
+  <!-- Title -->
+  <rect x="50" y="30" width="1700" height="80" rx="12" fill="url(#headerGrad)"/>
+  <text x="900" y="85" text-anchor="middle" class="title">
+    ⚠️ WYSIWYG Document Editor Problems and Limitations
+  </text>
+
+  <!-- Main Content Grid: 2 rows × 3 columns -->
+
+  <!-- Row 1 -->
+
+  <!-- 1. Reproducibility Issues -->
+  <rect x="50" y="150" width="550" height="380" rx="10" fill="url(#problemGrad)" stroke="#dc2626" stroke-width="3"/>
+  <text x="325" y="200" text-anchor="middle" class="box-title">
+    🔄 Lack of Reproducibility
+  </text>
+
+  <!-- Left Column: Document Consistency -->
+  <text x="70" y="250" class="section-title">Document Consistency</text>
+  <text x="70" y="285" class="item-text">• Environment dependency</text>
+  <text x="70" y="315" class="item-text">• Same file → Different</text>
+  <text x="85" y="340" class="item-text">rendering</text>
+  <text x="70" y="370" class="item-text">• Print/screen mismatch</text>
+
+  <!-- Right Column: Data Reproducibility -->
+  <text x="320" y="250" class="section-title">Data Reproducibility</text>
+  <text x="320" y="285" class="item-text">• Manual copy/paste</text>
+  <text x="320" y="315" class="item-text">• Calculation black box</text>
+  <text x="320" y="345" class="item-text">• Manual chart/table</text>
+  <text x="335" y="370" class="item-text">updates</text>
+  <text x="320" y="400" class="item-text">• Error tracking impossible</text>
+
+  <rect x="70" y="460" width="510" height="50" rx="5" fill="#fca5a5"/>
+  <text x="325" y="495" text-anchor="middle" class="conclusion-text">
+    → Reproducibility Crisis <tspan class="conclusion-emphasis">Culprit</tspan>
+  </text>
+
+  <!-- 2. Version Control Limitations -->
+  <rect x="625" y="150" width="550" height="380" rx="10" fill="url(#problemGrad)" stroke="#dc2626" stroke-width="3"/>
+  <text x="900" y="200" text-anchor="middle" class="box-title">
+    📝 Version Control Limits
+  </text>
+
+  <!-- Left Column: Binary File Structure -->
+  <text x="645" y="250" class="section-title">Binary File Structure</text>
+  <text x="645" y="285" class="item-text">• Git Diff impossible</text>
+  <text x="645" y="315" class="item-text">• Merge conflict</text>
+  <text x="660" y="340" class="item-text">unresolvable</text>
+  <text x="645" y="370" class="item-text">• History tracking hard</text>
+
+  <!-- Right Column: Collaboration Inefficiency -->
+  <text x="895" y="250" class="section-title">Collaboration Issues</text>
+  <text x="895" y="285" class="item-text-small">• "final_final_really_final.docx"</text>
+  <text x="895" y="315" class="item-text">• Email file transfer</text>
+  <text x="895" y="345" class="item-text">• Concurrent edit conflicts</text>
+
+  <rect x="645" y="460" width="510" height="50" rx="5" fill="#fca5a5"/>
+  <text x="900" y="495" text-anchor="middle" class="conclusion-text">
+    → Git-based Workflow <tspan class="conclusion-emphasis">Impossible</tspan>
+  </text>
+
+  <!-- 3. No Automation -->
+  <rect x="1200" y="150" width="550" height="380" rx="10" fill="url(#problemGrad)" stroke="#dc2626" stroke-width="3"/>
+  <text x="1475" y="200" text-anchor="middle" class="box-title">
+    🤖 No Automation
+  </text>
+
+  <!-- Left Column: Manual Dependency -->
+  <text x="1220" y="250" class="section-title">Manual Dependency</text>
+  <text x="1220" y="285" class="item-text">• GUI click/drag required</text>
+  <text x="1220" y="315" class="item-text">• No scripting</text>
+  <text x="1220" y="345" class="item-text">• Batch conversion hard</text>
+
+  <!-- Right Column: No CI/CD Integration -->
+  <text x="1470" y="250" class="section-title">No CI/CD Integration</text>
+  <text x="1470" y="285" class="item-text">• No auto build</text>
+  <text x="1470" y="315" class="item-text">• No auto test</text>
+  <text x="1470" y="345" class="item-text">• No auto deploy</text>
+  <text x="1470" y="375" class="item-text">• No generation automation</text>
+
+  <rect x="1220" y="460" width="510" height="50" rx="5" fill="#fca5a5"/>
+  <text x="1475" y="495" text-anchor="middle" class="conclusion-text">
+    → DevOps Workflow <tspan class="conclusion-emphasis">Broken</tspan>
+  </text>
+
+  <!-- Row 2 -->
+
+  <!-- 4. Lock-in Issues -->
+  <rect x="50" y="560" width="550" height="380" rx="10" fill="url(#problemGrad)" stroke="#dc2626" stroke-width="3"/>
+  <text x="325" y="610" text-anchor="middle" class="box-title">
+    🔒 Lock-in Issues
+  </text>
+
+  <!-- Left Column: Proprietary SW Lock-in -->
+  <text x="70" y="660" class="section-title">Proprietary SW Lock-in</text>
+  <text x="70" y="695" class="item-text">• License costs</text>
+  <text x="70" y="725" class="item-text">• Vendor lock-in</text>
+  <text x="70" y="755" class="item-text">• Platform constraints</text>
+  <text x="85" y="780" class="item-text">(Win/Mac)</text>
+
+  <!-- Right Column: Format Lock-in -->
+  <text x="320" y="660" class="section-title">Format Lock-in</text>
+  <text x="320" y="695" class="item-text">• Proprietary formats</text>
+  <text x="320" y="725" class="item-text">• Compatibility issues</text>
+  <text x="320" y="755" class="item-text">• Long-term preservation</text>
+  <text x="335" y="780" class="item-text">risk</text>
+  <text x="320" y="810" class="item-text">• Data sovereignty loss</text>
+
+  <rect x="70" y="870" width="510" height="50" rx="5" fill="#fca5a5"/>
+  <text x="325" y="905" text-anchor="middle" class="conclusion-text">
+    → Digital Sovereignty <tspan class="conclusion-emphasis">Threat</tspan>
+  </text>
+
+  <!-- 5. Scalability Limits -->
+  <rect x="625" y="560" width="550" height="380" rx="10" fill="url(#problemGrad)" stroke="#dc2626" stroke-width="3"/>
+  <text x="900" y="610" text-anchor="middle" class="box-title">
+    📈 Scalability Limits
+  </text>
+
+  <!-- Left Column: Large Document Processing -->
+  <text x="645" y="660" class="section-title">Large Doc Processing</text>
+  <text x="645" y="695" class="item-text">• Memory overload</text>
+  <text x="645" y="725" class="item-text">• Slow response</text>
+  <text x="645" y="755" class="item-text">• Frequent crashes</text>
+
+  <!-- Right Column: Complex Structure Management -->
+  <text x="895" y="660" class="section-title">Complex Structure Mgmt</text>
+  <text x="895" y="695" class="item-text">• Long doc navigation hard</text>
+  <text x="895" y="725" class="item-text">• Cross-reference breaks</text>
+  <text x="895" y="755" class="item-text">• Consistency maintenance</text>
+  <text x="910" y="780" class="item-text">hard</text>
+
+  <rect x="645" y="870" width="510" height="50" rx="5" fill="#fca5a5"/>
+  <text x="900" y="905" text-anchor="middle" class="conclusion-text">
+    → Large-scale Project <tspan class="conclusion-emphasis">Unsuitable</tspan>
+  </text>
+
+  <!-- 6. Content-Format Mixed -->
+  <rect x="1200" y="560" width="550" height="380" rx="10" fill="url(#problemGrad)" stroke="#dc2626" stroke-width="3"/>
+  <text x="1475" y="610" text-anchor="middle" class="box-title">
+    🎨 Content-Format Mixed
+  </text>
+
+  <!-- Left Column: Separation of Concerns Failure -->
+  <text x="1220" y="660" class="section-title">No Separation of Concerns</text>
+  <text x="1220" y="695" class="item-text">• Content/design mixed</text>
+  <text x="1220" y="725" class="item-text">• Format change damages</text>
+  <text x="1235" y="750" class="item-text">content</text>
+  <text x="1220" y="780" class="item-text">• Reuse difficult</text>
+
+  <!-- Right Column: Productivity Loss -->
+  <text x="1470" y="660" class="section-title">Productivity Loss</text>
+  <text x="1470" y="695" class="item-text">• Time wasted on</text>
+  <text x="1485" y="720" class="item-text">formatting</text>
+  <text x="1470" y="750" class="item-text">• Focus on form</text>
+  <text x="1470" y="780" class="item-text">• Accessibility degraded</text>
+
+  <rect x="1220" y="870" width="510" height="50" rx="5" fill="#fca5a5"/>
+  <text x="1475" y="905" text-anchor="middle" class="conclusion-text">
+    → Separation of Concerns <tspan class="conclusion-emphasis">Violated</tspan>
+  </text>
+
+</svg>

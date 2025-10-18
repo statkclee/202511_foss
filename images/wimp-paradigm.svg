@@ -1,0 +1,133 @@
+<svg viewBox="0 50 1600 850" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      text { font-family: 'Noto Sans KR', sans-serif; }
+      .title { font-size: 48px; font-weight: 700; fill: #1e3a8a; }
+      .subtitle { font-size: 24px; font-weight: 600; fill: #475569; }
+      .section-title { font-size: 30px; font-weight: 700; }
+      .main-text { font-size: 22px; font-weight: 600; }
+      .desc-text { font-size: 19px; }
+    </style>
+
+    <!-- Gradients -->
+    <linearGradient id="windows" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color: #3b82f6; stop-opacity: 1" />
+      <stop offset="100%" style="stop-color: #1e40af; stop-opacity: 1" />
+    </linearGradient>
+
+    <linearGradient id="icons" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color: #10b981; stop-opacity: 1" />
+      <stop offset="100%" style="stop-color: #059669; stop-opacity: 1" />
+    </linearGradient>
+
+    <linearGradient id="menus" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color: #f59e0b; stop-opacity: 1" />
+      <stop offset="100%" style="stop-color: #d97706; stop-opacity: 1" />
+    </linearGradient>
+
+    <linearGradient id="pointer" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color: #ec4899; stop-opacity: 1" />
+      <stop offset="100%" style="stop-color: #db2777; stop-opacity: 1" />
+    </linearGradient>
+
+    <linearGradient id="timeline" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color: #8b5cf6; stop-opacity: 1" />
+      <stop offset="100%" style="stop-color: #6366f1; stop-opacity: 1" />
+    </linearGradient>
+
+    <!-- Arrow marker -->
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <polygon points="0 0, 12 6, 0 12" fill="#3b82f6"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1600" height="900" fill="#f8fafc"/>
+
+  <!-- Title -->
+  <text x="800" y="100" text-anchor="middle" class="title">WIMP 패러다임</text>
+
+  <!-- Historical Context -->
+  <rect x="100" y="130" width="1400" height="50" rx="10" fill="url(#timeline)" stroke="#6366f1" stroke-width="3"/>
+  <text x="800" y="163" text-anchor="middle" style="font-size: 22px; font-weight: 700; fill: white;">📅 Xerox PARC (1973) → Apple Lisa (1983) → Macintosh (1984) → Windows (1985)</text>
+
+  <!-- Four Components of WIMP -->
+  <g>
+    <!-- Windows -->
+    <rect x="100" y="220" width="330" height="280" rx="12" fill="url(#windows)" stroke="#1e40af" stroke-width="4"/>
+    <text x="265" y="265" text-anchor="middle" style="font-size: 40px; fill: white;">🪟</text>
+    <text x="265" y="310" text-anchor="middle" class="section-title" fill="white;">W indows</text>
+    <text x="265" y="345" text-anchor="middle" style="font-size: 20px; fill: #dbeafe;">창 (다중 작업)</text>
+
+    <rect x="120" y="365" width="290" height="115" rx="8" fill="white" opacity="0.95"/>
+    <text x="130" y="390" style="font-size: 19px; fill: #1e40af; font-weight: 600;">• 겹치는 창</text>
+    <text x="130" y="415" style="font-size: 19px; fill: #1e40af;">• 크기 조절 가능</text>
+    <text x="130" y="440" style="font-size: 19px; fill: #1e40af;">• 동시 다중 작업</text>
+    <text x="130" y="465" style="font-size: 17px; fill: #1e3a8a; font-style: italic;">→ 데스크톱 메타포</text>
+
+    <!-- Icons -->
+    <rect x="470" y="220" width="330" height="280" rx="12" fill="url(#icons)" stroke="#059669" stroke-width="4"/>
+    <text x="635" y="265" text-anchor="middle" style="font-size: 40px; fill: white;">🎨</text>
+    <text x="635" y="310" text-anchor="middle" class="section-title" fill="white;">I cons</text>
+    <text x="635" y="345" text-anchor="middle" style="font-size: 20px; fill: #d1fae5;">아이콘 (시각적 표현)</text>
+
+    <rect x="490" y="365" width="290" height="115" rx="8" fill="white" opacity="0.95"/>
+    <text x="500" y="390" style="font-size: 19px; fill: #047857; font-weight: 600;">• 파일/폴더 시각화</text>
+    <text x="500" y="415" style="font-size: 19px; fill: #047857;">• 드래그 앤 드롭</text>
+    <text x="500" y="440" style="font-size: 19px; fill: #047857;">• 직관적 인식</text>
+    <text x="500" y="465" style="font-size: 17px; fill: #065f46; font-style: italic;">→ 명령어 불필요</text>
+
+    <!-- Menus -->
+    <rect x="840" y="220" width="330" height="280" rx="12" fill="url(#menus)" stroke="#d97706" stroke-width="4"/>
+    <text x="1005" y="265" text-anchor="middle" style="font-size: 40px; fill: white;">📋</text>
+    <text x="1005" y="310" text-anchor="middle" class="section-title" fill="white;">M enus</text>
+    <text x="1005" y="345" text-anchor="middle" style="font-size: 20px; fill: #fef3c7;">메뉴 (계층적 구조)</text>
+
+    <rect x="860" y="365" width="290" height="115" rx="8" fill="white" opacity="0.95"/>
+    <text x="870" y="390" style="font-size: 19px; fill: #b45309; font-weight: 600;">• 계층적 메뉴 바</text>
+    <text x="870" y="415" style="font-size: 19px; fill: #b45309;">• 컨텍스트 메뉴</text>
+    <text x="870" y="440" style="font-size: 19px; fill: #b45309;">• 드롭다운 구조</text>
+    <text x="870" y="465" style="font-size: 17px; fill: #92400e; font-style: italic;">→ 기능 탐색 용이</text>
+
+    <!-- Pointer -->
+    <rect x="1210" y="220" width="330" height="280" rx="12" fill="url(#pointer)" stroke="#db2777" stroke-width="4"/>
+    <text x="1375" y="265" text-anchor="middle" style="font-size: 40px; fill: white;">🖱️</text>
+    <text x="1375" y="310" text-anchor="middle" class="section-title" fill="white;">P ointer</text>
+    <text x="1375" y="345" text-anchor="middle" style="font-size: 20px; fill: #fce7f3;">포인터 (마우스)</text>
+
+    <rect x="1230" y="365" width="290" height="115" rx="8" fill="white" opacity="0.95"/>
+    <text x="1240" y="390" style="font-size: 19px; fill: #be185d; font-weight: 600;">• 클릭 &amp; 더블클릭</text>
+    <text x="1240" y="415" style="font-size: 19px; fill: #be185d;">• 드래그 &amp; 스크롤</text>
+    <text x="1240" y="440" style="font-size: 19px; fill: #be185d;">• 직접 조작</text>
+    <text x="1240" y="465" style="font-size: 17px; fill: #9f1239; font-style: italic;">→ 키보드 대체</text>
+  </g>
+
+  <!-- Impact and Legacy -->
+  <rect x="100" y="540" width="1400" height="320" rx="15" fill="#e0e7ff" stroke="#4f46e5" stroke-width="4"/>
+  <text x="800" y="585" text-anchor="middle" style="font-size: 36px; font-weight: 700; fill: #312e81;">🎯 WIMP 영향과 유산</text>
+
+  <!-- Left: Paradigm Shift -->
+  <g>
+    <rect x="130" y="620" width="650" height="210" rx="10" fill="white" stroke="#6366f1" stroke-width="3"/>
+    <text x="455" y="655" text-anchor="middle" style="font-size: 26px; font-weight: 700; fill: #4f46e5;">✨ 패러다임 전환</text>
+
+    <text x="150" y="695" style="font-size: 20px; fill: #1e293b; font-weight: 600;">• CLI → GUI: 명령어에서 시각적 상호작용으로</text>
+    <text x="150" y="725" style="font-size: 20px; fill: #1e293b;">• 전문가 전용 → 대중화: 컴퓨터 민주화</text>
+    <text x="150" y="755" style="font-size: 20px; fill: #1e293b;">• 학습 곡선 완화: 직관적 인터페이스</text>
+    <text x="150" y="785" style="font-size: 20px; fill: #1e293b;">• 생산성 향상: 시각적 피드백 즉시 제공</text>
+    <text x="150" y="815" style="font-size: 18px; fill: #4f46e5; font-weight: 700;">→ Personal Computer 시대 개막</text>
+  </g>
+
+  <!-- Right: Modern Evolution -->
+  <g>
+    <rect x="820" y="620" width="650" height="210" rx="10" fill="white" stroke="#10b981" stroke-width="3"/>
+    <text x="1145" y="655" text-anchor="middle" style="font-size: 26px; font-weight: 700; fill: #065f46;">🔄 현대적 진화</text>
+
+    <text x="840" y="695" style="font-size: 20px; fill: #1e293b; font-weight: 600;">• WYSIWYG 편집기 (1980s~): MS Word, HWP, PageMaker</text>
+    <text x="840" y="725" style="font-size: 20px; fill: #1e293b;">• 터치 인터페이스 (2000s~): iOS, Android</text>
+    <text x="840" y="755" style="font-size: 20px; fill: #1e293b;">• 웹 기반 GUI (2010s~): SaaS, 클라우드 앱</text>
+    <text x="840" y="785" style="font-size: 20px; fill: #1e293b;">• AI 통합 GUI (2020s~): ChatGPT, Copilot</text>
+    <text x="840" y="815" style="font-size: 18px; fill: #10b981; font-weight: 700;">→ WIMP 기본 원리는 여전히 유효</text>
+  </g>
+
+</svg>

@@ -1,0 +1,446 @@
+<svg viewBox="0 0 2400 2000" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .title { font-family: 'Noto Sans KR', sans-serif; font-size: 38px; font-weight: 700; fill: #1e3a8a; }
+      .subtitle { font-family: 'Noto Sans KR', sans-serif; font-size: 16px; font-weight: 600; fill: #475569; }
+      .section-title { font-family: 'Noto Sans KR', sans-serif; font-size: 22px; font-weight: 700; }
+      .step-title { font-family: 'Noto Sans KR', sans-serif; font-size: 18px; font-weight: 700; }
+      .tool-name { font-family: 'Noto Sans KR', sans-serif; font-size: 16px; font-weight: 700; }
+      .description { font-family: 'Noto Sans KR', sans-serif; font-size: 13px; }
+      .detail { font-family: 'Noto Sans KR', sans-serif; font-size: 12px; }
+      .code { font-family: 'Courier New', monospace; font-size: 11px; }
+    </style>
+
+    <!-- Gradients -->
+    <linearGradient id="sourceGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color: #3b82f6; stop-opacity: 1" />
+      <stop offset="100%" style="stop-color: #1e40af; stop-opacity: 1" />
+    </linearGradient>
+
+    <linearGradient id="engineGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color: #8b5cf6; stop-opacity: 1" />
+      <stop offset="100%" style="stop-color: #6d28d9; stop-opacity: 1" />
+    </linearGradient>
+
+    <linearGradient id="outputGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color: #22c55e; stop-opacity: 1" />
+      <stop offset="100%" style="stop-color: #16a34a; stop-opacity: 1" />
+    </linearGradient>
+
+    <linearGradient id="editGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color: #f59e0b; stop-opacity: 1" />
+      <stop offset="100%" style="stop-color: #d97706; stop-opacity: 1" />
+    </linearGradient>
+
+    <!-- Arrow marker -->
+    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#64748b" />
+    </marker>
+
+    <marker id="arrowheadGreen" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#22c55e" />
+    </marker>
+
+    <marker id="arrowheadOrange" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#f59e0b" />
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="2400" height="2000" fill="#f8fafc"/>
+
+  <!-- Title -->
+  <rect x="50" y="20" width="2300" height="95" rx="15" fill="white" stroke="#1e3a8a" stroke-width="4"/>
+  <text x="1200" y="60" text-anchor="middle" class="title">✅ 실제 작동하는 오픈소스 문서 파이프라인</text>
+  <text x="1200" y="90" text-anchor="middle" class="subtitle">Markdown/Quarto + R/Python + Pandoc + LaTeX + LibreOffice 통합 아키텍처</text>
+
+  <!-- Main Pipeline Flow -->
+  <rect x="50" y="140" width="2300" height="850" rx="12" fill="#eff6ff" stroke="#3b82f6" stroke-width="3"/>
+  <text x="1200" y="175" text-anchor="middle" class="section-title" fill="#1e40af">🔄 핵심 워크플로우: 원천(Plain Text) → 변환(Pandoc) → 최종편집(LibreOffice)</text>
+
+  <!-- Step 1: Source -->
+  <g id="step1-source">
+    <rect x="80" y="210" width="520" height="740" rx="10" fill="white" stroke="#3b82f6" stroke-width="3"/>
+    <rect x="80" y="210" width="520" height="50" rx="10" fill="url(#sourceGrad)"/>
+    <text x="340" y="245" text-anchor="middle" class="step-title" fill="white">1️⃣ 저작 원천 (Plain Text)</text>
+
+    <!-- Quarto/R Markdown -->
+    <rect x="100" y="280" width="480" height="200" rx="8" fill="#dbeafe" stroke="#3b82f6" stroke-width="2"/>
+    <text x="340" y="305" text-anchor="middle" class="tool-name" fill="#1e40af">📝 Quarto / R Markdown</text>
+    <text x="110" y="330" class="description" fill="#1e293b">✓ Markdown 문법 + 코드 청크</text>
+    <text x="120" y="352" class="detail" fill="#475569">• 텍스트: Markdown (제목, 단락, 리스트)</text>
+    <text x="120" y="370" class="detail" fill="#475569">• 수식: LaTeX 문법 ($...$, $$...$$)</text>
+    <text x="120" y="388" class="detail" fill="#475569">• 표: Markdown table 또는 코드 생성</text>
+    <text x="120" y="406" class="detail" fill="#475569">• 인용: BibTeX/CSL (bibliography.bib)</text>
+    <text x="120" y="424" class="detail" fill="#475569">• 코드 청크: ```{r} 또는 ```{python}</text>
+
+    <rect x="110" y="440" width="460" height="30" rx="5" fill="#1e3a8a" opacity="0.1"/>
+    <text x="120" y="460" class="code" fill="#1e40af">```{r echo=FALSE}</text>
+    <rect x="110" y="470" width="460" height="10" rx="5" fill="#1e3a8a" opacity="0.1"/>
+
+    <!-- Code Execution -->
+    <rect x="100" y="495" width="480" height="180" rx="8" fill="#f0fdf4" stroke="#22c55e" stroke-width="2"/>
+    <text x="340" y="520" text-anchor="middle" class="tool-name" fill="#166534">⚙️ 코드 실행 엔진</text>
+    <text x="110" y="545" class="description" fill="#1e293b">✓ R: knitr 엔진</text>
+    <text x="120" y="565" class="detail" fill="#475569">• R 코드 → 표/그래프 자동 삽입</text>
+    <text x="120" y="583" class="detail" fill="#475569">• ggplot2, dplyr 결과 문서 반영</text>
+
+    <text x="110" y="608" class="description" fill="#1e293b">✓ Python: Jupyter 커널</text>
+    <text x="120" y="628" class="detail" fill="#475569">• pandas DataFrame → 표</text>
+    <text x="120" y="646" class="detail" fill="#475569">• matplotlib/seaborn → 그래프</text>
+    <text x="120" y="664" class="detail" fill="#475569">• 실행 결과 즉시 문서에 삽입</text>
+
+    <!-- Git Version Control -->
+    <rect x="100" y="690" width="480" height="90" rx="8" fill="#fef3c7" stroke="#f59e0b" stroke-width="2"/>
+    <text x="340" y="715" text-anchor="middle" class="tool-name" fill="#d97706">🔧 Git 버전 관리</text>
+    <text x="120" y="740" class="detail" fill="#475569">✓ Plain Text → Git diff 완벽 작동</text>
+    <text x="120" y="758" class="detail" fill="#475569">✓ GitHub/GitLab 협업, 브랜치 관리</text>
+
+    <!-- Example reference -->
+    <text x="110" y="815" class="description" fill="#0891b2" font-weight="600">📌 실사례:</text>
+    <text x="120" y="835" class="detail" fill="#0891b2">• R Markdown: 수십만 연구자</text>
+    <text x="120" y="853" class="detail" fill="#0891b2">• Quarto: NASA, BBC 공식 사용</text>
+    <text x="120" y="871" class="detail" fill="#0891b2">• Jupyter Book: Hadley Wickham 책</text>
+    <text x="120" y="889" class="detail" fill="#0891b2">• 참조: rmarkdown.rstudio.com</text>
+    <text x="120" y="907" class="detail" fill="#0891b2">         quarto.org</text>
+  </g>
+
+  <!-- Arrow 1 to 2 -->
+  <path d="M 600 580 L 700 580" stroke="#8b5cf6" stroke-width="4" fill="none" marker-end="url(#arrowhead)"/>
+  <text x="650" y="570" text-anchor="middle" class="description" fill="#8b5cf6" font-weight="600">Pandoc</text>
+
+  <!-- Step 2: Conversion Engine -->
+  <g id="step2-engine">
+    <rect x="720" y="210" width="520" height="740" rx="10" fill="white" stroke="#8b5cf6" stroke-width="3"/>
+    <rect x="720" y="210" width="520" height="50" rx="10" fill="url(#engineGrad)"/>
+    <text x="980" y="245" text-anchor="middle" class="step-title" fill="white">2️⃣ 변환 엔진 (Pandoc)</text>
+
+    <!-- Pandoc Core -->
+    <rect x="740" y="280" width="480" height="220" rx="8" fill="#f5f3ff" stroke="#8b5cf6" stroke-width="2"/>
+    <text x="980" y="305" text-anchor="middle" class="tool-name" fill="#6d28d9">🔄 Pandoc (2006~, John MacFarlane)</text>
+    <text x="750" y="330" class="description" fill="#1e293b">✓ 범용 문서 변환 표준 (Haskell 기반)</text>
+    <text x="760" y="352" class="detail" fill="#475569">• 입력: Markdown, LaTeX, HTML, DOCX...</text>
+    <text x="760" y="370" class="detail" fill="#475569">• 출력: PDF, DOCX, ODT, HTML, EPUB...</text>
+    <text x="760" y="388" class="detail" fill="#475569">• 40+ 포맷 지원, Lua 필터 확장</text>
+    <text x="760" y="406" class="detail" fill="#475569">• CSL 인용 스타일 (10,000+ 저널)</text>
+
+    <text x="750" y="431" class="description" fill="#1e293b">✓ 스타일 커스터마이징</text>
+    <text x="760" y="451" class="detail" fill="#475569">• reference.docx: DOCX 템플릿</text>
+    <text x="760" y="469" class="detail" fill="#475569">• reference.odt: ODT 템플릿</text>
+    <text x="760" y="487" class="detail" fill="#475569">• 기관 스타일 일괄 적용 가능</text>
+
+    <!-- LaTeX Engine -->
+    <rect x="740" y="515" width="480" height="140" rx="8" fill="#fef2f2" stroke="#ef4444" stroke-width="2"/>
+    <text x="980" y="540" text-anchor="middle" class="tool-name" fill="#dc2626">📐 LaTeX 엔진 (PDF 생성)</text>
+    <text x="750" y="565" class="description" fill="#1e293b">✓ Pandoc → LaTeX → PDF</text>
+    <text x="760" y="585" class="detail" fill="#475569">• xelatex, pdflatex, lualatex</text>
+    <text x="760" y="603" class="detail" fill="#475569">• 수식, 참고문헌 완전 지원</text>
+    <text x="760" y="621" class="detail" fill="#475569">• 학술 논문 품질 (arXiv 표준)</text>
+    <text x="760" y="639" class="detail" fill="#475569">• 한글: kotex, xetexko 지원</text>
+
+    <!-- Quarto Integration -->
+    <rect x="740" y="670" width="480" height="110" rx="8" fill="#ecfccb" stroke="#84cc16" stroke-width="2"/>
+    <text x="980" y="695" text-anchor="middle" class="tool-name" fill="#65a30d">📚 Quarto 통합</text>
+    <text x="750" y="720" class="description" fill="#1e293b">✓ 내부적으로 Pandoc 사용</text>
+    <text x="760" y="740" class="detail" fill="#475569">• quarto render → Pandoc 자동 실행</text>
+    <text x="760" y="758" class="detail" fill="#475569">• 다중 출력: PDF + DOCX + HTML 동시</text>
+
+    <!-- Command Example -->
+    <rect x="740" y="795" width="480" height="140" rx="8" fill="#fef3c7" stroke="#f59e0b" stroke-width="2"/>
+    <text x="980" y="820" text-anchor="middle" class="tool-name" fill="#d97706">💻 실행 예제</text>
+    <rect x="750" y="835" width="460" height="90" rx="5" fill="#1e3a8a" opacity="0.05"/>
+    <text x="760" y="855" class="code" fill="#1e40af"># Quarto 렌더링</text>
+    <text x="760" y="873" class="code" fill="#1e40af">quarto render doc.qmd --to pdf</text>
+    <text x="760" y="891" class="code" fill="#1e40af">quarto render doc.qmd --to docx</text>
+    <text x="760" y="909" class="code" fill="#1e40af">quarto render doc.qmd --to odt</text>
+  </g>
+
+  <!-- Arrow 2 to 3 -->
+  <path d="M 1240 580 L 1340 580" stroke="#22c55e" stroke-width="4" fill="none" marker-end="url(#arrowheadGreen)"/>
+  <text x="1290" y="570" text-anchor="middle" class="description" fill="#22c55e" font-weight="600">출력</text>
+
+  <!-- Step 3: Output -->
+  <g id="step3-output">
+    <rect x="1360" y="210" width="520" height="740" rx="10" fill="white" stroke="#22c55e" stroke-width="3"/>
+    <rect x="1360" y="210" width="520" height="50" rx="10" fill="url(#outputGrad)"/>
+    <text x="1620" y="245" text-anchor="middle" class="step-title" fill="white">3️⃣ 다중 출력 포맷</text>
+
+    <!-- PDF Output -->
+    <rect x="1380" y="280" width="480" height="120" rx="8" fill="#fee2e2" stroke="#ef4444" stroke-width="2"/>
+    <text x="1620" y="305" text-anchor="middle" class="tool-name" fill="#dc2626">📄 PDF (LaTeX)</text>
+    <text x="1390" y="330" class="description" fill="#1e293b">✓ 학술 논문 표준</text>
+    <text x="1400" y="350" class="detail" fill="#475569">• 수식, 참고문헌 완벽</text>
+    <text x="1400" y="368" class="detail" fill="#475569">• arXiv, IEEE, ACM 투고</text>
+    <text x="1400" y="386" class="detail" fill="#475569">• 인쇄 품질 보장</text>
+
+    <!-- DOCX Output -->
+    <rect x="1380" y="415" width="480" height="120" rx="8" fill="#dbeafe" stroke="#3b82f6" stroke-width="2"/>
+    <text x="1620" y="440" text-anchor="middle" class="tool-name" fill="#1e40af">📝 DOCX (MS Word)</text>
+    <text x="1390" y="465" class="description" fill="#1e293b">✓ 기업 실무 표준</text>
+    <text x="1400" y="485" class="detail" fill="#475569">• reference.docx로 스타일 통일</text>
+    <text x="1400" y="503" class="detail" fill="#475569">• Word/LibreOffice 호환</text>
+    <text x="1400" y="521" class="detail" fill="#475569">• 트랙체인지·댓글 가능</text>
+
+    <!-- ODT Output -->
+    <rect x="1380" y="550" width="480" height="120" rx="8" fill="#fef3c7" stroke="#f59e0b" stroke-width="2"/>
+    <text x="1620" y="575" text-anchor="middle" class="tool-name" fill="#d97706">📋 ODT (LibreOffice)</text>
+    <text x="1390" y="600" class="description" fill="#1e293b">✓ 오픈소스 표준</text>
+    <text x="1400" y="620" class="detail" fill="#475569">• reference.odt로 스타일 지정</text>
+    <text x="1400" y="638" class="detail" fill="#475569">• ISO 26300 표준 포맷</text>
+    <text x="1400" y="656" class="detail" fill="#475569">• LibreOffice/Collabora 편집</text>
+
+    <!-- HTML Output -->
+    <rect x="1380" y="685" width="480" height="120" rx="8" fill="#f0fdf4" stroke="#22c55e" stroke-width="2"/>
+    <text x="1620" y="710" text-anchor="middle" class="tool-name" fill="#166534">🌐 HTML (웹 출판)</text>
+    <text x="1390" y="735" class="description" fill="#1e293b">✓ 웹사이트, 블로그</text>
+    <text x="1400" y="755" class="detail" fill="#475569">• 인터랙티브 시각화</text>
+    <text x="1400" y="773" class="detail" fill="#475569">• GitHub Pages 호스팅</text>
+    <text x="1400" y="791" class="detail" fill="#475569">• 검색 엔진 최적화</text>
+
+    <!-- Multi-format -->
+    <rect x="1380" y="820" width="480" height="115" rx="8" fill="#faf5ff" stroke="#8b5cf6" stroke-width="2"/>
+    <text x="1620" y="845" text-anchor="middle" class="tool-name" fill="#6d28d9">🎯 동시 출력 가능</text>
+    <text x="1390" y="870" class="description" fill="#1e293b">✓ 하나의 원고 → 모든 포맷</text>
+    <text x="1400" y="890" class="detail" fill="#475569">• PDF(학술) + DOCX(실무) + HTML(웹)</text>
+    <text x="1400" y="908" class="detail" fill="#475569">• 기관별 포맷 대응 용이</text>
+    <text x="1400" y="926" class="detail" fill="#475569">• 참조: pandoc.org/MANUAL.html</text>
+  </g>
+
+  <!-- Arrow 3 to 4 -->
+  <path d="M 1880 580 L 1980 580" stroke="#f59e0b" stroke-width="4" fill="none" marker-end="url(#arrowheadOrange)"/>
+  <text x="1930" y="570" text-anchor="middle" class="description" fill="#f59e0b" font-weight="600">편집</text>
+
+  <!-- Step 4: Final Editing -->
+  <g id="step4-editing">
+    <rect x="2000" y="210" width="370" height="740" rx="10" fill="white" stroke="#f59e0b" stroke-width="3"/>
+    <rect x="2000" y="210" width="370" height="50" rx="10" fill="url(#editGrad)"/>
+    <text x="2185" y="245" text-anchor="middle" class="step-title" fill="white">4️⃣ 최종 편집</text>
+
+    <!-- LibreOffice Desktop -->
+    <rect x="2020" y="280" width="330" height="180" rx="8" fill="#fff7ed" stroke="#f59e0b" stroke-width="2"/>
+    <text x="2185" y="305" text-anchor="middle" class="tool-name" fill="#d97706">🖥️ LibreOffice Writer</text>
+    <text x="2030" y="330" class="description" fill="#1e293b">✓ 데스크톱 편집</text>
+    <text x="2040" y="350" class="detail" fill="#475569">• DOCX/ODT 열기</text>
+    <text x="2040" y="368" class="detail" fill="#475569">• 트랙체인지</text>
+    <text x="2040" y="386" class="detail" fill="#475569">• 미세 서식 조정</text>
+    <text x="2040" y="404" class="detail" fill="#475569">• 최종 검수·인쇄</text>
+
+    <text x="2030" y="429" class="description" fill="#0891b2" font-weight="600">📌 역할:</text>
+    <text x="2040" y="447" class="detail" fill="#0891b2">→ 최종 다듬기만</text>
+
+    <!-- Collabora Online -->
+    <rect x="2020" y="475" width="330" height="200" rx="8" fill="#eff6ff" stroke="#3b82f6" stroke-width="2"/>
+    <text x="2185" y="500" text-anchor="middle" class="tool-name" fill="#1e40af">🌐 Collabora Online</text>
+    <text x="2030" y="525" class="description" fill="#1e293b">✓ 웹 기반 협업</text>
+    <text x="2040" y="545" class="detail" fill="#475569">• LibreOffice 웹 버전</text>
+    <text x="2040" y="563" class="detail" fill="#475569">• 실시간 공동 편집</text>
+    <text x="2040" y="581" class="detail" fill="#475569">• SDK로 서비스 임베드</text>
+    <text x="2040" y="599" class="detail" fill="#475569">• Nextcloud 통합</text>
+
+    <text x="2030" y="624" class="description" fill="#0891b2" font-weight="600">📌 실사례:</text>
+    <text x="2040" y="642" class="detail" fill="#0891b2">• 기업 문서 협업</text>
+    <text x="2040" y="660" class="detail" fill="#0891b2">• 참조:</text>
+    <text x="2050" y="675" class="detail" fill="#0891b2">collaboraonline.com</text>
+
+    <!-- Warning -->
+    <rect x="2020" y="690" width="330" height="245" rx="8" fill="#fef2f2" stroke="#dc2626" stroke-width="2"/>
+    <text x="2185" y="715" text-anchor="middle" class="tool-name" fill="#dc2626">⚠️ 중요 제약</text>
+    <text x="2030" y="740" class="description" fill="#991b1b" font-weight="600">완벽 왕복 편집 불가</text>
+    <text x="2040" y="760" class="detail" fill="#475569">• ODT→Markdown 변환</text>
+    <text x="2040" y="778" class="detail" fill="#475569">  손실 발생 가능</text>
+    <text x="2040" y="796" class="detail" fill="#475569">• 복잡한 스타일·도형</text>
+    <text x="2040" y="814" class="detail" fill="#475569">  보존 어려움</text>
+
+    <text x="2030" y="839" class="description" fill="#16a34e" font-weight="600">✅ 권장 워크플로우</text>
+    <text x="2040" y="859" class="detail" fill="#475569">1. 원천: Plain Text</text>
+    <text x="2040" y="877" class="detail" fill="#475569">   (Git 관리)</text>
+    <text x="2040" y="895" class="detail" fill="#475569">2. 출력: DOCX/ODT</text>
+    <text x="2040" y="913" class="detail" fill="#475569">3. 편집: LibreOffice</text>
+    <text x="2040" y="931" class="detail" fill="#16a34e; font-weight: 600">→ 단방향 흐름</text>
+  </g>
+
+  <!-- Reverse Flow Section -->
+  <rect x="50" y="1020" width="2300" height="420" rx="12" fill="#fef2f2" stroke="#dc2626" stroke-width="3"/>
+  <text x="1200" y="1055" text-anchor="middle" class="section-title" fill="#dc2626">🔙 역방향 변환 (ODT → Plain Text): 제한적 지원</text>
+
+  <!-- ODT Input -->
+  <g id="reverse-flow">
+    <rect x="80" y="1085" width="450" height="330" rx="10" fill="white" stroke="#dc2626" stroke-width="2"/>
+    <text x="305" y="1115" text-anchor="middle" class="tool-name" fill="#dc2626">📥 ODT 입력 문제</text>
+
+    <text x="90" y="1145" class="description" fill="#991b1b" font-weight="600">❌ Pandoc ODT 입력 제한</text>
+    <text x="100" y="1165" class="detail" fill="#475569">• Pandoc은 ODT "쓰기"만 공식 지원</text>
+    <text x="100" y="1183" class="detail" fill="#475569">• ODT "읽기"는 불안정</text>
+    <text x="100" y="1201" class="detail" fill="#475569">• 복잡한 문서 변환 실패 가능</text>
+
+    <text x="90" y="1226" class="description" fill="#f59e0b" font-weight="600">⚠️ 우회 방법</text>
+    <text x="100" y="1246" class="detail" fill="#475569">1. LibreOffice headless</text>
+    <text x="110" y="1264" class="detail" fill="#64748b">libreoffice --headless</text>
+    <text x="110" y="1282" class="detail" fill="#64748b">--convert-to docx file.odt</text>
+    <text x="100" y="1302" class="detail" fill="#475569">2. unoconv (UNO API)</text>
+    <text x="110" y="1320" class="detail" fill="#64748b">unoconv -f docx file.odt</text>
+    <text x="100" y="1340" class="detail" fill="#475569">3. DOCX → Pandoc 입력</text>
+    <text x="110" y="1358" class="detail" fill="#64748b">pandoc file.docx -o out.md</text>
+
+    <text x="90" y="1383" class="description" fill="#0891b2" font-weight="600">📌 참조:</text>
+    <text x="100" y="1401" class="detail" fill="#0891b2">stackoverflow.com/q/30203447</text>
+  </g>
+
+  <!-- Writer2LaTeX -->
+  <g id="writer2latex">
+    <rect x="560" y="1085" width="450" height="330" rx="10" fill="white" stroke="#f59e0b" stroke-width="2"/>
+    <text x="785" y="1115" text-anchor="middle" class="tool-name" fill="#d97706">📐 Writer2LaTeX</text>
+
+    <text x="570" y="1145" class="description" fill="#f59e0b" font-weight="600">⚠️ ODT → LaTeX 변환</text>
+    <text x="580" y="1165" class="detail" fill="#475569">• LibreOffice 확장 프로그램</text>
+    <text x="580" y="1183" class="detail" fill="#475569">• ODT 문서를 LaTeX로 변환</text>
+
+    <text x="570" y="1208" class="description" fill="#991b1b" font-weight="600">❌ 한계점</text>
+    <text x="580" y="1228" class="detail" fill="#475569">• 단방향 변환만 가능</text>
+    <text x="580" y="1246" class="detail" fill="#475569">• 변환 품질 불완전</text>
+    <text x="580" y="1264" class="detail" fill="#475569">• 복잡한 서식 손실</text>
+    <text x="580" y="1282" class="detail" fill="#475569">• 수동 수정 필요</text>
+
+    <text x="570" y="1307" class="description" fill="#16a34e" font-weight="600">✅ 사용 케이스</text>
+    <text x="580" y="1327" class="detail" fill="#475569">• Legacy ODT → LaTeX 마이그레이션</text>
+    <text x="580" y="1345" class="detail" fill="#475569">• 초안 변환 후 수동 정리</text>
+    <text x="580" y="1363" class="detail" fill="#475569">• 일회성 변환 작업</text>
+
+    <text x="570" y="1388" class="description" fill="#0891b2" font-weight="600">📌 참조:</text>
+    <text x="580" y="1406" class="detail" fill="#0891b2">writer2latex.sourceforge.net</text>
+  </g>
+
+  <!-- Best Practice -->
+  <g id="best-practice">
+    <rect x="1040" y="1085" width="1310" height="330" rx="10" fill="white" stroke="#16a34a" stroke-width="2"/>
+    <text x="1695" y="1115" text-anchor="middle" class="tool-name" fill="#166534">✅ 권장 전략: 역할 분담</text>
+
+    <text x="1050" y="1145" class="description" fill="#16a34e; font-weight: 600">1️⃣ Plain Text가 Source of Truth</text>
+    <text x="1060" y="1165" class="detail" fill="#475569">• Markdown/Quarto 파일이 원본</text>
+    <text x="1060" y="1183" class="detail" fill="#475569">• Git으로 버전 관리</text>
+    <text x="1060" y="1201" class="detail" fill="#475569">• 코드 + 데이터 재현성 보장</text>
+
+    <text x="1050" y="1226" class="description" fill="#1e40af; font-weight: 600">2️⃣ LibreOffice는 최종 편집 전용</text>
+    <text x="1060" y="1246" class="detail" fill="#475569">• Pandoc 출력(DOCX/ODT)을 열어 편집</text>
+    <text x="1060" y="1264" class="detail" fill="#475569">• 트랙체인지, 댓글, 미세 서식 조정</text>
+    <text x="1060" y="1282" class="detail" fill="#475569">• 최종 검수 및 인쇄</text>
+    <text x="1060" y="1300" class="detail" fill="#991b1b">• ⚠️ 주의: LibreOffice 편집 결과를 Plain Text로 역변환 금지</text>
+
+    <text x="1050" y="1325" class="description" fill="#7c3aed; font-weight: 600">3️⃣ 단방향 워크플로우 유지</text>
+    <text x="1060" y="1345" class="detail" fill="#475569">Plain Text (원본) → Pandoc → DOCX/ODT → LibreOffice (최종본)</text>
+    <rect x="1060" y="1355" width="1270" height="30" rx="5" fill="#f0fdf4" stroke="#22c55e" stroke-width="1"/>
+    <text x="1070" y="1375" class="detail" fill="#166534; font-weight: 600">✅ 작동: 원본은 Plain Text로 유지, 필요시 재생성</text>
+
+    <text x="1050" y="1400" class="description" fill="#991b1b; font-weight: 600">❌ 피해야 할 워크플로우</text>
+    <text x="1060" y="1420" class="detail" fill="#475569">LibreOffice 편집 → ODT → Pandoc → Markdown → 재편집</text>
+    <rect x="1060" y="1430" width="1270" height="30" rx="5" fill="#fef2f2" stroke="#dc2626" stroke-width="1"/>
+    <text x="1070" y="1450" class="detail" fill="#991b1b; font-weight: 600">❌ 실패: 왕복 변환 시 손실 발생, 재현성 파괴</text>
+  </g>
+
+  <!-- Real World Examples -->
+  <rect x="50" y="1470" width="2300" height="500" rx="12" fill="#f0fdf4" stroke="#22c55e" stroke-width="3"/>
+  <text x="1200" y="1505" text-anchor="middle" class="section-title" fill="#166534">🌍 실제 작동 사례</text>
+
+  <g id="examples">
+    <!-- Academic -->
+    <rect x="80" y="1535" width="530" height="405" rx="10" fill="white" stroke="#22c55e" stroke-width="2"/>
+    <text x="345" y="1565" text-anchor="middle" class="tool-name" fill="#166534">🎓 학술·연구</text>
+
+    <text x="90" y="1595" class="description" fill="#1e40af; font-weight: 600">NASA 기술 보고서</text>
+    <text x="100" y="1615" class="detail" fill="#475569">• Quarto + R</text>
+    <text x="100" y="1633" class="detail" fill="#475569">• PDF(LaTeX) + HTML</text>
+    <text x="100" y="1651" class="detail" fill="#475569">• 데이터 분석 결과 자동 반영</text>
+
+    <text x="90" y="1676" class="description" fill="#1e40af; font-weight: 600">박사 학위논문</text>
+    <text x="100" y="1696" class="detail" fill="#475569">• R Markdown + bookdown</text>
+    <text x="100" y="1714" class="detail" fill="#475569">• PDF (학교 양식) + 웹 버전</text>
+    <text x="100" y="1732" class="detail" fill="#475569">• 실험 결과 재현 가능</text>
+
+    <text x="90" y="1757" class="description" fill="#1e40af; font-weight: 600">arXiv 프리프린트</text>
+    <text x="100" y="1777" class="detail" fill="#475569">• LaTeX + Overleaf</text>
+    <text x="100" y="1795" class="detail" fill="#475569">• 매년 20만+ 논문</text>
+    <text x="100" y="1813" class="detail" fill="#475569">• 100% LaTeX 소스 제출</text>
+
+    <text x="90" y="1838" class="description" fill="#16a34e; font-weight: 600">📌 핵심 도구</text>
+    <text x="100" y="1858" class="detail" fill="#166534">Quarto, R Markdown, LaTeX</text>
+    <text x="90" y="1883" class="description" fill="#0891b2; font-weight: 600">📌 참조</text>
+    <text x="100" y="1903" class="detail" fill="#0891b2">rmarkdown.rstudio.com</text>
+    <text x="100" y="1921" class="detail" fill="#0891b2">quarto.org</text>
+
+    <!-- Business -->
+    <rect x="640" y="1535" width="530" height="405" rx="10" fill="white" stroke="#22c55e" stroke-width="2"/>
+    <text x="905" y="1565" text-anchor="middle" class="tool-name" fill="#166534">💼 기업·실무</text>
+
+    <text x="650" y="1595" class="description" fill="#1e40af; font-weight: 600">Netflix 데이터 리포트</text>
+    <text x="660" y="1615" class="detail" fill="#475569">• Jupyter Notebook + Python</text>
+    <text x="660" y="1633" class="detail" fill="#475569">• pandas, matplotlib 결과 자동</text>
+    <text x="660" y="1651" class="detail" fill="#475569">• Git으로 협업, CI/CD 빌드</text>
+
+    <text x="650" y="1676" class="description" fill="#1e40af; font-weight: 600">기술 블로그 (Medium, Dev.to)</text>
+    <text x="660" y="1696" class="detail" fill="#475569">• Quarto → HTML</text>
+    <text x="660" y="1714" class="detail" fill="#475569">• 코드 예제 + 실행 결과</text>
+    <text x="660" y="1732" class="detail" fill="#475569">• GitHub Pages 호스팅</text>
+
+    <text x="650" y="1757" class="description" fill="#1e40af; font-weight: 600">API 문서 자동 생성</text>
+    <text x="660" y="1777" class="detail" fill="#475569">• Quarto + Python</text>
+    <text x="660" y="1795" class="detail" fill="#475569">• 코드 변경 → 문서 자동 업데이트</text>
+    <text x="660" y="1813" class="detail" fill="#475569">• HTML + PDF 동시 출력</text>
+
+    <text x="650" y="1838" class="description" fill="#16a34e; font-weight: 600">📌 핵심 도구</text>
+    <text x="660" y="1858" class="detail" fill="#166534">Jupyter, Quarto, Pandoc</text>
+    <text x="650" y="1883" class="description" fill="#0891b2; font-weight: 600">📌 참조</text>
+    <text x="660" y="1903" class="detail" fill="#0891b2">jupyter.org</text>
+    <text x="660" y="1921" class="detail" fill="#0891b2">pandoc.org</text>
+
+    <!-- Publishing -->
+    <rect x="1200" y="1535" width="530" height="405" rx="10" fill="white" stroke="#22c55e" stroke-width="2"/>
+    <text x="1465" y="1565" text-anchor="middle" class="tool-name" fill="#166534">📚 책·출판</text>
+
+    <text x="1210" y="1595" class="description" fill="#1e40af; font-weight: 600">"R for Data Science" (Hadley Wickham)</text>
+    <text x="1220" y="1615" class="detail" fill="#475569">• Jupyter Book</text>
+    <text x="1220" y="1633" class="detail" fill="#475569">• 웹(무료) + 종이책(O'Reilly)</text>
+    <text x="1220" y="1651" class="detail" fill="#475569">• 인터랙티브 코드 예제</text>
+
+    <text x="1210" y="1676" class="description" fill="#1e40af; font-weight: 600">Python Data Science Handbook</text>
+    <text x="1220" y="1696" class="detail" fill="#475569">• Jupyter Notebook</text>
+    <text x="1220" y="1714" class="detail" fill="#475569">• GitHub에 소스 공개</text>
+    <text x="1220" y="1732" class="detail" fill="#475569">• 웹 + EPUB + PDF</text>
+
+    <text x="1210" y="1757" class="description" fill="#1e40af; font-weight: 600">Quarto Books</text>
+    <text x="1220" y="1777" class="detail" fill="#475569">• 다언어 지원 (R/Python/Julia)</text>
+    <text x="1220" y="1795" class="detail" fill="#475569">• 웹사이트 + PDF 동시</text>
+    <text x="1220" y="1813" class="detail" fill="#475569">• 검색 가능한 웹 버전</text>
+
+    <text x="1210" y="1838" class="description" fill="#16a34e; font-weight: 600">📌 핵심 도구</text>
+    <text x="1220" y="1858" class="detail" fill="#166534">Jupyter Book, Quarto, bookdown</text>
+    <text x="1210" y="1883" class="description" fill="#0891b2; font-weight: 600">📌 참조</text>
+    <text x="1220" y="1903" class="detail" fill="#0891b2">jupyterbook.org</text>
+    <text x="1220" y="1921" class="detail" fill="#0891b2">bookdown.org</text>
+
+    <!-- Collaboration -->
+    <rect x="1760" y="1535" width="590" height="405" rx="10" fill="white" stroke="#22c55e" stroke-width="2"/>
+    <text x="2055" y="1565" text-anchor="middle" class="tool-name" fill="#166534">🤝 협업·공유</text>
+
+    <text x="1770" y="1595" class="description" fill="#1e40af; font-weight: 600">Overleaf (LaTeX 협업)</text>
+    <text x="1780" y="1615" class="detail" fill="#475569">• 실시간 공동 편집</text>
+    <text x="1780" y="1633" class="detail" fill="#475569">• 1,300만 사용자</text>
+    <text x="1780" y="1651" class="detail" fill="#475569">• 저널 템플릿 제공 (IEEE, ACM...)</text>
+
+    <text x="1770" y="1676" class="description" fill="#1e40af; font-weight: 600">Collabora Online (ODT 협업)</text>
+    <text x="1780" y="1696" class="detail" fill="#475569">• LibreOffice 웹 버전</text>
+    <text x="1780" y="1714" class="detail" fill="#475569">• Nextcloud, ownCloud 통합</text>
+    <text x="1780" y="1732" class="detail" fill="#475569">• 트랙체인지, 댓글 실시간 동기화</text>
+
+    <text x="1770" y="1757" class="description" fill="#1e40af; font-weight: 600">GitHub + Quarto</text>
+    <text x="1780" y="1777" class="detail" fill="#475569">• Pull Request로 문서 리뷰</text>
+    <text x="1780" y="1795" class="detail" fill="#475569">• GitHub Actions로 자동 빌드</text>
+    <text x="1780" y="1813" class="detail" fill="#475569">• GitHub Pages로 웹 배포</text>
+
+    <text x="1770" y="1838" class="description" fill="#16a34e; font-weight: 600">📌 핵심 도구</text>
+    <text x="1780" y="1858" class="detail" fill="#166534">Overleaf, Collabora, Git</text>
+    <text x="1770" y="1883" class="description" fill="#0891b2; font-weight: 600">📌 참조</text>
+    <text x="1780" y="1903" class="detail" fill="#0891b2">overleaf.com</text>
+    <text x="1780" y="1921" class="detail" fill="#0891b2">collaboraonline.com</text>
+  </g>
+
+</svg>

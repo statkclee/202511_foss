@@ -1,0 +1,213 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900">
+  <defs>
+    <style>
+      .era-title { font-family: monospace; font-size: 48px; font-weight: bold; fill: #2c3e50; }
+      .section-title { font-family: monospace; font-size: 28px; font-weight: bold; fill: #2c3e50; }
+      .tool-name { font-family: monospace; font-size: 22px; fill: #0d47a1; font-weight: bold; }
+      .tool-desc { font-family: monospace; font-size: 18px; fill: #555; }
+      .price-tag { font-family: monospace; font-size: 18px; fill: #c62828; font-weight: bold; }
+      .free-tag { font-family: monospace; font-size: 18px; fill: #2e7d32; font-weight: bold; }
+      .report-text { font-family: monospace; font-size: 12px; fill: #333; }
+      .note-text { font-family: monospace; font-size: 16px; fill: #666; font-style: italic; }
+      .commercial-box { fill: #ffebee; stroke: #c62828; stroke-width: 4; }
+      .foss-box { fill: #e8f5e9; stroke: #2e7d32; stroke-width: 4; }
+      .report-box { fill: #fff; stroke: #666; stroke-width: 2; }
+      .badge { font-family: monospace; font-size: 14px; fill: #fff; font-weight: bold; }
+      .code-text { font-family: 'Courier New', monospace; font-size: 11px; fill: #333; }
+      .ai-badge { fill: #9c27b0; }
+    </style>
+    <marker id="arrowRed" markerWidth="12" markerHeight="12" refX="10" refY="3" orient="auto">
+      <polygon points="0 0, 12 3, 0 6" fill="#c62828" />
+    </marker>
+    <marker id="arrowGreen" markerWidth="12" markerHeight="12" refX="2" refY="3" orient="auto">
+      <polygon points="12 0, 0 3, 12 6" fill="#2e7d32" />
+    </marker>
+    <marker id="arrowPurple" markerWidth="12" markerHeight="12" refX="10" refY="3" orient="auto">
+      <polygon points="0 0, 12 3, 0 6" fill="#9c27b0" />
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1600" height="900" fill="#fafafa"/>
+
+  <!-- Title -->
+  <text x="800" y="60" class="era-title" text-anchor="middle">2020s Report Creation</text>
+  <text x="800" y="95" class="note-text" text-anchor="middle">The LLM Revolution: AI-Assisted Everything</text>
+
+  <!-- AI Banner across top -->
+  <rect x="100" y="105" width="1400" height="35" class="ai-badge" rx="5"/>
+  <text x="800" y="130" class="badge" text-anchor="middle" font-size="18">
+    🤖 ALL TOOLS NOW HAVE AI ASSISTANCE 🤖
+  </text>
+
+  <!-- Main divider lines -->
+  <line x1="520" y1="150" x2="520" y2="850" stroke="#999" stroke-width="3" stroke-dasharray="10,5"/>
+  <line x1="1100" y1="150" x2="1100" y2="850" stroke="#999" stroke-width="3" stroke-dasharray="10,5"/>
+
+  <!-- ==================== LEFT: Commercial ==================== -->
+  <rect x="30" y="160" width="470" height="670" class="commercial-box" rx="10"/>
+  <text x="265" y="200" class="section-title" text-anchor="middle">💰 Commercial Software</text>
+  <rect x="180" y="130" width="170" height="25" fill="#e65100" rx="3"/>
+  <text x="265" y="150" class="badge" text-anchor="middle">AI-First Products</text>
+  <line x1="50" y1="215" x2="480" y2="215" stroke="#c62828" stroke-width="2"/>
+
+  <!-- ChatGPT Plus -->
+  <rect x="50" y="235" width="430" height="110" fill="#fff" stroke="#c62828" stroke-width="2" rx="5"/>
+  <rect x="400" y="243" width="70" height="20" class="ai-badge" rx="3"/>
+  <text x="435" y="257" class="badge" font-size="12" text-anchor="middle">AI</text>
+  <text x="70" y="270" class="tool-name">ChatGPT Plus (2022)</text>
+  <text x="70" y="300" class="price-tag">💵 $20/month</text>
+  <text x="70" y="325" class="tool-desc">• AI data analysis</text>
+  <text x="70" y="345" class="tool-desc">• Code generation</text>
+
+  <!-- Databricks -->
+  <rect x="50" y="360" width="430" height="110" fill="#fff" stroke="#c62828" stroke-width="2" rx="5"/>
+  <text x="70" y="395" class="tool-name">Databricks (2013+)</text>
+  <text x="70" y="425" class="price-tag">💵 $$$$ Cloud usage-based</text>
+  <text x="70" y="450" class="tool-desc">• Unified analytics</text>
+  <text x="70" y="470" class="tool-desc">• MLOps platform</text>
+
+  <!-- Notion AI -->
+  <rect x="50" y="485" width="430" height="110" fill="#fff" stroke="#c62828" stroke-width="2" rx="5"/>
+  <rect x="400" y="493" width="70" height="20" class="ai-badge" rx="3"/>
+  <text x="435" y="507" class="badge" font-size="12" text-anchor="middle">AI</text>
+  <text x="70" y="520" class="tool-name">Notion AI (2023)</text>
+  <text x="70" y="550" class="price-tag">💵 $10/user/month</text>
+  <text x="70" y="575" class="tool-desc">• AI writing assistant</text>
+
+  <!-- MS 365 Copilot -->
+  <rect x="50" y="610" width="430" height="110" fill="#fff" stroke="#c62828" stroke-width="2" rx="5"/>
+  <rect x="400" y="618" width="70" height="20" class="ai-badge" rx="3"/>
+  <text x="435" y="632" class="badge" font-size="12" text-anchor="middle">AI</text>
+  <text x="70" y="645" class="tool-name">MS 365 Copilot (2023)</text>
+  <text x="70" y="675" class="price-tag">💵 $30/user/month</text>
+  <text x="70" y="700" class="tool-desc">• AI in Excel/Word/PPT</text>
+
+  <!-- Cost Note -->
+  <rect x="50" y="735" width="430" height="75" fill="#fce4ec" stroke="#c62828" stroke-width="2" rx="5"/>
+  <text x="265" y="760" class="tool-name" text-anchor="middle" fill="#c62828">Total Cost</text>
+  <text x="265" y="790" class="tool-desc" text-anchor="middle">$30-100+/month AI subs</text>
+
+  <!-- Arrow from commercial to report -->
+  <line x1="500" y1="495" x2="540" y2="495" stroke="#9c27b0" stroke-width="2" marker-end="url(#arrowPurple)"/>
+  <text x="520" y="485" class="tool-desc" text-anchor="middle" fill="#9c27b0">AI</text>
+
+  <!-- ==================== CENTER: Report Layout ==================== -->
+  <rect x="540" y="160" width="540" height="670" class="report-box" rx="10"/>
+  <text x="810" y="200" class="section-title" text-anchor="middle">🤖 AI-Generated Report</text>
+  <line x1="560" y1="215" x2="1060" y2="215" stroke="#666" stroke-width="2"/>
+
+  <!-- Report Title -->
+  <rect x="570" y="235" width="480" height="45" fill="#f3e5f5" stroke="#9c27b0" stroke-width="2" rx="3"/>
+  <text x="810" y="263" class="report-text" text-anchor="middle" font-size="16" font-weight="bold">
+    2024 AI-Assisted Analytics Report (Quarto + LLM)
+  </text>
+
+  <!-- Prompt Box -->
+  <rect x="570" y="295" width="480" height="70" fill="#fff3e0" stroke="#e65100" stroke-width="2" rx="3"/>
+  <text x="585" y="315" class="report-text" font-weight="bold">💬 User Prompt:</text>
+  <text x="585" y="335" class="code-text">"Analyze Q3 sales trends by region, generate visualizations,</text>
+  <text x="585" y="350" class="code-text">and write an executive summary with recommendations."</text>
+
+  <!-- AI Process -->
+  <rect x="570" y="380" width="480" height="80" fill="#e3f2fd" stroke="#1565c0" stroke-width="2" rx="3"/>
+  <text x="585" y="400" class="report-text" font-weight="bold">🤖 AI Processing:</text>
+  <text x="585" y="420" class="code-text">1. Data exploration → 2. Statistical analysis →</text>
+  <text x="585" y="435" class="code-text">3. Code generation → 4. Visualization creation →</text>
+  <text x="585" y="450" class="code-text">5. Narrative writing → 6. Quality check</text>
+
+  <!-- Auto-Generated Code -->
+  <rect x="570" y="475" width="230" height="90" fill="#e8f5e9" stroke="#2e7d32" stroke-width="2" rx="3"/>
+  <text x="585" y="495" class="report-text" font-weight="bold">Generated Code:</text>
+  <text x="585" y="515" class="code-text">import pandas as pd</text>
+  <text x="585" y="530" class="code-text">df = load_data()</text>
+  <text x="585" y="545" class="code-text">result = analyze()</text>
+  <text x="585" y="560" class="code-text">plot_trends(result)</text>
+
+  <!-- Auto-Generated Viz -->
+  <rect x="820" y="475" width="230" height="90" fill="#f3e5f5" stroke="#9c27b0" stroke-width="2" rx="3"/>
+  <text x="835" y="495" class="report-text" font-weight="bold">AI-Selected Chart:</text>
+  <rect x="830" y="505" width="210" height="55" fill="#fff" stroke="#9c27b0"/>
+  <text x="935" y="525" class="report-text" text-anchor="middle" font-size="10">Best viz type chosen</text>
+  <text x="935" y="540" class="report-text" text-anchor="middle" font-size="10">by AI automatically</text>
+  <text x="935" y="555" class="report-text" text-anchor="middle" font-size="9" font-style="italic">Interactive, of course</text>
+
+  <!-- LLM-Written Text -->
+  <rect x="570" y="580" width="480" height="90" fill="#fff9c4" stroke="#f57f17" stroke-width="2" rx="3"/>
+  <text x="585" y="600" class="report-text" font-weight="bold">📝 LLM-Generated Insights:</text>
+  <line x1="585" y1="615" x2="1035" y2="615" stroke="#ccc" stroke-width="3"/>
+  <line x1="585" y1="630" x2="1020" y2="630" stroke="#ccc" stroke-width="3"/>
+  <line x1="585" y1="645" x2="1030" y2="645" stroke="#ccc" stroke-width="3"/>
+  <text x="810" y="665" class="report-text" text-anchor="middle" font-size="10" font-style="italic">
+    Natural language, publication-ready
+  </text>
+
+  <!-- Quarto Features -->
+  <rect x="570" y="685" width="480" height="70" fill="#e8f5e9" stroke="#2e7d32" stroke-width="2" rx="3"/>
+  <text x="810" y="710" class="tool-name" text-anchor="middle" fill="#2e7d32">Quarto Publishing</text>
+  <text x="810" y="735" class="tool-desc" text-anchor="middle">One source → HTML / PDF / Word / Slides</text>
+
+  <!-- Output method -->
+  <rect x="570" y="770" width="480" height="60" fill="#eceff1" stroke="#666" stroke-width="2" rx="3"/>
+  <text x="810" y="795" class="tool-name" text-anchor="middle" fill="#333">Distribution</text>
+  <text x="810" y="818" class="tool-desc" text-anchor="middle">GitHub Pages / Netlify / AI Chatbot</text>
+
+  <!-- Arrow from report to FOSS -->
+  <line x1="1080" y1="495" x2="1120" y2="495" stroke="#2e7d32" stroke-width="2" marker-start="url(#arrowGreen)"/>
+  <text x="1100" y="485" class="tool-desc" text-anchor="middle" fill="#2e7d32">FREE</text>
+
+  <!-- ==================== RIGHT: FOSS ==================== -->
+  <g transform="translate(30, 0)">
+    <rect x="1100" y="160" width="470" height="670" class="foss-box" rx="10"/>
+    <text x="1335" y="200" class="section-title" text-anchor="middle">🆓 FOSS Alternatives</text>
+    <rect x="1230" y="130" width="210" height="25" fill="#2e7d32" rx="3"/>
+    <text x="1335" y="150" class="badge" text-anchor="middle">AI-Enhanced FOSS!</text>
+    <line x1="1120" y1="215" x2="1550" y2="215" stroke="#2e7d32" stroke-width="2"/>
+
+    <!-- Quarto -->
+    <rect x="1120" y="235" width="430" height="110" fill="#fff" stroke="#2e7d32" stroke-width="2" rx="5"/>
+    <rect x="1470" y="243" width="70" height="20" fill="#f57f17" rx="3"/>
+    <text x="1505" y="257" class="badge" font-size="12" text-anchor="middle">NEW!</text>
+    <text x="1140" y="270" class="tool-name">Quarto (2022)</text>
+    <text x="1140" y="300" class="free-tag">✓ FREE</text>
+    <text x="1140" y="325" class="tool-desc">• Multi-language publishing</text>
+    <text x="1140" y="345" class="tool-desc">• Python/R/Julia/JS</text>
+
+    <!-- Jupyter + AI -->
+    <rect x="1120" y="360" width="430" height="110" fill="#fff" stroke="#2e7d32" stroke-width="2" rx="5"/>
+    <rect x="1470" y="368" width="70" height="20" class="ai-badge" rx="3"/>
+    <text x="1505" y="382" class="badge" font-size="12" text-anchor="middle">AI</text>
+    <text x="1140" y="395" class="tool-name">Jupyter AI (2023)</text>
+    <text x="1140" y="425" class="free-tag">✓ FREE</text>
+    <text x="1140" y="450" class="tool-desc">• LLM magic commands</text>
+    <text x="1140" y="470" class="tool-desc">• AI code generation</text>
+
+    <!-- Polars + DuckDB -->
+    <rect x="1120" y="485" width="430" height="110" fill="#fff" stroke="#2e7d32" stroke-width="2" rx="5"/>
+    <text x="1140" y="520" class="tool-name">Polars + DuckDB (2020s)</text>
+    <text x="1140" y="550" class="free-tag">✓ FREE</text>
+    <text x="1140" y="575" class="tool-desc">• Lightning-fast analytics</text>
+    <text x="1140" y="595" class="tool-desc">• Rust/C++ performance</text>
+
+    <!-- Observable -->
+    <rect x="1120" y="610" width="430" height="110" fill="#fff" stroke="#2e7d32" stroke-width="2" rx="5"/>
+    <text x="1140" y="645" class="tool-name">Observable (2018)</text>
+    <text x="1140" y="675" class="free-tag">✓ FREE tier</text>
+    <text x="1140" y="700" class="tool-desc">• Reactive notebooks</text>
+    <text x="1140" y="720" class="tool-desc">• JavaScript-based</text>
+
+    <!-- Cost Note -->
+    <rect x="1120" y="735" width="430" height="75" fill="#c8e6c9" stroke="#2e7d32" stroke-width="2" rx="5"/>
+    <text x="1335" y="760" class="tool-name" text-anchor="middle" fill="#2e7d32">Total Cost</text>
+    <text x="1335" y="790" class="tool-desc" text-anchor="middle" font-size="24" font-weight="bold">$0 + AI APIs</text>    
+  </g>
+
+  <!-- Bottom comparison note -->
+  <rect x="100" y="850" width="1400" height="40" fill="none"/>
+  <text x="800" y="862" class="note-text" text-anchor="middle" font-size="20">
+    Convergence: Both Commercial &amp; FOSS Adopt AI
+  </text>
+  <text x="800" y="882" class="note-text" text-anchor="middle" font-size="18">
+    "Prompt-First" replaces "Code-First" workflows
+  </text>
+</svg>

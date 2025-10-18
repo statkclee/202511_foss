@@ -1,0 +1,237 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900">
+  <defs>
+    <style>
+      .title-text { font-family: monospace; font-size: 48px; font-weight: bold; fill: #2c3e50; }
+      .section-title { font-family: monospace; font-size: 28px; font-weight: bold; fill: #2c3e50; }
+      .subtitle-text { font-family: monospace; font-size: 20px; font-weight: bold; fill: #555; }
+      .desc-text { font-family: monospace; font-size: 16px; fill: #555; }
+      .code-text { font-family: 'Courier New', monospace; font-size: 13px; fill: #333; }
+      .label-text { font-family: monospace; font-size: 14px; fill: #666; }
+      .step1-box { fill: #e3f2fd; stroke: #1565c0; stroke-width: 4; }
+      .step2-box { fill: #fff3e0; stroke: #e65100; stroke-width: 4; }
+      .step3-box { fill: #e8f5e9; stroke: #2e7d32; stroke-width: 4; }
+      .screen-frame { fill: #f5f5f5; stroke: #666; stroke-width: 2; }
+    </style>
+    <marker id="arrowBlue" markerWidth="14" markerHeight="14" refX="12" refY="3" orient="auto">
+      <polygon points="0 0, 14 3, 0 6" fill="#1565c0" />
+    </marker>
+    <marker id="arrowOrange" markerWidth="14" markerHeight="14" refX="12" refY="3" orient="auto">
+      <polygon points="0 0, 14 3, 0 6" fill="#e65100" />
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1600" height="900" fill="#fafafa"/>
+
+  <!-- MS Word Logo -->
+  <g transform="translate(50, 15) scale(2.2)">
+    <path d="M18.536,2.323V4.868c3.4.019,7.12-.035,10.521.019a.783.783,0,0,1,.912.861c.054,6.266-.013,12.89.032,19.157-.02.4.009,1.118-.053,1.517-.079.509-.306.607-.817.676-.286.039-.764.034-1.045.047-2.792-.014-5.582-.011-8.374-.01l-1.175,0v2.547L2,27.133Q2,16,2,4.873L18.536,2.322" style="fill:#283c82"/><path d="M18.536,5.822h10.5V26.18h-10.5V23.635h8.27V22.363h-8.27v-1.59h8.27V19.5h-8.27v-1.59h8.27V16.637h-8.27v-1.59h8.27V13.774h-8.27v-1.59h8.27V10.911h-8.27V9.321h8.27V8.048h-8.27V5.822" style="fill:#fff"/><path d="M8.573,11.443c.6-.035,1.209-.06,1.813-.092.423,2.147.856,4.291,1.314,6.429.359-2.208.757-4.409,1.142-6.613.636-.022,1.272-.057,1.905-.1-.719,3.082-1.349,6.19-2.134,9.254-.531.277-1.326-.013-1.956.032-.423-2.106-.916-4.2-1.295-6.314C8.99,16.1,8.506,18.133,8.08,20.175q-.916-.048-1.839-.111c-.528-2.8-1.148-5.579-1.641-8.385.544-.025,1.091-.048,1.635-.067.328,2.026.7,4.043.986,6.072.448-2.08.907-4.161,1.352-6.241" style="fill:#fff"/>
+  </g>
+
+  <!-- Title -->
+  <text x="800" y="55" class="title-text" text-anchor="middle">MS Word: From Input to Output</text>
+  <text x="800" y="90" class="desc-text" text-anchor="middle" font-style="italic">
+    3-Step WYSIWYG Workflow
+  </text>
+
+  <!-- ==================== STEP 1: INPUT (LEFT) ==================== -->
+
+  <rect x="30" y="130" width="460" height="720" class="step1-box" rx="15"/>
+  <text x="260" y="175" class="section-title" text-anchor="middle" fill="#1565c0">
+    Step 1️⃣
+  </text>
+  <text x="260" y="210" class="subtitle-text" text-anchor="middle" fill="#1565c0">
+    User Input
+  </text>
+  <line x1="50" y1="220" x2="470" y2="220" stroke="#1565c0" stroke-width="2"/>
+
+  <!-- Screen with text editor -->
+  <rect x="60" y="245" width="400" height="280" class="screen-frame" rx="8"/>
+  <rect x="70" y="255" width="380" height="30" fill="#84b7faff" rx="5"/>
+  <text x="260" y="278" class="desc-text" text-anchor="middle" fill="#ffffff" font-weight="bold" font-size="18">
+    Microsoft Word
+  </text>  
+
+  <!-- Document editing area -->
+  <rect x="80" y="300" width="360" height="210" fill="#fff" stroke="#ccc" stroke-width="2" rx="3"/>
+
+  <!-- Text content -->
+  <g transform="translate(100, 330)">
+    <text x="0" y="0" class="subtitle-text" font-size="18">Annual Report 2024</text>
+
+    <text x="0" y="40" class="desc-text" font-size="15">Hello World!</text>
+
+    <!-- Selection highlight -->
+    <rect x="54" y="26" width="52" height="20" fill="#0078d4" opacity="0.3"/>
+    <text x="54" y="42" class="desc-text" font-size="15" font-weight="bold">World</text>
+
+    <text x="0" y="75" class="desc-text" font-size="15">This is a document.</text>
+
+    <!-- Cursor -->
+    <rect x="0" y="95" width="2" height="18" fill="#000"/>
+  </g>
+
+  <!-- Toolbar with Bold button -->
+  <rect x="80" y="520" width="360" height="50" fill="#f0f0f0" stroke="#999" stroke-width="2" rx="3"/>
+  <g transform="translate(100, 535)">
+    <!-- Bold button highlighted -->
+    <rect x="0" y="0" width="35" height="30" fill="#0078d4" stroke="#005a9e" stroke-width="2" rx="3"/>
+    <text x="17" y="22" class="subtitle-text" text-anchor="middle" fill="#fff" font-weight="bold">B</text>
+
+    <rect x="45" y="0" width="35" height="30" fill="#fff" stroke="#ccc" stroke-width="1" rx="3"/>
+    <text x="62" y="22" class="subtitle-text" text-anchor="middle" font-style="italic">I</text>
+
+    <rect x="90" y="0" width="35" height="30" fill="#fff" stroke="#ccc" stroke-width="1" rx="3"/>
+    <text x="107" y="22" class="subtitle-text" text-anchor="middle" text-decoration="underline">U</text>
+  </g>
+
+  <!-- Action description -->
+  <rect x="60" y="590" width="400" height="240" fill="#fff" stroke="#1565c0" stroke-width="2" rx="8"/>
+  <text x="260" y="625" class="subtitle-text" text-anchor="middle" fill="#1565c0">
+    👆 User Actions:
+  </text>
+  <line x1="80" y1="635" x2="440" y2="635" stroke="#1565c0" stroke-width="1"/>
+
+  <g transform="translate(80, 655)">
+    <text x="0" y="0" class="desc-text" font-weight="bold">1. Type text:</text>
+    <text x="20" y="25" class="desc-text">"Hello World!"</text>
+
+    <text x="0" y="60" class="desc-text" font-weight="bold">2. Select text:</text>
+    <text x="20" y="85" class="desc-text">Highlight "World"</text>
+
+    <text x="0" y="120" class="desc-text" font-weight="bold">3. Click Bold button:</text>
+    <text x="20" y="145" class="desc-text">Apply formatting</text>
+  </g>
+
+  <!-- Arrow to Step 2 -->
+  <line x1="490" y1="450" x2="550" y2="450" stroke="#1565c0" stroke-width="3" marker-end="url(#arrowBlue)"/>
+  <text x="525" y="430" class="label-text" text-anchor="middle" fill="#1565c0" font-weight="bold">Process</text>
+
+  <!-- ==================== STEP 2: PROCESSING (CENTER) ==================== -->
+
+  <rect x="560" y="130" width="460" height="720" class="step2-box" rx="15"/>
+  <text x="790" y="175" class="section-title" text-anchor="middle" fill="#e65100">
+    Step 2️⃣
+  </text>
+  <text x="790" y="210" class="subtitle-text" text-anchor="middle" fill="#e65100">
+    Processing Engine
+  </text>
+  <line x1="580" y1="220" x2="1000" y2="220" stroke="#e65100" stroke-width="2"/>
+
+  <!-- Memory representation -->
+  <rect x="590" y="245" width="400" height="180" fill="#fff" stroke="#e65100" stroke-width="3" rx="8"/>
+  <text x="790" y="275" class="subtitle-text" text-anchor="middle" fill="#e65100">
+    🧠 In Memory
+  </text>
+  <line x1="610" y1="285" x2="970" y2="285" stroke="#e65100" stroke-width="1"/>
+
+  <!-- Document Object Model -->
+  <rect x="610" y="300" width="360" height="110" fill="#fef5e7" stroke="#e65100" stroke-width="2" rx="5"/>
+  <g transform="translate(625, 320)">
+    <text x="0" y="0" class="label-text" font-weight="bold">Document Object Model:</text>
+    <text x="0" y="25" class="code-text">Paragraph {</text>
+    <text x="0" y="45" class="code-text">  text: "Hello "</text>
+    <text x="0" y="65" class="code-text">  run: { "World", <tspan fill="#c62828">bold: true</tspan> }</text>
+    <text x="0" y="85" class="code-text">}</text>
+  </g>
+
+  <!-- Rendering calculation -->
+  <rect x="590" y="445" width="400" height="180" fill="#fff" stroke="#e65100" stroke-width="3" rx="8"/>
+  <text x="790" y="475" class="subtitle-text" text-anchor="middle" fill="#e65100">
+    ⚡ Real-time Rendering
+  </text>
+  <line x1="610" y1="485" x2="970" y2="485" stroke="#e65100" stroke-width="1"/>
+
+  <g transform="translate(620, 505)">
+    <text x="0" y="0" class="desc-text" font-weight="bold">Formatting Engine calculates:</text>
+    <text x="10" y="28" class="desc-text" font-size="14">• Font: Arial, 12pt</text>
+    <text x="10" y="53" class="desc-text" font-size="14">• Weight: <tspan font-weight="bold">Bold</tspan> applied to "World"</text>
+    <text x="10" y="78" class="desc-text" font-size="14">• Line breaks &amp; spacing</text>
+    <text x="10" y="103" class="desc-text" font-size="14">• Page layout &amp; margins</text>
+  </g>
+
+  <!-- Save operation -->
+  <rect x="590" y="645" width="400" height="185" fill="#fff" stroke="#e65100" stroke-width="3" rx="8"/>
+  <text x="790" y="675" class="subtitle-text" text-anchor="middle" fill="#e65100">
+    💾 Save to Disk (Ctrl+S)
+  </text>
+  <line x1="610" y1="685" x2="970" y2="685" stroke="#e65100" stroke-width="1"/>
+
+  <g transform="translate(620, 705)">
+    <text x="0" y="0" class="desc-text" font-weight="bold">Serialization:</text>
+    <text x="10" y="28" class="desc-text" font-size="14">1. Object Model → XML</text>
+    <text x="10" y="53" class="desc-text" font-size="14">2. Multiple XML files</text>
+    <text x="10" y="78" class="desc-text" font-size="14">3. ZIP compression</text>
+    <text x="10" y="103" class="desc-text" font-size="14">4. Save as .docx file</text>
+  </g>
+
+  <!-- Arrow to Step 3 -->
+  <line x1="1020" y1="450" x2="1080" y2="450" stroke="#e65100" stroke-width="3" marker-end="url(#arrowOrange)"/>
+  <text x="1050" y="430" class="label-text" text-anchor="middle" fill="#e65100" font-weight="bold">Output</text>
+
+  <!-- ==================== STEP 3: OUTPUT (RIGHT) ==================== -->
+
+  <rect x="1090" y="130" width="480" height="720" class="step3-box" rx="15"/>
+  <text x="1330" y="175" class="section-title" text-anchor="middle" fill="#2e7d32">
+    Step 3️⃣
+  </text>
+  <text x="1330" y="210" class="subtitle-text" text-anchor="middle" fill="#2e7d32">
+    Output
+  </text>
+  <line x1="1110" y1="220" x2="1550" y2="220" stroke="#2e7d32" stroke-width="2"/>
+
+  <!-- Screen output -->
+  <rect x="1120" y="245" width="420" height="280" fill="#fff" stroke="#2e7d32" stroke-width="3" rx="8"/>
+  <text x="1330" y="275" class="subtitle-text" text-anchor="middle" fill="#2e7d32">
+    🖥️ Screen (WYSIWYG)
+  </text>
+  <line x1="1140" y1="285" x2="1520" y2="285" stroke="#2e7d32" stroke-width="1"/>
+
+  <!-- Rendered document -->
+  <rect x="1150" y="300" width="360" height="195" fill="#fff" stroke="#ccc" stroke-width="2" rx="3"/>
+  <g transform="translate(1170, 330)">
+    <text x="0" y="0" class="subtitle-text" font-size="18">Annual Report 2024</text>
+
+    <text x="0" y="40" class="desc-text" font-size="15">Hello <tspan font-weight="bold">World</tspan>!</text>
+
+    <text x="0" y="75" class="desc-text" font-size="15">This is a document.</text>
+
+    <!-- Cursor -->
+    <rect x="0" y="95" width="2" height="18" fill="#000"/>
+  </g>
+
+  <text x="1330" y="515" class="label-text" text-anchor="middle" fill="#2e7d32" font-style="italic">
+    ✨ Formatting visible in real-time!
+  </text>
+
+  <!-- File output -->
+  <rect x="1120" y="555" width="420" height="275" fill="#fff" stroke="#2e7d32" stroke-width="3" rx="8"/>
+  <text x="1330" y="585" class="subtitle-text" text-anchor="middle" fill="#2e7d32">
+    📁 File: report.docx
+  </text>
+  <line x1="1140" y1="595" x2="1520" y2="595" stroke="#2e7d32" stroke-width="1"/>
+
+  <!-- ZIP structure -->
+  <rect x="1150" y="610" width="360" height="205" fill="#e8f5e9" stroke="#2e7d32" stroke-width="2" rx="5"/>
+  <text x="1330" y="635" class="label-text" text-anchor="middle" font-weight="bold">
+    ZIP Container Structure:
+  </text>
+
+  <g transform="translate(1170, 655)">
+    <text x="0" y="0" class="code-text">report.docx/</text>
+    <text x="0" y="25" class="code-text">├─ [Content_Types].xml</text>
+    <text x="0" y="50" class="code-text">├─ _rels/</text>
+    <text x="0" y="75" class="code-text">├─ docProps/ (metadata)</text>
+    <text x="0" y="100" class="code-text">└─ word/</text>
+    <text x="20" y="125" class="code-text">├─ <tspan fill="#c62828">document.xml</tspan> ← Content here!</text>
+    <text x="20" y="150" class="code-text">├─ styles.xml</text>
+    <text x="20" y="175" class="code-text">└─ media/</text>
+  </g>
+
+  <!-- Bottom summary -->
+  <rect x="30" y="870" width="1540" height="25" fill="#fff9c4" stroke="#f57f17" stroke-width="2" rx="5"/>
+  <text x="800" y="889" class="desc-text" text-anchor="middle" font-weight="bold">
+    💡 Key Insight: Screen display = Final output (WYSIWYG) | All formatting stored in complex XML structure
+  </text>
+
+</svg>

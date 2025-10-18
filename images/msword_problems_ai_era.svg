@@ -1,0 +1,230 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900">
+  <defs>
+    <style>
+      .title-text { font-family: monospace; font-size: 48px; font-weight: bold; fill: #2c3e50; }
+      .section-title { font-family: monospace; font-size: 26px; font-weight: bold; fill: #d32f2f; }
+      .subtitle-text { font-family: monospace; font-size: 20px; font-weight: bold; fill: #555; }
+      .desc-text { font-family: monospace; font-size: 16px; fill: #555; }
+      .code-text { font-family: 'Courier New', monospace; font-size: 13px; fill: #333; }
+      .label-text { font-family: monospace; font-size: 14px; fill: #666; }
+      .problem-box { fill: #fce4ec; stroke: #d32f2f; stroke-width: 4; }
+      .ai-badge { fill: #9c27b0; }
+      .example-box { fill: #f3e5f5; stroke: #9c27b0; stroke-width: 2; }
+      .impact-box { fill: #e8eaf6; stroke: #3f51b5; stroke-width: 2; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1600" height="900" fill="#fafafa"/>
+
+  <!-- MS Word Logo with AI badge -->
+  <g transform="translate(50, 15) scale(2.2)">
+    <path d="M18.536,2.323V4.868c3.4.019,7.12-.035,10.521.019a.783.783,0,0,1,.912.861c.054,6.266-.013,12.89.032,19.157-.02.4.009,1.118-.053,1.517-.079.509-.306.607-.817.676-.286.039-.764.034-1.045.047-2.792-.014-5.582-.011-8.374-.01l-1.175,0v2.547L2,27.133Q2,16,2,4.873L18.536,2.322" style="fill:#d32f2f"/><path d="M18.536,5.822h10.5V26.18h-10.5V23.635h8.27V22.363h-8.27v-1.59h8.27V19.5h-8.27v-1.59h8.27V16.637h-8.27v-1.59h8.27V13.774h-8.27v-1.59h8.27V10.911h-8.27V9.321h8.27V8.048h-8.27V5.822" style="fill:#fff"/><path d="M8.573,11.443c.6-.035,1.209-.06,1.813-.092.423,2.147.856,4.291,1.314,6.429.359-2.208.757-4.409,1.142-6.613.636-.022,1.272-.057,1.905-.1-.719,3.082-1.349,6.19-2.134,9.254-.531.277-1.326-.013-1.956.032-.423-2.106-.916-4.2-1.295-6.314C8.99,16.1,8.506,18.133,8.08,20.175q-.916-.048-1.839-.111c-.528-2.8-1.148-5.579-1.641-8.385.544-.025,1.091-.048,1.635-.067.328,2.026.7,4.043.986,6.072.448-2.08.907-4.161,1.352-6.241" style="fill:#fff"/>
+  </g>
+
+  <!-- AI Badge -->
+  <rect x="180" y="25" width="50" height="30" class="ai-badge" rx="5"/>
+  <text x="205" y="48" style="font-family: monospace; font-size: 18px; font-weight: bold; fill: #fff; text-anchor: middle;">AI</text>
+
+  <!-- Title -->
+  <text x="250" y="55" class="title-text">MS Word: AI Era Problems</text>
+  <text x="250" y="90" class="desc-text" font-style="italic">
+    New challenges in the age of ChatGPT and Copilot
+  </text>
+
+  <!-- ==================== PROBLEM 1: AI Black Box ==================== -->
+
+  <rect x="30" y="120" width="760" height="250" class="problem-box" rx="12"/>
+  <text x="410" y="160" class="section-title" text-anchor="middle">
+    🤖 Problem 1: AI Black Box
+  </text>
+  <line x1="50" y1="170" x2="770" y2="170" stroke="#d32f2f" stroke-width="2"/>
+
+  <!-- Description -->
+  <rect x="50" y="185" width="720" height="90" fill="#fff" stroke="#d32f2f" stroke-width="2" rx="5"/>
+  <g transform="translate(70, 205)">
+    <text x="0" y="0" class="desc-text" font-weight="bold">AI-generated content has no audit trail:</text>
+    <text x="10" y="25" class="desc-text">• MS 365 Copilot: "Write me a report about Q3 sales"</text>
+    <text x="10" y="50" class="desc-text">• Result appears... but HOW was it generated?</text>
+    <text x="10" y="75" class="desc-text">• Can't reproduce the same output (non-deterministic)</text>
+  </g>
+
+  <!-- Example -->
+  <rect x="50" y="290" width="340" height="70" class="example-box" rx="5"/>
+  <g transform="translate(65, 310)">
+    <text x="0" y="0" class="label-text" font-weight="bold">🎲 Reproducibility crisis:</text>
+    <text x="0" y="20" class="desc-text" font-size="14">Same prompt → Different result</text>
+    <text x="0" y="40" class="desc-text" font-size="14">Peer review: "How did you get this?"</text>
+  </g>
+
+  <!-- Impact -->
+  <rect x="410" y="290" width="360" height="70" class="impact-box" rx="5"/>
+  <g transform="translate(425, 310)">
+    <text x="0" y="0" class="subtitle-text" fill="#3f51b5">💥 Impact:</text>
+    <text x="0" y="25" class="desc-text" font-size="14">Scientific integrity compromised</text>
+    <text x="0" y="45" class="desc-text" font-size="14">Can't verify AI contributions</text>
+  </g>
+
+  <!-- ==================== PROBLEM 2: Data Privacy ==================== -->
+
+  <rect x="30" y="390" width="760" height="250" class="problem-box" rx="12"/>
+  <text x="410" y="430" class="section-title" text-anchor="middle">
+    🔐 Problem 2: Data Privacy Nightmare
+  </text>
+  <line x1="50" y1="440" x2="770" y2="440" stroke="#d32f2f" stroke-width="2"/>
+
+  <!-- Description -->
+  <rect x="50" y="455" width="720" height="90" fill="#fff" stroke="#d32f2f" stroke-width="2" rx="5"/>
+  <g transform="translate(70, 475)">
+    <text x="0" y="0" class="desc-text" font-weight="bold">Your data goes to Microsoft's cloud:</text>
+    <text x="10" y="25" class="desc-text">• Copilot analyzes your documents to train AI</text>
+    <text x="10" y="50" class="desc-text">• Confidential data (medical, legal, financial) exposed?</text>
+    <text x="10" y="75" class="desc-text">• GDPR compliance unclear, audit impossible</text>
+  </g>
+
+  <!-- Example -->
+  <rect x="50" y="560" width="340" height="70" class="example-box" rx="5"/>
+  <g transform="translate(65, 580)">
+    <text x="0" y="0" class="label-text" font-weight="bold">⚠️ Real scenario:</text>
+    <text x="0" y="20" class="desc-text" font-size="14">Hospital uses Copilot</text>
+    <text x="0" y="40" class="desc-text" font-size="14">→ Patient data to Microsoft?</text>
+  </g>
+
+  <!-- Impact -->
+  <rect x="410" y="560" width="360" height="70" class="impact-box" rx="5"/>
+  <g transform="translate(425, 580)">
+    <text x="0" y="0" class="subtitle-text" fill="#3f51b5">💥 Impact:</text>
+    <text x="0" y="25" class="desc-text" font-size="14">Regulatory violations</text>
+    <text x="0" y="45" class="desc-text" font-size="14">Corporate espionage risk</text>
+  </g>
+
+  <!-- ==================== PROBLEM 3: Skill Degradation ==================== -->
+
+  <rect x="30" y="660" width="760" height="210" class="problem-box" rx="12"/>
+  <text x="410" y="700" class="section-title" text-anchor="middle">
+    📉 Problem 3: Skill Degradation
+  </text>
+  <line x1="50" y1="710" x2="770" y2="710" stroke="#d32f2f" stroke-width="2"/>
+
+  <!-- Description -->
+  <rect x="50" y="725" width="720" height="70" fill="#fff" stroke="#d32f2f" stroke-width="2" rx="5"/>
+  <g transform="translate(70, 745)">
+    <text x="0" y="0" class="desc-text" font-weight="bold">Over-reliance on AI = Lost skills:</text>
+    <text x="10" y="25" class="desc-text">• Students: "AI wrote it, I don't understand it"</text>
+    <text x="10" y="50" class="desc-text">• Critical thinking, writing ability decline</text>
+  </g>
+
+  <!-- Example -->
+  <rect x="50" y="810" width="340" height="50" class="example-box" rx="5"/>
+  <g transform="translate(65, 830)">
+    <text x="0" y="0" class="label-text" font-weight="bold">Education crisis:</text>
+    <text x="0" y="20" class="desc-text" font-size="14">AI writes thesis → Student learns nothing</text>
+  </g>
+
+  <!-- Impact -->
+  <rect x="410" y="810" width="360" height="50" class="impact-box" rx="5"/>
+  <g transform="translate(425, 830)">
+    <text x="0" y="0" class="subtitle-text" fill="#3f51b5">💥 Impact:</text>
+    <text x="0" y="20" class="desc-text" font-size="14">Intellectual dependency on AI</text>
+  </g>
+
+  <!-- ==================== PROBLEM 4: Cost Explosion ==================== -->
+
+  <rect x="820" y="120" width="750" height="250" class="problem-box" rx="12"/>
+  <text x="1195" y="160" class="section-title" text-anchor="middle">
+    💸 Problem 4: Cost Explosion
+  </text>
+  <line x1="840" y1="170" x2="1550" y2="170" stroke="#d32f2f" stroke-width="2"/>
+
+  <!-- Description -->
+  <rect x="840" y="185" width="710" height="90" fill="#fff" stroke="#d32f2f" stroke-width="2" rx="5"/>
+  <g transform="translate(860, 205)">
+    <text x="0" y="0" class="desc-text" font-weight="bold">AI features = Premium pricing:</text>
+    <text x="10" y="25" class="desc-text">• MS 365 Basic: $6-10/month</text>
+    <text x="10" y="50" class="desc-text">• MS 365 Copilot: <tspan fill="#d32f2f" font-weight="bold">+$30/month</tspan> (300% increase!)</text>
+    <text x="10" y="75" class="desc-text">• 100 employees × $30 = <tspan fill="#d32f2f" font-weight="bold">$36,000/year</tspan></text>
+  </g>
+
+  <!-- Example -->
+  <rect x="840" y="290" width="340" height="70" class="example-box" rx="5"/>
+  <g transform="translate(855, 310)">
+    <text x="0" y="0" class="label-text" font-weight="bold">💰 Total Cost of Ownership:</text>
+    <text x="0" y="20" class="desc-text" font-size="14">5 years, 100 users:</text>
+    <text x="0" y="40" class="desc-text" font-size="14" font-weight="bold" fill="#d32f2f">$180,000+</text>
+  </g>
+
+  <!-- Impact -->
+  <rect x="1200" y="290" width="350" height="70" class="impact-box" rx="5"/>
+  <g transform="translate(1215, 310)">
+    <text x="0" y="0" class="subtitle-text" fill="#3f51b5">💥 Impact:</text>
+    <text x="0" y="25" class="desc-text" font-size="14">Budget strain on organizations</text>
+    <text x="0" y="45" class="desc-text" font-size="14">Small teams priced out</text>
+  </g>
+
+  <!-- ==================== PROBLEM 5: Hallucinations ==================== -->
+
+  <rect x="820" y="390" width="750" height="250" class="problem-box" rx="12"/>
+  <text x="1195" y="430" class="section-title" text-anchor="middle">
+    🤥 Problem 5: AI Hallucinations
+  </text>
+  <line x1="840" y1="440" x2="1550" y2="440" stroke="#d32f2f" stroke-width="2"/>
+
+  <!-- Description -->
+  <rect x="840" y="455" width="710" height="90" fill="#fff" stroke="#d32f2f" stroke-width="2" rx="5"/>
+  <g transform="translate(860, 475)">
+    <text x="0" y="0" class="desc-text" font-weight="bold">AI makes up facts confidently:</text>
+    <text x="10" y="25" class="desc-text">• "Summarize this study" → Cites papers that don't exist</text>
+    <text x="10" y="50" class="desc-text">• Statistics, dates, quotes = Often fabricated</text>
+    <text x="10" y="75" class="desc-text">• Binary .docx = Can't inspect AI's sources</text>
+  </g>
+
+  <!-- Example -->
+  <rect x="840" y="560" width="340" height="70" class="example-box" rx="5"/>
+  <g transform="translate(855, 580)">
+    <text x="0" y="0" class="label-text" font-weight="bold">🚨 Danger zone:</text>
+    <text x="0" y="20" class="desc-text" font-size="14">Legal brief with fake citations</text>
+    <text x="0" y="40" class="desc-text" font-size="14">Medical report with wrong dosage</text>
+  </g>
+
+  <!-- Impact -->
+  <rect x="1200" y="560" width="350" height="70" class="impact-box" rx="5"/>
+  <g transform="translate(1215, 580)">
+    <text x="0" y="0" class="subtitle-text" fill="#3f51b5">💥 Impact:</text>
+    <text x="0" y="25" class="desc-text" font-size="14">Professional liability</text>
+    <text x="0" y="45" class="desc-text" font-size="14">Trust erosion in documents</text>
+  </g>
+
+  <!-- ==================== PROBLEM 6: Lock-in Squared ==================== -->
+
+  <rect x="820" y="660" width="750" height="210" class="problem-box" rx="12"/>
+  <text x="1195" y="700" class="section-title" text-anchor="middle">
+    🔒² Problem 6: Double Lock-in
+  </text>
+  <line x1="840" y1="710" x2="1550" y2="710" stroke="#d32f2f" stroke-width="2"/>
+
+  <!-- Description -->
+  <rect x="840" y="725" width="710" height="70" fill="#fff" stroke="#d32f2f" stroke-width="2" rx="5"/>
+  <g transform="translate(860, 745)">
+    <text x="0" y="0" class="desc-text" font-weight="bold">Locked into both format AND AI provider:</text>
+    <text x="10" y="25" class="desc-text">• Can't move to LibreOffice (loses AI features)</text>
+    <text x="10" y="50" class="desc-text">• Can't switch to Google Docs (different AI model)</text>
+  </g>
+
+  <!-- Example -->
+  <rect x="840" y="810" width="340" height="50" class="example-box" rx="5"/>
+  <g transform="translate(855, 830)">
+    <text x="0" y="0" class="label-text" font-weight="bold">Vendor capture:</text>
+    <text x="0" y="20" class="desc-text" font-size="14">Entire workflow dependent on MS AI</text>
+  </g>
+
+  <!-- Impact -->
+  <rect x="1200" y="810" width="350" height="50" class="impact-box" rx="5"/>
+  <g transform="translate(1215, 830)">
+    <text x="0" y="0" class="subtitle-text" fill="#3f51b5">💥 Impact:</text>
+    <text x="0" y="20" class="desc-text" font-size="14">Zero migration path to FOSS</text>
+  </g>
+
+  <!-- Bottom banner -->
+  <rect x="30" y="880" width="1540" height="1" fill="none"/>
+
+</svg>

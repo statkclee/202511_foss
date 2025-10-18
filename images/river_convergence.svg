@@ -40,7 +40,7 @@
   </defs>
   
   <!-- Background -->
-  <rect width="1000" height="800" fill="linear-gradient(180deg, #f8fafc 0%, #e2e8f0 100%)"/>
+  <rect width="1000" height="830" fill="linear-gradient(180deg, #f8fafc 0%, #e2e8f0 100%)"/>
   
   <!-- Catalyst Zone (Center) -->
   <g id="catalystZone">
@@ -171,10 +171,10 @@
     
     <circle cx="200" cy="580" r="55" fill="#1e40af" opacity="0.9"/>
     <rect x="165" y="545" width="75" height="50" fill="white" rx="8"/>
-    <rect x="175" y="550" width="55" height="15" fill="#e5e7eb" rx="3"/>
-    <text x="180" y="563" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#64748b">User Request</text>
-    <rect x="175" y="567" width="40" height="15" fill="#1e40af" rx="3"/>
-    <text x="180" y="579" font-family="Arial, sans-serif" font-size="11" fill="white">AI Generation</text>
+    <rect x="170" y="550" width="65" height="15" fill="#e5e7eb" rx="3"/>
+    <text x="170" y="563" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#64748b">User Request</text>
+    <rect x="175" y="567" width="50" height="15" fill="#1e40af" rx="3"/>
+    <text x="185" y="577" font-family="Arial, sans-serif" font-size="9" fill="white">AI Gen.</text>
     <circle cx="225" cy="585" r="10" fill="#1e40af"/>
     <text x="225" y="589" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="white" font-weight="bold">AI</text>
     
@@ -231,7 +231,7 @@
       Software 2.0
     </text>
     <text x="780" y="408" text-anchor="end" font-family="Arial, sans-serif" class="description-text" fill="#047857">
-      신경망/머신러닝
+      Neural Network/Machine Learning
     </text>
     <text x="780" y="425" text-anchor="end" font-family="Arial, sans-serif" class="tool-text" fill="#64748b">
       TensorFlow, PyTorch
@@ -243,7 +243,8 @@
     
     <circle cx="800" cy="580" r="55" fill="#047857" opacity="0.9"/>
     <rect x="765" y="550" width="70" height="40" fill="white" rx="8"/>
-    <text x="800" y="567" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#047857" font-weight="bold">Natural Language</text>
+    <text x="800" y="560" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#047857" font-weight="bold">Natural</text>
+    <text x="800" y="570" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#047857" font-weight="bold">Language</text>
     <text x="790" y="583" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#64748b">→ Code</text>
     <circle cx="820" cy="580" r="10" fill="#047857"/>
     <text x="820" y="585" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white" font-weight="bold">AI</text>
@@ -251,8 +252,8 @@
     <text x="720" y="570" text-anchor="end" font-family="Arial, sans-serif" class="stage-text" fill="#047857">
       Software 3.0
     </text>
-    <text x="720" y="588" text-anchor="end" font-family="Arial, sans-serif" class="description-text" fill="#047857">
-      LLM 시대
+    <text x="715" y="588" text-anchor="end" font-family="Arial, sans-serif" class="description-text" fill="#047857">
+      LLM Ear.
     </text>
     <text x="720" y="605" text-anchor="end" font-family="Arial, sans-serif" class="tool-text" fill="#64748b">
       GPT-5, Claude
@@ -332,7 +333,7 @@
     
     <!-- Meeting point at bottom -->
     <circle cx="500" cy="680" r="12" fill="#f59e0b" stroke="#ffffff" stroke-width="2" filter="url(#glow)"/>
-    <rect x="450" y="690" width="100" height="20" fill="rgba(255,255,255,0.9)" rx="10"/>
+    <rect x="400" y="690" width="200" height="20" fill="rgba(255,255,255,0.9)" rx="10"/>
     <text x="500" y="702" text-anchor="middle" font-family="Arial, sans-serif" class="description-text" fill="#000000" font-weight="bold">
       Convergence Point
     </text>
@@ -343,8 +344,8 @@
     <ellipse cx="500" cy="750" rx="400" ry="60" fill="url(#fusionOcean)" opacity="0.8" filter="url(#glow)"/>
     
     <!-- Quarto at center -->
-    <circle cx="500" cy="740" r="30" fill="#ffffff" stroke="#92400e" stroke-width="3" filter="url(#glow)"/>
-    <text x="500" y="748" text-anchor="middle" font-family="Arial, sans-serif" class="fusion-text" fill="#1e293b" font-weight="bold">
+    <circle cx="500" cy="740" r="35" fill="#ffffff" stroke="#92400e" stroke-width="3" filter="url(#glow)"/>
+    <text x="500" y="740" text-anchor="middle" font-family="Arial, sans-serif" class="fusion-text" fill="#1e293b" font-weight="bold">
       Quarto
     </text>
     
@@ -382,8 +383,8 @@
   </g>
   
   <!-- Final vision -->
-  <rect x="150" y="778" width="700" height="25" fill="rgba(255,255,255,0.95)" rx="10" stroke="#92400e" stroke-width="1"/>
-  <text x="500" y="793" text-anchor="middle" font-family="Arial, sans-serif" class="description-text" fill="#1e293b" font-weight="bold">
+  <rect x="125" y="778" width="750" height="30" fill="rgba(255,255,255,0.95)" rx="10" stroke="#92400e" stroke-width="1"/>
+  <text x="500" y="797" text-anchor="middle" font-family="Arial, sans-serif" class="description-text" fill="#1e293b" font-weight="bold">
     Future: An era where complete publications are instantly generated from a single natural language input
   </text>
 </svg>

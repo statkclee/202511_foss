@@ -1,0 +1,280 @@
+<svg viewBox="0 0 1800 1100" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .main-title { font-family: 'Noto Sans KR', sans-serif; font-size: 38px; font-weight: 700; fill: #1e3a8a; }
+      .subtitle { font-family: 'Noto Sans KR', sans-serif; font-size: 20px; font-weight: 600; fill: #475569; }
+      .era-title { font-family: 'Noto Sans KR', sans-serif; font-size: 26px; font-weight: 700; fill: white; }
+      .era-period { font-family: 'Noto Sans KR', sans-serif; font-size: 17px; font-weight: 600; fill: white; }
+      .core-message { font-family: 'Noto Sans KR', sans-serif; font-size: 22px; font-weight: 700; }
+      .evidence { font-family: 'Noto Sans KR', sans-serif; font-size: 18px; font-weight: 600; }
+      .detail { font-family: 'Noto Sans KR', sans-serif; font-size: 16px; }
+      .problem { font-family: 'Noto Sans KR', sans-serif; font-size: 17px; font-weight: 600; }
+      .conclusion { font-family: 'Noto Sans KR', sans-serif; font-size: 22px; font-weight: 700; }
+    </style>
+
+    <!-- Gradients -->
+    <linearGradient id="timelineGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color: #7c3aed; stop-opacity: 1" />
+      <stop offset="50%" style="stop-color: #0078d4; stop-opacity: 1" />
+      <stop offset="100%" style="stop-color: #ea580c; stop-opacity: 1" />
+    </linearGradient>
+
+    <linearGradient id="pastGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color: #7c3aed; stop-opacity: 1" />
+      <stop offset="100%" style="stop-color: #c084fc; stop-opacity: 1" />
+    </linearGradient>
+
+    <linearGradient id="presentGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color: #0078d4; stop-opacity: 1" />
+      <stop offset="100%" style="stop-color: #34a853; stop-opacity: 1" />
+    </linearGradient>
+
+    <linearGradient id="futureGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color: #ea580c; stop-opacity: 1" />
+      <stop offset="100%" style="stop-color: #ec4899; stop-opacity: 1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Title -->
+  <text x="900" y="50" text-anchor="middle" class="main-title">문서편집기의 진화</text>
+  <text x="900" y="80" text-anchor="middle" class="subtitle">세 번의 혁명: 디지털 → 표준화 → AI</text>
+
+  <!-- Horizontal Timeline (Top) -->
+  <line x1="80" y1="130" x2="1720" y2="130" stroke="url(#timelineGrad)" stroke-width="10" opacity="0.7"/>
+
+  <!-- Timeline Markers -->
+  <circle cx="300" cy="130" r="22" fill="#7c3aed" stroke="white" stroke-width="5"/>
+  <circle cx="900" cy="130" r="22" fill="#0078d4" stroke="white" stroke-width="5"/>
+  <circle cx="1500" cy="130" r="22" fill="#ea580c" stroke="white" stroke-width="5"/>
+
+  <!-- ========================================== -->
+  <!-- ERA 1: PAST (1980-2000) - LEFT COLUMN -->
+  <!-- ========================================== -->
+  <g id="past-era">
+    <!-- Header -->
+    <rect x="30" y="180" width="540" height="65" rx="12" fill="url(#pastGrad)"/>
+    <text x="300" y="212" text-anchor="middle" class="era-title">📝 제1혁명: 디지털 전환</text>
+    <text x="300" y="235" text-anchor="middle" class="era-period">(1980-2000)</text>
+
+    <!-- Content Box -->
+    <rect x="30" y="260" width="540" height="730" rx="12" fill="white" stroke="#7c3aed" stroke-width="3"/>
+
+    <!-- Core Message -->
+    <text x="50" y="295" class="core-message" style="fill: #7c3aed;">
+      🔄 아날로그에서 디지털로
+    </text>
+
+    <!-- Evidence Section -->
+    <rect x="50" y="315" width="500" height="380" rx="8" fill="#f5f3ff" stroke="#a78bfa" stroke-width="2"/>
+    <text x="70" y="350" class="evidence" style="fill: #6b21a8;">
+      ✓ 핵심 변화
+    </text>
+    <text x="85" y="380" class="detail" style="fill: #475569;">
+      • 종이 타자기 → 워드프로세서
+    </text>
+    <text x="100" y="410" class="detail" style="fill: #475569;">
+      → <tspan font-weight="700">생산성 10배 향상</tspan>
+    </text>
+    <text x="85" y="450" class="detail" style="fill: #475569;">
+      • 수정·복사·재사용 자유
+    </text>
+    <text x="100" y="480" class="detail" style="fill: #475569;">
+      → 창작 과정 혁신
+    </text>
+    <text x="85" y="520" class="detail" style="fill: #475569;">
+      • 비즈니스 프로세스 속도 증가
+    </text>
+    <text x="100" y="550" class="detail" style="fill: #475569;">
+      → 의사결정 가속화
+    </text>
+
+    <text x="70" y="600" class="evidence" style="fill: #6b21a8;">
+      ✓ 강력한 근거
+    </text>
+    <text x="85" y="630" class="detail" style="fill: #475569;">
+      • 1980년대 초 기업 도입률 급증
+    </text>
+    <text x="85" y="660" class="detail" style="fill: #475569;">
+      • 문서 제작 시간 1/10 단축 사례
+    </text>
+
+    <!-- Problem Section -->
+    <rect x="50" y="720" width="500" height="130" rx="8" fill="#fee2e2" stroke="#dc2626" stroke-width="2"/>
+    <text x="70" y="755" class="problem" style="fill: #991b1b;">
+      ⚠️ 문제
+    </text>
+    <text x="85" y="785" class="detail" style="fill: #991b1b;">
+      • 포맷 전쟁 발생
+    </text>
+    <text x="85" y="815" class="detail" style="fill: #991b1b;">
+      • 호환성 지옥, 벤더 종속
+    </text>
+    <text x="85" y="845" class="detail" style="fill: #991b1b;">
+      • Lock-in 문제 심화
+    </text>
+
+    <!-- Impact -->
+    <rect x="50" y="870" width="500" height="100" rx="8" fill="#ede9fe" stroke="#7c3aed" stroke-width="2"/>
+    <text x="300" y="920" text-anchor="middle" class="evidence" style="fill: #5b21b6;">
+      💡 디지털 문서 시대 개막
+    </text>
+  </g>
+
+  <!-- ========================================== -->
+  <!-- ERA 2: PRESENT (2000-2025) - MIDDLE COLUMN -->
+  <!-- ========================================== -->
+  <g id="present-era">
+    <!-- Header -->
+    <rect x="630" y="180" width="540" height="65" rx="12" fill="url(#presentGrad)"/>
+    <text x="900" y="212" text-anchor="middle" class="era-title">🌐 제2혁명: 표준화 &amp; 협업</text>
+    <text x="900" y="235" text-anchor="middle" class="era-period">(2000-2025)</text>
+
+    <!-- Content Box -->
+    <rect x="630" y="260" width="540" height="730" rx="12" fill="white" stroke="#0078d4" stroke-width="3"/>
+
+    <!-- Core Message -->
+    <text x="650" y="295" class="core-message" style="fill: #0078d4;">
+      📐 ISO 국제 표준 + 클라우드
+    </text>
+
+    <!-- Evidence Section -->
+    <rect x="650" y="315" width="500" height="380" rx="8" fill="#f0fdf4" stroke="#4ade80" stroke-width="2"/>
+    <text x="670" y="350" class="evidence" style="fill: #14532d;">
+      ✓ 핵심 변화
+    </text>
+    <text x="685" y="380" class="detail" style="fill: #475569;">
+      • <tspan font-weight="700">ISO 표준 확립</tspan> (ODF, OOXML)
+    </text>
+    <text x="700" y="410" class="detail" style="fill: #475569;">
+      → 글로벌 상호운용성
+    </text>
+    <text x="685" y="450" class="detail" style="fill: #475569;">
+      • 클라우드 기반 실시간 협업
+    </text>
+    <text x="700" y="480" class="detail" style="fill: #475569;">
+      → 지역·시간 무관 공동 작업
+    </text>
+    <text x="685" y="520" class="detail" style="fill: #475569;">
+      • 벤더 독립성 확보
+    </text>
+    <text x="700" y="550" class="detail" style="fill: #475569;">
+      → 다양한 선택권, 가격 협상력
+    </text>
+
+    <text x="670" y="600" class="evidence" style="fill: #14532d;">
+      ✓ 강력한 근거
+    </text>
+    <text x="685" y="630" class="detail" style="fill: #475569;">
+      • ISO/IEC 26300 (ODF) 2006년 공포
+    </text>
+    <text x="685" y="660" class="detail" style="fill: #475569;">
+      • 100+ 국가 정부·기업 채택
+    </text>
+
+    <!-- Problem Section -->
+    <rect x="650" y="720" width="500" height="130" rx="8" fill="#fee2e2" stroke="#dc2626" stroke-width="2"/>
+    <text x="670" y="755" class="problem" style="fill: #991b1b;">
+      ⚠️ 한국의 문제
+    </text>
+    <text x="685" y="785" class="detail" style="fill: #991b1b;">
+      • HWP 독자 포맷 유지
+    </text>
+    <text x="685" y="815" class="detail" style="fill: #991b1b;">
+      • 국제 협업 제약
+    </text>
+    <text x="685" y="845" class="detail" style="fill: #991b1b;">
+      • 재외국민 접근 불가
+    </text>
+
+    <!-- Impact -->
+    <rect x="650" y="870" width="500" height="100" rx="8" fill="#dbeafe" stroke="#0078d4" stroke-width="2"/>
+    <text x="900" y="920" text-anchor="middle" class="evidence" style="fill: #1e40af;">
+      💡 글로벌 협업 시대 도래
+    </text>
+  </g>
+
+  <!-- ========================================== -->
+  <!-- ERA 3: FUTURE (2025-2050) - RIGHT COLUMN -->
+  <!-- ========================================== -->
+  <g id="future-era">
+    <!-- Header -->
+    <rect x="1230" y="180" width="540" height="65" rx="12" fill="url(#futureGrad)"/>
+    <text x="1500" y="212" text-anchor="middle" class="era-title">🤖 제3혁명: AI 융합</text>
+    <text x="1500" y="235" text-anchor="middle" class="era-period">(2025-2050)</text>
+
+    <!-- Content Box -->
+    <rect x="1230" y="260" width="540" height="730" rx="12" fill="white" stroke="#ea580c" stroke-width="3"/>
+
+    <!-- Core Message -->
+    <text x="1250" y="295" class="core-message" style="fill: #ea580c;">
+      🧠 AI가 공동 저자로 참여
+    </text>
+
+    <!-- Evidence Section -->
+    <rect x="1250" y="315" width="500" height="380" rx="8" fill="#fff7ed" stroke="#fb923c" stroke-width="2"/>
+    <text x="1270" y="350" class="evidence" style="fill: #92400e;">
+      ✓ 핵심 변화
+    </text>
+    <text x="1285" y="380" class="detail" style="fill: #475569;">
+      • AI 자동 생성·번역·최적화
+    </text>
+    <text x="1300" y="410" class="detail" style="fill: #475569;">
+      → 실시간 다국어 협업 가능
+    </text>
+    <text x="1285" y="450" class="detail" style="fill: #475569;">
+      • 지식 그래프 기반 문서 연결
+    </text>
+    <text x="1300" y="480" class="detail" style="fill: #475569;">
+      → 집단 지성 활용
+    </text>
+    <text x="1285" y="520" class="detail" style="fill: #475569;">
+      • 사람 = 전략·의도
+    </text>
+    <text x="1285" y="550" class="detail" style="fill: #475569;">
+      • AI = 실행·최적화
+    </text>
+    <text x="1300" y="580" class="detail" style="fill: #475569;">
+      → 역할 재정의
+    </text>
+
+    <text x="1270" y="630" class="evidence" style="fill: #92400e;">
+      ✓ 강력한 근거
+    </text>
+    <text x="1285" y="660" class="detail" style="fill: #475569;">
+      • MS Copilot, Google Gemini 통합
+    </text>
+    <text x="1285" y="690" class="detail" style="fill: #475569;">
+      • 개방 표준 기반 AI 도구 폭발
+    </text>
+
+    <!-- Problem Section -->
+    <rect x="1250" y="720" width="500" height="130" rx="8" fill="#fee2e2" stroke="#dc2626" stroke-width="2"/>
+    <text x="1270" y="755" class="problem" style="fill: #991b1b;">
+      ⚠️ 독자 포맷의 위험
+    </text>
+    <text x="1285" y="785" class="detail" style="fill: #991b1b;">
+      • AI 생태계 배제
+    </text>
+    <text x="1285" y="815" class="detail" style="fill: #991b1b;">
+      • 글로벌 도구와 단절
+    </text>
+    <text x="1285" y="845" class="detail" style="fill: #991b1b;">
+      • 경쟁력 약화 가속화
+    </text>
+
+    <!-- Impact -->
+    <rect x="1250" y="870" width="500" height="100" rx="8" fill="#ffedd5" stroke="#ea580c" stroke-width="2"/>
+    <text x="1500" y="920" text-anchor="middle" class="evidence" style="fill: #9a3412;">
+      💡 AI 공생 시대 진입
+    </text>
+  </g>
+
+  <!-- ========================================== -->
+  <!-- Bottom Conclusion -->
+  <!-- ========================================== -->
+  <rect x="30" y="1010" width="1740" height="70" rx="12" fill="#1e3a8a"/>
+
+  <text x="900" y="1055" text-anchor="middle" class="conclusion" style="fill: #fbbf24;">
+    → 결론: 개방 표준 (ODF/OOXML) = 과거 자산 보호 + 현재 협업 + AI 미래 경쟁력
+  </text>
+</svg>

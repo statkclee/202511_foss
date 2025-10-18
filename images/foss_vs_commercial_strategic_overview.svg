@@ -1,0 +1,313 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1800 1200">
+  <defs>
+    <style>
+      .title { font-family: Arial, sans-serif; font-size: 42px; font-weight: bold; fill: #1a1a1a; }
+      .subtitle { font-family: Arial, sans-serif; font-size: 24px; fill: #555; }
+      .section-title { font-family: Arial, sans-serif; font-size: 28px; font-weight: bold; fill: #1a1a1a; }
+      .label { font-family: Arial, sans-serif; font-size: 18px; fill: #333; }
+      .label-bold { font-family: Arial, sans-serif; font-size: 18px; font-weight: bold; fill: #1a1a1a; }
+      .axis-label { font-family: Arial, sans-serif; font-size: 16px; fill: #666; }
+      .insight-text { font-family: Arial, sans-serif; font-size: 16px; fill: #1a1a1a; line-height: 1.4; }
+      .insight-title { font-family: Arial, sans-serif; font-size: 20px; font-weight: bold; fill: #1a1a1a; }
+      .year-label { font-family: Arial, sans-serif; font-size: 16px; font-weight: bold; fill: #666; }
+      .commercial-line { stroke: #d32f2f; stroke-width: 4; fill: none; }
+      .foss-line { stroke: #388e3c; stroke-width: 4; fill: none; }
+      .convergence-line { stroke: #7b1fa2; stroke-width: 4; fill: none; stroke-dasharray: 8,4; }
+      .grid-line { stroke: #e0e0e0; stroke-width: 1; }
+      .divider { stroke: #bdbdbd; stroke-width: 2; }
+    </style>
+    <marker id="arrowRed" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#d32f2f" />
+    </marker>
+    <marker id="arrowGreen" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#388e3c" />
+    </marker>
+    <marker id="arrowPurple" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#7b1fa2" />
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1800" height="1200" fill="#ffffff"/>
+
+  <!-- Header -->
+  <text x="900" y="50" class="title" text-anchor="middle">Data Analysis Report Tools: Strategic Evolution</text>
+  <text x="900" y="85" class="subtitle" text-anchor="middle">FOSS vs Commercial Software (1980-2030)</text>
+  <line x1="100" y1="100" x2="1700" y2="100" class="divider"/>
+
+  <!-- ============= Section 1: Cost Evolution (Top Left) ============= -->
+  <rect x="80" y="130" width="820" height="380" fill="#fafafa" stroke="#bdbdbd" stroke-width="2" rx="5"/>
+  <text x="490" y="165" class="section-title" text-anchor="middle">1. Total Cost of Ownership (TCO)</text>
+
+  <!-- Y-axis -->
+  <line x1="150" y1="200" x2="150" y2="480" stroke="#333" stroke-width="2"/>
+  <text x="140" y="205" class="axis-label" text-anchor="end">$10K+</text>
+  <text x="140" y="270" class="axis-label" text-anchor="end">$5K</text>
+  <text x="140" y="340" class="axis-label" text-anchor="end">$1K</text>
+  <text x="140" y="410" class="axis-label" text-anchor="end">$100</text>
+  <text x="140" y="475" class="axis-label" text-anchor="end">$0</text>
+  <text x="100" y="340" class="label-bold" text-anchor="middle" transform="rotate(-90 100 340)">Annual Cost per User</text>
+
+  <!-- X-axis -->
+  <line x1="150" y1="480" x2="860" y2="480" stroke="#333" stroke-width="2"/>
+  <text x="230" y="500" class="year-label" text-anchor="middle">1980s</text>
+  <text x="350" y="500" class="year-label" text-anchor="middle">1990s</text>
+  <text x="470" y="500" class="year-label" text-anchor="middle">2000s</text>
+  <text x="590" y="500" class="year-label" text-anchor="middle">2010s</text>
+  <text x="710" y="500" class="year-label" text-anchor="middle">2020s</text>
+  <text x="830" y="500" class="year-label" text-anchor="middle">2030s</text>
+
+  <!-- Grid lines -->
+  <line x1="150" y1="270" x2="860" y2="270" class="grid-line"/>
+  <line x1="150" y1="340" x2="860" y2="340" class="grid-line"/>
+  <line x1="150" y1="410" x2="860" y2="410" class="grid-line"/>
+
+  <!-- Commercial cost line (high, declining) -->
+  <path d="M 230 220 L 350 240 L 470 280 L 590 320 L 710 350 L 830 370" class="commercial-line"/>
+  <circle cx="230" cy="220" r="6" fill="#d32f2f"/>
+  <circle cx="350" cy="240" r="6" fill="#d32f2f"/>
+  <circle cx="470" cy="280" r="6" fill="#d32f2f"/>
+  <circle cx="590" cy="320" r="6" fill="#d32f2f"/>
+  <circle cx="710" cy="350" r="6" fill="#d32f2f"/>
+  <circle cx="830" cy="370" r="6" fill="#d32f2f"/>
+
+  <!-- FOSS cost line (zero, then minimal) -->
+  <path d="M 230 475 L 350 475 L 470 475 L 590 475 L 710 470 L 830 465" class="foss-line"/>
+  <circle cx="230" cy="475" r="6" fill="#388e3c"/>
+  <circle cx="350" cy="475" r="6" fill="#388e3c"/>
+  <circle cx="470" cy="475" r="6" fill="#388e3c"/>
+  <circle cx="590" cy="475" r="6" fill="#388e3c"/>
+  <circle cx="710" cy="470" r="6" fill="#388e3c"/>
+  <circle cx="830" cy="465" r="6" fill="#388e3c"/>
+
+  <!-- Legend -->
+  <rect x="650" y="210" width="190" height="70" fill="#fff" stroke="#999" stroke-width="1" rx="3"/>
+  <line x1="660" y1="235" x2="700" y2="235" class="commercial-line"/>
+  <text x="710" y="240" class="label">Commercial</text>
+  <line x1="660" y1="260" x2="700" y2="260" class="foss-line"/>
+  <text x="710" y="265" class="label">FOSS</text>
+
+  <!-- Cost annotations -->
+  <text x="230" y="210" class="label" text-anchor="middle" font-size="14">$10K+</text>
+  <text x="230" y="495" class="label" text-anchor="middle" font-size="14">$0</text>
+  <text x="830" y="360" class="label" text-anchor="middle" font-size="14">$100-500</text>
+  <text x="830" y="455" class="label" text-anchor="middle" font-size="14">$0-50</text>
+
+  <!-- ============= Section 2: Feature Parity Evolution (Top Right) ============= -->
+  <rect x="920" y="130" width="800" height="380" fill="#fafafa" stroke="#bdbdbd" stroke-width="2" rx="5"/>
+  <text x="1320" y="165" class="section-title" text-anchor="middle">2. Feature Maturity &amp; Capability</text>
+
+  <!-- Y-axis -->
+  <line x1="990" y1="200" x2="990" y2="480" stroke="#333" stroke-width="2"/>
+  <text x="980" y="205" class="axis-label" text-anchor="end">100%</text>
+  <text x="980" y="270" class="axis-label" text-anchor="end">75%</text>
+  <text x="980" y="340" class="axis-label" text-anchor="end">50%</text>
+  <text x="980" y="410" class="axis-label" text-anchor="end">25%</text>
+  <text x="980" y="475" class="axis-label" text-anchor="end">0%</text>
+  <text x="940" y="340" class="label-bold" text-anchor="middle" transform="rotate(-90 940 340)">Feature Completeness</text>
+
+  <!-- X-axis -->
+  <line x1="990" y1="480" x2="1690" y2="480" stroke="#333" stroke-width="2"/>
+  <text x="1070" y="500" class="year-label" text-anchor="middle">1980s</text>
+  <text x="1190" y="500" class="year-label" text-anchor="middle">1990s</text>
+  <text x="1310" y="500" class="year-label" text-anchor="middle">2000s</text>
+  <text x="1430" y="500" class="year-label" text-anchor="middle">2010s</text>
+  <text x="1550" y="500" class="year-label" text-anchor="middle">2020s</text>
+  <text x="1670" y="500" class="year-label" text-anchor="middle">2030s</text>
+
+  <!-- Grid lines -->
+  <line x1="990" y1="270" x2="1690" y2="270" class="grid-line"/>
+  <line x1="990" y1="340" x2="1690" y2="340" class="grid-line"/>
+  <line x1="990" y1="410" x2="1690" y2="410" class="grid-line"/>
+
+  <!-- Commercial feature line (high from start, plateaus) -->
+  <path d="M 1070 240 L 1190 220 L 1310 210 L 1430 205 L 1550 203 L 1670 202" class="commercial-line"/>
+  <circle cx="1070" cy="240" r="6" fill="#d32f2f"/>
+  <circle cx="1190" cy="220" r="6" fill="#d32f2f"/>
+  <circle cx="1310" cy="210" r="6" fill="#d32f2f"/>
+  <circle cx="1430" cy="205" r="6" fill="#d32f2f"/>
+  <circle cx="1550" cy="203" r="6" fill="#d32f2f"/>
+  <circle cx="1670" cy="202" r="6" fill="#d32f2f"/>
+
+  <!-- FOSS feature line (low start, rapid growth, surpasses) -->
+  <path d="M 1070 450 L 1190 420 L 1310 330 L 1430 240 L 1550 210 L 1670 200" class="foss-line"/>
+  <circle cx="1070" cy="450" r="6" fill="#388e3c"/>
+  <circle cx="1190" cy="420" r="6" fill="#388e3c"/>
+  <circle cx="1310" cy="330" r="6" fill="#388e3c"/>
+  <circle cx="1430" cy="240" r="6" fill="#388e3c"/>
+  <circle cx="1550" cy="210" r="6" fill="#388e3c"/>
+  <circle cx="1670" cy="200" r="6" fill="#388e3c"/>
+
+  <!-- Crossover point annotation -->
+  <circle cx="1430" cy="222" r="20" fill="none" stroke="#7b1fa2" stroke-width="3"/>
+  <text x="1430" y="180" class="label-bold" text-anchor="middle" fill="#7b1fa2">Feature Parity</text>
+  <text x="1430" y="195" class="label" text-anchor="middle" fill="#7b1fa2">~2010s</text>
+
+  <!-- ============= Section 3: Adoption & Market Share (Middle Left) ============= -->
+  <rect x="80" y="530" width="820" height="320" fill="#fafafa" stroke="#bdbdbd" stroke-width="2" rx="5"/>
+  <text x="490" y="565" class="section-title" text-anchor="middle">3. Market Adoption Rate</text>
+
+  <!-- Stacked area chart approximation -->
+  <!-- Left Y-axis -->
+  <line x1="150" y1="600" x2="150" y2="820" stroke="#333" stroke-width="2"/>
+  <text x="140" y="605" class="axis-label" text-anchor="end">100%</text>
+  <text x="140" y="655" class="axis-label" text-anchor="end">75%</text>
+  <text x="140" y="710" class="axis-label" text-anchor="end">50%</text>
+  <text x="140" y="765" class="axis-label" text-anchor="end">25%</text>
+  <text x="140" y="815" class="axis-label" text-anchor="end">0%</text>
+  <text x="100" y="710" class="label-bold" text-anchor="middle" transform="rotate(-90 100 710)">Market Share</text>
+
+  <!-- Right Y-axis -->
+  <line x1="860" y1="600" x2="860" y2="820" stroke="#333" stroke-width="2"/>
+  <text x="870" y="605" class="axis-label" text-anchor="start">100%</text>
+  <text x="870" y="655" class="axis-label" text-anchor="start">75%</text>
+  <text x="870" y="710" class="axis-label" text-anchor="start">50%</text>
+  <text x="870" y="765" class="axis-label" text-anchor="start">25%</text>
+  <text x="870" y="815" class="axis-label" text-anchor="start">0%</text>
+
+  <!-- X-axis -->
+  <line x1="150" y1="820" x2="860" y2="820" stroke="#333" stroke-width="2"/>
+  <text x="230" y="840" class="year-label" text-anchor="middle">1980s</text>
+  <text x="350" y="840" class="year-label" text-anchor="middle">1990s</text>
+  <text x="470" y="840" class="year-label" text-anchor="middle">2000s</text>
+  <text x="590" y="840" class="year-label" text-anchor="middle">2010s</text>
+  <text x="710" y="840" class="year-label" text-anchor="middle">2020s</text>
+  <text x="830" y="840" class="year-label" text-anchor="middle">2030s</text>
+
+  <!-- Grid lines for better readability -->
+  <line x1="150" y1="655" x2="860" y2="655" class="grid-line"/>
+  <line x1="150" y1="710" x2="860" y2="710" class="grid-line"/>
+  <line x1="150" y1="765" x2="860" y2="765" class="grid-line"/>
+
+  <!-- Commercial dominance area (top, shrinking) -->
+  <polygon points="150,600 230,605 350,610 470,630 590,670 710,710 830,740 860,740 860,600"
+           fill="#ffcdd2" stroke="#d32f2f" stroke-width="2"/>
+
+  <!-- FOSS growth area (bottom, growing) -->
+  <polygon points="150,820 230,810 350,800 470,760 590,710 710,670 830,640 860,640 860,820"
+           fill="#c8e6c9" stroke="#388e3c" stroke-width="2"/>
+
+  <!-- Boundary line between areas -->
+  <path d="M 230 605 L 350 610 L 470 630 L 590 670 L 710 710 L 830 740"
+        stroke="#333" stroke-width="2" fill="none" stroke-dasharray="5,3"/>
+
+  <!-- Text labels with white backgrounds -->
+  <rect x="240" y="620" width="200" height="30" fill="#fff" stroke="#d32f2f" stroke-width="2" rx="3"/>
+  <text x="340" y="642" class="label-bold" text-anchor="middle" fill="#c62828" font-size="18">Commercial Dominance</text>
+
+  <rect x="550" y="765" width="160" height="30" fill="#fff" stroke="#388e3c" stroke-width="2" rx="3"/>
+  <text x="630" y="787" class="label-bold" text-anchor="middle" fill="#2e7d32" font-size="18">FOSS Adoption</text>
+
+  <!-- Percentage labels for each decade -->
+  <text x="230" y="625" class="label-bold" font-size="16" fill="#c62828">95%</text>
+  <text x="230" y="805" class="label-bold" font-size="16" fill="#2e7d32">5%</text>
+
+  <text x="350" y="628" class="label" font-size="14" fill="#c62828">90%</text>
+  <text x="350" y="795" class="label" font-size="14" fill="#2e7d32">10%</text>
+
+  <text x="470" y="648" class="label" font-size="14" fill="#c62828">70%</text>
+  <text x="470" y="753" class="label" font-size="14" fill="#2e7d32">30%</text>
+
+  <text x="590" y="688" class="label-bold" font-size="16" fill="#c62828">50%</text>
+  <text x="590" y="722" class="label-bold" font-size="16" fill="#2e7d32">50%</text>
+  <!-- Crossover point highlight -->
+  <circle cx="590" cy="705" r="12" fill="none" stroke="#7b1fa2" stroke-width="3"/>
+  <text x="590" y="690" class="label-bold" font-size="12" fill="#7b1fa2" text-anchor="middle">Crossover</text>
+
+  <text x="710" y="728" class="label" font-size="14" fill="#c62828">40%</text>
+  <text x="710" y="692" class="label" font-size="14" fill="#2e7d32">60%</text>
+
+  <text x="830" y="758" class="label-bold" font-size="16" fill="#c62828">30%</text>
+  <text x="830" y="662" class="label-bold" font-size="16" fill="#2e7d32">70%</text>
+
+  <!-- ============= Section 4: Key Inflection Points (Middle Right) ============= -->
+  <rect x="920" y="530" width="800" height="320" fill="#fafafa" stroke="#bdbdbd" stroke-width="2" rx="5"/>
+  <text x="1320" y="565" class="section-title" text-anchor="middle">4. Strategic Inflection Points</text>
+
+  <!-- Timeline with events -->
+  <line x1="980" y1="650" x2="1680" y2="650" stroke="#333" stroke-width="3"/>
+
+  <!-- 1980s -->
+  <circle cx="1050" cy="650" r="8" fill="#d32f2f"/>
+  <line x1="1050" y1="658" x2="1050" y2="700" stroke="#d32f2f" stroke-width="2"/>
+  <text x="1050" y="720" class="label" text-anchor="middle">1978: TeX</text>
+  <text x="1050" y="738" class="label" text-anchor="middle" font-size="14">FOSS starts</text>
+
+  <!-- 1990s -->
+  <circle cx="1190" cy="650" r="8" fill="#e65100"/>
+  <line x1="1190" y1="642" x2="1190" y2="600" stroke="#e65100" stroke-width="2"/>
+  <text x="1190" y="590" class="label" text-anchor="middle">1990s: GUI Era</text>
+  <text x="1190" y="608" class="label" text-anchor="middle" font-size="14">MS Office wins</text>
+
+  <!-- 2000s -->
+  <circle cx="1330" cy="650" r="8" fill="#7b1fa2"/>
+  <line x1="1330" y1="658" x2="1330" y2="700" stroke="#7b1fa2" stroke-width="2"/>
+  <text x="1330" y="720" class="label" text-anchor="middle">2002: Sweave</text>
+  <text x="1330" y="738" class="label" text-anchor="middle" font-size="14">Reproducibility</text>
+
+  <!-- 2010s -->
+  <circle cx="1470" cy="650" r="10" fill="#388e3c"/>
+  <line x1="1470" y1="640" x2="1470" y2="590" stroke="#388e3c" stroke-width="2"/>
+  <text x="1470" y="580" class="label-bold" text-anchor="middle" fill="#2e7d32">2014: Jupyter</text>
+  <text x="1470" y="598" class="label-bold" text-anchor="middle" font-size="14">GAME CHANGER</text>
+
+  <!-- 2020s - Quarto -->
+  <circle cx="1540" cy="650" r="8" fill="#388e3c"/>
+  <line x1="1540" y1="642" x2="1540" y2="590" stroke="#388e3c" stroke-width="2"/>
+  <text x="1540" y="580" class="label-bold" text-anchor="middle" fill="#2e7d32">2022: Quarto</text>
+  <text x="1540" y="598" class="label" text-anchor="middle" font-size="14">Multi-language</text>
+
+  <!-- 2020s - ChatGPT -->
+  <circle cx="1640" cy="650" r="8" fill="#9c27b0"/>
+  <line x1="1640" y1="658" x2="1640" y2="700" stroke="#9c27b0" stroke-width="2"/>
+  <text x="1640" y="720" class="label" text-anchor="middle">2022: ChatGPT</text>
+  <text x="1640" y="738" class="label" text-anchor="middle" font-size="14">AI Revolution</text>
+
+  <!-- Legend -->
+  <rect x="980" y="760" width="700" height="70" fill="#fff3e0" stroke="#e65100" stroke-width="2" rx="5"/>
+  <text x="1330" y="785" class="insight-title" text-anchor="middle">Critical Insight</text>
+  <text x="1330" y="810" class="insight-text" text-anchor="middle">
+    FOSS achieved feature parity by 2010s, then surpassed commercial tools in
+  </text>
+  <text x="1330" y="830" class="insight-text" text-anchor="middle">
+    reproducibility, extensibility, and community innovation
+  </text>
+
+  <!-- ============= Section 5: Strategic Recommendations (Bottom) ============= -->
+  <rect x="80" y="870" width="1640" height="280" fill="#e8f5e9" stroke="#388e3c" stroke-width="3" rx="5"/>
+  <text x="900" y="910" class="section-title" text-anchor="middle">5. Strategic Recommendations for 2025+</text>
+
+  <!-- Three columns -->
+  <!-- Column 1 -->
+  <rect x="120" y="940" width="480" height="180" fill="#fff" stroke="#388e3c" stroke-width="2" rx="5"/>
+  <text x="360" y="970" class="insight-title" text-anchor="middle" fill="#2e7d32">For Organizations</text>
+  <text x="140" y="1000" class="insight-text">✓ Adopt FOSS-first strategy</text>
+  <text x="140" y="1025" class="insight-text">✓ Invest in staff training (one-time)</text>
+  <text x="140" y="1050" class="insight-text">✓ Build reproducible workflows</text>
+  <text x="140" y="1075" class="insight-text">✓ Leverage AI enhancements (both)</text>
+  <text x="140" y="1100" class="insight-text">• ROI: 5-10x over 5 years</text>
+
+  <!-- Column 2 -->
+  <rect x="640" y="940" width="480" height="180" fill="#fff" stroke="#1565c0" stroke-width="2" rx="5"/>
+  <text x="880" y="970" class="insight-title" text-anchor="middle" fill="#1565c0">Technology Trends</text>
+  <text x="660" y="1000" class="insight-text">• FOSS + AI = Democratization</text>
+  <text x="660" y="1025" class="insight-text">• Notebooks as standard format</text>
+  <text x="660" y="1050" class="insight-text">• Cloud-native execution</text>
+  <text x="660" y="1075" class="insight-text">• Open standards win long-term</text>
+  <text x="660" y="1100" class="insight-text">• Community > Vendor lock-in</text>
+
+  <!-- Column 3 -->
+  <rect x="1160" y="940" width="480" height="180" fill="#fff" stroke="#e65100" stroke-width="2" rx="5"/>
+  <text x="1400" y="970" class="insight-title" text-anchor="middle" fill="#e65100">Future Outlook (2030)</text>
+  <text x="1180" y="1000" class="insight-text">? Open AGI models may emerge</text>
+  <text x="1180" y="1025" class="insight-text">? Quantum computing niche</text>
+  <text x="1180" y="1050" class="insight-text">✓ FOSS remains dominant</text>
+  <text x="1180" y="1075" class="insight-text">✓ Full automation achievable</text>
+  <text x="1180" y="1100" class="insight-text">Human role: oversight + ethics</text>
+
+  <!-- Footer -->
+  <line x1="100" y1="1165" x2="1700" y2="1165" class="divider"/>
+  <text x="900" y="1190" class="label" text-anchor="middle" font-style="italic">
+    Source: Historical software pricing, GitHub stats, Stack Overflow surveys, academic literature
+  </text>
+</svg>

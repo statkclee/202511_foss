@@ -1,0 +1,149 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 30 1200 730">
+  <defs>
+    <style>
+      .title { font-family: monospace; font-size: 32px; font-weight: bold; fill: #2c3e50; }
+      .subtitle { font-family: monospace; font-size: 18px; fill: #7f8c8d; }
+      .box-title { font-family: monospace; font-size: 20px; font-weight: bold; fill: #2c3e50; }
+      .box-text { font-family: monospace; font-size: 16px; fill: #34495e; }
+      .tool-text { font-family: monospace; font-size: 16px; fill: #0d47a1; font-weight: bold; }
+      .arrow-text { font-family: monospace; font-size: 14px; fill: #7f8c8d; }
+      .box { fill: #ecf0f1; stroke: #34495e; stroke-width: 3; }
+      .gui-box { fill: #e8f5e9; stroke: #2e7d32; stroke-width: 3; }
+      .wysiwyg-box { fill: #fff3e0; stroke: #e65100; stroke-width: 3; }
+      .terminal-text { font-family: 'Courier New', monospace; font-size: 14px; fill: #2c3e50; }
+      .highlight { fill: #e3f2fd; stroke: #1565c0; stroke-width: 3; }
+      .new-label { font-family: monospace; font-size: 20px; fill: #3c56e7ff; font-weight: bold; }
+    </style>
+    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#7f8c8d" />
+    </marker>
+  </defs>
+
+  <!-- Title -->
+  <text x="600" y="70" class="title" text-anchor="middle">The PC Revolution: GUI vs Command Line Divide</text>
+
+  <!-- Left Path: Traditional Unix/Linux -->
+  <rect x="30" y="95" width="360" height="35" class="box" rx="3"/>
+  <text x="210" y="118" class="box-title" text-anchor="middle">Path A: Unix/Linux Tradition</text>
+
+  <!-- Step 1A: Data Collection -->
+  <rect x="50" y="150" width="280" height="140" class="box" rx="5"/>
+  <text x="190" y="180" class="box-title" text-anchor="middle">1. Data Collection</text>
+  <text x="190" y="205" class="tool-text" text-anchor="middle">• Workstations (Sun, SGI)</text>
+  <text x="190" y="225" class="tool-text" text-anchor="middle">• Linux PCs (1991~)</text>
+  <text x="190" y="245" class="tool-text" text-anchor="middle">• CSV, Tab-delimited</text>
+  <text x="190" y="265" class="tool-text" text-anchor="middle">• SQL Databases</text>
+
+  <!-- Arrow 1A -->
+  <line x1="190" y1="290" x2="190" y2="325" stroke="#7f8c8d" stroke-width="2" marker-end="url(#arrowhead)"/>
+
+  <!-- Step 2A: Analysis -->
+  <rect x="50" y="325" width="280" height="140" class="gui-box" rx="5"/>
+  <text x="190" y="355" class="box-title" text-anchor="middle">2. Statistical Analysis</text>
+  <text x="190" y="380" class="tool-text" text-anchor="middle">• S-PLUS (1988)</text>
+  <text x="190" y="400" class="tool-text" text-anchor="middle">• SAS/SPSS (GUI version)</text>
+  <text x="190" y="420" class="tool-text" text-anchor="middle">• GNU Octave (1993)</text>
+  <text x="190" y="440" class="tool-text" text-anchor="middle">• Python + NumPy (1995)</text>
+  <text x="280" y="380" class="new-label">GUI!</text>
+
+  <!-- Arrow 2A -->
+  <line x1="190" y1="465" x2="190" y2="500" stroke="#7f8c8d" stroke-width="2" marker-end="url(#arrowhead)"/>
+
+  <!-- Step 3A: Document -->
+  <rect x="50" y="500" width="280" height="140" class="box" rx="5"/>
+  <text x="190" y="530" class="box-title" text-anchor="middle">3. Document Prep</text>
+  <text x="190" y="555" class="tool-text" text-anchor="middle">• LaTeX2e (1994)</text>
+  <text x="190" y="575" class="tool-text" text-anchor="middle">• groff (1990)</text>
+  <text x="190" y="595" class="tool-text" text-anchor="middle">• PostScript</text>
+  <text x="190" y="615" class="tool-text" text-anchor="middle">• PDF (1993)</text>
+
+  <!-- Right Path: Windows PC -->
+  <rect x="810" y="95" width="360" height="35" class="wysiwyg-box" rx="3"/>
+  <text x="990" y="118" class="box-title" text-anchor="middle">Path B: Windows PC Era</text>
+
+  <!-- Step 1B: Data Collection -->
+  <rect x="870" y="150" width="280" height="140" class="wysiwyg-box" rx="5"/>
+  <text x="1010" y="180" class="box-title" text-anchor="middle">1. Data Entry</text>
+  <text x="1010" y="205" class="tool-text" text-anchor="middle">• Excel 5.0 (1993)</text>
+  <text x="1010" y="225" class="tool-text" text-anchor="middle">• Access (1992)</text>
+  <text x="1010" y="245" class="tool-text" text-anchor="middle">• Lotus 1-2-3</text>
+  <text x="1010" y="265" class="tool-text" text-anchor="middle">• dBase, FoxPro</text>
+  <text x="1100" y="185" class="new-label">WYSIWYG</text>
+
+  <!-- Arrow 1B -->
+  <line x1="1010" y1="290" x2="1010" y2="325" stroke="#7f8c8d" stroke-width="2" marker-end="url(#arrowhead)"/>
+
+  <!-- Step 2B: Analysis -->
+  <rect x="870" y="325" width="280" height="140" class="wysiwyg-box" rx="5"/>
+  <text x="1010" y="355" class="box-title" text-anchor="middle">2. Analysis (GUI)</text>
+  <text x="1010" y="380" class="tool-text" text-anchor="middle">• SPSS for Windows</text>
+  <text x="1010" y="400" class="tool-text" text-anchor="middle">• SAS for Windows</text>
+  <text x="1010" y="420" class="tool-text" text-anchor="middle">• Stata (1996)</text>
+  <text x="1010" y="440" class="tool-text" text-anchor="middle">• Excel Statistics</text>
+
+  <!-- Arrow 2B -->
+  <line x1="1010" y1="465" x2="1010" y2="500" stroke="#7f8c8d" stroke-width="2" marker-end="url(#arrowhead)"/>
+
+  <!-- Step 3B: Document -->
+  <rect x="870" y="500" width="280" height="140" class="wysiwyg-box" rx="5"/>
+  <text x="1010" y="530" class="box-title" text-anchor="middle">3. Word Processing</text>
+  <text x="1010" y="555" class="tool-text" text-anchor="middle">• MS Word 6.0 (1993)</text>
+  <text x="1010" y="575" class="tool-text" text-anchor="middle">• WordPerfect</text>
+  <text x="1010" y="595" class="tool-text" text-anchor="middle">• Copy &amp; Paste</text>
+  <text x="1010" y="615" class="tool-text" text-anchor="middle">• Manual Layout</text>
+
+  <!-- Middle: Hybrid Approach -->
+  <rect x="420" y="95" width="360" height="35" class="highlight" rx="3"/>
+  <text x="600" y="118" class="box-title" text-anchor="middle">Path C: Hybrid Approach</text>
+
+  <!-- Hybrid Box -->
+  <rect x="430" y="240" width="340" height="310" class="highlight" rx="5"/>
+  <text x="600" y="270" class="box-title" text-anchor="middle">Web-based Distribution</text>
+
+  <text x="600" y="305" class="tool-text" text-anchor="middle">• HTML (1993)</text>
+  <text x="600" y="325" class="tool-text" text-anchor="middle">• CGI Scripts (Perl, 1993)</text>
+  <text x="600" y="345" class="tool-text" text-anchor="middle">• LaTeX2HTML (1993)</text>
+  <text x="600" y="365" class="tool-text" text-anchor="middle">• Netscape Navigator (1994)</text>
+
+  <line x1="440" y1="385" x2="760" y2="385" stroke="#2c3e50" stroke-width="2"/>
+
+  <text x="600" y="410" class="box-title" text-anchor="middle">Version Control</text>
+  <text x="600" y="435" class="tool-text" text-anchor="middle">• CVS (1990)</text>
+  <text x="600" y="455" class="tool-text" text-anchor="middle">• Subversion (2000)</text>
+
+  <line x1="440" y1="475" x2="760" y2="475" stroke="#2c3e50" stroke-width="2"/>
+
+  <text x="600" y="500" class="box-title" text-anchor="middle">The Great Divide</text>
+  <text x="600" y="520" class="box-text" text-anchor="middle" font-size="12">Reproducibility vs</text>
+  <text x="600" y="538" class="box-text" text-anchor="middle" font-size="12">Ease of Use</text>
+
+  <!-- Arrows from left to middle -->
+  <line x1="330" y1="400" x2="430" y2="400" stroke="#7f8c8d" stroke-width="2" marker-end="url(#arrowhead)" stroke-dasharray="5,5"/>
+
+  <!-- Arrows from right to middle -->
+  <line x1="870" y1="400" x2="770" y2="400" stroke="#7f8c8d" stroke-width="2" marker-end="url(#arrowhead)" stroke-dasharray="5,5"/>
+
+  <!-- Bottom: Output Methods -->
+  <rect x="50" y="670" width="250" height="60" class="box" rx="5"/>
+  <text x="175" y="695" class="box-text" text-anchor="middle">PostScript Printer</text>
+  <text x="175" y="715" class="box-text" text-anchor="middle">Email (MIME, 1992)</text>
+
+  <rect x="340" y="670" width="250" height="60" class="gui-box" rx="5"/>
+  <text x="465" y="695" class="box-text" text-anchor="middle">FTP Servers</text>
+  <text x="465" y="715" class="box-text" text-anchor="middle">Web Publishing</text>
+
+  <rect x="630" y="670" width="250" height="60" class="wysiwyg-box" rx="5"/>
+  <text x="755" y="695" class="box-text" text-anchor="middle">Diskettes (3.5")</text>
+  <text x="755" y="715" class="box-text" text-anchor="middle">CD-ROM</text>
+
+  <rect x="920" y="670" width="230" height="60" class="box" rx="5"/>
+  <text x="1035" y="695" class="box-text" text-anchor="middle">Inkjet/Laser Print</text>
+  <text x="1035" y="715" class="box-text" text-anchor="middle">Fax Machine</text>
+
+  <!-- Bottom Note -->
+  <text x="600" y="175" class="subtitle" text-anchor="middle">The Decade of Transition: </text>
+  <text x="600" y="200" class="subtitle" text-anchor="middle">Command Line → GUI</text>
+  <text x="600" y="225" class="subtitle" text-anchor="middle">Plain Text → Binary Formats</text>
+  <text x="600" y="600" class="subtitle" text-anchor="middle" font-style="italic">The reproducibility crisis begins</text>
+  <text x="600" y="625" class="subtitle" text-anchor="middle" font-style="italic">as workflows become point-and-click</text>
+</svg>

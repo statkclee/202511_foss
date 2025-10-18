@@ -1,0 +1,280 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2400 1600">
+  <defs>
+    <!-- Gradients -->
+    <linearGradient id="headerGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#7c3aed;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#a855f7;stop-opacity:1" />
+    </linearGradient>
+
+    <linearGradient id="pandocBg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#f3e8ff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#e9d5ff;stop-opacity:1" />
+    </linearGradient>
+
+    <!-- Arrow markers -->
+    <marker id="arrowIn" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto">
+      <path d="M0,0 L0,10 L10,5 z" fill="#3b82f6" />
+    </marker>
+
+    <marker id="arrowOut" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto">
+      <path d="M0,0 L0,10 L10,5 z" fill="#10b981" />
+    </marker>
+
+    <!-- Styles -->
+    <style>
+      text { font-family: 'Noto Sans KR', 'Noto Sans', sans-serif; }
+      .title { font-size: 38px; font-weight: 700; fill: white; }
+      .subtitle { font-size: 18px; font-weight: 600; fill: white; }
+      .section-title { font-size: 28px; font-weight: 700; }
+      .format-name { font-size: 16px; font-weight: 600; fill: #1f2937; }
+      .format-desc { font-size: 12px; fill: #4b5563; }
+      .label { font-size: 14px; font-weight: 600; fill: #374151; }
+      .value { font-size: 13px; fill: #4b5563; }
+      .feature { font-size: 14px; fill: #374151; }
+      .code { font-family: 'Monaco', 'Courier New', monospace; font-size: 12px; fill: #1f2937; }
+      .highlight { font-size: 15px; font-weight: 700; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="2400" height="1600" fill="#f8fafc"/>
+
+  <!-- Header -->
+  <rect x="40" y="20" width="2320" height="100" rx="12" fill="url(#headerGrad)"/>
+  <text x="1200" y="65" text-anchor="middle" class="title">Pandoc: Universal Document Converter</text>
+  <text x="1200" y="95" text-anchor="middle" class="subtitle">중립적 중재자 - 모든 패러다임을 연결하는 성공적 통합</text>
+
+  <!-- Main layout: Left (inputs) -> Center (Pandoc) -> Right (outputs) -->
+
+  <!-- Left: Input formats -->
+  <g id="input-formats">
+    <text x="80" y="170" class="section-title" fill="#3b82f6">입력 포맷</text>
+    <text x="80" y="195" class="label" fill="#6b7280">(다양한 패러다임)</text>
+
+    <!-- Markdown -->
+    <rect x="80" y="220" width="280" height="80" rx="8" fill="white" stroke="#10b981" stroke-width="2"/>
+    <text x="220" y="250" text-anchor="middle" class="format-name">Markdown</text>
+    <text x="220" y="270" text-anchor="middle" class="format-desc">경량 Markup</text>
+    <text x="220" y="288" text-anchor="middle" class="format-desc" fill="#10b981">✓ Markup 패러다임</text>
+
+    <!-- LaTeX -->
+    <rect x="80" y="320" width="280" height="80" rx="8" fill="white" stroke="#3b82f6" stroke-width="2"/>
+    <text x="220" y="350" text-anchor="middle" class="format-name">LaTeX</text>
+    <text x="220" y="370" text-anchor="middle" class="format-desc">학술 조판</text>
+    <text x="220" y="388" text-anchor="middle" class="format-desc" fill="#3b82f6">✓ Typesetting 패러다임</text>
+
+    <!-- HTML -->
+    <rect x="80" y="420" width="280" height="80" rx="8" fill="white" stroke="#10b981" stroke-width="2"/>
+    <text x="220" y="450" text-anchor="middle" class="format-name">HTML</text>
+    <text x="220" y="470" text-anchor="middle" class="format-desc">웹 표준</text>
+    <text x="220" y="488" text-anchor="middle" class="format-desc" fill="#10b981">✓ Markup 패러다임</text>
+
+    <!-- reStructuredText -->
+    <rect x="80" y="520" width="280" height="80" rx="8" fill="white" stroke="#10b981" stroke-width="2"/>
+    <text x="220" y="550" text-anchor="middle" class="format-name">reStructuredText</text>
+    <text x="220" y="570" text-anchor="middle" class="format-desc">Python 문서</text>
+    <text x="220" y="588" text-anchor="middle" class="format-desc" fill="#10b981">✓ Markup 패러다임</text>
+
+    <!-- Org Mode -->
+    <rect x="80" y="620" width="280" height="80" rx="8" fill="white" stroke="#10b981" stroke-width="2"/>
+    <text x="220" y="650" text-anchor="middle" class="format-name">Org Mode</text>
+    <text x="220" y="670" text-anchor="middle" class="format-desc">Emacs 문서</text>
+    <text x="220" y="688" text-anchor="middle" class="format-desc" fill="#10b981">✓ Markup 패러다임</text>
+
+    <!-- DOCX -->
+    <rect x="80" y="720" width="280" height="80" rx="8" fill="white" stroke="#8b5cf6" stroke-width="2"/>
+    <text x="220" y="750" text-anchor="middle" class="format-name">MS Word (DOCX)</text>
+    <text x="220" y="770" text-anchor="middle" class="format-desc">바이너리 문서</text>
+    <text x="220" y="788" text-anchor="middle" class="format-desc" fill="#8b5cf6">✓ WYSIWYG 패러다임</text>
+
+    <!-- ODT -->
+    <rect x="80" y="820" width="280" height="80" rx="8" fill="white" stroke="#8b5cf6" stroke-width="2"/>
+    <text x="220" y="850" text-anchor="middle" class="format-name">OpenDocument (ODT)</text>
+    <text x="220" y="870" text-anchor="middle" class="format-desc">오픈 문서 포맷</text>
+    <text x="220" y="888" text-anchor="middle" class="format-desc" fill="#8b5cf6">✓ WYSIWYG 패러다임</text>
+
+    <!-- EPUB -->
+    <rect x="80" y="920" width="280" height="80" rx="8" fill="white" stroke="#10b981" stroke-width="2"/>
+    <text x="220" y="950" text-anchor="middle" class="format-name">EPUB</text>
+    <text x="220" y="970" text-anchor="middle" class="format-desc">전자책</text>
+    <text x="220" y="988" text-anchor="middle" class="format-desc" fill="#10b981">✓ Markup 패러다임</text>
+  </g>
+
+  <!-- Arrows: Inputs -> Pandoc -->
+  <g id="input-arrows">
+    <path d="M 360 260 L 600 500" stroke="#3b82f6" stroke-width="3" fill="none" marker-end="url(#arrowIn)" stroke-dasharray="5,3"/>
+    <path d="M 360 360 L 600 500" stroke="#3b82f6" stroke-width="3" fill="none" marker-end="url(#arrowIn)" stroke-dasharray="5,3"/>
+    <path d="M 360 460 L 600 500" stroke="#3b82f6" stroke-width="3" fill="none" marker-end="url(#arrowIn)" stroke-dasharray="5,3"/>
+    <path d="M 360 560 L 600 500" stroke="#3b82f6" stroke-width="3" fill="none" marker-end="url(#arrowIn)" stroke-dasharray="5,3"/>
+    <path d="M 360 660 L 600 500" stroke="#3b82f6" stroke-width="3" fill="none" marker-end="url(#arrowIn)" stroke-dasharray="5,3"/>
+    <path d="M 360 760 L 600 580" stroke="#3b82f6" stroke-width="3" fill="none" marker-end="url(#arrowIn)" stroke-dasharray="5,3"/>
+    <path d="M 360 860 L 600 600" stroke="#3b82f6" stroke-width="3" fill="none" marker-end="url(#arrowIn)" stroke-dasharray="5,3"/>
+    <path d="M 360 960 L 600 620" stroke="#3b82f6" stroke-width="3" fill="none" marker-end="url(#arrowIn)" stroke-dasharray="5,3"/>
+  </g>
+
+  <!-- Center: Pandoc -->
+  <g id="pandoc-center">
+    <rect x="600" y="300" width="600" height="600" rx="20" fill="url(#pandocBg)" stroke="#a855f7" stroke-width="5"/>
+
+    <text x="900" y="350" text-anchor="middle" class="section-title" fill="#7c3aed">Pandoc</text>
+    <text x="900" y="380" text-anchor="middle" class="label" fill="#9333ea">Universal Document Converter</text>
+    <text x="900" y="402" text-anchor="middle" class="format-desc" fill="#6b7280">2006 - John MacFarlane (Haskell)</text>
+
+    <!-- Core concept -->
+    <rect x="640" y="430" width="520" height="60" rx="8" fill="white" stroke="#a855f7" stroke-width="2"/>
+    <text x="900" y="455" text-anchor="middle" class="label" fill="#7c3aed">핵심 개념:</text>
+    <text x="900" y="478" text-anchor="middle" class="value">중간 표현 (Abstract Syntax Tree)</text>
+
+    <!-- Internal process -->
+    <rect x="640" y="510" width="520" height="180" rx="8" fill="#faf5ff" stroke="#c084fc" stroke-width="1"/>
+    <text x="900" y="540" text-anchor="middle" class="label" fill="#7c3aed">내부 처리 과정:</text>
+
+    <text x="680" y="575" class="value">1. 입력 포맷 파싱 (Reader)</text>
+    <text x="700" y="600" class="format-desc">→ 각 포맷의 구조 이해</text>
+
+    <text x="680" y="630" class="value">2. 중간 표현으로 변환 (AST)</text>
+    <text x="700" y="655" class="format-desc">→ 패러다임 중립적 구조</text>
+
+    <text x="680" y="685" class="value">3. 출력 포맷 생성 (Writer)</text>
+    <text x="700" y="710" class="format-desc">→ 목표 포맷에 맞게 렌더링</text>
+
+    <!-- Features -->
+    <rect x="640" y="710" width="520" height="170" rx="8" fill="white" stroke="#a855f7" stroke-width="2"/>
+    <text x="900" y="740" text-anchor="middle" class="label" fill="#7c3aed">주요 특징:</text>
+    <text x="680" y="770" class="feature">✓ 40+ 입력 포맷 지원</text>
+    <text x="680" y="795" class="feature">✓ 60+ 출력 포맷 지원</text>
+    <text x="680" y="820" class="feature">✓ 패러다임 중립적</text>
+    <text x="680" y="845" class="feature">✓ 손실 최소화</text>
+    <text x="680" y="870" class="feature">✓ 확장 가능 (Lua filters)</text>
+  </g>
+
+  <!-- Arrows: Pandoc -> Outputs -->
+  <g id="output-arrows">
+    <path d="M 1200 500 L 1440 260" stroke="#10b981" stroke-width="3" fill="none" marker-end="url(#arrowOut)" stroke-dasharray="5,3"/>
+    <path d="M 1200 500 L 1440 360" stroke="#10b981" stroke-width="3" fill="none" marker-end="url(#arrowOut)" stroke-dasharray="5,3"/>
+    <path d="M 1200 500 L 1440 460" stroke="#10b981" stroke-width="3" fill="none" marker-end="url(#arrowOut)" stroke-dasharray="5,3"/>
+    <path d="M 1200 500 L 1440 560" stroke="#10b981" stroke-width="3" fill="none" marker-end="url(#arrowOut)" stroke-dasharray="5,3"/>
+    <path d="M 1200 580 L 1440 760" stroke="#10b981" stroke-width="3" fill="none" marker-end="url(#arrowOut)" stroke-dasharray="5,3"/>
+    <path d="M 1200 600 L 1440 860" stroke="#10b981" stroke-width="3" fill="none" marker-end="url(#arrowOut)" stroke-dasharray="5,3"/>
+    <path d="M 1200 620 L 1440 960" stroke="#10b981" stroke-width="3" fill="none" marker-end="url(#arrowOut)" stroke-dasharray="5,3"/>
+  </g>
+
+  <!-- Right: Output formats -->
+  <g id="output-formats">
+    <text x="2040" y="170" text-anchor="end" class="section-title" fill="#10b981">출력 포맷</text>
+    <text x="2040" y="195" text-anchor="end" class="label" fill="#6b7280">(다양한 패러다임)</text>
+
+    <!-- HTML -->
+    <rect x="1440" y="220" width="280" height="80" rx="8" fill="white" stroke="#10b981" stroke-width="2"/>
+    <text x="1580" y="250" text-anchor="middle" class="format-name">HTML / HTML5</text>
+    <text x="1580" y="270" text-anchor="middle" class="format-desc">웹 출력</text>
+    <text x="1580" y="288" text-anchor="middle" class="format-desc" fill="#10b981">✓ Markup</text>
+
+    <!-- LaTeX / PDF -->
+    <rect x="1440" y="320" width="280" height="80" rx="8" fill="white" stroke="#3b82f6" stroke-width="2"/>
+    <text x="1580" y="350" text-anchor="middle" class="format-name">LaTeX / PDF</text>
+    <text x="1580" y="370" text-anchor="middle" class="format-desc">학술 출판</text>
+    <text x="1580" y="388" text-anchor="middle" class="format-desc" fill="#3b82f6">✓ Typesetting</text>
+
+    <!-- Markdown -->
+    <rect x="1440" y="420" width="280" height="80" rx="8" fill="white" stroke="#10b981" stroke-width="2"/>
+    <text x="1580" y="450" text-anchor="middle" class="format-name">Markdown (GFM)</text>
+    <text x="1580" y="470" text-anchor="middle" class="format-desc">경량 마크업</text>
+    <text x="1580" y="488" text-anchor="middle" class="format-desc" fill="#10b981">✓ Markup</text>
+
+    <!-- RevealJS -->
+    <rect x="1440" y="520" width="280" height="80" rx="8" fill="white" stroke="#10b981" stroke-width="2"/>
+    <text x="1580" y="550" text-anchor="middle" class="format-name">RevealJS</text>
+    <text x="1580" y="570" text-anchor="middle" class="format-desc">HTML 프레젠테이션</text>
+    <text x="1580" y="588" text-anchor="middle" class="format-desc" fill="#10b981">✓ Markup</text>
+
+    <!-- DOCX -->
+    <rect x="1440" y="720" width="280" height="80" rx="8" fill="white" stroke="#8b5cf6" stroke-width="2"/>
+    <text x="1580" y="750" text-anchor="middle" class="format-name">MS Word (DOCX)</text>
+    <text x="1580" y="770" text-anchor="middle" class="format-desc">워드 문서</text>
+    <text x="1580" y="788" text-anchor="middle" class="format-desc" fill="#8b5cf6">✓ WYSIWYG</text>
+
+    <!-- ODT -->
+    <rect x="1440" y="820" width="280" height="80" rx="8" fill="white" stroke="#8b5cf6" stroke-width="2"/>
+    <text x="1580" y="850" text-anchor="middle" class="format-name">OpenDocument (ODT)</text>
+    <text x="1580" y="870" text-anchor="middle" class="format-desc">LibreOffice</text>
+    <text x="1580" y="888" text-anchor="middle" class="format-desc" fill="#8b5cf6">✓ WYSIWYG</text>
+
+    <!-- EPUB -->
+    <rect x="1440" y="920" width="280" height="80" rx="8" fill="white" stroke="#10b981" stroke-width="2"/>
+    <text x="1580" y="950" text-anchor="middle" class="format-name">EPUB3</text>
+    <text x="1580" y="970" text-anchor="middle" class="format-desc">전자책</text>
+    <text x="1580" y="988" text-anchor="middle" class="format-desc" fill="#10b981">✓ Markup</text>
+
+    <!-- Plus many more -->
+    <rect x="1780" y="220" width="300" height="120" rx="8" fill="#f3e8ff" stroke="#a855f7" stroke-width="2"/>
+    <text x="1930" y="260" text-anchor="middle" class="format-name" fill="#7c3aed">+ 더 많은 포맷</text>
+    <text x="1930" y="285" text-anchor="middle" class="format-desc">AsciiDoc, MediaWiki</text>
+    <text x="1930" y="305" text-anchor="middle" class="format-desc">Textile, Jira Wiki</text>
+    <text x="1930" y="325" text-anchor="middle" class="format-desc">Man pages, 등...</text>
+  </g>
+
+  <!-- Bottom: Success factors -->
+  <rect x="80" y="1060" width="2240" height="490" rx="15" fill="white" stroke="#a855f7" stroke-width="3"/>
+
+  <text x="1200" y="1110" text-anchor="middle" class="section-title" style="font-size: 30px;" fill="#7c3aed">✅ 성공 요인: 중립적 중재자</text>
+  <line x1="120" y1="1130" x2="2280" y2="1130" stroke="#e9d5ff" stroke-width="2"/>
+
+  <!-- Three columns -->
+  <g id="success-columns">
+    <!-- Column 1 -->
+    <rect x="120" y="1160" width="680" height="360" rx="10" fill="#faf5ff"/>
+    <text x="460" y="1195" text-anchor="middle" class="highlight" fill="#7c3aed" style="font-size: 18px;">1. 패러다임 중립성</text>
+
+    <text x="150" y="1235" class="value" font-weight="700">어떤 패러다임도 강요하지 않음:</text>
+    <text x="170" y="1260" class="value">• Markup → Typesetting ✓</text>
+    <text x="170" y="1285" class="value">• Typesetting → Markup ✓</text>
+    <text x="170" y="1310" class="value">• WYSIWYG ↔ Markup ✓</text>
+
+    <text x="150" y="1345" class="value" font-weight="700">각 포맷의 특성 존중:</text>
+    <text x="170" y="1370" class="value">• 원본 구조 최대한 보존</text>
+    <text x="170" y="1395" class="value">• 불가능한 변환은 우아하게 처리</text>
+    <text x="170" y="1420" class="value">• 손실 최소화</text>
+
+    <text x="150" y="1455" class="value" font-weight="700">중간 표현 (AST):</text>
+    <text x="170" y="1480" class="value">• 패러다임 독립적</text>
+    <text x="170" y="1505" class="value">• 구조만 추출</text>
+
+    <!-- Column 2 -->
+    <rect x="840" y="1160" width="680" height="360" rx="10" fill="#faf5ff"/>
+    <text x="1180" y="1195" text-anchor="middle" class="highlight" fill="#7c3aed" style="font-size: 18px;">2. 생태계 연결</text>
+
+    <text x="870" y="1235" class="value" font-weight="700">허브 역할:</text>
+    <text x="890" y="1260" class="value">• Markdown를 중심 포맷으로</text>
+    <text x="890" y="1285" class="value">• 모든 포맷 ↔ Markdown</text>
+    <text x="890" y="1310" class="value">• N×N 아닌 2×N 변환</text>
+
+    <text x="870" y="1345" class="value" font-weight="700">실용적 접근:</text>
+    <text x="890" y="1370" class="value">• 완벽한 변환 불가능 인정</text>
+    <text x="890" y="1395" class="value">• 80% 변환으로 충분</text>
+    <text x="890" y="1420" class="value">• 수동 편집 공간 제공</text>
+
+    <text x="870" y="1455" class="value" font-weight="700">확장성:</text>
+    <text x="890" y="1480" class="value">• Lua 필터로 커스터마이징</text>
+    <text x="890" y="1505" class="value">• 새 포맷 추가 용이</text>
+
+    <!-- Column 3 -->
+    <rect x="1560" y="1160" width="720" height="360" rx="10" fill="#faf5ff"/>
+    <text x="1920" y="1195" text-anchor="middle" class="highlight" fill="#7c3aed" style="font-size: 18px;">3. 침범하지 않음</text>
+
+    <text x="1590" y="1235" class="value" font-weight="700">역할 명확:</text>
+    <text x="1610" y="1260" class="value">• "변환"만 수행</text>
+    <text x="1610" y="1285" class="value">• "편집"은 각 도구의 몫</text>
+    <text x="1610" y="1310" class="value">• "저장"은 사용자 선택</text>
+
+    <text x="1590" y="1345" class="value" font-weight="700">다른 패러다임 존중:</text>
+    <text x="1610" y="1370" class="value">• TeX의 조판 능력 존중</text>
+    <text x="1610" y="1395" class="value">• WYSIWYG의 편의성 존중</text>
+    <text x="1610" y="1420" class="value">• Markdown의 간결성 존중</text>
+
+    <text x="1590" y="1455" class="value" font-weight="700">실패 사례와 차이:</text>
+    <text x="1610" y="1480" class="value">• WYSIWYG ↔ TeX (강요) ❌</text>
+    <text x="1610" y="1505" class="value">• Pandoc (중립 변환) ✅</text>
+  </g>
+
+</svg>

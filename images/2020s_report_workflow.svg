@@ -1,0 +1,197 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 35 1200 920">
+  <defs>
+    <style>
+      .title { font-family: monospace; font-size: 28px; font-weight: bold; fill: #2c3e50; }
+      .subtitle { font-family: monospace; font-size: 16px; fill: #7f8c8d; }
+      .box-title { font-family: monospace; font-size: 18px; font-weight: bold; fill: #2c3e50; }
+      .box-text { font-family: monospace; font-size: 12px; fill: #34495e; }
+      .tool-text { font-family: monospace; font-size: 11px; fill: #16a085; font-weight: bold; }
+      .ai-box { fill: #fce4ec; stroke: #c2185b; stroke-width: 3; }
+      .llm-box { fill: #f3e5f5; stroke: #7b1fa2; stroke-width: 4; }
+      .collab-box { fill: #fff3e0; stroke: #e65100; stroke-width: 3; }
+      .cloud-box { fill: #e3f2fd; stroke: #1565c0; stroke-width: 3; }
+      .new-label { font-family: monospace; font-size: 20px; fill: #e74c3c; font-weight: bold; }
+    </style>
+    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#7f8c8d" />
+    </marker>
+  </defs>
+
+  <!-- Title -->
+  <text x="600" y="70" class="title" text-anchor="middle">The LLM Revolution: AI-Assisted Everything</text>
+
+  <!-- Layer 0: LLM Layer -->
+  <rect x="30" y="90" width="1140" height="50" class="llm-box" rx="5"/>
+  <text x="600" y="113" class="box-title" text-anchor="middle">🤖 LLM Layer: AI Copilot for Data Science</text>
+  <text x="600" y="130" class="box-text" text-anchor="middle">ChatGPT (2022) | Claude (2023) | Gemini (2023) | GitHub Copilot (2021) | Cursor (2023)</text>
+
+  <!-- Arrow Down -->
+  <line x1="600" y1="145" x2="600" y2="170" stroke="#7f8c8d" stroke-width="2" marker-end="url(#arrowhead)"/>
+
+  <!-- Layer 1: Data Infrastructure -->
+  <rect x="30" y="170" width="1140" height="35" class="cloud-box" rx="3"/>
+  <text x="600" y="193" class="box-title" text-anchor="middle">1. Data Infrastructure: Everything as Code</text>
+
+  <rect x="50" y="220" width="200" height="125" class="cloud-box" rx="5"/>
+  <text x="150" y="243" class="tool-text" text-anchor="middle">Data Lakehouse</text>
+  <text x="150" y="260" class="box-text" text-anchor="middle">Databricks</text>
+  <text x="150" y="275" class="box-text" text-anchor="middle">Snowflake</text>
+  <text x="150" y="290" class="box-text" text-anchor="middle">Delta Lake</text>
+  <text x="150" y="305" class="box-text" text-anchor="middle">Iceberg/Hudi</text>
+  <text x="150" y="320" class="box-text" text-anchor="middle">DuckDB (2019)</text>
+
+  <rect x="270" y="220" width="200" height="125" class="cloud-box" rx="5"/>
+  <text x="370" y="243" class="tool-text" text-anchor="middle">Orchestration</text>
+  <text x="370" y="260" class="box-text" text-anchor="middle">Airflow</text>
+  <text x="370" y="275" class="box-text" text-anchor="middle">Prefect (2018)</text>
+  <text x="370" y="290" class="box-text" text-anchor="middle">Dagster (2019)</text>
+  <text x="370" y="305" class="box-text" text-anchor="middle">dbt (2016~)</text>
+  <text x="370" y="320" class="box-text" text-anchor="middle">DataOps</text>
+
+  <rect x="490" y="220" width="200" height="125" class="ai-box" rx="5"/>
+  <text x="590" y="243" class="tool-text" text-anchor="middle">Vector DBs</text>
+  <text x="590" y="260" class="box-text" text-anchor="middle">Pinecone (2021)</text>
+  <text x="590" y="275" class="box-text" text-anchor="middle">Weaviate</text>
+  <text x="590" y="290" class="box-text" text-anchor="middle">Milvus</text>
+  <text x="590" y="305" class="box-text" text-anchor="middle">ChromaDB (2022)</text>
+  <text x="590" y="320" class="box-text" text-anchor="middle">Embeddings</text>
+  <text x="640" y="248" class="new-label">NEW!</text>
+
+  <rect x="710" y="220" width="200" height="125" class="cloud-box" rx="5"/>
+  <text x="810" y="243" class="tool-text" text-anchor="middle">Modern Formats</text>
+  <text x="810" y="260" class="box-text" text-anchor="middle">Parquet/Arrow</text>
+  <text x="810" y="275" class="box-text" text-anchor="middle">Polars (2020)</text>
+  <text x="810" y="290" class="box-text" text-anchor="middle">DuckDB SQL</text>
+  <text x="810" y="305" class="box-text" text-anchor="middle">WASM Analytics</text>
+  <text x="810" y="320" class="box-text" text-anchor="middle">In-Browser DBs</text>
+
+  <rect x="930" y="220" width="220" height="125" class="ai-box" rx="5"/>
+  <text x="1040" y="243" class="tool-text" text-anchor="middle">MLOps</text>
+  <text x="1040" y="260" class="box-text" text-anchor="middle">MLflow (2018)</text>
+  <text x="1040" y="275" class="box-text" text-anchor="middle">Weights &amp; Biases</text>
+  <text x="1040" y="290" class="box-text" text-anchor="middle">Kubeflow</text>
+  <text x="1040" y="305" class="box-text" text-anchor="middle">Ray (2017~)</text>
+  <text x="1040" y="320" class="box-text" text-anchor="middle">Model Registry</text>
+
+  <!-- Arrow Down -->
+  <line x1="600" y1="350" x2="600" y2="380" stroke="#7f8c8d" stroke-width="2" marker-end="url(#arrowhead)"/>
+
+  <!-- Layer 2: AI-Enhanced Analysis -->
+  <rect x="30" y="380" width="1140" height="35" class="ai-box" rx="3"/>
+  <text x="600" y="403" class="box-title" text-anchor="middle">2. AI-Enhanced Analysis: Foundation Models Era</text>
+
+  <rect x="50" y="430" width="220" height="145" class="llm-box" rx="5"/>
+  <text x="160" y="453" class="tool-text" text-anchor="middle">LLM Integration</text>
+  <text x="160" y="473" class="box-text" text-anchor="middle">LangChain (2022)</text>
+  <text x="160" y="488" class="box-text" text-anchor="middle">LlamaIndex (2022)</text>
+  <text x="160" y="503" class="box-text" text-anchor="middle">AutoGPT/Agents</text>
+  <text x="160" y="518" class="box-text" text-anchor="middle">Code Generation</text>
+  <text x="160" y="533" class="box-text" text-anchor="middle">Data Analysis AI</text>
+  <text x="160" y="548" class="box-text" text-anchor="middle">GPT-4 Code Int.</text>
+  <text x="220" y="458" class="new-label">🔥🔥</text>
+
+  <rect x="290" y="430" width="200" height="145" class="ai-box" rx="5"/>
+  <text x="390" y="453" class="tool-text" text-anchor="middle">Python Ecosystem</text>
+  <text x="390" y="473" class="box-text" text-anchor="middle">pandas 2.0 (2023)</text>
+  <text x="390" y="488" class="box-text" text-anchor="middle">Polars (Rust)</text>
+  <text x="390" y="503" class="box-text" text-anchor="middle">PyTorch 2.0</text>
+  <text x="390" y="518" class="box-text" text-anchor="middle">JAX (Google)</text>
+  <text x="390" y="533" class="box-text" text-anchor="middle">Hugging Face</text>
+  <text x="390" y="548" class="box-text" text-anchor="middle">Transformers</text>
+
+  <rect x="510" y="430" width="200" height="145" class="ai-box" rx="5"/>
+  <text x="610" y="453" class="tool-text" text-anchor="middle">R Modern Stack</text>
+  <text x="610" y="473" class="box-text" text-anchor="middle">tidyverse 2.0</text>
+  <text x="610" y="488" class="box-text" text-anchor="middle">targets (2021)</text>
+  <text x="610" y="503" class="box-text" text-anchor="middle">vetiver (MLOps)</text>
+  <text x="610" y="518" class="box-text" text-anchor="middle">Posit Connect</text>
+  <text x="610" y="533" class="box-text" text-anchor="middle">gt/ggiraph</text>
+  <text x="610" y="548" class="box-text" text-anchor="middle">Interactive viz</text>
+
+  <rect x="730" y="430" width="200" height="145" class="llm-box" rx="5"/>
+  <text x="830" y="453" class="tool-text" text-anchor="middle">AI IDEs</text>
+  <text x="830" y="473" class="box-text" text-anchor="middle">Cursor (2023)</text>
+  <text x="830" y="488" class="box-text" text-anchor="middle">GitHub Copilot</text>
+  <text x="830" y="503" class="box-text" text-anchor="middle">Copilot Chat</text>
+  <text x="830" y="518" class="box-text" text-anchor="middle">Replit Ghostwriter</text>
+  <text x="830" y="533" class="box-text" text-anchor="middle">VSCode + AI</text>
+  <text x="830" y="548" class="box-text" text-anchor="middle">Pair Programming</text>
+
+  <rect x="950" y="430" width="200" height="145" class="cloud-box" rx="5"/>
+  <text x="1050" y="453" class="tool-text" text-anchor="middle">Cloud AI</text>
+  <text x="1050" y="473" class="box-text" text-anchor="middle">AWS Bedrock</text>
+  <text x="1050" y="488" class="box-text" text-anchor="middle">Azure OpenAI</text>
+  <text x="1050" y="503" class="box-text" text-anchor="middle">Google Vertex AI</text>
+  <text x="1050" y="518" class="box-text" text-anchor="middle">Serverless GPUs</text>
+  <text x="1050" y="533" class="box-text" text-anchor="middle">API-first ML</text>
+
+  <!-- Arrow Down -->
+  <line x1="600" y1="580" x2="600" y2="610" stroke="#7f8c8d" stroke-width="2" marker-end="url(#arrowhead)"/>
+
+  <!-- Layer 3: Next-Gen Documents -->
+  <rect x="30" y="610" width="1140" height="35" class="collab-box" rx="3"/>
+  <text x="600" y="633" class="box-title" text-anchor="middle">3. Document Generation: Literate Programming 2.0</text>
+
+  <rect x="50" y="660" width="260" height="155" class="collab-box" rx="5"/>
+  <text x="180" y="683" class="tool-text" text-anchor="middle">Quarto (2022)</text>
+  <text x="180" y="703" class="box-text" text-anchor="middle">Multi-language</text>
+  <text x="180" y="718" class="box-text" text-anchor="middle">Python/R/Julia/JS</text>
+  <text x="180" y="733" class="box-text" text-anchor="middle">Markdown Native</text>
+  <text x="180" y="748" class="box-text" text-anchor="middle">Books/Websites/Slides</text>
+  <text x="180" y="763" class="box-text" text-anchor="middle">GitHub Actions</text>
+  <text x="180" y="778" class="box-text" text-anchor="middle">Observable JS</text>
+  <text x="180" y="793" class="box-text" text-anchor="middle">Interactive Docs</text>
+  <text x="270" y="688" class="new-label">⭐</text>
+
+  <rect x="330" y="660" width="260" height="155" class="llm-box" rx="5"/>
+  <text x="460" y="683" class="tool-text" text-anchor="middle">AI-Powered Notebooks</text>
+  <text x="460" y="703" class="box-text" text-anchor="middle">Jupyter AI (2023)</text>
+  <text x="460" y="718" class="box-text" text-anchor="middle">Google Colab AI</text>
+  <text x="460" y="733" class="box-text" text-anchor="middle">Noteable (2023)</text>
+  <text x="460" y="748" class="box-text" text-anchor="middle">Deepnote AI</text>
+  <text x="460" y="763" class="box-text" text-anchor="middle">Hex Magic (2023)</text>
+  <text x="460" y="778" class="box-text" text-anchor="middle">AI Code/Text Gen</text>
+  <text x="460" y="793" class="box-text" text-anchor="middle">Natural Lang Query</text>
+
+  <rect x="610" y="660" width="260" height="155" class="cloud-box" rx="5"/>
+  <text x="740" y="683" class="tool-text" text-anchor="middle">Collaborative Platforms</text>
+  <text x="740" y="703" class="box-text" text-anchor="middle">Posit Cloud</text>
+  <text x="740" y="718" class="box-text" text-anchor="middle">Deepnote</text>
+  <text x="740" y="733" class="box-text" text-anchor="middle">Hex (2020)</text>
+  <text x="740" y="748" class="box-text" text-anchor="middle">Observable (2018~)</text>
+  <text x="740" y="763" class="box-text" text-anchor="middle">Mode/Sigma</text>
+  <text x="740" y="778" class="box-text" text-anchor="middle">Real-time Collab</text>
+  <text x="740" y="793" class="box-text" text-anchor="middle">Like Google Docs</text>
+
+  <rect x="890" y="660" width="260" height="155" class="collab-box" rx="5"/>
+  <text x="1020" y="683" class="tool-text" text-anchor="middle">Container-Native</text>
+  <text x="1020" y="703" class="box-text" text-anchor="middle">Dev Containers</text>
+  <text x="1020" y="718" class="box-text" text-anchor="middle">GitHub Codespaces</text>
+  <text x="1020" y="733" class="box-text" text-anchor="middle">Gitpod</text>
+  <text x="1020" y="748" class="box-text" text-anchor="middle">Binder 2.0</text>
+  <text x="1020" y="763" class="box-text" text-anchor="middle">VS Code Online</text>
+  <text x="1020" y="778" class="box-text" text-anchor="middle">Full Repro</text>
+  <text x="1020" y="793" class="box-text" text-anchor="middle">One-Click Run</text>
+
+  <!-- Layer 4: Distribution -->
+  <rect x="30" y="835" width="1140" height="35" class="llm-box" rx="3"/>
+  <text x="600" y="858" class="box-title" text-anchor="middle">4. Distribution: AI-Generated Reports &amp; Dashboards</text>
+
+  <rect x="80" y="885" width="200" height="45" class="collab-box" rx="5"/>
+  <text x="180" y="912" class="box-text" text-anchor="middle">GitHub Pages/Netlify</text>
+
+  <rect x="300" y="885" width="180" height="45" class="llm-box" rx="5"/>
+  <text x="390" y="912" class="box-text" text-anchor="middle">ChatGPT Data Analysis</text>
+
+  <rect x="500" y="885" width="200" height="45" class="cloud-box" rx="5"/>
+  <text x="600" y="912" class="box-text" text-anchor="middle">Streamlit/Gradio Apps</text>
+
+  <rect x="720" y="885" width="180" height="45" class="collab-box" rx="5"/>
+  <text x="810" y="912" class="box-text" text-anchor="middle">Observable/Quarto Pub</text>
+
+  <rect x="920" y="885" width="180" height="45" class="llm-box" rx="5"/>
+  <text x="1010" y="912" class="box-text" text-anchor="middle">AI Chatbot Interface</text>
+
+  <!-- Bottom Note -->
+  <text x="635" y="595" class="subtitle" text-anchor="middle">From "Code-First" to "Prompt-First": LLMs as Universal Interface to Data Science</text>
+</svg>

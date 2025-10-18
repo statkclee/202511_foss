@@ -1,0 +1,372 @@
+<svg viewBox="0 0 2200 1800" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .title { font-family: 'Noto Sans KR', sans-serif; font-size: 36px; font-weight: 700; fill: #1e3a8a; }
+      .subtitle { font-family: 'Noto Sans KR', sans-serif; font-size: 15px; font-weight: 600; fill: #475569; }
+      .section-title { font-family: 'Noto Sans KR', sans-serif; font-size: 19px; font-weight: 700; }
+      .tool-name { font-family: 'Noto Sans KR', sans-serif; font-size: 16px; font-weight: 700; }
+      .description { font-family: 'Noto Sans KR', sans-serif; font-size: 12px; }
+      .detail { font-family: 'Noto Sans KR', sans-serif; font-size: 11px; }
+      .status { font-family: 'Noto Sans KR', sans-serif; font-size: 13px; font-weight: 600; }
+    </style>
+
+    <!-- Gradients -->
+    <linearGradient id="workingGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color: #22c55e; stop-opacity: 1" />
+      <stop offset="100%" style="stop-color: #16a34e; stop-opacity: 1" />
+    </linearGradient>
+
+    <linearGradient id="limitedGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color: #f59e0b; stop-opacity: 1" />
+      <stop offset="100%" style="stop-color: #d97706; stop-opacity: 1" />
+    </linearGradient>
+
+    <linearGradient id="notWorkingGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color: #ef4444; stop-opacity: 1" />
+      <stop offset="100%" style="stop-color: #dc2626; stop-opacity: 1" />
+    </linearGradient>
+
+    <linearGradient id="futureGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color: #8b5cf6; stop-opacity: 1" />
+      <stop offset="100%" style="stop-color: #6d28d9; stop-opacity: 1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="2200" height="1800" fill="#f8fafc"/>
+
+  <!-- Title -->
+  <rect x="50" y="20" width="2100" height="90" rx="15" fill="white" stroke="#1e3a8a" stroke-width="4"/>
+  <text x="1100" y="55" text-anchor="middle" class="title">🔬 오픈소스 문서 생태계: 현실 검증</text>
+  <text x="1100" y="85" text-anchor="middle" class="subtitle">실제 작동하는 도구 vs LibreOffice 통합 가능성 vs 기술적 한계</text>
+
+  <!-- Section 1: 현재 작동하는 도구들 (초록색) -->
+  <rect x="50" y="140" width="1050" height="800" rx="12" fill="#f0fdf4" stroke="#22c55e" stroke-width="3"/>
+  <text x="575" y="175" text-anchor="middle" style="font-size: 24px; font-weight: 700; fill: #166534;">✅ 현재 완벽히 작동 중</text>
+
+  <!-- R Markdown -->
+  <g id="rmarkdown">
+    <rect x="70" y="195" width="490" height="180" rx="10" fill="white" stroke="#22c55e" stroke-width="2"/>
+    <text x="315" y="225" text-anchor="middle" class="tool-name" fill="#166534;">📊 R Markdown (2012~)</text>
+    <text x="80" y="250" class="description" fill="#1e293b;">✓ 실제 사용: 전 세계 수십만 연구자</text>
+    <text x="90" y="270" class="detail" fill="#475569;">• RStudio IDE 완벽 지원</text>
+    <text x="90" y="287" class="detail" fill="#475569;">• knitr 엔진: R 코드 → 결과 자동 삽입</text>
+    <text x="90" y="304" class="detail" fill="#475569;">• 출력: PDF(LaTeX), HTML, Word, 슬라이드</text>
+    <text x="90" y="321" class="detail" fill="#475569;">• bookdown: 책 출판 (100+ 책 출간)</text>
+    <text x="90" y="338" class="detail" fill="#475569;">• blogdown: 웹사이트 (Hugo 통합)</text>
+    <text x="80" y="362" class="status" fill="#16a34e;">✅ 성숙도: Production-ready, 13년 검증</text>
+  </g>
+
+  <!-- Jupyter Notebook -->
+  <g id="jupyter">
+    <rect x="70" y="390" width="490" height="180" rx="10" fill="white" stroke="#22c55e" stroke-width="2"/>
+    <text x="315" y="420" text-anchor="middle" class="tool-name" fill="#166534;">🐍 Jupyter Notebook (2014~)</text>
+    <text x="80" y="445" class="description" fill="#1e293b;">✓ 실제 사용: Python 데이터과학 표준</text>
+    <text x="90" y="465" class="detail" fill="#475569;">• IPython 커널: 40+ 언어 지원</text>
+    <text x="90" y="482" class="detail" fill="#475569;">• JupyterLab: 웹 기반 IDE</text>
+    <text x="90" y="499" class="detail" fill="#475569;">• nbconvert: HTML, PDF, LaTeX 변환</text>
+    <text x="90" y="516" class="detail" fill="#475569;">• Jupyter Book: 책 출판</text>
+    <text x="90" y="533" class="detail" fill="#475569;">• Google Colab: 클라우드 버전</text>
+    <text x="80" y="557" class="status" fill="#16a34e;">✅ 성숙도: 업계 표준, GitHub 900만 노트북</text>
+  </g>
+
+  <!-- Quarto -->
+  <g id="quarto">
+    <rect x="70" y="585" width="490" height="200" rx="10" fill="white" stroke="#22c55e" stroke-width="2"/>
+    <text x="315" y="615" text-anchor="middle" class="tool-name" fill="#166534;">📚 Quarto (2022~, Posit)</text>
+    <text x="80" y="640" class="description" fill="#1e293b;">✓ 실제 사용: R Markdown 차세대 버전</text>
+    <text x="90" y="660" class="detail" fill="#475569;">• R + Python + Julia 동시 지원</text>
+    <text x="90" y="677" class="detail" fill="#475569;">• Pandoc 기반: 범용 변환 엔진</text>
+    <text x="90" y="694" class="detail" fill="#475569;">• VS Code, RStudio, Jupyter 통합</text>
+    <text x="90" y="711" class="detail" fill="#475569;">• 출판: 웹사이트, 블로그, 책, 논문, 발표</text>
+    <text x="90" y="728" class="detail" fill="#475569;">• Observable JS: 인터랙티브 시각화</text>
+    <text x="90" y="745" class="detail" fill="#475569;">• 실사례: NASA, BBC, 대학교 강의노트</text>
+    <text x="80" y="769" class="status" fill="#16a34e;">✅ 성숙도: 빠르게 성장, Posit 공식 지원</text>
+  </g>
+
+  <!-- Pandoc -->
+  <g id="pandoc">
+    <rect x="70" y="800" width="490" height="125" rx="10" fill="white" stroke="#22c55e" stroke-width="2"/>
+    <text x="315" y="830" text-anchor="middle" class="tool-name" fill="#166534;">🔄 Pandoc (2006~, John MacFarlane)</text>
+    <text x="80" y="855" class="description" fill="#1e293b;">✓ 실제 사용: 범용 문서 변환 표준</text>
+    <text x="90" y="875" class="detail" fill="#475569;">• Markdown → PDF/LaTeX/HTML/DOCX/EPUB...</text>
+    <text x="90" y="892" class="detail" fill="#475569;">• 40+ 포맷 지원, Lua 필터 확장</text>
+    <text x="80" y="913" class="status" fill="#16a34e;">✅ 성숙도: 19년 검증, Haskell 안정성</text>
+  </g>
+
+  <!-- Org-mode -->
+  <g id="orgmode">
+    <rect x="590" y="195" width="490" height="180" rx="10" fill="white" stroke="#22c55e" stroke-width="2"/>
+    <text x="835" y="225" text-anchor="middle" class="tool-name" fill="#166534;">📝 Emacs Org-mode (2003~)</text>
+    <text x="600" y="250" class="description" fill="#1e293b;">✓ 실제 사용: Emacs 사용자 필수 도구</text>
+    <text x="610" y="270" class="detail" fill="#475569;">• 코드 블록 실행: Babel (40+ 언어)</text>
+    <text x="610" y="287" class="detail" fill="#475569;">• LaTeX 수식, 테이블, 그래프</text>
+    <text x="610" y="304" class="detail" fill="#475569;">• 출력: PDF, HTML, LaTeX, ODT</text>
+    <text x="610" y="321" class="detail" fill="#475569;">• org-roam: 지식 관리 (Zettelkasten)</text>
+    <text x="610" y="338" class="detail" fill="#475569;">• 실사례: Donald Knuth 사용 (문학적 프로그래밍)</text>
+    <text x="600" y="362" class="status" fill="#16a34e;">✅ 성숙도: 22년 검증, Emacs 생태계</text>
+  </g>
+
+  <!-- Observable Notebooks -->
+  <g id="observable">
+    <rect x="590" y="390" width="490" height="160" rx="10" fill="white" stroke="#22c55e" stroke-width="2"/>
+    <text x="835" y="420" text-anchor="middle" class="tool-name" fill="#166534;">📊 Observable (2018~, Mike Bostock)</text>
+    <text x="600" y="445" class="description" fill="#1e293b;">✓ 실제 사용: 웹 기반 인터랙티브 분석</text>
+    <text x="610" y="465" class="detail" fill="#475569;">• JavaScript 데이터 시각화 (D3.js 창시자)</text>
+    <text x="610" y="482" class="detail" fill="#475569;">• 실시간 반응형 셀 (Reactive cells)</text>
+    <text x="610" y="499" class="detail" fill="#475569;">• 웹 배포: 클릭 한 번으로 공개</text>
+    <text x="610" y="516" class="detail" fill="#475569;">• 실사례: NYT, WSJ 데이터 저널리즘</text>
+    <text x="600" y="538" class="status" fill="#16a34e;">✅ 성숙도: 웹 시각화 분야 리더</text>
+  </g>
+
+  <!-- LaTeX -->
+  <g id="latex">
+    <rect x="590" y="565" width="490" height="145" rx="10" fill="white" stroke="#22c55e" stroke-width="2"/>
+    <text x="835" y="595" text-anchor="middle" class="tool-name" fill="#166534;">📐 LaTeX + Overleaf (1984~/2012~)</text>
+    <text x="600" y="620" class="description" fill="#1e293b;">✓ 실제 사용: 학술 논문 출판 표준</text>
+    <text x="610" y="640" class="detail" fill="#475569;">• arXiv: 매년 20만+ 프리프린트 (100% LaTeX)</text>
+    <text x="610" y="657" class="detail" fill="#475569;">• Overleaf: 1,300만 사용자, 실시간 협업</text>
+    <text x="610" y="674" class="detail" fill="#475569;">• IEEE, ACM, Springer 템플릿 표준</text>
+    <text x="600" y="696" class="status" fill="#16a34e;">✅ 성숙도: 41년 검증, 학계 골드 스탠다드</text>
+  </g>
+
+  <!-- Typst -->
+  <g id="typst">
+    <rect x="590" y="725" width="490" height="145" rx="10" fill="white" stroke="#22c55e" stroke-width="2"/>
+    <text x="835" y="755" text-anchor="middle" class="tool-name" fill="#166534;">⚡ Typst (2023~, MIT 출신)</text>
+    <text x="600" y="780" class="description" fill="#1e293b;">✓ 신규 도구: LaTeX 현대화 (Rust 기반)</text>
+    <text x="610" y="800" class="detail" fill="#475569;">• 컴파일 속도: LaTeX 대비 10배+ 빠름</text>
+    <text x="610" y="817" class="detail" fill="#475569;">• 문법: Markdown + Python 혼합, 배우기 쉬움</text>
+    <text x="610" y="834" class="detail" fill="#475569;">• 웹 기반 에디터 + VS Code 플러그인</text>
+    <text x="600" y="856" class="status" fill="#16a34e;">✅ 성숙도: 초기 단계지만 빠르게 성장</text>
+  </g>
+
+  <!-- Section 2: LibreOffice 통합 시도 (주황색) -->
+  <rect x="1130" y="140" width="1020" height="550" rx="12" fill="#fffbeb" stroke="#f59e0b" stroke-width="3"/>
+  <text x="1640" y="175" text-anchor="middle" style="font-size: 24px; font-weight: 700; fill: #d97706;">⚠️ LibreOffice 통합: 부분 성공</text>
+
+  <!-- TexMaths Extension -->
+  <g id="texmaths">
+    <rect x="1150" y="195" width="480" height="150" rx="10" fill="white" stroke="#f59e0b" stroke-width="2"/>
+    <text x="1390" y="225" text-anchor="middle" class="tool-name" fill="#d97706;">📐 TexMaths Extension</text>
+    <text x="1160" y="250" class="description" fill="#1e293b;">✓ 작동: LibreOffice에서 LaTeX 수식 삽입</text>
+    <text x="1170" y="270" class="detail" fill="#475569;">• LaTeX 코드 → PNG/SVG 이미지 변환</text>
+    <text x="1170" y="287" class="detail" fill="#475569;">• 한계: 수식만 가능, 전체 문서 컴파일 불가</text>
+    <text x="1170" y="304" class="detail" fill="#475569;">• 실사례: 소수 사용자, 불편함</text>
+    <text x="1160" y="330" class="status" fill="#f59e0b;">⚠️ 제한적: 수식 임베딩만, 완전 통합 아님</text>
+  </g>
+
+  <!-- Python Macro -->
+  <g id="python-macro">
+    <rect x="1150" y="360" width="480" height="150" rx="10" fill="white" stroke="#f59e0b" stroke-width="2"/>
+    <text x="1390" y="390" text-anchor="middle" class="tool-name" fill="#d97706;">🐍 LibreOffice Python Macro</text>
+    <text x="1160" y="415" class="description" fill="#1e293b;">✓ 작동: Python으로 LibreOffice 자동화</text>
+    <text x="1170" y="435" class="detail" fill="#475569;">• UNO API: 문서 생성·편집 자동화</text>
+    <text x="1170" y="452" class="detail" fill="#475569;">• 한계: 코드 실행 결과 삽입 불가</text>
+    <text x="1170" y="469" class="detail" fill="#475569;">• 용도: 자동화용이지 문서 작성 도구 아님</text>
+    <text x="1160" y="495" class="status" fill="#f59e0b;">⚠️ 제한적: 자동화만, 라이터럴 프로그래밍 아님</text>
+  </g>
+
+  <!-- Writer2LaTeX -->
+  <g id="writer2latex">
+    <rect x="1150" y="525" width="480" height="150" rx="10" fill="white" stroke="#f59e0b" stroke-width="2"/>
+    <text x="1390" y="555" text-anchor="middle" class="tool-name" fill="#d97706;">🔄 Writer2LaTeX</text>
+    <text x="1160" y="580" class="description" fill="#1e293b;">✓ 작동: ODT → LaTeX 변환</text>
+    <text x="1170" y="600" class="detail" fill="#475569;">• 단방향 변환: Writer 문서를 LaTeX로</text>
+    <text x="1170" y="617" class="detail" fill="#475569;">• 한계: 변환 품질 낮음, 수동 수정 필요</text>
+    <text x="1170" y="634" class="detail" fill="#475569;">• 실사례: 거의 사용 안 됨</text>
+    <text x="1160" y="660" class="status" fill="#f59e0b;">⚠️ 제한적: 변환기일 뿐, 통합 아님</text>
+  </g>
+
+  <!-- Real Integration Attempts -->
+  <g id="real-attempts">
+    <rect x="1650" y="195" width="480" height="325" rx="10" fill="white" stroke="#f59e0b" stroke-width="2"/>
+    <text x="1890" y="225" text-anchor="middle" class="tool-name" fill="#d97706;">🔬 실제 통합 시도들</text>
+
+    <text x="1660" y="250" class="description" fill="#991b1b; font-weight: 600;">❌ 실패 사례:</text>
+    <text x="1670" y="270" class="detail" fill="#475569;">• Code::Blocks extension (2015, 중단)</text>
+    <text x="1670" y="287" class="detail" fill="#475569;">  → R/Python 실행, 유지보수 중단</text>
+    <text x="1670" y="304" class="detail" fill="#475569;">• Jupyter2Writer (2018, 프로토타입)</text>
+    <text x="1670" y="321" class="detail" fill="#475569;">  → Jupyter → ODT, 개념 증명만</text>
+
+    <text x="1660" y="346" class="description" fill="#16a34e; font-weight: 600;">✓ 우회 방법:</text>
+    <text x="1670" y="366" class="detail" fill="#475569;">• Quarto → DOCX → LibreOffice</text>
+    <text x="1670" y="383" class="detail" fill="#475569;">  → 작동하지만 왕복 편집 불가</text>
+    <text x="1670" y="400" class="detail" fill="#475569;">• Pandoc → ODT</text>
+    <text x="1670" y="417" class="detail" fill="#475569;">  → 기본 변환만, 고급 기능 손실</text>
+    <text x="1670" y="434" class="detail" fill="#475569;">• RStudio → Word → LibreOffice</text>
+    <text x="1670" y="451" class="detail" fill="#475569;">  → 수동 변환, 자동화 불가</text>
+
+    <text x="1660" y="476" class="description" fill="#1e293b; font-weight: 600;">💡 현실:</text>
+    <text x="1670" y="496" class="detail" fill="#991b1b;">아무도 LibreOffice에서 코드 실행하며</text>
+    <text x="1670" y="510" class="detail" fill="#991b1b;">문서 작성 안 함. 별도 도구 사용.</text>
+  </g>
+
+  <!-- Section 3: 기술적 한계 (빨간색) -->
+  <rect x="1130" y="710" width="1020" height="490" rx="12" fill="#fef2f2" stroke="#ef4444" stroke-width="3"/>
+  <text x="1640" y="745" text-anchor="middle" style="font-size: 24px; font-weight: 700; fill: #dc2626;">❌ 왜 LibreOffice 통합이 어려운가?</text>
+
+  <g id="technical-limits">
+    <rect x="1150" y="765" width="480" height="420" rx="10" fill="white" stroke="#dc2626" stroke-width="2"/>
+    <text x="1390" y="795" text-anchor="middle" class="tool-name" fill="#dc2626;">🚫 근본적 아키텍처 문제</text>
+
+    <text x="1160" y="820" class="description" fill="#991b1b; font-weight: 600;">1. 바이너리 WYSIWYG vs Plain Text</text>
+    <text x="1170" y="840" class="detail" fill="#475569;">• ODT는 ZIP 압축된 XML (복잡한 구조)</text>
+    <text x="1170" y="857" class="detail" fill="#475569;">• Markdown은 단순 텍스트 (Git diff 가능)</text>
+    <text x="1170" y="874" class="detail" fill="#475569;">• 코드 + 결과를 ODT에 저장? 불가능</text>
+
+    <text x="1160" y="899" class="description" fill="#991b1b; font-weight: 600;">2. 재현가능성 문제</text>
+    <text x="1170" y="919" class="detail" fill="#475569;">• R Markdown: 소스 코드만 저장</text>
+    <text x="1170" y="936" class="detail" fill="#475569;">  → 실행할 때마다 결과 재생성</text>
+    <text x="1170" y="953" class="detail" fill="#475569;">• LibreOffice: 결과 이미지만 저장</text>
+    <text x="1170" y="970" class="detail" fill="#475569;">  → 소스 코드 분리, 재현 불가</text>
+
+    <text x="1160" y="995" class="description" fill="#991b1b; font-weight: 600;">3. 버전 관리 불가</text>
+    <text x="1170" y="1015" class="detail" fill="#475569;">• Git diff: 텍스트 파일만 가능</text>
+    <text x="1170" y="1032" class="detail" fill="#475569;">• ODT: 바이너리 → 변경 추적 불가</text>
+    <text x="1170" y="1049" class="detail" fill="#475569;">• 협업 불가능 (merge conflict)</text>
+
+    <text x="1160" y="1074" class="description" fill="#991b1b; font-weight: 600;">4. 성능 문제</text>
+    <text x="1170" y="1094" class="detail" fill="#475569;">• LibreOffice는 GUI 애플리케이션</text>
+    <text x="1170" y="1111" class="detail" fill="#475569;">• CLI 자동화 (CI/CD) 어려움</text>
+    <text x="1170" y="1128" class="detail" fill="#475569;">• 서버에서 대량 문서 생성 불가</text>
+
+    <text x="1160" y="1153" class="description" fill="#991b1b; font-weight: 600;">5. 생태계 부재</text>
+    <text x="1170" y="1173" class="detail" fill="#475569;">• Extension 개발자 커뮤니티 작음</text>
+  </g>
+
+  <g id="why-others-work">
+    <rect x="1650" y="765" width="480" height="420" rx="10" fill="white" stroke="#dc2626" stroke-width="2"/>
+    <text x="1890" y="795" text-anchor="middle" class="tool-name" fill="#16a34e;">✅ 왜 다른 도구들은 성공했나?</text>
+
+    <text x="1660" y="820" class="description" fill="#16a34e; font-weight: 600;">R Markdown / Jupyter / Quarto</text>
+    <text x="1670" y="840" class="detail" fill="#475569;">✓ Plain Text 소스 (Markdown)</text>
+    <text x="1670" y="857" class="detail" fill="#475569;">✓ 코드 + 결과 재현 가능</text>
+    <text x="1670" y="874" class="detail" fill="#475569;">✓ Git 버전 관리 완벽</text>
+    <text x="1670" y="891" class="detail" fill="#475569;">✓ CLI 자동화 (CI/CD)</text>
+    <text x="1670" y="908" class="detail" fill="#475569;">✓ 강력한 커뮤니티</text>
+
+    <text x="1660" y="933" class="description" fill="#0891b2; font-weight: 600;">핵심 철학:</text>
+    <text x="1670" y="953" class="detail" fill="#475569;">"Source of Truth는 Plain Text"</text>
+    <text x="1670" y="970" class="detail" fill="#475569;">"최종 출력은 컴파일 결과"</text>
+    <text x="1670" y="987" class="detail" fill="#475569;">(LaTeX/Pandoc이 PDF/HTML 생성)</text>
+
+    <text x="1660" y="1012" class="description" fill="#7c3aed; font-weight: 600;">왜 WYSIWYG는 실패하는가?</text>
+    <text x="1670" y="1032" class="detail" fill="#991b1b;">• 편집 결과 = 최종 문서</text>
+    <text x="1670" y="1049" class="detail" fill="#991b1b;">• 소스와 결과가 분리 안 됨</text>
+    <text x="1670" y="1066" class="detail" fill="#991b1b;">• 재현성·버전관리 불가능</text>
+    <text x="1670" y="1083" class="detail" fill="#991b1b;">• → 문학적 프로그래밍 불가</text>
+
+    <text x="1660" y="1108" class="description" fill="#16a34e; font-weight: 600;">성공 방정식:</text>
+    <text x="1670" y="1128" class="detail" fill="#16a34e; font-weight: 700;">Plain Text + Code Execution</text>
+    <text x="1670" y="1145" class="detail" fill="#16a34e; font-weight: 700;">+ Pandoc/LaTeX Compiler</text>
+    <text x="1670" y="1162" class="detail" fill="#16a34e; font-weight: 700;">= Reproducible Documents</text>
+  </g>
+
+  <!-- Section 4: 현실적 해법 -->
+  <rect x="50" y="970" width="1050" height="380" rx="12" fill="#eff6ff" stroke="#3b82f6" stroke-width="3"/>
+  <text x="575" y="1005" text-anchor="middle" style="font-size: 24px; font-weight: 700; fill: #1e40af;">💡 현실적 해법: LibreOffice 대신 무엇을 쓸까?</text>
+
+  <g id="solution1">
+    <rect x="70" y="1025" width="320" height="310" rx="10" fill="white" stroke="#3b82f6" stroke-width="2"/>
+    <text x="230" y="1055" text-anchor="middle" class="tool-name" fill="#1e40af;">🎯 학술·연구</text>
+    <text x="80" y="1080" class="description" fill="#1e293b; font-weight: 600;">추천: Quarto + RStudio/VS Code</text>
+    <text x="90" y="1100" class="detail" fill="#475569;">장점:</text>
+    <text x="100" y="1117" class="detail" fill="#475569;">• R/Python/Julia 모두 지원</text>
+    <text x="100" y="1134" class="detail" fill="#475569;">• PDF(LaTeX), HTML, Word 출력</text>
+    <text x="100" y="1151" class="detail" fill="#475569;">• 재현가능 연구 완벽 지원</text>
+    <text x="100" y="1168" class="detail" fill="#475569;">• arXiv, JOSS 투고 가능</text>
+
+    <text x="80" y="1193" class="description" fill="#1e293b; font-weight: 600;">실사례:</text>
+    <text x="90" y="1213" class="detail" fill="#16a34e;">• NASA 기술 보고서</text>
+    <text x="90" y="1230" class="detail" fill="#16a34e;">• 대학 통계학 교과서</text>
+    <text x="90" y="1247" class="detail" fill="#16a34e;">• 박사 학위논문</text>
+
+    <text x="80" y="1272" class="description" fill="#dc2626; font-weight: 600;">LibreOffice는?</text>
+    <text x="90" y="1292" class="detail" fill="#991b1b;">→ 최종 검토용으로만 변환</text>
+    <text x="90" y="1309" class="detail" fill="#991b1b;">→ 주 작업 도구 아님</text>
+  </g>
+
+  <g id="solution2">
+    <rect x="410" y="1025" width="320" height="310" rx="10" fill="white" stroke="#3b82f6" stroke-width="2"/>
+    <text x="570" y="1055" text-anchor="middle" class="tool-name" fill="#1e40af;">💼 기업·실무</text>
+    <text x="420" y="1080" class="description" fill="#1e293b; font-weight: 600;">추천: Quarto + Jupyter + Git</text>
+    <text x="430" y="1100" class="detail" fill="#475569;">장점:</text>
+    <text x="440" y="1117" class="detail" fill="#475569;">• 데이터 분석 결과 자동 반영</text>
+    <text x="440" y="1134" class="detail" fill="#475569;">• Git으로 협업 (코드 리뷰)</text>
+    <text x="440" y="1151" class="detail" fill="#475569;">• CI/CD 자동 빌드</text>
+    <text x="440" y="1168" class="detail" fill="#475569;">• HTML 대시보드</text>
+
+    <text x="420" y="1193" class="description" fill="#1e293b; font-weight: 600;">실사례:</text>
+    <text x="430" y="1213" class="detail" fill="#16a34e;">• Netflix 데이터 리포트</text>
+    <text x="430" y="1230" class="detail" fill="#16a34e;">• 기술 블로그 (Medium)</text>
+    <text x="430" y="1247" class="detail" fill="#16a34e;">• API 문서 자동 생성</text>
+
+    <text x="420" y="1272" class="description" fill="#dc2626; font-weight: 600;">Word/LibreOffice는?</text>
+    <text x="430" y="1292" class="detail" fill="#991b1b;">→ 경영진 보고용 변환만</text>
+    <text x="430" y="1309" class="detail" fill="#991b1b;">→ 데이터는 텍스트로 관리</text>
+  </g>
+
+  <g id="solution3">
+    <rect x="750" y="1025" width="330" height="310" rx="10" fill="white" stroke="#3b82f6" stroke-width="2"/>
+    <text x="915" y="1055" text-anchor="middle" class="tool-name" fill="#1e40af;">📚 책·블로그 출판</text>
+    <text x="760" y="1080" class="description" fill="#1e293b; font-weight: 600;">추천: Quarto/Jupyter Book</text>
+    <text x="770" y="1100" class="detail" fill="#475569;">장점:</text>
+    <text x="780" y="1117" class="detail" fill="#475569;">• 웹사이트 + PDF + EPUB 동시</text>
+    <text x="780" y="1134" class="detail" fill="#475569;">• 검색 가능한 웹 버전</text>
+    <text x="780" y="1151" class="detail" fill="#475569;">• 인터랙티브 위젯</text>
+    <text x="780" y="1168" class="detail" fill="#475569;">• GitHub Pages 무료 호스팅</text>
+
+    <text x="760" y="1193" class="description" fill="#1e293b; font-weight: 600;">실사례:</text>
+    <text x="770" y="1213" class="detail" fill="#16a34e;">• "R for Data Science" 책</text>
+    <text x="770" y="1230" class="detail" fill="#16a34e;">  (Hadley Wickham, 무료 웹)</text>
+    <text x="770" y="1247" class="detail" fill="#16a34e;">• Python Data Science</text>
+    <text x="770" y="1264" class="detail" fill="#16a34e;">  Handbook (Jake VanderPlas)</text>
+
+    <text x="760" y="1289" class="description" fill="#dc2626; font-weight: 600;">LibreOffice는?</text>
+    <text x="770" y="1309" class="detail" fill="#991b1b;">→ 전혀 사용 안 함</text>
+  </g>
+
+  <!-- Bottom Conclusion -->
+  <rect x="50" y="1380" width="2100" height="390" rx="15" fill="#1e3a8a" stroke="#1e40af" stroke-width="4"/>
+  <text x="1100" y="1425" text-anchor="middle" style="font-size: 28px; font-weight: 700; fill: white;">
+    🎯 결론: LibreOffice 통합은 불가능하고 불필요하다
+  </text>
+
+  <rect x="80" y="1450" width="1000" height="300" rx="10" fill="white" opacity="0.95"/>
+  <text x="580" y="1485" text-anchor="middle" style="font-size: 18px; font-weight: 700; fill: #dc2626;">❌ 기술적으로 왜 불가능한가?</text>
+  <text x="100" y="1515" class="description" fill="#475569;">1. WYSIWYG vs Plain Text: 근본적 패러다임 충돌</text>
+  <text x="110" y="1535" class="detail" fill="#64748b;">• ODT 바이너리 구조 → Git 버전 관리 불가</text>
+  <text x="110" y="1552" class="detail" fill="#64748b;">• 재현가능 연구 불가능 (코드와 결과 분리)</text>
+
+  <text x="100" y="1577" class="description" fill="#475569;">2. 생태계 부재: Extension 개발자 없음</text>
+  <text x="110" y="1597" class="detail" fill="#64748b;">• 10년간 여러 시도, 모두 중단</text>
+  <text x="110" y="1614" class="detail" fill="#64748b;">• Jupyter/Quarto처럼 활발한 커뮤니티 없음</text>
+
+  <text x="100" y="1639" class="description" fill="#475569;">3. 성능 문제: GUI 애플리케이션 한계</text>
+  <text x="110" y="1659" class="detail" fill="#64748b;">• CLI 자동화 어려움 (CI/CD 불가)</text>
+  <text x="110" y="1676" class="detail" fill="#64748b;">• 서버 환경에서 대량 문서 생성 불가</text>
+
+  <text x="100" y="1701" class="description" fill="#16a34e; font-weight: 600;">✅ 현실: 대안 도구가 이미 완벽함</text>
+  <text x="110" y="1721" class="detail" fill="#16a34e;">• Quarto/Jupyter: Production-ready, 수백만 사용자</text>
+  <text x="110" y="1738" class="detail" fill="#16a34e;">• LibreOffice 통합 필요 없음</text>
+
+  <rect x="1100" y="1450" width="1020" height="300" rx="10" fill="white" opacity="0.95"/>
+  <text x="1610" y="1485" text-anchor="middle" style="font-size: 18px; font-weight: 700; fill: #16a34e;">✅ 실용적 해법</text>
+
+  <text x="1120" y="1515" class="description" fill="#1e40af; font-weight: 600;">전략 1: 텍스트 기반 도구 사용</text>
+  <text x="1130" y="1535" class="detail" fill="#475569;">• 주 작성: Quarto/R Markdown (Plain Text)</text>
+  <text x="1130" y="1552" class="detail" fill="#475569;">• 최종 출력: PDF (LaTeX), HTML, DOCX</text>
+  <text x="1130" y="1569" class="detail" fill="#475569;">• 협업: Git (GitHub/GitLab)</text>
+
+  <text x="1120" y="1594" class="description" fill="#1e40af; font-weight: 600;">전략 2: LibreOffice 역할 재정의</text>
+  <text x="1130" y="1614" class="detail" fill="#475569;">• 최종 검토·편집용으로만 사용</text>
+  <text x="1130" y="1631" class="detail" fill="#475569;">  (Quarto → DOCX → LibreOffice 열기)</text>
+  <text x="1130" y="1648" class="detail" fill="#475569;">• 소스 관리는 Markdown/Quarto</text>
+  <text x="1130" y="1665" class="detail" fill="#475569;">• 왕복 편집 포기 (단방향 변환만)</text>
+
+  <text x="1120" y="1690" class="description" fill="#7c3aed; font-weight: 600;">전략 3: HWP 탈출과 동일한 해법</text>
+  <text x="1130" y="1710" class="detail" fill="#7c3aed;">• HWP 문제: 폐쇄 포맷 → ISO 표준 전환</text>
+  <text x="1130" y="1727" class="detail" fill="#7c3aed;">• LibreOffice 한계: WYSIWYG → Plain Text로</text>
+  <text x="1130" y="1744" class="detail" fill="#16a34e; font-weight: 600;">→ 둘 다 해법은 "오픈 텍스트 표준"</text>
+</svg>

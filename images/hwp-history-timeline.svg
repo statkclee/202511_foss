@@ -1,0 +1,267 @@
+<svg viewBox="0 0 1600 900" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .title { font-family: 'Noto Sans KR', sans-serif; font-size: 32px; font-weight: 700; fill: #1e3a8a; }
+      .subtitle { font-family: 'Noto Sans KR', sans-serif; font-size: 16px; font-weight: 600; fill: #475569; }
+      .era-label { font-family: 'Noto Sans KR', sans-serif; font-size: 16px; font-weight: 700; fill: white; }
+      .year { font-family: 'Noto Sans KR', sans-serif; font-size: 16px; font-weight: 700; fill: #1e3a8a; }
+      .event { font-family: 'Noto Sans KR', sans-serif; font-size: 13px; font-weight: 600; fill: #1e293b; }
+      .description { font-family: 'Noto Sans KR', sans-serif; font-size: 12px; fill: #475569; }
+      .impact { font-family: 'Noto Sans KR', sans-serif; font-size: 12px; font-style: italic; fill: #dc2626; }
+    </style>
+
+    <linearGradient id="timelineGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color: #059669; stop-opacity: 1" />
+      <stop offset="25%" style="stop-color: #eab308; stop-opacity: 1" />
+      <stop offset="50%" style="stop-color: #f97316; stop-opacity: 1" />
+      <stop offset="75%" style="stop-color: #ef4444; stop-opacity: 1" />
+      <stop offset="100%" style="stop-color: #7f1d1d; stop-opacity: 1" />
+    </linearGradient>
+
+    <marker id="arrowRight" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#1e3a8a" />
+    </marker>
+  </defs>
+
+  <!-- Title -->
+  <text x="800" y="40" text-anchor="middle" class="title">아래한글(HWP) 역사 타임라인</text>
+  <text x="800" y="65" text-anchor="middle" class="subtitle">혁신의 시작에서 독점 고착화까지: 1989~2025 (36년)</text>
+
+  <!-- Main Timeline Bar -->
+  <rect x="100" y="100" width="1400" height="40" rx="20" fill="url(#timelineGradient)" stroke="#1e3a8a" stroke-width="2"/>
+
+  <!-- Timeline Arrow -->
+  <line x1="100" y1="120" x2="1500" y2="120" stroke="#1e3a8a" stroke-width="3" marker-end="url(#arrowRight)" opacity="0.3"/>
+
+  <!-- Era Labels on Timeline -->
+  <text x="180" y="125" text-anchor="middle" class="era-label" style="font-size: 13px;">🌱 혁신</text>
+  <text x="450" y="125" text-anchor="middle" class="era-label" style="font-size: 13px;">📈 지배</text>
+  <text x="800" y="125" text-anchor="middle" class="era-label" style="font-size: 13px;">🔒 독점</text>
+  <text x="1150" y="125" text-anchor="middle" class="era-label" style="font-size: 13px;">⚠️ 정체</text>
+  <text x="1420" y="125" text-anchor="middle" class="era-label" style="font-size: 13px;">🚨 위기</text>
+
+  <!-- Year Markers -->
+  <text x="100" y="95" text-anchor="middle" style="font-size: 12px; font-weight: 700; fill: #059669;">1989</text>
+  <text x="380" y="95" text-anchor="middle" style="font-size: 12px; font-weight: 700; fill: #eab308;">1997</text>
+  <text x="660" y="95" text-anchor="middle" style="font-size: 12px; font-weight: 700; fill: #f97316;">2007</text>
+  <text x="940" y="95" text-anchor="middle" style="font-size: 12px; font-weight: 700; fill: #ef4444;">2015</text>
+  <text x="1220" y="95" text-anchor="middle" style="font-size: 12px; font-weight: 700; fill: #7f1d1d;">2020</text>
+  <text x="1500" y="95" text-anchor="middle" style="font-size: 12px; font-weight: 700; fill: #450a0a;">2025</text>
+
+  <!-- Event 1: 1989 - Birth -->
+  <g id="event1989">
+    <circle cx="100" cy="120" r="15" fill="#059669" stroke="white" stroke-width="3"/>
+    <line x1="100" y1="135" x2="100" y2="180" stroke="#059669" stroke-width="2"/>
+
+    <rect x="20" y="180" width="160" height="120" rx="8" fill="#d1fae5" stroke="#059669" stroke-width="2"/>
+    <text x="100" y="200" text-anchor="middle" class="year" style="fill: #059669;">1989</text>
+    <text x="30" y="218" class="event">아래한글 1.0 출시</text>
+    <text x="30" y="233" class="description">• 이찬진 개발</text>
+    <text x="30" y="246" class="description">• DOS 한글 혁신</text>
+    <text x="30" y="259" class="description">• 저렴한 국산 SW</text>
+    <text x="30" y="272" class="description">• 한글 2벌식 지원</text>
+    <text x="100" y="290" text-anchor="middle" class="impact" style="fill: #059669;">✓ 혁신의 시작</text>
+  </g>
+
+  <!-- Event 2: 1997 - Windows Era -->
+  <g id="event1997">
+    <circle cx="380" cy="120" r="15" fill="#eab308" stroke="white" stroke-width="3"/>
+    <line x1="380" y1="135" x2="380" y2="330" stroke="#eab308" stroke-width="2"/>
+
+    <rect x="300" y="330" width="160" height="120" rx="8" fill="#fef3c7" stroke="#eab308" stroke-width="2"/>
+    <text x="380" y="350" text-anchor="middle" class="year" style="fill: #ca8a04;">1997</text>
+    <text x="310" y="368" class="event">아래한글 97</text>
+    <text x="310" y="383" class="description">• Windows 본격화</text>
+    <text x="310" y="396" class="description">• GUI 대폭 개선</text>
+    <text x="310" y="409" class="description">• 공공기관 납품 시작</text>
+    <text x="310" y="422" class="description">• 시장 점유율 급증</text>
+    <text x="380" y="440" text-anchor="middle" class="impact" style="fill: #ca8a04;">⚠️ 지배력 확보</text>
+  </g>
+
+  <!-- Event 3: 1999-2002 - Public Sector -->
+  <g id="event2000">
+    <circle cx="520" cy="120" r="15" fill="#eab308" stroke="white" stroke-width="3"/>
+    <line x1="520" y1="135" x2="520" y2="180" stroke="#eab308" stroke-width="2"/>
+
+    <rect x="440" y="180" width="160" height="120" rx="8" fill="#fef3c7" stroke="#eab308" stroke-width="2"/>
+    <text x="520" y="200" text-anchor="middle" class="year" style="fill: #ca8a04;">1999~2002</text>
+    <text x="450" y="218" class="event">공공 표준화 시작</text>
+    <text x="450" y="233" class="description">• 정부·지자체 도입</text>
+    <text x="450" y="246" class="description">• "한글=HWP" 인식</text>
+    <text x="450" y="259" class="description">• 대량 구매 계약</text>
+    <text x="450" y="272" class="description">• 사실상 표준화</text>
+    <text x="520" y="290" text-anchor="middle" class="impact" style="fill: #ca8a04;">⚠️ 독점 구조 형성</text>
+  </g>
+
+  <!-- Event 4: 2007 - Mandatory -->
+  <g id="event2007">
+    <circle cx="660" cy="120" r="15" fill="#f97316" stroke="white" stroke-width="3"/>
+    <line x1="660" y1="135" x2="660" y2="330" stroke="#f97316" stroke-width="2"/>
+
+    <rect x="580" y="330" width="160" height="135" rx="8" fill="#ffedd5" stroke="#f97316" stroke-width="2"/>
+    <text x="660" y="350" text-anchor="middle" class="year" style="fill: #c2410c;">2007</text>
+    <text x="590" y="368" class="event">HWP 사실상 강제</text>
+    <text x="590" y="383" class="description">• 입찰·공모 HWP 필수</text>
+    <text x="590" y="396" class="description">• 대안 포맷 탈락</text>
+    <text x="590" y="409" class="description">• 민원도 HWP 요구</text>
+    <text x="590" y="422" class="description">• Lock-in 완성</text>
+    <text x="590" y="435" class="description">• 선택권 박탈</text>
+    <text x="660" y="455" text-anchor="middle" class="impact">❌ 독점 고착화</text>
+  </g>
+
+  <!-- Event 5: 2010 - ODF Failure -->
+  <g id="event2010">
+    <circle cx="800" cy="120" r="15" fill="#f97316" stroke="white" stroke-width="3"/>
+    <line x1="800" y1="135" x2="800" y2="180" stroke="#f97316" stroke-width="2"/>
+
+    <rect x="720" y="180" width="160" height="120" rx="8" fill="#ffedd5" stroke="#f97316" stroke-width="2"/>
+    <text x="800" y="200" text-anchor="middle" class="year" style="fill: #c2410c;">2010</text>
+    <text x="730" y="218" class="event">ODF 표준 시도 실패</text>
+    <text x="730" y="233" class="description">• 행안부 권고 무산</text>
+    <text x="730" y="246" class="description">• 기존 자산 관성</text>
+    <text x="730" y="259" class="description">• 현장 저항 심함</text>
+    <text x="730" y="272" class="description">• 대안 기회 상실</text>
+    <text x="800" y="290" text-anchor="middle" class="impact">❌ 탈출 실패</text>
+  </g>
+
+  <!-- Event 6: 2015-2017 - Security Issues -->
+  <g id="event2015">
+    <circle cx="940" cy="120" r="15" fill="#ef4444" stroke="white" stroke-width="3"/>
+    <line x1="940" y1="135" x2="940" y2="330" stroke="#ef4444" stroke-width="2"/>
+
+    <rect x="860" y="330" width="160" height="120" rx="8" fill="#fee2e2" stroke="#ef4444" stroke-width="2"/>
+    <text x="940" y="350" text-anchor="middle" class="year" style="fill: #dc2626;">2015~2017</text>
+    <text x="870" y="368" class="event">보안·호환 문제</text>
+    <text x="870" y="383" class="description">• 해킹 사고 다수</text>
+    <text x="870" y="396" class="description">• 악성코드 유포</text>
+    <text x="870" y="409" class="description">• Mac/Linux 소외</text>
+    <text x="870" y="422" class="description">• 모바일 미흡</text>
+    <text x="940" y="440" text-anchor="middle" class="impact">❌ 품질 정체</text>
+  </g>
+
+  <!-- Event 7: 2018-2019 - Criticism -->
+  <g id="event2018">
+    <circle cx="1080" cy="120" r="15" fill="#ef4444" stroke="white" stroke-width="3"/>
+    <line x1="1080" y1="135" x2="1080" y2="180" stroke="#ef4444" stroke-width="2"/>
+
+    <rect x="1000" y="180" width="160" height="105" rx="8" fill="#fee2e2" stroke="#ef4444" stroke-width="2"/>
+    <text x="1080" y="200" text-anchor="middle" class="year" style="fill: #dc2626;">2018~2019</text>
+    <text x="1010" y="218" class="event">독점 논란 증폭</text>
+    <text x="1010" y="233" class="description">• 공정위 지적</text>
+    <text x="1010" y="246" class="description">• 국회 문제 제기</text>
+    <text x="1010" y="259" class="description">• 개선 지지부진</text>
+    <text x="1080" y="277" text-anchor="middle" class="impact">❌ 혁신 동기 부족</text>
+  </g>
+
+  <!-- Event 8: 2020-2023 - AI Era -->
+  <g id="event2020">
+    <circle cx="1220" cy="120" r="15" fill="#7f1d1d" stroke="white" stroke-width="3"/>
+    <line x1="1220" y1="135" x2="1220" y2="330" stroke="#7f1d1d" stroke-width="2"/>
+
+    <rect x="1140" y="330" width="160" height="135" rx="8" fill="#fecaca" stroke="#7f1d1d" stroke-width="2"/>
+    <text x="1220" y="350" text-anchor="middle" class="year" style="fill: #7f1d1d;">2020~2023</text>
+    <text x="1150" y="368" class="event">AI 시대 부적합</text>
+    <text x="1150" y="383" class="description">• 기계가독 불가</text>
+    <text x="1150" y="396" class="description">• LLM 파이프라인 단절</text>
+    <text x="1150" y="409" class="description">• 행정 데이터 지연</text>
+    <text x="1150" y="422" class="description">• 국제 협업 제약</text>
+    <text x="1150" y="435" class="description">• 오픈사이언스 충돌</text>
+    <text x="1220" y="455" text-anchor="middle" class="impact">❌ 시대 역행</text>
+  </g>
+
+  <!-- Event 9: 2024-2025 - Current Crisis -->
+  <g id="event2024">
+    <circle cx="1360" cy="120" r="18" fill="#450a0a" stroke="#fef2f2" stroke-width="4"/>
+    <text x="1360" y="128" text-anchor="middle" style="font-size: 16px; font-weight: 700; fill: white;">!</text>
+    <line x1="1360" y1="138" x2="1360" y2="180" stroke="#450a0a" stroke-width="3"/>
+
+    <rect x="1280" y="180" width="160" height="120" rx="8" fill="#7f1d1d" stroke="#450a0a" stroke-width="3"/>
+    <text x="1360" y="200" text-anchor="middle" class="year" style="fill: #fef2f2;">2024~현재</text>
+    <text x="1290" y="218" class="event" style="fill: #fef2f2;">디지털 장벽 규정</text>
+    <text x="1290" y="233" class="description" style="fill: #fecaca;">• AI 인프라 방해</text>
+    <text x="1290" y="246" class="description" style="fill: #fecaca;">• 국가 경쟁력 저하</text>
+    <text x="1290" y="259" class="description" style="fill: #fecaca;">• 전환 필요성 명확</text>
+    <text x="1290" y="272" class="description" style="fill: #fecaca;">• '악'으로 재규정</text>
+    <text x="1360" y="290" text-anchor="middle" class="impact" style="fill: #fef2f2;">🚨 현재 위기</text>
+  </g>
+
+  <!-- Bottom Summary -->
+  <rect x="50" y="490" width="1500" height="380" rx="15" fill="#f8fafc" stroke="#cbd5e1" stroke-width="3"/>
+
+  <text x="800" y="525" text-anchor="middle" style="font-size: 24px; font-weight: 700; fill: #1e3a8a;">
+    📊 36년 역사의 교훈: 혁신 → 지배 → 독점 → 정체 → 위기
+  </text>
+
+  <!-- Era Breakdown -->
+  <g id="era-summary">
+    <!-- Era 1 -->
+    <rect x="80" y="550" width="280" height="130" rx="8" fill="#d1fae5" stroke="#059669" stroke-width="2"/>
+    <rect x="80" y="550" width="280" height="30" rx="8" fill="#059669"/>
+    <text x="220" y="572" text-anchor="middle" style="font-size: 14px; font-weight: 700; fill: white;">🌱 1기: 혁신 (1989~1996)</text>
+    <text x="95" y="600" style="font-size: 11px; fill: #047857;">• 7년: DOS 시대 한글 처리 혁신</text>
+    <text x="95" y="620" style="font-size: 11px; fill: #047857;">• 국산 SW 자긍심 확립</text>
+    <text x="95" y="640" style="font-size: 11px; fill: #047857;">• 저렴하고 우수한 기능</text>
+    <text x="220" y="665" text-anchor="middle" style="font-size: 12px; font-weight: 700; fill: #059669;">✓ 긍정적 유산</text>
+
+    <!-- Era 2 -->
+    <rect x="380" y="550" width="280" height="130" rx="8" fill="#fef3c7" stroke="#eab308" stroke-width="2"/>
+    <rect x="380" y="550" width="280" height="30" rx="8" fill="#eab308"/>
+    <text x="520" y="572" text-anchor="middle" style="font-size: 14px; font-weight: 700; fill: white;">📈 2기: 지배 (1997~2006)</text>
+    <text x="395" y="600" style="font-size: 11px; fill: #a16207;">• 10년: Windows 시대 시장 장악</text>
+    <text x="395" y="620" style="font-size: 11px; fill: #a16207;">• 공공기관 표준 채택 시작</text>
+    <text x="395" y="640" style="font-size: 11px; fill: #a16207;">• "한글 문서=HWP" 인식 확산</text>
+    <text x="520" y="665" text-anchor="middle" style="font-size: 12px; font-weight: 700; fill: #ca8a04;">⚠️ 독점 구조 형성</text>
+
+    <!-- Era 3 -->
+    <rect x="680" y="550" width="280" height="130" rx="8" fill="#ffedd5" stroke="#f97316" stroke-width="2"/>
+    <rect x="680" y="550" width="280" height="30" rx="8" fill="#f97316"/>
+    <text x="820" y="572" text-anchor="middle" style="font-size: 14px; font-weight: 700; fill: white;">🔒 3기: 독점 (2007~2014)</text>
+    <text x="695" y="600" style="font-size: 11px; fill: #c2410c;">• 8년: HWP 사실상 강제화</text>
+    <text x="695" y="620" style="font-size: 11px; fill: #c2410c;">• ODF 표준 전환 실패</text>
+    <text x="695" y="640" style="font-size: 11px; fill: #c2410c;">• Lock-in 완성, 탈출 불가</text>
+    <text x="820" y="665" text-anchor="middle" style="font-size: 12px; font-weight: 700; fill: #f97316;">❌ 독점 고착화</text>
+
+    <!-- Era 4 -->
+    <rect x="980" y="550" width="280" height="130" rx="8" fill="#fee2e2" stroke="#ef4444" stroke-width="2"/>
+    <rect x="980" y="550" width="280" height="30" rx="8" fill="#ef4444"/>
+    <text x="1120" y="572" text-anchor="middle" style="font-size: 14px; font-weight: 700; fill: white;">⚠️ 4기: 정체 (2015~2019)</text>
+    <text x="995" y="600" style="font-size: 11px; fill: #dc2626;">• 5년: 보안·호환 문제 반복</text>
+    <text x="995" y="620" style="font-size: 11px; fill: #dc2626;">• 독점 논란 증폭, 개선 부진</text>
+    <text x="995" y="640" style="font-size: 11px; fill: #dc2626;">• 혁신 동기 상실</text>
+    <text x="1120" y="665" text-anchor="middle" style="font-size: 12px; font-weight: 700; fill: #ef4444;">❌ 품질 정체</text>
+
+    <!-- Era 5 -->
+    <rect x="1280" y="550" width="280" height="130" rx="8" fill="#fecaca" stroke="#7f1d1d" stroke-width="2"/>
+    <rect x="1280" y="550" width="280" height="30" rx="8" fill="#7f1d1d"/>
+    <text x="1420" y="572" text-anchor="middle" style="font-size: 14px; font-weight: 700; fill: white;">🚨 5기: 위기 (2020~현재)</text>
+    <text x="1295" y="600" style="font-size: 11px; fill: #991b1b;">• 6년: AI 시대 치명적 부적합</text>
+    <text x="1295" y="620" style="font-size: 11px; fill: #991b1b;">• 기계가독·자동화 불가</text>
+    <text x="1295" y="640" style="font-size: 11px; fill: #991b1b;">• 디지털 전환 속도 저하</text>
+    <text x="1420" y="665" text-anchor="middle" style="font-size: 12px; font-weight: 700; fill: #7f1d1d;">❌ '악'으로 규정</text>
+  </g>
+
+  <!-- Key Insight -->
+  <rect x="80" y="710" width="1480" height="140" rx="10" fill="#1e3a8a" stroke="#1e40af" stroke-width="3"/>
+
+  <text x="800" y="745" text-anchor="middle" style="font-size: 20px; font-weight: 700; fill: white;">
+    💡 핵심 인사이트
+  </text>
+
+  <text x="100" y="775" style="font-size: 13px; fill: #dbeafe;">
+    • <tspan font-weight="700">초기 7년(1989~1996)</tspan>은 혁신으로 평가되나, <tspan font-weight="700">이후 29년(1997~현재)</tspan>은 독점 고착화와 시대 부적합으로 전락
+  </text>
+
+  <text x="100" y="800" style="font-size: 13px; fill: #dbeafe;">
+    • <tspan font-weight="700">전환점은 2007년</tspan>: HWP 사실상 강제화로 Lock-in 완성, 이후 품질·혁신 정체 지속
+  </text>
+
+  <text x="100" y="825" style="font-size: 13px; fill: #dbeafe;">
+    • <tspan font-weight="700">현재(2020~)</tspan>: AI·데이터 시대와 정면 충돌. 기계가독·자동화·글로벌호환 모두 불가 → 국가 디지털 전환 장애물
+  </text>
+
+  <rect x="100" y="835" width="1400" height="1" fill="#3b82f6" opacity="0.3"/>
+
+  <text x="800" y="865" text-anchor="middle" style="font-size: 14px; font-weight: 700; fill: #fef2f2;">
+    ⚖️ 결론: 과거의 혁신을 인정하되, 현재는 '과거의 영광에 갇힌 독점'으로 전환이 시급하다
+  </text>
+</svg>

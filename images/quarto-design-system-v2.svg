@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 1200 850" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .main-title { font-family: 'ET Book', 'Palatino Linotype', 'Book Antiqua', Palatino, serif; font-size: 28px; font-weight: 600; fill: #111111; }
+      .section-title { font-family: 'ET Book', 'Palatino Linotype', 'Book Antiqua', Palatino, serif; font-size: 20px; font-weight: 600; fill: #222222; }
+      .concept-title { font-family: 'ET Book', 'Palatino Linotype', 'Book Antiqua', Palatino, serif; font-size: 16px; font-weight: 600; fill: #333333; }
+      .subtitle { font-family: 'ET Book', 'Palatino Linotype', 'Book Antiqua', Palatino, serif; font-size: 14px; fill: #555555; font-style: italic; }
+      .desc-text { font-family: 'ET Book', 'Palatino Linotype', 'Book Antiqua', Palatino, serif; font-size: 13px; fill: #555555; }
+      .code-text { font-family: 'Consolas', 'Monaco', 'Courier New', monospace; font-size: 11px; fill: #444444; }
+      .question-text { font-family: 'ET Book', 'Palatino Linotype', 'Book Antiqua', Palatino, serif; font-size: 14px; font-weight: 600; fill: #666666; font-style: italic; }
+      .layer-label { font-family: 'ET Book', 'Palatino Linotype', 'Book Antiqua', Palatino, serif; font-size: 18px; fill: #232323ff; font-weight: bold}
+
+      .design-outer { fill: none; stroke: #333333; stroke-width: 2; stroke-dasharray: 5,3; }
+      .branding-box { fill: #FFF5F5; stroke: #E74C3C; stroke-width: 1.5; }
+      .theme-box { fill: #F0F8FF; stroke: #4A90E2; stroke-width: 1.5; }
+      .style-box { fill: #FFFEF0; stroke: #F39C12; stroke-width: 1.5; }
+      .scenario-box { fill: #F0FFF0; stroke: #50B83C; stroke-width: 1.5; }
+
+      .hierarchy-line { stroke: #AAAAAA; stroke-width: 1; fill: none; }
+      .arrow-line { stroke: #999999; stroke-width: 1.5; fill: none; marker-end: url(#arrowhead); }
+    </style>
+
+    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#999999" />
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="850" fill="#FEFEFE"/>
+
+  <!-- Main Title -->
+  <text x="600" y="35" text-anchor="middle" class="main-title">Quarto Design System: 개념과 계층 구조</text>
+  <text x="600" y="57" text-anchor="middle" class="subtitle">디자인 • 테마 • 스타일 • 브랜딩의 관계와 역할</text>
+
+  <!-- Design Outer Container (가장 큰 개념) -->
+  <rect x="40" y="85" width="1120" height="400" rx="8" class="design-outer"/>
+  <text x="70" y="110" class="section-title">디자인 (Design)</text>
+  <text x="70" y="128" class="question-text">"어떻게 보일까?" - 전체적인 시각적/구조적 설계</text>
+
+  <!-- Left Section: Branding -->
+  <g id="branding-section">
+    <rect x="70" y="150" width="340" height="310" rx="5" class="branding-box"/>
+    <text x="240" y="175" text-anchor="middle" class="concept-title">브랜딩 (Branding)</text>
+    <text x="240" y="193" text-anchor="middle" class="question-text">"우리 회사 색깔/로고로"</text>
+
+    <text x="90" y="215" class="desc-text" font-weight="600">목적: 조직 정체성</text>
+    <text x="90" y="235" class="desc-text">포함 요소:</text>
+    <text x="100" y="252" class="desc-text">• 로고 &amp; 파비콘</text>
+    <text x="100" y="267" class="desc-text">• 브랜드 색상 팔레트</text>
+    <text x="100" y="282" class="desc-text">• 전용 폰트</text>
+    <text x="100" y="297" class="desc-text">• 아이콘/이미지</text>
+    <text x="100" y="312" class="desc-text">• 일관된 톤앤매너</text>
+
+    <text x="90" y="335" class="code-text">brand.yml:</text>
+    <text x="100" y="350" class="code-text">brand:</text>
+    <text x="110" y="365" class="code-text">  color:</text>
+    <text x="120" y="380" class="code-text">    primary: "#1f77b4"</text>
+    <text x="120" y="393" class="code-text">    secondary: "#ff7f0e"</text>
+    <text x="110" y="408" class="code-text">  typography:</text>
+    <text x="120" y="423" class="code-text">    base: "Noto Sans KR"</text>
+    <text x="110" y="438" class="code-text">  logo: company-logo.png</text>
+  </g>
+
+  <!-- Center Section: Theme -->
+  <g id="theme-section">
+    <rect x="440" y="150" width="320" height="310" rx="5" class="theme-box"/>
+    <text x="600" y="175" text-anchor="middle" class="concept-title">테마 (Theme)</text>
+    <text x="600" y="193" text-anchor="middle" class="question-text">"미리 만들어진 룩앤필 세트"</text>
+
+    <text x="460" y="215" class="desc-text" font-weight="600">목적: 빠른 일관성 확보</text>
+    <text x="460" y="235" class="desc-text">특징:</text>
+    <text x="470" y="252" class="desc-text">• 사전 정의된 디자인 패키지</text>
+    <text x="470" y="267" class="desc-text">• 즉시 적용 가능</text>
+    <text x="470" y="282" class="desc-text">• 색상+폰트+레이아웃 조합</text>
+
+    <text x="460" y="305" class="desc-text" font-weight="600">Quarto 내장 테마 (25+):</text>
+    <text x="470" y="322" class="code-text">default, cosmo, flatly, darkly,</text>
+    <text x="470" y="335" class="code-text">journal, litera, lumen, minty,</text>
+    <text x="470" y="348" class="code-text">pulse, sandstone, simplex ...</text>
+
+    <text x="460" y="370" class="code-text">_quarto.yml:</text>
+    <text x="470" y="385" class="code-text">format:</text>
+    <text x="480" y="400" class="code-text">  html:</text>
+    <text x="490" y="415" class="code-text">    theme: cosmo</text>
+    <text x="490" y="430" class="code-text">    # 또는 조합</text>
+    <text x="490" y="445" class="code-text">    theme: [cosmo, custom.scss]</text>
+  </g>
+
+  <!-- Right Section: Style -->
+  <g id="style-section">
+    <rect x="790" y="150" width="340" height="310" rx="5" class="style-box"/>
+    <text x="960" y="175" text-anchor="middle" class="concept-title">스타일 (Style)</text>
+    <text x="960" y="193" text-anchor="middle" class="question-text">"이 버튼은 파란색, 14px"</text>
+
+    <text x="810" y="215" class="desc-text" font-weight="600">목적: 세부 조정</text>
+    <text x="810" y="235" class="desc-text">범위: 개별 요소의 시각적 속성</text>
+    <text x="820" y="252" class="desc-text">• CSS 속성</text>
+    <text x="820" y="267" class="desc-text">• 폰트 크기/색상</text>
+    <text x="820" y="282" class="desc-text">• 여백/패딩</text>
+    <text x="820" y="297" class="desc-text">• 테두리</text>
+
+    <text x="810" y="320" class="code-text">custom.scss:</text>
+    <text x="820" y="335" class="code-text">$body-bg: #f8f9fa;</text>
+    <text x="820" y="348" class="code-text">$link-color: #0d6efd;</text>
+    <text x="820" y="361" class="code-text">$font-family-sans-serif:</text>
+    <text x="830" y="376" class="code-text">  "Noto Sans KR";</text>
+
+    <text x="810" y="398" class="code-text">YAML 스타일 설정:</text>
+    <text x="820" y="413" class="code-text">code-fold: true</text>
+    <text x="820" y="426" class="code-text">code-line-numbers: true</text>
+    <text x="820" y="439" class="code-text">fontsize: 11pt</text>
+  </g>
+
+  <!-- Hierarchy Connections -->
+  <g id="hierarchy" transform="translate(0, 20)">
+    <text x="600" y="490" text-anchor="middle" class="section-title">계층 구조 및 관계</text>
+
+    <!-- Horizontal line showing hierarchy -->
+    <line x1="100" y1="510" x2="1100" y2="510" class="hierarchy-line" stroke-width="2"/>
+
+    <!-- Branding branch -->
+    <line x1="240" y1="510" x2="240" y2="530" class="hierarchy-line"/>
+    <text x="240" y="548" text-anchor="middle" class="layer-label">정체성 중심</text>
+
+    <!-- Theme branch -->
+    <line x1="600" y1="510" x2="600" y2="530" class="hierarchy-line"/>
+    <text x="600" y="548" text-anchor="middle" class="layer-label">패키지 중심</text>
+
+    <!-- Style branch -->
+    <line x1="960" y1="510" x2="960" y2="530" class="hierarchy-line"/>
+    <text x="960" y="548" text-anchor="middle" class="layer-label">속성 중심</text>
+  </g>
+
+  <!-- Practical Scenarios -->
+  <g id="scenarios">
+    <!-- Scenario 1: Personal Blog -->
+    <rect x="70" y="610" width="520" height="210" rx="5" class="scenario-box"/>
+    <text x="330" y="635" text-anchor="middle" class="concept-title">시나리오 1: 개인 블로그</text>
+
+    <text x="90" y="658" class="desc-text" font-weight="600">빠른 시작 (테마 중심)</text>
+    <text x="90" y="678" class="code-text">---</text>
+    <text x="90" y="691" class="code-text">title: "나의 블로그"</text>
+    <text x="90" y="704" class="code-text">format:</text>
+    <text x="100" y="719" class="code-text">  html:</text>
+    <text x="110" y="734" class="code-text">    theme: cosmo              # 테마 선택 (빠른 시작)</text>
+    <text x="110" y="749" class="code-text">    code-fold: true           # 스타일 커스터마이징</text>
+    <text x="110" y="764" class="code-text">    fig-align: center         # 디자인 설정</text>
+    <text x="110" y="779" class="code-text">    # 브랜딩 불필요 (개인 프로젝트)</text>
+    <text x="90" y="794" class="code-text">---</text>
+
+    <text x="330" y="813" text-anchor="middle" class="desc-text" font-style="italic">→ 테마 하나로 즉시 전문적인 외관 확보</text>
+
+    <!-- Scenario 2: Corporate Report -->
+    <rect x="610" y="610" width="520" height="210" rx="5" class="scenario-box"/>
+    <text x="870" y="635" text-anchor="middle" class="concept-title">시나리오 2: 회사 보고서</text>
+
+    <text x="630" y="658" class="desc-text" font-weight="600">브랜드 일관성 (브랜딩 + 테마 + 스타일)</text>
+    <text x="630" y="678" class="code-text">---</text>
+    <text x="630" y="691" class="code-text">title: "2025 분기 보고서"</text>
+    <text x="630" y="704" class="code-text">format:</text>
+    <text x="640" y="719" class="code-text">  html:</text>
+    <text x="650" y="734" class="code-text">    theme: [default, company.scss]  # 테마 + 커스텀</text>
+    <text x="650" y="749" class="code-text">brand:                             # 브랜딩</text>
+    <text x="660" y="764" class="code-text">  file: _brand.yml</text>
+    <text x="650" y="779" class="code-text">page-layout: article               # 디자인</text>
+    <text x="650" y="794" class="code-text">toc: true</text>
+
+    <text x="870" y="813" text-anchor="middle" class="desc-text" font-style="italic">→ 조직 정체성을 담은 일관된 문서</text>
+
+    <!-- Section Title Box -->
+    <rect x="450" y="590" width="300" height="35" rx="5" fill="#E8F4F8" stroke="#4A90E2" stroke-width="1.5"/>
+    <text x="600" y="615" text-anchor="middle" class="section-title">실제 사용 시나리오</text>
+  </g>
+
+</svg>

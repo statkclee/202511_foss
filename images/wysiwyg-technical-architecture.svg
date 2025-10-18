@@ -1,0 +1,201 @@
+<svg viewBox="0 0 1800 1000" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      text { font-family: 'Noto Sans KR', sans-serif; }
+      .title { font-size: 52px; font-weight: 700; fill: #1e3a8a; }
+      .subtitle { font-size: 26px; font-weight: 600; fill: #475569; }
+      .layer-title { font-size: 28px; font-weight: 700; }
+      .component-title { font-size: 22px; font-weight: 700; }
+      .tech-text { font-size: 18px; font-weight: 600; }
+      .desc-text { font-size: 17px; }
+      .code-text { font-family: 'Monaco', 'Courier New', monospace; font-size: 15px; }
+    </style>
+
+    <!-- Gradients -->
+    <linearGradient id="presentation" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color: #3b82f6; stop-opacity: 1" />
+      <stop offset="100%" style="stop-color: #1e40af; stop-opacity: 1" />
+    </linearGradient>
+
+    <linearGradient id="application" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color: #10b981; stop-opacity: 1" />
+      <stop offset="100%" style="stop-color: #059669; stop-opacity: 1" />
+    </linearGradient>
+
+    <linearGradient id="rendering" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color: #f59e0b; stop-opacity: 1" />
+      <stop offset="100%" style="stop-color: #d97706; stop-opacity: 1" />
+    </linearGradient>
+
+    <linearGradient id="data" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color: #8b5cf6; stop-opacity: 1" />
+      <stop offset="100%" style="stop-color: #6d28d9; stop-opacity: 1" />
+    </linearGradient>
+
+    <linearGradient id="storage" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color: #ec4899; stop-opacity: 1" />
+      <stop offset="100%" style="stop-color: #db2777; stop-opacity: 1" />
+    </linearGradient>
+
+    <!-- Arrow markers -->
+    <marker id="arrowDown" markerWidth="12" markerHeight="12" refX="6" refY="6" orient="auto">
+      <polygon points="0 2, 6 10, 12 2" fill="#475569" stroke="#1e293b" stroke-width="1"/>
+    </marker>
+
+    <marker id="arrowUp" markerWidth="12" markerHeight="12" refX="6" refY="6" orient="auto">
+      <polygon points="0 10, 6 2, 12 10" fill="#475569" stroke="#1e293b" stroke-width="1"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1800" height="1000" fill="#f8fafc"/>
+
+  <!-- Title -->
+  <text x="900" y="60" text-anchor="middle" class="title">WYSIWYG 기술 아키텍처</text>
+  <text x="900" y="95" text-anchor="middle" class="subtitle">레이어드 아키텍처 기반 실시간 시각적 편집 시스템</text>
+
+  <!-- Architecture Layers -->
+
+  <!-- Layer 1: Presentation Layer (UI) -->
+  <g>
+    <rect x="100" y="140" width="1600" height="140" rx="12" fill="url(#presentation)" stroke="#1e40af" stroke-width="4"/>
+    <text x="900" y="175" text-anchor="middle" class="layer-title" fill="white">Layer 1: Presentation Layer (프레젠테이션 계층)</text>
+
+    <!-- UI Components -->
+    <g>
+      <rect x="130" y="200" width="360" height="60" rx="8" fill="white" opacity="0.95"/>
+      <text x="310" y="225" text-anchor="middle" class="component-title" fill="#1e40af">WIMP Interface</text>
+      <text x="140" y="250" class="tech-text" fill="#1e3a8a">Ribbon UI, Toolbars, Dialogs</text>
+
+      <rect x="520" y="200" width="360" height="60" rx="8" fill="white" opacity="0.95"/>
+      <text x="700" y="225" text-anchor="middle" class="component-title" fill="#1e40af">Event Handler</text>
+      <text x="530" y="250" class="tech-text" fill="#1e3a8a">Mouse/Keyboard Input</text>
+
+      <rect x="910" y="200" width="360" height="60" rx="8" fill="white" opacity="0.95"/>
+      <text x="1090" y="225" text-anchor="middle" class="component-title" fill="#1e40af">Visual Feedback</text>
+      <text x="920" y="250" class="tech-text" fill="#1e3a8a">Cursor, Selection, Highlight</text>
+
+      <rect x="1300" y="200" width="360" height="60" rx="8" fill="white" opacity="0.95"/>
+      <text x="1480" y="225" text-anchor="middle" class="component-title" fill="#1e40af">Preview UI</text>
+      <text x="1310" y="250" class="tech-text" fill="#1e3a8a">Print Preview, Page View</text>
+    </g>
+  </g>
+
+  <!-- Arrow Down -->
+  <path d="M 900 290 L 900 320" stroke="#475569" stroke-width="2" marker-end="url(#arrowDown)"/>
+  <text x="920" y="310" style="font-size: 16px; fill: #475569; font-weight: 600;">User Actions</text>
+
+  <!-- Layer 2: Application Logic Layer -->
+  <g>
+    <rect x="100" y="330" width="1600" height="140" rx="12" fill="url(#application)" stroke="#059669" stroke-width="4"/>
+    <text x="900" y="365" text-anchor="middle" class="layer-title" fill="white">Layer 2: Application Logic Layer (애플리케이션 로직 계층)</text>
+
+    <!-- Logic Components -->
+    <g>
+      <rect x="130" y="390" width="360" height="60" rx="8" fill="white" opacity="0.95"/>
+      <text x="310" y="415" text-anchor="middle" class="component-title" fill="#047857">Document Model</text>
+      <text x="140" y="440" class="tech-text" fill="#065f46">DOM-like Tree Structure</text>
+
+      <rect x="520" y="390" width="360" height="60" rx="8" fill="white" opacity="0.95"/>
+      <text x="700" y="415" text-anchor="middle" class="component-title" fill="#047857">Style Manager</text>
+      <text x="530" y="440" class="tech-text" fill="#065f46">Style Definitions, Themes</text>
+
+      <rect x="910" y="390" width="360" height="60" rx="8" fill="white" opacity="0.95"/>
+      <text x="1090" y="415" text-anchor="middle" class="component-title" fill="#047857">Layout Engine</text>
+      <text x="920" y="440" class="tech-text" fill="#065f46">Box Model, Flow Layout</text>
+
+      <rect x="1300" y="390" width="360" height="60" rx="8" fill="white" opacity="0.95"/>
+      <text x="1480" y="415" text-anchor="middle" class="component-title" fill="#047857">Undo/Redo Stack</text>
+      <text x="1310" y="440" class="tech-text" fill="#065f46">Command Pattern</text>
+    </g>
+  </g>
+
+  <!-- Bidirectional Arrow -->
+  <path d="M 900 480 L 900 510" stroke="#475569" stroke-width="2" marker-end="url(#arrowDown)"/>
+  <path d="M 880 510 L 880 480" stroke="#475569" stroke-width="2" marker-end="url(#arrowUp)"/>
+  <text x="940" y="500" style="font-size: 16px; fill: #475569; font-weight: 600;">Sync</text>
+
+  <!-- Layer 3: Rendering Engine Layer -->
+  <g>
+    <rect x="100" y="520" width="1600" height="140" rx="12" fill="url(#rendering)" stroke="#d97706" stroke-width="4"/>
+    <text x="900" y="555" text-anchor="middle" class="layer-title" fill="white">Layer 3: Rendering Engine Layer (렌더링 엔진 계층)</text>
+
+    <!-- Rendering Components -->
+    <g>
+      <rect x="130" y="580" width="360" height="60" rx="8" fill="white" opacity="0.95"/>
+      <text x="310" y="605" text-anchor="middle" class="component-title" fill="#b45309">Text Renderer</text>
+      <text x="140" y="630" class="tech-text" fill="#92400e">Font Rasterization, Kerning</text>
+
+      <rect x="520" y="580" width="360" height="60" rx="8" fill="white" opacity="0.95"/>
+      <text x="700" y="605" text-anchor="middle" class="component-title" fill="#b45309">Graphics Context</text>
+      <text x="530" y="630" class="tech-text" fill="#92400e">2D/Vector Graphics API</text>
+
+      <rect x="910" y="580" width="360" height="60" rx="8" fill="white" opacity="0.95"/>
+      <text x="1090" y="605" text-anchor="middle" class="component-title" fill="#b45309">Page Compositor</text>
+      <text x="920" y="630" class="tech-text" fill="#92400e">Multi-page Layout</text>
+
+      <rect x="1300" y="580" width="360" height="60" rx="8" fill="white" opacity="0.95"/>
+      <text x="1480" y="605" text-anchor="middle" class="component-title" fill="#b45309">Format Converter</text>
+      <text x="1310" y="630" class="tech-text" fill="#92400e">Import/Export Filter</text>
+    </g>
+  </g>
+
+  <!-- Arrow Down -->
+  <path d="M 900 670 L 900 700" stroke="#475569" stroke-width="2" marker-end="url(#arrowDown)"/>
+  <text x="920" y="690" style="font-size: 16px; fill: #475569; font-weight: 600;">Serialize</text>
+
+  <!-- Layer 4: Data Model Layer -->
+  <g>
+    <rect x="100" y="710" width="780" height="140" rx="12" fill="url(#data)" stroke="#6d28d9" stroke-width="4"/>
+    <text x="490" y="745" text-anchor="middle" class="layer-title" fill="white">Layer 4: Data Model Layer (데이터 모델 계층)</text>
+
+    <!-- Data Components -->
+    <g>
+      <rect x="130" y="770" width="340" height="60" rx="8" fill="white" opacity="0.95"/>
+      <text x="300" y="795" text-anchor="middle" class="component-title" fill="#6d28d9">Content Model</text>
+      <text x="140" y="820" class="tech-text" fill="#5b21b6">Paragraph, Span, Table</text>
+
+      <rect x="500" y="770" width="340" height="60" rx="8" fill="white" opacity="0.95"/>
+      <text x="670" y="795" text-anchor="middle" class="component-title" fill="#6d28d9">Style Repository</text>
+      <text x="510" y="820" class="tech-text" fill="#5b21b6">Named Styles, Templates</text>
+    </g>
+  </g>
+
+  <!-- Layer 5: Storage Layer -->
+  <g>
+    <rect x="920" y="710" width="780" height="140" rx="12" fill="url(#storage)" stroke="#db2777" stroke-width="4"/>
+    <text x="1310" y="745" text-anchor="middle" class="layer-title" fill="white">Layer 5: Storage Layer (저장소 계층)</text>
+
+    <!-- Storage Components -->
+    <g>
+      <rect x="950" y="770" width="340" height="60" rx="8" fill="white" opacity="0.95"/>
+      <text x="1120" y="795" text-anchor="middle" class="component-title" fill="#be185d">File Format</text>
+      <text x="960" y="820" class="tech-text" fill="#9f1239">DOCX (ZIP+XML), ODF</text>
+
+      <rect x="1320" y="770" width="340" height="60" rx="8" fill="white" opacity="0.95"/>
+      <text x="1490" y="795" text-anchor="middle" class="component-title" fill="#be185d">Persistence</text>
+      <text x="1330" y="820" class="tech-text" fill="#9f1239">Auto-save, Recovery</text>
+    </g>
+  </g>
+
+  <!-- Key Technologies Box -->
+  <rect x="100" y="880" width="1600" height="100" rx="12" fill="#e0e7ff" stroke="#4f46e5" stroke-width="3"/>
+
+  <!-- Left: Title -->
+  <text x="130" y="940" style="font-size: 32px; font-weight: 700; fill: #312e81;">🔧 핵심 기술 스택</text>
+  
+  <g transform="translate(0, -15)">
+    <!-- Row 1: GUI & Graphics -->
+    <text x="480" y="925" style="font-size: 18px; fill: #1e293b; font-weight: 600;">• GUI Framework: <tspan fill="#475569" font-weight="400">Win32, Cocoa, GTK, Qt</tspan></text>
+    <text x="1070" y="925" style="font-size: 18px; fill: #1e293b; font-weight: 600;">• Graphics: <tspan fill="#475569" font-weight="400">GDI+, CoreGraphics, Cairo, Skia</tspan></text>
+
+    <!-- Row 2: Typography & Format -->
+    <text x="480" y="950" style="font-size: 18px; fill: #1e293b; font-weight: 600;">• Typography: <tspan fill="#475569" font-weight="400">FreeType, HarfBuzz, DirectWrite</tspan></text>
+    <text x="1070" y="950" style="font-size: 18px; fill: #1e293b; font-weight: 600;">• Format: <tspan fill="#475569" font-weight="400">libxml2, minizip, ODF Toolkit</tspan></text>
+
+    <!-- Row 3: Patterns & Optimization -->
+    <text x="480" y="975" style="font-size: 18px; fill: #1e293b; font-weight: 600;">• Design Patterns: <tspan fill="#475569" font-weight="400">MVC, Observer, Command</tspan></text>
+    <text x="1070" y="975" style="font-size: 18px; fill: #1e293b; font-weight: 600;">• Optimization: <tspan fill="#475569" font-weight="400">Dirty Region, Incremental Layout</tspan></text>
+  </g>
+
+</svg>

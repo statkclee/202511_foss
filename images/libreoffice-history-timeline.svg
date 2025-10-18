@@ -1,0 +1,261 @@
+<svg viewBox="0 0 1600 900" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .title { font-family: 'Noto Sans KR', sans-serif; font-size: 32px; font-weight: 700; fill: #18a303; }
+      .subtitle { font-family: 'Noto Sans KR', sans-serif; font-size: 16px; font-weight: 600; fill: #475569; }
+      .era-label { font-family: 'Noto Sans KR', sans-serif; font-size: 16px; font-weight: 700; fill: white; }
+      .year { font-family: 'Noto Sans KR', sans-serif; font-size: 16px; font-weight: 700; fill: #1e3a8a; }
+      .event { font-family: 'Noto Sans KR', sans-serif; font-size: 13px; font-weight: 600; fill: #1e293b; }
+      .description { font-family: 'Noto Sans KR', sans-serif; font-size: 12px; fill: #475569; }
+      .impact { font-family: 'Noto Sans KR', sans-serif; font-size: 12px; font-style: italic; fill: #18a303; }
+    </style>
+
+    <linearGradient id="timelineGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color: #ff6b00; stop-opacity: 1" />
+      <stop offset="30%" style="stop-color: #ffa500; stop-opacity: 1" />
+      <stop offset="50%" style="stop-color: #18a303; stop-opacity: 1" />
+      <stop offset="70%" style="stop-color: #0369a1; stop-opacity: 1" />
+      <stop offset="100%" style="stop-color: #047857; stop-opacity: 1" />
+    </linearGradient>
+
+    <marker id="arrowRight" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#18a303" />
+    </marker>
+  </defs>
+
+  <!-- Title -->
+  <text x="800" y="40" text-anchor="middle" class="title">리브레오피스(LibreOffice Writer) 역사 타임라인</text>
+  <text x="800" y="65" text-anchor="middle" class="subtitle">오픈소스 철학과 자유: StarOffice부터 현재까지 (1985~2025, 40년)</text>
+
+  <!-- Main Timeline Bar -->
+  <rect x="100" y="100" width="1400" height="40" rx="20" fill="url(#timelineGradient)" stroke="#18a303" stroke-width="2"/>
+
+  <!-- Timeline Arrow -->
+  <line x1="100" y1="120" x2="1500" y2="120" stroke="#18a303" stroke-width="3" marker-end="url(#arrowRight)" opacity="0.3"/>
+
+  <!-- Era Labels on Timeline -->
+  <text x="200" y="125" text-anchor="middle" class="era-label" style="font-size: 13px;">⭐ StarOffice</text>
+  <text x="500" y="125" text-anchor="middle" class="era-label" style="font-size: 13px;">☀️ OpenOffice</text>
+  <text x="900" y="125" text-anchor="middle" class="era-label" style="font-size: 13px;">🦅 독립</text>
+  <text x="1300" y="125" text-anchor="middle" class="era-label" style="font-size: 13px;">🚀 발전</text>
+
+  <!-- Year Markers -->
+  <text x="100" y="95" text-anchor="middle" style="font-size: 12px; font-weight: 700; fill: #ff6b00;">1985</text>
+  <text x="400" y="95" text-anchor="middle" style="font-size: 12px; font-weight: 700; fill: #ffa500;">2000</text>
+  <text x="800" y="95" text-anchor="middle" style="font-size: 12px; font-weight: 700; fill: #18a303;">2010</text>
+  <text x="1200" y="95" text-anchor="middle" style="font-size: 12px; font-weight: 700; fill: #047857;">2020</text>
+  <text x="1500" y="95" text-anchor="middle" style="font-size: 12px; font-weight: 700; fill: #065f46;">2025</text>
+
+  <!-- Event 1: 1985 - StarWriter Birth -->
+  <g id="event1985">
+    <circle cx="100" cy="120" r="15" fill="#ff6b00" stroke="white" stroke-width="3"/>
+    <line x1="100" y1="135" x2="100" y2="180" stroke="#ff6b00" stroke-width="2"/>
+
+    <rect x="20" y="180" width="160" height="120" rx="8" fill="#fff7ed" stroke="#ff6b00" stroke-width="2"/>
+    <text x="100" y="200" text-anchor="middle" class="year" style="fill: #ff6b00;">1985</text>
+    <text x="30" y="218" class="event">StarWriter 탄생</text>
+    <text x="30" y="233" class="description">• StarDivision 개발</text>
+    <text x="30" y="246" class="description">• 독일 함부르크</text>
+    <text x="30" y="259" class="description">• Atari/DOS 지원</text>
+    <text x="30" y="272" class="description">• 저렴한 오피스 SW</text>
+    <text x="100" y="290" text-anchor="middle" class="impact">✓ 대안 소프트웨어 시작</text>
+  </g>
+
+  <!-- Event 2: 1999 - Sun Microsystems -->
+  <g id="event1999">
+    <circle cx="380" cy="120" r="15" fill="#ffa500" stroke="white" stroke-width="3"/>
+    <line x1="380" y1="135" x2="380" y2="330" stroke="#ffa500" stroke-width="2"/>
+
+    <rect x="300" y="330" width="160" height="135" rx="8" fill="#fffbeb" stroke="#ffa500" stroke-width="2"/>
+    <text x="380" y="350" text-anchor="middle" class="year" style="fill: #d97706;">1999</text>
+    <text x="310" y="368" class="event">Sun이 인수</text>
+    <text x="310" y="383" class="description">• $73.5M에 인수</text>
+    <text x="310" y="396" class="description">• 오픈소스 전환 약속</text>
+    <text x="310" y="409" class="description">• StarOffice 5.2 공개</text>
+    <text x="310" y="422" class="description">• 크로스 플랫폼 강화</text>
+    <text x="310" y="435" class="description">• Linux 지원 본격화</text>
+    <text x="380" y="455" text-anchor="middle" class="impact">✓ 오픈소스 전환 시작</text>
+  </g>
+
+  <!-- Event 3: 2000 - OpenOffice.org -->
+  <g id="event2000">
+    <circle cx="520" cy="120" r="15" fill="#ffa500" stroke="white" stroke-width="3"/>
+    <line x1="520" y1="135" x2="520" y2="180" stroke="#ffa500" stroke-width="2"/>
+
+    <rect x="440" y="180" width="160" height="135" rx="8" fill="#fffbeb" stroke="#ffa500" stroke-width="2"/>
+    <text x="520" y="200" text-anchor="middle" class="year" style="fill: #d97706;">2000</text>
+    <text x="450" y="218" class="event">OpenOffice.org 출범</text>
+    <text x="450" y="233" class="description">• 소스 코드 전면 공개</text>
+    <text x="450" y="246" class="description">• LGPL 라이선스</text>
+    <text x="450" y="259" class="description">• 커뮤니티 개발 시작</text>
+    <text x="450" y="272" class="description">• Win/Mac/Linux 지원</text>
+    <text x="450" y="285" class="description">• ODF 표준 주도</text>
+    <text x="520" y="305" text-anchor="middle" class="impact">✓ FOSS 생태계 형성</text>
+  </g>
+
+  <!-- Event 4: 2006 - ODF Standard -->
+  <g id="event2006">
+    <circle cx="700" cy="120" r="15" fill="#18a303" stroke="white" stroke-width="3"/>
+    <line x1="700" y1="135" x2="700" y2="330" stroke="#18a303" stroke-width="2"/>
+
+    <rect x="620" y="330" width="160" height="120" rx="8" fill="#f0fdf4" stroke="#18a303" stroke-width="2"/>
+    <text x="700" y="350" text-anchor="middle" class="year" style="fill: #18a303;">2006</text>
+    <text x="630" y="368" class="event">ODF ISO 표준 인증</text>
+    <text x="630" y="383" class="description">• ISO/IEC 26300</text>
+    <text x="630" y="396" class="description">• 국제 표준 승인</text>
+    <text x="630" y="409" class="description">• 정부·공공 채택 확대</text>
+    <text x="630" y="422" class="description">• 상호운용성 보장</text>
+    <text x="700" y="440" text-anchor="middle" class="impact">✓ 개방형 표준 확립</text>
+  </g>
+
+  <!-- Event 5: 2010 - Oracle Acquisition -->
+  <g id="event2010">
+    <circle cx="840" cy="120" r="15" fill="#dc2626" stroke="white" stroke-width="3"/>
+    <line x1="840" y1="135" x2="840" y2="180" stroke="#dc2626" stroke-width="2"/>
+
+    <rect x="760" y="180" width="160" height="120" rx="8" fill="#fee2e2" stroke="#dc2626" stroke-width="2"/>
+    <text x="840" y="200" text-anchor="middle" class="year" style="fill: #dc2626;">2010</text>
+    <text x="770" y="218" class="event">Oracle이 Sun 인수</text>
+    <text x="770" y="233" class="description">• 커뮤니티 우려 증폭</text>
+    <text x="770" y="246" class="description">• 상업화 논란</text>
+    <text x="770" y="259" class="description">• 오픈소스 정신 훼손</text>
+    <text x="770" y="272" class="description">• 독립 필요성 대두</text>
+    <text x="840" y="290" text-anchor="middle" class="impact" style="fill: #dc2626;">⚠️ 위기와 전환점</text>
+  </g>
+
+  <!-- Event 6: 2010 - LibreOffice Fork -->
+  <g id="event2010b">
+    <circle cx="980" cy="120" r="18" fill="#18a303" stroke="#fbbf24" stroke-width="4"/>
+    <text x="980" y="128" text-anchor="middle" style="font-size: 16px; font-weight: 700; fill: white;">🦅</text>
+    <line x1="980" y1="138" x2="980" y2="330" stroke="#18a303" stroke-width="3"/>
+
+    <rect x="900" y="330" width="160" height="135" rx="8" fill="#dcfce7" stroke="#18a303" stroke-width="3"/>
+    <text x="980" y="350" text-anchor="middle" class="year" style="fill: #18a303;">2010.09</text>
+    <text x="910" y="368" class="event" style="font-weight: 700;">LibreOffice 독립!</text>
+    <text x="910" y="383" class="description">• TDF 설립</text>
+    <text x="910" y="396" class="description">• OpenOffice Fork</text>
+    <text x="910" y="409" class="description">• 순수 커뮤니티 주도</text>
+    <text x="910" y="422" class="description">• 기업 독립성 확보</text>
+    <text x="910" y="435" class="description">• 진정한 자유 소프트웨어</text>
+    <text x="980" y="455" text-anchor="middle" class="impact" style="font-weight: 700;">✓ 자유의 수호</text>
+  </g>
+
+  <!-- Event 7: 2015 - Rapid Growth -->
+  <g id="event2015">
+    <circle cx="1140" cy="120" r="15" fill="#0369a1" stroke="white" stroke-width="3"/>
+    <line x1="1140" y1="135" x2="1140" y2="180" stroke="#0369a1" stroke-width="2"/>
+
+    <rect x="1060" y="180" width="160" height="135" rx="8" fill="#e0f2fe" stroke="#0369a1" stroke-width="2"/>
+    <text x="1140" y="200" text-anchor="middle" class="year" style="fill: #0369a1;">2015</text>
+    <text x="1070" y="218" class="event">급속한 성장</text>
+    <text x="1070" y="233" class="description">• 2억 사용자 돌파</text>
+    <text x="1070" y="246" class="description">• 공공기관 채택 확대</text>
+    <text x="1070" y="259" class="description">• EU·프랑스·독일 등</text>
+    <text x="1070" y="272" class="description">• 협업 기능 강화</text>
+    <text x="1070" y="285" class="description">• Online 버전 출시</text>
+    <text x="1140" y="305" text-anchor="middle" class="impact">✓ 글로벌 대안으로 확립</text>
+  </g>
+
+  <!-- Event 8: 2020 - Modern Features -->
+  <g id="event2020">
+    <circle cx="1300" cy="120" r="15" fill="#047857" stroke="white" stroke-width="3"/>
+    <line x1="1300" y1="135" x2="1300" y2="330" stroke="#047857" stroke-width="2"/>
+
+    <rect x="1220" y="330" width="160" height="135" rx="8" fill="#d1fae5" stroke="#047857" stroke-width="2"/>
+    <text x="1300" y="350" text-anchor="middle" class="year" style="fill: #047857;">2020~2023</text>
+    <text x="1230" y="368" class="event">현대화 가속</text>
+    <text x="1230" y="383" class="description">• UI/UX 대폭 개선</text>
+    <text x="1230" y="396" class="description">• DOCX 호환성 향상</text>
+    <text x="1230" y="409" class="description">• 클라우드 통합</text>
+    <text x="1230" y="422" class="description">• 모바일 앱 강화</text>
+    <text x="1230" y="435" class="description">• 접근성 개선</text>
+    <text x="1300" y="455" text-anchor="middle" class="impact">✓ 사용성 경쟁력 확보</text>
+  </g>
+
+  <!-- Event 9: 2024-2025 - Current -->
+  <g id="event2024">
+    <circle cx="1430" cy="120" r="18" fill="#18a303" stroke="#fbbf24" stroke-width="4"/>
+    <text x="1430" y="128" text-anchor="middle" style="font-size: 16px; font-weight: 700; fill: white;">✓</text>
+    <line x1="1430" y1="138" x2="1430" y2="180" stroke="#18a303" stroke-width="3"/>
+
+    <rect x="1350" y="180" width="160" height="120" rx="8" fill="#18a303" stroke="#047857" stroke-width="3"/>
+    <text x="1430" y="200" text-anchor="middle" class="year" style="fill: white;">2024~현재</text>
+    <text x="1360" y="218" class="event" style="fill: white;">자유의 수호자</text>
+    <text x="1360" y="233" class="description" style="fill: #dcfce7;">• 3억+ 활성 사용자</text>
+    <text x="1360" y="246" class="description" style="fill: #dcfce7;">• ODF 표준 선도</text>
+    <text x="1360" y="259" class="description" style="fill: #dcfce7;">• 완전한 오픈소스</text>
+    <text x="1360" y="272" class="description" style="fill: #dcfce7;">• 독립성·자유 유지</text>
+    <text x="1430" y="290" text-anchor="middle" class="impact" style="fill: white; font-weight: 700;">✓ 자유 소프트웨어 정신</text>
+  </g>
+
+  <!-- Bottom Summary -->
+  <rect x="50" y="490" width="1500" height="380" rx="15" fill="#f8fafc" stroke="#cbd5e1" stroke-width="3"/>
+
+  <text x="800" y="525" text-anchor="middle" style="font-size: 24px; font-weight: 700; fill: #18a303;">
+    📊 40년 역사의 교훈: 자유 + 개방성 + 커뮤니티
+  </text>
+
+  <!-- Era Breakdown -->
+  <g id="era-summary">
+    <!-- Era 1 -->
+    <rect x="80" y="550" width="350" height="130" rx="8" fill="#fff7ed" stroke="#ff6b00" stroke-width="2"/>
+    <rect x="80" y="550" width="350" height="30" rx="8" fill="#ff6b00"/>
+    <text x="255" y="572" text-anchor="middle" style="font-size: 14px; font-weight: 700; fill: white;">⭐ 1기: StarOffice (1985~1999)</text>
+    <text x="95" y="600" style="font-size: 11px; fill: #c2410c;">• 15년: 상용 소프트웨어로 시작</text>
+    <text x="95" y="620" style="font-size: 11px; fill: #c2410c;">• MS Office 대안으로 성장</text>
+    <text x="95" y="640" style="font-size: 11px; fill: #c2410c;">• Sun 인수로 오픈소스 전환 계기</text>
+    <text x="255" y="665" text-anchor="middle" style="font-size: 12px; font-weight: 700; fill: #ff6b00;">✓ 대안 SW 가능성</text>
+
+    <!-- Era 2 -->
+    <rect x="450" y="550" width="350" height="130" rx="8" fill="#fffbeb" stroke="#ffa500" stroke-width="2"/>
+    <rect x="450" y="550" width="350" height="30" rx="8" fill="#ffa500"/>
+    <text x="625" y="572" text-anchor="middle" style="font-size: 14px; font-weight: 700; fill: white;">☀️ 2기: OpenOffice (2000~2010)</text>
+    <text x="465" y="600" style="font-size: 11px; fill: #d97706;">• 10년: 완전 오픈소스 전환</text>
+    <text x="465" y="620" style="font-size: 11px; fill: #d97706;">• ODF 표준 주도 및 ISO 인증 (2006)</text>
+    <text x="465" y="640" style="font-size: 11px; fill: #d97706;">• 글로벌 커뮤니티 형성</text>
+    <text x="625" y="665" text-anchor="middle" style="font-size: 12px; font-weight: 700; fill: #ffa500;">✓ 오픈소스 성공 사례</text>
+
+    <!-- Era 3 -->
+    <rect x="820" y="550" width="350" height="130" rx="8" fill="#dcfce7" stroke="#18a303" stroke-width="2"/>
+    <rect x="820" y="550" width="350" height="30" rx="8" fill="#18a303"/>
+    <text x="995" y="572" text-anchor="middle" style="font-size: 14px; font-weight: 700; fill: white;">🦅 3기: LibreOffice 독립 (2010~2019)</text>
+    <text x="835" y="600" style="font-size: 11px; fill: #166534;">• Oracle 인수 위기 → TDF 설립</text>
+    <text x="835" y="620" style="font-size: 11px; fill: #166534;">• 순수 커뮤니티 주도 개발 확립</text>
+    <text x="835" y="640" style="font-size: 11px; fill: #166534;">• 2억 사용자 돌파, 공공기관 채택</text>
+    <text x="995" y="665" text-anchor="middle" style="font-size: 12px; font-weight: 700; fill: #18a303;">✓ 자유의 수호</text>
+
+    <!-- Era 4 -->
+    <rect x="1190" y="550" width="370" height="130" rx="8" fill="#d1fae5" stroke="#047857" stroke-width="2"/>
+    <rect x="1190" y="550" width="370" height="30" rx="8" fill="#047857"/>
+    <text x="1375" y="572" text-anchor="middle" style="font-size: 14px; font-weight: 700; fill: white;">🚀 4기: 현대화·발전 (2020~현재)</text>
+    <text x="1205" y="600" style="font-size: 11px; fill: #065f46;">• UI/UX 현대화, DOCX 호환성 향상</text>
+    <text x="1205" y="620" style="font-size: 11px; fill: #065f46;">• 3억+ 사용자, 글로벌 표준 대안</text>
+    <text x="1205" y="640" style="font-size: 11px; fill: #065f46;">• 완전한 오픈소스·독립성 유지</text>
+    <text x="1375" y="665" text-anchor="middle" style="font-size: 12px; font-weight: 700; fill: #047857;">✓ 성숙한 FOSS</text>
+  </g>
+
+  <!-- Key Insight -->
+  <rect x="80" y="710" width="1480" height="140" rx="10" fill="#18a303" stroke="#047857" stroke-width="3"/>
+
+  <text x="800" y="745" text-anchor="middle" style="font-size: 20px; font-weight: 700; fill: white;">
+    💡 핵심 인사이트: 왜 LibreOffice가 진정한 '자유'의 대안인가
+  </text>
+
+  <text x="100" y="775" style="font-size: 13px; fill: #dcfce7;">
+    • <tspan font-weight="700">완전한 오픈소스</tspan>: GPL/LGPL 라이선스, 누구나 자유롭게 사용·수정·배포 가능 (HWP/MS Word는 불가)
+  </text>
+
+  <text x="100" y="800" style="font-size: 13px; fill: #dcfce7;">
+    • <tspan font-weight="700">커뮤니티 주도</tspan>: TDF(비영리재단) 운영, 기업 종속 없음 → 사용자 이익 최우선 (HWP는 상업 독점)
+  </text>
+
+  <text x="100" y="825" style="font-size: 13px; fill: #dcfce7;">
+    • <tspan font-weight="700">ODF 표준 준수</tspan>: ISO 26300 국제 표준, 모든 플랫폼·도구와 호환 (HWP는 독자 포맷 고수)
+  </text>
+
+  <rect x="100" y="835" width="1400" height="1" fill="#fbbf24" opacity="0.5"/>
+
+  <text x="800" y="865" text-anchor="middle" style="font-size: 14px; font-weight: 700; fill: white;">
+    ⚖️ 결론: 진정한 자유·개방성·독립성을 추구하는 유일한 대안. 공공·교육·개인 모두에게 최적
+  </text>
+</svg>

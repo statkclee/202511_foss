@@ -1,0 +1,116 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 70 800 400">
+  <!-- 배경 -->
+  <rect width="800" height="500" fill="#f8fafc"/>
+
+  <!-- 문서 화면 -->
+  <rect x="50" y="80" width="300" height="380" fill="white" stroke="#cbd5e1" stroke-width="3" rx="10"/>
+  <rect x="50" y="80" width="300" height="40" fill="#e2e8f0" rx="10"/>
+  <text x="200" y="105" font-family="Arial, sans-serif" font-size="16" text-anchor="middle" fill="#475569">
+    워드프로세서 화면
+  </text>
+
+  <!-- 메뉴바 -->
+  <rect x="60" y="130" width="280" height="30" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1"/>
+  <text x="70" y="150" font-family="Arial, sans-serif" font-size="12" fill="#64748b">
+    파일  편집  서식  도구  표  삽입  보기
+  </text>
+
+  <!-- 문서 내용 영역 -->
+  <rect x="60" y="170" width="280" height="280" fill="white" stroke="#e2e8f0" stroke-width="1"/>
+  <line x1="70" y1="190" x2="250" y2="190" stroke="#cbd5e1" stroke-width="2"/>
+  <line x1="70" y1="210" x2="320" y2="210" stroke="#cbd5e1" stroke-width="2"/>
+  <line x1="70" y1="230" x2="280" y2="230" stroke="#cbd5e1" stroke-width="2"/>
+
+  <!-- 마우스 커서들 (여러 위치) -->
+  <g id="cursor1">
+    <path d="M 120 145 L 120 165 L 127 158 L 132 168 L 137 166 L 132 156 L 140 156 Z" fill="#ef4444" opacity="0.8"/>
+    <circle cx="135" cy="150" r="25" fill="none" stroke="#ef4444" stroke-width="2" opacity="0.3">
+      <animate attributeName="r" values="25;35;25" dur="2s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.3;0;0.3" dur="2s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <g id="cursor2">
+    <path d="M 180 200 L 180 220 L 187 213 L 192 223 L 197 221 L 192 211 L 200 211 Z" fill="#ef4444" opacity="0.8"/>
+    <text x="210" y="215" font-family="Arial, sans-serif" font-size="11" fill="#ef4444" font-weight="bold">클릭!</text>
+  </g>
+
+  <g id="cursor3">
+    <path d="M 140 280 L 140 300 L 147 293 L 152 303 L 157 301 L 152 291 L 160 291 Z" fill="#ef4444" opacity="0.8"/>
+    <text x="170" y="295" font-family="Arial, sans-serif" font-size="11" fill="#ef4444" font-weight="bold">클릭!</text>
+  </g>
+
+  <!-- 화살표와 클릭 횟수 -->
+  <g transform="translate(370, 120)">
+    <!-- 박스 -->
+    <rect x="0" y="0" width="380" height="320" fill="#fef2f2" stroke="#ef4444" stroke-width="3" rx="10"/>
+
+    <!-- 제목 -->
+    <text x="175" y="35" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#dc2626">
+      문서 하나 작성하는데...
+    </text>
+
+    <!-- 작업별 클릭 횟수 -->
+    <g transform="translate(20, 60)">
+      <text x="0" y="0" font-family="Arial, sans-serif" font-size="14" fill="#1e293b" font-weight="bold">
+        ① 글꼴 변경
+      </text>
+      <rect x="100" y="-15" width="200" height="20" fill="#fee2e2" rx="5"/>
+      <rect x="100" y="-15" width="150" height="20" fill="#fca5a5" rx="5"/>
+      <text x="310" y="0" font-family="Arial, sans-serif" font-size="14" fill="#dc2626" font-weight="bold">
+        15 클릭
+      </text>
+    </g>
+
+    <g transform="translate(20, 100)">
+      <text x="0" y="0" font-family="Arial, sans-serif" font-size="14" fill="#1e293b" font-weight="bold">
+        ② 표 삽입
+      </text>
+      <rect x="100" y="-15" width="200" height="20" fill="#fee2e2" rx="5"/>
+      <rect x="100" y="-15" width="180" height="20" fill="#fca5a5" rx="5"/>
+      <text x="310" y="0" font-family="Arial, sans-serif" font-size="14" fill="#dc2626" font-weight="bold">
+        22 클릭
+      </text>
+    </g>
+
+    <g transform="translate(20, 140)">
+      <text x="0" y="0" font-family="Arial, sans-serif" font-size="14" fill="#1e293b" font-weight="bold">
+        ③ 이미지 삽입
+      </text>
+      <rect x="100" y="-15" width="200" height="20" fill="#fee2e2" rx="5"/>
+      <rect x="100" y="-15" width="120" height="20" fill="#fca5a5" rx="5"/>
+      <text x="310" y="0" font-family="Arial, sans-serif" font-size="14" fill="#dc2626" font-weight="bold">
+        12 클릭
+      </text>
+    </g>
+
+    <g transform="translate(20, 180)">
+      <text x="0" y="0" font-family="Arial, sans-serif" font-size="14" fill="#1e293b" font-weight="bold">
+        ④ 정렬 조정
+      </text>
+      <rect x="100" y="-15" width="200" height="20" fill="#fee2e2" rx="5"/>
+      <rect x="100" y="-15" width="80" height="20" fill="#fca5a5" rx="5"/>
+      <text x="310" y="0" font-family="Arial, sans-serif" font-size="14" fill="#dc2626" font-weight="bold">
+        8 클릭
+      </text>
+    </g>
+
+    <g transform="translate(20, 220)">
+      <text x="0" y="0" font-family="Arial, sans-serif" font-size="14" fill="#1e293b" font-weight="bold">
+        ⑤ 저장 및 인쇄
+      </text>
+      <rect x="100" y="-15" width="200" height="20" fill="#fee2e2" rx="5"/>
+      <rect x="100" y="-15" width="100" height="20" fill="#fca5a5" rx="5"/>
+      <text x="310" y="0" font-family="Arial, sans-serif" font-size="14" fill="#dc2626" font-weight="bold">
+        10 클릭
+      </text>
+    </g>
+
+    <!-- 총합 -->
+    <line x1="20" y1="250" x2="330" y2="250" stroke="#dc2626" stroke-width="2"/>
+    <text x="175" y="280" font-family="Arial, sans-serif" font-size="20" font-weight="bold" text-anchor="middle" fill="#991b1b">
+      총 67번 마우스 클릭 필요
+    </text>
+  </g>
+
+</svg>

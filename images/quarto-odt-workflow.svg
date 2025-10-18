@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 30 1400 900" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Arrow Marker -->
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto">
+      <polygon points="0 0, 10 5, 0 10" fill="#374151"/>
+    </marker>
+
+    <!-- Styles -->
+    <style>
+      .title {
+        font-family: "ET Book", Palatino, "Palatino Linotype", serif;
+        font-size: 32px;
+        font-weight: bold;
+        fill: #1F2937;
+      }
+      .subtitle {
+        font-family: "ET Book", Palatino, "Palatino Linotype", serif;
+        font-size: 18px;
+        fill: #6B7280;
+      }
+      .stage-num {
+        font-family: "ET Book", Palatino, serif;
+        font-size: 48px;
+        font-weight: bold;
+        fill: #D1D5DB;
+      }
+      .stage-title {
+        font-family: "ET Book", Palatino, serif;
+        font-size: 24px;
+        font-weight: bold;
+        fill: #1F2937;
+      }
+      .stage-desc {
+        font-family: "ET Book", Palatino, serif;
+        font-size: 16px;
+        fill: #6B7280;
+      }
+      .advantage-title {
+        font-family: "ET Book", Palatino, serif;
+        font-size: 20px;
+        font-weight: bold;
+        fill: #1F2937;
+      }
+      .advantage-item {
+        font-family: "ET Book", Palatino, serif;
+        font-size: 16px;
+        fill: #4B5563;
+      }
+      .benefit-title {
+        font-family: "ET Book", Palatino, serif;
+        font-size: 18px;
+        font-weight: bold;
+        fill: #1F2937;
+      }
+      .benefit-desc {
+        font-family: "ET Book", Palatino, serif;
+        font-size: 14px;
+        fill: #6B7280;
+      }
+    </style>
+  </defs>
+
+  <!-- Title -->
+  <text x="700" y="70" text-anchor="middle" class="title">Quarto AI-Enhanced Document Workflow</text>
+  <text x="700" y="100" text-anchor="middle" class="subtitle">AI 기반 문서 작성 → ODT 템플릿 출력 프로세스</text>
+
+  <!-- ============================================ -->
+  <!-- Stage 1: AI Content Generation -->
+  <!-- ============================================ -->
+
+  <g id="stage1">
+    <text x="100" y="160" class="stage-num">1</text>
+    <line x1="140" y1="140" x2="500" y2="140" stroke="#E5E7EB" stroke-width="1"/>
+
+    <text x="140" y="165" class="stage-title">AI 콘텐츠 생성</text>
+    <text x="140" y="190" class="stage-desc">• ChatGPT/Claude로 초안 작성</text>
+    <text x="140" y="212" class="stage-desc">• 데이터 분석 코드 자동 생성 (R/Python)</text>
+    <text x="140" y="234" class="stage-desc">• 표, 그래프, 통계 결과 포함</text>
+
+    <rect x="520" y="150" width="180" height="100" rx="5" fill="none" stroke="#D1D5DB" stroke-width="2"/>
+    <text x="610" y="190" text-anchor="middle" class="stage-desc">example_report.qmd</text>
+    <text x="610" y="215" text-anchor="middle" font-family="Consolas, Monaco, monospace" font-size="12" fill="#9CA3AF">---</text>
+    <text x="610" y="230" text-anchor="middle" font-family="Consolas, Monaco, monospace" font-size="12" fill="#9CA3AF">format: odt</text>
+  </g>
+
+  <!-- Arrow 1 to 2 -->
+  <line x1="610" y1="260" x2="610" y2="320" stroke="#374151" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="630" y="295" class="stage-desc">Quarto render</text>
+
+  <!-- ============================================ -->
+  <!-- Stage 2: Quarto Processing -->
+  <!-- ============================================ -->
+
+  <g id="stage2">
+    <text x="100" y="370" class="stage-num">2</text>
+    <line x1="140" y1="350" x2="500" y2="350" stroke="#E5E7EB" stroke-width="1"/>
+
+    <text x="140" y="375" class="stage-title">Quarto 실행</text>
+    <text x="140" y="400" class="stage-desc">• R/Python 코드 청크 실행</text>
+    <text x="140" y="422" class="stage-desc">• 데이터 처리 &amp; 시각화 생성</text>
+    <text x="140" y="444" class="stage-desc">• Markdown → ODT 변환</text>
+
+    <rect x="520" y="340" width="180" height="120" rx="5" fill="none" stroke="#D1D5DB" stroke-width="2"/>
+    <text x="610" y="380" text-anchor="middle" class="stage-desc">재현가능한 분석</text>
+    <text x="610" y="405" text-anchor="middle" font-family="Consolas, Monaco, monospace" font-size="12" fill="#9CA3AF"># R 코드 실행</text>
+    <text x="610" y="425" text-anchor="middle" font-family="Consolas, Monaco, monospace" font-size="12" fill="#9CA3AF">ggplot2 차트 생성</text>
+    <text x="610" y="445" text-anchor="middle" font-family="Consolas, Monaco, monospace" font-size="12" fill="#9CA3AF">kable 표 생성</text>
+  </g>
+
+  <!-- Arrow 2 to 3 -->
+  <line x1="610" y1="470" x2="610" y2="530" stroke="#374151" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="630" y="505" class="stage-desc">template 적용</text>
+
+  <!-- ============================================ -->
+  <!-- Stage 3: ODT Template Application -->
+  <!-- ============================================ -->
+
+  <g id="stage3">
+    <text x="100" y="580" class="stage-num">3</text>
+    <line x1="140" y1="560" x2="500" y2="560" stroke="#E5E7EB" stroke-width="1"/>
+
+    <text x="140" y="585" class="stage-title">ODT 템플릿 적용</text>
+    <text x="140" y="610" class="stage-desc">• 사전 디자인된 템플릿 적용</text>
+    <text x="140" y="632" class="stage-desc">• 폰트, 색상, 레이아웃 자동 반영</text>
+    <text x="140" y="654" class="stage-desc">• Professional-Report-Template.ott</text>
+
+    <rect x="520" y="550" width="180" height="120" rx="5" fill="none" stroke="#D1D5DB" stroke-width="2"/>
+    <text x="610" y="590" text-anchor="middle" class="stage-desc">스타일 통일</text>
+    <text x="610" y="615" text-anchor="middle" font-family="Consolas, Monaco, monospace" font-size="12" fill="#9CA3AF">reference-doc:</text>
+    <text x="610" y="635" text-anchor="middle" font-family="Consolas, Monaco, monospace" font-size="12" fill="#9CA3AF">template.ott</text>
+  </g>
+
+  <!-- Arrow 3 to 4 -->
+  <line x1="610" y1="680" x2="610" y2="740" stroke="#374151" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="630" y="715" class="stage-desc">LibreOffice 호환</text>
+
+  <!-- ============================================ -->
+  <!-- Stage 4: Final Output -->
+  <!-- ============================================ -->
+
+  <g id="stage4">
+    <text x="100" y="790" class="stage-num">4</text>
+    <line x1="140" y1="770" x2="500" y2="770" stroke="#E5E7EB" stroke-width="1"/>
+
+    <text x="140" y="795" class="stage-title">최종 문서 출력</text>
+    <text x="140" y="820" class="stage-desc">• example_report.odt 생성</text>
+    <text x="140" y="842" class="stage-desc">• LibreOffice/MS Word에서 편집 가능</text>
+
+    <rect x="520" y="760" width="180" height="100" rx="5" fill="#F9FAFB" stroke="#D1D5DB" stroke-width="2"/>
+    <text x="610" y="800" text-anchor="middle" class="stage-title" font-size="20">📄 report.odt</text>
+    <text x="610" y="825" text-anchor="middle" class="stage-desc">완성된 보고서</text>
+  </g>
+
+  <!-- ============================================ -->
+  <!-- Right Panel: Advantages -->
+  <!-- ============================================ -->
+
+  <g id="advantages">
+    <line x1="780" y1="120" x2="780" y2="860" stroke="#E5E7EB" stroke-width="2"/>
+
+    <text x="820" y="145" class="advantage-title">핵심 우수성</text>
+
+    <!-- Advantage 1 -->
+    <text x="820" y="185" class="advantage-item">1. 재현가능성 (Reproducibility)</text>
+    <text x="840" y="210" class="benefit-desc">• 코드 + 문서 일체화</text>
+    <text x="840" y="230" class="benefit-desc">• 데이터 변경 시 자동 업데이트</text>
+    <text x="840" y="250" class="benefit-desc">• Git 버전 관리 가능</text>
+
+    <!-- Advantage 2 -->
+    <text x="820" y="290" class="advantage-item">2. AI 효율성</text>
+    <text x="840" y="315" class="benefit-desc">• ChatGPT/Claude 초안 생성</text>
+    <text x="840" y="335" class="benefit-desc">• 코드 자동 작성</text>
+    <text x="840" y="355" class="benefit-desc">• 시간 80% 절감</text>
+
+    <!-- Advantage 3 -->
+    <text x="820" y="395" class="advantage-item">3. 템플릿 통일성</text>
+    <text x="840" y="420" class="benefit-desc">• 기업 CI/브랜드 자동 적용</text>
+    <text x="840" y="440" class="benefit-desc">• 디자인 작업 불필요</text>
+    <text x="840" y="460" class="benefit-desc">• 일관된 문서 품질</text>
+
+    <!-- Advantage 4 -->
+    <text x="820" y="500" class="advantage-item">4. FOSS 생태계</text>
+    <text x="840" y="525" class="benefit-desc">• 무료 오픈소스 (Quarto, R, LibreOffice)</text>
+    <text x="840" y="545" class="benefit-desc">• 라이선스 비용 0원</text>
+    <text x="840" y="565" class="benefit-desc">• 플랫폼 독립적 (Windows/Mac/Linux)</text>
+
+    <!-- Advantage 5 -->
+    <text x="820" y="605" class="advantage-item">5. 협업 친화성</text>
+    <text x="840" y="630" class="benefit-desc">• .qmd 소스는 텍스트 파일</text>
+    <text x="840" y="650" class="benefit-desc">• Git 충돌 해결 용이</text>
+    <text x="840" y="670" class="benefit-desc">• 팀원 간 코드 리뷰 가능</text>
+
+    <!-- Advantage 6 -->
+    <text x="820" y="710" class="advantage-item">6. 다중 포맷 출력</text>
+    <text x="840" y="735" class="benefit-desc">• ODT, DOCX, PDF, HTML 동시 생성</text>
+    <text x="840" y="755" class="benefit-desc">• Single Source Publishing</text>
+    <text x="840" y="775" class="benefit-desc">• 포맷별 맞춤 템플릿</text>
+
+    <!-- Advantage 7 -->
+    <text x="820" y="815" class="advantage-item">7. 후편집 가능</text>
+    <text x="840" y="840" class="benefit-desc">• ODT → LibreOffice에서 추가 편집</text>
+    <text x="840" y="860" class="benefit-desc">• WYSIWYG + Code 병행</text>
+  </g>
+
+  <!-- ============================================ -->
+  <!-- Bottom: Key Insight -->
+  <!-- ============================================ -->
+
+  <rect x="50" y="880" width="700" height="1" fill="#E5E7EB"/>
+  <text x="50" y="900" class="subtitle" font-size="14" font-style="italic">"AI 초안 → Quarto 실행 → ODT 템플릿 = 재현가능하고 아름다운 문서"</text>
+
+</svg>

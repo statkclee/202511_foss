@@ -1,0 +1,411 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2800 1600">
+  <defs>
+    <!-- Gradients -->
+    <linearGradient id="headerGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#dc2626;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#991b1b;stop-opacity:1" />
+    </linearGradient>
+
+    <!-- Lane backgrounds -->
+    <linearGradient id="drawingLane" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#fef3c7;stop-opacity:0.3" />
+      <stop offset="100%" style="stop-color:#fef3c7;stop-opacity:0.1" />
+    </linearGradient>
+
+    <linearGradient id="typesetLane" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#dbeafe;stop-opacity:0.3" />
+      <stop offset="100%" style="stop-color:#dbeafe;stop-opacity:0.1" />
+    </linearGradient>
+
+    <linearGradient id="markupLane" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#d1fae5;stop-opacity:0.3" />
+      <stop offset="100%" style="stop-color:#d1fae5;stop-opacity:0.1" />
+    </linearGradient>
+
+    <linearGradient id="wysiwygLane" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#f3e8ff;stop-opacity:0.3" />
+      <stop offset="100%" style="stop-color:#f3e8ff;stop-opacity:0.1" />
+    </linearGradient>
+
+    <!-- Arrow markers -->
+    <marker id="arrowSuccess" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto">
+      <path d="M0,0 L0,10 L10,5 z" fill="#10b981" />
+    </marker>
+    <marker id="arrowFail" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto">
+      <path d="M0,0 L0,10 L10,5 z" fill="#ef4444" />
+    </marker>
+    <marker id="arrowPartial" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto">
+      <path d="M0,0 L0,10 L10,5 z" fill="#f59e0b" />
+    </marker>
+    <marker id="arrowBlue" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto">
+      <path d="M0,0 L0,10 L10,5 z" fill="#3b82f6" />
+    </marker>
+
+    <!-- Styles -->
+    <style>
+      text { font-family: 'Noto Sans KR', 'Noto Sans', sans-serif; }
+      .title { font-size: 36px; font-weight: 700; fill: white; }
+      .subtitle { font-size: 18px; font-weight: 600; fill: white; }
+      .lane-label { font-size: 20px; font-weight: 700; fill: #1f2937; }
+      .year-label { font-size: 16px; font-weight: 700; fill: #374151; }
+      .tech-name { font-size: 16px; font-weight: 700; fill: #1f2937; }
+      .tech-year { font-size: 13px; font-weight: 600; fill: #6b7280; }
+      .tech-desc { font-size: 11px; fill: #4b5563; }
+      .event-label { font-size: 13px; font-weight: 600; fill: #374151; }
+      .arrow-label { font-size: 12px; font-weight: 600; }
+      .phase-label { font-size: 18px; font-weight: 700; }
+      .phase-desc { font-size: 13px; font-weight: 500; fill: #4b5563; }
+      .summary-title { font-size: 16px; font-weight: 700; }
+      .summary-text { font-size: 12px; fill: #374151; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="2800" height="1600" fill="#fafafa"/>
+
+  <!-- Header -->
+  <rect x="30" y="20" width="2740" height="90" rx="12" fill="url(#headerGrad)"/>
+  <text x="1400" y="60" text-anchor="middle" class="title">문서 패러다임의 역사적 진화 (1950-2025)</text>
+  <text x="1400" y="90" text-anchor="middle" class="subtitle">4가지 패러다임의 탄생, 충돌, 그리고 통합 시도</text>
+
+  <!-- Timeline axis -->
+  <line x1="200" y1="150" x2="2600" y2="150" stroke="#1f2937" stroke-width="3"/>
+
+  <!-- Decade markers on timeline -->
+  <g id="decades">
+    <!-- 1950s -->
+    <line x1="250" y1="145" x2="250" y2="155" stroke="#1f2937" stroke-width="2"/>
+    <text x="250" y="175" text-anchor="middle" class="year-label">1950</text>
+
+    <!-- 1960s -->
+    <line x1="500" y1="145" x2="500" y2="155" stroke="#1f2937" stroke-width="2"/>
+    <text x="500" y="175" text-anchor="middle" class="year-label">1960</text>
+
+    <!-- 1970s -->
+    <line x1="750" y1="145" x2="750" y2="155" stroke="#1f2937" stroke-width="2"/>
+    <text x="750" y="175" text-anchor="middle" class="year-label">1970</text>
+
+    <!-- 1980s -->
+    <line x1="1050" y1="145" x2="1050" y2="155" stroke="#1f2937" stroke-width="2"/>
+    <text x="1050" y="175" text-anchor="middle" class="year-label">1980</text>
+
+    <!-- 1990s -->
+    <line x1="1350" y1="145" x2="1350" y2="155" stroke="#1f2937" stroke-width="2"/>
+    <text x="1350" y="175" text-anchor="middle" class="year-label">1990</text>
+
+    <!-- 2000s -->
+    <line x1="1650" y1="145" x2="1650" y2="155" stroke="#1f2937" stroke-width="2"/>
+    <text x="1650" y="175" text-anchor="middle" class="year-label">2000</text>
+
+    <!-- 2010s -->
+    <line x1="1950" y1="145" x2="1950" y2="155" stroke="#1f2937" stroke-width="2"/>
+    <text x="1950" y="175" text-anchor="middle" class="year-label">2010</text>
+
+    <!-- 2020s -->
+    <line x1="2250" y1="145" x2="2250" y2="155" stroke="#1f2937" stroke-width="2"/>
+    <text x="2250" y="175" text-anchor="middle" class="year-label">2020</text>
+  </g>
+
+  <!-- Swimlanes -->
+  <!-- Lane 1: Drawing Language -->
+  <rect x="200" y="200" width="2400" height="200" fill="url(#drawingLane)" stroke="#f59e0b" stroke-width="2"/>
+  <text x="50" y="290" text-anchor="start" class="lane-label" fill="#f59e0b">Drawing</text>
+  <text x="50" y="315" text-anchor="start" class="tech-desc" fill="#f59e0b">벡터 그래픽</text>
+
+  <!-- Lane 2: Typesetting -->
+  <rect x="200" y="400" width="2400" height="200" fill="url(#typesetLane)" stroke="#3b82f6" stroke-width="2"/>
+  <text x="50" y="490" text-anchor="start" class="lane-label" fill="#3b82f6">Typesetting</text>
+  <text x="50" y="515" text-anchor="start" class="tech-desc" fill="#3b82f6">조판/수식</text>
+
+  <!-- Lane 3: Markup -->
+  <rect x="200" y="600" width="2400" height="200" fill="url(#markupLane)" stroke="#10b981" stroke-width="2"/>
+  <text x="50" y="690" text-anchor="start" class="lane-label" fill="#10b981">Markup</text>
+  <text x="50" y="715" text-anchor="start" class="tech-desc" fill="#10b981">문서 구조</text>
+
+  <!-- Lane 4: WYSIWYG -->
+  <rect x="200" y="800" width="2400" height="200" fill="url(#wysiwygLane)" stroke="#8b5cf6" stroke-width="2"/>
+  <text x="50" y="890" text-anchor="start" class="lane-label" fill="#8b5cf6">WYSIWYG</text>
+  <text x="50" y="915" text-anchor="start" class="tech-desc" fill="#8b5cf6">시각적 편집</text>
+
+  <!-- Technologies in lanes -->
+
+  <!-- Drawing Lane -->
+  <!-- ASCII Art -->
+  <rect x="250" y="230" width="200" height="140" rx="8" fill="white" stroke="#94a3b8" stroke-width="2"/>
+  <text x="350" y="260" text-anchor="middle" class="tech-name">ASCII Art</text>
+  <text x="350" y="280" text-anchor="middle" class="tech-year">1950s-1960s</text>
+  <text x="350" y="305" text-anchor="middle" class="tech-desc">Line Printer</text>
+  <text x="350" y="325" text-anchor="middle" class="tech-desc">텍스트 기반 "그래픽"</text>
+  <text x="350" y="345" text-anchor="middle" class="tech-desc">현수막/배너</text>
+
+  <!-- CalComp Plotter -->
+  <rect x="480" y="230" width="200" height="140" rx="8" fill="white" stroke="#f59e0b" stroke-width="3"/>
+  <text x="580" y="260" text-anchor="middle" class="tech-name">CalComp 565</text>
+  <text x="580" y="280" text-anchor="middle" class="tech-year">1959</text>
+  <text x="580" y="305" text-anchor="middle" class="tech-desc">최초 컴퓨터 플로터</text>
+  <text x="580" y="325" text-anchor="middle" class="tech-desc">진짜 벡터 그래픽</text>
+  <text x="580" y="345" text-anchor="middle" class="tech-desc">공학 도면</text>
+
+  <!-- HP-GL -->
+  <rect x="850" y="230" width="180" height="140" rx="8" fill="white" stroke="#f59e0b" stroke-width="3"/>
+  <text x="940" y="260" text-anchor="middle" class="tech-name">HP-GL</text>
+  <text x="940" y="280" text-anchor="middle" class="tech-year">1977</text>
+  <text x="940" y="305" text-anchor="middle" class="tech-desc">표준화</text>
+  <text x="940" y="325" text-anchor="middle" class="tech-desc">Drawing</text>
+  <text x="940" y="345" text-anchor="middle" class="tech-desc">Language</text>
+
+  <!-- PostScript -->
+  <rect x="1070" y="230" width="180" height="140" rx="8" fill="white" stroke="#f59e0b" stroke-width="3"/>
+  <text x="1160" y="260" text-anchor="middle" class="tech-name">PostScript</text>
+  <text x="1160" y="280" text-anchor="middle" class="tech-year">1982</text>
+  <text x="1160" y="305" text-anchor="middle" class="tech-desc">프린터</text>
+  <text x="1160" y="325" text-anchor="middle" class="tech-desc">렌더링</text>
+  <text x="1160" y="345" text-anchor="middle" class="tech-desc">표준</text>
+
+  <!-- PDF -->
+  <rect x="1370" y="230" width="180" height="140" rx="8" fill="white" stroke="#10b981" stroke-width="3"/>
+  <text x="1460" y="260" text-anchor="middle" class="tech-name">PDF</text>
+  <text x="1460" y="280" text-anchor="middle" class="tech-year">1993</text>
+  <text x="1460" y="305" text-anchor="middle" class="tech-desc">PS 기반</text>
+  <text x="1460" y="325" text-anchor="middle" class="tech-desc">문서 포맷</text>
+  <text x="1460" y="345" text-anchor="middle" class="tech-desc">✅ 대성공</text>
+
+  <!-- Typesetting Lane -->
+  <!-- TeX -->
+  <rect x="800" y="430" width="200" height="140" rx="8" fill="white" stroke="#3b82f6" stroke-width="3"/>
+  <text x="900" y="460" text-anchor="middle" class="tech-name">TeX</text>
+  <text x="900" y="480" text-anchor="middle" class="tech-year">1978</text>
+  <text x="900" y="505" text-anchor="middle" class="tech-desc">Donald Knuth</text>
+  <text x="900" y="525" text-anchor="middle" class="tech-desc">학술 조판</text>
+  <text x="900" y="545" text-anchor="middle" class="tech-desc">수학 수식</text>
+
+  <!-- LaTeX -->
+  <rect x="1080" y="430" width="180" height="140" rx="8" fill="white" stroke="#3b82f6" stroke-width="3"/>
+  <text x="1170" y="460" text-anchor="middle" class="tech-name">LaTeX</text>
+  <text x="1170" y="480" text-anchor="middle" class="tech-year">1984</text>
+  <text x="1170" y="505" text-anchor="middle" class="tech-desc">Leslie Lamport</text>
+  <text x="1170" y="525" text-anchor="middle" class="tech-desc">TeX 매크로</text>
+  <text x="1170" y="545" text-anchor="middle" class="tech-desc">논문 표준</text>
+
+  <!-- Pandoc -->
+  <rect x="1690" y="430" width="180" height="140" rx="8" fill="white" stroke="#10b981" stroke-width="3"/>
+  <text x="1780" y="460" text-anchor="middle" class="tech-name">Pandoc</text>
+  <text x="1780" y="480" text-anchor="middle" class="tech-year">2006</text>
+  <text x="1780" y="505" text-anchor="middle" class="tech-desc">Universal</text>
+  <text x="1780" y="525" text-anchor="middle" class="tech-desc">Converter</text>
+  <text x="1780" y="545" text-anchor="middle" class="tech-desc">✅ 대성공</text>
+
+  <!-- Markup Lane -->
+  <!-- GML -->
+  <rect x="700" y="630" width="200" height="140" rx="8" fill="white" stroke="#10b981" stroke-width="3"/>
+  <text x="800" y="660" text-anchor="middle" class="tech-name">GML</text>
+  <text x="800" y="680" text-anchor="middle" class="tech-year">1969 IBM</text>
+  <text x="800" y="705" text-anchor="middle" class="tech-desc">문서 구조화</text>
+  <text x="800" y="725" text-anchor="middle" class="tech-desc">법률/의료 문서</text>
+  <text x="800" y="745" text-anchor="middle" class="tech-desc">Markup 원조</text>
+
+  <!-- SGML -->
+  <rect x="1020" y="630" width="180" height="140" rx="8" fill="white" stroke="#10b981" stroke-width="3"/>
+  <text x="1110" y="660" text-anchor="middle" class="tech-name">SGML</text>
+  <text x="1110" y="680" text-anchor="middle" class="tech-year">1986</text>
+  <text x="1110" y="705" text-anchor="middle" class="tech-desc">ISO 8879</text>
+  <text x="1110" y="725" text-anchor="middle" class="tech-desc">표준화</text>
+  <text x="1110" y="745" text-anchor="middle" class="tech-desc">GML 발전</text>
+
+  <!-- HTML -->
+  <rect x="1340" y="630" width="180" height="140" rx="8" fill="white" stroke="#10b981" stroke-width="3"/>
+  <text x="1430" y="660" text-anchor="middle" class="tech-name">HTML</text>
+  <text x="1430" y="680" text-anchor="middle" class="tech-year">1991</text>
+  <text x="1430" y="705" text-anchor="middle" class="tech-desc">Tim Berners-Lee</text>
+  <text x="1430" y="725" text-anchor="middle" class="tech-desc">SGML 기반</text>
+  <text x="1430" y="745" text-anchor="middle" class="tech-desc">✅ 웹 표준</text>
+
+  <!-- Markdown -->
+  <rect x="1660" y="630" width="180" height="140" rx="8" fill="white" stroke="#10b981" stroke-width="3"/>
+  <text x="1750" y="660" text-anchor="middle" class="tech-name">Markdown</text>
+  <text x="1750" y="680" text-anchor="middle" class="tech-year">2004</text>
+  <text x="1750" y="705" text-anchor="middle" class="tech-desc">John Gruber</text>
+  <text x="1750" y="725" text-anchor="middle" class="tech-desc">경량 Markup</text>
+  <text x="1750" y="745" text-anchor="middle" class="tech-desc">✅ 대중화</text>
+
+  <!-- WYSIWYG Lane -->
+  <!-- MacWrite -->
+  <rect x="1070" y="830" width="180" height="140" rx="8" fill="white" stroke="#8b5cf6" stroke-width="3"/>
+  <text x="1160" y="860" text-anchor="middle" class="tech-name">MacWrite</text>
+  <text x="1160" y="880" text-anchor="middle" class="tech-year">1983</text>
+  <text x="1160" y="905" text-anchor="middle" class="tech-desc">Apple Mac</text>
+  <text x="1160" y="925" text-anchor="middle" class="tech-desc">최초 WYSIWYG</text>
+  <text x="1160" y="945" text-anchor="middle" class="tech-desc">GUI 편집</text>
+
+  <!-- MS Word -->
+  <rect x="1280" y="830" width="180" height="140" rx="8" fill="white" stroke="#8b5cf6" stroke-width="3"/>
+  <text x="1370" y="860" text-anchor="middle" class="tech-name">MS Word</text>
+  <text x="1370" y="880" text-anchor="middle" class="tech-year">1985</text>
+  <text x="1370" y="905" text-anchor="middle" class="tech-desc">Microsoft</text>
+  <text x="1370" y="925" text-anchor="middle" class="tech-desc">사실상 표준</text>
+  <text x="1370" y="945" text-anchor="middle" class="tech-desc">🔴 종속</text>
+
+  <!-- Google Docs -->
+  <rect x="1700" y="830" width="180" height="140" rx="8" fill="white" stroke="#8b5cf6" stroke-width="3"/>
+  <text x="1790" y="860" text-anchor="middle" class="tech-name">Google Docs</text>
+  <text x="1790" y="880" text-anchor="middle" class="tech-year">2006</text>
+  <text x="1790" y="905" text-anchor="middle" class="tech-desc">웹 기반</text>
+  <text x="1790" y="925" text-anchor="middle" class="tech-desc">실시간 협업</text>
+  <text x="1790" y="945" text-anchor="middle" class="tech-desc">🟡 부분 해결</text>
+
+  <!-- Cross-paradigm technologies -->
+  <!-- Literate Programming (crosses all lanes) -->
+  <rect x="1950" y="200" width="300" height="300" rx="12" fill="#fef3c7" stroke="#f59e0b" stroke-width="4" opacity="0.95"/>
+  <text x="2100" y="235" text-anchor="middle" class="phase-label" fill="#f59e0b">Literate</text>
+  <text x="2100" y="260" text-anchor="middle" class="phase-label" fill="#f59e0b">Programming</text>
+  <text x="2100" y="285" text-anchor="middle" class="tech-year">2014-2020</text>
+
+  <text x="2100" y="320" text-anchor="middle" class="tech-desc">Jupyter Notebook</text>
+  <text x="2100" y="340" text-anchor="middle" class="tech-desc">R Markdown</text>
+  <text x="2100" y="360" text-anchor="middle" class="tech-desc">코드 + 문서 통합</text>
+
+  <text x="2100" y="390" text-anchor="middle" class="tech-desc" font-weight="700">문제:</text>
+  <text x="2100" y="410" text-anchor="middle" class="tech-desc">복잡도 폭발 💥</text>
+  <text x="2100" y="430" text-anchor="middle" class="tech-desc">도구 난립</text>
+  <text x="2100" y="450" text-anchor="middle" class="tech-desc">통합 부재</text>
+  <text x="2100" y="475" text-anchor="middle" class="tech-desc" fill="#f59e0b" font-weight="700">🟡 부분 해결</text>
+
+  <!-- Quarto (crosses all lanes) -->
+  <rect x="2300" y="200" width="280" height="300" rx="12" fill="#fbbf24" stroke="#f59e0b" stroke-width="5" opacity="0.95"/>
+  <text x="2440" y="235" text-anchor="middle" class="phase-label" fill="#dc2626">Quarto ⭐</text>
+  <text x="2440" y="260" text-anchor="middle" class="tech-year">2022-현재</text>
+
+  <text x="2440" y="295" text-anchor="middle" class="tech-desc" font-weight="700">통합 시도:</text>
+  <text x="2440" y="315" text-anchor="middle" class="tech-desc">✅ Markdown</text>
+  <text x="2440" y="335" text-anchor="middle" class="tech-desc">✅ LaTeX</text>
+  <text x="2440" y="355" text-anchor="middle" class="tech-desc">✅ Code (Jupyter)</text>
+  <text x="2440" y="375" text-anchor="middle" class="tech-desc">✅ Pandoc</text>
+  <text x="2440" y="395" text-anchor="middle" class="tech-desc">✅ 다중 출력</text>
+
+  <text x="2440" y="425" text-anchor="middle" class="tech-desc" font-weight="700">한계:</text>
+  <text x="2440" y="445" text-anchor="middle" class="tech-desc">❌ WYSIWYG 불가</text>
+  <text x="2440" y="465" text-anchor="middle" class="tech-desc">❌ 진입장벽</text>
+  <text x="2440" y="490" text-anchor="middle" class="tech-desc" fill="#f59e0b" font-weight="700">🟡 현재 최선</text>
+
+  <!-- Gen AI (crosses all lanes) -->
+  <rect x="2300" y="530" width="280" height="220" rx="12" fill="#f3e8ff" stroke="#a855f7" stroke-width="4" opacity="0.95"/>
+  <text x="2440" y="565" text-anchor="middle" class="phase-label" fill="#a855f7">Gen AI</text>
+  <text x="2440" y="590" text-anchor="middle" class="tech-year">2023-현재</text>
+
+  <text x="2440" y="625" text-anchor="middle" class="tech-desc">ChatGPT / Claude</text>
+  <text x="2440" y="645" text-anchor="middle" class="tech-desc">자연어 → 문서</text>
+
+  <text x="2440" y="675" text-anchor="middle" class="tech-desc">✅ 초안 작성</text>
+  <text x="2440" y="695" text-anchor="middle" class="tech-desc">❌ 정밀 제어 불가</text>
+  <text x="2440" y="715" text-anchor="middle" class="tech-desc">❌ 재현성 부족</text>
+  <text x="2440" y="740" text-anchor="middle" class="tech-desc" fill="#3b82f6" font-weight="700">🔵 진행 중</text>
+
+  <!-- Key interactions (arrows) -->
+  <!-- TeX -> PostScript (Success) -->
+  <path d="M 1000 500 Q 1080 400 1160 330" stroke="#10b981" stroke-width="4" fill="none" marker-end="url(#arrowSuccess)"/>
+  <text x="1070" y="400" class="arrow-label" fill="#10b981">dvips</text>
+  <text x="1070" y="418" class="arrow-label" fill="#10b981">✅</text>
+
+  <!-- PostScript -> PDF (Evolution) -->
+  <path d="M 1250 300 L 1370 300" stroke="#10b981" stroke-width="4" fill="none" marker-end="url(#arrowSuccess)"/>
+  <text x="1300" y="290" class="arrow-label" fill="#10b981">진화</text>
+
+  <!-- GML -> SGML -> HTML (Evolution) -->
+  <path d="M 900 700 L 1020 700" stroke="#10b981" stroke-width="4" fill="none" marker-end="url(#arrowSuccess)"/>
+  <path d="M 1200 700 L 1340 700" stroke="#10b981" stroke-width="4" fill="none" marker-end="url(#arrowSuccess)"/>
+  <text x="950" y="690" class="arrow-label" fill="#10b981">표준화</text>
+  <text x="1260" y="690" class="arrow-label" fill="#10b981">웹</text>
+
+  <!-- HTML -> Markdown (Simplification) -->
+  <path d="M 1520 700 L 1660 700" stroke="#10b981" stroke-width="4" fill="none" marker-end="url(#arrowSuccess)"/>
+  <text x="1580" y="690" class="arrow-label" fill="#10b981">간소화</text>
+
+  <!-- WYSIWYG -> TeX (Fail) -->
+  <path d="M 1160 830 Q 1000 700 900 570" stroke="#ef4444" stroke-width="3" stroke-dasharray="8,4" fill="none" marker-end="url(#arrowFail)"/>
+  <text x="1000" y="680" class="arrow-label" fill="#ef4444">MathType</text>
+  <text x="1000" y="698" class="arrow-label" fill="#ef4444">❌ 억지</text>
+
+  <!-- Summary box -->
+  <rect x="30" y="1050" width="2740" height="520" rx="12" fill="white" stroke="#6b7280" stroke-width="3"/>
+
+  <text x="1400" y="1090" text-anchor="middle" class="phase-label" style="font-size: 24px;">📊 역사적 진화 요약</text>
+  <line x1="80" y1="1110" x2="2720" y2="1110" stroke="#e5e7eb" stroke-width="2"/>
+
+  <!-- Three columns -->
+  <!-- Column 1: Success -->
+  <g id="success-column">
+    <text x="100" y="1150" class="summary-title" fill="#10b981" style="font-size: 20px;">✅ 성공한 통합</text>
+
+    <text x="120" y="1190" class="summary-text" font-weight="700">Drawing 패러다임:</text>
+    <text x="140" y="1215" class="summary-text">• CalComp (1959) → HP-GL (1977)</text>
+    <text x="140" y="1235" class="summary-text">• PostScript (1982) → PDF (1993)</text>
+    <text x="140" y="1255" class="summary-text">→ 표준화 성공, 프린터/문서 통합</text>
+
+    <text x="120" y="1295" class="summary-text" font-weight="700">Markup 패러다임:</text>
+    <text x="140" y="1320" class="summary-text">• GML (1969) → SGML (1986)</text>
+    <text x="140" y="1340" class="summary-text">• HTML (1991) → Markdown (2004)</text>
+    <text x="140" y="1360" class="summary-text">→ 문서 구조화, 웹 표준 확립</text>
+
+    <text x="120" y="1400" class="summary-text" font-weight="700">Typesetting 패러다임:</text>
+    <text x="140" y="1425" class="summary-text">• TeX (1978) → LaTeX (1984)</text>
+    <text x="140" y="1445" class="summary-text">• dvips로 PostScript 출력</text>
+    <text x="140" y="1465" class="summary-text">→ 학술 출판 표준</text>
+
+    <text x="120" y="1505" class="summary-text" font-weight="700">범용 변환:</text>
+    <text x="140" y="1530" class="summary-text">• Pandoc (2006) - 모든 포맷 변환</text>
+    <text x="140" y="1550" class="summary-text">→ 생태계 연결 성공</text>
+  </g>
+
+  <!-- Column 2: Partial -->
+  <g id="partial-column">
+    <text x="950" y="1150" class="summary-title" fill="#f59e0b" style="font-size: 20px;">🟡 부분 해결</text>
+
+    <text x="970" y="1190" class="summary-text" font-weight="700">코드 + 문서 통합:</text>
+    <text x="990" y="1215" class="summary-text">• Jupyter Notebook (2014)</text>
+    <text x="990" y="1235" class="summary-text">• R Markdown (2016)</text>
+    <text x="990" y="1255" class="summary-text">• Quarto (2022) ⭐ 현재 최선</text>
+    <text x="990" y="1275" class="summary-text">→ 데이터 과학용은 좋음</text>
+    <text x="990" y="1295" class="summary-text">→ 비개발자 진입장벽 높음</text>
+
+    <text x="970" y="1335" class="summary-text" font-weight="700">협업:</text>
+    <text x="990" y="1360" class="summary-text">• Google Docs - 실시간 협업</text>
+    <text x="990" y="1380" class="summary-text">• Git - 버전 관리 (개발자용)</text>
+    <text x="990" y="1400" class="summary-text">→ 두 세계 분리</text>
+
+    <text x="970" y="1440" class="summary-text" font-weight="700">경량 마크업:</text>
+    <text x="990" y="1465" class="summary-text">• Markdown 표준 부재</text>
+    <text x="990" y="1485" class="summary-text">→ CommonMark, GFM, Pandoc...</text>
+    <text x="990" y="1505" class="summary-text">→ 파편화 문제</text>
+  </g>
+
+  <!-- Column 3: Unsolved -->
+  <g id="unsolved-column">
+    <text x="1800" y="1150" class="summary-title" fill="#ef4444" style="font-size: 20px;">❌ 미해결 (심각)</text>
+
+    <text x="1820" y="1190" class="summary-text" font-weight="700">WYSIWYG vs Source Code 분열:</text>
+    <text x="1840" y="1215" class="summary-text">• Word/Google Docs (대중용)</text>
+    <text x="1840" y="1235" class="summary-text">• LaTeX/Markdown (개발자용)</text>
+    <text x="1840" y="1255" class="summary-text" fill="#dc2626">🔴 완전히 다른 두 세계</text>
+    <text x="1840" y="1275" class="summary-text">→ 교차 불가능</text>
+    <text x="1840" y="1295" class="summary-text">→ 협업 단절</text>
+
+    <text x="1820" y="1335" class="summary-text" font-weight="700">Desktop vs Web 분열:</text>
+    <text x="1840" y="1360" class="summary-text">• PDF/인쇄 (고정 레이아웃)</text>
+    <text x="1840" y="1380" class="summary-text">• HTML (반응형)</text>
+    <text x="1840" y="1400" class="summary-text" fill="#dc2626">🔴 근본적으로 다른 모델</text>
+    <text x="1840" y="1420" class="summary-text">→ 단일 소스 어려움</text>
+
+    <text x="1820" y="1460" class="summary-text" font-weight="700">AI 통합:</text>
+    <text x="1840" y="1485" class="summary-text">• 초안 작성은 가능</text>
+    <text x="1840" y="1505" class="summary-text">• 정밀 제어 불가</text>
+    <text x="1840" y="1525" class="summary-text">• 재현성 부족</text>
+    <text x="1840" y="1545" class="summary-text" fill="#3b82f6">🔵 초기 단계, 한계 명확</text>
+  </g>
+
+  <!-- Key insight -->
+  <rect x="80" y="1470" width="2640" height="80" rx="8" fill="#fef3c7" stroke="#f59e0b" stroke-width="2"/>
+  <text x="1400" y="1500" text-anchor="middle" class="phase-label" fill="#f59e0b">💡 핵심 통찰</text>
+  <text x="1400" y="1525" text-anchor="middle" class="summary-text">같은 패러다임 내 진화는 성공 (Drawing: Plotter→PS→PDF, Markup: GML→SGML→HTML) | 다른 패러다임 간 침범은 실패 (WYSIWYG ↔ TeX)</text>
+  <text x="1400" y="1545" text-anchor="middle" class="summary-text" font-weight="700" fill="#f59e0b">Quarto는 현재 최선의 타협점이지만, WYSIWYG 분열은 여전히 미해결</text>
+
+</svg>

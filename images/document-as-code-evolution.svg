@@ -1,110 +1,123 @@
-<svg viewBox="0 70 1000 500" xmlns="http://www.w3.org/2000/svg">
+<svg viewBox="0 50 1240 550" xmlns="http://www.w3.org/2000/svg">
   <defs>
     <style>
-      .title { font: 24px 'Noto Sans KR', sans-serif; font-weight: 700; fill: #2c3e50; }
-      .subtitle { font: 16px 'Noto Sans KR', sans-serif; font-weight: 500; fill: #34495e; }
-      .content { font: 14px 'Noto Sans KR', sans-serif; fill: #2c3e50; }
-      .small-text { font: 12px 'Noto Sans KR', sans-serif; fill: #7f8c8d; }
-      .stage-title { font: 18px 'Noto Sans KR', sans-serif; font-weight: 600; }
-      .code-stage { fill: #3498db; }
-      .program-stage { fill: #e74c3c; }
-      .software-stage { fill: #27ae60; }
-      .arrow { fill: #95a5a6; }
-      .box-shadow { filter: drop-shadow(2px 2px 4px rgba(0,0,0,0.1)); }
+      .title { font-family: 'ET Book', 'Palatino Linotype', 'Book Antiqua', Palatino, serif; font-size: 24px; font-weight: 400; fill: #111111; }
+      .subtitle { font-family: 'ET Book', 'Palatino Linotype', 'Book Antiqua', Palatino, serif; font-size: 17px; fill: #555555; }
+      .content { font-family: 'ET Book', 'Palatino Linotype', 'Book Antiqua', Palatino, serif; font-size: 16px; fill: #333333; }
+      .content-bottom { font-family: 'ET Book', 'Palatino Linotype', 'Book Antiqua', Palatino, serif; font-size: 24px; fill: #333333; }
+      .small-text { font-family: 'ET Book', 'Palatino Linotype', 'Book Antiqua', Palatino, serif; font-size: 15px; fill: #666666; }
+      .stage-title { font-family: 'ET Book', 'Palatino Linotype', 'Book Antiqua', Palatino, serif; font-size: 20px; font-weight: 500; }
+      .code-stage { fill: #4A90E2; }
+      .program-stage { fill: #E85D75; }
+      .software-stage { fill: #50B83C; }
+      .arrow { stroke: #999999; stroke-width: 1; fill: none; stroke-dasharray: 3,3; }
     </style>
+
+    <!-- 화살표 마커 -->
+    <marker id="flow-arrow" markerWidth="6" markerHeight="5"
+            refX="5" refY="2.5" orient="auto">
+      <polygon points="0 0, 6 2.5, 0 5" fill="#999999" />
+    </marker>
   </defs>
-  
+
   <!-- Background -->
-  <rect width="1000" height="600" fill="#ffffff"/>
+  <rect width="1250" height="600" fill="#fefefe"/>
   
   <!-- Stage 1: Code -->
-  <g class="box-shadow">
-    <rect x="50" y="100" width="240" height="400" rx="15" fill="#ecf0f1" stroke="#3498db" stroke-width="3"/>
-    <rect x="60" y="110" width="220" height="60" rx="10" fill="#3498db" opacity="0.1"/>
-    <text x="170" y="135" class="stage-title code-stage" text-anchor="middle">Stage 1: Document ≈ Code</text>
-    <text x="170" y="155" class="small-text" text-anchor="middle">Document as Code</text>
-    
+  <g>
+    <rect x="40" y="100" width="350" height="400" rx="3" fill="#F7FBFF" stroke="#4A90E2" stroke-width="1.5"/>
+    <line x1="40" y1="175" x2="390" y2="175" stroke="#4A90E2" stroke-width="0.5" opacity="0.3"/>
+    <text x="215" y="135" class="stage-title code-stage" text-anchor="middle">Stage 1: Document ≈ Code</text>
+    <text x="215" y="160" class="subtitle" text-anchor="middle" font-style="italic">Document as Code</text>
+
     <!-- Code characteristics -->
-    <text x="80" y="190" class="content" font-weight="600">Features:</text>
-    <text x="80" y="210" class="content">• Markdown text files</text>
-    <text x="80" y="230" class="content">• Git version control</text>
-    <text x="80" y="250" class="content">• Text editor usage</text>
-    <text x="80" y="270" class="content">• Static content</text>
-    
-    <text x="80" y="310" class="content" font-weight="600">Tools:</text>
-    <text x="80" y="330" class="content">• Markdown</text>
-    <text x="80" y="350" class="content">• Pandoc</text>
-    <text x="80" y="370" class="content">• GitHub</text>
-    
-    <text x="80" y="410" class="content" font-weight="600">Output:</text>
-    <text x="80" y="430" class="content">• HTML, PDF</text>
-    <text x="80" y="450" class="content">• Static websites</text>
-    <text x="80" y="470" class="content">• Document files</text>
+    <text x="60" y="200" class="content" font-weight="600">Features:</text>
+    <text x="60" y="220" class="content">• Markdown text files</text>
+    <text x="60" y="240" class="content">• Git version control</text>
+    <text x="60" y="260" class="content">• Text editor usage</text>
+    <text x="60" y="280" class="content">• Static content</text>
+
+    <text x="60" y="320" class="content" font-weight="600">Tools:</text>
+    <text x="60" y="340" class="content">• Markdown</text>
+    <text x="60" y="360" class="content">• Pandoc</text>
+    <text x="60" y="380" class="content">• GitHub</text>
+
+    <text x="60" y="420" class="content" font-weight="600">Output:</text>
+    <text x="60" y="440" class="content">• HTML, PDF</text>
+    <text x="60" y="460" class="content">• Static websites</text>
+    <text x="60" y="480" class="content">• Document files</text>
   </g>
   
   <!-- Arrow 1 -->
-  <g class="arrow-one" transform="translate(-30, 0)">
-    <polygon points="340,295 380,285 380,295 410,295 380,305 380,315" class="arrow"/>
-    <text x="370" y="340" class="small-text" text-anchor="middle">Adding Executability</text>
+  <g>
+    <line x1="395" y1="300" x2="435" y2="300" class="arrow" marker-end="url(#flow-arrow)"/>
+    <text x="415" y="330" class="small-text" text-anchor="middle" font-style="italic">Adding Executability</text>
   </g>
   
   <!-- Stage 2: Program -->
-  <g class="box-shadow"  transform="translate(-40, 0)">
-    <rect x="440" y="100" width="240" height="400" rx="15" fill="#ecf0f1" stroke="#e74c3c" stroke-width="3"/>
-    <rect x="450" y="110" width="220" height="60" rx="10" fill="#e74c3c" opacity="0.1"/>
-    <text x="560" y="135" class="stage-title program-stage" text-anchor="middle">Stage 2: Document ≈ Program</text>
-    <text x="560" y="155" class="small-text" text-anchor="middle">Document as Program</text>
-    
+  <g>
+    <rect x="445" y="100" width="350" height="400" rx="3" fill="#FFF5F7" stroke="#E85D75" stroke-width="1.5"/>
+    <line x1="445" y1="175" x2="795" y2="175" stroke="#E85D75" stroke-width="0.5" opacity="0.3"/>
+    <text x="620" y="135" class="stage-title program-stage" text-anchor="middle">Stage 2: Document ≈ Program</text>
+    <text x="620" y="160" class="subtitle" text-anchor="middle" font-style="italic">Document as Program</text>
+
     <!-- Program characteristics -->
-    <text x="470" y="190" class="content" font-weight="600">Features:</text>
-    <text x="470" y="210" class="content">• Executable code chunks</text>
-    <text x="470" y="230" class="content">• Data processing + visualization</text>
-    <text x="470" y="250" class="content">• Dynamic content generation</text>
-    <text x="470" y="270" class="content">• Reproducible analysis</text>
-    
-    <text x="470" y="310" class="content" font-weight="600">Tools:</text>
-    <text x="470" y="330" class="content">• Jupyter Notebook</text>
-    <text x="470" y="350" class="content">• R Markdown</text>
-    <text x="470" y="370" class="content">• Quarto</text>
-    
-    <text x="470" y="410" class="content" font-weight="600">Output:</text>
-    <text x="470" y="430" class="content">• Interactive charts</text>
-    <text x="470" y="450" class="content">• Calculated reports</text>
-    <text x="470" y="470" class="content">• Data analysis results</text>
+    <text x="465" y="200" class="content" font-weight="600">Features:</text>
+    <text x="465" y="220" class="content">• Executable code chunks</text>
+    <text x="465" y="240" class="content">• Data processing + visualization</text>
+    <text x="465" y="260" class="content">• Dynamic content generation</text>
+    <text x="465" y="280" class="content">• Reproducible analysis</text>
+
+    <text x="465" y="320" class="content" font-weight="600">Tools:</text>
+    <text x="465" y="340" class="content">• Jupyter Notebook</text>
+    <text x="465" y="360" class="content">• R Markdown</text>
+    <text x="465" y="380" class="content">• Quarto</text>
+
+    <text x="465" y="420" class="content" font-weight="600">Output:</text>
+    <text x="465" y="440" class="content">• Interactive charts</text>
+    <text x="465" y="460" class="content">• Calculated reports</text>
+    <text x="465" y="480" class="content">• Data analysis results</text>
   </g>
   
   <!-- Arrow 2 -->
-  <g class="arrow-two" transform="translate(-80, 0)">  
-    <polygon points="740,295 770,285 770,295 800,295 770,305 770,315" class="arrow"/>
-    <text x="770" y="340" class="small-text" text-anchor="middle">Complete Systemization</text>
+  <g>
+    <line x1="800" y1="300" x2="840" y2="300" class="arrow" marker-end="url(#flow-arrow)"/>
+    <text x="820" y="330" class="small-text" text-anchor="middle" font-style="italic">Complete Systemization</text>
   </g>
 
   <!-- Stage 3: Software -->
-  <g class="box-shadow" transform="translate(-80, 0)">  
-    <rect x="830" y="100" width="240" height="400" rx="15" fill="#ecf0f1" stroke="#27ae60" stroke-width="3"/>
-    <rect x="840" y="110" width="220" height="60" rx="10" fill="#27ae60" opacity="0.1"/>
-    <text x="955" y="135" class="stage-title software-stage" text-anchor="middle">Stage 3: Document ≈ Software</text>
-    <text x="955" y="155" class="small-text" text-anchor="middle">Document as Software</text>
-    
+  <g>
+    <rect x="850" y="100" width="350" height="400" rx="3" fill="#F6FFF5" stroke="#50B83C" stroke-width="1.5"/>
+    <line x1="850" y1="175" x2="1200" y2="175" stroke="#50B83C" stroke-width="0.5" opacity="0.3"/>
+    <text x="1025" y="135" class="stage-title software-stage" text-anchor="middle">Stage 3: Document ≈ Software</text>
+    <text x="1025" y="160" class="subtitle" text-anchor="middle" font-style="italic">Document as Software</text>
+
     <!-- Software characteristics -->
-    <text x="850" y="210" class="content" font-weight="600">Features:</text>
-    <text x="850" y="230" class="content">• Complete UI</text>
-    <text x="850" y="250" class="content">• DB connection</text>
-    <text x="850" y="270" class="content">• API integration</text>
-    <text x="850" y="290" class="content">• Real-time response</text>
-    
-    <text x="850" y="330" class="content" font-weight="600">Tools:</text>
-    <text x="850" y="350" class="content">• Shiny</text>
-    <text x="850" y="370" class="content">• Streamlit</text>
-    <text x="850" y="390" class="content">• Dashboard</text>
-    
-    <text x="850" y="430" class="content" font-weight="600">Output:</text>
-    <text x="850" y="450" class="content">• Web apps</text>
-    <text x="850" y="470" class="content">• Dashboards</text>
-    <text x="850" y="490" class="content">• SaaS</text>
+    <text x="870" y="200" class="content" font-weight="600">Features:</text>
+    <text x="870" y="220" class="content">• Complete UI</text>
+    <text x="870" y="240" class="content">• DB connection</text>
+    <text x="870" y="260" class="content">• API integration</text>
+    <text x="870" y="280" class="content">• Real-time response</text>
+
+    <text x="870" y="320" class="content" font-weight="600">Tools:</text>
+    <text x="870" y="340" class="content">• Shiny</text>
+    <text x="870" y="360" class="content">• Streamlit</text>
+    <text x="870" y="380" class="content">• Dashboard</text>
+
+    <text x="870" y="420" class="content" font-weight="600">Output:</text>
+    <text x="870" y="440" class="content">• Web apps</text>
+    <text x="870" y="460" class="content">• Dashboards</text>
+    <text x="870" y="480" class="content">• SaaS</text>
   </g>
   
   <!-- Bottom example -->
-  <rect x="50" y="520" width="900" height="40" rx="10" fill="#f8f9fa" stroke="#dee2e6"/>
-  <text x="80" y="545" class="content" font-weight="600">[Sales Report] Code: report.md → Program: analysis.qmd → Software: sales_dashboard.qmd</text>
+  <rect x="40" y="530" width="1160" height="50" rx="2" fill="#ffffff" stroke="#dddddd" stroke-width="0.5"/>
+  <text x="620" y="560" class="content-bottom" text-anchor="middle" font-weight="600">
+    <tspan fill="#333333">[Sales Report] Code: </tspan>
+    <tspan fill="#4A90E2" font-weight="700">report.md</tspan>
+    <tspan fill="#333333"> → Program: </tspan>
+    <tspan fill="#E85D75" font-weight="700">analysis.qmd</tspan>
+    <tspan fill="#333333"> → Software: </tspan>
+    <tspan fill="#50B83C" font-weight="700">sales_dashboard.qmd</tspan>
+  </text>
 </svg>

@@ -1,0 +1,136 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900">
+  <defs>
+    <style>
+      .title-text { font-family: monospace; font-size: 52px; font-weight: bold; fill: #2c3e50; }
+      .center-text { font-family: monospace; font-size: 36px; font-weight: bold; fill: #fff; }
+      .problem-title { font-family: monospace; font-size: 26px; font-weight: bold; fill: #c62828; }
+      .desc-text { font-family: monospace; font-size: 16px; fill: #555; line-height: 1.5; }
+      .impact-text { font-family: monospace; font-size: 19px; fill: #7b1fa2; font-weight: bold; }
+      .problem-card { fill: #ffebee; stroke: #c62828; stroke-width: 3; }
+      .center-circle { fill: #c62828; stroke: #8b0000; stroke-width: 4; }
+    </style>
+    <linearGradient id="redGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#d32f2f;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#c62828;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1600" height="900" fill="#fafafa"/>
+
+  <!-- Title -->
+  <text x="800" y="50" class="title-text" text-anchor="middle">MS Word Traditional Problems</text>
+
+  <!-- Central Circle with Word Logo -->
+  <circle cx="800" cy="480" r="140" class="center-circle"/>
+
+  <!-- MS Word Logo in center -->
+  <g transform="translate(740, 420) scale(3.5)">
+    <path d="M18.536,2.323V4.868c3.4.019,7.12-.035,10.521.019a.783.783,0,0,1,.912.861c.054,6.266-.013,12.89.032,19.157-.02.4.009,1.118-.053,1.517-.079.509-.306.607-.817.676-.286.039-.764.034-1.045.047-2.792-.014-5.582-.011-8.374-.01l-1.175,0v2.547L2,27.133Q2,16,2,4.873L18.536,2.322" style="fill:#fff"/><path d="M18.536,5.822h10.5V26.18h-10.5V23.635h8.27V22.363h-8.27v-1.59h8.27V19.5h-8.27v-1.59h8.27V16.637h-8.27v-1.59h8.27V13.774h-8.27v-1.59h8.27V10.911h-8.27V9.321h8.27V8.048h-8.27V5.822" style="fill:#c62828"/><path d="M8.573,11.443c.6-.035,1.209-.06,1.813-.092.423,2.147.856,4.291,1.314,6.429.359-2.208.757-4.409,1.142-6.613.636-.022,1.272-.057,1.905-.1-.719,3.082-1.349,6.19-2.134,9.254-.531.277-1.326-.013-1.956.032-.423-2.106-.916-4.2-1.295-6.314C8.99,16.1,8.506,18.133,8.08,20.175q-.916-.048-1.839-.111c-.528-2.8-1.148-5.579-1.641-8.385.544-.025,1.091-.048,1.635-.067.328,2.026.7,4.043.986,6.072.448-2.08.907-4.161,1.352-6.241" style="fill:#c62828"/>
+  </g>
+
+  <!-- Central warning text -->
+  <text x="800" y="650" class="center-text" text-anchor="middle">6 MAJOR</text>
+  <text x="800" y="685" class="center-text" text-anchor="middle">ISSUES</text>
+
+  <!-- Problem cards arranged in circular pattern -->
+
+  <!-- TOP: Problem 1 - Version Control -->
+  <g transform="translate(575, 80)">
+    <rect x="0" y="0" width="450" height="190" class="problem-card" rx="10"/>
+    <text x="225" y="35" class="problem-title" text-anchor="middle">❌ Version Control Nightmare</text>
+    <line x1="20" y1="45" x2="430" y2="45" stroke="#c62828" stroke-width="2"/>
+
+    <text x="20" y="75" class="desc-text">• Git diff: "Binary files differ" ❌</text>
+    <text x="20" y="100" class="desc-text">• final_v2_REAL_FINAL.docx 🤦</text>
+    <text x="20" y="125" class="desc-text">• Email ping-pong collaboration</text>
+    <text x="20" y="145" class="desc-text">• No meaningful change history</text>
+
+    <text x="225" y="175" class="impact-text" text-anchor="middle">💥 Team productivity ↓ 30-40%</text>
+  </g>
+
+  <!-- TOP RIGHT: Problem 2 - Vendor Lock-in -->
+  <g transform="translate(1110, 170)">
+    <rect x="0" y="0" width="460" height="190" class="problem-card" rx="10"/>
+    <text x="230" y="35" class="problem-title" text-anchor="middle">🔒 Vendor Lock-in</text>
+    <line x1="20" y1="45" x2="440" y2="45" stroke="#c62828" stroke-width="2"/>
+
+    <text x="20" y="75" class="desc-text">• Must have MS Office 💰</text>
+    <text x="20" y="100" class="desc-text">• LibreOffice? Formatting breaks 💔</text>
+    <text x="20" y="125" class="desc-text">• Proprietary format dependency</text>
+    <text x="20" y="145" class="desc-text">• $3,500-5,000 / 10 users / 5 years</text>
+
+    <text x="230" y="175" class="impact-text" text-anchor="middle">💥 Forced upgrades, no escape</text>
+  </g>
+
+  <!-- BOTTOM RIGHT: Problem 3 - No Reproducibility -->
+  <g transform="translate(1110, 555)">
+    <rect x="0" y="0" width="460" height="190" class="problem-card" rx="10"/>
+    <text x="230" y="35" class="problem-title" text-anchor="middle">🔄 No Reproducibility</text>
+    <line x1="20" y1="45" x2="440" y2="45" stroke="#c62828" stroke-width="2"/>
+
+    <text x="20" y="75" class="desc-text">• Manual copy-paste workflow 📋</text>
+    <text x="20" y="100" class="desc-text">• Data changes? Redo everything 😫</text>
+    <text x="20" y="125" class="desc-text">• Scientific papers can't be verified</text>
+    <text x="20" y="145" class="desc-text">• No automation pipeline possible</text>
+
+    <text x="230" y="175" class="impact-text" text-anchor="middle">💥 Wasted time, inconsistency</text>
+  </g>
+
+  <!-- BOTTOM: Problem 4 - Complex Documents -->
+  <g transform="translate(575, 660)">
+    <rect x="0" y="0" width="450" height="190" class="problem-card" rx="10"/>
+    <text x="225" y="35" class="problem-title" text-anchor="middle">📄 Complex Document Hell</text>
+    <line x1="20" y1="45" x2="430" y2="45" stroke="#c62828" stroke-width="2"/>
+
+    <text x="20" y="75" class="desc-text">• 100+ pages → Slow &amp; crashes 💥</text>
+    <text x="20" y="100" class="desc-text">• Cross-references break 🔗❌</text>
+    <text x="20" y="125" class="desc-text">• Table of contents won't update</text>
+    <text x="20" y="145" class="desc-text">• PhD thesis disasters 🎓😱</text>
+
+    <text x="225" y="175" class="impact-text" text-anchor="middle">💥 Hours debugging formatting</text>
+  </g>
+
+  <!-- BOTTOM LEFT: Problem 5 - Poor Collaboration -->
+  <g transform="translate(30, 555)">
+    <rect x="0" y="0" width="460" height="190" class="problem-card" rx="10"/>
+    <text x="230" y="35" class="problem-title" text-anchor="middle">👥 Poor Collaboration</text>
+    <line x1="20" y1="45" x2="440" y2="45" stroke="#c62828" stroke-width="2"/>
+
+    <text x="20" y="75" class="desc-text">• "Track Changes" = messy 🎨</text>
+    <text x="20" y="100" class="desc-text">• Multiple editors → Conflicts ⚔️</text>
+    <text x="20" y="125" class="desc-text">• 3 versions, manual merge needed</text>
+    <text x="20" y="145" class="desc-text">• Real-time editing often fails</text>
+
+    <text x="230" y="175" class="impact-text" text-anchor="middle">💥 Team bottlenecks, lost edits</text>
+  </g>
+
+  <!-- TOP LEFT: Problem 6 - Hard to Automate -->
+  <g transform="translate(30, 170)">
+    <rect x="0" y="0" width="460" height="190" class="problem-card" rx="10"/>
+    <text x="230" y="35" class="problem-title" text-anchor="middle">🤖 Hard to Automate</text>
+    <line x1="20" y1="45" x2="440" y2="45" stroke="#c62828" stroke-width="2"/>
+
+    <text x="20" y="75" class="desc-text">• VBA: Outdated, security risks 🚨</text>
+    <text x="20" y="100" class="desc-text">• Python-docx: Limited functionality 🔧</text>
+    <text x="20" y="125" class="desc-text">• Can't generate 100s of reports</text>
+    <text x="20" y="145" class="desc-text">• Programmatic access difficult</text>
+
+    <text x="230" y="175" class="impact-text" text-anchor="middle">💥 No DevOps/CI integration</text>
+  </g>
+
+  <!-- Connecting lines from center to problems -->
+  <line x1="800" y1="340" x2="800" y2="255" stroke="#c62828" stroke-width="3" stroke-dasharray="8,4" opacity="0.5"/>
+  <line x1="920" y1="380" x2="1110" y2="260" stroke="#c62828" stroke-width="3" stroke-dasharray="8,4" opacity="0.5"/>
+  <line x1="920" y1="580" x2="1110" y2="640" stroke="#c62828" stroke-width="3" stroke-dasharray="8,4" opacity="0.5"/>
+  <line x1="800" y1="620" x2="800" y2="660" stroke="#c62828" stroke-width="3" stroke-dasharray="8,4" opacity="0.5"/>
+  <line x1="680" y1="580" x2="490" y2="640" stroke="#c62828" stroke-width="3" stroke-dasharray="8,4" opacity="0.5"/>
+  <line x1="680" y1="380" x2="490" y2="260" stroke="#c62828" stroke-width="3" stroke-dasharray="8,4" opacity="0.5"/>
+
+  <!-- Warning icons around center -->
+  <text x="720" y="395" style="font-size: 32px;">⚠️</text>
+  <text x="850" y="395" style="font-size: 32px;">⚠️</text>
+  <text x="720" y="565" style="font-size: 32px;">⚠️</text>
+  <text x="850" y="565" style="font-size: 32px;">⚠️</text>
+
+</svg>

@@ -1,204 +1,214 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="1000" height="750" viewBox="0 0 1000 750" xmlns="http://www.w3.org/2000/svg">
+<svg viewBox="0 80 1400 720" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <!-- Content Generation Specific Gradients -->
-    <linearGradient id="aiPurple" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#8B5CF6;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#6366F1;stop-opacity:1" />
-    </linearGradient>
-    <linearGradient id="dataBlue" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#3B82F6;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#1E40AF;stop-opacity:1" />
-    </linearGradient>
-    <linearGradient id="versionGray" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#6B7280;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#4B5563;stop-opacity:1" />
-    </linearGradient>
-    <linearGradient id="promptTeal" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#14B8A6;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#0F766E;stop-opacity:1" />
-    </linearGradient>
-    <linearGradient id="codeOrange" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#F97316;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#EA580C;stop-opacity:1" />
-    </linearGradient>
-    <linearGradient id="textGreen" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#10B981;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#059669;stop-opacity:1" />
-    </linearGradient>
-    <linearGradient id="vizRed" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#EF4444;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#DC2626;stop-opacity:1" />
-    </linearGradient>
-    <linearGradient id="tableAmber" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#F59E0B;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#D97706;stop-opacity:1" />
-    </linearGradient>
-    <linearGradient id="qualityIndigo" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#6366F1;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#4F46E5;stop-opacity:1" />
-    </linearGradient>
-
-    <!-- Advanced Filters -->
-    <filter id="dropShadow" x="-30%" y="-30%" width="160%" height="160%">
-      <feGaussianBlur in="SourceAlpha" stdDeviation="4"/>
-      <feOffset dx="3" dy="6" result="offsetblur"/>
-      <feComponentTransfer><feFuncA type="linear" slope="0.25"/></feComponentTransfer>
-      <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
-    </filter>
-
-    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
-      <feGaussianBlur in="SourceGraphic" stdDeviation="5" result="coloredBlur"/>
-      <feMerge><feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/></feMerge>
-    </filter>
-
-    <!-- Pulse Animation -->
-    <filter id="pulse" x="-50%" y="-50%" width="200%" height="200%">
-      <feGaussianBlur in="SourceGraphic" stdDeviation="3" result="coloredBlur"/>
-      <feMerge><feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/></feMerge>
-    </filter>
-
-    <!-- Arrows -->
-    <marker id="aiArrow" markerWidth="14" markerHeight="14" refX="12" refY="7" orient="auto">
-      <path d="M2,2 L2,12 L12,7 z" fill="#8B5CF6" />
-    </marker>
-    <marker id="dataArrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
-      <path d="M2,2 L2,10 L10,6 z" fill="#6B7280" />
+    <!-- Simple Arrow Marker (Quarto purple only) -->
+    <marker id="arrow" markerWidth="12" markerHeight="10" refX="11" refY="5" orient="auto">
+      <polygon points="0 0, 12 5, 0 10" fill="#8B5CF6"/>
     </marker>
 
     <!-- Styles -->
     <style>
-      .ai-title { font-family: "Noto Sans KR", sans-serif; font-size: 16px; font-weight: bold; text-anchor: middle; fill: white; }
-      .ai-subtitle { font-family: "Noto Sans KR", sans-serif; font-size: 12px; text-anchor: middle; fill: white; opacity: 0.9; }
-      .ai-label { font-family: "Noto Sans KR", sans-serif; font-size: 11px; text-anchor: middle; fill: #6B7280; }
-      .center-title { font-family: "Noto Sans KR", sans-serif; font-size: 18px; font-weight: bold; text-anchor: middle; }
-      .feature-text { font-family: "Noto Sans KR", sans-serif; font-size: 10px; text-anchor: middle; fill: white; }
+      .main-title {
+        font-family: "ET Book", Palatino, "Palatino Linotype", "Book Antiqua", Georgia, serif;
+        font-size: 48px;
+        font-weight: bold;
+        text-anchor: middle;
+        fill: #FFFFFF;
+      }
+      .subtitle {
+        font-family: "ET Book", Palatino, "Palatino Linotype", "Book Antiqua", Georgia, serif;
+        font-size: 24px;
+        text-anchor: middle;
+        fill: #A0A0A0;
+      }
+      .stage-title {
+        font-family: "ET Book", Palatino, "Palatino Linotype", "Book Antiqua", Georgia, serif;
+        font-size: 28px;
+        font-weight: bold;
+        text-anchor: middle;
+        fill: #FFFFFF;
+      }
+      .stage-detail {
+        font-family: "ET Book", Palatino, "Palatino Linotype", "Book Antiqua", Georgia, serif;
+        font-size: 15px;
+        text-anchor: middle;
+        fill: #A0A0A0;
+      }
+      .transform-label {
+        font-family: "ET Book", Palatino, "Palatino Linotype", "Book Antiqua", Georgia, serif;
+        font-size: 20px;
+        text-anchor: middle;
+        fill: #8B5CF6;
+      }
+      .panel-title {
+        font-family: "ET Book", Palatino, "Palatino Linotype", "Book Antiqua", Georgia, serif;
+        font-size: 22px;
+        font-weight: bold;
+        fill: #FFFFFF;
+      }
+      .panel-item {
+        font-family: "ET Book", Palatino, "Palatino Linotype", "Book Antiqua", Georgia, serif;
+        font-size: 18px;
+        font-weight: bold;
+        fill: #FFFFFF;
+      }
+      .panel-detail {
+        font-family: "ET Book", Palatino, "Palatino Linotype", "Book Antiqua", Georgia, serif;
+        font-size: 15px;
+        fill: #A0A0A0;
+      }
     </style>
   </defs>
 
-  <!-- Background -->
-  <rect width="1000" height="750" fill="#FEFEFE" stroke="#E5E7EB" stroke-width="1" rx="12"/>
+  <!-- Background (solid dark) -->
+  <rect width="1400" height="850" fill="#1a1a2e"/>
 
-  <!-- Title Area -->
-  <rect x="50" y="15" width="900" height="50" rx="20" fill="rgba(139, 92, 246, 0.08)" stroke="#8B5CF6" stroke-width="2" stroke-dasharray="10,5"/>
-  <text x="500" y="35" class="center-title" fill="#7C3AED">AI-Enhanced Content Generation System</text>
-  <text x="500" y="55" class="ai-label" fill="#8B5CF6">From Data to Publication: 8-Stage Content Pipeline</text>
+  <!-- Central QUARTO Hub (minimal design) -->
+  <g transform="translate(700, 450)">
+    <!-- Outer rings (no fill, stroke only) -->
+    <circle cx="0" cy="0" r="180" fill="none" stroke="#4A5568" stroke-width="1" opacity="0.3"/>
+    <circle cx="0" cy="0" r="140" fill="none" stroke="#4A5568" stroke-width="1" opacity="0.5"/>
 
-  <!-- Central Hub: AI-Enhanced Content Creation (Expanded) -->
-  <g transform="translate(500, 375)">
-    <circle cx="0" cy="0" r="90" fill="url(#aiPurple)" filter="url(#glow)" stroke="#6D28D9" stroke-width="5"/>
-    <circle cx="0" cy="0" r="75" fill="rgba(255,255,255,0.15)" opacity="0.8"/>
-    <text x="0" y="-20" class="ai-title" font-size="18">🤖 AI Enhanced</text>
-    <text x="0" y="0" class="ai-title" font-size="18">Content Generation</text>
-    <text x="0" y="20" class="ai-subtitle" font-size="14">Content Generation Hub</text>
-    <text x="0" y="35" class="ai-subtitle" font-size="12">8-Stage Pipeline</text>
+    <!-- Core circle (Quarto purple) -->
+    <circle cx="0" cy="0" r="100" fill="none" stroke="#8B5CF6" stroke-width="4"/>
+    <circle cx="0" cy="0" r="95" fill="#8B5CF6" opacity="0.1"/>
+
+    <text x="0" y="0" class="main-title" font-size="44" fill="#8B5CF6">QUARTO</text>
+    <text x="0" y="35" class="subtitle" font-size="22">AI Integration</text>
+    <text x="0" y="65" class="subtitle" font-size="22">Platform</text>
   </g>
 
-  <!-- Top Area: Research/Analysis Stage -->
-  
-  <!-- 1. Data Connection (Top Left) -->
-  <path d="M 450 300 Q 350 200 270 150" stroke="#8B5CF6" stroke-width="2" marker-end="url(#aiArrow)" filter="url(#glow)" fill="none"/>
-  <g transform="translate(200, 150)">
-    <rect x="-70" y="-35" width="140" height="70" rx="18" fill="url(#dataBlue)" filter="url(#dropShadow)" stroke="#1E40AF" stroke-width="2"/>
-    <text x="0" y="-12" class="ai-title" font-size="14">🗂️ Data Connection</text>
-    <text x="0" y="5" class="ai-subtitle" font-size="11">SQL • CSV • API</text>
-    <text x="0" y="20" class="ai-subtitle" font-size="10">Automatic Query Generation</text>
+  <!-- Quarto Role Emphasize -->
+  <text x="700" y="300" text-anchor="middle" font-family="ET Book, Palatino, serif" font-size="26" fill="#8B5CF6" opacity="0.7">All AI technologies unified by Quarto ecosystem</text>
+
+  <!-- ============================================ -->
+  <!-- Stage 1: Raw Signals -->
+  <!-- ============================================ -->
+
+  <g transform="translate(0, -40)">
+    <g id="signals">
+      <rect x="100" y="150" width="250" height="120" rx="8" fill="none" stroke="#4A5568" stroke-width="2"/>
+      <text x="225" y="185" class="stage-title">Raw Signals</text>
+      <text x="225" y="210" class="stage-detail">• Data connection (SQL, CSV, API)</text>
+      <text x="225" y="230" class="stage-detail">• Version control (Git)</text>
+      <text x="225" y="250" class="stage-detail">• Multi-modal inputs</text>
+    </g>
+
+    <!-- ============================================ -->
+    <!-- Stage 2: Embeddings -->
+    <!-- ============================================ -->
+
+    <g id="embeddings">
+      <rect x="450" y="150" width="250" height="120" rx="8" fill="none" stroke="#4A5568" stroke-width="2"/>
+      <text x="575" y="185" class="stage-title">Embeddings</text>
+      <text x="575" y="210" class="stage-detail">• Vector representations</text>
+      <text x="575" y="230" class="stage-detail">• Semantic encoding</text>
+      <text x="575" y="250" class="stage-detail">• Context preservation</text>
+    </g>
+
+    <!-- ============================================ -->
+    <!-- Stage 3: Context -->
+    <!-- ============================================ -->
+
+    <g id="context">
+      <rect x="800" y="150" width="250" height="120" rx="8" fill="none" stroke="#4A5568" stroke-width="2"/>
+      <text x="925" y="185" class="stage-title">Context</text>
+      <text x="925" y="210" class="stage-detail">• Prompt engineering (CoT, Few-shot)</text>
+      <text x="925" y="230" class="stage-detail">• Domain knowledge injection</text>
+      <text x="925" y="250" class="stage-detail">• Retrieval augmentation (RAG)</text>
+    </g>
+
+    <!-- ============================================ -->
+    <!-- Stage 4: Intelligence -->
+    <!-- ============================================ -->
+
+    <g id="intelligence">
+      <rect x="1100" y="150" width="250" height="120" rx="8" fill="none" stroke="#4A5568" stroke-width="2"/>
+      <text x="1225" y="185" class="stage-title">Intelligence</text>
+      <text x="1225" y="210" class="stage-detail">• Code generation (R, Python, SQL)</text>
+      <text x="1225" y="230" class="stage-detail">• Text generation (Academic writing)</text>
+      <text x="1225" y="250" class="stage-detail">• Visualization &amp; validation</text>
+    </g>
+
+    <!-- Transformation Processes (simple lines) -->
+    <g id="transformations">
+      <!-- Signals to Embeddings -->
+      <line x1="350" y1="210" x2="450" y2="210" stroke="#8B5CF6" stroke-width="2" marker-end="url(#arrow)"/>
+      <text x="400" y="195" class="transform-label">Encoding</text>
+
+      <!-- Embeddings to Context -->
+      <line x1="700" y1="210" x2="800" y2="210" stroke="#8B5CF6" stroke-width="2" marker-end="url(#arrow)"/>
+      <text x="750" y="195" class="transform-label">Augmentation</text>
+
+      <!-- Context to Intelligence -->
+      <line x1="1050" y1="210" x2="1100" y2="210" stroke="#8B5CF6" stroke-width="2" marker-end="url(#arrow)"/>
+      <text x="1075" y="195" class="transform-label">Generation</text>
+    </g>
   </g>
 
-  <!-- 2. Version Control (Top Center) -->
-  <path d="M 500 285 V 200" stroke="#8B5CF6" stroke-width="3" marker-end="url(#aiArrow)" filter="url(#glow)" fill="none"/>
-  <g transform="translate(500, 150)">
-    <rect x="-70" y="-35" width="140" height="70" rx="18" fill="url(#versionGray)" filter="url(#dropShadow)" stroke="#4B5563" stroke-width="2"/>
-    <text x="0" y="-12" class="ai-title" font-size="14">🔄 Version Control</text>
-    <text x="0" y="5" class="ai-subtitle" font-size="11">Git • Collaboration</text>
-    <text x="0" y="20" class="ai-subtitle" font-size="10">Change Tracking</text>
+  <!-- ============================================ -->
+  <!-- Bottom: Emergent Capabilities -->
+  <!-- ============================================ -->
+
+  <g transform="translate(0, 00)">
+    <rect x="350" y="680" width="700" height="100" rx="12" fill="none" stroke="#8B5CF6" stroke-width="3"/>
+    <rect x="350" y="680" width="700" height="100" rx="12" fill="#8B5CF6" opacity="0.1"/>
+
+    <text x="700" y="720" text-anchor="middle" font-family="ET Book, Palatino, serif" font-size="38" font-weight="bold" fill="#FFFFFF">Emergent Capabilities</text>
+    <text x="700" y="755" text-anchor="middle" font-family="ET Book, Palatino, serif" font-size="20" fill="#A0A0A0">Dynamic Adaptation • Continuous Learning • Agentic Behavior</text>
   </g>
 
-  <!-- 3. Prompt Engineering (Top Right) -->
-  <path d="M 550 300 Q 650 200 730 150" stroke="#8B5CF6" stroke-width="2" marker-end="url(#aiArrow)" filter="url(#glow)" fill="none"/>
-  <g transform="translate(800, 150)">
-    <rect x="-70" y="-35" width="140" height="70" rx="18" fill="url(#promptTeal)" filter="url(#dropShadow)" stroke="#0F766E" stroke-width="2"/>
-    <text x="0" y="-12" class="ai-title" font-size="14">⚡ Prompt Design</text>
-    <text x="0" y="5" class="ai-subtitle" font-size="11">CoT • Few-shot</text>
-    <text x="0" y="20" class="ai-subtitle" font-size="10">Domain Specialization</text>
+  <!-- Continuous Feedback (Quarto purple) -->
+  <text x="700" y="610" text-anchor="middle" font-family="ET Book, Palatino, serif" font-size="24" fill="#8B5CF6" opacity="0.6">Powered by Quarto Ecosystem</text>
+
+  <!-- ============================================ -->
+  <!-- Left Panel: Quarto-Specific Technologies -->
+  <!-- ============================================ -->
+
+  <g id="tech-panel">
+    <rect x="50" y="350" width="240" height="340" rx="8" fill="none" stroke="#4A5568" stroke-width="2"/>
+    <rect x="50" y="350" width="240" height="45" rx="8" fill="#8B5CF6" opacity="0.2"/>
+    <text x="170" y="382" text-anchor="middle" class="panel-title">Quarto Stack</text>
+
+    <text x="70" y="425" class="panel-item">Markdown AI</text>
+    <text x="70" y="448" class="panel-detail">• Intelligent writing</text>
+
+    <text x="70" y="490" class="panel-item">Code AI</text>
+    <text x="70" y="513" class="panel-detail">• R/Python generation</text>
+
+    <text x="70" y="555" class="panel-item">Multi-format</text>
+    <text x="70" y="578" class="panel-detail">• HTML/PDF/Docx</text>
+
+    <text x="70" y="620" class="panel-item">brand.yml</text>
+    <text x="70" y="643" class="panel-detail">• AI-powered design</text>
+    <text x="70" y="666" class="panel-detail">• Auto theming</text>
   </g>
 
-  <!-- Middle Area: Generation/Processing Stage -->
-  
-  <!-- 4. Code Block Generation (Left) -->
-  <path d="M 410 375 H 320" stroke="#8B5CF6" stroke-width="3" marker-end="url(#aiArrow)" filter="url(#glow)" fill="none"/>
-  <g transform="translate(250, 375)">
-    <rect x="-70" y="-35" width="140" height="70" rx="18" fill="url(#codeOrange)" filter="url(#dropShadow)" stroke="#EA580C" stroke-width="2"/>
-    <text x="0" y="-12" class="ai-title" font-size="14">⚙️ Code Generation</text>
-    <text x="0" y="5" class="ai-subtitle" font-size="11">R • Python • SQL</text>
-    <text x="0" y="20" class="ai-subtitle" font-size="10">Automatic Debugging</text>
+  <!-- ============================================ -->
+  <!-- Right Panel: Paradigm Shifts -->
+  <!-- ============================================ -->
+
+  <g id="paradigm-panel">
+    <rect x="1110" y="350" width="240" height="340" rx="8" fill="none" stroke="#4A5568" stroke-width="2"/>
+    <rect x="1110" y="350" width="240" height="45" rx="8" fill="#8B5CF6" opacity="0.2"/>
+    <text x="1230" y="382" text-anchor="middle" class="panel-title">Paradigm Shifts</text>
+
+    <text x="1130" y="425" class="panel-item">From Storage</text>
+    <text x="1130" y="448" class="panel-detail">→ To Generation</text>
+
+    <text x="1130" y="490" class="panel-item">From Queries</text>
+    <text x="1130" y="513" class="panel-detail">→ To Conversations</text>
+
+    <text x="1130" y="555" class="panel-item">From Rules</text>
+    <text x="1130" y="578" class="panel-detail">→ To Patterns</text>
+
+    <text x="1130" y="620" class="panel-item">From Static</text>
+    <text x="1130" y="643" class="panel-detail">→ To Adaptive</text>
+
+    <text x="1130" y="675" class="panel-detail" font-style="italic">All powered by Quarto</text>
   </g>
 
-  <!-- 5. Text Content (Right) -->
-  <path d="M 590 375 H 680" stroke="#8B5CF6" stroke-width="3" marker-end="url(#aiArrow)" filter="url(#glow)" fill="none"/>
-  <g transform="translate(750, 375)">
-    <rect x="-70" y="-35" width="140" height="70" rx="18" fill="url(#textGreen)" filter="url(#dropShadow)" stroke="#059669" stroke-width="2"/>
-    <text x="0" y="-12" class="ai-title" font-size="14">📝 Text Generation</text>
-    <text x="0" y="5" class="ai-subtitle" font-size="11">Academic Writing</text>
-    <text x="0" y="20" class="ai-subtitle" font-size="10">Multilingual Support</text>
-  </g>
+  <!-- Foundation Models Note -->
+  <text x="700" y="650" text-anchor="middle" font-family="ET Book, Palatino, serif" font-size="16" fill="#A0A0A0">Foundation Models (LLMs, Multi-modal AI) integrated within Quarto platform</text>
 
-  <!-- Bottom Area: Output/Validation Stage -->
-  
-  <!-- 6. Visualization Automation (Bottom Left) -->
-  <path d="M 450 450 Q 350 550 270 600" stroke="#8B5CF6" stroke-width="2" marker-end="url(#aiArrow)" filter="url(#glow)" fill="none"/>
-  <g transform="translate(200, 600)">
-    <rect x="-70" y="-35" width="140" height="70" rx="18" fill="url(#vizRed)" filter="url(#dropShadow)" stroke="#DC2626" stroke-width="2"/>
-    <text x="0" y="-12" class="ai-title" font-size="14">📊 Visualization</text>
-    <text x="0" y="5" class="ai-subtitle" font-size="11">ggplot2 • plotly</text>
-    <text x="0" y="20" class="ai-subtitle" font-size="10">Interactive</text>
-  </g>
-
-  <!-- 7. Table/Formula Generation (Bottom Center) -->
-  <path d="M 500 465 V 550" stroke="#8B5CF6" stroke-width="3" marker-end="url(#aiArrow)" filter="url(#glow)" fill="none"/>
-  <g transform="translate(500, 600)">
-    <rect x="-70" y="-35" width="140" height="70" rx="18" fill="url(#tableAmber)" filter="url(#dropShadow)" stroke="#D97706" stroke-width="2"/>
-    <text x="0" y="-12" class="ai-title" font-size="14">📋 Tables/Formulas</text>
-    <text x="0" y="5" class="ai-subtitle" font-size="11">GT • LaTeX</text>
-    <text x="0" y="20" class="ai-subtitle" font-size="10">Statistical Summary</text>
-  </g>
-
-  <!-- 8. Quality Validation (Bottom Right) -->
-  <path d="M 550 450 Q 650 550 730 600" stroke="#8B5CF6" stroke-width="2" marker-end="url(#aiArrow)" filter="url(#glow)" fill="none"/>
-  <g transform="translate(800, 600)">
-    <rect x="-70" y="-35" width="140" height="70" rx="18" fill="url(#qualityIndigo)" filter="url(#dropShadow)" stroke="#4F46E5" stroke-width="2"/>
-    <text x="0" y="-12" class="ai-title" font-size="14">✅ Quality Validation</text>
-    <text x="0" y="5" class="ai-subtitle" font-size="11">Reproducibility Check</text>
-    <text x="0" y="20" class="ai-subtitle" font-size="10">Citation Verification</text>
-  </g>
-
-  <!-- Bottom Existing Ecosystem Integration -->
-  <rect x="50" y="680" width="900" height="60" rx="15" fill="rgba(16, 185, 129, 0.05)" stroke="#10B981" stroke-width="2" stroke-dasharray="8,4"/>
-  <text x="500" y="700" class="center-title" fill="#059669" font-size="14">Perfect Integration of Quarto Existing Ecosystem and AI</text>
-
-  <!-- Existing 4 Core Elements -->
-  <g transform="translate(200, 720)">
-    <rect x="-80" y="-12" width="160" height="24" rx="12" fill="#8B5CF6" opacity="0.8"/>
-    <text x="0" y="3" class="feature-text" font-size="11">📝 Markdown + AI Writing</text>
-  </g>
-  
-  <g transform="translate(400, 720)">
-    <rect x="-80" y="-12" width="160" height="24" rx="12" fill="#3B82F6" opacity="0.8"/>
-    <text x="0" y="3" class="feature-text" font-size="11">🔬 Python/R + AI Coding</text>
-  </g>
-  
-  <g transform="translate(600, 720)">
-    <rect x="-80" y="-12" width="160" height="24" rx="12" fill="#10B981" opacity="0.8"/>
-    <text x="0" y="3" class="feature-text" font-size="11">📚 Single Source Publishing</text>
-  </g>
-  
-  <g transform="translate(800, 720)">
-    <rect x="-80" y="-12" width="160" height="24" rx="12" fill="#F97316" opacity="0.8"/>
-    <text x="0" y="3" class="feature-text" font-size="11">🎨 brand.yml Design</text>
-  </g>
-
-  <!-- Connection Lines -->
-  <path d="M 280 720 H 320" stroke="#10B981" stroke-width="2" stroke-dasharray="4,2" fill="none"/>
-  <path d="M 480 720 H 520" stroke="#10B981" stroke-width="2" stroke-dasharray="4,2" fill="none"/>
-  <path d="M 680 720 H 720" stroke="#10B981" stroke-width="2" stroke-dasharray="4,2" fill="none"/>
 </svg>

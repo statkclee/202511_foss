@@ -1,0 +1,179 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 30 1200 840">
+  <defs>
+    <style>
+      .title { font-family: monospace; font-size: 28px; font-weight: bold; fill: #2c3e50; }
+      .subtitle { font-family: monospace; font-size: 16px; fill: #7f8c8d; }
+      .box-title { font-family: monospace; font-size: 18px; font-weight: bold; fill: #2c3e50; }
+      .box-text { font-family: monospace; font-size: 13px; fill: #34495e; }
+      .tool-text { font-family: monospace; font-size: 12px; fill: #16a085; font-weight: bold; }
+      .year-text { font-family: monospace; font-size: 10px; fill: #95a5a6; }
+      .arrow-text { font-family: monospace; font-size: 12px; fill: #7f8c8d; }
+      .cloud-box { fill: #e3f2fd; stroke: #1565c0; stroke-width: 3; }
+      .ml-box { fill: #f3e5f5; stroke: #6a1b9a; stroke-width: 3; }
+      .collab-box { fill: #fff3e0; stroke: #e65100; stroke-width: 3; }
+      .container-box { fill: #e0f2f1; stroke: #00695c; stroke-width: 3; }
+      .new-label { font-family: monospace; font-size: 11px; fill: #e74c3c; font-weight: bold; }
+    </style>
+    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#7f8c8d" />
+    </marker>
+  </defs>
+
+  <!-- Title -->
+  <text x="600" y="70" class="title" text-anchor="middle">Data Science, Cloud Computing &amp; Reproducibility Crisis</text>
+
+  <!-- Layer 1: Data Infrastructure -->
+  <rect x="30" y="95" width="1140" height="35" class="cloud-box" rx="3"/>
+  <text x="600" y="118" class="box-title" text-anchor="middle">1. Data Infrastructure: Cloud &amp; Big Data Era</text>
+
+  <g transform="translate(100, 0)">
+    <rect x="50" y="145" width="220" height="125" class="cloud-box" rx="5"/>
+    <text x="160" y="170" class="tool-text" text-anchor="middle">Cloud Storage</text>
+    <text x="160" y="190" class="box-text" text-anchor="middle">AWS S3 (2006~)</text>
+    <text x="160" y="205" class="box-text" text-anchor="middle">Google Cloud</text>
+    <text x="160" y="220" class="box-text" text-anchor="middle">Azure Blob</text>
+    <text x="160" y="235" class="box-text" text-anchor="middle">Dropbox/Drive</text>
+    <text x="160" y="250" class="box-text" text-anchor="middle">Data Lakes</text>
+
+    <rect x="290" y="145" width="220" height="125" class="cloud-box" rx="5"/>
+    <text x="400" y="170" class="tool-text" text-anchor="middle">Big Data</text>
+    <text x="400" y="190" class="box-text" text-anchor="middle">Spark (2014)</text>
+    <text x="400" y="205" class="box-text" text-anchor="middle">Hive/Presto</text>
+    <text x="400" y="220" class="box-text" text-anchor="middle">Kafka (2011)</text>
+    <text x="400" y="235" class="box-text" text-anchor="middle">Elasticsearch</text>
+    <text x="400" y="250" class="box-text" text-anchor="middle">NoSQL DBs</text>
+
+    <rect x="530" y="145" width="220" height="125" class="cloud-box" rx="5"/>
+    <text x="640" y="170" class="tool-text" text-anchor="middle">APIs &amp; Streams</text>
+    <text x="640" y="190" class="box-text" text-anchor="middle">REST/GraphQL</text>
+    <text x="640" y="205" class="box-text" text-anchor="middle">Twitter/FB API</text>
+    <text x="640" y="220" class="box-text" text-anchor="middle">Real-time Data</text>
+    <text x="640" y="235" class="box-text" text-anchor="middle">WebSockets</text>
+    <text x="640" y="250" class="box-text" text-anchor="middle">IoT Sensors</text>
+
+    <rect x="770" y="145" width="220" height="125" class="cloud-box" rx="5"/>
+    <text x="880" y="170" class="tool-text" text-anchor="middle">Open Data</text>
+    <text x="880" y="190" class="box-text" text-anchor="middle">data.gov</text>
+    <text x="880" y="205" class="box-text" text-anchor="middle">Kaggle (2010)</text>
+    <text x="880" y="220" class="box-text" text-anchor="middle">UCI ML Repo</text>
+    <text x="880" y="235" class="box-text" text-anchor="middle">Open APIs</text>
+    <text x="880" y="250" class="box-text" text-anchor="middle">data.world</text>
+  </g>
+
+  <!-- Arrow Down -->
+  <line x1="600" y1="275" x2="600" y2="310" stroke="#7f8c8d" stroke-width="2" marker-end="url(#arrowhead)"/>
+
+  <!-- Layer 2: Analysis & ML -->
+  <rect x="30" y="310" width="1140" height="35" class="ml-box" rx="3"/>
+  <text x="600" y="333" class="box-title" text-anchor="middle">2. Analysis &amp; Machine Learning: Python Dominance</text>
+
+  <rect x="50" y="360" width="200" height="135" class="ml-box" rx="5"/>
+  <text x="150" y="383" class="tool-text" text-anchor="middle">Python DS Stack</text>
+  <text x="150" y="403" class="box-text" text-anchor="middle">pandas (mature)</text>
+  <text x="150" y="418" class="box-text" text-anchor="middle">NumPy/SciPy</text>
+  <text x="150" y="433" class="box-text" text-anchor="middle">scikit-learn</text>
+  <text x="150" y="448" class="box-text" text-anchor="middle">statsmodels</text>
+  <text x="150" y="463" class="box-text" text-anchor="middle">seaborn (2012)</text>
+  <text x="150" y="478" class="box-text" text-anchor="middle">plotly (2013)</text>
+
+  <rect x="270" y="360" width="200" height="135" class="ml-box" rx="5"/>
+  <text x="370" y="383" class="tool-text" text-anchor="middle">Deep Learning</text>
+  <text x="370" y="403" class="box-text" text-anchor="middle">TensorFlow (2015)</text>
+  <text x="370" y="418" class="box-text" text-anchor="middle">Keras (2015)</text>
+  <text x="370" y="433" class="box-text" text-anchor="middle">PyTorch (2016)</text>
+  <text x="370" y="448" class="box-text" text-anchor="middle">GPU Computing</text>
+  <text x="370" y="463" class="box-text" text-anchor="middle">CUDA/cuDNN</text>
+  <text x="430" y="368" class="new-label">🔥</text>
+
+  <rect x="490" y="360" width="200" height="135" class="ml-box" rx="5"/>
+  <text x="590" y="383" class="tool-text" text-anchor="middle">R Ecosystem</text>
+  <text x="590" y="403" class="box-text" text-anchor="middle">tidyverse (2016)</text>
+  <text x="590" y="418" class="box-text" text-anchor="middle">dplyr, ggplot2</text>
+  <text x="590" y="433" class="box-text" text-anchor="middle">Shiny (2012)</text>
+  <text x="590" y="448" class="box-text" text-anchor="middle">RStudio IDE</text>
+  <text x="590" y="463" class="box-text" text-anchor="middle">caret/mlr</text>
+
+  <rect x="710" y="360" width="200" height="135" class="cloud-box" rx="5"/>
+  <text x="810" y="383" class="tool-text" text-anchor="middle">Cloud Compute</text>
+  <text x="810" y="403" class="box-text" text-anchor="middle">AWS EMR</text>
+  <text x="810" y="418" class="box-text" text-anchor="middle">Google Colab (2017)</text>
+  <text x="810" y="433" class="box-text" text-anchor="middle">Azure ML</text>
+  <text x="810" y="448" class="box-text" text-anchor="middle">SageMaker (2017)</text>
+  <text x="810" y="463" class="box-text" text-anchor="middle">Databricks</text>
+
+  <rect x="930" y="360" width="220" height="135" class="container-box" rx="5"/>
+  <text x="1040" y="383" class="tool-text" text-anchor="middle">Containers</text>
+  <text x="1040" y="403" class="box-text" text-anchor="middle">Docker (2013)</text>
+  <text x="1040" y="418" class="box-text" text-anchor="middle">Kubernetes (2014)</text>
+  <text x="1040" y="433" class="box-text" text-anchor="middle">conda (2012)</text>
+  <text x="1040" y="448" class="box-text" text-anchor="middle">virtualenv</text>
+  <text x="1040" y="463" class="box-text" text-anchor="middle">Reproducible Env</text>
+  <text x="1110" y="368" class="new-label">📦</text>
+
+  <!-- Arrow Down -->
+  <line x1="600" y1="500" x2="600" y2="535" stroke="#7f8c8d" stroke-width="2" marker-end="url(#arrowhead)"/>
+
+  <!-- Layer 3: Notebooks & Documents -->
+  <rect x="30" y="535" width="1140" height="35" class="collab-box" rx="3"/>
+  <text x="600" y="558" class="box-title" text-anchor="middle">3. Document Generation: Notebooks Everywhere</text>
+
+  <rect x="50" y="585" width="260" height="145" class="collab-box" rx="5"/>
+  <text x="180" y="610" class="tool-text" text-anchor="middle">Jupyter Ecosystem</text>
+  <text x="180" y="632" class="box-text" text-anchor="middle">Jupyter Notebook (2014)</text>
+  <text x="180" y="647" class="box-text" text-anchor="middle">JupyterLab (2018)</text>
+  <text x="180" y="662" class="box-text" text-anchor="middle">JupyterHub</text>
+  <text x="180" y="677" class="box-text" text-anchor="middle">nbconvert</text>
+  <text x="180" y="692" class="box-text" text-anchor="middle">Voila (2019)</text>
+  <text x="180" y="707" class="box-text" text-anchor="middle">Interactive Web Apps</text>
+  <text x="270" y="615" class="new-label">👑</text>
+
+  <rect x="330" y="585" width="260" height="145" class="collab-box" rx="5"/>
+  <text x="460" y="610" class="tool-text" text-anchor="middle">R Markdown Family</text>
+  <text x="460" y="632" class="box-text" text-anchor="middle">knitr + pandoc</text>
+  <text x="460" y="647" class="box-text" text-anchor="middle">bookdown (2016)</text>
+  <text x="460" y="662" class="box-text" text-anchor="middle">blogdown (2017)</text>
+  <text x="460" y="677" class="box-text" text-anchor="middle">xaringan (2016)</text>
+  <text x="460" y="692" class="box-text" text-anchor="middle">pagedown (2019)</text>
+  <text x="460" y="707" class="box-text" text-anchor="middle">Multi-format Output</text>
+
+  <rect x="610" y="585" width="260" height="145" class="cloud-box" rx="5"/>
+  <text x="740" y="610" class="tool-text" text-anchor="middle">Cloud Notebooks</text>
+  <text x="740" y="632" class="box-text" text-anchor="middle">Google Colab</text>
+  <text x="740" y="647" class="box-text" text-anchor="middle">Kaggle Kernels</text>
+  <text x="740" y="662" class="box-text" text-anchor="middle">Azure Notebooks</text>
+  <text x="740" y="677" class="box-text" text-anchor="middle">CoCalc</text>
+  <text x="740" y="692" class="box-text" text-anchor="middle">Observable (2018)</text>
+  <text x="740" y="707" class="box-text" text-anchor="middle">Zero Install!</text>
+
+  <rect x="890" y="585" width="260" height="145" class="container-box" rx="5"/>
+  <text x="1020" y="610" class="tool-text" text-anchor="middle">Version Control</text>
+  <text x="1020" y="632" class="box-text" text-anchor="middle">Git/GitHub</text>
+  <text x="1020" y="647" class="box-text" text-anchor="middle">GitLab/Bitbucket</text>
+  <text x="1020" y="662" class="box-text" text-anchor="middle">nbdime (2017)</text>
+  <text x="1020" y="677" class="box-text" text-anchor="middle">ReviewNB</text>
+  <text x="1020" y="692" class="box-text" text-anchor="middle">CI/CD Pipelines</text>
+  <text x="1020" y="707" class="box-text" text-anchor="middle">GitHub Actions (2018)</text>
+
+  <!-- Layer 4: Sharing & Collaboration -->
+  <rect x="30" y="750" width="1140" height="35" class="collab-box" rx="3"/>
+  <text x="600" y="773" class="box-title" text-anchor="middle">4. Sharing &amp; Collaboration: Social Coding</text>
+
+  <rect x="70" y="800" width="180" height="45" class="collab-box" rx="5"/>
+  <text x="160" y="827" class="box-text" text-anchor="middle">GitHub/GitLab Pages</text>
+
+  <rect x="270" y="800" width="180" height="45" class="cloud-box" rx="5"/>
+  <text x="360" y="827" class="box-text" text-anchor="middle">nbviewer/Binder</text>
+
+  <rect x="470" y="800" width="180" height="45" class="collab-box" rx="5"/>
+  <text x="560" y="827" class="box-text" text-anchor="middle">RPubs/Shinyapps.io</text>
+
+  <rect x="670" y="800" width="180" height="45" class="cloud-box" rx="5"/>
+  <text x="760" y="827" class="box-text" text-anchor="middle">Medium/Towards DS</text>
+
+  <rect x="870" y="800" width="180" height="45" class="container-box" rx="5"/>
+  <text x="960" y="827" class="box-text" text-anchor="middle">Preprint Servers</text>
+
+  <!-- Bottom Note -->
+  <text x="25" y="295" class="subtitle" text-anchor="left">"Data Scientist: The Sexiest Job of the 21st Century" - HBR 2012</text>
+  <text x="100" y="515" class="box-text" text-anchor="left" font-style="italic">Notebooks become lingua franca | Reproducibility through containers | Cloud democratizes computing</text>
+</svg>

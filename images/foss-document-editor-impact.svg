@@ -1,0 +1,238 @@
+<svg viewBox="0 0 1600 1000" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .title { font-family: 'Noto Sans KR', sans-serif; font-size: 36px; font-weight: 700; fill: #1e3a8a; }
+      .subtitle { font-family: 'Noto Sans KR', sans-serif; font-size: 18px; font-weight: 600; fill: #475569; }
+      .category { font-family: 'Noto Sans KR', sans-serif; font-size: 18px; font-weight: 700; }
+      .item { font-family: 'Noto Sans KR', sans-serif; font-size: 15px; font-weight: 600; }
+      .detail { font-family: 'Noto Sans KR', sans-serif; font-size: 14px; }
+      .emphasis { font-family: 'Noto Sans KR', sans-serif; font-size: 16px; font-weight: 700; }
+      .note { font-family: 'Noto Sans KR', sans-serif; font-size: 13px; font-style: italic; }
+      .percentage { font-family: 'Noto Sans KR', sans-serif; font-size: 28px; font-weight: 700; }
+      .label { font-family: 'Noto Sans KR', sans-serif; font-size: 14px; font-weight: 600; }
+    </style>
+
+    <!-- Gradients -->
+    <linearGradient id="centerGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color: #f59e0b; stop-opacity: 1" />
+      <stop offset="100%" style="stop-color: #ec4899; stop-opacity: 1" />
+    </linearGradient>
+
+    <linearGradient id="sector1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color: #0078d4; stop-opacity: 1" />
+      <stop offset="100%" style="stop-color: #00bcf2; stop-opacity: 1" />
+    </linearGradient>
+
+    <linearGradient id="sector2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color: #18a303; stop-opacity: 1" />
+      <stop offset="100%" style="stop-color: #4ade80; stop-opacity: 1" />
+    </linearGradient>
+
+    <linearGradient id="sector3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color: #7c3aed; stop-opacity: 1" />
+      <stop offset="100%" style="stop-color: #a78bfa; stop-opacity: 1" />
+    </linearGradient>
+
+    <linearGradient id="sector4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color: #dc2626; stop-opacity: 1" />
+      <stop offset="100%" style="stop-color: #f87171; stop-opacity: 1" />
+    </linearGradient>
+
+    <!-- Arrow markers -->
+    <marker id="arrowBlue" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#0078d4" />
+    </marker>
+    <marker id="arrowGreen" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#18a303" />
+    </marker>
+    <marker id="arrowPurple" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#7c3aed" />
+    </marker>
+    <marker id="arrowRed" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#dc2626" />
+    </marker>
+
+    <!-- Glow effect -->
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Title -->
+  <text x="800" y="50" text-anchor="middle" class="title">FOSS 문서편집기의 영향력과 중요도</text>
+  <text x="800" y="80" text-anchor="middle" class="subtitle">생태계 내 역할과 파급 효과</text>
+
+  <!-- Central Circle: Document Editors -->
+  <circle cx="800" cy="450" r="140" fill="url(#centerGradient)" filter="url(#glow)" opacity="0.9"/>
+  <circle cx="800" cy="450" r="135" fill="none" stroke="white" stroke-width="4"/>
+
+  <text x="800" y="425" text-anchor="middle" style="font-size: 24px; font-weight: 700; fill: white;">
+    📝 문서편집기
+  </text>
+  <text x="800" y="455" text-anchor="middle" style="font-size: 18px; font-weight: 600; fill: white;">
+    LibreOffice
+  </text>
+  <text x="800" y="480" text-anchor="middle" style="font-size: 16px; fill: white;">
+    OpenOffice
+  </text>
+  <text x="800" y="505" text-anchor="middle" style="font-size: 16px; fill: white;">
+    OnlyOffice
+  </text>
+
+  <!-- Usage Statistics -->
+  <text x="800" y="540" text-anchor="middle" class="label" style="fill: white; font-size: 13px;">
+    전 세계 2억+ 사용자
+  </text>
+
+  <!-- ========================================== -->
+  <!-- SECTOR 1: User Adoption (Top Left) -->
+  <!-- ========================================== -->
+  <g id="sector-user-adoption">
+    <!-- Arrow from center to sector -->
+    <line x1="720" y1="370" x2="280" y2="180" stroke="#0078d4" stroke-width="3" marker-end="url(#arrowBlue)"/>
+
+    <rect x="50" y="120" width="480" height="240" rx="12" fill="url(#sector1)" opacity="0.15"/>
+    <rect x="50" y="120" width="480" height="50" rx="12" fill="url(#sector1)"/>
+
+    <text x="290" y="155" text-anchor="middle" class="category" style="fill: white;">
+      👥 사용자 채택 (User Adoption)
+    </text>
+
+    <rect x="70" y="190" width="440" height="150" rx="8" fill="white" stroke="#0078d4" stroke-width="2"/>
+
+    <text x="290" y="220" text-anchor="middle" class="percentage" style="fill: #0078d4;">
+      #1 접점
+    </text>
+
+    <text x="90" y="255" class="detail" style="fill: #1e293b;">
+      • <tspan font-weight="600">일반 사용자 진입점</tspan>: FOSS 첫 경험
+    </text>
+    <text x="90" y="280" class="detail" style="fill: #1e293b;">
+      • <tspan font-weight="600">데스크톱 Linux 보급</tspan>: 핵심 장벽/기회
+    </text>
+    <text x="90" y="305" class="detail" style="fill: #1e293b;">
+      • <tspan font-weight="600">실용성 증명</tspan>: "FOSS가 실용적인가?"
+    </text>
+    <text x="90" y="330" class="note" style="fill: #64748b;">
+      → 문서 작업 = 가장 보편적 컴퓨터 사용
+    </text>
+  </g>
+
+  <!-- ========================================== -->
+  <!-- SECTOR 2: Public Sector (Top Right) -->
+  <!-- ========================================== -->
+  <g id="sector-public">
+    <!-- Arrow from center to sector -->
+    <line x1="880" y1="370" x2="1320" y2="180" stroke="#18a303" stroke-width="3" marker-end="url(#arrowGreen)"/>
+
+    <rect x="1070" y="120" width="480" height="240" rx="12" fill="url(#sector2)" opacity="0.15"/>
+    <rect x="1070" y="120" width="480" height="50" rx="12" fill="url(#sector2)"/>
+
+    <text x="1310" y="155" text-anchor="middle" class="category" style="fill: white;">
+      🏛️ 정부·공공 부문 (Public Sector)
+    </text>
+
+    <rect x="1090" y="190" width="440" height="150" rx="8" fill="white" stroke="#18a303" stroke-width="2"/>
+
+    <text x="1310" y="220" text-anchor="middle" class="percentage" style="fill: #18a303;">
+      정책 영향력
+    </text>
+
+    <text x="1110" y="255" class="detail" style="fill: #1e293b;">
+      • <tspan font-weight="600">공공문서 표준</tspan>: ODF 채택 = 생태계 확산
+    </text>
+    <text x="1110" y="280" class="detail" style="fill: #1e293b;">
+      • <tspan font-weight="600">예산 절감</tspan>: 라이선스 비용 절감
+    </text>
+    <text x="1110" y="305" class="detail" style="fill: #1e293b;">
+      • <tspan font-weight="600">성공 사례</tspan>: 독일·프랑스·이탈리아 정부
+    </text>
+    <text x="1110" y="330" class="note" style="fill: #64748b;">
+      → 정부 채택 = 민간 확산 선순환
+    </text>
+  </g>
+
+  <!-- ========================================== -->
+  <!-- SECTOR 3: Digital Sovereignty (Bottom Left) -->
+  <!-- ========================================== -->
+  <g id="sector-sovereignty">
+    <!-- Arrow from center to sector -->
+    <line x1="720" y1="530" x2="280" y2="720" stroke="#7c3aed" stroke-width="3" marker-end="url(#arrowPurple)"/>
+
+    <rect x="50" y="660" width="480" height="280" rx="12" fill="url(#sector3)" opacity="0.15"/>
+    <rect x="50" y="660" width="480" height="50" rx="12" fill="url(#sector3)"/>
+
+    <text x="290" y="695" text-anchor="middle" class="category" style="fill: white;">
+      🛡️ 디지털 주권 (Digital Sovereignty)
+    </text>
+
+    <rect x="70" y="730" width="440" height="190" rx="8" fill="white" stroke="#7c3aed" stroke-width="2"/>
+
+    <text x="290" y="760" text-anchor="middle" class="percentage" style="fill: #7c3aed;">
+      독점 탈피
+    </text>
+
+    <text x="90" y="795" class="detail" style="fill: #1e293b;">
+      • <tspan font-weight="600">MS Office 독점 대안</tspan>: 선택권 확보
+    </text>
+    <text x="90" y="820" class="detail" style="fill: #1e293b;">
+      • <tspan font-weight="600">데이터 통제권</tspan>: 개방 표준 (ODF)
+    </text>
+    <text x="90" y="845" class="detail" style="fill: #1e293b;">
+      • <tspan font-weight="600">장기 보존성</tspan>: 포맷 미래 보장
+    </text>
+    <text x="90" y="870" class="detail" style="fill: #1e293b;">
+      • <tspan font-weight="600">벤더 종속 탈피</tspan>: 가격 결정권 확보
+    </text>
+    <text x="90" y="905" class="note" style="fill: #64748b;">
+      → FOSS 철학의 가시적 성과
+    </text>
+  </g>
+
+  <!-- ========================================== -->
+  <!-- SECTOR 4: Ecosystem Health (Bottom Right) -->
+  <!-- ========================================== -->
+  <g id="sector-ecosystem">
+    <!-- Arrow from center to sector -->
+    <line x1="880" y1="530" x2="1320" y2="720" stroke="#dc2626" stroke-width="3" marker-end="url(#arrowRed)"/>
+
+    <rect x="1070" y="660" width="480" height="280" rx="12" fill="url(#sector4)" opacity="0.15"/>
+    <rect x="1070" y="660" width="480" height="50" rx="12" fill="url(#sector4)"/>
+
+    <text x="1310" y="695" text-anchor="middle" class="category" style="fill: white;">
+      🌱 생태계 건강도 (Ecosystem Maturity)
+    </text>
+
+    <rect x="1090" y="730" width="440" height="190" rx="8" fill="white" stroke="#dc2626" stroke-width="2"/>
+
+    <text x="1310" y="760" text-anchor="middle" class="percentage" style="fill: #dc2626;">
+      성숙도 지표
+    </text>
+
+    <text x="1110" y="795" class="detail" style="fill: #1e293b;">
+      • <tspan font-weight="600">데스크톱 환경 성숙</tspan>: 가장 도전적 영역
+    </text>
+    <text x="1110" y="820" class="detail" style="fill: #1e293b;">
+      • <tspan font-weight="600">호환성 기술</tspan>: ODF↔OOXML 변환 발전
+    </text>
+    <text x="1110" y="845" class="detail" style="fill: #1e293b;">
+      • <tspan font-weight="600">커뮤니티 활성화</tspan>: 번역·문서·지원
+    </text>
+    <text x="1110" y="870" class="detail" style="fill: #1e293b;">
+      • <tspan font-weight="600">상업화 성공</tspan>: Collabora, OnlyOffice
+    </text>
+    <text x="1110" y="905" class="note" style="fill: #64748b;">
+      → 성공 = FOSS 데스크톱 가능성 증명
+    </text>
+  </g>
+
+  <!-- Bottom Summary -->
+  <rect x="50" y="960" width="1500" height="30" rx="8" fill="#1e3a8a"/>
+  <text x="800" y="982" text-anchor="middle" style="font-size: 20px; font-weight: 700; fill: #fbbf24;">
+    문서편집기 = FOSS 생태계 확산의 핵심 촉매
+  </text>
+</svg>

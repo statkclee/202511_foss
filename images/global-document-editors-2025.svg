@@ -1,0 +1,329 @@
+<svg viewBox="0 70 1600 970" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .title { font-family: 'Noto Sans KR', sans-serif; font-size: 38px; font-weight: 700; fill: #1e3a8a; }
+      .subtitle { font-family: 'Noto Sans KR', sans-serif; font-size: 18px; font-weight: 600; fill: #475569; }
+      .region-label { font-family: 'Noto Sans KR', sans-serif; font-size: 18px; font-weight: 700; fill: #1e293b; }
+      .country { font-family: 'Noto Sans KR', sans-serif; font-size: 16px; font-weight: 600; fill: #1e293b; }
+      .status { font-family: 'Noto Sans KR', sans-serif; font-size: 14px; font-weight: 600; fill: #1e293b; }
+      .detail { font-family: 'Noto Sans KR', sans-serif; font-size: 13px; fill: #475569; }
+      .legend-text { font-family: 'Noto Sans KR', sans-serif; font-size: 14px; fill: #1e293b; }
+      .note { font-family: 'Noto Sans KR', sans-serif; font-size: 13px; fill: #64748b; }
+      .source { font-family: 'Noto Sans KR', sans-serif; font-size: 11px; fill: #94a3b8; font-style: italic; }
+    </style>
+
+    <!-- Product Colors -->
+    <linearGradient id="msGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color: #0078d4; stop-opacity: 1" />
+      <stop offset="100%" style="stop-color: #50e6ff; stop-opacity: 1" />
+    </linearGradient>
+
+    <linearGradient id="googleGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color: #4285f4; stop-opacity: 1" />
+      <stop offset="100%" style="stop-color: #34a853; stop-opacity: 1" />
+    </linearGradient>
+
+    <linearGradient id="libreGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color: #18a303; stop-opacity: 1" />
+      <stop offset="100%" style="stop-color: #4ade80; stop-opacity: 1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Legend -->
+  <g id="legend">
+    <rect x="50" y="85" width="1500" height="60" rx="8" fill="#f8fafc" stroke="#cbd5e1" stroke-width="2"/>
+
+    <text x="70" y="108" class="legend-text" font-weight="700">범례:</text>
+
+    <rect x="130" y="95" width="80" height="20" rx="4" fill="url(#msGradient)"/>
+    <text x="170" y="109" text-anchor="middle" class="legend-text" style="fill: white; font-weight: 600;">MS Office</text>
+
+    <rect x="220" y="95" width="80" height="20" rx="4" fill="url(#googleGradient)"/>
+    <text x="260" y="109" text-anchor="middle" class="legend-text" style="fill: white; font-weight: 600;">Google WS</text>
+
+    <rect x="310" y="95" width="90" height="20" rx="4" fill="url(#libreGradient)"/>
+    <text x="355" y="109" text-anchor="middle" class="legend-text" style="fill: white; font-weight: 600;">LibreOffice</text>
+
+    <rect x="410" y="95" width="60" height="20" rx="4" fill="#fbbf24"/>
+    <text x="440" y="109" text-anchor="middle" class="legend-text" style="fill: white; font-weight: 600;">국산</text>
+
+    <rect x="480" y="95" width="50" height="20" rx="4" fill="#dc2626"/>
+    <text x="505" y="109" text-anchor="middle" class="legend-text" style="fill: white; font-weight: 600;">HWP</text>
+
+    <text x="70" y="132" class="note">※ 출처: Reuters, EU OSOR, 각국 정부 공고, Yahoo Finance, 업체 공시 (2024~2025)</text>
+  </g>
+
+  <!-- North America -->
+  <g id="north-america">
+    <rect x="50" y="170" width="480" height="280" rx="10" fill="#e0f2fe" stroke="#0078d4" stroke-width="2"/>
+    <rect x="50" y="170" width="480" height="40" rx="10" fill="#0078d4"/>
+    <text x="290" y="198" text-anchor="middle" class="region-label" style="fill: white;">🌎 북미 (미국·캐나다)</text>
+
+    <!-- USA -->
+    <rect x="70" y="225" width="210" height="205" rx="8" fill="white" stroke="#cbd5e1" stroke-width="1"/>
+    <text x="175" y="247" text-anchor="middle" class="country">🇺🇸 미국</text>
+
+    <text x="85" y="270" class="status" style="fill: #0078d4;">▶ MS Office: 기업 중심 우세</text>
+    <text x="85" y="288" class="status" style="fill: #4285f4;">▶ Google WS: 교육 강세</text>
+    <text x="85" y="306" class="status" style="fill: #18a303;">▶ LibreOffice: 일부 채택</text>
+
+    <text x="80" y="335" class="detail">✓ 기업: MS Office 지배적</text>
+    <text x="80" y="355" class="detail">✓ 교육: Google Workspace 강세</text>
+    <text x="80" y="375" class="detail">✓ 공공: 혼합 (주별 차이)</text>
+    <text x="80" y="395" class="detail">✓ 클라우드 협업 중심</text>
+
+    <!-- Canada -->
+    <rect x="300" y="225" width="210" height="205" rx="8" fill="white" stroke="#cbd5e1" stroke-width="1"/>
+    <text x="405" y="247" text-anchor="middle" class="country">🇨🇦 캐나다</text>
+
+    <text x="315" y="270" class="status" style="fill: #0078d4;">▶ MS Office: 기업 우세</text>
+    <text x="315" y="288" class="status" style="fill: #4285f4;">▶ Google WS: 교육 확산</text>
+    <text x="315" y="306" class="status" style="fill: #18a303;">▶ LibreOffice: 공공 일부</text>
+
+    <text x="310" y="335" class="detail">✓ 미국과 유사 패턴</text>
+    <text x="310" y="355" class="detail">✓ 공공부문 오픈소스 적극 검토</text>
+  </g>
+
+  <!-- Europe -->
+  <g id="europe">
+    <rect x="560" y="170" width="480" height="280" rx="10" fill="#f0fdf4" stroke="#18a303" stroke-width="2"/>
+    <rect x="560" y="170" width="480" height="40" rx="10" fill="#18a303"/>
+    <text x="800" y="198" text-anchor="middle" class="region-label" style="fill: white;">🇪🇺 유럽 (오픈소스 확산)</text>
+
+    <!-- Western Europe -->
+    <rect x="580" y="225" width="210" height="205" rx="8" fill="white" stroke="#cbd5e1" stroke-width="1"/>
+    <text x="685" y="247" text-anchor="middle" class="country">🇩🇪🇫🇷 서유럽</text>
+
+    <text x="595" y="270" class="status" style="fill: #18a303;">▶ LibreOffice: 공공 확산</text>
+    <text x="595" y="288" class="status" style="fill: #0078d4;">▶ MS Office: 기업 우세</text>
+    <text x="595" y="306" class="status" style="fill: #4285f4;">▶ Google WS: 교육 성장</text>
+
+    <text x="590" y="335" class="detail" style="font-weight: 600;">✅ 독일: 공공 LibreOffice 채택</text>
+    <text x="590" y="355" class="detail" style="font-weight: 600;">✅ 프랑스: 국방부 LibreOffice</text>
+    <text x="590" y="375" class="detail">✅ 이탈리아: 군 15만PC LibreOffice</text>
+    <text x="590" y="395" class="detail">✓ EU 기관: ODF 우선 정책</text>
+
+    <!-- Eastern Europe -->
+    <rect x="810" y="225" width="210" height="205" rx="8" fill="white" stroke="#cbd5e1" stroke-width="1"/>
+    <text x="915" y="247" text-anchor="middle" class="country">🇵🇱🇨🇿 동유럽</text>
+
+    <text x="825" y="270" class="status" style="fill: #18a303;">▶ LibreOffice: 강세</text>
+    <text x="825" y="288" class="status" style="fill: #0078d4;">▶ MS Office: 기업 일부</text>
+
+    <text x="820" y="320" class="detail">✓ 경제적 이유로 오픈소스 선호</text>
+    <text x="820" y="340" class="detail">✓ 독립성 추구</text>
+    <text x="820" y="360" class="detail">✓ 공공부문 LibreOffice 표준화</text>
+  </g>
+
+  <!-- Korea (Special Case) -->
+  <g id="korea">
+    <rect x="1070" y="170" width="480" height="280" rx="10" fill="#fee2e2" stroke="#dc2626" stroke-width="3"/>
+    <rect x="1070" y="170" width="480" height="40" rx="10" fill="#dc2626"/>
+    <text x="1310" y="198" text-anchor="middle" class="region-label" style="fill: white;">🇰🇷 한국 (특수 사례: 민간·공공 이원화)</text>
+
+    <!-- Private Sector -->
+    <rect x="1090" y="225" width="210" height="205" rx="8" fill="white" stroke="#cbd5e1" stroke-width="1"/>
+    <text x="1195" y="247" text-anchor="middle" class="country">🏢 민간 영역</text>
+
+    <text x="1105" y="270" class="status" style="fill: #0078d4;">▶ MS Office: 기업 우세</text>
+    <text x="1105" y="288" class="status" style="fill: #4285f4;">▶ Google WS: 교육 일부</text>
+    <text x="1105" y="306" class="status" style="fill: #18a303;">▶ LibreOffice: 소수</text>
+
+    <text x="1100" y="335" class="detail">✓ MS Office 365 주류</text>
+    <text x="1100" y="355" class="detail">✓ 국제 협업 대응</text>
+    <text x="1100" y="375" class="detail">✓ 클라우드 전환 중</text>
+    <text x="1100" y="395" class="detail">✓ ISO 표준 준수</text>
+
+    <!-- Public Sector -->
+    <rect x="1320" y="225" width="210" height="205" rx="8" fill="#fee2e2" stroke="#dc2626" stroke-width="3"/>
+    <text x="1425" y="247" text-anchor="middle" class="country" style="fill: #dc2626;">🏛️ 공공 영역</text>
+
+    <text x="1335" y="270" class="status" style="fill: #dc2626;">▶ HWP: 광범위 요구</text>
+    <text x="1335" y="288" class="status" style="fill: #0078d4;">▶ MS Office: 병행</text>
+
+    <text x="1330" y="320" class="detail" style="fill: #991b1b; font-weight: 600;">⚠️ HWP 요구 관행 광범위</text>
+    <text x="1330" y="340" class="detail" style="fill: #991b1b; font-weight: 600;">⚠️ 독자 포맷 유지</text>
+    <text x="1330" y="360" class="detail" style="fill: #991b1b; font-weight: 600;">⚠️ ISO 표준 미준수</text>
+    <text x="1330" y="380" class="detail" style="fill: #991b1b; font-weight: 600;">⚠️ 국제 협업 제약</text>
+  </g>
+
+  <!-- Latin America & Africa/Middle East Combined -->
+  <g id="latin-africa">
+    <rect x="50" y="470" width="480" height="230" rx="10" fill="#f3e8ff" stroke="#8b5cf6" stroke-width="2"/>
+    <rect x="50" y="470" width="480" height="40" rx="10" fill="#8b5cf6"/>
+    <text x="290" y="498" text-anchor="middle" class="region-label" style="fill: white;">🌎🌍 중남미·아프리카·중동</text>
+
+    <!-- Latin America -->
+    <rect x="70" y="525" width="210" height="155" rx="8" fill="white" stroke="#cbd5e1" stroke-width="1"/>
+    <text x="175" y="547" text-anchor="middle" class="country">🇧🇷🇲🇽 중남미</text>
+
+    <text x="85" y="570" class="status" style="fill: #0078d4;">▶ MS Office: 기업 우세</text>
+    <text x="85" y="588" class="status" style="fill: #18a303;">▶ LibreOffice: 공공 확산</text>
+    <text x="85" y="606" class="status" style="fill: #4285f4;">▶ Google WS: 교육</text>
+
+    <text x="80" y="635" class="detail">✓ 오픈소스 선호</text>
+    <text x="80" y="655" class="detail">✅ 브라질: LibreOffice 권장</text>
+
+    <!-- Africa & Middle East -->
+    <rect x="300" y="525" width="210" height="155" rx="8" fill="white" stroke="#cbd5e1" stroke-width="1"/>
+    <text x="405" y="547" text-anchor="middle" class="country">🇿🇦🇦🇪 아프리카·중동</text>
+
+    <text x="315" y="570" class="status" style="fill: #0078d4;">▶ MS Office: 기업·정부</text>
+    <text x="315" y="588" class="status" style="fill: #4285f4;">▶ Google WS: 교육</text>
+    <text x="315" y="606" class="status" style="fill: #18a303;">▶ LibreOffice: 일부</text>
+
+    <text x="310" y="635" class="detail">✓ 국가별 편차 큼</text>
+    <text x="310" y="655" class="detail">✓ Google WS 확산</text>
+  </g>
+
+  <!-- China/Russia -->
+  <g id="china-russia">
+    <rect x="560" y="470" width="480" height="230" rx="10" fill="#fee2e2" stroke="#ef4444" stroke-width="2"/>
+    <rect x="560" y="470" width="480" height="40" rx="10" fill="#ef4444"/>
+    <text x="800" y="498" text-anchor="middle" class="region-label" style="fill: white;">🇨🇳🇷🇺 중국·러시아 (국산 SW 추진)</text>
+
+    <!-- China -->
+    <rect x="580" y="525" width="210" height="155" rx="8" fill="white" stroke="#cbd5e1" stroke-width="1"/>
+    <text x="685" y="547" text-anchor="middle" class="country">🇨🇳 중국</text>
+
+    <text x="595" y="570" class="status" style="fill: #fbbf24;">▶ WPS Office: 광범위 채택</text>
+    <text x="595" y="588" class="status" style="fill: #0078d4;">▶ MS Office: 기업 일부</text>
+
+    <text x="590" y="620" class="detail" style="font-weight: 600;">✅ WPS Office PC DAU 1억+</text>
+    <text x="590" y="640" class="detail">✓ 킹소프트(국산) 자국 SW 강세</text>
+
+    <!-- Russia -->
+    <rect x="810" y="525" width="210" height="155" rx="8" fill="white" stroke="#cbd5e1" stroke-width="1"/>
+    <text x="915" y="547" text-anchor="middle" class="country">🇷🇺 러시아</text>
+
+    <text x="825" y="570" class="status" style="fill: #fbbf24;">▶ MyOffice 등 국산 추진</text>
+    <text x="825" y="588" class="status" style="fill: #18a303;">▶ 오픈소스 혼용</text>
+    <text x="825" y="606" class="status" style="fill: #0078d4;">▶ MS Office: 제재로 축소</text>
+
+    <text x="820" y="640" class="detail">✅ 국가두마 MyOffice 1,800 라이선스</text>
+  </g>
+
+  <!-- Japan & Oceania -->
+  <g id="japan-oceania">
+    <rect x="1070" y="470" width="480" height="230" rx="10" fill="#dbeafe" stroke="#0ea5e9" stroke-width="2"/>
+    <rect x="1070" y="470" width="480" height="40" rx="10" fill="#0ea5e9"/>
+    <text x="1310" y="498" text-anchor="middle" class="region-label" style="fill: white;">🇯🇵🇦🇺🇳🇿 일본·오세아니아</text>
+
+    <!-- Japan -->
+    <rect x="1090" y="525" width="210" height="155" rx="8" fill="white" stroke="#cbd5e1" stroke-width="1"/>
+    <text x="1195" y="547" text-anchor="middle" class="country">🇯🇵 일본</text>
+
+    <text x="1105" y="570" class="status" style="fill: #0078d4;">▶ MS Office: 기업 우세</text>
+    <text x="1105" y="588" class="status" style="fill: #4285f4;">▶ Google WS: 교육 확산</text>
+
+    <text x="1100" y="620" class="detail">✓ 보수적 기업 문화</text>
+    <text x="1100" y="640" class="detail">✓ MS Office 전통 강세</text>
+    <text x="1100" y="660" class="detail">✓ 클라우드 전환 중</text>
+
+    <!-- Australia & New Zealand -->
+    <rect x="1320" y="525" width="210" height="155" rx="8" fill="white" stroke="#cbd5e1" stroke-width="1"/>
+    <text x="1425" y="547" text-anchor="middle" class="country">🇦🇺🇳🇿 호주·뉴질랜드</text>
+
+    <text x="1335" y="570" class="status" style="fill: #0078d4;">▶ MS Office: 기업 우세</text>
+    <text x="1335" y="588" class="status" style="fill: #4285f4;">▶ Google WS: 교육 강세</text>
+    <text x="1335" y="606" class="status" style="fill: #18a303;">▶ LibreOffice: 공공 일부</text>
+
+    <text x="1330" y="635" class="detail">✓ 영미권 패턴 유사</text>
+    <text x="1330" y="655" class="detail">✓ 교육: Google 높은 점유</text>
+  </g>
+
+  <!-- Bottom Summary -->
+  <g transform="translate(0, 40)">
+    <rect x="50" y="680" width="1500" height="300" rx="12" fill="#1e3a8a" stroke="#1e40af" stroke-width="3"/>
+
+    <text x="800" y="720" text-anchor="middle" style="font-size: 24px; font-weight: 700; fill: white;">
+      🌍 전 세계 문서편집기 시장 핵심 트렌드
+    </text>
+
+    <!-- Trend 1: World Standard -->
+    <rect x="70" y="750" width="730" height="210" rx="8" fill="#dbeafe" stroke="#3b82f6" stroke-width="2"/>
+    <text x="435" y="780" text-anchor="middle" style="font-size: 20px; font-weight: 700; fill: #1e3a8a;">
+      ✅ 세계 표준: 개방성 + 호환성 + ISO 표준
+    </text>
+
+    <!-- 1. MS Office - Left Side -->
+    <rect x="90" y="800" width="340" height="145" rx="8" fill="white" stroke="#0078d4" stroke-width="2"/>
+    <text x="260" y="825" text-anchor="middle" style="font-size: 17px; fill: #1e293b; font-weight: 700;">
+      1. MS Office (DOCX)
+    </text>
+    <text x="110" y="850" style="font-size: 15px; fill: #475569;">
+      • ✅ OOXML = ISO/IEC 29500
+    </text>
+    <text x="110" y="873" style="font-size: 15px; fill: #475569;">
+      • ODF, PDF 완벽 지원
+    </text>
+    <text x="110" y="896" style="font-size: 15px; fill: #475569;">
+      • 상호운용성 보장
+    </text>
+    <text x="110" y="919" style="font-size: 15px; fill: #475569;">
+      • Copilot AI 통합
+    </text>
+
+    <!-- 2. LibreOffice - Right Side -->
+    <rect x="450" y="800" width="330" height="145" rx="8" fill="white" stroke="#18a303" stroke-width="2"/>
+    <text x="615" y="825" text-anchor="middle" style="font-size: 17px; fill: #1e293b; font-weight: 700;">
+      2. LibreOffice (ODF)
+    </text>
+    <text x="470" y="850" style="font-size: 15px; fill: #475569;">
+      • ✅ ODF = ISO/IEC 26300
+    </text>
+    <text x="470" y="873" style="font-size: 15px; fill: #475569;">
+      • 완전 오픈소스 (GPL)
+    </text>
+    <text x="470" y="896" style="font-size: 15px; fill: #475569;">
+      • 커뮤니티 주도
+    </text>
+    <text x="470" y="919" style="font-size: 15px; fill: #475569;">
+      • 유럽 공공부문 채택
+    </text>
+
+    <!-- Trend 2: Korea Case -->
+    <rect x="820" y="750" width="710" height="210" rx="8" fill="#fee2e2" stroke="#dc2626" stroke-width="3"/>
+    <text x="1175" y="780" text-anchor="middle" style="font-size: 20px; font-weight: 700; fill: #991b1b;">
+      ⚠️ 한국: 국제 개방표준과 괴리된 드문 사례
+    </text>
+
+    <!-- 1. 검증된 사실 - Left Side -->
+    <rect x="840" y="800" width="330" height="145" rx="8" fill="white" stroke="#dc2626" stroke-width="2"/>
+    <text x="1005" y="825" text-anchor="middle" style="font-size: 17px; fill: #7f1d1d; font-weight: 700;">
+      1. 🇰🇷 검증된 사실
+    </text>
+    <text x="860" y="850" style="font-size: 15px; fill: #991b1b;">
+      • HWP 포맷 널리 사용
+    </text>
+    <text x="860" y="873" style="font-size: 15px; fill: #991b1b;">
+      • 공공 HWP 요구 광범위
+    </text>
+    <text x="860" y="896" style="font-size: 15px; fill: #991b1b;">
+      • 독자 포맷 유지
+    </text>
+    <text x="860" y="919" style="font-size: 15px; fill: #991b1b;">
+      • 국제 협업 호환 제약
+    </text>
+
+    <!-- 2. 세계 비교 & 결론 - Right Side -->
+    <rect x="1190" y="800" width="320" height="145" rx="8" fill="white" stroke="#dc2626" stroke-width="2"/>
+    <text x="1350" y="825" text-anchor="middle" style="font-size: 17px; fill: #7f1d1d; font-weight: 700;">
+      2. 📊 세계 비교 &amp; 결론
+    </text>
+    <text x="1210" y="850" style="font-size: 15px; fill: #991b1b;">
+      • 세계: ISO 표준 준수
+    </text>
+    <text x="1210" y="873" style="font-size: 15px; fill: #991b1b;">
+      • 상호운용성 보장
+    </text>
+    <text x="1210" y="896" style="font-size: 15px; fill: #991b1b;">
+      • 한국: 독자 포맷 관행
+    </text>
+    <text x="1210" y="919" style="font-size: 15px; fill: #991b1b; font-weight: 700;">
+      → 디지털 고립 우려
+    </text>
+    
+  </g>
+
+</svg>

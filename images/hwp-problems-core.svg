@@ -1,0 +1,168 @@
+<svg viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .title { font-family: 'Noto Sans KR', sans-serif; font-size: 28px; font-weight: 700; fill: #1e3a8a; }
+      .subtitle { font-family: 'Noto Sans KR', sans-serif; font-size: 16px; font-weight: 600; fill: #475569; }
+      .label { font-family: 'Noto Sans KR', sans-serif; font-size: 14px; font-weight: 600; fill: #1e293b; }
+      .description { font-family: 'Noto Sans KR', sans-serif; font-size: 12px; fill: #475569; }
+      .impact { font-family: 'Noto Sans KR', sans-serif; font-size: 11px; fill: #dc2626; font-weight: 500; }
+
+      .center-box { fill: #dc2626; stroke: #991b1b; stroke-width: 3; }
+      .problem-box { fill: #ef4444; stroke: #dc2626; stroke-width: 2; }
+      .detail-box { fill: #fee2e2; stroke: #fca5a5; stroke-width: 1.5; }
+
+      .arrow { stroke: #475569; stroke-width: 2; fill: none; marker-end: url(#arrowhead); }
+      .impact-arrow { stroke: #dc2626; stroke-width: 2.5; fill: none; marker-end: url(#arrowhead-red); stroke-dasharray: 5,5; }
+    </style>
+
+    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#475569" />
+    </marker>
+    <marker id="arrowhead-red" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#dc2626" />
+    </marker>
+  </defs>
+
+  <!-- Title -->
+  <text x="600" y="35" text-anchor="middle" class="title">아래한글(HWP) 문제점 구조도</text>
+  <text x="600" y="60" text-anchor="middle" class="subtitle">AI 시대, 한국 디지털 전환을 막는 '보이지 않는 세금'</text>
+
+  <!-- Center Core Problem -->
+  <ellipse cx="600" cy="250" rx="140" ry="80" class="center-box"/>
+  <text x="600" y="240" text-anchor="middle" style="font-size: 18px; font-weight: 700; fill: white;">독점 포맷 강제</text>
+  <text x="600" y="260" text-anchor="middle" style="font-size: 14px; fill: white;">HWP 일원화</text>
+  <text x="600" y="278" text-anchor="middle" style="font-size: 12px; fill: #fef2f2;">행정·공공조달 종속</text>
+
+  <!-- Top Three Critical Problems -->
+  <!-- 1. Administrative Transparency -->
+  <rect x="80" y="50" width="200" height="100" rx="8" class="problem-box"/>
+  <text x="180" y="80" text-anchor="middle" style="font-size: 15px; font-weight: 700; fill: white;">행정 투명성 저하</text>
+  <text x="180" y="100" text-anchor="middle" style="font-size: 11px; fill: #fef2f2;">• 범용 열람 불가</text>
+  <text x="180" y="116" text-anchor="middle" style="font-size: 11px; fill: #fef2f2;">• 정보접근권 침해</text>
+  <text x="180" y="132" text-anchor="middle" style="font-size: 11px; fill: #fef2f2;">• 공시·감시 제한</text>
+
+  <!-- 2. AI Data Delay -->
+  <rect x="500" y="50" width="200" height="100" rx="8" class="problem-box"/>
+  <text x="600" y="80" text-anchor="middle" style="font-size: 15px; font-weight: 700; fill: white;">AI 데이터 구축 지연</text>
+  <text x="600" y="100" text-anchor="middle" style="font-size: 11px; fill: #fef2f2;">• 기계가독성 빈약</text>
+  <text x="600" y="116" text-anchor="middle" style="font-size: 11px; fill: #fef2f2;">• LLM 파이프라인 비호환</text>
+  <text x="600" y="132" text-anchor="middle" style="font-size: 11px; fill: #fef2f2;">• 자동화 불가</text>
+
+  <!-- 3. International Incompatibility -->
+  <rect x="920" y="50" width="200" height="100" rx="8" class="problem-box"/>
+  <text x="1020" y="80" text-anchor="middle" style="font-size: 15px; font-weight: 700; fill: white;">국제 호환성 결여</text>
+  <text x="1020" y="100" text-anchor="middle" style="font-size: 11px; fill: #fef2f2;">• 글로벌 표준 단절</text>
+  <text x="1020" y="116" text-anchor="middle" style="font-size: 11px; fill: #fef2f2;">• 해외 협업 불가</text>
+  <text x="1020" y="132" text-anchor="middle" style="font-size: 11px; fill: #fef2f2;">• 재외국민 소외</text>
+
+  <!-- Arrows from core to top three -->
+  <path d="M 520,210 L 230,150" class="impact-arrow"/>
+  <path d="M 600,170 L 600,150" class="impact-arrow"/>
+  <path d="M 680,210 L 970,150" class="impact-arrow"/>
+
+  <!-- Bottom Layer: Detailed Problems -->
+  <!-- Left Column -->
+  <g id="structural">
+    <rect x="40" y="380" width="260" height="380" rx="8" class="detail-box"/>
+    <text x="170" y="410" text-anchor="middle" class="label">1. 구조적·제도적 문제</text>
+
+    <text x="50" y="435" class="description">▸ 공공조달 HWP 전용 강제</text>
+    <text x="50" y="455" class="description">▸ 표준 미준수 (ODF, PDF/A)</text>
+    <text x="50" y="475" class="description">▸ 버전 호환성 지옥</text>
+    <text x="60" y="492" class="description" style="font-size: 10px;">2007/2010/2014/2018...</text>
+    <text x="50" y="512" class="description">▸ 오픈소스 생태계 배제</text>
+    <text x="50" y="532" class="description">▸ 리눅스·경량단말 접근 불가</text>
+    <text x="50" y="552" class="description">▸ 메타데이터 상호운용 미비</text>
+    <text x="50" y="572" class="description">▸ 장기보존 검증 부족</text>
+
+    <rect x="50" y="590" width="240" height="155" rx="5" style="fill: #fecaca; stroke: #ef4444; stroke-width: 1;"/>
+    <text x="170" y="612" text-anchor="middle" class="impact">⚠ 핵심 영향</text>
+    <text x="60" y="632" style="font-size: 10px; fill: #991b1b;">• 행정 문서 종속 고착화</text>
+    <text x="60" y="650" style="font-size: 10px; fill: #991b1b;">• 외부 시스템 연동 실패</text>
+    <text x="60" y="668" style="font-size: 10px; fill: #991b1b;">• 디지털 전환 속도 저하</text>
+    <text x="60" y="686" style="font-size: 10px; fill: #991b1b;">• 차세대 기술 도입 차단</text>
+    <text x="60" y="704" style="font-size: 10px; fill: #991b1b;">• 국가 경쟁력 약화</text>
+    <text x="60" y="722" style="font-size: 10px; fill: #991b1b;">• 혁신 생태계 단절</text>
+  </g>
+
+  <!-- Center Column -->
+  <g id="technical">
+    <rect x="330" y="380" width="260" height="380" rx="8" class="detail-box"/>
+    <text x="460" y="410" text-anchor="middle" class="label">2. 기술적 결함 (14가지)</text>
+
+    <text x="340" y="435" class="description">▸ 줄/문단 간격 랜덤 변화</text>
+    <text x="340" y="452" class="description">▸ 표 셀 드래그 폭 깨짐</text>
+    <text x="340" y="469" class="description">▸ 쪽 나눔 후 포맷 유실</text>
+    <text x="340" y="486" class="description">▸ 그림 위치 고정 실패</text>
+    <text x="340" y="503" class="description">▸ 글머리표 번호 오류</text>
+    <text x="340" y="520" class="description">▸ 다단 편집 줄맞춤 붕괴</text>
+    <text x="340" y="537" class="description">▸ PDF 폰트 깨짐</text>
+    <text x="340" y="554" class="description">▸ PC/프린터 의존 붕괴</text>
+    <text x="340" y="571" class="description">▸ 자동저장 문서 파손</text>
+    <text x="340" y="588" class="description">▸ 붙여넣기 서식 실패</text>
+    <text x="340" y="605" class="description">▸ 문단번호 스타일 꼬임</text>
+    <text x="340" y="622" class="description">▸ 대용량 문서 프리즈</text>
+    <text x="340" y="639" class="description">▸ 매크로/자동화 취약</text>
+    <text x="340" y="656" class="description">▸ 버전 간 호환 불량</text>
+
+    <rect x="340" y="670" width="240" height="75" rx="5" style="fill: #fecaca; stroke: #ef4444; stroke-width: 1;"/>
+    <text x="460" y="692" text-anchor="middle" class="impact">⚠ 생산성 손실</text>
+    <text x="350" y="710" style="font-size: 10px; fill: #991b1b;">• 반복 수정 시간 낭비</text>
+    <text x="350" y="728" style="font-size: 10px; fill: #991b1b;">• 문서 신뢰성 하락</text>
+  </g>
+
+  <!-- Right Column -->
+  <g id="social-economic">
+    <rect x="620" y="380" width="260" height="380" rx="8" class="detail-box"/>
+    <text x="750" y="410" text-anchor="middle" class="label">3. 사회·경제적 영향</text>
+
+    <text x="630" y="435" class="description">▸ 시민·기업 설치 강요</text>
+    <text x="630" y="455" class="description">▸ 장애인 접근성 침해</text>
+    <text x="630" y="475" class="description">▸ 연구·교육 왜곡</text>
+    <text x="630" y="495" class="description">▸ 국제 협업 단절</text>
+    <text x="630" y="515" class="description">▸ 학술 유통 제약</text>
+    <text x="630" y="535" class="description">▸ 오픈사이언스 충돌</text>
+
+    <rect x="630" y="555" width="240" height="195" rx="5" style="fill: #fee2e2; stroke: #dc2626; stroke-width: 2;"/>
+    <text x="750" y="577" text-anchor="middle" style="font-size: 13px; font-weight: 700; fill: #991b1b;">💰 보이지 않는 세금</text>
+    <text x="640" y="597" style="font-size: 11px; fill: #7f1d1d;">• 라이선스·교육 비용</text>
+    <text x="640" y="615" style="font-size: 11px; fill: #7f1d1d;">• 변환 모듈 개발 비용</text>
+    <text x="640" y="633" style="font-size: 11px; fill: #7f1d1d;">• 기술지원·민원 처리</text>
+    <text x="640" y="651" style="font-size: 11px; fill: #7f1d1d;">• 시스템 연계 추가 비용</text>
+    <text x="640" y="669" style="font-size: 11px; fill: #7f1d1d;">• 해외 기업 진입장벽</text>
+    <text x="640" y="687" style="font-size: 11px; fill: #7f1d1d;">• 스타트업 부담 가중</text>
+
+    <text x="750" y="712" text-anchor="middle" style="font-size: 14px; font-weight: 700; fill: #dc2626;">연간 추정 손실</text>
+    <text x="750" y="733" text-anchor="middle" style="font-size: 18px; font-weight: 700; fill: #991b1b;">1조 원 이상</text>
+  </g>
+
+  <!-- Far Right Column -->
+  <g id="preservation">
+    <rect x="910" y="380" width="260" height="380" rx="8" class="detail-box"/>
+    <text x="1040" y="410" text-anchor="middle" class="label">4. 품질·보존성 리스크</text>
+
+    <text x="920" y="435" class="description">▸ 문서 재현 불안정</text>
+    <text x="930" y="452" class="description" style="font-size: 10px;">PC·프린터마다 다름</text>
+    <text x="920" y="472" class="description">▸ 장기보존 취약</text>
+    <text x="930" y="489" class="description" style="font-size: 10px;">10~20년 가독성 의문</text>
+    <text x="920" y="509" class="description">▸ 진본성 검증 곤란</text>
+    <text x="920" y="529" class="description">▸ 전자증거 활용 제약</text>
+    <text x="920" y="549" class="description">▸ 포렌식 추적 어려움</text>
+    <text x="920" y="569" class="description">▸ 무결성 보장 미비</text>
+
+    <rect x="920" y="590" width="240" height="155" rx="5" style="fill: #fecaca; stroke: #ef4444; stroke-width: 1;"/>
+    <text x="1040" y="612" text-anchor="middle" class="impact">⚠ 법적·행정 리스크</text>
+    <text x="930" y="632" style="font-size: 10px; fill: #991b1b;">• 소송·감사 증거력 약화</text>
+    <text x="930" y="650" style="font-size: 10px; fill: #991b1b;">• 장기 아카이브 실패</text>
+    <text x="930" y="668" style="font-size: 10px; fill: #991b1b;">• 공공기록 신뢰도 하락</text>
+    <text x="930" y="686" style="font-size: 10px; fill: #991b1b;">• 역사적 문서 손실 위험</text>
+    <text x="930" y="704" style="font-size: 10px; fill: #991b1b;">• 디지털 유산 위기</text>
+    <text x="930" y="722" style="font-size: 10px; fill: #991b1b;">• 재현가능성 붕괴</text>
+  </g>
+
+  <!-- Arrows from core to detail boxes -->
+  <path d="M 500,290 L 170,380" class="arrow"/>
+  <path d="M 565,310 L 460,380" class="arrow"/>
+  <path d="M 635,310 L 750,380" class="arrow"/>
+  <path d="M 700,290 L 1040,380" class="arrow"/>
+</svg>

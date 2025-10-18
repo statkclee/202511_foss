@@ -1,0 +1,191 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 30 1600 870">
+  <defs>
+    <style>
+      .title-text { font-family: monospace; font-size: 42px; font-weight: bold; fill: #2c3e50; }
+      .section-title { font-family: monospace; font-size: 24px; font-weight: bold; fill: #2c3e50; }
+      .file-name { font-family: monospace; font-size: 21px; fill: #0d47a1; font-weight: bold; }
+      .desc-text { font-family: monospace; font-size: 16px; fill: #555; }
+      .code-text { font-family: 'Courier New', monospace; font-size: 16px; fill: #333; }
+      .highlight-text { font-family: monospace; font-size: 16px; fill: #c62828; font-weight: bold; }
+      .label-text { font-family: monospace; font-size: 13px; fill: #666; }
+      .zip-box { fill: #e3f2fd; stroke: #1565c0; stroke-width: 3; }
+      .folder-box { fill: #fff3e0; stroke: #e65100; stroke-width: 2; }
+      .file-box { fill: #f5f5f5; stroke: #999; stroke-width: 2; }
+      .xml-box { fill: #e8f5e9; stroke: #2e7d32; stroke-width: 2; }
+    </style>
+    <marker id="arrowBlue" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#1565c0" />
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1600" height="900" fill="#fafafa"/>
+
+  <!-- ==================== LEFT SIDE: .DOCX FILE ==================== -->
+
+  <!-- The .docx file icon -->
+  <rect x="50" y="120" width="280" height="360" class="zip-box" rx="10"/>
+  <text x="190" y="155" class="section-title" text-anchor="middle">📄 report.docx</text>
+  <line x1="70" y1="165" x2="310" y2="165" stroke="#1565c0" stroke-width="2"/>
+
+  <!-- File size info -->
+  <rect x="70" y="180" width="240" height="50" fill="#bbdefb" stroke="#1565c0" stroke-width="2" rx="5"/>
+  <text x="190" y="205" class="desc-text" text-anchor="middle" font-weight="bold">File Size: 2.5 MB</text>
+  <text x="190" y="225" class="label-text" text-anchor="middle">3 pages + 2 images</text>
+
+  <!-- ZIP reveal -->
+  <rect x="70" y="245" width="240" height="60" fill="#fff" stroke="#e65100" stroke-width="3" rx="5"/>
+  <text x="190" y="270" class="highlight-text" text-anchor="middle">⚠️ It's a ZIP file!</text>
+  <text x="190" y="295" class="label-text" text-anchor="middle">Try: rename to .zip &amp; extract</text>
+
+  <!-- Office Open XML badge -->
+  <rect x="55" y="320" width="270" height="30" fill="#8bd28d" rx="5"/>
+  <text x="190" y="342" class="desc-text" text-anchor="middle" fill="#fc0000ff" font-weight="bold">
+    Office Open XML (ISO 29500)
+  </text>
+
+  <!-- Stats -->
+  <text x="190" y="375" class="label-text" text-anchor="middle">Contains:</text>
+  <text x="190" y="395" class="label-text" text-anchor="middle">• 15+ XML files</text>
+  <text x="190" y="415" class="label-text" text-anchor="middle">• 3 main folders</text>
+  <text x="190" y="435" class="label-text" text-anchor="middle">• Complex relationships</text>
+
+  <!-- Arrow pointing to structure -->
+  <line x1="330" y1="300" x2="400" y2="300" stroke="#1565c0" stroke-width="4" marker-end="url(#arrowBlue)"/>
+  <text x="365" y="280" class="label-text" text-weight="bold" text-anchor="middle" fill="#1565c0">Unzip!</text>
+
+  <!-- ==================== CENTER: DIRECTORY STRUCTURE ==================== -->
+
+  <rect x="400" y="120" width="550" height="750" fill="#fff" stroke="#666" stroke-width="3" rx="10"/>
+  <text x="675" y="155" class="section-title" text-anchor="middle">📦 Directory Structure</text>
+  <line x1="420" y1="165" x2="930" y2="165" stroke="#666" stroke-width="2"/>
+
+  <!-- Folder tree -->
+  <g transform="translate(420, 185)">
+    <!-- Root -->
+    <text x="0" y="20" class="file-name">report.docx/ (extracted)</text>
+
+    <!-- [Content_Types].xml -->
+    <line x1="10" y1="40" x2="30" y2="40" stroke="#999" stroke-width="2"/>
+    <rect x="35" y="28" width="180" height="24" class="file-box" rx="3"/>
+    <text x="45" y="46" class="label-text">[Content_Types].xml</text>
+
+    <!-- _rels folder -->
+    <line x1="10" y1="75" x2="30" y2="75" stroke="#999" stroke-width="2"/>
+    <rect x="35" y="63" width="480" height="80" class="folder-box" rx="5"/>
+    <text x="45" y="85" class="file-name">📁 _rels/</text>
+    <text x="55" y="105" class="label-text">└─ .rels (package relationships)</text>
+    <text x="310" y="105" class="desc-text" fill="#e65100">← Links everything</text>
+    <text x="55" y="130" class="desc-text" font-size="13">Defines how files relate to each other</text>
+
+    <!-- docProps folder -->
+    <line x1="10" y1="165" x2="30" y2="165" stroke="#999" stroke-width="2"/>
+    <rect x="35" y="153" width="480" height="100" class="folder-box" rx="5"/>
+    <text x="45" y="175" class="file-name">📁 docProps/</text>
+    <text x="55" y="195" class="label-text">├─ app.xml (application properties)</text>
+    <text x="55" y="215" class="label-text">└─ core.xml (metadata)</text>
+    <text x="55" y="240" class="desc-text" font-size="13">Author, title, dates, statistics...</text>
+
+    <!-- word folder - THE MAIN CONTENT -->
+    <line x1="10" y1="280" x2="30" y2="280" stroke="#999" stroke-width="2"/>
+    <rect x="35" y="268" width="480" height="390" fill="#e8f5e9" stroke="#2e7d32" stroke-width="3" rx="5"/>
+    <text x="45" y="288" class="file-name" fill="#2e7d32">📁 word/ ← THE DOCUMENT!</text>
+    <line x1="45" y1="295" x2="500" y2="295" stroke="#2e7d32" stroke-width="2"/>
+
+    <text x="55" y="315" class="label-text">├─ document.xml</text>
+    <text x="280" y="315" class="highlight-text" font-size="12">← Main content here!</text>
+
+    <text x="55" y="335" class="label-text">├─ styles.xml (formatting definitions)</text>
+    <text x="55" y="355" class="label-text">├─ settings.xml (document settings)</text>
+    <text x="55" y="375" class="label-text">├─ numbering.xml (lists, bullets)</text>
+    <text x="55" y="395" class="label-text">├─ fontTable.xml (fonts used)</text>
+    <text x="55" y="415" class="label-text">├─ webSettings.xml (web options)</text>
+
+    <text x="55" y="445" class="label-text">├─ 📁 _rels/ (relationships)</text>
+    <text x="55" y="465" class="label-text">│   └─ document.xml.rels</text>
+
+    <text x="55" y="495" class="label-text">├─ 📁 media/ (images, charts)</text>
+    <text x="55" y="515" class="label-text">│   ├─ image1.png</text>
+    <text x="55" y="535" class="label-text">│   └─ image2.jpg</text>
+
+    <text x="55" y="565" class="label-text">├─ 📁 embeddings/ (OLE objects)</text>
+    <text x="55" y="585" class="label-text">│   └─ oleObject1.bin</text>
+
+    <text x="55" y="615" class="label-text">└─ 📁 theme/ (colors, fonts)</text>
+    <text x="55" y="635" class="label-text">    └─ theme1.xml</text>
+  </g>
+
+  <!-- ==================== RIGHT SIDE: XML SAMPLE ==================== -->
+
+  <rect x="980" y="120" width="590" height="380" class="xml-box" rx="10"/>
+  <text x="1275" y="155" class="section-title" text-anchor="middle" fill="#2e7d32">📝 document.xml Sample</text>
+  <line x1="1000" y1="165" x2="1550" y2="165" stroke="#2e7d32" stroke-width="2"/>
+
+  <!-- XML code -->
+  <text x="1010" y="195" class="code-text" xml:space="preserve">&lt;?xml version="1.0" encoding="UTF-8"?&gt;</text>
+  <text x="1010" y="215" class="code-text" fill="#c62828">&lt;w:document</text>
+  <text x="1010" y="235" class="code-text">  xmlns:w="http://schemas.openxmlformats.org/..."&gt;</text>
+  <text x="1010" y="260" class="code-text">  &lt;w:body&gt;</text>
+  <text x="1010" y="280" class="code-text">    &lt;w:p&gt;</text>
+  <text x="1010" y="300" class="code-text" fill="#2e7d32">      &lt;w:r&gt;</text>
+  <text x="1010" y="320" class="code-text" fill="#2e7d32">        &lt;w:t&gt;Hello World!&lt;/w:t&gt;</text>
+  <text x="1010" y="340" class="code-text" fill="#2e7d32">      &lt;/w:r&gt;</text>
+  <text x="1010" y="360" class="code-text">    &lt;/w:p&gt;</text>
+  <text x="1010" y="380" class="code-text">    &lt;w:p&gt;</text>
+  <text x="1010" y="400" class="code-text">      &lt;w:pPr&gt;</text>
+  <text x="1010" y="420" class="code-text">        &lt;w:pStyle w:val="Heading1"/&gt;</text>
+  <text x="1010" y="440" class="code-text">      &lt;/w:pPr&gt;</text>
+  <text x="1010" y="460" class="code-text">      &lt;w:r&gt;&lt;w:t&gt;Chapter 1&lt;/w:t&gt;&lt;/w:r&gt;</text>
+  <text x="1010" y="480" class="code-text">    &lt;/w:p&gt;</text>
+
+  <!-- Complexity note -->
+  <rect x="980" y="520" width="590" height="80" fill="#fff3e0" stroke="#e65100" stroke-width="2" rx="5"/>
+  <text x="1275" y="545" class="desc-text" text-anchor="middle" font-weight="bold">
+    ⚠️ Reality Check
+  </text>
+  <text x="1275" y="570" class="label-text" text-anchor="middle">
+    A simple "Hello World" document = 500+ lines of XML
+  </text>
+  <text x="1275" y="590" class="label-text" text-anchor="middle">
+    Complex document = 10,000+ lines across 20+ files!
+  </text>
+
+  <!-- ==================== BOTTOM: KEY INSIGHTS ==================== -->
+
+  <rect x="980" y="620" width="285" height="250" fill="#e3f2fd" stroke="#1565c0" stroke-width="3" rx="8"/>
+  <text x="1122" y="655" class="section-title" text-anchor="middle" fill="#1565c0">✅ Good News</text>
+  <text x="990" y="685" class="desc-text">• Open standard (ISO 29500)</text>
+  <text x="990" y="710" class="desc-text">• Can be parsed by anyone</text>
+  <text x="990" y="735" class="desc-text">• FOSS tools can read/write</text>
+  <text x="990" y="760" class="desc-text">• Plain text = version control!</text>
+  <text x="990" y="790" class="label-text">Examples:</text>
+  <text x="990" y="810" class="label-text">• LibreOffice</text>
+  <text x="990" y="830" class="label-text">• Python-docx</text>
+  <text x="990" y="850" class="label-text">• Apache POI</text>
+
+  <rect x="1285" y="620" width="285" height="250" fill="#ffebee" stroke="#c62828" stroke-width="3" rx="8"/>
+  <text x="1427" y="655" class="section-title" text-anchor="middle" fill="#c62828">⚠️ Challenges</text>
+  <text x="1295" y="685" class="desc-text">• Very complex structure</text>
+  <text x="1295" y="710" class="desc-text">• Verbose XML</text>
+  <text x="1295" y="735" class="desc-text">• Many edge cases</text>
+  <text x="1295" y="760" class="desc-text">• Full compatibility is hard</text>
+  <text x="1295" y="790" class="label-text">That's why:</text>
+  <text x="1295" y="810" class="label-text">• .docx → .docx = OK</text>
+  <text x="1295" y="830" class="label-text">• .docx ↔ .odt = tricky</text>
+  <text x="1295" y="850" class="label-text">• Complex docs may break</text>
+
+  <!-- Bottom note -->
+  <g transform="translate(0, -770)">
+    <rect x="50" y="830" width="900" height="40" fill="#fff9c4" stroke="#f57f17" stroke-width="2" rx="5"/>
+    <text x="500" y="857" class="desc-text" text-anchor="middle" font-weight="bold">
+      💡 Fun Fact: You can edit .docx files with a text editor (if you're brave enough!)
+    </text>  
+  </g>
+
+  <!-- MS Word logo -->
+  <g transform="translate(60, 600) scale(7)">
+    <path d="M18.536,2.323V4.868c3.4.019,7.12-.035,10.521.019a.783.783,0,0,1,.912.861c.054,6.266-.013,12.89.032,19.157-.02.4.009,1.118-.053,1.517-.079.509-.306.607-.817.676-.286.039-.764.034-1.045.047-2.792-.014-5.582-.011-8.374-.01l-1.175,0v2.547L2,27.133Q2,16,2,4.873L18.536,2.322" style="fill:#283c82"/><path d="M18.536,5.822h10.5V26.18h-10.5V23.635h8.27V22.363h-8.27v-1.59h8.27V19.5h-8.27v-1.59h8.27V16.637h-8.27v-1.59h8.27V13.774h-8.27v-1.59h8.27V10.911h-8.27V9.321h8.27V8.048h-8.27V5.822" style="fill:#fff"/><path d="M8.573,11.443c.6-.035,1.209-.06,1.813-.092.423,2.147.856,4.291,1.314,6.429.359-2.208.757-4.409,1.142-6.613.636-.022,1.272-.057,1.905-.1-.719,3.082-1.349,6.19-2.134,9.254-.531.277-1.326-.013-1.956.032-.423-2.106-.916-4.2-1.295-6.314C8.99,16.1,8.506,18.133,8.08,20.175q-.916-.048-1.839-.111c-.528-2.8-1.148-5.579-1.641-8.385.544-.025,1.091-.048,1.635-.067.328,2.026.7,4.043.986,6.072.448-2.08.907-4.161,1.352-6.241" style="fill:#fff"/>
+  </g>
+
+
+</svg>

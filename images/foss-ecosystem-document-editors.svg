@@ -1,0 +1,295 @@
+<svg viewBox="0 90 1600 850" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .title { font-family: 'Noto Sans KR', sans-serif; font-size: 36px; font-weight: 700; fill: #1e3a8a; }
+      .subtitle { font-family: 'Noto Sans KR', sans-serif; font-size: 18px; font-weight: 600; fill: #475569; }
+      .layer-title { font-family: 'Noto Sans KR', sans-serif; font-size: 24px; font-weight: 700; fill: white; }
+      .category { font-family: 'Noto Sans KR', sans-serif; font-size: 22px; font-weight: 700; }
+      .item { font-family: 'Noto Sans KR', sans-serif; font-size: 18px; }
+      .detail { font-family: 'Noto Sans KR', sans-serif; font-size: 18px; fill: #475569; }
+      .emphasis { font-family: 'Noto Sans KR', sans-serif; font-size: 17px; font-weight: 700; }
+      .note { font-family: 'Noto Sans KR', sans-serif; font-size: 24px; font-style: italic; }
+      .highlight { font-family: 'Noto Sans KR', sans-serif; font-size: 18px; font-weight: 600; }
+      .reason-title { font-family: 'Noto Sans KR', sans-serif; font-size: 20px; font-weight: 700; }
+      .reason-detail { font-family: 'Noto Sans KR', sans-serif; font-size: 16px; }
+    </style>
+
+    <!-- Gradients -->
+    <linearGradient id="appGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color: #0078d4; stop-opacity: 1" />
+      <stop offset="100%" style="stop-color: #4ade80; stop-opacity: 1" />
+    </linearGradient>
+
+    <linearGradient id="platformGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color: #7c3aed; stop-opacity: 1" />
+      <stop offset="100%" style="stop-color: #a78bfa; stop-opacity: 1" />
+    </linearGradient>
+
+    <linearGradient id="docEditorGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color: #f59e0b; stop-opacity: 0.3" />
+      <stop offset="100%" style="stop-color: #ec4899; stop-opacity: 0.3" />
+    </linearGradient>
+
+    <!-- Glow effect for document editor -->
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- ========================================== -->
+  <!-- LAYER 1: Application Layer -->
+  <!-- ========================================== -->
+  <g id="application-layer">
+    <rect x="50" y="120" width="1500" height="550" rx="15" fill="url(#appGradient)" opacity="0.15"/>
+    <rect x="50" y="120" width="1500" height="50" rx="15" fill="url(#appGradient)"/>
+
+    <text x="800" y="155" text-anchor="middle" class="layer-title">응용 프로그램 계층 (End-User Applications)</text>
+
+    <!-- LEFT SIDE: Special Reasons (4x1 vertical) -->
+    <g id="special-reasons">
+      <rect x="70" y="190" width="480" height="460" rx="12" fill="#1e3a8a" stroke="#1e40af" stroke-width="3"/>
+
+      <text x="310" y="225" text-anchor="middle" class="category" style="fill: white; font-size: 20px;">
+        📝 특별한 이유
+      </text>
+      <rect x="270" y="232" width="80" height="3" fill="#fbbf24"/>
+
+      <!-- Reason 1 -->
+      <rect x="90" y="255" width="440" height="80" rx="8" fill="#dbeafe" stroke="#3b82f6" stroke-width="2"/>
+      <text x="100" y="280" class="reason-title" style="fill: #1e3a8a;">
+        1️⃣ 최다 사용자 접점
+      </text>
+      <text x="110" y="305" class="reason-detail" style="fill: #1e293b;">
+        • 일반 사용자가 가장 먼저/자주 접하는 FOSS
+      </text>
+      <text x="110" y="325" class="reason-detail" style="fill: #1e293b;">
+        • Linux 데스크톱 보급의 핵심
+      </text>
+
+      <!-- Reason 2 -->
+      <rect x="90" y="350" width="440" height="80" rx="8" fill="#fef3c7" stroke="#f59e0b" stroke-width="2"/>
+      <text x="100" y="375" class="reason-title" style="fill: #92400e;">
+        2️⃣ 정부·공공 부문 영향력
+      </text>
+      <text x="110" y="400" class="reason-detail" style="fill: #1e293b;">
+        • 공공문서 표준 = 생태계 확산
+      </text>
+      <text x="110" y="420" class="reason-detail" style="fill: #1e293b;">
+        • 독일·프랑스 ODF 채택 사례
+      </text>
+
+      <!-- Reason 3 -->
+      <rect x="90" y="445" width="440" height="80" rx="8" fill="#f0fdf4" stroke="#18a303" stroke-width="2"/>
+      <text x="100" y="470" class="reason-title" style="fill: #14532d;">
+        3️⃣ 디지털 주권 상징
+      </text>
+      <text x="110" y="495" class="reason-detail" style="fill: #1e293b;">
+        • MS Office 독점 탈피
+      </text>
+      <text x="110" y="515" class="reason-detail" style="fill: #1e293b;">
+        • FOSS 철학의 가시적 성과
+      </text>
+
+      <!-- Reason 4 -->
+      <rect x="90" y="550" width="440" height="80" rx="8" fill="#fce7f3" stroke="#ec4899" stroke-width="2"/>
+      <text x="100" y="575" class="reason-title" style="fill: #9f1239;">
+        4️⃣ 생태계 건강도 지표
+      </text>
+      <text x="110" y="600" class="reason-detail" style="fill: #1e293b;">
+        • 문서편집기 성숙도 = FOSS 데스크톱 환경 성숙도
+      </text>
+      <text x="110" y="620" class="reason-detail" style="fill: #1e293b;">
+        • 가장 도전적인 영역에서의 성과
+      </text>
+    </g>
+
+    <!-- MIDDLE: Document Editors Section - HIGHLIGHTED -->
+    <g id="document-editors-highlight">
+      <!-- Glow background -->
+      <rect x="580" y="190" width="480" height="460" rx="12" fill="url(#docEditorGlow)" filter="url(#glow)"/>
+
+      <rect x="580" y="190" width="480" height="460" rx="12" fill="#fffbeb" stroke="#f59e0b" stroke-width="4"/>
+
+      <text x="820" y="225" text-anchor="middle" class="category" style="fill: #92400e;">
+        📝 문서편집기
+      </text>
+      <rect x="785" y="232" width="70" height="3" fill="#f59e0b"/>
+      <text x="820" y="260" text-anchor="middle" class="emphasis" style="fill: #ea580c; font-size: 20px;">
+        ⭐ 최다 사용자 접점 ⭐
+      </text>
+
+      <!-- LibreOffice -->
+      <rect x="600" y="275" width="440" height="95" rx="8" fill="white" stroke="#18a303" stroke-width="2"/>
+      <text x="620" y="300" class="item" style="fill: #14532d; font-size: 18px; font-weight: 700;">
+        • LibreOffice (2010~)
+      </text>
+      <text x="630" y="325" class="detail">- ISO 표준 ODF, OOXML 호환</text>
+      <text x="630" y="345" class="detail">- Writer, Calc, Impress, Draw</text>
+      <text x="890" y="315" class="note" style="fill: #18a303; font-weight: 600; font-size: 18px;">✓ 사용자 2억+,</text>
+      <text x="890" y="345" class="note" style="fill: #18a303; font-weight: 600; font-size: 18px;">✓ 정부·공공 선두</text>
+
+      <!-- Other Office Suites -->
+      <rect x="600" y="385" width="440" height="80" rx="8" fill="white" stroke="#6b7280" stroke-width="1"/>
+      <text x="620" y="410" class="item" style="fill: #1e293b; font-weight: 600;">
+        • OpenOffice, OnlyOffice
+      </text>
+      <text x="620" y="430" class="item" style="fill: #1e293b; font-weight: 600;">
+        • Collabora Online
+      </text>
+      <text x="630" y="455" class="detail">- 다양한 사용 사례 (클라우드 등)</text>
+
+      <!-- LaTeX & Quarto (2 columns) -->
+      <g id="latex-quarto">
+        <!-- LaTeX (Left) -->
+        <rect x="600" y="480" width="210" height="70" rx="8" fill="white" stroke="#6b7280" stroke-width="1"/>
+        <text x="615" y="505" class="item" style="fill: #1e293b; font-weight: 600;">
+          • LaTeX/TeX
+        </text>
+        <text x="620" y="525" class="detail" style="font-size: 14px;">학술 출판</text>
+        <text x="620" y="542" class="detail" style="font-size: 14px;">수학·과학 논문</text>
+
+        <!-- Quarto (Right) -->
+        <rect x="830" y="480" width="210" height="70" rx="8" fill="white" stroke="#6b7280" stroke-width="1"/>
+        <text x="845" y="505" class="item" style="fill: #1e293b; font-weight: 600;">
+          • Quarto
+        </text>
+        <text x="850" y="525" class="detail" style="font-size: 14px;">과학 출판</text>
+        <text x="850" y="542" class="detail" style="font-size: 14px;">재현 가능 문서</text>
+      </g>
+
+      <!-- Importance Badge -->
+      <rect x="600" y="565" width="440" height="70" rx="6" fill="#dc2626"/>
+      <text x="820" y="595" text-anchor="middle" class="emphasis" style="fill: white; font-size: 17px;">
+        💡 일반 사용자가
+      </text>
+      <text x="820" y="620" text-anchor="middle" class="emphasis" style="fill: white; font-size: 17px;">
+        FOSS를 체험하는 첫 관문
+      </text>
+    </g>
+
+    <!-- RIGHT SIDE: Split into 2 sections (Open Source LLM + Other Apps) -->
+
+    <!-- TOP: Open Source LLM -->
+    <rect x="1090" y="190" width="460" height="210" rx="12" fill="#fef3c7" stroke="#f59e0b" stroke-width="3"/>
+
+    <text x="1320" y="220" text-anchor="middle" class="category" style="fill: #92400e; font-size: 20px;">
+      🤖 Open Source LLM
+    </text>
+
+    <!-- LLM Models -->
+    <text x="1110" y="255" class="item" style="fill: #1e293b; font-weight: 600; font-size: 17px;">
+      📚 오픈소스 대규모 언어 모델
+    </text>
+    <text x="1130" y="280" class="detail">• LLaMA, Mistral, Gemma</text>
+    <text x="1130" y="300" class="detail">• BLOOM, Falcon, Qwen</text>
+
+    <!-- LLM Tools -->
+    <text x="1110" y="335" class="item" style="fill: #1e293b; font-weight: 600; font-size: 17px;">
+      🛠️ 실행 환경 &amp; 도구
+    </text>
+    <text x="1130" y="360" class="detail">• Ollama, LM Studio, vLLM</text>
+    <text x="1130" y="380" class="detail">• HuggingFace Transformers</text>
+
+    <!-- BOTTOM: Other Applications -->
+    <rect x="1090" y="420" width="460" height="230" rx="12" fill="white" stroke="#4ade80" stroke-width="2"/>
+
+    <text x="1320" y="450" text-anchor="middle" class="category" style="fill: #14532d; font-size: 20px;">
+      기타 응용 프로그램
+    </text>
+
+    <!-- Left Column -->
+    <g id="left-column">
+      <!-- Web Browsers -->
+      <text x="1110" y="485" class="item" style="fill: #1e293b; font-weight: 600; font-size: 16px;">
+        🌐 웹 브라우저
+      </text>
+      <text x="1130" y="505" class="detail" style="font-size: 14px;">• Firefox, Chromium</text>
+
+      <!-- Email -->
+      <text x="1110" y="535" class="item" style="fill: #1e293b; font-weight: 600; font-size: 16px;">
+        📧 이메일
+      </text>
+      <text x="1130" y="555" class="detail" style="font-size: 14px;">• Thunderbird, Evolution</text>
+
+      <!-- Development Tools -->
+      <text x="1110" y="585" class="item" style="fill: #1e293b; font-weight: 600; font-size: 16px;">
+        💻 개발 &amp; 생산성
+      </text>
+      <text x="1130" y="605" class="detail" style="font-size: 14px;">• VS Code, Git</text>
+      <text x="1130" y="620" class="detail" style="font-size: 14px;">• 프로젝트 관리</text>
+    </g>
+
+    <!-- Right Column -->
+    <g id="right-column">
+      <!-- Image Editing -->
+      <text x="1340" y="485" class="item" style="fill: #1e293b; font-weight: 600; font-size: 16px;">
+        🎨 이미지 편집
+      </text>
+      <text x="1360" y="505" class="detail" style="font-size: 14px;">• GIMP, Inkscape</text>
+
+      <!-- Video Editing -->
+      <text x="1340" y="535" class="item" style="fill: #1e293b; font-weight: 600; font-size: 16px;">
+        🎬 동영상 편집
+      </text>
+      <text x="1360" y="555" class="detail" style="font-size: 14px;">• Kdenlive, OpenShot</text>
+
+      <!-- Audio Editing -->
+      <text x="1340" y="585" class="item" style="fill: #1e293b; font-weight: 600; font-size: 16px;">
+        🎵 오디오 편집
+      </text>
+      <text x="1360" y="605" class="detail" style="font-size: 14px;">• Audacity, Ardour</text>
+      <text x="1360" y="620" class="detail" style="font-size: 14px;">• LMMS (음악 제작)</text>
+    </g>
+
+    <!-- Note -->
+    <text x="1320" y="645" text-anchor="middle" class="note" style="fill: #64748b; font-size: 14px;">
+      다양한 FOSS 생태계
+    </text>
+  </g>
+
+  <!-- Arrow pointing down -->
+  <path d="M 800 690 L 800 720" stroke="#64748b" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+  <marker id="arrow" markerWidth="10" markerHeight="10" refX="5" refY="5" orient="auto">
+    <path d="M 0 0 L 10 5 L 0 10 Z" fill="#64748b"/>
+  </marker>
+
+  <!-- ========================================== -->
+  <!-- LAYER 2: Platform & Infrastructure -->
+  <!-- ========================================== -->
+  <g id="platform-layer">
+    <rect x="50" y="740" width="1500" height="190" rx="15" fill="url(#platformGradient)" opacity="0.15"/>
+    <rect x="50" y="740" width="1500" height="50" rx="15" fill="url(#platformGradient)"/>
+
+    <text x="800" y="775" text-anchor="middle" class="layer-title">플랫폼 &amp; 인프라 계층 (Platform &amp; Infrastructure)</text>
+
+    <rect x="70" y="810" width="1480" height="100" rx="12" fill="white" stroke="#a78bfa" stroke-width="2"/>
+
+    <!-- Operating Systems -->
+    <text x="90" y="845" class="item" style="fill: #1e293b; font-weight: 600; font-size: 17px;">
+      🖥️ 운영체제
+    </text>
+    <text x="100" y="880" class="detail" style="font-size: 20px;">• Linux (Ubuntu, Fedora, Debian), BSD</text>
+
+    <!-- Servers & Middleware -->
+    <text x="460" y="845" class="item" style="fill: #1e293b; font-weight: 600; font-size: 17px;">
+      🔧 서버 &amp; 미들웨어
+    </text>
+    <text x="470" y="880" class="detail" style="font-size: 20px;">• Apache, Nginx, Docker, Kubernetes</text>
+
+    <!-- Databases -->
+    <text x="840" y="845" class="item" style="fill: #1e293b; font-weight: 600; font-size: 17px;">
+      🗄️ 데이터베이스
+    </text>
+    <text x="835" y="880" class="detail" style="font-size: 20px;">• PostgreSQL, MySQL, MongoDB</text>
+
+    <!-- Programming Languages -->
+    <text x="1150" y="845" class="item" style="fill: #1e293b; font-weight: 600; font-size: 17px;">
+      🔤 프로그래밍 언어
+    </text>
+    <text x="1160" y="880" class="detail" style="font-size: 20px;">• R/Python, Java, JavaScript, Go, Rust</text>
+  </g>
+</svg>

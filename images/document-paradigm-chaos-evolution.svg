@@ -1,0 +1,289 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 3300">
+  <defs>
+    <!-- Gradients -->
+    <linearGradient id="headerGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#dc2626;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#991b1b;stop-opacity:1" />
+    </linearGradient>
+
+    <linearGradient id="quartoHighlight" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#fbbf24;stop-opacity:0.3" />
+      <stop offset="100%" style="stop-color:#f59e0b;stop-opacity:0.3" />
+    </linearGradient>
+
+    <!-- Arrow markers -->
+    <marker id="arrowSuccess" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#10b981" />
+    </marker>
+    <marker id="arrowFail" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#ef4444" />
+    </marker>
+    <marker id="arrowPartial" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#f59e0b" />
+    </marker>
+
+    <!-- Styles -->
+    <style>
+      text { font-family: 'Noto Sans KR', 'Noto Sans', sans-serif; }
+      .title { font-size: 36px; font-weight: 700; fill: white; }
+      .phase-title { font-size: 24px; font-weight: 700; fill: #1f2937; }
+      .phase-year { font-size: 18px; font-weight: 600; fill: #6b7280; }
+      .tech-name { font-size: 18px; font-weight: 600; fill: #1f2937; }
+      .tech-desc { font-size: 14px; fill: #4b5563; }
+      .desc-text { font-size: 15px; fill: #374151; }
+      .status-text { font-size: 14px; font-weight: 600; }
+      .summary-title { font-size: 20px; font-weight: 700; fill: #1f2937; }
+      .summary-text { font-size: 16px; fill: #374151; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="3300" fill="#f9fafb"/>
+
+  <!-- Header -->
+  <rect x="50" y="20" width="1100" height="70" rx="10" fill="url(#headerGrad)"/>
+  <text x="600" y="65" text-anchor="middle" class="title">문서 패러다임의 진화와 혼돈</text>
+
+  <!-- Timeline line -->
+  <line x1="150" y1="150" x2="150" y2="2900" stroke="#d1d5db" stroke-width="4"/>
+
+  <!-- Phase 0: Drawing Language 탄생 (1950s-1977) -->
+  <g id="phase0">
+    <circle cx="150" cy="180" r="12" fill="#10b981"/>
+    <rect x="200" y="140" width="950" height="300" rx="10" fill="#d1fae5" stroke="#10b981" stroke-width="2"/>
+
+    <text x="220" y="170" class="phase-title">Phase 0: Drawing Language 탄생</text>
+    <text x="220" y="195" class="phase-year">1950s-1977</text>
+    <text x="220" y="225" class="desc-text">벡터 그래픽 출력의 시작 - 플로터 시대</text>
+
+    <!-- Two parallel methods -->
+    <rect x="230" y="255" width="420" height="150" rx="5" fill="white" stroke="#94a3b8" stroke-width="1"/>
+    <text x="440" y="285" text-anchor="middle" class="tech-name">ASCII Art + Line Printer</text>
+    <text x="440" y="310" text-anchor="middle" class="phase-year">(1950s-1960s)</text>
+    <text x="440" y="340" text-anchor="middle" class="tech-desc">텍스트 기반 "가짜" 그래픽</text>
+    <text x="440" y="365" text-anchor="middle" class="tech-desc">현수막/배너 출력용</text>
+    <text x="440" y="390" text-anchor="middle" class="tech-desc">저렴, 빠름, 저품질</text>
+
+    <rect x="700" y="255" width="420" height="150" rx="5" fill="white" stroke="#10b981" stroke-width="2"/>
+    <text x="910" y="285" text-anchor="middle" class="tech-name">Pen Plotter (Drawing Language 원조)</text>
+    <text x="910" y="310" text-anchor="middle" class="phase-year">1959: CalComp 565 (최초)</text>
+    <text x="910" y="340" text-anchor="middle" class="tech-desc">진짜 벡터 그래픽</text>
+    <text x="910" y="365" text-anchor="middle" class="tech-desc">공학 도면 출력용</text>
+    <text x="910" y="390" text-anchor="middle" class="tech-desc">비쌈, 느림, 고품질</text>
+
+    <text x="220" y="430" class="desc-text" font-weight="600" fill="#10b981">1977: HP-GL 표준화 → Drawing Language 시대 공식 시작</text>
+  </g>
+
+  <!-- Phase 1: 순수한 시작 (1970s-1980s) -->
+  <g id="phase1">
+    <circle cx="150" cy="480" r="12" fill="#3b82f6"/>
+    <rect x="200" y="440" width="950" height="280" rx="10" fill="#dbeafe" stroke="#3b82f6" stroke-width="2"/>
+
+    <text x="220" y="470" class="phase-title">Phase 1: 순수한 시작</text>
+    <text x="220" y="495" class="phase-year">1970s-1980s</text>
+    <text x="220" y="525" class="desc-text">각 기술은 명확한 목적으로 탄생</text>
+
+    <!-- 3 technologies -->
+    <rect x="230" y="550" width="280" height="140" rx="5" fill="white" stroke="#94a3b8" stroke-width="1"/>
+    <text x="370" y="580" text-anchor="middle" class="tech-name">PostScript (1982)</text>
+    <text x="370" y="605" text-anchor="middle" class="tech-desc">그래픽 렌더링</text>
+    <text x="370" y="625" text-anchor="middle" class="tech-desc">프린터 출력</text>
+
+    <rect x="540" y="550" width="280" height="140" rx="5" fill="white" stroke="#94a3b8" stroke-width="1"/>
+    <text x="680" y="580" text-anchor="middle" class="tech-name">TeX (1978)</text>
+    <text x="680" y="605" text-anchor="middle" class="tech-desc">학술 조판</text>
+    <text x="680" y="625" text-anchor="middle" class="tech-desc">수학 수식</text>
+
+    <rect x="850" y="550" width="280" height="140" rx="5" fill="white" stroke="#94a3b8" stroke-width="1"/>
+    <text x="990" y="580" text-anchor="middle" class="tech-name">WYSIWYG (1985)</text>
+    <text x="990" y="605" text-anchor="middle" class="tech-desc">시각적 편집</text>
+    <text x="990" y="625" text-anchor="middle" class="tech-desc">Word, PageMaker</text>
+  </g>
+
+  <!-- Phase 2: 영역 침범 (1985-1995) -->
+  <g id="phase2">
+    <circle cx="150" cy="820" r="12" fill="#ef4444"/>
+    <rect x="200" y="750" width="950" height="380" rx="10" fill="#fee2e2" stroke="#ef4444" stroke-width="2"/>
+
+    <text x="220" y="780" class="phase-title">Phase 2: 영역 침범 시작</text>
+    <text x="220" y="805" class="phase-year">1985-1995</text>
+    <text x="220" y="835" class="desc-text">각 기술이 다른 영역으로 확장 시도</text>
+
+    <!-- Conflicts visualization -->
+    <!-- TeX -> PostScript (Success) -->
+    <line x1="400" y1="890" x2="600" y2="890" stroke="#10b981" stroke-width="3" marker-end="url(#arrowSuccess)"/>
+    <text x="450" y="880" class="status-text" fill="#10b981">✅ 성공</text>
+    <text x="250" y="890" class="tech-desc">TeX</text>
+    <text x="620" y="890" class="tech-desc">→ PostScript (dvips)</text>
+
+    <!-- PostScript -> TeX (Fail) -->
+    <line x1="400" y1="940" x2="600" y2="940" stroke="#ef4444" stroke-width="3" stroke-dasharray="5,5" marker-end="url(#arrowFail)"/>
+    <text x="450" y="930" class="status-text" fill="#ef4444">❌ 실패</text>
+    <text x="250" y="940" class="tech-desc">PostScript</text>
+    <text x="620" y="940" class="tech-desc">→ TeX (조판 로직 없음)</text>
+
+    <!-- WYSIWYG -> TeX (Partial) -->
+    <line x1="400" y1="990" x2="600" y2="990" stroke="#f59e0b" stroke-width="3" stroke-dasharray="3,3" marker-end="url(#arrowPartial)"/>
+    <text x="450" y="980" class="status-text" fill="#f59e0b">⚠️ 부분</text>
+    <text x="250" y="990" class="tech-desc">WYSIWYG</text>
+    <text x="620" y="990" class="tech-desc">→ TeX (MathType, 억지)</text>
+
+    <!-- TeX -> WYSIWYG (Partial) -->
+    <line x1="400" y1="1040" x2="600" y2="1040" stroke="#f59e0b" stroke-width="3" stroke-dasharray="3,3" marker-end="url(#arrowPartial)"/>
+    <text x="450" y="1030" class="status-text" fill="#f59e0b">⚠️ 틈새</text>
+    <text x="250" y="1040" class="tech-desc">TeX</text>
+    <text x="620" y="1040" class="tech-desc">→ WYSIWYG (LyX, 소수)</text>
+
+    <text x="220" y="1100" class="desc-text" font-style="italic">결과: 일부 성공, 대부분 실패 또는 부분적 해결</text>
+  </g>
+
+  <!-- Phase 3: 웹의 침입 (1995-2005) -->
+  <g id="phase3">
+    <circle cx="150" cy="1230" r="12" fill="#8b5cf6"/>
+    <rect x="200" y="1160" width="950" height="380" rx="10" fill="#ede9fe" stroke="#8b5cf6" stroke-width="2"/>
+
+    <text x="220" y="1190" class="phase-title">Phase 3: 웹의 침입</text>
+    <text x="220" y="1215" class="phase-year">1995-2005</text>
+    <text x="220" y="1245" class="desc-text">인터넷 등장으로 새로운 요구사항 출현</text>
+
+    <!-- HTML arrival -->
+    <rect x="450" y="1280" width="300" height="80" rx="5" fill="#c084fc" stroke="#7c3aed" stroke-width="2"/>
+    <text x="600" y="1310" text-anchor="middle" class="tech-name" fill="white">HTML/Markup</text>
+    <text x="600" y="1335" text-anchor="middle" class="tech-desc" fill="white">웹 문서 표준</text>
+
+    <!-- Split: Desktop vs Web -->
+    <rect x="230" y="1390" width="400" height="120" rx="5" fill="#fef3c7" stroke="#f59e0b" stroke-width="2"/>
+    <text x="430" y="1420" text-anchor="middle" class="tech-name">Desktop Publishing</text>
+    <text x="430" y="1445" text-anchor="middle" class="tech-desc">• PDF/인쇄</text>
+    <text x="430" y="1465" text-anchor="middle" class="tech-desc">• CMYK, 고정 페이지</text>
+    <text x="430" y="1485" text-anchor="middle" class="tech-desc">• PostScript, TeX</text>
+
+    <text x="670" y="1450" text-anchor="middle" style="font-size: 40px; fill: #dc2626;">↔️</text>
+
+    <rect x="750" y="1390" width="380" height="120" rx="5" fill="#dbeafe" stroke="#3b82f6" stroke-width="2"/>
+    <text x="940" y="1420" text-anchor="middle" class="tech-name">Web Publishing</text>
+    <text x="940" y="1445" text-anchor="middle" class="tech-desc">• HTML/화면</text>
+    <text x="940" y="1465" text-anchor="middle" class="tech-desc">• RGB, 반응형</text>
+    <text x="940" y="1485" text-anchor="middle" class="tech-desc">• CSS, JavaScript</text>
+
+    <text x="220" y="1530" class="desc-text" font-weight="600" fill="#dc2626">결과: 완전히 분리된 두 세계 🔴 (현재도 미해결)</text>
+  </g>
+
+  <!-- Phase 4: Markdown의 간소화 (2004-2010) -->
+  <g id="phase4">
+    <circle cx="150" cy="1640" r="12" fill="#10b981"/>
+    <rect x="200" y="1570" width="950" height="280" rx="10" fill="#d1fae5" stroke="#10b981" stroke-width="2"/>
+
+    <text x="220" y="1600" class="phase-title">Phase 4: Markdown의 간소화 시도</text>
+    <text x="220" y="1625" class="phase-year">2004-2010</text>
+    <text x="220" y="1655" class="desc-text">간단한 문법으로 HTML 작성</text>
+
+    <rect x="350" y="1680" width="500" height="80" rx="5" fill="white" stroke="#10b981" stroke-width="2"/>
+    <text x="600" y="1710" text-anchor="middle" class="tech-name">Markdown (2004)</text>
+    <text x="600" y="1735" text-anchor="middle" class="tech-desc">읽기 쉬운 plain text</text>
+
+    <text x="250" y="1785" class="desc-text">✅ HTML 변환 성공</text>
+    <text x="250" y="1810" class="desc-text">⚠️ 수학 수식 (LaTeX 차용)</text>
+    <text x="250" y="1835" class="desc-text">❌ 표준 부재 (CommonMark, GFM, Pandoc...)</text>
+  </g>
+
+  <!-- Phase 5: Literate Programming (2014-2020) -->
+  <g id="phase5">
+    <circle cx="150" cy="1950" r="12" fill="#f59e0b"/>
+    <rect x="200" y="1880" width="950" height="300" rx="10" fill="#fef3c7" stroke="#f59e0b" stroke-width="2"/>
+
+    <text x="220" y="1910" class="phase-title">Phase 5: 코드와 문서 통합</text>
+    <text x="220" y="1935" class="phase-year">2014-2020</text>
+    <text x="220" y="1965" class="desc-text">데이터 과학 시대, 실행 가능한 문서</text>
+
+    <rect x="300" y="1990" width="800" height="160" rx="5" fill="white" stroke="#f59e0b" stroke-width="2"/>
+    <text x="700" y="2020" text-anchor="middle" class="tech-name">Jupyter Notebook / R Markdown</text>
+    <text x="700" y="2050" text-anchor="middle" class="tech-desc">📝 Markdown (문서)</text>
+    <text x="700" y="2075" text-anchor="middle" class="tech-desc">➕ LaTeX (수학)</text>
+    <text x="700" y="2100" text-anchor="middle" class="tech-desc">➕ Python/R (코드)</text>
+    <text x="700" y="2125" text-anchor="middle" class="tech-desc">→ HTML/PDF (출력)</text>
+
+    <text x="950" y="2160" text-anchor="middle" style="font-size: 30px;">💥</text>
+    <text x="220" y="2170" class="desc-text" font-weight="600" fill="#dc2626">문제: 복잡도 폭발</text>
+  </g>
+
+  <!-- Phase 6: Quarto (2022-현재) - HIGHLIGHTED -->
+  <g id="phase6">
+    <circle cx="150" cy="2300" r="12" fill="#fbbf24"/>
+    <rect x="200" y="2210" width="950" height="340" rx="10" fill="url(#quartoHighlight)" stroke="#f59e0b" stroke-width="4"/>
+
+    <text x="220" y="2240" class="phase-title">Phase 6: Quarto의 통합 시도 ⭐</text>
+    <text x="220" y="2265" class="phase-year">2022-현재</text>
+    <text x="220" y="2295" class="desc-text" font-weight="600">단일 소스, 여러 출력 (Single Source, Multiple Outputs)</text>
+
+    <rect x="250" y="2320" width="880" height="190" rx="5" fill="white" stroke="#f59e0b" stroke-width="2"/>
+    <text x="690" y="2350" text-anchor="middle" class="tech-name" style="font-size: 20px;">🎯 Quarto</text>
+
+    <text x="280" y="2385" class="tech-desc">📝 Markdown (기본 문법)</text>
+    <text x="280" y="2410" class="tech-desc">🔢 LaTeX (수학 수식)</text>
+    <text x="280" y="2435" class="tech-desc">💻 Jupyter/Knitr (코드 실행)</text>
+
+    <text x="690" y="2385" class="tech-desc">🔄 Pandoc (변환 엔진)</text>
+    <text x="690" y="2410" class="tech-desc">📄 HTML/PDF/Word (출력)</text>
+    <text x="690" y="2435" class="tech-desc">🎬 RevealJS (프레젠테이션)</text>
+
+    <text x="280" y="2475" class="status-text" fill="#10b981">✅ 단일 소스로 여러 포맷 생성</text>
+    <text x="280" y="2495" class="status-text" fill="#10b981">✅ 코드와 문서 완전 통합</text>
+
+    <text x="750" y="2475" class="status-text" fill="#ef4444">❌ WYSIWYG 편집 불가</text>
+    <text x="750" y="2495" class="status-text" fill="#ef4444">❌ 비개발자 진입장벽</text>
+
+    <text x="220" y="2540" class="desc-text" font-weight="600" fill="#f59e0b">상태: 🟡 현재 최선의 통합 시도, 하지만 완벽하지 않음</text>
+  </g>
+
+  <!-- Phase 7: Gen AI (2023-현재) -->
+  <g id="phase7">
+    <circle cx="150" cy="2640" r="12" fill="#a855f7"/>
+    <rect x="200" y="2570" width="950" height="300" rx="10" fill="#f3e8ff" stroke="#a855f7" stroke-width="2"/>
+
+    <text x="220" y="2600" class="phase-title">Phase 7: Gen AI의 등장</text>
+    <text x="220" y="2625" class="phase-year">2023-현재</text>
+    <text x="220" y="2655" class="desc-text">자연어로 문서 생성하는 새로운 패러다임</text>
+
+    <rect x="350" y="2680" width="500" height="80" rx="5" fill="#c084fc" stroke="#7c3aed" stroke-width="2"/>
+    <text x="600" y="2710" text-anchor="middle" class="tech-name" fill="white">ChatGPT / Claude</text>
+    <text x="600" y="2735" text-anchor="middle" class="tech-desc" fill="white">"분석 보고서 작성해줘" → 자동 생성</text>
+
+    <text x="250" y="2790" class="desc-text">✅ 초안 작성, 코드 생성</text>
+    <text x="250" y="2815" class="desc-text">❌ 정밀 제어 불가</text>
+    <text x="250" y="2840" class="desc-text">❌ 재현성 부족 (매번 다른 결과)</text>
+
+    <text x="750" y="2815" class="status-text" fill="#3b82f6">🔵 진행 중</text>
+    <text x="220" y="2860" class="desc-text" font-weight="600" fill="#3b82f6">상태: 새로운 변수, 하지만 한계 명확</text>
+  </g>
+
+  <!-- Summary Section -->
+  <g id="summary">
+    <rect x="50" y="2920" width="1100" height="330" rx="10" fill="white" stroke="#6b7280" stroke-width="3"/>
+
+    <text x="600" y="2960" text-anchor="middle" class="summary-title" style="font-size: 28px;">📊 현재 상태: 해결 vs 미해결</text>
+
+    <line x1="100" y1="2980" x2="1100" y2="2980" stroke="#e5e7eb" stroke-width="2"/>
+
+    <!-- 해결됨 -->
+    <text x="120" y="3015" class="summary-title" fill="#10b981">✅ 완전 해결:</text>
+    <text x="140" y="3045" class="summary-text">• PostScript ↔ TeX 통합 (PDF가 공통 포맷)</text>
+    <text x="140" y="3070" class="summary-text">• 포맷 변환 (Pandoc이 universal converter)</text>
+    <text x="140" y="3095" class="summary-text">• 버전 관리 (Git + plain text)</text>
+
+    <!-- 부분 해결 -->
+    <text x="600" y="3015" class="summary-title" fill="#f59e0b">🟡 부분 해결:</text>
+    <text x="620" y="3045" class="summary-text">• 코드 + 문서 통합 (Quarto)</text>
+    <text x="620" y="3070" class="summary-text">• 협업 (Google Docs vs Git 분열)</text>
+    <text x="620" y="3095" class="summary-text">• 경량 마크업 (Markdown 표준 부재)</text>
+
+    <line x1="100" y1="3115" x2="1100" y2="3115" stroke="#e5e7eb" stroke-width="2"/>
+
+    <!-- 미해결 -->
+    <text x="120" y="3150" class="summary-title" fill="#ef4444">❌ 미해결 (심각):</text>
+    <text x="140" y="3180" class="summary-text" font-weight="600">• WYSIWYG vs Source Code 분열 🔴 (완전히 분리된 두 세계)</text>
+    <text x="140" y="3205" class="summary-text" font-weight="600">• Desktop vs Web Publishing 분열 🔴 (여전히 별도 워크플로우)</text>
+    <text x="140" y="3230" class="summary-text" font-weight="600">• AI 통합 🔵 (초기 단계, 정밀 제어 불가)</text>
+  </g>
+
+</svg>

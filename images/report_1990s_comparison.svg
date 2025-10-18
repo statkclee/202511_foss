@@ -1,0 +1,205 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1620 900">
+  <defs>
+    <style>
+      .era-title { font-family: monospace; font-size: 48px; font-weight: bold; fill: #2c3e50; }
+      .section-title { font-family: monospace; font-size: 28px; font-weight: bold; fill: #2c3e50; }
+      .tool-name { font-family: monospace; font-size: 22px; fill: #0d47a1; font-weight: bold; }
+      .tool-desc { font-family: monospace; font-size: 20px; fill: #555; }
+      .price-tag { font-family: monospace; font-size: 18px; fill: #c62828; font-weight: bold; }
+      .free-tag { font-family: monospace; font-size: 18px; fill: #2e7d32; font-weight: bold; }
+      .report-text { font-family: sans-serif; font-size: 13px; fill: #333; }
+      .note-text { font-family: monospace; font-size: 16px; fill: #666; font-style: italic; }
+      .commercial-box { fill: #ffebee; stroke: #c62828; stroke-width: 4; }
+      .foss-box { fill: #e8f5e9; stroke: #2e7d32; stroke-width: 4; }
+      .report-box { fill: #fff; stroke: #666; stroke-width: 2; }
+      .badge { font-family: monospace; font-size: 14px; fill: #fff; font-weight: bold; }
+    </style>
+    <marker id="arrowRed" markerWidth="12" markerHeight="12" refX="10" refY="3" orient="auto">
+      <polygon points="0 0, 12 3, 0 6" fill="#c62828" />
+    </marker>
+    <marker id="arrowGreen" markerWidth="12" markerHeight="12" refX="2" refY="3" orient="auto">
+      <polygon points="12 0, 0 3, 12 6" fill="#2e7d32" />
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1620" height="900" fill="#fafafa"/>
+
+  <!-- Title -->
+  <text x="800" y="60" class="era-title" text-anchor="middle">1990s Report Creation</text>
+  <text x="800" y="95" class="note-text" text-anchor="middle">The PC Revolution: GUI vs Command Line Divide</text>
+
+  <!-- Main divider lines -->
+  <line x1="520" y1="120" x2="520" y2="850" stroke="#999" stroke-width="3" stroke-dasharray="10,5"/>
+  <line x1="1100" y1="120" x2="1100" y2="850" stroke="#999" stroke-width="3" stroke-dasharray="10,5"/>
+
+  <!-- ==================== LEFT: Commercial ==================== -->
+  <rect x="30" y="130" width="470" height="700" class="commercial-box" rx="10"/>
+  <text x="265" y="170" class="section-title" text-anchor="middle">💰 Commercial Software</text>
+  <rect x="200" y="100" width="130" height="25" fill="#e65100" rx="3"/>
+  <text x="265" y="120" class="badge" text-anchor="middle">WYSIWYG Era</text>
+  <line x1="50" y1="185" x2="480" y2="185" stroke="#c62828" stroke-width="2"/>
+
+  <!-- MS Excel -->
+  <rect x="50" y="210" width="430" height="110" fill="#fff" stroke="#c62828" stroke-width="2" rx="5"/>
+  <text x="70" y="240" class="tool-name">MS Excel 5.0 (1993)</text>
+  <text x="70" y="270" class="price-tag">💵 $339 standalone / Office $495</text>
+  <text x="70" y="295" class="tool-desc">• Spreadsheet + pivot tables</text>
+  <text x="70" y="315" class="tool-desc">• Visual Basic for Applications</text>
+
+  <!-- MS Word -->
+  <rect x="50" y="335" width="430" height="110" fill="#fff" stroke="#c62828" stroke-width="2" rx="5"/>
+  <text x="70" y="365" class="tool-name">MS Word 6.0 (1993)</text>
+  <text x="70" y="395" class="price-tag">💵 Part of MS Office</text>
+  <text x="70" y="420" class="tool-desc">• WYSIWYG word processor</text>
+  <text x="70" y="440" class="tool-desc">• OLE: Embed Excel charts</text>
+
+  <!-- SPSS for Windows -->
+  <rect x="50" y="460" width="430" height="110" fill="#fff" stroke="#c62828" stroke-width="2" rx="5"/>
+  <text x="70" y="490" class="tool-name">SPSS for Windows (1992)</text>
+  <text x="70" y="520" class="price-tag">💵 $2,000+ per year</text>
+  <text x="70" y="545" class="tool-desc">• GUI statistical analysis</text>
+  <text x="70" y="565" class="tool-desc">• Point-and-click interface</text>
+
+  <!-- SAS/STAT -->
+  <rect x="50" y="585" width="430" height="110" fill="#fff" stroke="#c62828" stroke-width="2" rx="5"/>
+  <text x="70" y="615" class="tool-name">SAS/STAT (1990s GUI)</text>
+  <text x="70" y="645" class="price-tag">💵 $$$$$ Enterprise license</text>
+  <text x="70" y="670" class="tool-desc">• Windows interface added</text>
+  <text x="70" y="690" class="tool-desc">• Still batch-oriented</text>
+
+  <!-- Cost Note -->
+  <rect x="50" y="710" width="430" height="100" fill="#fce4ec" stroke="#c62828" stroke-width="2" rx="5"/>
+  <text x="265" y="735" class="tool-name" text-anchor="middle" fill="#c62828">Total Cost</text>
+  <text x="265" y="765" class="tool-desc" text-anchor="middle">$2,500 - $5,000+</text>
+  <text x="265" y="790" class="tool-desc" text-anchor="middle" font-size="14">per user/year (typical)</text>
+
+  <!-- Arrow from commercial to report -->
+  <line x1="500" y1="470" x2="540" y2="470" stroke="#c62828" stroke-width="2" marker-end="url(#arrowRed)"/>
+  <text x="515" y="455" class="tool-desc" text-anchor="middle" fill="#c62828">Easy!</text>
+
+  <!-- ==================== CENTER: Report Layout ==================== -->
+  <rect x="540" y="130" width="540" height="700" class="report-box" rx="10"/>
+  <text x="810" y="170" class="section-title" text-anchor="middle">📊 Business Report</text>
+  <line x1="560" y1="185" x2="1060" y2="185" stroke="#666" stroke-width="2"/>
+
+  <!-- Report Title -->
+  <rect x="570" y="210" width="480" height="50" fill="#e3f2fd" stroke="#1565c0" stroke-width="2" rx="3"/>
+  <text x="810" y="240" class="report-text" text-anchor="middle" font-size="18" font-weight="bold" font-family="Arial">
+    Q4 1998 Performance Dashboard
+  </text>
+  <rect x="920" y="220" width="120" height="25" fill="#e65100" rx="3"/>
+  <text x="980" y="237" class="badge" text-anchor="middle" font-size="12">WordArt Style</text>
+
+  <!-- Charts Section -->
+  <g transform="translate(570, 280)">
+    <!-- Excel Pivot -->
+    <rect x="0" y="0" width="150" height="120" fill="#fff3e0" stroke="#e65100" stroke-width="2" rx="3"/>
+    <text x="75" y="20" class="report-text" text-anchor="middle" font-weight="bold">Excel Pivot</text>
+    <rect x="10" y="30" width="130" height="80" fill="#fff" stroke="#999"/>
+    <line x1="10" y1="50" x2="140" y2="50" stroke="#999"/>
+    <line x1="75" y1="30" x2="75" y2="110" stroke="#999"/>
+    <text x="75" y="75" class="report-text" text-anchor="middle" font-size="20" fill="#c62828" font-weight="bold">$1.2M</text>
+
+    <!-- Pie Chart -->
+    <rect x="170" y="0" width="150" height="120" fill="#e8f5e9" stroke="#2e7d32" stroke-width="2" rx="3"/>
+    <text x="245" y="20" class="report-text" text-anchor="middle" font-weight="bold">Pie Chart</text>
+    <circle cx="245" cy="70" r="35" fill="#3498db"/>
+    <path d="M 245 70 L 280 70 A 35 35 0 0 1 245 105 Z" fill="#e74c3c"/>
+    <path d="M 245 70 L 245 35 A 35 35 0 0 1 280 70 Z" fill="#27ae60"/>
+
+    <!-- Bar Chart -->
+    <rect x="340" y="0" width="140" height="120" fill="#f3e5f5" stroke="#9c27b0" stroke-width="2" rx="3"/>
+    <text x="410" y="20" class="report-text" text-anchor="middle" font-weight="bold">Bar Chart</text>
+    <rect x="350" y="50" width="25" height="55" fill="#3498db"/>
+    <rect x="385" y="60" width="25" height="45" fill="#3498db"/>
+    <rect x="420" y="40" width="25" height="65" fill="#3498db"/>
+    <rect x="455" y="70" width="25" height="35" fill="#3498db"/>
+  </g>
+
+  <!-- Word Document Body -->
+  <rect x="570" y="420" width="480" height="140" fill="#f5f5f5" stroke="#999" stroke-width="2" rx="3"/>
+  <text x="810" y="445" class="report-text" text-anchor="middle" font-weight="bold">MS Word Document</text>
+  <line x1="590" y1="460" x2="1030" y2="460" stroke="#ccc" stroke-width="3"/>
+  <line x1="590" y1="475" x2="1010" y2="475" stroke="#ccc" stroke-width="3"/>
+  <line x1="590" y1="490" x2="1020" y2="490" stroke="#ccc" stroke-width="3"/>
+
+  <!-- Embedded chart illustration -->
+  <rect x="600" y="505" width="200" height="45" fill="#e3f2fd" stroke="#1565c0" stroke-width="2" rx="3"/>
+  <text x="700" y="523" class="report-text" text-anchor="middle" font-size="11" font-style="italic">
+    [Excel chart copied
+  </text>
+  <text x="700" y="540" class="report-text" text-anchor="middle" font-size="11" font-style="italic">
+    and pasted here]
+  </text>
+
+  <line x1="820" y1="505" x2="1030" y2="505" stroke="#ccc" stroke-width="3"/>
+  <line x1="820" y1="520" x2="1000" y2="520" stroke="#ccc" stroke-width="3"/>
+  <line x1="820" y1="535" x2="1020" y2="535" stroke="#ccc" stroke-width="3"/>
+
+  <!-- Problems -->
+  <rect x="570" y="580" width="480" height="100" fill="#ffebee" stroke="#c62828" stroke-width="2" rx="3"/>
+  <text x="810" y="605" class="tool-name" text-anchor="middle" fill="#c62828">⚠️ Problems</text>
+  <text x="810" y="635" class="tool-desc" text-anchor="middle">• Not reproducible (manual copy-paste)</text>
+  <text x="810" y="660" class="tool-desc" text-anchor="middle">• Binary formats (vendor lock-in)</text>
+
+  <!-- Output method -->
+  <rect x="570" y="700" width="480" height="110" fill="#eceff1" stroke="#666" stroke-width="2" rx="3"/>
+  <text x="810" y="730" class="tool-name" text-anchor="middle" fill="#333">Distribution</text>
+  <text x="810" y="760" class="tool-desc" text-anchor="middle">• Inkjet/Laser printer</text>
+  <text x="810" y="785" class="tool-desc" text-anchor="middle">• Email attachment + Fax</text>
+
+  <!-- Arrow from report to FOSS -->
+  <line x1="1050" y1="470" x2="1125" y2="470" stroke="#2e7d32" stroke-width="2" marker-start="url(#arrowGreen)"/>
+  <text x="1095" y="450" class="tool-desc" text-anchor="middle" fill="#2e7d32">Harder</text>
+
+  <!-- ==================== RIGHT: FOSS ==================== -->
+  <g transform="translate(30, 0)">
+    <rect x="1100" y="130" width="470" height="700" class="foss-box" rx="10"/>
+    <text x="1335" y="170" class="section-title" text-anchor="middle">🆓 FOSS Alternatives</text>
+    <rect x="1270" y="100" width="140" height="25" fill="#2e7d32" rx="3"/>
+    <text x="1340" y="120" class="badge" text-anchor="middle">Still CLI-based</text>
+    <line x1="1120" y1="185" x2="1550" y2="185" stroke="#2e7d32" stroke-width="2"/>
+
+    <!-- LaTeX2e -->
+    <rect x="1120" y="210" width="430" height="110" fill="#fff" stroke="#2e7d32" stroke-width="2" rx="5"/>
+    <text x="1140" y="240" class="tool-name">LaTeX2e (1994)</text>
+    <text x="1140" y="270" class="free-tag">✓ FREE</text>
+    <text x="1140" y="295" class="tool-desc">• Professional typesetting</text>
+    <text x="1140" y="315" class="tool-desc">• Academic standard</text>
+
+    <!-- GNU Octave -->
+    <rect x="1120" y="335" width="430" height="110" fill="#fff" stroke="#2e7d32" stroke-width="2" rx="5"/>
+    <text x="1140" y="365" class="tool-name">GNU Octave (1993)</text>
+    <text x="1140" y="395" class="free-tag">✓ FREE</text>
+    <text x="1140" y="420" class="tool-desc">• MATLAB-compatible</text>
+    <text x="1140" y="440" class="tool-desc">• Numerical computation</text>
+
+    <!-- Python + NumPy -->
+    <rect x="1120" y="460" width="430" height="110" fill="#fff" stroke="#2e7d32" stroke-width="2" rx="5"/>
+    <text x="1140" y="490" class="tool-name">Python + NumPy (1995)</text>
+    <text x="1140" y="520" class="free-tag">✓ FREE</text>
+    <text x="1140" y="545" class="tool-desc">• Scientific computing</text>
+    <text x="1140" y="565" class="tool-desc">• Growing ecosystem</text>
+
+    <!-- gnuplot -->
+    <rect x="1120" y="585" width="430" height="110" fill="#fff" stroke="#2e7d32" stroke-width="2" rx="5"/>
+    <text x="1140" y="615" class="tool-name">gnuplot (1986)</text>
+    <text x="1140" y="645" class="free-tag">✓ FREE</text>
+    <text x="1140" y="670" class="tool-desc">• Command-line plotting</text>
+    <text x="1140" y="690" class="tool-desc">• Script-based charts</text>
+
+    <!-- Cost Note -->
+    <rect x="1120" y="710" width="430" height="100" fill="#c8e6c9" stroke="#2e7d32" stroke-width="2" rx="5"/>
+    <text x="1335" y="735" class="tool-name" text-anchor="middle" fill="#2e7d32">Total Cost</text>
+    <text x="1335" y="765" class="tool-desc" text-anchor="middle" font-size="24" font-weight="bold">$0</text>
+    <text x="1335" y="790" class="tool-desc" text-anchor="middle" font-size="14">But: Learning curve still HIGH</text>  
+  </g>
+
+
+  <!-- Bottom comparison note -->
+  <rect x="100" y="860" width="1400" height="30" fill="none"/>
+  <text x="830" y="870" class="note-text" text-anchor="middle" font-size="20">
+    The Great Divide: WYSIWYG Ease vs Plain-Text Reproducibility
+  </text>
+</svg>

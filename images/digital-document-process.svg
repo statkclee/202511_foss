@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg viewBox="0 52 900 300" xmlns="http://www.w3.org/2000/svg">
+<svg viewBox="20 30 1150 370" xmlns="http://www.w3.org/2000/svg">
   <defs>
     <style>
       .title-text { font-family: 'IBM Plex Sans KR', sans-serif; font-size: 24px; font-weight: bold; fill: #2c3e50; }
-      .stage-text { font-family: 'IBM Plex Sans KR', sans-serif; font-size: 16px; font-weight: 600; fill: #34495e; }
-      .desc-text-middle { font-family: 'Noto Sans KR', sans-serif; font-size: 15px; fill: #7f8c8d; }
-      .desc-text { font-family: 'Noto Sans KR', sans-serif; font-size: 13px; fill: #7f8c8d; }
+      .stage-text { font-family: 'IBM Plex Sans KR', sans-serif; font-size: 18px; font-weight: 600; fill: #34495e; }
+      .desc-text-middle { font-family: 'Noto Sans KR', sans-serif; font-size: 20px; fill: #7f8c8d; }
+      .desc-text { font-family: 'Noto Sans KR', sans-serif; font-size: 16px; fill: #7f8c8d; }
       .process-box { fill: #ecf0f1; stroke: #bdc3c7; stroke-width: 2; }
       .arrow { fill: #3498db; }
       .computer { fill: #95a5a6; stroke: #7f8c8d; stroke-width: 2; }
@@ -23,139 +23,145 @@
 
   <!-- 1단계: 컴퓨터 편집 -->
   <g id="stage1">
-    <rect x="50" y="80" width="150" height="120" rx="10" class="process-box"/>
-    <text x="125" y="105" text-anchor="middle" class="stage-text">1. Computer Editing</text>
-    
-    <!-- 컴퓨터 모니터 -->
-    <rect x="80" y="120" width="70" height="45" rx="3" class="screen"/>
-    <rect x="85" y="125" width="60" height="35" fill="#ecf0f1"/>
-    <line x1="90" y1="135" x2="140" y2="135" stroke="#2c3e50" stroke-width="1"/>
-    <line x1="90" y1="140" x2="130" y2="140" stroke="#2c3e50" stroke-width="1"/>
-    <line x1="90" y1="145" x2="135" y2="145" stroke="#2c3e50" stroke-width="1"/>
-    
-    <!-- 키보드 -->
-    <rect x="85" y="170" width="60" height="15" rx="2" class="keyboard"/>
-    <rect x="88" y="173" width="6" height="3" fill="#7f8c8d"/>
-    <rect x="96" y="173" width="6" height="3" fill="#7f8c8d"/>
-    <rect x="104" y="173" width="6" height="3" fill="#7f8c8d"/>
-    <rect x="112" y="173" width="6" height="3" fill="#7f8c8d"/>
-    <rect x="120" y="173" width="6" height="3" fill="#7f8c8d"/>
-    <rect x="128" y="173" width="6" height="3" fill="#7f8c8d"/>
-    <rect x="136" y="173" width="6" height="3" fill="#7f8c8d"/>
-    
-    <text x="125" y="230" text-anchor="middle" class="desc-text-middle">WYSIWYG editing</text>
+    <rect x="80" y="60" width="220" height="140" rx="10" class="process-box"/>
+    <text x="190" y="88" text-anchor="middle" class="stage-text">1. Computer Editing</text>
+
+    <!-- 컴퓨터 모니터 (확대) -->
+    <rect x="115" y="105" width="110" height="65" rx="4" class="screen"/>
+    <rect x="123" y="112" width="94" height="52" fill="#ecf0f1"/>
+    <line x1="132" y1="125" x2="208" y2="125" stroke="#2c3e50" stroke-width="1.5"/>
+    <line x1="132" y1="135" x2="198" y2="135" stroke="#2c3e50" stroke-width="1.5"/>
+    <line x1="132" y1="145" x2="205" y2="145" stroke="#2c3e50" stroke-width="1.5"/>
+    <line x1="132" y1="155" x2="202" y2="155" stroke="#2c3e50" stroke-width="1.5"/>
+
+    <!-- 키보드 (확대) -->
+    <rect x="123" y="178" width="94" height="22" rx="3" class="keyboard"/>
+    <rect x="129" y="182" width="10" height="6" fill="#7f8c8d"/>
+    <rect x="142" y="182" width="10" height="6" fill="#7f8c8d"/>
+    <rect x="155" y="182" width="10" height="6" fill="#7f8c8d"/>
+    <rect x="168" y="182" width="10" height="6" fill="#7f8c8d"/>
+    <rect x="181" y="182" width="10" height="6" fill="#7f8c8d"/>
+    <rect x="194" y="182" width="10" height="6" fill="#7f8c8d"/>
+    <rect x="207" y="182" width="10" height="6" fill="#7f8c8d"/>
+
+    <text x="190" y="235" text-anchor="middle" class="desc-text-middle">WYSIWYG editing</text>
   </g>
 
   <!-- 화살표 1 -->
-  <line x1="200" y1="140" x2="260" y2="140" stroke="#3498db" stroke-width="3" marker-end="url(#arrowhead)"/>
+  <line x1="300" y1="130" x2="360" y2="130" stroke="#3498db" stroke-width="3" marker-end="url(#arrowhead)"/>
 
   <!-- 2단계: 템플릿 시스템 -->
   <g id="stage2">
-    <rect x="270" y="80" width="150" height="120" rx="10" class="process-box"/>
-    <text x="345" y="105" text-anchor="middle" class="stage-text">2. Template System</text>
-    
-    <!-- 문서 템플릿들 -->
-    <rect x="290" y="115" width="25" height="35" rx="2" fill="#3498db" stroke="#2980b9" stroke-width="1"/>
-    <text x="302" y="165" text-anchor="middle" class="desc-text" fill="white">Official</text>
-    
-    <rect x="320" y="115" width="25" height="35" rx="2" fill="#e67e22" stroke="#d35400" stroke-width="1"/>
-    <text x="332" y="165" text-anchor="middle" class="desc-text" fill="white">Report</text>
-    
-    <rect x="350" y="115" width="25" height="35" rx="2" fill="#27ae60" stroke="#229954" stroke-width="1"/>
-    <text x="362" y="165" text-anchor="middle" class="desc-text" fill="white">Letter</text>
-    
-    <!-- 선택된 템플릿 -->
-    <rect x="305" y="170" width="55" height="25" rx="3" fill="#f8f9fa" stroke="#dee2e6" stroke-width="2"/>
-    <line x1="310" y1="175" x2="355" y2="175" stroke="#2c3e50" stroke-width="1"/>
-    <line x1="310" y1="179" x2="345" y2="179" stroke="#2c3e50" stroke-width="1"/>
-    <line x1="310" y1="185" x2="350" y2="185" stroke="#2c3e50" stroke-width="1"/>
-    
-    <text x="345" y="230" text-anchor="middle" class="desc-text-middle">Format reuse</text>
+    <rect x="360" y="60" width="220" height="140" rx="10" class="process-box"/>
+    <text x="470" y="88" text-anchor="middle" class="stage-text">2. Template System</text>
+
+    <!-- 문서 템플릿들 (확대) -->
+    <g transform="translate(20, -10)">
+      <rect x="385" y="105" width="42" height="52" rx="3" fill="#3498db" stroke="#2980b9" stroke-width="1.5"/>
+      <text x="400" y="175" text-anchor="middle" class="desc-text" fill="white" font-size="12px">Official</text>
+
+      <rect x="434" y="105" width="42" height="52" rx="3" fill="#e67e22" stroke="#d35400" stroke-width="1.5"/>
+      <text x="455" y="175" text-anchor="middle" class="desc-text" fill="white" font-size="12px">Report</text>
+
+      <rect x="483" y="105" width="42" height="52" rx="3" fill="#27ae60" stroke="#229954" stroke-width="1.5"/>
+      <text x="510" y="175" text-anchor="middle" class="desc-text" fill="white" font-size="12px">Letter</text>
+    </g>
+
+    <!-- 선택된 템플릿 (확대) -->
+    <g transform="translate(110, 30) scale(0.8)">
+      <rect x="405" y="170" width="90" height="38" rx="4" fill="#f8f9fa" stroke="#dee2e6" stroke-width="2"/>
+      <line x1="415" y1="178" x2="485" y2="178" stroke="#2c3e50" stroke-width="1.5"/>
+      <line x1="415" y1="186" x2="478" y2="186" stroke="#2c3e50" stroke-width="1.5"/>
+      <line x1="415" y1="194" x2="483" y2="194" stroke="#2c3e50" stroke-width="1.5"/>
+      <line x1="415" y1="202" x2="480" y2="202" stroke="#2c3e50" stroke-width="1.5"/>
+    </g>
+
+    <text x="470" y="235" text-anchor="middle" class="desc-text-middle">Format reuse</text>
   </g>
 
   <!-- 화살표 2 -->
-  <line x1="420" y1="140" x2="480" y2="140" stroke="#3498db" stroke-width="3" marker-end="url(#arrowhead)"/>
+  <line x1="580" y1="130" x2="640" y2="130" stroke="#3498db" stroke-width="3" marker-end="url(#arrowhead)"/>
 
   <!-- 3단계: 글꼴과 서식 -->
   <g id="stage3">
-    <rect x="490" y="80" width="150" height="120" rx="10" class="process-box"/>
-    <text x="565" y="105" text-anchor="middle" class="stage-text">3. Fonts and Formatting</text>
-    
-    <!-- 다양한 글꼴 예시 -->
-    <text x="515" y="130" class="desc-text" font-family="serif">Serif</text>
-    <text x="515" y="145" class="desc-text" font-family="sans-serif" font-weight="bold">Sans-serif</text>
-    <text x="515" y="160" class="desc-text" font-size="16px" fill="#e74c3c">Large text</text>
-    <text x="515" y="175" class="desc-text" font-size="10px" fill="#3498db">Small text</text>
-    
-    <!-- 서식 도구 -->
-    <rect x="580" y="125" width="15" height="15" fill="#2c3e50"/>
-    <text x="587" y="137" text-anchor="middle" fill="white" font-size="10px">B</text>
-    <rect x="580" y="145" width="15" height="15" fill="#e74c3c"/>
-    <text x="587" y="157" text-anchor="middle" fill="white" font-size="10px">A</text>
-    <rect x="580" y="165" width="15" height="15" fill="#3498db"/>
-    <text x="587" y="177" text-anchor="middle" fill="white" font-size="10px">U</text>
-    
-    <text x="565" y="230" text-anchor="middle" class="desc-text-middle">Visual diversity</text>
+    <rect x="640" y="60" width="220" height="140" rx="10" class="process-box"/>
+    <text x="750" y="88" text-anchor="middle" class="stage-text">3. Fonts and Formatting</text>
+
+    <!-- 다양한 글꼴 예시 (확대) -->
+    <text x="662" y="115" class="desc-text" font-family="serif" font-size="18px">Serif</text>
+    <text x="662" y="137" class="desc-text" font-family="sans-serif" font-weight="bold" font-size="18px">Sans-serif</text>
+    <text x="662" y="159" class="desc-text" font-size="20px" fill="#e74c3c">Large text</text>
+    <text x="662" y="181" class="desc-text" font-size="14px" fill="#3498db">Small text</text>
+
+    <!-- 서식 도구 (확대) -->
+    <rect x="790" y="108" width="26" height="26" fill="#2c3e50" rx="2"/>
+    <text x="803" y="126" text-anchor="middle" fill="white" font-size="16px" font-weight="bold">B</text>
+    <rect x="790" y="139" width="26" height="26" fill="#e74c3c" rx="2"/>
+    <text x="803" y="157" text-anchor="middle" fill="white" font-size="16px" font-weight="bold">A</text>
+    <rect x="790" y="170" width="26" height="26" fill="#3498db" rx="2"/>
+    <text x="803" y="188" text-anchor="middle" fill="white" font-size="16px" font-weight="bold">U</text>
+
+    <text x="750" y="235" text-anchor="middle" class="desc-text-middle">Visual diversity</text>
   </g>
 
   <!-- 화살표 3 -->
-  <line x1="640" y1="140" x2="700" y2="140" stroke="#3498db" stroke-width="3" marker-end="url(#arrowhead)"/>
+  <line x1="860" y1="130" x2="920" y2="130" stroke="#3498db" stroke-width="3" marker-end="url(#arrowhead)"/>
 
   <!-- 4단계: 저장과 배포 -->
   <g id="stage4">
-    <rect x="710" y="80" width="150" height="120" rx="10" class="process-box"/>
-    <text x="785" y="105" text-anchor="middle" class="stage-text">4. Storage and Distribution</text>
-    
-    <!-- 디스켓 -->
-    <rect x="730" y="120" width="30" height="25" rx="3" class="disk"/>
-    <rect x="735" y="125" width="20" height="15" fill="#c0392b"/>
-    <circle cx="745" cy="132" r="3" fill="#2c3e50"/>
-    <text x="745" y="165" text-anchor="middle" class="desc-text">Diskette</text>
-    
-    <!-- 파일 형식들 -->
-    <rect x="770" y="120" width="35" height="20" rx="2" fill="#f8f9fa" stroke="#dee2e6" stroke-width="1"/>
-    <text x="787" y="133" text-anchor="middle" class="desc-text">.hwp</text>
-    <rect x="810" y="120" width="35" height="20" rx="2" fill="#f8f9fa" stroke="#dee2e6" stroke-width="1"/>
-    <text x="827" y="133" text-anchor="middle" class="desc-text">.doc</text>
-    
-    <rect x="770" y="145" width="35" height="20" rx="2" fill="#f8f9fa" stroke="#dee2e6" stroke-width="1"/>
-    <text x="787" y="158" text-anchor="middle" class="desc-text">.txt</text>
-    <rect x="810" y="145" width="35" height="20" rx="2" fill="#f8f9fa" stroke="#dee2e6" stroke-width="1"/>
-    <text x="827" y="158" text-anchor="middle" class="desc-text">.rtf</text>
-    
-    <text x="785" y="185" text-anchor="middle" class="desc-text">Editable</text>
-    <text x="785" y="230" text-anchor="middle" class="desc-text-middle">Various formats</text>
+    <rect x="920" y="60" width="220" height="140" rx="10" class="process-box"/>
+    <text x="1030" y="88" text-anchor="middle" class="stage-text">4. Storage &amp; Distribution</text>
+
+    <!-- 디스켓 (확대) -->
+    <rect x="945" y="108" width="50" height="42" rx="5" class="disk"/>
+    <rect x="952" y="115" width="36" height="28" fill="#c0392b"/>
+    <circle cx="970" cy="129" r="5" fill="#2c3e50"/>
+    <text x="970" y="165" text-anchor="middle" class="desc-text" font-size="14px">Diskette</text>
+
+    <!-- 파일 형식들 (확대) -->
+    <rect x="1010" y="105" width="55" height="32" rx="3" fill="#f8f9fa" stroke="#dee2e6" stroke-width="1.5"/>
+    <text x="1037" y="126" text-anchor="middle" class="desc-text" font-size="15px">.hwp</text>
+    <rect x="1072" y="105" width="55" height="32" rx="3" fill="#f8f9fa" stroke="#dee2e6" stroke-width="1.5"/>
+    <text x="1099" y="126" text-anchor="middle" class="desc-text" font-size="15px">.doc</text>
+
+    <rect x="1010" y="143" width="55" height="32" rx="3" fill="#f8f9fa" stroke="#dee2e6" stroke-width="1.5"/>
+    <text x="1037" y="164" text-anchor="middle" class="desc-text" font-size="15px">.txt</text>
+    <rect x="1072" y="143" width="55" height="32" rx="3" fill="#f8f9fa" stroke="#dee2e6" stroke-width="1.5"/>
+    <text x="1099" y="164" text-anchor="middle" class="desc-text" font-size="15px">.rtf</text>
+
+    <text x="1030" y="195" text-anchor="middle" class="desc-text">Editable</text>
+    <text x="1030" y="235" text-anchor="middle" class="desc-text-middle">Various formats</text>
   </g>
 
   <!-- 특징 설명 박스들 -->
-  <g id="characteristics" transform="translate(0, -30)">
+  <g id="characteristics">
     <!-- 편집의 자유 -->
-    <rect x="50" y="280" width="170" height="85" rx="8" fill="#e8f4fd" stroke="#3498db" stroke-width="2"/>
-    <text x="130" y="305" text-anchor="middle" class="stage-text">Freedom of Editing</text>
-    <text x="60" y="325" class="desc-text">Can modify anytime</text>
-    <text x="60" y="340" class="desc-text">Copy, paste, move</text>
-    <text x="60" y="355" class="desc-text">Real-time editing</text>
+    <rect x="50" y="260" width="255" height="110" rx="8" fill="#e8f4fd" stroke="#3498db" stroke-width="2"/>
+    <text x="177" y="285" text-anchor="middle" class="stage-text">Freedom of Editing</text>
+    <text x="65" y="312" class="desc-text">Can modify anytime</text>
+    <text x="65" y="334" class="desc-text">Copy, paste, move</text>
+    <text x="65" y="356" class="desc-text">Real-time editing</text>
 
     <!-- 템플릿과 서식 -->
-    <rect x="270" y="280" width="170" height="85" rx="8" fill="#fdf2e8" stroke="#e67e22" stroke-width="2"/>
-    <text x="360" y="305" text-anchor="middle" class="stage-text">Templates and Formatting</text>
-    <text x="290" y="325" class="desc-text">Consistent formatting</text>
-    <text x="290" y="340" class="desc-text">Form reuse</text>
-    <text x="290" y="355" class="desc-text">Efficient work</text>
+    <rect x="325" y="260" width="255" height="110" rx="8" fill="#fdf2e8" stroke="#e67e22" stroke-width="2"/>
+    <text x="452" y="285" text-anchor="middle" class="stage-text">Templates &amp; Formatting</text>
+    <text x="340" y="312" class="desc-text">Consistent formatting</text>
+    <text x="340" y="334" class="desc-text">Form reuse</text>
+    <text x="340" y="356" class="desc-text">Efficient work</text>
 
     <!-- 여전한 한계 -->
-    <rect x="490" y="280" width="170" height="85" rx="8" fill="#f4f8fd" stroke="#8e44ad" stroke-width="2"/>
-    <text x="580" y="305" text-anchor="middle" class="stage-text">Persistent Limitations</text>
-    <text x="510" y="325" class="desc-text">Static content</text>
-    <text x="510" y="340" class="desc-text">No interaction</text>
-    <text x="510" y="355" class="desc-text">Compatibility issues</text>
+    <rect x="600" y="260" width="255" height="110" rx="8" fill="#f4f8fd" stroke="#8e44ad" stroke-width="2"/>
+    <text x="727" y="285" text-anchor="middle" class="stage-text">Persistent Limitations</text>
+    <text x="615" y="312" class="desc-text">Static content</text>
+    <text x="615" y="334" class="desc-text">No interaction</text>
+    <text x="615" y="356" class="desc-text">Compatibility issues</text>
 
     <!-- WYSIWYG 원칙 -->
-    <rect x="710" y="280" width="170" height="85" rx="8" fill="#eaf7f0" stroke="#27ae60" stroke-width="2"/>
-    <text x="800" y="305" text-anchor="middle" class="stage-text">WYSIWYG Principle</text>
-    <text x="730" y="325" class="desc-text">Screen = Print result</text>
-    <text x="730" y="340" class="desc-text">Paper document mimicry</text>
-    <text x="730" y="355" class="desc-text">Intuitive editing</text>
+    <rect x="875" y="260" width="255" height="110" rx="8" fill="#eaf7f0" stroke="#27ae60" stroke-width="2"/>
+    <text x="1002" y="285" text-anchor="middle" class="stage-text">WYSIWYG Principle</text>
+    <text x="890" y="312" class="desc-text">Screen = Print result</text>
+    <text x="890" y="334" class="desc-text">Paper document mimicry</text>
+    <text x="890" y="356" class="desc-text">Intuitive editing</text>
   </g>
 
 </svg>

@@ -1,61 +1,66 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="800" height="250" xmlns="http://www.w3.org/2000/svg">
+<svg viewBox="0 0 1000 400" xmlns="http://www.w3.org/2000/svg">
   <defs>
     <style>
-      .title { font-family: 'IBM Plex Sans KR', sans-serif; font-size: 16px; font-weight: bold; fill: #2c3e50; }
-      .label { font-family: 'IBM Plex Sans KR', sans-serif; font-size: 14px; font-weight: 500; fill: #2c3e50; }
-      .sub-label { font-family: 'IBM Plex Sans KR', sans-serif; font-size: 12px; fill: #555; }
-      .tech-label { font-family: 'IBM Plex Sans KR', sans-serif; font-size: 10px; fill: #8e44ad; font-weight: 500; }
-      .input-box { fill: #e8f5e8; stroke: #27ae60; stroke-width: 2; }
-      .quarto-box { fill: #f0e6ff; stroke: #8e44ad; stroke-width: 3; }
-      .output-box { fill: #fff3e0; stroke: #e67e22; stroke-width: 2; }
-      .arrow { fill: #666; }
+      .title { font-family: 'ET Book', 'Palatino Linotype', 'Book Antiqua', Palatino, serif; font-size: 18px; font-weight: bold; fill: #333; }
+      .label { font-family: 'ET Book', 'Palatino Linotype', 'Book Antiqua', Palatino, serif; font-size: 16px; font-weight: 500; fill: #333; }
+      .sub-label { font-family: 'ET Book', 'Palatino Linotype', 'Book Antiqua', Palatino, serif; font-size: 14px; fill: #555; }
+      .tech-label { font-family: 'ET Book', 'Palatino Linotype', 'Book Antiqua', Palatino, serif; font-size: 13px; fill: #8e44ad; font-weight: 500; }
+      .input-box { fill: #F7FBFF; stroke: #4A90E2; stroke-width: 2; }
+      .quarto-box { fill: #F8F4FF; stroke: #8E44AD; stroke-width: 2.5; }
+      .output-box { fill: #F5F5F5; stroke: #999; stroke-width: 1.5; }
+      .arrow { fill: #8e44ad; }
     </style>
     <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
       <polygon points="0 0, 10 3.5, 0 7" class="arrow"/>
     </marker>
   </defs>
-  
-  <!-- Background -->
-  <rect width="800" height="250" fill="#fafafa"/>
-  
-  <!-- Input Section -->
-  <rect x="50" y="30" width="140" height="140" rx="10" class="input-box"/>
-  <text x="120" y="60" text-anchor="middle" class="label">📄 .qmd File</text>
-  
-  <text x="60" y="85" class="sub-label">Markdown</text>
-  <text x="60" y="100" class="sub-label">+ R Code</text>
-  <text x="60" y="115" class="sub-label">+ Python Code</text>
-  <text x="60" y="130" class="sub-label">+ Julia Code</text>
-  <text x="60" y="145" class="sub-label">+ YAML Config</text>
-  
-  <!-- Quarto Engine -->
-  <rect x="280" y="30" width="160" height="140" rx="12" class="quarto-box"/>
-  <text x="360" y="60" text-anchor="middle" class="title">🔄 Quarto</text>
-  
-  <text x="290" y="85" class="tech-label">Built-in Engines:</text>
-  <text x="295" y="105" class="tech-label">• Pandoc (Conversion)</text>
-  <text x="295" y="120" class="tech-label">• Knitr (R)</text>
-  <text x="295" y="135" class="tech-label">• Jupyter (Python/Julia)</text>
-  <text x="295" y="150" class="tech-label">• Observable (JS)</text>
-  
-  <!-- Output Section -->
-  <rect x="530" y="30" width="220" height="140" rx="8" class="output-box"/>
-  <text x="640" y="60" text-anchor="middle" class="label">📚 Multiple Outputs</text>
-  
-  <text x="540" y="85" class="sub-label">📖 Documents: PDF, Word, HTML</text>
-  <text x="540" y="100" class="sub-label">🌐 Websites & Blogs</text>
-  <text x="540" y="115" class="sub-label">📊 Dashboards</text>
-  <text x="540" y="130" class="sub-label">🎯 Presentations</text>
-  <text x="540" y="145" class="sub-label">📚 E-books</text>
-  <text x="540" y="160" class="sub-label">📑 Academic Papers</text>
-  
-  <!-- Arrows -->
-  <line x1="200" y1="100" x2="270" y2="100" stroke="#27ae60" stroke-width="3" marker-end="url(#arrowhead)"/>
-  <line x1="450" y1="100" x2="520" y2="100" stroke="#8e44ad" stroke-width="3" marker-end="url(#arrowhead)"/>
-  
-  <!-- Key Benefits -->
-  <rect x="50" y="200" width="700" height="40" fill="#f8f9fa" stroke="#ddd" rx="5"/>
-  <text x="60" y="222" class="sub-label">💡 Key Benefits: Easy setup with YAML instead of complex Pandoc commands | Simultaneous code execution + document generation | Project-level management</text>
-</svg>
 
+  <!-- Background -->
+  <rect width="1000" height="400" fill="#fafafa"/>
+
+  <!-- Input Section -->
+  <rect x="60" y="50" width="200" height="180" rx="3" class="input-box"/>
+  <text x="160" y="85" text-anchor="middle" class="label">.qmd 파일</text>
+
+  <text x="80" y="110" class="sub-label">마크다운</text>
+  <text x="80" y="128" class="sub-label">+ R 코드</text>
+  <text x="80" y="146" class="sub-label">+ Python 코드</text>
+  <text x="80" y="164" class="sub-label">+ Julia 코드</text>
+  <text x="80" y="182" class="sub-label">+ Observable JS</text>
+  <text x="80" y="200" class="sub-label">+ LaTeX 수식</text>
+  <text x="80" y="218" class="sub-label">+ YAML 설정</text>
+
+  <!-- Quarto Engine -->
+  <rect x="340" y="50" width="240" height="180" rx="3" class="quarto-box"/>
+  <text x="460" y="85" text-anchor="middle" class="title">Quarto</text>
+
+  <text x="360" y="115" class="tech-label">내장 엔진:</text>
+  <text x="365" y="138" class="tech-label">• Pandoc (변환)</text>
+  <text x="365" y="158" class="tech-label">• Knitr (R)</text>
+  <text x="365" y="178" class="tech-label">• Jupyter (Python/Julia)</text>
+  <text x="365" y="198" class="tech-label">• Observable (JS)</text>
+
+  <!-- Output Section -->
+  <rect x="670" y="50" width="270" height="180" rx="3" class="output-box"/>
+  <text x="805" y="85" text-anchor="middle" class="label">다양한 출력</text>
+
+  <text x="690" y="110" class="sub-label">문서: PDF, Word, HTML</text>
+  <text x="690" y="128" class="sub-label">웹사이트 및 블로그</text>
+  <text x="690" y="146" class="sub-label">대시보드: Shiny, Observable</text>
+  <text x="690" y="164" class="sub-label">프레젠테이션: RevealJS, Beamer</text>
+  <text x="690" y="182" class="sub-label">전자책: EPUB</text>
+  <text x="690" y="200" class="sub-label">학술논문: LaTeX, JATS</text>
+  <text x="690" y="218" class="sub-label">확장: Extensions 생태계</text>
+
+  <!-- Arrows -->
+  <line x1="260" y1="140" x2="335" y2="140" stroke="#8e44ad" stroke-width="2.5" marker-end="url(#arrowhead)"/>
+  <line x1="580" y1="140" x2="665" y2="140" stroke="#8e44ad" stroke-width="2.5" marker-end="url(#arrowhead)"/>
+
+  <!-- Key Benefits -->
+  <rect x="60" y="260" width="880" height="100" fill="#f8f9fa" stroke="#ddd" stroke-width="1.5" rx="3"/>
+  <text x="80" y="285" class="label" font-size="18">핵심 장점</text>
+  <text x="80" y="310" class="sub-label">• 다중 언어 통합: R + Python + Julia + Observable JS를 하나의 문서에서 동시 사용</text>
+  <text x="80" y="330" class="sub-label">• 재현 가능한 연구: 코드 실행과 문서 생성을 동시에 처리하여 분석 재현성 보장</text>
+  <text x="80" y="350" class="sub-label">• 확장 생태계: Extensions를 통해 커스텀 기능 추가 및 프로젝트 단위 스타일 관리</text>
+</svg>

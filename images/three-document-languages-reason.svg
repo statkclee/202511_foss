@@ -1,0 +1,366 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 130 2800 1620">
+  <defs>
+    <!-- Gradient definitions -->
+    <linearGradient id="headerGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#7c3aed;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#a855f7;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#7c3aed;stop-opacity:1" />
+    </linearGradient>
+
+    <linearGradient id="drawingGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#fef3c7;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#fde68a;stop-opacity:1" />
+    </linearGradient>
+
+    <linearGradient id="typesetGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#dbeafe;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#bfdbfe;stop-opacity:1" />
+    </linearGradient>
+
+    <linearGradient id="markupGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#d1fae5;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#a7f3d0;stop-opacity:1" />
+    </linearGradient>
+
+    <linearGradient id="questionGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#fbbf24;stop-opacity:0.3" />
+      <stop offset="100%" style="stop-color:#fbbf24;stop-opacity:0.1" />
+    </linearGradient>
+
+    <!-- Font and Text Styles -->
+    <style>
+      text {
+        font-family: 'Noto Sans KR', 'Malgun Gothic', 'Apple SD Gothic Neo', sans-serif;
+      }
+      .main-title {
+        font-size: 64px;
+        font-weight: 900;
+        fill: white;
+      }
+      .subtitle {
+        font-size: 30px;
+        font-weight: 600;
+        fill: white;
+      }
+      .question {
+        font-size: 40px;
+        font-weight: 800;
+        fill: #92400e;
+      }
+      .answer {
+        font-size: 32px;
+        font-weight: 700;
+      }
+      .paradigm-name {
+        font-size: 48px;
+        font-weight: 900;
+      }
+      .paradigm-subtitle {
+        font-size: 27px;
+        font-weight: 600;
+      }
+      .section-title {
+        font-size: 30px;
+        font-weight: 700;
+        fill: #1e293b;
+      }
+      .reason-text {
+        font-size: 24px;
+        fill: #475569;
+      }
+      .example-text {
+        font-size: 20px;
+        fill: #64748b;
+        font-style: italic;
+      }
+      .tool-text {
+        font-size: 22px;
+        fill: #1e293b;
+        font-weight: 600;
+      }
+      .conclusion-title {
+        font-size: 36px;
+        font-weight: 800;
+        fill: #7c3aed;
+      }
+      .conclusion-text {
+        font-size: 26px;
+        fill: #475569;
+      }
+    </style>
+  </defs>
+
+  <!-- Three Questions (Top Row) -->
+  <rect x="50" y="180" width="2700" height="120" rx="10" fill="url(#questionGrad)" stroke="#f59e0b" stroke-width="3"/>
+
+  <text x="350" y="230" text-anchor="middle" class="question">어디에 놓을까?</text>
+  <text x="350" y="270" text-anchor="middle" class="answer" fill="#d97706">→ Drawing</text>
+
+  <text x="1400" y="230" text-anchor="middle" class="question">어떻게 보일까?</text>
+  <text x="1400" y="270" text-anchor="middle" class="answer" fill="#1e40af">→ Typesetting</text>
+
+  <text x="2450" y="230" text-anchor="middle" class="question">무엇을 의미할까?</text>
+  <text x="2450" y="270" text-anchor="middle" class="answer" fill="#059669">→ Markup</text>
+
+  <!-- ===== 1. Drawing (Left Column) ===== -->
+  <rect x="50" y="340" width="840" height="1110" rx="15" fill="url(#drawingGrad)" stroke="#f59e0b" stroke-width="4"/>
+
+  <!-- Paradigm Header -->
+  <text x="470" y="400" text-anchor="middle" class="paradigm-name" fill="#d97706">Drawing</text>
+  <text x="470" y="440" text-anchor="middle" class="paradigm-subtitle" fill="#92400e">저수준 외양 (Low-level Presentation)</text>
+
+  <!-- Core Question -->
+  <rect x="80" y="480" width="780" height="80" rx="8" fill="white" stroke="#f59e0b" stroke-width="2"/>
+  <text x="470" y="520" text-anchor="middle" class="section-title" fill="#d97706">해결하는 문제:</text>
+  <text x="470" y="550" text-anchor="middle" class="reason-text" fill="#92400e">"어디에 어떤 요소를 정확히 배치할 것인가?"</text>
+
+  <!-- Why Needed -->
+  <rect x="80" y="580" width="380" height="320" rx="8" fill="white" stroke="#f59e0b" stroke-width="2"/>
+  <text x="110" y="620" class="section-title" fill="#d97706">존재 이유:</text>
+
+  <text x="130" y="660" class="reason-text">1. 공간 제어의 필요성</text>
+  <text x="150" y="690" class="example-text">• 다이어그램, 도형, 그래픽 배치</text>
+  <text x="150" y="715" class="example-text">• 픽셀/좌표 단위의 정밀한 위치 제어</text>
+
+  <text x="130" y="755" class="reason-text">2. 벡터 그래픽 표현</text>
+  <text x="150" y="785" class="example-text">• 선, 곡선, 도형의 수학적 정의</text>
+  <text x="150" y="810" class="example-text">• 확대/축소해도 품질 유지</text>
+
+  <text x="130" y="850" class="reason-text">3. 프린터/디스플레이 명령</text>
+  <text x="150" y="880" class="example-text">• 하드웨어 직접 제어 필요</text>
+
+  <!-- Code Example -->
+  <rect x="480" y="580" width="380" height="320" rx="8" fill="#fffbeb" stroke="#f59e0b" stroke-width="2"/>
+  <text x="500" y="620" class="section-title" fill="#d97706">코드 예제:</text>
+
+  <rect x="500" y="640" width="340" height="240" rx="6" fill="#fef3c7" stroke="#f59e0b" stroke-width="1"/>
+  <text x="520" y="670" style="font-family: 'Courier New', monospace; font-size: 17px; fill: #92400e; font-weight: 700;">PostScript</text>
+
+  <text x="520" y="700" style="font-family: 'Courier New', monospace; font-size: 16px; fill: #78350f;">100 200 moveto</text>
+  <text x="520" y="722" style="font-family: 'Courier New', monospace; font-size: 16px; fill: #78350f;">300 200 lineto</text>
+  <text x="520" y="744" style="font-family: 'Courier New', monospace; font-size: 16px; fill: #78350f;">300 400 lineto</text>
+  <text x="520" y="766" style="font-family: 'Courier New', monospace; font-size: 16px; fill: #78350f;">closepath</text>
+  <text x="520" y="788" style="font-family: 'Courier New', monospace; font-size: 16px; fill: #78350f;">stroke</text>
+
+  <text x="520" y="820" style="font-size: 16px; fill: #92400e; font-style: italic;">→ 좌표 직접 명시</text>
+  <text x="520" y="845" style="font-size: 16px; fill: #92400e; font-style: italic;">→ 100,200에서 시작</text>
+  <text x="520" y="870" style="font-size: 16px; fill: #92400e; font-style: italic;">→ 삼각형 그리기</text>
+
+  <!-- Representative Tools -->
+  <rect x="80" y="920" width="780" height="140" rx="8" fill="white" stroke="#f59e0b" stroke-width="2"/>
+  <text x="110" y="960" class="section-title" fill="#d97706">대표 언어/도구:</text>
+
+  <text x="130" y="1000" class="tool-text">HP-GL (1977) → PostScript (1982) → SVG (2001)</text>
+  <text x="150" y="1030" class="example-text">플로터 제어 → 프로그래밍 가능 그래픽 → 웹 벡터 표준</text>
+
+  <!-- Limitations -->
+  <text x="80" y="1115" class="section-title" fill="#d97706">한계:</text>
+
+  <text x="200" y="1105" class="reason-text" fill="#dc2626" style="font-size: 32px;">✗ 텍스트 조판 부적합</text>
+  <text x="200" y="1145" class="example-text" style="font-size: 26px;">매 단어마다 좌표 계산 필요</text>
+
+  <text x="520" y="1105" class="reason-text" fill="#dc2626" style="font-size: 32px;">✗ 논리 구조 표현 불가</text>
+  <text x="520" y="1145" class="example-text" style="font-size: 26px;">의미 정보 없이 시각만</text>
+
+  <!-- Key Strength -->
+  <rect x="80" y="1200" width="780" height="220" rx="8" fill="#fffbeb" stroke="#f59e0b" stroke-width="3"/>
+
+  <text x="470" y="1255" text-anchor="middle" style="font-size: 34px; font-weight: 800; fill: #92400e;">
+    픽셀 단위 정밀 제어
+  </text>
+  <g transform="translate(0, -30)">
+    <text x="470" y="1340" text-anchor="middle" class="reason-text">
+      "x=100, y=200 위치에 정확히 배치"
+    </text>
+
+    <text x="470" y="1380" text-anchor="middle" class="reason-text">
+      그래픽과 도형에 최적화
+    </text>
+
+    <text x="470" y="1420" text-anchor="middle" class="example-text">
+      → 텍스트가 아닌 이미지 중심 문서에 필수
+    </text>
+  </g>
+
+  <!-- ===== 2. Typesetting (Middle Column) ===== -->
+  <rect x="980" y="340" width="840" height="1110" rx="15" fill="url(#typesetGrad)" stroke="#1e40af" stroke-width="4"/>
+
+  <!-- Paradigm Header -->
+  <text x="1400" y="400" text-anchor="middle" class="paradigm-name" fill="#1e40af">Typesetting</text>
+  <text x="1400" y="440" text-anchor="middle" class="paradigm-subtitle" fill="#1e3a8a">고수준 외양 (High-level Presentation)</text>
+
+  <!-- Core Question -->
+  <rect x="1010" y="480" width="780" height="80" rx="8" fill="white" stroke="#1e40af" stroke-width="2"/>
+  <text x="1400" y="520" text-anchor="middle" class="section-title" fill="#1e40af">해결하는 문제:</text>
+  <text x="1400" y="550" text-anchor="middle" class="reason-text" fill="#1e3a8a">"복잡한 텍스트를 어떻게 아름답게 조판할까?"</text>
+
+  <!-- Why Needed -->
+  <rect x="1010" y="580" width="380" height="320" rx="8" fill="white" stroke="#1e40af" stroke-width="2"/>
+  <text x="1040" y="620" class="section-title" fill="#1e40af">존재 이유:</text>
+
+  <text x="1060" y="660" class="reason-text">1. 텍스트 조판의 복잡성</text>
+  <text x="1080" y="690" class="example-text">• 줄바꿈 (line breaking) 자동 계산</text>
+  <text x="1080" y="715" class="example-text">• 정렬 (justification) - 단어 간격 조정</text>
+  <text x="1080" y="740" class="example-text">• 커닝 (kerning) - 글자 쌍 간격 조정</text>
+
+  <text x="1060" y="780" class="reason-text">2. 타이포그래피 규칙</text>
+  <text x="1080" y="810" class="example-text">• 폰트, 크기, 행간 자동 관리</text>
+  <text x="1080" y="835" class="example-text">• 수학 수식의 정교한 배치</text>
+
+  <text x="1060" y="875" class="reason-text">3. Drawing으로는 불가능</text>
+  <text x="1080" y="905" class="example-text">매 단어마다 좌표 계산 → 비현실적</text>
+
+  <!-- Code Example -->
+  <rect x="1410" y="580" width="380" height="320" rx="8" fill="#eff6ff" stroke="#1e40af" stroke-width="2"/>
+  <text x="1430" y="620" class="section-title" fill="#1e40af">코드 예제:</text>
+
+  <rect x="1430" y="640" width="340" height="240" rx="6" fill="#dbeafe" stroke="#1e40af" stroke-width="1"/>
+  <text x="1450" y="670" style="font-family: 'Courier New', monospace; font-size: 17px; fill: #1e3a8a; font-weight: 700;">LaTeX</text>
+
+  <text x="1450" y="700" style="font-family: 'Courier New', monospace; font-size: 16px; fill: #1e3a8a;">\section{제목}</text>
+  <text x="1450" y="722" style="font-family: 'Courier New', monospace; font-size: 16px; fill: #1e3a8a;">이것은 \textbf{강조}</text>
+  <text x="1450" y="744" style="font-family: 'Courier New', monospace; font-size: 16px; fill: #1e3a8a;">된 텍스트입니다.</text>
+  <text x="1450" y="766" style="font-family: 'Courier New', monospace; font-size: 16px; fill: #1e3a8a;">$E = mc^2$</text>
+
+  <text x="1450" y="800" style="font-size: 16px; fill: #1e3a8a; font-style: italic;">→ 규칙 기반 조판</text>
+  <text x="1450" y="825" style="font-size: 16px; fill: #1e3a8a; font-style: italic;">→ 위치 자동 계산</text>
+  <text x="1450" y="850" style="font-size: 16px; fill: #1e3a8a; font-style: italic;">→ 수식 자동 배치</text>
+  <text x="1450" y="875" style="font-size: 16px; fill: #1e3a8a; font-style: italic;">→ 아름다운 결과</text>
+
+  <!-- Representative Tools -->
+  <rect x="1010" y="920" width="780" height="140" rx="8" fill="white" stroke="#1e40af" stroke-width="2"/>
+  <text x="1040" y="960" class="section-title" fill="#1e40af">대표 언어/도구:</text>
+
+  <text x="1060" y="1000" class="tool-text">TeX (1978) → LaTeX (1984) → CSS (1996)</text>
+  <text x="1080" y="1030" class="example-text">디지털 조판 혁명 → 학술 논문 표준 → 웹 타이포그래피</text>
+
+  <!-- Limitations -->
+  <text x="1010" y="1115" class="section-title" fill="#1e40af">한계:</text>
+
+  <text x="1130" y="1105" class="reason-text" fill="#dc2626" style="font-size: 32px;">✗ 그래픽 배치 어려움</text>
+  <text x="1130" y="1145" class="example-text" style="font-size: 26px;">텍스트 흐름 중심</text>
+
+  <text x="1450" y="1105" class="reason-text" fill="#dc2626" style="font-size: 32px;">✗ 의미 구조 제한적</text>
+  <text x="1450" y="1145" class="example-text" style="font-size: 26px;">시각적 결과에 집중</text>
+
+  <!-- Key Strength -->
+  <rect x="1010" y="1200" width="780" height="220" rx="8" fill="#eff6ff" stroke="#1e40af" stroke-width="3"/>
+
+  <text x="1400" y="1255" text-anchor="middle" style="font-size: 34px; font-weight: 800; fill: #1e3a8a;">
+    텍스트 자동 조판
+  </text>
+
+  <g transform="translate(0, -30)">
+    <text x="1400" y="1340" text-anchor="middle" class="reason-text">
+      "규칙을 정의하면 시스템이 계산"
+    </text>
+
+    <text x="1400" y="1380" text-anchor="middle" class="reason-text">
+      복잡한 문서에 최적화
+    </text>
+
+    <text x="1400" y="1420" text-anchor="middle" class="example-text">
+      → 논문, 책, 긴 텍스트 문서에 필수
+    </text>
+  </g>
+
+  <!-- ===== 3. Markup (Right Column) ===== -->
+  <rect x="1910" y="340" width="840" height="1110" rx="15" fill="url(#markupGrad)" stroke="#059669" stroke-width="4"/>
+
+  <!-- Paradigm Header -->
+  <text x="2330" y="400" text-anchor="middle" class="paradigm-name" fill="#059669">Markup</text>
+  <text x="2330" y="440" text-anchor="middle" class="paradigm-subtitle" fill="#065f46">의미/구조 (Semantic Structure)</text>
+
+  <!-- Core Question -->
+  <rect x="1940" y="480" width="780" height="80" rx="8" fill="white" stroke="#059669" stroke-width="2"/>
+  <text x="2330" y="520" text-anchor="middle" class="section-title" fill="#059669">해결하는 문제:</text>
+  <text x="2330" y="550" text-anchor="middle" class="reason-text" fill="#065f46">"이 내용이 무엇을 의미하는가?"</text>
+
+  <!-- Why Needed -->
+  <rect x="1940" y="580" width="380" height="320" rx="8" fill="white" stroke="#059669" stroke-width="2"/>
+  <text x="1970" y="620" class="section-title" fill="#059669">존재 이유:</text>
+
+  <text x="1990" y="660" class="reason-text">1. 논리 구조의 필요성</text>
+  <text x="2010" y="690" class="example-text">• 제목, 본문, 인용 구분</text>
+  <text x="2010" y="715" class="example-text">• 계층 구조 (section, subsection)</text>
+  <text x="2010" y="740" class="example-text">• 메타데이터 (저자, 날짜, 키워드)</text>
+
+  <text x="1990" y="780" class="reason-text">2. 외양과 내용 분리</text>
+  <text x="2010" y="810" class="example-text">• 같은 내용, 다른 스타일 적용 가능</text>
+  <text x="2010" y="835" class="example-text">• 재사용성과 유지보수성</text>
+
+  <text x="1990" y="875" class="reason-text">3. 검색과 처리</text>
+  <text x="2010" y="905" class="example-text">의미 기반 정보 추출/변환</text>
+
+  <!-- Code Example -->
+  <rect x="2340" y="580" width="380" height="320" rx="8" fill="#f0fdf4" stroke="#059669" stroke-width="2"/>
+  <text x="2360" y="620" class="section-title" fill="#059669">코드 예제:</text>
+
+  <rect x="2360" y="640" width="340" height="240" rx="6" fill="#d1fae5" stroke="#059669" stroke-width="1"/>
+  <text x="2380" y="670" style="font-family: 'Courier New', monospace; font-size: 17px; fill: #065f46; font-weight: 700;">HTML</text>
+
+  <text x="2380" y="700" style="font-family: 'Courier New', monospace; font-size: 16px; fill: #065f46;">&lt;article&gt;</text>
+  <text x="2400" y="722" style="font-family: 'Courier New', monospace; font-size: 16px; fill: #065f46;">&lt;h1&gt;제목&lt;/h1&gt;</text>
+  <text x="2400" y="744" style="font-family: 'Courier New', monospace; font-size: 16px; fill: #065f46;">&lt;p&gt;본문&lt;/p&gt;</text>
+  <text x="2380" y="766" style="font-family: 'Courier New', monospace; font-size: 16px; fill: #065f46;">&lt;/article&gt;</text>
+
+  <text x="2380" y="800" style="font-size: 16px; fill: #065f46; font-style: italic;">→ 의미 기반 태그</text>
+  <text x="2380" y="825" style="font-size: 16px; fill: #065f46; font-style: italic;">→ 논리 구조 명시</text>
+  <text x="2380" y="850" style="font-size: 16px; fill: #065f46; font-style: italic;">→ 외양은 CSS로</text>
+  <text x="2380" y="875" style="font-size: 16px; fill: #065f46; font-style: italic;">→ 검색엔진 이해</text>
+
+  <!-- Representative Tools -->
+  <rect x="1940" y="920" width="780" height="140" rx="8" fill="white" stroke="#059669" stroke-width="2"/>
+  <text x="1970" y="960" class="section-title" fill="#059669">대표 언어/도구:</text>
+
+  <text x="1990" y="1000" class="tool-text">IBM GML (1969) → HTML (1991) → Markdown (2004)</text>
+  <text x="2010" y="1030" class="example-text">문서 구조화 시작 → 웹 문서 표준 → 경량 마크업</text>
+
+  <!-- Limitations -->
+  <text x="1940" y="1115" class="section-title" fill="#059669">한계:</text>
+
+  <text x="2060" y="1105" class="reason-text" fill="#dc2626" style="font-size: 32px;">✗ 시각적 제어 불가</text>
+  <text x="2060" y="1145" class="example-text" style="font-size: 26px;">외양은 별도 시스템</text>
+
+  <text x="2420" y="1105" class="reason-text" fill="#dc2626" style="font-size: 32px;">✗ 레이아웃 제어 불가</text>
+  <text x="2420" y="1145" class="example-text" style="font-size: 26px;">논리 구조만 정의</text>
+
+  <!-- Key Strength -->
+  <rect x="1940" y="1200" width="780" height="220" rx="8" fill="#f0fdf4" stroke="#059669" stroke-width="3"/>
+
+  <text x="2330" y="1255" text-anchor="middle" style="font-size: 34px; font-weight: 800; fill: #065f46;">
+    의미 기반 구조화
+  </text>
+
+  <g transform="translate(0, -30)">
+    <text x="2330" y="1340" text-anchor="middle" class="reason-text">
+      "이것은 제목이다, 이것은 본문이다"
+    </text>
+
+    <text x="2330" y="1380" text-anchor="middle" class="reason-text">
+      외양 독립적 내용 관리
+    </text>
+
+    <text x="2330" y="1420" text-anchor="middle" class="example-text">
+      → 웹, 전자책, 다중 출력 문서에 필수
+    </text>
+  </g>
+  
+  <!-- ===== Bottom Conclusion ===== -->
+  <g transform="translate(0, -50)">
+    <rect x="50" y="1550" width="2700" height="210" rx="15" fill="#1e293b" stroke="#7c3aed" stroke-width="4"/>
+
+    <text x="1400" y="1635" text-anchor="middle" style="font-size: 40px; fill: #ffffff; font-weight: 700;">
+      <tspan fill="#fbbf24">Drawing</tspan>은 <tspan fill="#ffffff">공간 제어</tspan>,
+      <tspan fill="#60a5fa">Typesetting</tspan>은 <tspan fill="#ffffff">텍스트 조판</tspan>,
+      <tspan fill="#34d399">Markup</tspan>은 <tspan fill="#ffffff">의미 구조</tspan>를 담당하며,
+      <tspan fill="#f87171">하나로는 모든 요구를 충족할 수 없다</tspan>  
+    </text>
+
+    <text x="1400" y="1700" text-anchor="middle" style="font-size: 32px; fill: #e0e7ff; font-weight: 600;">
+      → 현대 문서 시스템은 이 <tspan font-weight="700" fill="#c4b5fd">3개를 조합</tspan>하여 완성된다
+      예를 들어, 웹 = HTML(Markup) + CSS(Typesetting) + SVG(Drawing)
+    </text>    
+  </g>
+
+</svg>

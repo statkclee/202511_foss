@@ -1,0 +1,158 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 30 1200 820">
+  <defs>
+    <style>
+      .title { font-family: monospace; font-size: 28px; font-weight: bold; fill: #2c3e50; }
+      .subtitle { font-family: monospace; font-size: 16px; fill: #7f8c8d; }
+      .box-title { font-family: monospace; font-size: 18px; font-weight: bold; fill: #2c3e50; }
+      .box-text { font-family: monospace; font-size: 14px; fill: #34495e; }
+      .tool-text { font-family: monospace; font-size: 13px; fill: #16a085; font-weight: bold; }
+      .year-text { font-family: monospace; font-size: 11px; fill: #95a5a6; }
+      .arrow-text { font-family: monospace; font-size: 12px; fill: #7f8c8d; }
+      .box { fill: #ecf0f1; stroke: #34495e; stroke-width: 3; }
+      .opensource-box { fill: #e8f5e9; stroke: #2e7d32; stroke-width: 3; }
+      .web-box { fill: #e3f2fd; stroke: #1565c0; stroke-width: 3; }
+      .highlight { fill: #fff3e0; stroke: #e65100; stroke-width: 3; }
+      .new-label { font-family: monospace; font-size: 20px; fill: #e74c3c; font-weight: bold; }
+    </style>
+    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#7f8c8d" />
+    </marker>
+  </defs>
+
+  <!-- Title -->
+  <text x="600" y="70" class="title" text-anchor="middle">The Open Source Renaissance &amp; Web 2.0 Era</text>
+
+  <!-- Layer 1: Data Sources -->
+  <rect x="30" y="95" width="1140" height="35" class="web-box" rx="3"/>
+  <text x="600" y="118" class="box-title" text-anchor="middle">1. Data Collection: The Internet Age</text>
+
+  <g transform="translate(75, 0)">
+    <rect x="50" y="145" width="220" height="110" class="web-box" rx="5"/>
+    <text x="160" y="170" class="tool-text" text-anchor="middle">Databases</text>
+    <text x="160" y="190" class="box-text" text-anchor="middle">MySQL (LAMP Stack)</text>
+    <text x="160" y="207" class="box-text" text-anchor="middle">PostgreSQL</text>
+    <text x="160" y="224" class="box-text" text-anchor="middle">SQLite (2000)</text>
+    <text x="160" y="241" class="box-text" text-anchor="middle">Oracle, MS SQL</text>
+
+    <rect x="290" y="145" width="220" height="110" class="web-box" rx="5"/>
+    <text x="400" y="170" class="tool-text" text-anchor="middle">Web Scraping</text>
+    <text x="400" y="190" class="box-text" text-anchor="middle">Beautiful Soup (2004)</text>
+    <text x="400" y="207" class="box-text" text-anchor="middle">XML/RSS Feeds</text>
+    <text x="400" y="224" class="box-text" text-anchor="middle">REST APIs</text>
+    <text x="400" y="241" class="box-text" text-anchor="middle">JSON (2001)</text>
+
+    <rect x="530" y="145" width="220" height="110" class="web-box" rx="5"/>
+    <text x="640" y="170" class="tool-text" text-anchor="middle">Spreadsheets</text>
+    <text x="640" y="190" class="box-text" text-anchor="middle">Excel / ODS</text>
+    <text x="640" y="207" class="box-text" text-anchor="middle">Google Sheets (2006)</text>
+    <text x="640" y="224" class="box-text" text-anchor="middle">CSV/TSV</text>
+    <text x="640" y="241" class="box-text" text-anchor="middle">OpenOffice (2002)</text>
+
+    <rect x="770" y="145" width="220" height="110" class="web-box" rx="5"/>
+    <text x="880" y="170" class="tool-text" text-anchor="middle">Big Data</text>
+    <text x="880" y="190" class="box-text" text-anchor="middle">Hadoop (2006)</text>
+    <text x="880" y="207" class="box-text" text-anchor="middle">Log Files</text>
+    <text x="880" y="224" class="box-text" text-anchor="middle">Sensor Data</text>
+    <text x="880" y="241" class="box-text" text-anchor="middle">Web Analytics</text>
+    <text x="940" y="175" class="new-label">NEW!</text>
+  </g>
+
+  <!-- Arrow Down -->
+  <line x1="600" y1="260" x2="600" y2="295" stroke="#7f8c8d" stroke-width="2" marker-end="url(#arrowhead)"/>
+
+  <!-- Layer 2: Analysis Tools -->
+  <rect x="30" y="295" width="1140" height="35" class="opensource-box" rx="3"/>
+  <text x="600" y="318" class="box-title" text-anchor="middle">2. Statistical Analysis: Open Source Explosion</text>
+
+  <rect x="50" y="345" width="270" height="145" class="opensource-box" rx="5"/>
+  <text x="185" y="370" class="tool-text" text-anchor="middle">R Language Renaissance</text>
+  <text x="185" y="395" class="box-text" text-anchor="middle">R 2.0 (2004) - Stable</text>
+  <text x="185" y="412" class="box-text" text-anchor="middle">CRAN Repository</text>
+  <text x="185" y="429" class="box-text" text-anchor="middle">ggplot2 (2005)</text>
+  <text x="185" y="446" class="box-text" text-anchor="middle">RStudio (2011)</text>
+  <text x="185" y="463" class="box-text" text-anchor="middle">Tidyverse Begins</text>
+  <text x="280" y="375" class="new-label">🚀</text>
+
+  <rect x="340" y="345" width="270" height="145" class="opensource-box" rx="5"/>
+  <text x="475" y="370" class="tool-text" text-anchor="middle">Python Scientific Stack</text>
+  <text x="475" y="395" class="box-text" text-anchor="middle">NumPy/SciPy</text>
+  <text x="475" y="412" class="box-text" text-anchor="middle">matplotlib (2003)</text>
+  <text x="475" y="429" class="box-text" text-anchor="middle">pandas (2008)</text>
+  <text x="475" y="446" class="box-text" text-anchor="middle">IPython (2001)</text>
+  <text x="475" y="463" class="box-text" text-anchor="middle">scikit-learn (2007)</text>
+
+  <rect x="630" y="345" width="250" height="145" class="box" rx="5"/>
+  <text x="755" y="370" class="tool-text" text-anchor="middle">Commercial Tools</text>
+  <text x="755" y="395" class="box-text" text-anchor="middle">SPSS, SAS, Stata</text>
+  <text x="755" y="412" class="box-text" text-anchor="middle">MATLAB</text>
+  <text x="755" y="429" class="box-text" text-anchor="middle">Mathematica</text>
+  <text x="755" y="446" class="box-text" text-anchor="middle">Excel Analysis</text>
+  <text x="755" y="463" class="box-text" text-anchor="middle">ToolPak</text>
+
+  <rect x="900" y="345" width="250" height="145" class="web-box" rx="5"/>
+  <text x="1025" y="370" class="tool-text" text-anchor="middle">Version Control</text>
+  <text x="1025" y="395" class="box-text" text-anchor="middle">Git (2005)</text>
+  <text x="1025" y="412" class="box-text" text-anchor="middle">GitHub (2008)</text>
+  <text x="1025" y="429" class="box-text" text-anchor="middle">SVN</text>
+  <text x="1025" y="446" class="box-text" text-anchor="middle">Mercurial</text>
+  <text x="1025" y="463" class="box-text" text-anchor="middle">Code Sharing!</text>
+  <text x="1095" y="375" class="new-label">GIT!</text>
+
+  <!-- Arrow Down -->
+  <line x1="600" y1="495" x2="600" y2="530" stroke="#7f8c8d" stroke-width="2" marker-end="url(#arrowhead)"/>
+
+  <!-- Layer 3: Document Generation -->
+  <rect x="30" y="530" width="1140" height="35" class="highlight" rx="3"/>
+  <text x="600" y="553" class="box-title" text-anchor="middle">3. Document Generation: Literate Programming Revival</text>
+
+  <rect x="50" y="580" width="270" height="140" class="highlight" rx="5"/>
+  <text x="185" y="605" class="tool-text" text-anchor="middle">Dynamic Documents</text>
+  <text x="185" y="630" class="box-text" text-anchor="middle">Sweave (2002)</text>
+  <text x="185" y="647" class="box-text" text-anchor="middle">knitr (2012)</text>
+  <text x="185" y="664" class="box-text" text-anchor="middle">R Markdown</text>
+  <text x="185" y="681" class="box-text" text-anchor="middle">LaTeX + R Code</text>
+  <text x="185" y="698" class="box-text" text-anchor="middle">One Source!</text>
+  <text x="280" y="610" class="new-label">革命</text>
+
+  <rect x="340" y="580" width="270" height="140" class="highlight" rx="5"/>
+  <text x="475" y="605" class="tool-text" text-anchor="middle">Notebooks</text>
+  <text x="475" y="630" class="box-text" text-anchor="middle">IPython Notebook</text>
+  <text x="475" y="647" class="box-text" text-anchor="middle">Jupyter (2014)</text>
+  <text x="475" y="664" class="box-text" text-anchor="middle">Sage Notebook</text>
+  <text x="475" y="681" class="box-text" text-anchor="middle">Interactive!</text>
+  <text x="475" y="698" class="box-text" text-anchor="middle">Browser-based</text>
+
+  <rect x="630" y="580" width="250" height="140" class="web-box" rx="5"/>
+  <text x="755" y="605" class="tool-text" text-anchor="middle">Web Publishing</text>
+  <text x="755" y="630" class="box-text" text-anchor="middle">Wordpress (2003)</text>
+  <text x="755" y="647" class="box-text" text-anchor="middle">Blogger, MediaWiki</text>
+  <text x="755" y="664" class="box-text" text-anchor="middle">Jekyll (2008)</text>
+  <text x="755" y="681" class="box-text" text-anchor="middle">Static Site Gen</text>
+  <text x="755" y="698" class="box-text" text-anchor="middle">Markdown (2004)</text>
+
+  <rect x="900" y="580" width="250" height="140" class="box" rx="5"/>
+  <text x="1025" y="605" class="tool-text" text-anchor="middle">Traditional</text>
+  <text x="1025" y="630" class="box-text" text-anchor="middle">MS Word/PowerPoint</text>
+  <text x="1025" y="647" class="box-text" text-anchor="middle">PDF Export</text>
+  <text x="1025" y="664" class="box-text" text-anchor="middle">LaTeX</text>
+  <text x="1025" y="681" class="box-text" text-anchor="middle">OpenOffice/LibreOffice</text>
+
+  <!-- Layer 4: Distribution -->
+  <rect x="30" y="740" width="1140" height="35" class="web-box" rx="3"/>
+  <text x="600" y="763" class="box-title" text-anchor="middle">4. Distribution: Everything Online</text>
+
+  <rect x="120" y="785" width="220" height="45" class="web-box" rx="5"/>
+  <text x="230" y="812" class="box-text" text-anchor="middle">Email + Attachments</text>
+
+  <rect x="370" y="785" width="180" height="45" class="web-box" rx="5"/>
+  <text x="460" y="812" class="box-text" text-anchor="middle">Web Hosting</text>
+
+  <rect x="580" y="785" width="180" height="45" class="web-box" rx="5"/>
+  <text x="670" y="812" class="box-text" text-anchor="middle">GitHub Pages</text>
+
+  <rect x="790" y="785" width="180" height="45" class="web-box" rx="5"/>
+  <text x="880" y="812" class="box-text" text-anchor="middle">PDF Downloads</text>
+
+  <!-- Bottom Note -->
+  <text x="610" y="515" class="subtitle" text-anchor="middle">Reproducible Research Movement:  "Code + Data + Document = Science"</text>
+</svg>
