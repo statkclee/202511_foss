@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1000" height="250" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .stage-box { fill: #FFE5E5; stroke: #E17055; stroke-width: 3; }
+      .file-box { fill: #F8F9FA; stroke: #DDD; stroke-width: 2; }
+      .software-text { font-family: 'Noto Sans KR', Arial, sans-serif; font-size: 15px; font-weight: bold; fill: #2D3436; }
+      .stage-text { font-family: 'Noto Sans KR', Arial, sans-serif; font-size: 14px; font-weight: bold; fill: #E17055; }
+      .file-text { font-family: 'Noto Sans KR', Arial, sans-serif; font-size: 11px; fill: #636E72; }
+      .cost-text { font-family: 'Noto Sans KR', Arial, sans-serif; font-size: 10px; fill: #E17055; font-weight: bold; }
+      .arrow-text { font-family: 'Noto Sans KR', Arial, sans-serif; font-size: 12px; fill: #E17055; font-weight: bold; }
+    </style>
+    
+    <!-- Arrow marker -->
+    <marker id="workflow-arrow" markerWidth="12" markerHeight="8" 
+     refX="12" refY="4" orient="auto">
+      <polygon points="0 0, 12 4, 0 8" fill="#E17055" />
+    </marker>
+    
+    <!-- Gradient for emphasis -->
+    <linearGradient id="stageGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFE5E5;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FFCCCB;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="fileGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFFFFF;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#F8F9FA;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1000" height="250" fill="#FAFBFC"/>
+  
+  <!-- Stage 1: Data Collection -->
+  <rect x="20" y="30" width="110" height="70" class="stage-box" rx="8" fill="url(#stageGradient)"/>
+  <text x="75" y="50" text-anchor="middle" class="stage-text">1단계</text>
+  <text x="75" y="68" text-anchor="middle" class="software-text">데이터 수집</text>
+  <text x="75" y="83" text-anchor="middle" class="software-text">Excel</text>
+  <text x="75" y="95" text-anchor="middle" class="cost-text">₩15만원/년</text>
+  
+  <!-- File 1: Raw Data -->
+  <rect x="45" y="180" width="60" height="40" class="file-box" rx="5" fill="url(#fileGradient)"/>
+  <text x="75" y="195" text-anchor="middle" class="file-text">원시 데이터</text>
+  <text x="75" y="208" text-anchor="middle" class="file-text">파일</text>
+  
+  <!-- Arrow 1: Stage to File -->
+  <line x1="75" y1="100" x2="75" y2="180" stroke="#E17055" stroke-width="2" marker-end="url(#workflow-arrow)"/>
+  <text x="85" y="145" class="arrow-text">Excel</text>
+  
+  <!-- Arrow 1-2: File to Stage -->
+  <line x1="105" y1="195" x2="270" y2="65" stroke="#E17055" stroke-width="2" marker-end="url(#workflow-arrow)"/>
+  <text x="170" y="130" text-anchor="middle" class="arrow-text">수동 복사</text>
+  
+  <!-- Stage 2: Statistical Analysis -->
+  <rect x="270" y="30" width="110" height="70" class="stage-box" rx="8" fill="url(#stageGradient)"/>
+  <text x="325" y="50" text-anchor="middle" class="stage-text">2단계</text>
+  <text x="325" y="68" text-anchor="middle" class="software-text">통계 분석</text>
+  <text x="325" y="83" text-anchor="middle" class="software-text">SPSS/SAS</text>
+  <text x="325" y="95" text-anchor="middle" class="cost-text">₩200-300만원/년</text>
+  
+  <!-- File 2: Analysis Results -->
+  <rect x="295" y="180" width="60" height="40" class="file-box" rx="5" fill="url(#fileGradient)"/>
+  <text x="325" y="195" text-anchor="middle" class="file-text">분석 결과</text>
+  <text x="325" y="208" text-anchor="middle" class="file-text">파일</text>
+  
+  <!-- Arrow 2: Stage to File -->
+  <line x1="325" y1="100" x2="325" y2="180" stroke="#E17055" stroke-width="2" marker-end="url(#workflow-arrow)"/>
+  <text x="335" y="145" class="arrow-text">SPSS</text>
+  
+  <!-- Arrow 2-3: File to Stage -->
+  <line x1="355" y1="195" x2="520" y2="65" stroke="#E17055" stroke-width="2" marker-end="url(#workflow-arrow)"/>
+  <text x="440" y="130" text-anchor="middle" class="arrow-text">이미지 저장</text>
+  지
+  <!-- Stage 3: Visualization -->
+  <rect x="520" y="30" width="110" height="70" class="stage-box" rx="8" fill="url(#stageGradient)"/>
+  <text x="575" y="50" text-anchor="middle" class="stage-text">3단계</text>
+  <text x="575" y="68" text-anchor="middle" class="software-text">시각화</text>
+  <text x="575" y="83" text-anchor="middle" class="software-text">Origin/Excel</text>
+  <text x="575" y="95" text-anchor="middle" class="cost-text">₩100만원/년</text>
+  
+  <!-- File 3: Charts -->
+  <rect x="545" y="180" width="60" height="40" class="file-box" rx="5" fill="url(#fileGradient)"/>
+  <text x="575" y="195" text-anchor="middle" class="file-text">그래프/차트</text>
+  <text x="575" y="208" text-anchor="middle" class="file-text">이미지</text>
+  
+  <!-- Arrow 3: Stage to File -->
+  <line x1="575" y1="100" x2="575" y2="180" stroke="#E17055" stroke-width="2" marker-end="url(#workflow-arrow)"/>
+  <text x="585" y="145" class="arrow-text">Origin</text>
+  
+  <!-- Arrow 3-4: File to Stage -->
+  <line x1="605" y1="195" x2="770" y2="65" stroke="#E17055" stroke-width="2" marker-end="url(#workflow-arrow)"/>
+  <text x="725" y="130" text-anchor="middle" class="arrow-text">붙여넣기</text>
+  
+  <!-- Stage 4: Document Creation -->
+  <rect x="770" y="30" width="110" height="70" class="stage-box" rx="8" fill="url(#stageGradient)"/>
+  <text x="825" y="50" text-anchor="middle" class="stage-text">4단계</text>
+  <text x="825" y="68" text-anchor="middle" class="software-text">문서 작성</text>
+  <text x="825" y="83" text-anchor="middle" class="software-text">HWP</text>
+  <text x="825" y="95" text-anchor="middle" class="cost-text">₩15만원/년</text>
+  
+  <!-- File 4: Final Report -->
+  <rect x="795" y="180" width="60" height="40" class="file-box" rx="5" fill="url(#fileGradient)"/>
+  <text x="825" y="195" text-anchor="middle" class="file-text">최종 PDF</text>
+  <text x="825" y="208" text-anchor="middle" class="file-text">보고서</text>
+  
+  <!-- Arrow 4: Stage to File -->
+  <line x1="825" y1="100" x2="825" y2="180" stroke="#E17055" stroke-width="2" marker-end="url(#workflow-arrow)"/>
+  <text x="835" y="145" class="arrow-text">HWP</text>
+  
+  <!-- Problem indicators -->
+  <circle cx="75" cy="160" r="6" fill="#FF6B6B"/>
+  <text x="75" y="165" text-anchor="middle" class="arrow-text" fill="white" style="font-size: 8px;">!</text>
+  
+  <circle cx="325" cy="160" r="6" fill="#FF6B6B"/>
+  <text x="325" y="165" text-anchor="middle" class="arrow-text" fill="white" style="font-size: 8px;">!</text>
+  
+  <circle cx="575" cy="160" r="6" fill="#FF6B6B"/>
+  <text x="575" y="165" text-anchor="middle" class="arrow-text" fill="white" style="font-size: 8px;">!</text>
+  
+  <circle cx="825" cy="160" r="6" fill="#FF6B6B"/>
+  <text x="825" y="165" text-anchor="middle" class="arrow-text" fill="white" style="font-size: 8px;">!</text>
+  
+</svg>

@@ -1,0 +1,151 @@
+<svg viewBox="0 0 1200 700" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .title { font: bold 22px 'AppleGothic', sans-serif; fill: #2c3e50; }
+      .section-title { font: bold 14px 'AppleGothic', sans-serif; fill: #34495e; }
+      .main-box { fill: #3498db; stroke: #2980b9; stroke-width: 2; rx: 8; }
+      .input-box { fill: #e74c3c; stroke: #c0392b; stroke-width: 2; rx: 8; }
+      .ai-box { fill: #9b59b6; stroke: #8e44ad; stroke-width: 2; rx: 8; }
+      .output-box { fill: #2ecc71; stroke: #27ae60; stroke-width: 2; rx: 8; }
+      .tool-box { fill: #34495e; stroke: #2c3e50; stroke-width: 2; rx: 8; }
+      .korean-box { fill: #1abc9c; stroke: #16a085; stroke-width: 2; rx: 8; }
+      .text { font: 11px 'AppleGothic', sans-serif; fill: white; text-anchor: middle; dominant-baseline: middle; }
+      .small-text { font: 9px 'AppleGothic', sans-serif; fill: white; text-anchor: middle; dominant-baseline: middle; }
+      .main-arrow { stroke: #2c3e50; stroke-width: 3; fill: none; marker-end: url(#arrowhead-main); }
+      .support-arrow { stroke: #7f8c8d; stroke-width: 2; fill: none; marker-end: url(#arrowhead-support); stroke-dasharray: 5,5; }
+    </style>
+    <marker id="arrowhead-main" markerWidth="12" markerHeight="8" refX="11" refY="4" orient="auto">
+      <polygon points="0 0, 12 4, 0 8" fill="#2c3e50" />
+    </marker>
+    <marker id="arrowhead-support" markerWidth="10" markerHeight="6" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#7f8c8d" />
+    </marker>
+  </defs>
+
+  <!-- Title -->
+  <text x="600" y="30" class="title" text-anchor="middle">학술 논문의 Document as Code 워크플로우</text>
+
+  <!-- Section Labels -->
+  <text x="150" y="70" class="section-title" text-anchor="middle">입력 단계</text>
+  <text x="500" y="70" class="section-title" text-anchor="middle">처리 단계</text>
+  <text x="900" y="70" class="section-title" text-anchor="middle">출력 단계</text>
+
+  <!-- Main Workflow - Input Stage -->
+  <rect x="80" y="90" width="140" height="50" class="input-box"/>
+  <text x="150" y="115" class="text">원본 데이터</text>
+  
+  <rect x="80" y="160" width="140" height="50" class="input-box"/>
+  <text x="150" y="185" class="text">분석 스크립트</text>
+
+  <!-- Main Workflow - Processing Stage -->
+  <rect x="430" y="90" width="140" height="50" class="main-box"/>
+  <text x="500" y="115" class="text">쿼토 문서</text>
+  
+  <rect x="280" y="145" width="120" height="50" class="main-box"/>
+  <text x="340" y="170" class="text">Git 버전관리</text>
+
+  <rect x="360" y="180" width="120" height="50" class="main-box"/>
+  <text x="420" y="205" class="text">그래프/표</text>
+
+  <!-- Main Workflow - Output Stage -->
+  <rect x="780" y="80" width="110" height="35" class="output-box"/>
+  <text x="835" y="98" class="text">PDF (학술지)</text>
+  
+  <rect x="780" y="125" width="110" height="35" class="output-box"/>
+  <text x="835" y="143" class="text">HTML (웹)</text>
+  
+  <rect x="780" y="170" width="110" height="35" class="output-box"/>
+  <text x="835" y="188" class="text">Word (리뷰)</text>
+  
+  <rect x="780" y="215" width="110" height="35" class="output-box"/>
+  <text x="835" y="233" class="text">arXiv</text>
+
+  <!-- Korean Academic Integration -->
+  <rect x="920" y="80" width="160" height="120" class="korean-box"/>
+  <text x="1000" y="110" class="text">한국 학술 생태계</text>
+  <text x="1000" y="130" class="small-text">• KCI 등재지</text>
+  <text x="1000" y="145" class="small-text">• 한국연구재단</text>
+  <text x="1000" y="160" class="small-text">• 정부 R&amp;D</text>
+  <text x="1000" y="175" class="small-text">• 대학 기관</text>
+
+  <!-- AI Support Layer -->
+  <text x="400" y="300" class="section-title">AI 지원 레이어</text>
+  
+  <rect x="200" y="320" width="120" height="50" class="ai-box"/>
+  <text x="260" y="345" class="text">AI 어시스턴트</text>
+  
+  <rect x="350" y="320" width="120" height="50" class="ai-box"/>
+  <text x="410" y="345" class="text">문헌 리뷰</text>
+  
+  <rect x="500" y="320" width="120" height="50" class="ai-box"/>
+  <text x="560" y="345" class="text">결과 해석</text>
+
+  <!-- Technical Stack -->
+  <text x="400" y="430" class="section-title">과학 DSL 기술 스택</text>
+  
+  <rect x="120" y="450" width="760" height="80" class="tool-box"/>
+  <text x="500" y="470" class="text">Scientific Domain-Specific Languages</text>
+  <text x="200" y="495" class="small-text">LaTeX 수식</text>
+  <text x="300" y="495" class="small-text">ggplot2 그래프</text>
+  <text x="400" y="495" class="small-text">gt 표</text>
+  <text x="480" y="495" class="small-text">Bibliography</text>
+  <text x="580" y="495" class="small-text">교차 참조</text>
+  <text x="670" y="495" class="small-text">메타데이터</text>
+  <text x="760" y="495" class="small-text">코드 문서화</text>
+  <text x="300" y="515" class="small-text">Mermaid 다이어그램</text>
+  <text x="500" y="515" class="small-text">OJS 인터랙티브</text>
+  <text x="700" y="515" class="small-text">Python/R/Julia</text>
+
+  <!-- Input to Processing -->
+  <line x1="220" y1="115" x2="420" y2="115" class="main-arrow"/>
+  <line x1="220" y1="185" x2="420" y2="115" class="main-arrow"/>
+  
+  <!-- Quarto to Graph/Table -->
+  <line x1="500" y1="140" x2="420" y2="180" class="main-arrow"/>
+  
+  <!-- Graph/Table to Outputs -->
+  <line x1="480" y1="205" x2="770" y2="98" class="main-arrow"/>
+  <line x1="480" y1="205" x2="770" y2="143" class="main-arrow"/>
+  <line x1="480" y1="205" x2="770" y2="188" class="main-arrow"/>
+  <line x1="480" y1="205" x2="770" y2="233" class="main-arrow"/>
+
+  <!-- Output to Korean Ecosystem -->
+  <line x1="890" y1="140" x2="910" y2="140" class="main-arrow"/>
+
+  <!-- Git Version Control Support -->
+  <line x1="340" y1="145" x2="430" y2="115" class="support-arrow"/>
+  <line x1="340" y1="145" x2="360" y2="180" class="support-arrow"/>
+
+  <!-- AI Support Arrows -->
+  <line x1="260" y1="320" x2="500" y2="140" class="support-arrow"/>
+  <line x1="410" y1="320" x2="500" y2="140" class="support-arrow"/>
+  <line x1="560" y1="320" x2="420" y2="230" class="support-arrow"/>
+
+  <!-- DSL Support Arrow -->
+  <line x1="500" y1="450" x2="500" y2="140" class="support-arrow"/>
+
+  <!-- Legend -->
+  <rect x="50" y="580" width="1100" height="100" fill="none" stroke="#bdc3c7" stroke-width="1" rx="8"/>
+  <text x="80" y="605" class="section-title">핵심 특징</text>
+  
+  <circle cx="100" cy="630" r="8" fill="#e74c3c"/>
+  <text x="120" y="635" font="11px 'AppleGothic'" fill="#2c3e50">입력</text>
+  
+  <circle cx="180" cy="630" r="8" fill="#3498db"/>
+  <text x="200" y="635" font="11px 'AppleGothic'" fill="#2c3e50">처리</text>
+  
+  <circle cx="260" cy="630" r="8" fill="#9b59b6"/>
+  <text x="280" y="635" font="11px 'AppleGothic'" fill="#2c3e50">AI 지원</text>
+  
+  <circle cx="360" cy="630" r="8" fill="#2ecc71"/>
+  <text x="380" y="635" font="11px 'AppleGothic'" fill="#2c3e50">다중 출력</text>
+  
+  <circle cx="480" cy="630" r="8" fill="#1abc9c"/>
+  <text x="500" y="635" font="11px 'AppleGothic'" fill="#2c3e50">한국 특화</text>
+  
+  <circle cx="600" cy="630" r="8" fill="#34495e"/>
+  <text x="620" y="635" font="11px 'AppleGothic'" fill="#2c3e50">과학 DSL</text>
+
+  <text x="80" y="660" font="11px 'AppleGothic'" fill="#7f8c8d">• 단일 소스에서 모든 출력 형태 생성 (One Source, Multiple Outputs)</text>
+  <text x="80" y="675" font="11px 'AppleGothic'" fill="#7f8c8d">• AI와 인간의 협업을 통한 재현가능하고 투명한 학술 연구 워크플로우</text>
+</svg>

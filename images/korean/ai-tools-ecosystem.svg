@@ -1,0 +1,421 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 25 900 500" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .main-title { font: bold 24px sans-serif; text-anchor: middle; fill: #2c3e50; }
+    .subtitle { font: 14px sans-serif; text-anchor: middle; fill: #7f8c8d; }
+    .layer-title { font: bold 18px sans-serif; fill: #0b0000; text-shadow: 0 0 10px rgba(0,0,0,0.5); }
+    .layer-desc { font: 12px sans-serif; fill: rgba(34, 10, 10, 0.52); }
+    .tool-title-large { font: bold 16px sans-serif; text-anchor: middle; fill:rgb(243, 235, 235); text-shadow: 0 0 5px rgba(0,0,0,0.7); }
+    .tool-title-medium { font: bold 14px sans-serif; text-anchor: middle; fill:rgb(50, 45, 45); text-shadow: 0 0 5px rgba(0,0,0,0.7); }
+    .tool-desc { font: 9px sans-serif; text-anchor: middle; fill: rgba(255, 255, 255, 0.8)8); }
+    .flow-label { font: bold 12px sans-serif; text-anchor: middle; fill: #e74c3c; }
+    .quarto-note { font: 11px sans-serif; fill: #8e44ad; }
+    .neon-glow { filter: url(#neon); }
+  </style>
+  
+  <defs>
+    <!-- 레이어별 그라디언트 -->
+    <!-- 창작 레이어 - 파랑 계열 -->
+    <linearGradient id="creationBg" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:rgba(52,152,219,0.15);stop-opacity:1" />
+      <stop offset="50%" style="stop-color:rgba(52,152,219,0.25);stop-opacity:1" />
+      <stop offset="100%" style="stop-color:rgba(52,152,219,0.15);stop-opacity:1" />
+    </linearGradient>
+    
+    <radialGradient id="chatgptGrad" cx="40%" cy="30%">
+      <stop offset="0%" style="stop-color:#00d4ff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0099cc;stop-opacity:1" />
+    </radialGradient>
+    
+    <radialGradient id="claudeGrad" cx="40%" cy="30%">
+      <stop offset="0%" style="stop-color:#ff6b6b;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#e74c3c;stop-opacity:1" />
+    </radialGradient>
+    
+    <radialGradient id="geminiGrad" cx="40%" cy="30%">
+      <stop offset="0%" style="stop-color:#4285f4;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1a73e8;stop-opacity:1" />
+    </radialGradient>
+    
+    <!-- 지원 레이어 - 초록 계열 -->
+    <linearGradient id="supportBg" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:rgba(46,204,113,0.15);stop-opacity:1" />
+      <stop offset="50%" style="stop-color:rgba(46,204,113,0.25);stop-opacity:1" />
+      <stop offset="100%" style="stop-color:rgba(46,204,113,0.15);stop-opacity:1" />
+    </linearGradient>
+    
+    <radialGradient id="perplexityGrad" cx="40%" cy="30%">
+      <stop offset="0%" style="stop-color:#4ecdc4;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#26a69a;stop-opacity:1" />
+    </radialGradient>
+    
+    <radialGradient id="notebooklmGrad" cx="40%" cy="30%">
+      <stop offset="0%" style="stop-color:#27ae60;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#229954;stop-opacity:1" />
+    </radialGradient>
+    
+    <radialGradient id="cursorGrad" cx="40%" cy="30%">
+      <stop offset="0%" style="stop-color:#45b7d1;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3498db;stop-opacity:1" />
+    </radialGradient>
+    
+    <radialGradient id="copilotGrad" cx="40%" cy="30%">
+      <stop offset="0%" style="stop-color:#95a5a6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#34495e;stop-opacity:1" />
+    </radialGradient>
+    
+    <radialGradient id="windsurfGrad" cx="40%" cy="30%">
+      <stop offset="0%" style="stop-color:#00d2ff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3a7bd5;stop-opacity:1" />
+    </radialGradient>
+    
+    <radialGradient id="ollamaGrad" cx="40%" cy="30%">
+      <stop offset="0%" style="stop-color:#f39c12;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#d35400;stop-opacity:1" />
+    </radialGradient>
+    
+    <!-- 추가 창작 레이어 도구 그라디언트 -->
+    <radialGradient id="bardGrad" cx="40%" cy="30%">
+      <stop offset="0%" style="stop-color:#34a853;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#137333;stop-opacity:1" />
+    </radialGradient>
+    
+    <radialGradient id="copilotChatGrad" cx="40%" cy="30%">
+      <stop offset="0%" style="stop-color:#0078d4;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#004578;stop-opacity:1" />
+    </radialGradient>
+    
+    <radialGradient id="piGrad" cx="40%" cy="30%">
+      <stop offset="0%" style="stop-color:#ff6b35;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f7931e;stop-opacity:1" />
+    </radialGradient>
+    
+    <radialGradient id="llamaGrad" cx="40%" cy="30%">
+      <stop offset="0%" style="stop-color:#8b5cf6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#7c3aed;stop-opacity:1" />
+    </radialGradient>
+    
+    <!-- 협업 레이어 - 주황 계열 -->
+    <linearGradient id="collabBg" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:rgba(230,126,34,0.15);stop-opacity:1" />
+      <stop offset="50%" style="stop-color:rgba(230,126,34,0.25);stop-opacity:1" />
+      <stop offset="100%" style="stop-color:rgba(230,126,34,0.15);stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- 출력 형식용 그라디언트 -->
+    <linearGradient id="dashboardGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#17a2b8;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#117a8b;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="presentationGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#fd7e14;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#e66100;stop-opacity:1" />
+    </linearGradient>
+    
+    <radialGradient id="canvasGrad" cx="40%" cy="30%">
+      <stop offset="0%" style="stop-color:#f39c12;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#e67e22;stop-opacity:1" />
+    </radialGradient>
+    
+    <radialGradient id="artifactsGrad" cx="40%" cy="30%">
+      <stop offset="0%" style="stop-color:#9b59b6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#8e44ad;stop-opacity:1" />
+    </radialGradient>
+    
+    <radialGradient id="obsidianGrad" cx="40%" cy="30%">
+      <stop offset="0%" style="stop-color:#d35400;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#a04000;stop-opacity:1" />
+    </radialGradient>
+    
+    <radialGradient id="claudecodeGrad" cx="40%" cy="30%">
+      <stop offset="0%" style="stop-color:#ff6b6b;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#e74c3c;stop-opacity:1" />
+    </radialGradient>
+    
+    <radialGradient id="geminiCodeGrad" cx="40%" cy="30%">
+      <stop offset="0%" style="stop-color:#4285f4;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1a73e8;stop-opacity:1" />
+    </radialGradient>
+    
+    <radialGradient id="codexGrad" cx="40%" cy="30%">
+      <stop offset="0%" style="stop-color:#00a884;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#008568;stop-opacity:1" />
+    </radialGradient>
+    
+    <!-- 추가 지원 레이어 도구 그라디언트 -->
+    <radialGradient id="codeiumGrad" cx="40%" cy="30%">
+      <stop offset="0%" style="stop-color:#00d4aa;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#009688;stop-opacity:1" />
+    </radialGradient>
+    
+    <radialGradient id="tabnineGrad" cx="40%" cy="30%">
+      <stop offset="0%" style="stop-color:#2196f3;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1976d2;stop-opacity:1" />
+    </radialGradient>
+    
+    <radialGradient id="amazonQGrad" cx="40%" cy="30%">
+      <stop offset="0%" style="stop-color:#ff9900;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ec7211;stop-opacity:1" />
+    </radialGradient>
+    
+    <!-- 추가 협업 레이어 도구 그라디언트 -->
+    <radialGradient id="notionGrad" cx="40%" cy="30%">
+      <stop offset="0%" style="stop-color:#00ff00;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#37352f;stop-opacity:1" />
+    </radialGradient>
+    
+    <radialGradient id="jasperGrad" cx="40%" cy="30%">
+      <stop offset="0%" style="stop-color:#8b5a2b;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#6d4423;stop-opacity:1" />
+    </radialGradient>
+    
+    <radialGradient id="copyaiGrad" cx="40%" cy="30%">
+      <stop offset="0%" style="stop-color:#7c3aed;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#5b21b6;stop-opacity:1" />
+    </radialGradient>
+    
+    <!-- Quarto 중앙 허브 그라디언트 -->
+    <radialGradient id="quartoHubGrad" cx="40%" cy="30%">
+      <stop offset="0%" style="stop-color:#805ad5;stop-opacity:1" />
+      <stop offset="60%" style="stop-color:#6c5ce7;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#553c9a;stop-opacity:1" />
+    </radialGradient>
+    
+    <radialGradient id="quartoGlow" cx="50%" cy="50%">
+      <stop offset="0%" style="stop-color:#a29bfe;stop-opacity:0.8" />
+      <stop offset="70%" style="stop-color:#6c5ce7;stop-opacity:0.4" />
+      <stop offset="100%" style="stop-color:#553c9a;stop-opacity:0.1" />
+    </radialGradient>
+    
+    <!-- 네온 효과 필터 -->
+    <filter id="neon" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="2" dy="3" stdDeviation="2" flood-color="#34495e" flood-opacity="0.3"/>
+    </filter>
+    
+    <!-- 화살표 마커 -->
+    
+    <marker id="arrow-flow" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#e74c3c" opacity="0.8"/>
+    </marker>
+    
+  </defs>
+
+  <!-- 배경 -->
+  <rect width="900" height="600" fill="#f8f9fa"/>
+  
+  <!-- 제목 -->
+  <text x="700" y="500" class="subtitle">AI 도구들의 조각들 → Quarto 통합 → 완성된 출판물</text>
+  
+  <!-- 레이어 1: 창작 레이어 (상단) -->
+  <g transform="translate(0, -50)">
+    <rect x="50" y="90" width="800" height="120" rx="15" fill="url(#creationBg)" stroke="rgba(0, 147, 245, 0.5)" stroke-width="1"/>
+    <text x="70" y="115" class="layer-title">💡 창작 레이어</text>
+    <text x="70" y="135" class="layer-desc">아이디어 생성, 초안 작성, 브레인스토밍</text>
+    
+    <!-- 창작 레이어 도구들 (크기 축소 및 추가 도구) -->
+    <polygon points="150,140 180,155 150,180 120,165" fill="url(#chatgptGrad)" class="neon-glow"/>
+    <text x="150" y="160" class="tool-title-medium" font-size="11">ChatGPT</text>
+    <text x="150" y="171" class="tool-desc" font-size="8">범용 창작</text>
+    
+    <polygon points="250,140 280,155 250,180 220,165" fill="url(#claudeGrad)" class="neon-glow"/>
+    <text x="250" y="160" class="tool-title-medium" font-size="11">Claude</text>
+    <text x="250" y="171" class="tool-desc" font-size="8">분석적 글쓰기</text>
+    
+    <polygon points="350,140 380,155 350,180 320,165" fill="url(#geminiGrad)" class="neon-glow"/>
+    <text x="350" y="160" class="tool-title-medium" font-size="11">Gemini</text>
+    <text x="350" y="171" class="tool-desc" font-size="8">멀티모달</text>
+    
+    <polygon points="550,140 580,155 550,180 520,165" fill="url(#copilotChatGrad)" class="neon-glow"/>
+    <text x="550" y="160" class="tool-title-medium" font-size="11">Copilot</text>
+    <text x="550" y="171" class="tool-desc" font-size="8">MS 통합</text>
+    
+    <polygon points="650,140 680,155 650,180 620,165" fill="url(#piGrad)" class="neon-glow"/>
+    <text x="650" y="160" class="tool-title-medium" font-size="11">Pi</text>
+    <text x="650" y="171" class="tool-desc" font-size="8">개인 AI</text>
+    
+    <polygon points="750,140 780,155 750,180 720,165" fill="url(#llamaGrad)" class="neon-glow"/>
+    <text x="750" y="160" class="tool-title-medium" font-size="11">LLaMA</text>
+    <text x="750" y="171" class="tool-desc" font-size="8">오픈소스</text>
+  </g>
+
+  <!-- 레이어 2: 지원 레이어 (중단 왼쪽) -->
+  <g id="support-layer" transform="translate(0,-50)">
+
+  <rect x="50" y="240" width="400" height="140" rx="15" fill="url(#supportBg)" stroke="rgba(46,204,113,0.5)" stroke-width="2"/>
+  <text x="70" y="265" class="layer-title">🔍 지원 레이어</text>
+  <text x="190" y="260" class="layer-desc">리서치, 팩트체크, 코드 생성, 데이터 분석</text>
+  
+  <!-- 지원 레이어 도구들 (왼쪽 영역에 컴팩트 배치) -->
+  <!-- 상단 행 -->
+  <circle cx="120" cy="290" r="20" fill="url(#perplexityGrad)" class="neon-glow"/>
+  <text x="120" y="288" class="tool-title-medium" font-size="9">Perplexity</text>
+  <text x="120" y="297" class="tool-desc" font-size="7">실시간 검색</text>
+  
+  <circle cx="200" cy="290" r="20" fill="url(#notebooklmGrad)" filter="url(#shadow)"/>
+  <text x="200" y="288" class="tool-title-medium" font-size="9">NotebookLM</text>
+  <text x="200" y="297" class="tool-desc" font-size="7">문서 분석</text>
+  
+  <circle cx="280" cy="290" r="22" fill="url(#cursorGrad)" class="neon-glow"/>
+  <text x="280" y="290" class="tool-title-medium" font-size="9">Cursor</text>
+  <text x="280" y="299" class="tool-desc" font-size="7">AI 코딩</text>
+  
+  <circle cx="360" cy="290" r="20" fill="url(#windsurfGrad)" class="neon-glow"/>
+  <text x="360" y="288" class="tool-title-medium" font-size="9">Windsurf</text>
+  <text x="360" y="297" class="tool-desc" font-size="7">AI IDE</text>
+  
+  <!-- 하단 행 -->
+  <circle cx="120" cy="340" r="18" fill="url(#copilotGrad)" filter="url(#shadow)"/>
+  <text x="120" y="336" class="tool-title-medium" font-size="8">GitHub</text>
+  <text x="120" y="346" class="tool-title-medium" font-size="8">Copilot</text>
+  
+  <circle cx="200" cy="340" r="20" fill="url(#ollamaGrad)" filter="url(#shadow)"/>
+  <text x="200" y="338" class="tool-title-medium" font-size="9">Ollama</text>
+  <text x="200" y="347" class="tool-desc" font-size="7">로컬 LLM</text>
+  
+  <circle cx="280" cy="340" r="18" fill="url(#codeiumGrad)" class="neon-glow"/>
+  <text x="280" y="338" class="tool-title-medium" font-size="9">Codeium</text>
+  <text x="280" y="347" class="tool-desc" font-size="7">무료 AI</text>
+  
+  <circle cx="360" cy="340" r="18" fill="url(#tabnineGrad)" filter="url(#shadow)"/>
+  <text x="360" y="338" class="tool-title-medium" font-size="9">Tabnine</text>
+  <text x="360" y="347" class="tool-desc" font-size="7">자동완성</text>
+  
+  <circle cx="420" cy="315" r="16" fill="url(#amazonQGrad)" filter="url(#shadow)"/>
+  <text x="420" y="313" class="tool-title-medium" font-size="8">Amazon Q</text>
+  <text x="420" y="321" class="tool-desc" font-size="6">AWS</text>
+  </g>
+  
+  <!-- 레이어 3: 협업 레이어 (하단) -->
+  <g id="collab-layer" transform="translate(0,-20)">
+    <rect x="50" y="390" width="450" height="140" rx="15" fill="url(#collabBg)" stroke="rgba(230,126,34,0.5)" stroke-width="2"/>
+    <text x="70" y="415" class="layer-title">🤝 협업 레이어</text>
+    <text x="180" y="415" class="layer-desc">실시간 공동편집, 프로토타이핑, 지식 관리</text>
+    
+    <!-- 협업 레이어 도구들 (크기 축소 및 추가 도구) -->
+  <g transform="translate(50,-20)">
+    <polygon points="80,450 110,465 80,485 50,470" fill="url(#canvasGrad)" class="neon-glow"/>
+    <text x="80" y="465" class="tool-title-medium" font-size="9">ChatGPT</text>
+    <text x="80" y="475" class="tool-title-medium" font-size="9">Canvas</text>
+    
+    <polygon points="150,450 180,465 150,485 120,470" fill="url(#artifactsGrad)" class="neon-glow"/>
+    <text x="150" y="465" class="tool-title-medium" font-size="9">Claude</text>
+    <text x="150" y="475" class="tool-title-medium" font-size="9">Artifacts</text>
+    
+    <polygon points="220,450 250,465 220,485 190,470" fill="url(#claudecodeGrad)" class="neon-glow"/>
+    <text x="220" y="465" class="tool-title-medium" font-size="9">Claude Code</text>
+    <text x="220" y="476" class="tool-desc" font-size="7">CLI 코딩</text>
+    
+    <polygon points="290,450 320,465 290,485 260,470" fill="url(#geminiCodeGrad)" class="neon-glow"/>
+    <text x="290" y="462" class="tool-title-medium" font-size="9">Gemini</text>
+    <text x="290" y="472" class="tool-title-medium" font-size="9">Code Assist</text>
+  </g>
+
+  <g transform="translate(-390,30)">
+    <polygon points="520,450 550,465 520,485 490,470" fill="url(#obsidianGrad)" class="neon-glow"/>
+    <text x="520" y="465" class="tool-title-medium" font-size="10">Obsidian</text>
+    <text x="520" y="476" class="tool-desc" font-size="7">지식 그래프</text>
+    
+    <polygon points="590,450 620,465 590,485 560,470" fill="url(#codexGrad)" class="neon-glow"/>
+    <text x="590" y="465" class="tool-title-medium" font-size="9">OpenAI</text>
+    <text x="590" y="476" class="tool-desc" font-size="7">Codex</text>
+    
+    <polygon points="660,450 690,465 660,485 630,470" fill="url(#notionGrad)" class="neon-glow"/>
+    <text x="660" y="465" class="tool-title-medium" font-size="10">Notion AI</text>
+    <text x="660" y="476" class="tool-desc" font-size="7">문서 협업</text>
+    
+    <polygon points="730,450 760,465 730,485 700,470" fill="url(#jasperGrad)" class="neon-glow"/>
+    <text x="730" y="465" class="tool-title-medium" font-size="10">Jasper</text>
+    <text x="730" y="476" class="tool-desc" font-size="7">콘텐츠 생성</text>
+    
+    <polygon points="800,450 830,465 800,485 770,470" fill="url(#copyaiGrad)" class="neon-glow"/>
+    <text x="800" y="465" class="tool-title-medium" font-size="9">Copy.ai</text>
+    <text x="800" y="476" class="tool-desc" font-size="7">마케팅</text>
+    </g>
+  </g>
+  
+ 
+  <!-- AI 도구들 → Quarto 연결선들 -->
+  <!-- 창작 레이어 → Quarto (새 위치로) -->
+  
+  <!-- 지원 레이어 → Quarto (새 위치로) -->
+  
+  <!-- 하단 행 도구들 -->
+  
+
+  
+  <!-- Quarto 허브 (왼쪽으로 이동) -->
+  <g id="quarto-hub" transform="translate(130, 60)">
+    <!-- 글로우 효과 배경 -->
+    <circle cx="380" cy="330" r="85" fill="url(#quartoGlow)" opacity="0.6"/>
+    <circle cx="380" cy="330" r="65" fill="url(#quartoHubGrad)" class="neon-glow"/>
+    
+    <!-- Quarto 텍스트 -->
+    <text x="380" y="312" class="tool-title-large" font-size="17" fill="white" text-anchor="middle">📚 Quarto</text>
+    <text x="380" y="328" class="tool-desc" font-size="11" fill="white" text-anchor="middle">최종 완성 엔진</text>
+    <text x="380" y="340" class="tool-desc" font-size="9" fill="rgba(255,255,255,0.8)" text-anchor="middle">Final Assembly Hub</text>
+    <text x="380" y="352" class="tool-desc" font-size="9" fill="rgba(255,255,255,0.9)" text-anchor="middle">조각 → 완성품</text>
+    <text x="380" y="363" class="tool-desc" font-size="8" fill="rgba(255,255,255,0.7)" text-anchor="middle">Fragments to Products</text>
+  </g>
+  
+  <!-- 출력 결과물 영역 (오른쪽 중단) -->
+  <g id="output-formats" transform="translate(0,-50)">
+  <rect x="480" y="240" width="370" height="140" rx="15" fill="rgba(142,68,173,0.1)" stroke="rgba(142,68,173,0.5)" stroke-width="2"/>
+  <text x="500" y="265" class="layer-title" font-size="16" fill="#8e44ad">📄 출력 결과물</text>
+  <text x="620" y="265" class="layer-desc" fill="#8e44ad">Write Once, Publish Everywhere</text>
+  
+    <!-- 상단 행 -->
+  <g id="output-formats" transform="translate(40,-10)">
+    <rect x="520" y="300" width="70" height="35" rx="6" fill="url(#dashboardGrad)" filter="url(#shadow)"/>
+    <text x="555" y="314" class="tool-title-medium" font-size="10" fill="#2c3e50" text-anchor="middle">HTML</text>
+    <text x="555" y="325" class="tool-desc" font-size="8" fill="#34495e" text-anchor="middle">웹 문서</text>
+    
+    <rect x="610" y="300" width="70" height="35" rx="6" fill="url(#presentationGrad)" filter="url(#shadow)"/>
+    <text x="645" y="314" class="tool-title-medium" font-size="10" fill="#2c3e50" text-anchor="middle">PDF</text>
+    <text x="645" y="325" class="tool-desc" font-size="8" fill="#34495e" text-anchor="middle">인쇄 문서</text>
+    
+    <rect x="700" y="300" width="70" height="35" rx="6" fill="url(#cursorGrad)" filter="url(#shadow)"/>
+    <text x="735" y="314" class="tool-title-medium" font-size="10" fill="#2c3e50" text-anchor="middle">대시보드</text>
+    <text x="735" y="325" class="tool-desc" font-size="8" fill="#34495e" text-anchor="middle">실시간</text>
+    
+    <!-- 하단 행 -->
+    <rect x="550" y="345" width="70" height="35" rx="6" fill="url(#artifactsGrad)" filter="url(#shadow)"/>
+    <text x="585" y="359" class="tool-title-medium" font-size="10" fill="#2c3e50" text-anchor="middle">RevealJS</text>
+    <text x="585" y="370" class="tool-desc" font-size="8" fill="#34495e" text-anchor="middle">프레젠테이션</text>
+    
+    <rect x="640" y="345" width="70" height="35" rx="6" fill="url(#canvasGrad)" filter="url(#shadow)"/>
+    <text x="675" y="359" class="tool-title-medium" font-size="10" fill="#2c3e50" text-anchor="middle">웹사이트</text>
+    <text x="675" y="370" class="tool-desc" font-size="8" fill="#34495e" text-anchor="middle">정적 사이트</text>
+    
+    <rect x="730" y="345" width="70" height="35" rx="6" fill="url(#obsidianGrad)" filter="url(#shadow)"/>
+    <text x="765" y="359" class="tool-title-medium" font-size="10" fill="#2c3e50" text-anchor="middle">책</text>
+    <text x="765" y="370" class="tool-desc" font-size="8" fill="#34495e" text-anchor="middle">Book</text>
+    </g>
+  </g>
+  
+  <!-- Quarto → 출력 형식 화살표들 (새 위치로) -->
+  <!-- 상단 행 출력들로 -->
+  
+  <!-- 하단 행 출력들로 -->
+  
+  <!-- 최종 완성자 역할 강조 (새 레이아웃에 맞게) -->
+  <g transform="translate(550, -50)">
+    <rect x="50" y="450" width="250" height="70" fill="rgba(255,255,255,0.95)" stroke="#6c5ce7" stroke-width="2" rx="10"/>
+    <text x="120" y="465" class="tool-desc" fill="#6c5ce7" font-size="13" font-weight="bold">🤖 AI 도구들 (왼쪽 조각 생성)</text>
+    <text x="120" y="480" class="tool-desc" fill="#2c3e50" font-size="16">↓</text>
+    <text x="200" y="480" class="tool-desc" fill="#8e44ad" font-size="13" font-weight="bold">📚 Quarto (중앙 조립 &amp; 완성)</text>
+    <text x="120" y="480" class="tool-desc" fill="#2c3e50" font-size="16">→</text>
+    <text x="110" y="495" class="tool-desc" fill="#e74c3c" font-size="13" font-weight="bold">📄 출판물 (오른쪽 결과)</text>
+    <text x="180" y="512" class="tool-desc" fill="#34495e" font-size="9">"AI Fragments (Left) → Quarto Hub → Publications (Right)"</text>
+  </g>  
+  
+</svg>

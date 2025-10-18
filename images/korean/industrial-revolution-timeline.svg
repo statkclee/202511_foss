@@ -1,0 +1,213 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 900" width="1400" height="900">
+  <defs>
+    <style><![CDATA[
+      .title { font-family: Inter, Segoe UI, Arial, sans-serif; font-size: 40px; font-weight: 900; fill: #f8fafc; }
+      .subtitle { font-family: Inter, Segoe UI, Arial, sans-serif; font-size: 22px; font-weight: 600; fill: #cbd5e1; }
+      .h1 { font-family: Inter, Segoe UI, Arial, sans-serif; font-size: 26px; font-weight: 800; fill: #ffffff; }
+      .h2 { font-family: Inter, Segoe UI, Arial, sans-serif; font-size: 20px; font-weight: 800; fill: #f1f5f9; }
+      .p { font-family: Inter, Segoe UI, Arial, sans-serif; font-size: 16px; font-weight: 600; fill: #e5e7eb; }
+      .small { font-family: Inter, Segoe UI, Arial, sans-serif; font-size: 14px; font-weight: 700; fill: #cbd5e1; }
+      .year { font-family: Inter, Segoe UI, Arial, sans-serif; font-size: 18px; font-weight: 900; fill: #fbbf24; }
+      .phase-title { font-family: Inter, Segoe UI, Arial, sans-serif; font-size: 24px; font-weight: 800; }
+      .barrier-text { font-family: Inter, Segoe UI, Arial, sans-serif; font-size: 14px; font-weight: 600; fill: #f87171; }
+    ]]></style>
+
+    <!-- Background -->
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+
+    <!-- Phase gradients -->
+    <linearGradient id="gradPhase1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3b82f6"/>
+      <stop offset="100%" stop-color="#2563eb"/>
+    </linearGradient>
+
+    <linearGradient id="gradPhase2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#d97706"/>
+    </linearGradient>
+
+    <linearGradient id="gradPhase3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10b981"/>
+      <stop offset="100%" stop-color="#059669"/>
+    </linearGradient>
+
+    <!-- Effects -->
+    <filter id="shadow"><feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000" flood-opacity="0.3"/></filter>
+    <filter id="glow"><feDropShadow dx="0" dy="0" stdDeviation="12" flood-color="#fbbf24" flood-opacity="0.4"/></filter>
+
+    <!-- Arrow markers -->
+    <marker id="arrow" markerWidth="12" markerHeight="8" refX="10" refY="4" orient="auto">
+      <polygon points="0 0, 12 4, 0 8" fill="#64748b"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1400" height="900" fill="url(#bg)"/>
+
+  <!-- Header -->
+  <text x="700" y="60" text-anchor="middle" class="title">산업혁명이 200년 걸린 이유</text>
+  <text x="700" y="95" text-anchor="middle" class="subtitle">Why Industrial Revolution Took 200 Years (1702-1913)</text>
+
+  <!-- Timeline -->
+  <g transform="translate(100,140)">
+    <!-- Timeline line -->
+    <line x1="0" y1="50" x2="1200" y2="50" stroke="#64748b" stroke-width="4"/>
+    
+    <!-- Phase 1: Invention (1702-1800) -->
+    <g>
+      <rect x="0" y="80" width="400" height="200" rx="15" fill="url(#gradPhase1)" filter="url(#shadow)" opacity="0.9"/>
+      <text x="200" y="110" text-anchor="middle" class="phase-title" fill="#000">1단계: 발명 (1702-1800)</text>
+      <text x="200" y="135" text-anchor="middle" class="small" fill="#000">Invention Phase - 98년</text>
+      
+      <!-- Steam engine icon -->
+      <text x="200" y="170" text-anchor="middle" style="font-size: 40px;">⚙️</text>
+      
+      <g transform="translate(20,180)">
+        <text x="0" y="0" class="h2" fill="#1e40af">주요 발명:</text>
+        <text x="0" y="25" class="p" fill="#000">• 1702: 뉴커먼 증기기관</text>
+        <text x="0" y="45" class="p" fill="#000">• 1769: 와트 개량 증기기관</text>
+        <text x="0" y="65" class="p" fill="#000">• 1785: 방직기계 개발</text>
+      </g>
+      
+      <!-- Timeline marker -->
+      <circle cx="200" cy="50" r="8" fill="#3b82f6"/>
+      <text x="200" y="30" text-anchor="middle" class="year">1702</text>
+    </g>
+
+    <!-- Barriers 1 -->
+    <g transform="translate(350,300)">
+      <rect x="0" y="0" width="150" height="120" rx="10" fill="#1f2937" opacity="0.8"/>
+      <text x="75" y="20" text-anchor="middle" class="barrier-text">장벽들</text>
+      <text x="10" y="40" class="barrier-text">• 기술 미성숙</text>
+      <text x="10" y="60" class="barrier-text">• 높은 비용</text>
+      <text x="10" y="80" class="barrier-text">• 숙련공 부족</text>
+      <text x="10" y="100" class="barrier-text">• 인프라 미비</text>
+    </g>
+
+    <!-- Phase 2: Adoption & Infrastructure (1800-1870) -->
+    <g transform="translate(400,0)">
+      <rect x="0" y="80" width="400" height="200" rx="15" fill="url(#gradPhase2)" filter="url(#shadow)" opacity="0.9"/>
+      <text x="200" y="110" text-anchor="middle" class="phase-title" fill="#000">2단계: 도입 및 인프라 (1800-1870)</text>
+      <text x="200" y="135" text-anchor="middle" class="small" fill="#000">Adoption &amp; Infrastructure - 70년</text>
+      
+      <!-- Factory icon -->
+      <text x="200" y="170" text-anchor="middle" style="font-size: 40px;">🏭</text>
+      
+      <g transform="translate(20,180)">
+        <text x="0" y="0" class="h2" fill="#d97706">주요 변화:</text>
+        <text x="0" y="25" class="p" fill="#000">• 1825: 철도 개통</text>
+        <text x="0" y="45" class="p" fill="#000">• 1840s: 공장제 확산</text>
+        <text x="0" y="65" class="p" fill="#000">• 1860s: 대량 철강 생산</text>
+      </g>
+      
+      <!-- Timeline marker -->
+      <circle cx="200" cy="50" r="8" fill="#f59e0b"/>
+      <text x="200" y="30" text-anchor="middle" class="year">1800</text>
+    </g>
+
+    <!-- Barriers 2 -->
+    <g transform="translate(750,300)">
+      <rect x="0" y="0" width="150" height="120" rx="10" fill="#1f2937" opacity="0.8"/>
+      <text x="75" y="20" text-anchor="middle" class="barrier-text">장벽들</text>
+      <text x="10" y="40" class="barrier-text">• 자본 부족</text>
+      <text x="10" y="60" class="barrier-text">• 사회 저항</text>
+      <text x="10" y="80" class="barrier-text">• 제도적 관성</text>
+      <text x="10" y="100" class="barrier-text">• 기술 통합 어려움</text>
+    </g>
+
+    <!-- Phase 3: Mass Production (1870-1913) -->
+    <g transform="translate(800,0)">
+      <rect x="0" y="80" width="400" height="200" rx="15" fill="url(#gradPhase3)" filter="url(#shadow)" opacity="0.9"/>
+      <text x="200" y="110" text-anchor="middle" class="phase-title" fill="#000">3단계: 대량 생산 (1870-1913)</text>
+      <text x="200" y="135" text-anchor="middle" class="small" fill="#000">Mass Production - 43년</text>
+      
+      <!-- Assembly line icon -->
+      <text x="200" y="170" text-anchor="middle" style="font-size: 40px;">🔧</text>
+      
+      <g transform="translate(20,180)">
+        <text x="0" y="0" class="h2" fill="#059669">완성 단계:</text>
+        <text x="0" y="25" class="p" fill="#000">• 1886: 전기 동력 도입</text>
+        <text x="0" y="45" class="p" fill="#000">• 1908: 포드 T 모델</text>
+        <text x="0" y="65" class="p" fill="#000">• 1913: 컨베이어 벨트</text>
+      </g>
+      
+      <!-- Timeline marker -->
+      <circle cx="200" cy="50" r="8" fill="#10b981"/>
+      <text x="200" y="30" text-anchor="middle" class="year">1870</text>
+    </g>
+
+    <!-- Final marker -->
+    <circle cx="1200" cy="50" r="8" fill="#34d399" filter="url(#glow)"/>
+    <text x="1200" y="30" text-anchor="middle" class="year">1913</text>
+  </g>
+
+  <!-- Key barriers explanation -->
+  <g transform="translate(100,500)">
+    <rect x="0" y="0" width="1200" height="320" rx="20" fill="#1f2937" opacity="0.8" filter="url(#shadow)"/>
+    <text x="600" y="35" text-anchor="middle" class="h1" fill="#fbbf24">왜 200년이나 걸렸을까?</text>
+    
+    <g transform="translate(50,60)">
+      <!-- Column 1: Technical Barriers -->
+      <g transform="translate(0,0)">
+        <text x="0" y="0" class="h2" fill="#3b82f6">🔬 기술적 장벽</text>
+        <text x="0" y="30" class="p">• 초기 증기기관 효율성 극히 낮음</text>
+        <text x="0" y="50" class="p">• 정밀 가공 기술 부족</text>
+        <text x="0" y="70" class="p">• 재료 공학 미발달</text>
+        <text x="0" y="90" class="p">• 표준화된 부품 제조 불가</text>
+        <text x="0" y="110" class="p">• 측정 기술 부족</text>
+      </g>
+
+      <!-- Column 2: Economic Barriers -->
+      <g transform="translate(300,0)">
+        <text x="0" y="0" class="h2" fill="#f59e0b">💰 경제적 장벽</text>
+        <text x="0" y="30" class="p">• 막대한 초기 투자 비용</text>
+        <text x="0" y="50" class="p">• 자본 축적 시간 필요</text>
+        <text x="0" y="70" class="p">• 투자 회수 기간 불확실</text>
+        <text x="0" y="90" class="p">• 은행 시스템 미발달</text>
+        <text x="0" y="110" class="p">• 리스크 관리 개념 부재</text>
+      </g>
+
+      <!-- Column 3: Social Barriers -->
+      <g transform="translate(600,0)">
+        <text x="0" y="0" class="h2" fill="#10b981">👥 사회적 장벽</text>
+        <text x="0" y="30" class="p">• 기존 수공업자들의 반발</text>
+        <text x="0" y="50" class="p">• 농업 중심 사회 구조</text>
+        <text x="0" y="70" class="p">• 교육 받은 노동력 부족</text>
+        <text x="0" y="90" class="p">• 전통적 사고방식 고착</text>
+        <text x="0" y="110" class="p">• 사회적 이동성 제한</text>
+      </g>
+
+      <!-- Column 4: Infrastructure Barriers -->
+      <g transform="translate(900,0)">
+        <text x="0" y="0" class="h2" fill="#8b5cf6">🏗️ 인프라 장벽</text>
+        <text x="0" y="30" class="p">• 교통 인프라 부족</text>
+        <text x="0" y="50" class="p">• 전력 공급 시스템 미비</text>
+        <text x="0" y="70" class="p">• 통신 네트워크 부재</text>
+        <text x="0" y="90" class="p">• 원자재 공급망 미구축</text>
+        <text x="0" y="110" class="p">• 도시화 진행 필요</text>
+      </g>
+
+      <!-- Bottom insight -->
+      <g transform="translate(0,150)">
+        <rect x="0" y="0" width="1100" height="80" rx="15" fill="#065f46" opacity="0.8"/>
+        <text x="550" y="25" text-anchor="middle" class="h2" fill="#6ee7b7">핵심 통찰</text>
+        <text x="550" y="50" text-anchor="middle" class="p" fill="#6ee7b7">혁신적 기술이 사회 전체를 변화시키려면 기술 자체보다는</text>
+        <text x="550" y="70" text-anchor="middle" class="p" fill="#6ee7b7">**무형자본**(제도, 인력, 문화, 인프라)의 구축이 더 오래 걸린다</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- Modern comparison -->
+  <g transform="translate(1050,100)">
+    <rect x="0" y="0" width="300" height="150" rx="15" fill="#7c3aed" opacity="0.8" filter="url(#shadow)"/>
+    <text x="150" y="25" text-anchor="middle" class="h2" fill="#e9d5ff">AI와 비교하면?</text>
+    <text x="150" y="50" text-anchor="middle" class="small" fill="#e9d5ff">ChatGPT: 2개월 → 1억 사용자</text>
+    <text x="20" y="80" class="p" fill="#e9d5ff">• 디지털 인프라 기구축</text>
+    <text x="20" y="100" class="p" fill="#e9d5ff">• 글로벌 연결성</text>
+    <text x="20" y="120" class="p" fill="#e9d5ff">• 즉시 배포 가능</text>
+    <text x="20" y="140" class="p" fill="#e9d5ff">• 물리적 제약 최소</text>
+  </g>
+</svg>

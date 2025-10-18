@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1200" height="900" viewBox="0 40 1200 900" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="leftGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#FEF3C7;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FDE68A;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="rightGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#DBEAFE;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#BFDBFE;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="arrowGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#8B5CF6" />
+      <stop offset="100%" style="stop-color:#06B6D4" />
+    </linearGradient>
+    
+    <filter id="shadow">
+      <feDropShadow dx="2" dy="4" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1200" height="900" fill="#F9FAFB"/>
+  
+  <!-- Left side: Traditional Document -->
+  <g id="traditional-doc">
+    <!-- Background -->
+    <rect x="50" y="80" width="500" height="750" rx="20" fill="url(#leftGradient)" stroke="#F59E0B" stroke-width="3" filter="url(#shadow)"/>
+    
+    <!-- Title -->
+    <text x="300" y="120" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#92400E">
+      전통적 문서 (HWP/PDF)
+    </text>
+    
+    <!-- Document icon -->
+    <rect x="220" y="140" width="160" height="200" rx="10" fill="white" stroke="#D97706" stroke-width="2"/>
+    <rect x="240" y="160" width="120" height="8" fill="#D97706"/>
+    <rect x="240" y="180" width="100" height="6" fill="#F59E0B"/>
+    <rect x="240" y="195" width="80" height="6" fill="#F59E0B"/>
+    <rect x="240" y="210" width="110" height="6" fill="#F59E0B"/>
+    
+    <!-- Chart representation -->
+    <rect x="240" y="230" width="120" height="80" fill="#FDE68A" stroke="#D97706"/>
+    <rect x="250" y="270" width="15" height="30" fill="#D97706"/>
+    <rect x="270" y="250" width="15" height="50" fill="#D97706"/>
+    <rect x="290" y="260" width="15" height="40" fill="#D97706"/>
+    <rect x="310" y="240" width="15" height="60" fill="#D97706"/>
+    <rect x="330" y="255" width="15" height="45" fill="#D97706"/>
+    
+    <!-- Characteristics -->
+    <text x="100" y="380" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#92400E">특징:</text>
+    
+    <circle cx="110" cy="405" r="4" fill="#DC2626"/>
+    <text x="125" y="410" font-family="Arial, sans-serif" font-size="14" fill="#374151">정적 콘텐츠</text>
+    
+    <circle cx="110" cy="430" r="4" fill="#DC2626"/>
+    <text x="125" y="435" font-family="Arial, sans-serif" font-size="14" fill="#374151">읽기 전용</text>
+    
+    <circle cx="110" cy="455" r="4" fill="#DC2626"/>
+    <text x="125" y="460" font-family="Arial, sans-serif" font-size="14" fill="#374151">고정된 시점의 데이터</text>
+    
+    <circle cx="110" cy="480" r="4" fill="#DC2626"/>
+    <text x="125" y="485" font-family="Arial, sans-serif" font-size="14" fill="#374151">일방향 정보 전달</text>
+    
+    <circle cx="110" cy="505" r="4" fill="#DC2626"/>
+    <text x="125" y="510" font-family="Arial, sans-serif" font-size="14" fill="#374151">수동 업데이트 필요</text>
+    
+    <circle cx="110" cy="530" r="4" fill="#DC2626"/>
+    <text x="125" y="535" font-family="Arial, sans-serif" font-size="14" fill="#374151">단일 관점</text>
+    
+    <!-- Workflow -->
+    <text x="100" y="570" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#92400E">작성 과정:</text>
+    
+    <rect x="100" y="590" width="400" height="40" rx="5" fill="white" stroke="#F59E0B" stroke-width="1"/>
+    <text x="300" y="615" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#92400E">
+      데이터 수집 → 분석 → 차트 생성 → 복사/붙여넣기 → 문서 완성
+    </text>
+    
+    <!-- Limitations -->
+    <text x="100" y="660" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#92400E">한계:</text>
+    
+    <text x="110" y="685" font-family="Arial, sans-serif" font-size="13" fill="#7C2D12">⚠️ 데이터 변경 시 전체 재작업</text>
+    <text x="110" y="705" font-family="Arial, sans-serif" font-size="13" fill="#7C2D12">⚠️ 상호작용 불가능</text>
+    <text x="110" y="725" font-family="Arial, sans-serif" font-size="13" fill="#7C2D12">⚠️ 버전 관리 어려움</text>
+    <text x="110" y="745" font-family="Arial, sans-serif" font-size="13" fill="#7C2D12">⚠️ 협업 제약</text>
+    
+    <!-- Time label -->
+    <rect x="200" y="780" width="200" height="30" rx="15" fill="#F59E0B" opacity="0.8"/>
+    <text x="300" y="800" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white">
+      제작 시간: 수일 ~ 수주
+    </text>
+  </g>
+  
+  <!-- Right side: Dashboard -->
+  <g id="dashboard">
+    <!-- Background -->
+    <rect x="650" y="80" width="500" height="750" rx="20" fill="url(#rightGradient)" stroke="#2563EB" stroke-width="3" filter="url(#shadow)"/>
+    
+    <!-- Title -->
+    <text x="900" y="120" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#1E40AF">
+      인터랙티브 대시보드
+    </text>
+    
+    <!-- Dashboard interface -->
+    <rect x="680" y="140" width="440" height="200" rx="10" fill="white" stroke="#2563EB" stroke-width="2"/>
+    
+    <!-- Header with controls -->
+    <rect x="680" y="140" width="440" height="30" fill="#2563EB" rx="10 10 0 0"/>
+    <text x="900" y="160" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white">
+      실시간 매출 대시보드
+    </text>
+    
+    <!-- Value boxes -->
+    <rect x="700" y="180" width="80" height="50" fill="#EFF6FF" stroke="#3B82F6" stroke-width="1"/>
+    <text x="740" y="195" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#1E40AF">총 매출</text>
+    <text x="740" y="210" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#1E40AF">12.5억</text>
+    <text x="740" y="222" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#059669">+15%</text>
+    
+    <rect x="790" y="180" width="80" height="50" fill="#EFF6FF" stroke="#3B82F6" stroke-width="1"/>
+    <text x="830" y="195" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#1E40AF">신규고객</text>
+    <text x="830" y="210" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#1E40AF">1,250</text>
+    <text x="830" y="222" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#059669">+23%</text>
+    
+    <rect x="880" y="180" width="80" height="50" fill="#EFF6FF" stroke="#3B82F6" stroke-width="1"/>
+    <text x="920" y="195" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#1E40AF">전환율</text>
+    <text x="920" y="210" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#1E40AF">3.2%</text>
+    <text x="920" y="222" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#DC2626">-0.1%</text>
+    
+    <!-- Interactive chart -->
+    <rect x="700" y="240" width="400" height="90" fill="#F8FAFC" stroke="#CBD5E1"/>
+    
+    <!-- Slider control -->
+    <rect x="710" y="250" width="100" height="15" fill="#E2E8F0" rx="7"/>
+    <circle cx="760" cy="257" r="6" fill="#3B82F6"/>
+    <text x="710" y="275" font-family="Arial, sans-serif" font-size="8" fill="#64748B">기간 선택</text>
+    
+    <!-- Live chart bars -->
+    <rect x="720" y="290" width="8" height="25" fill="#3B82F6"/>
+    <rect x="735" y="285" width="8" height="30" fill="#3B82F6"/>
+    <rect x="750" y="280" width="8" height="35" fill="#3B82F6"/>
+    <rect x="765" y="275" width="8" height="40" fill="#3B82F6"/>
+    <rect x="780" y="285" width="8" height="30" fill="#3B82F6"/>
+    <rect x="795" y="290" width="8" height="25" fill="#3B82F6"/>
+    
+    <!-- Real-time indicator -->
+    <circle cx="1090" cy="160" r="4" fill="#10B981"/>
+    <text x="1100" y="165" font-family="Arial, sans-serif" font-size="8" fill="#065F46">LIVE</text>
+    
+    <!-- Filter dropdown -->
+    <rect x="820" y="250" width="80" height="20" fill="white" stroke="#3B82F6" stroke-width="1"/>
+    <text x="825" y="263" font-family="Arial, sans-serif" font-size="9" fill="#1E40AF">지역별 ▼</text>
+    <polygon points="890,255 895,260 885,260" fill="#3B82F6"/>
+    
+    <!-- Toggle switches -->
+    <rect x="920" y="250" width="30" height="12" rx="6" fill="#E2E8F0"/>
+    <circle cx="940" cy="256" r="5" fill="#10B981"/>
+    <text x="955" y="260" font-family="Arial, sans-serif" font-size="8" fill="#374151">알림</text>
+    
+    <rect x="980" y="250" width="30" height="12" rx="6" fill="#3B82F6"/>
+    <circle cx="995" cy="256" r="5" fill="white"/>
+    <text x="1015" y="260" font-family="Arial, sans-serif" font-size="8" fill="#374151">자동새로고침</text>
+    
+    <!-- Progress indicator -->
+    <rect x="820" y="280" width="100" height="6" rx="3" fill="#E2E8F0"/>
+    <rect x="820" y="280" width="68" height="6" rx="3" fill="#10B981"/>
+    <text x="820" y="298" font-family="Arial, sans-serif" font-size="8" fill="#374151">목표 달성률: 68%</text>
+    
+    <!-- Status indicators -->
+    <circle cx="970" cy="285" r="3" fill="#10B981"/>
+    <text x="978" y="289" font-family="Arial, sans-serif" font-size="8" fill="#065F46">서버 정상</text>
+    
+    <circle cx="970" cy="300" r="3" fill="#F59E0B"/>
+    <text x="978" y="304" font-family="Arial, sans-serif" font-size="8" fill="#92400E">데이터 지연 2분</text>
+    
+    <!-- Mini trend chart -->
+    <rect x="1020" y="280" width="60" height="30" fill="#F8FAFC" stroke="#CBD5E1"/>
+    <polyline points="1025,305 1030,300 1035,295 1040,298 1045,290 1050,285 1055,280 1060,282 1065,278 1070,275" 
+              fill="none" stroke="#10B981" stroke-width="1.5"/>
+    <text x="1050" y="318" text-anchor="middle" font-family="Arial, sans-serif" font-size="7" fill="#374151">7일 추세</text>
+    
+    <!-- Characteristics -->
+    <text x="700" y="380" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#1E40AF">특징:</text>
+    
+    <circle cx="710" cy="405" r="4" fill="#10B981"/>
+    <text x="725" y="410" font-family="Arial, sans-serif" font-size="14" fill="#374151">동적 콘텐츠</text>
+    
+    <circle cx="710" cy="430" r="4" fill="#10B981"/>
+    <text x="725" y="435" font-family="Arial, sans-serif" font-size="14" fill="#374151">인터랙티브</text>
+    
+    <circle cx="710" cy="455" r="4" fill="#10B981"/>
+    <text x="725" y="460" font-family="Arial, sans-serif" font-size="14" fill="#374151">실시간 데이터 연동</text>
+    
+    <circle cx="710" cy="480" r="4" fill="#10B981"/>
+    <text x="725" y="485" font-family="Arial, sans-serif" font-size="14" fill="#374151">탐색 가능</text>
+    
+    <circle cx="710" cy="505" r="4" fill="#10B981"/>
+    <text x="725" y="510" font-family="Arial, sans-serif" font-size="14" fill="#374151">자동 업데이트</text>
+    
+    <circle cx="710" cy="530" r="4" fill="#10B981"/>
+    <text x="725" y="535" font-family="Arial, sans-serif" font-size="14" fill="#374151">다각도 분석</text>
+    
+    <!-- Workflow -->
+    <text x="700" y="570" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#1E40AF">작성 과정:</text>
+    
+    <rect x="700" y="590" width="400" height="40" rx="5" fill="white" stroke="#2563EB" stroke-width="1"/>
+    <text x="900" y="615" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#1E40AF">
+      코드 작성 → 데이터 연결 → 자동 시각화 → 배포 → 지속적 업데이트
+    </text>
+    
+    <!-- Advantages -->
+    <text x="700" y="660" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#1E40AF">장점:</text>
+    
+    <text x="710" y="685" font-family="Arial, sans-serif" font-size="13" fill="#166534">✅ 데이터 변경 시 자동 반영</text>
+    <text x="710" y="705" font-family="Arial, sans-serif" font-size="13" fill="#166534">✅ 사용자 맞춤 탐색</text>
+    <text x="710" y="725" font-family="Arial, sans-serif" font-size="13" fill="#166534">✅ 실시간 협업</text>
+    <text x="710" y="745" font-family="Arial, sans-serif" font-size="13" fill="#166534">✅ 모바일 접근 가능</text>
+    
+    <!-- Time label -->
+    <rect x="800" y="780" width="200" height="30" rx="15" fill="#2563EB" opacity="0.8"/>
+    <text x="900" y="800" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white">
+      제작 시간: 수시간 ~ 수일
+    </text>
+  </g>
+  
+  <!-- Central transition arrow -->
+  <g id="transition-arrow" transform="translate(30, 0)">
+    <defs>
+      <marker id="bigArrowhead" markerWidth="20" markerHeight="15" refX="15" refY="7.5" orient="auto">
+        <polygon points="0 0, 13 7.5, 0 15" fill="url(#arrowGradient)" />
+      </marker>
+    </defs>
+    
+    <line x1="560" y1="450" x2="640" y2="450" stroke="url(#arrowGradient)" stroke-width="8" marker-end="url(#bigArrowhead)"/>
+    
+    <!-- Transformation label -->
+    <rect x="420" y="420" width="160" height="60" rx="30" fill="white" stroke="url(#arrowGradient)" stroke-width="3" filter="url(#shadow)"/>
+    <text x="500" y="440" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#8B5CF6">패러다임</text>
+    <text x="500" y="455" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#8B5CF6">전환</text>
+    <text x="500" y="470" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#6B46C1">Document → App</text>
+  </g>
+  
+  <!-- Bottom comparison -->
+  <rect x="50" y="850" width="1100" height="40" rx="10" fill="white" stroke="#D1D5DB" stroke-width="1" opacity="0.95"/>
+  <text x="600" y="875" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#1F2937">
+    핵심 질문: "이것은 문서인가, 애플리케이션인가?" → 더 이상 구분이 무의미
+  </text>
+</svg>

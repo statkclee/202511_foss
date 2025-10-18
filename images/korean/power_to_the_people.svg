@@ -1,0 +1,241 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900">
+  <defs>
+    <style>
+      .title-text { font-size: 26px; font-weight: bold; }
+      .subtitle-text { font-size: 16px; }
+      .head-label { font-size: 18px; font-weight: bold; }
+      .arrow-text { font-size: 20px; font-weight: bold; }
+      .example-title { font-size: 16px; font-weight: bold; }
+      .example-text { font-size: 14px; }
+      .chat-text { font-size: 16px; font-style: italic; }
+      .small-text { font-size: 12px; }
+    </style>
+    
+    <!-- Government gradient (dark blue/military) -->
+    <linearGradient id="govGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1e40af;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Corporation gradient (gold/power) -->
+    <linearGradient id="corpGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#d97706;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f59e0b;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Consumer gradient (friendly green) -->
+    <linearGradient id="consumerGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#059669;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#10b981;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- LLM disruption gradient -->
+    <linearGradient id="llmGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#7c3aed;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#a855f7;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Arrow markers -->
+    <marker id="traditionalArrow" markerWidth="12" markerHeight="10" refX="10" refY="5" orient="auto">
+      <polygon points="0 0, 12 5, 0 10" fill="#374151"/>
+    </marker>
+    
+    <marker id="llmArrow" markerWidth="12" markerHeight="10" refX="10" refY="5" orient="auto">
+      <polygon points="0 0, 12 5, 0 10" fill="#7c3aed"/>
+    </marker>
+    
+    <!-- Shadow filter -->
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="3" dy="3" stdDeviation="4" flood-opacity="0.3"/>
+    </filter>
+    
+    <!-- Glow filter -->
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+      <feMerge> 
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1600" height="900" fill="#f8fafc"/>
+  
+  <!-- Split background for contrast -->
+  <rect width="800" height="900" fill="#1f2937" opacity="0.1"/>
+  <rect x="800" y="0" width="800" height="900" fill="#7c3aed" opacity="0.05"/>
+  
+  <!-- Title -->
+  <text x="800" y="40" text-anchor="middle" font-family="Arial, sans-serif" class="title-text" fill="#1e293b">
+    Traditional vs LLM Technology Diffusion: A Paradigm Shift
+  </text>
+  <text x="800" y="65" text-anchor="middle" font-family="Arial, sans-serif" class="subtitle-text" fill="#64748b">
+    전통적 기술확산 vs LLM 혁명: 패러다임의 전환
+  </text>
+  
+  <!-- Section Headers -->
+  <g id="section-headers">
+    <rect x="50" y="100" width="700" height="50" rx="10" fill="#374151" opacity="0.8"/>
+    <text x="400" y="125" text-anchor="middle" font-family="Arial, sans-serif" class="head-label" fill="white">
+      전통적 기술확산 (Traditional)
+    </text>
+    <text x="400" y="145" text-anchor="middle" font-family="Arial, sans-serif" class="example-text" fill="rgba(255,255,255,0.8)">
+      Top-Down, Slow, Restrictive
+    </text>
+    
+    <rect x="850" y="100" width="700" height="50" rx="10" fill="#7c3aed" opacity="0.8"/>
+    <text x="1200" y="125" text-anchor="middle" font-family="Arial, sans-serif" class="head-label" fill="white">
+      LLM 혁명 (LLM Revolution)
+    </text>
+    <text x="1200" y="145" text-anchor="middle" font-family="Arial, sans-serif" class="example-text" fill="rgba(255,255,255,0.8)">
+      Bottom-Up, Fast, Democratic
+    </text>
+  </g>
+  
+  <!-- TRADITIONAL SIDE - Hierarchical Structure -->
+  <g id="traditional-hierarchy">
+    <!-- Government (TOP - Large, Dominant) -->
+    <rect x="150" y="200" width="150" height="100" rx="10" fill="url(#govGradient)" filter="url(#shadow)"/>
+    <text x="225" y="235" text-anchor="middle" font-family="Arial, sans-serif" class="head-label" fill="white">정부/군사</text>
+    <text x="225" y="255" text-anchor="middle" font-family="Arial, sans-serif" class="example-text" fill="white">GOVERNMENT</text>
+    <text x="225" y="275" text-anchor="middle" font-family="Arial, sans-serif" class="small-text" fill="white">🔒 TOP SECRET</text>
+    <text x="225" y="290" text-anchor="middle" font-family="Arial, sans-serif" class="small-text" fill="white">$$$$ Capital Intensive</text>
+    
+    <!-- Arrow down -->
+    <path d="M 225 310 L 225 370" stroke="#dc2626" stroke-width="6" fill="none" marker-end="url(#traditionalArrow)"/>
+    <text x="250" y="340" font-family="Arial, sans-serif" class="small-text" fill="#dc2626">20-50 YEARS</text>
+    
+    <!-- Corporation (MIDDLE) -->
+    <rect x="180" y="380" width="120" height="80" rx="8" fill="url(#corpGradient)" filter="url(#shadow)"/>
+    <text x="240" y="410" text-anchor="middle" font-family="Arial, sans-serif" class="example-title" fill="white">기업</text>
+    <text x="240" y="430" text-anchor="middle" font-family="Arial, sans-serif" class="example-text" fill="white">CORPORATION</text>
+    <text x="240" y="450" text-anchor="middle" font-family="Arial, sans-serif" class="small-text" fill="white">전문가 필요</text>
+    
+    <!-- Arrow down -->
+    <path d="M 240 470 L 240 520" stroke="#dc2626" stroke-width="6" fill="none" marker-end="url(#traditionalArrow)"/>
+    <text x="265" y="495" font-family="Arial, sans-serif" class="small-text" fill="#dc2626">5-10 YEARS</text>
+    
+    <!-- Consumer (BOTTOM - Small) -->
+    <rect x="210" y="530" width="80" height="60" rx="6" fill="#6b7280" filter="url(#shadow)"/>
+    <text x="250" y="555" text-anchor="middle" font-family="Arial, sans-serif" class="example-text" fill="white">소비자</text>
+    <text x="250" y="575" text-anchor="middle" font-family="Arial, sans-serif" class="small-text" fill="white">LIMITED</text>
+    
+    <!-- Examples -->
+    <g transform="translate(400, 200)">
+      <text x="0" y="0" font-family="Arial, sans-serif" class="example-title" fill="#374151">전통적 예시:</text>
+      <text x="0" y="25" font-family="Arial, sans-serif" class="example-text" fill="#6b7280">• 핵무기 → 원자력 발전</text>
+      <text x="0" y="45" font-family="Arial, sans-serif" class="example-text" fill="#6b7280">• GPS (군사) → 민간 내비게이션</text>
+      <text x="0" y="65" font-family="Arial, sans-serif" class="example-text" fill="#6b7280">• 인터넷 (ARPANET) → WWW</text>
+      <text x="0" y="85" font-family="Arial, sans-serif" class="example-text" fill="#6b7280">• 암호학 → 디지털 보안</text>
+      <text x="0" y="105" font-family="Arial, sans-serif" class="example-text" fill="#6b7280">• 컴퓨팅 → 개인용 컴퓨터</text>
+      
+      <!-- Characteristics -->
+      <text x="0" y="150" font-family="Arial, sans-serif" class="example-title" fill="#dc2626">특징:</text>
+      <text x="0" y="175" font-family="Arial, sans-serif" class="example-text" fill="#dc2626">⏰ 수십년 소요</text>
+      <text x="0" y="195" font-family="Arial, sans-serif" class="example-text" fill="#dc2626">💰 막대한 자본 필요</text>
+      <text x="0" y="215" font-family="Arial, sans-serif" class="example-text" fill="#dc2626">🎓 전문 지식 필수</text>
+      <text x="0" y="235" font-family="Arial, sans-serif" class="example-text" fill="#dc2626">🔒 접근 제한적</text>
+    </g>
+  </g>
+  
+  <!-- Central Dividing Line -->
+  <g id="dividing-line">
+    <line x1="800" y1="100" x2="800" y2="800" stroke="#f59e0b" stroke-width="4" stroke-dasharray="10,10"/>
+    <circle cx="800" cy="450" r="40" fill="#f59e0b" filter="url(#shadow)"/>
+    <text x="800" y="445" text-anchor="middle" font-family="Arial, sans-serif" class="head-label" fill="white">VS</text>
+    <text x="800" y="460" text-anchor="middle" font-family="Arial, sans-serif" class="small-text" fill="white">패러다임</text>
+    <text x="800" y="475" text-anchor="middle" font-family="Arial, sans-serif" class="small-text" fill="white">전환</text>
+  </g>
+  
+  <!-- LLM SIDE - Democratic Structure -->
+  <g id="llm-democracy">
+    <!-- Consumer (TOP - Large, Empowered) -->
+    <rect x="1000" y="200" width="200" height="120" rx="10" fill="url(#consumerGradient)" filter="url(#shadow)" opacity="0.9"/>
+    <text x="1100" y="235" text-anchor="middle" font-family="Arial, sans-serif" class="head-label" fill="white">소비자 직접 접근</text>
+    <text x="1100" y="255" text-anchor="middle" font-family="Arial, sans-serif" class="example-text" fill="white">DIRECT CONSUMER ACCESS</text>
+    <text x="1100" y="275" text-anchor="middle" font-family="Arial, sans-serif" class="small-text" fill="white">🔓 FREE &amp; OPEN</text>
+    <text x="1100" y="295" text-anchor="middle" font-family="Arial, sans-serif" class="small-text" fill="white">📱 In Your Pocket</text>
+    <text x="1100" y="310" text-anchor="middle" font-family="Arial, sans-serif" class="small-text" fill="white">400M+ Weekly Users</text>
+    
+    <!-- Smartphone illustrations -->
+    <g transform="translate(950, 350)">
+      <!-- Multiple phones -->
+      <rect x="0" y="0" width="30" height="50" rx="5" fill="#1f2937" stroke="white" stroke-width="1"/>
+      <rect x="50" y="0" width="30" height="50" rx="5" fill="#1f2937" stroke="white" stroke-width="1"/>
+      <rect x="100" y="0" width="30" height="50" rx="5" fill="#1f2937" stroke="white" stroke-width="1"/>
+      <rect x="150" y="0" width="30" height="50" rx="5" fill="#1f2937" stroke="white" stroke-width="1"/>
+      <rect x="200" y="0" width="30" height="50" rx="5" fill="#1f2937" stroke="white" stroke-width="1"/>
+      
+      <text x="125" y="70" text-anchor="middle" font-family="Arial, sans-serif" class="small-text" fill="#7c3aed">
+        Everyone has access
+      </text>
+    </g>
+    
+    <!-- Arrow up (reverse flow) -->
+    <path d="M 1100 430 L 1100 370" stroke="#10b981" stroke-width="6" fill="none" marker-end="url(#llmArrow)"/>
+    <text x="1125" y="400" font-family="Arial, sans-serif" class="small-text" fill="#10b981">INSTANT</text>
+    
+    <!-- Corporation (MIDDLE - Following) -->
+    <rect x="1050" y="450" width="120" height="70" rx="8" fill="#f59e0b" filter="url(#shadow)" opacity="0.7"/>
+    <text x="1110" y="475" text-anchor="middle" font-family="Arial, sans-serif" class="example-text" fill="white">기업 추격</text>
+    <text x="1110" y="495" text-anchor="middle" font-family="Arial, sans-serif" class="small-text" fill="white">CORP CATCHING UP</text>
+    <text x="1110" y="510" text-anchor="middle" font-family="Arial, sans-serif" class="small-text" fill="white">Microsoft, Google</text>
+    
+    <!-- Arrow up -->
+    <path d="M 1110 530 L 1110 470" stroke="#10b981" stroke-width="4" fill="none" marker-end="url(#llmArrow)"/>
+    
+    <!-- Government (BOTTOM - Lagging) -->
+    <rect x="1070" y="550" width="100" height="60" rx="6" fill="#6b7280" filter="url(#shadow)" opacity="0.5"/>
+    <text x="1120" y="575" text-anchor="middle" font-family="Arial, sans-serif" class="small-text" fill="white">정부 규제 모색</text>
+    <text x="1120" y="590" text-anchor="middle" font-family="Arial, sans-serif" class="small-text" fill="white">GOV LAGGING</text>
+    
+    <!-- Examples -->
+    <g transform="translate(1250, 200)">
+      <text x="0" y="0" font-family="Arial, sans-serif" class="example-title" fill="#7c3aed">LLM 예시:</text>
+      <text x="0" y="25" font-family="Arial, sans-serif" class="example-text" fill="#6b7280">• ChatGPT (2022.11)</text>
+      <text x="0" y="45" font-family="Arial, sans-serif" class="example-text" fill="#6b7280">• Claude, Gemini</text>
+      <text x="0" y="65" font-family="Arial, sans-serif" class="example-text" fill="#6b7280">• Copilot, Midjourney</text>
+      <text x="0" y="85" font-family="Arial, sans-serif" class="example-text" fill="#6b7280">• "Hi ChatGPT, how to..."</text>
+      
+      <!-- Characteristics -->
+      <text x="0" y="130" font-family="Arial, sans-serif" class="example-title" fill="#10b981">특징:</text>
+      <text x="0" y="155" font-family="Arial, sans-serif" class="example-text" fill="#10b981">⚡ 2개월만에 1억 사용자</text>
+      <text x="0" y="175" font-family="Arial, sans-serif" class="example-text" fill="#10b981">💸 무료 또는 저렴</text>
+      <text x="0" y="195" font-family="Arial, sans-serif" class="example-text" fill="#10b981">👥 누구나 사용 가능</text>
+      <text x="0" y="215" font-family="Arial, sans-serif" class="example-text" fill="#10b981">🔓 즉시 접근</text>
+      
+      <!-- Quote -->
+      <rect x="-20" y="240" width="180" height="80" rx="10" fill="#7c3aed" opacity="0.1"/>
+      <text x="70" y="265" text-anchor="middle" font-family="Arial, sans-serif" class="chat-text" fill="#7c3aed">
+        "ChatGPT fastest growing
+      </text>
+      <text x="70" y="285" text-anchor="middle" font-family="Arial, sans-serif" class="chat-text" fill="#7c3aed">
+        consumer app in history"
+      </text>
+      <text x="70" y="305" text-anchor="middle" font-family="Arial, sans-serif" class="small-text" fill="#7c3aed">
+        - Andrej Karpathy
+      </text>
+    </g>
+  </g>
+  
+  
+  <!-- Key Insight Banner -->
+  <g id="key-insight-banner">
+    <rect x="200" y="750" width="1200" height="80" rx="15" fill="#f59e0b" filter="url(#shadow)" opacity="0.95"/>
+    <text x="800" y="780" text-anchor="middle" font-family="Arial, sans-serif" class="arrow-text" fill="white">
+      "Power to the People" - 기술 권력의 민주화
+    </text>
+    <text x="800" y="805" text-anchor="middle" font-family="Arial, sans-serif" class="example-text" fill="white">
+      LLMs flip the script: From top-down gatekeeping to bottom-up empowerment
+    </text>
+    <text x="800" y="820" text-anchor="middle" font-family="Arial, sans-serif" class="small-text" fill="rgba(255,255,255,0.9)">
+      전통적 하향식 통제에서 상향식 권한 부여로의 패러다임 전환
+    </text>
+  </g>
+  
+  <!-- Source citation -->
+  <text x="800" y="870" text-anchor="middle" font-family="Arial, sans-serif" class="small-text" fill="#9ca3af">
+    Source: Andrej Karpathy - https://karpathy.bearblog.dev/power-to-the-people/
+  </text>
+</svg>

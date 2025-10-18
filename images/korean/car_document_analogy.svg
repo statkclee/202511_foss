@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 800" width="1400" height="800">
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f8fafc;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#e2e8f0;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="carGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#e0f2f1;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#b2dfdb;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="docGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f3e5f5;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#e1bee7;stop-opacity:1" />
+    </linearGradient>
+
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="3"/>
+      <feOffset dx="2" dy="2" result="offsetblur"/>
+      <feComponentTransfer><feFuncA type="linear" slope="0.3"/></feComponentTransfer>
+      <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L7,3 z" fill="#757575"/>
+    </marker>
+  </defs>
+
+  <rect width="1400" height="800" fill="url(#bgGradient)"/>
+
+  <!-- 제목 -->
+  <text x="700" y="40" font-family="'Noto Sans KR', sans-serif" font-size="28" font-weight="bold" text-anchor="middle" fill="#2d3748">
+    제네시스 G90 = 현대 디지털 문서
+  </text>
+  <text x="700" y="65" font-family="'Noto Sans KR', sans-serif" font-size="16" text-anchor="middle" fill="#4a5568">
+    수천 개 부품 vs 수십 개 모듈의 완벽한 통합
+  </text>
+
+  <!-- 자동차 섹션 (왼쪽) -->
+  <g id="leftCar" transform="translate(50, 100)">
+    <rect x="0" y="0" width="580" height="650" rx="20" fill="url(#carGradient)" stroke="#00796b" stroke-width="3" filter="url(#shadow)"/>
+    <text x="290" y="35" font-family="'Noto Sans KR', sans-serif" font-size="22" font-weight="bold" text-anchor="middle" fill="#00695c">🚗 제네시스 G90</text>
+    <text x="290" y="55" font-family="'Noto Sans KR', sans-serif" font-size="14" text-anchor="middle" fill="#004d40">럭셔리와 기술이 융합된 시스템</text>
+
+    <!-- 1행 -->
+    <g transform="translate(30, 80)">
+      <rect width="250" height="65" rx="12" fill="#b2dfdb" stroke="#00695c" stroke-width="2"/>
+      <text x="20" y="25" font-family="Arial" font-size="24">⚙️</text>
+      <text x="130" y="25" font-family="'Noto Sans KR', sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#00695c">파워트레인</text>
+      <text x="130" y="40" font-family="'Noto Sans KR', sans-serif" font-size="11" text-anchor="middle" fill="#004d40">엔진/모터 + 배터리</text>
+      <text x="130" y="55" font-family="'Noto Sans KR', sans-serif" font-size="11" text-anchor="middle" fill="#004d40">동력 생성 시스템</text>
+    </g>
+    <g transform="translate(300, 80)">
+      <rect width="250" height="65" rx="12" fill="#b2dfdb" stroke="#00695c" stroke-width="2"/>
+      <text x="20" y="25" font-family="Arial" font-size="24">📊</text>
+      <text x="130" y="25" font-family="'Noto Sans KR', sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#00695c">클러스터</text>
+      <text x="130" y="40" font-family="'Noto Sans KR', sans-serif" font-size="11" text-anchor="middle" fill="#004d40">속도·RPM·연비</text>
+      <text x="130" y="55" font-family="'Noto Sans KR', sans-serif" font-size="11" text-anchor="middle" fill="#004d40">실시간 계기 정보</text>
+    </g>
+
+    <!-- 2행 -->
+    <g transform="translate(30, 160)">
+      <rect width="250" height="65" rx="12" fill="#b2dfdb" stroke="#00695c" stroke-width="2"/>
+      <text x="20" y="25" font-family="Arial" font-size="24">🗺️</text>
+      <text x="130" y="25" font-family="'Noto Sans KR', sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#00695c">내비게이션</text>
+      <text x="130" y="40" font-family="'Noto Sans KR', sans-serif" font-size="11" text-anchor="middle" fill="#004d40">경로 안내</text>
+      <text x="130" y="55" font-family="'Noto Sans KR', sans-serif" font-size="11" text-anchor="middle" fill="#004d40">공간 정보</text>
+    </g>
+    <g transform="translate(300, 160)">
+      <rect width="250" height="65" rx="12" fill="#b2dfdb" stroke="#00695c" stroke-width="2"/>
+      <text x="20" y="25" font-family="Arial" font-size="24">📺</text>
+      <text x="130" y="25" font-family="'Noto Sans KR', sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#00695c">인포테인먼트</text>
+      <text x="130" y="40" font-family="'Noto Sans KR', sans-serif" font-size="11" text-anchor="middle" fill="#004d40">터치스크린</text>
+      <text x="130" y="55" font-family="'Noto Sans KR', sans-serif" font-size="11" text-anchor="middle" fill="#004d40">정보 디스플레이</text>
+    </g>
+
+    <!-- 3행 -->
+    <g transform="translate(30, 240)">
+      <rect width="250" height="65" rx="12" fill="#b2dfdb" stroke="#00695c" stroke-width="2"/>
+      <text x="20" y="25" font-family="Arial" font-size="24">🏗️</text>
+      <text x="130" y="25" font-family="'Noto Sans KR', sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#00695c">차체 프레임</text>
+      <text x="130" y="40" font-family="'Noto Sans KR', sans-serif" font-size="11" text-anchor="middle" fill="#004d40">알루미늄+스틸</text>
+      <text x="130" y="55" font-family="'Noto Sans KR', sans-serif" font-size="11" text-anchor="middle" fill="#004d40">기본 구조</text>
+    </g>
+    <g transform="translate(300, 240)">
+      <rect width="250" height="65" rx="12" fill="#b2dfdb" stroke="#00695c" stroke-width="2"/>
+      <text x="20" y="25" font-family="Arial" font-size="24">🎨</text>
+      <text x="130" y="25" font-family="'Noto Sans KR', sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#00695c">외관·인테리어</text>
+      <text x="130" y="40" font-family="'Noto Sans KR', sans-serif" font-size="11" text-anchor="middle" fill="#004d40">컬러·소재</text>
+      <text x="130" y="55" font-family="'Noto Sans KR', sans-serif" font-size="11" text-anchor="middle" fill="#004d40">미적 완성</text>
+    </g>
+
+    <!-- 4행 -->
+    <g transform="translate(30, 320)">
+      <rect width="250" height="65" rx="12" fill="#b2dfdb" stroke="#00695c" stroke-width="2"/>
+      <text x="20" y="25" font-family="Arial" font-size="24">🔌</text>
+      <text x="130" y="25" font-family="'Noto Sans KR', sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#00695c">전자제어장치</text>
+      <text x="130" y="40" font-family="'Noto Sans KR', sans-serif" font-size="11" text-anchor="middle" fill="#004d40">ECU·센서</text>
+      <text x="130" y="55" font-family="'Noto Sans KR', sans-serif" font-size="11" text-anchor="middle" fill="#004d40">동적 제어</text>
+    </g>
+    <g transform="translate(300, 320)">
+      <rect width="250" height="65" rx="12" fill="#b2dfdb" stroke="#00695c" stroke-width="2"/>
+      <text x="20" y="25" font-family="Arial" font-size="24">🤖</text>
+      <text x="130" y="25" font-family="'Noto Sans KR', sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#00695c">주행 보조</text>
+      <text x="130" y="40" font-family="'Noto Sans KR', sans-serif" font-size="11" text-anchor="middle" fill="#004d40">ADAS/자율주행</text>
+      <text x="130" y="55" font-family="'Noto Sans KR', sans-serif" font-size="11" text-anchor="middle" fill="#004d40">지능형 지원</text>
+    </g>
+
+    <!-- 5행 -->
+    <g transform="translate(30, 400)">
+      <rect width="250" height="65" rx="12" fill="#b2dfdb" stroke="#00695c" stroke-width="2"/>
+      <text x="20" y="25" font-family="Arial" font-size="24">📹</text>
+      <text x="130" y="25" font-family="'Noto Sans KR', sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#00695c">주행 기록</text>
+      <text x="130" y="40" font-family="'Noto Sans KR', sans-serif" font-size="11" text-anchor="middle" fill="#004d40">블랙박스</text>
+      <text x="130" y="55" font-family="'Noto Sans KR', sans-serif" font-size="11" text-anchor="middle" fill="#004d40">추적·재현</text>
+    </g>
+    <g transform="translate(300, 400)">
+      <rect width="250" height="65" rx="12" fill="#b2dfdb" stroke="#00695c" stroke-width="2"/>
+      <text x="20" y="25" font-family="Arial" font-size="24">🛞</text>
+      <text x="130" y="25" font-family="'Noto Sans KR', sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#00695c">섀시</text>
+      <text x="130" y="40" font-family="'Noto Sans KR', sans-serif" font-size="11" text-anchor="middle" fill="#004d40">타이어·서스펜션</text>
+      <text x="130" y="55" font-family="'Noto Sans KR', sans-serif" font-size="11" text-anchor="middle" fill="#004d40">노면 대응</text>
+    </g>
+
+    <!-- 핵심 메시지 (왼쪽) -->
+    <g transform="translate(50, 490)">
+      <rect width="480" height="120" rx="15" fill="#e0f2f1" stroke="#00695c" stroke-width="2" stroke-dasharray="5,3"/>
+      <text x="240" y="30" font-family="'Noto Sans KR', sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#00695c">🔧 통합 시스템의 핵심</text>
+      <text x="240" y="55" font-family="'Noto Sans KR', sans-serif" font-size="12" text-anchor="middle" fill="#004d40">• 각 부품은 독립적으로 작동</text>
+      <text x="240" y="75" font-family="'Noto Sans KR', sans-serif" font-size="12" text-anchor="middle" fill="#004d40">• 하나의 완성된 시스템으로 통합</text>
+      <text x="240" y="95" font-family="'Noto Sans KR', sans-serif" font-size="12" text-anchor="middle" fill="#004d40">• 소프트웨어가 전반을 제어</text>
+    </g>
+  </g>
+
+  <!-- 디지털 문서 섹션 (오른쪽) -->
+  <g id="rightDoc" transform="translate(770, 100)">
+    <rect x="0" y="0" width="580" height="650" rx="20" fill="url(#docGradient)" stroke="#6a1b9a" stroke-width="3" filter="url(#shadow)"/>
+    <text x="290" y="35" font-family="'Noto Sans KR', sans-serif" font-size="22" font-weight="bold" text-anchor="middle" fill="#6a1b9a">📄 현대 디지털 문서</text>
+    <text x="290" y="55" font-family="'Noto Sans KR', sans-serif" font-size="14" text-anchor="middle" fill="#4a148c">수십 개 모듈이 하나의 시스템으로</text>
+
+    <!-- 1행 -->
+    <g transform="translate(30, 80)">
+      <rect width="250" height="65" rx="12" fill="#e1bee7" stroke="#6a1b9a" stroke-width="2"/>
+      <text x="20" y="25" font-family="Arial" font-size="24">⚙️</text>
+      <text x="130" y="25" font-family="'Noto Sans KR', sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#6a1b9a">계산 엔진</text>
+      <text x="130" y="40" font-family="'Noto Sans KR', sans-serif" font-size="11" text-anchor="middle" fill="#4a148c">R·Python·SQL</text>
+      <text x="130" y="55" font-family="'Noto Sans KR', sans-serif" font-size="11" text-anchor="middle" fill="#4a148c">데이터 처리</text>
+    </g>
+    <g transform="translate(300, 80)">
+      <rect width="250" height="65" rx="12" fill="#e1bee7" stroke="#6a1b9a" stroke-width="2"/>
+      <text x="20" y="25" font-family="Arial" font-size="24">📊</text>
+      <text x="130" y="25" font-family="'Noto Sans KR', sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#6a1b9a">데이터 시각화</text>
+      <text x="130" y="40" font-family="'Noto Sans KR', sans-serif" font-size="11" text-anchor="middle" fill="#4a148c">ggplot·Plotly</text>
+      <text x="130" y="55" font-family="'Noto Sans KR', sans-serif" font-size="11" text-anchor="middle" fill="#4a148c">복잡 데이터 표현</text>
+    </g>
+
+    <!-- 2행 -->
+    <g transform="translate(30, 160)">
+      <rect width="250" height="65" rx="12" fill="#e1bee7" stroke="#6a1b9a" stroke-width="2"/>
+      <text x="20" y="25" font-family="Arial" font-size="24">🗺️</text>
+      <text x="130" y="25" font-family="'Noto Sans KR', sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#6a1b9a">지리 정보</text>
+      <text x="130" y="40" font-family="'Noto Sans KR', sans-serif" font-size="11" text-anchor="middle" fill="#4a148c">Leaflet·sf</text>
+      <text x="130" y="55" font-family="'Noto Sans KR', sans-serif" font-size="11" text-anchor="middle" fill="#4a148c">공간 데이터</text>
+    </g>
+    <g transform="translate(300, 160)">
+      <rect width="250" height="65" rx="12" fill="#e1bee7" stroke="#6a1b9a" stroke-width="2"/>
+      <text x="20" y="25" font-family="Arial" font-size="24">📺</text>
+      <text x="130" y="25" font-family="'Noto Sans KR', sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#6a1b9a">정보 디스플레이</text>
+      <text x="130" y="40" font-family="'Noto Sans KR', sans-serif" font-size="11" text-anchor="middle" fill="#4a148c">gt·DT·표</text>
+      <text x="130" y="55" font-family="'Noto Sans KR', sans-serif" font-size="11" text-anchor="middle" fill="#4a148c">구조 정보</text>
+    </g>
+
+    <!-- 3행 -->
+    <g transform="translate(30, 240)">
+      <rect width="250" height="65" rx="12" fill="#e1bee7" stroke="#6a1b9a" stroke-width="2"/>
+      <text x="20" y="25" font-family="Arial" font-size="24">🏗️</text>
+      <text x="130" y="25" font-family="'Noto Sans KR', sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#6a1b9a">문서 구조</text>
+      <text x="130" y="40" font-family="'Noto Sans KR', sans-serif" font-size="11" text-anchor="middle" fill="#4a148c">HTML·Markdown</text>
+      <text x="130" y="55" font-family="'Noto Sans KR', sans-serif" font-size="11" text-anchor="middle" fill="#4a148c">프레임워크</text>
+    </g>
+    <g transform="translate(300, 240)">
+      <rect width="250" height="65" rx="12" fill="#e1bee7" stroke="#6a1b9a" stroke-width="2"/>
+      <text x="20" y="25" font-family="Arial" font-size="24">🎨</text>
+      <text x="130" y="25" font-family="'Noto Sans KR', sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#6a1b9a">디자인 시스템</text>
+      <text x="130" y="40" font-family="'Noto Sans KR', sans-serif" font-size="11" text-anchor="middle" fill="#4a148c">CSS·타이포</text>
+      <text x="130" y="55" font-family="'Noto Sans KR', sans-serif" font-size="11" text-anchor="middle" fill="#4a148c">시각 일관성</text>
+    </g>
+
+    <!-- 4행 -->
+    <g transform="translate(30, 320)">
+      <rect width="250" height="65" rx="12" fill="#e1bee7" stroke="#6a1b9a" stroke-width="2"/>
+      <text x="20" y="25" font-family="Arial" font-size="24">🔌</text>
+      <text x="130" y="25" font-family="'Noto Sans KR', sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#6a1b9a">인터랙션</text>
+      <text x="130" y="40" font-family="'Noto Sans KR', sans-serif" font-size="11" text-anchor="middle" fill="#4a148c">JS·Shiny</text>
+      <text x="130" y="55" font-family="'Noto Sans KR', sans-serif" font-size="11" text-anchor="middle" fill="#4a148c">동적 UX</text>
+    </g>
+    <g transform="translate(300, 320)">
+      <rect width="250" height="65" rx="12" fill="#e1bee7" stroke="#6a1b9a" stroke-width="2"/>
+      <text x="20" y="25" font-family="Arial" font-size="24">🤖</text>
+      <text x="130" y="25" font-family="'Noto Sans KR', sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#6a1b9a">AI 통합</text>
+      <text x="130" y="40" font-family="'Noto Sans KR', sans-serif" font-size="11" text-anchor="middle" fill="#4a148c">ChatGPT·Claude</text>
+      <text x="130" y="55" font-family="'Noto Sans KR', sans-serif" font-size="11" text-anchor="middle" fill="#4a148c">지능형 작성</text>
+    </g>
+
+    <!-- 5행 -->
+    <g transform="translate(30, 400)">
+      <rect width="250" height="65" rx="12" fill="#e1bee7" stroke="#6a1b9a" stroke-width="2"/>
+      <text x="20" y="25" font-family="Arial" font-size="24">📹</text>
+      <text x="130" y="25" font-family="'Noto Sans KR', sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#6a1b9a">버전 관리</text>
+      <text x="130" y="40" font-family="'Noto Sans KR', sans-serif" font-size="11" text-anchor="middle" fill="#4a148c">Git·재현성</text>
+      <text x="130" y="55" font-family="'Noto Sans KR', sans-serif" font-size="11" text-anchor="middle" fill="#4a148c">추적·복원</text>
+    </g>
+    <g transform="translate(300, 400)">
+      <rect width="250" height="65" rx="12" fill="#e1bee7" stroke="#6a1b9a" stroke-width="2"/>
+      <text x="20" y="25" font-family="Arial" font-size="24">🛞</text>
+      <text x="130" y="25" font-family="'Noto Sans KR', sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#6a1b9a">다중 출력</text>
+      <text x="130" y="40" font-family="'Noto Sans KR', sans-serif" font-size="11" text-anchor="middle" fill="#4a148c">HTML·PDF·DOCX</text>
+      <text x="130" y="55" font-family="'Noto Sans KR', sans-serif" font-size="11" text-anchor="middle" fill="#4a148c">플랫폼 배포</text>
+    </g>
+
+    <!-- 핵심 메시지 (오른쪽) -->
+    <g transform="translate(50, 490)">
+      <rect width="480" height="120" rx="15" fill="#f3e5f5" stroke="#6a1b9a" stroke-width="2" stroke-dasharray="5,3"/>
+      <text x="240" y="30" font-family="'Noto Sans KR', sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#6a1b9a">📄 Document as Code</text>
+      <text x="240" y="55" font-family="'Noto Sans KR', sans-serif" font-size="12" text-anchor="middle" fill="#4a148c">• 모듈은 독립·재사용 가능</text>
+      <text x="240" y="75" font-family="'Noto Sans KR', sans-serif" font-size="12" text-anchor="middle" fill="#4a148c">• 하나의 완성 문서로 통합</text>
+      <text x="240" y="95" font-family="'Noto Sans KR', sans-serif" font-size="12" text-anchor="middle" fill="#4a148c">• Quarto가 오케스트레이션</text>
+    </g>
+  </g>
+
+  <!-- 중앙 등호 -->
+  <g transform="translate(650, 350)">
+    <circle cx="50" cy="50" r="40" fill="#ffffff" stroke="#757575" stroke-width="3" filter="url(#shadow)"/>
+    <text x="50" y="60" font-family="Arial" font-size="36" font-weight="bold" text-anchor="middle" fill="#424242">=</text>
+  </g>
+
+  <!-- 연결선 (곡선으로 겹침 방지, 좌우 색상 구분) -->
+  <g stroke-width="2" fill="none" opacity="0.9">
+    <!-- y중심: 212.5, 292.5, 372.5, 452.5, 532.5 -->
+    <!-- 왼쪽(우열) x=600 / 오른쪽(좌열) x=800 ; 왼쪽(좌열) x=330 / 오른쪽(우열) x=1070 -->
+    <!-- 1행 -->
+    <path d="M330,212.5 Q565,180 800,212.5" stroke="#00796b" marker-end="url(#arrow)"/>
+    <path d="M600,212.5 Q835,245 1070,212.5" stroke="#6a1b9a" marker-end="url(#arrow)"/>
+    <!-- 2행 -->
+    <path d="M330,292.5 Q565,260 800,292.5" stroke="#00796b" marker-end="url(#arrow)"/>
+    <path d="M600,292.5 Q835,325 1070,292.5" stroke="#6a1b9a" marker-end="url(#arrow)"/>
+    <!-- 3행 -->
+    <path d="M330,372.5 Q565,340 800,372.5" stroke="#00796b" marker-end="url(#arrow)"/>
+    <path d="M600,372.5 Q835,405 1070,372.5" stroke="#6a1b9a" marker-end="url(#arrow)"/>
+    <!-- 4행 -->
+    <path d="M330,452.5 Q565,420 800,452.5" stroke="#00796b" marker-end="url(#arrow)"/>
+    <path d="M600,452.5 Q835,485 1070,452.5" stroke="#6a1b9a" marker-end="url(#arrow)"/>
+    <!-- 5행 -->
+    <path d="M330,532.5 Q565,500 800,532.5" stroke="#00796b" marker-end="url(#arrow)"/>
+    <path d="M600,532.5 Q835,565 1070,532.5" stroke="#6a1b9a" marker-end="url(#arrow)"/>
+  </g>
+
+</svg>

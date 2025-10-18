@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1000" height="570" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .title { font-family: 'IBM Plex Sans KR', sans-serif; font-size: 18px; font-weight: bold; fill: #2c3e50; }
+      .subtitle { font-family: 'IBM Plex Sans KR', sans-serif; font-size: 14px; font-weight: 600; fill: #34495e; }
+      .label { font-family: 'IBM Plex Sans KR', sans-serif; font-size: 12px; font-weight: 500; fill: #2c3e50; }
+      .command { font-family: 'Nanum Gothic Coding', monospace; font-size: 10px; fill: #e74c3c; }
+      .process { font-family: 'IBM Plex Sans KR', sans-serif; font-size: 11px; fill: #8e44ad; font-weight: 500; }
+      
+      .input-box { fill: #e8f5e8; stroke: #27ae60; stroke-width: 2; rx: 8; }
+      .pandoc-box { fill: #f0e6ff; stroke: #8e44ad; stroke-width: 3; rx: 10; }
+      .output-box { fill: #fff3e0; stroke: #f39c12; stroke-width: 2; rx: 6; }
+      .doc-box { fill: #e3f2fd; stroke: #2196f3; stroke-width: 2; rx: 6; }
+      .web-box { fill: #f3e5f5; stroke: #9c27b0; stroke-width: 2; rx: 6; }
+      .present-box { fill: #ffebee; stroke: #f44336; stroke-width: 2; rx: 6; }
+      .academic-box { fill: #e8f5e8; stroke: #4caf50; stroke-width: 2; rx: 6; }
+      .other-box { fill: #fff8e1; stroke: #ff9800; stroke-width: 2; rx: 6; }
+      
+      .arrow { fill: #666; }
+      .process-arrow { fill: #8e44ad; stroke: #8e44ad; stroke-width: 2; }
+      
+      .category-label { font-family: 'IBM Plex Sans KR', sans-serif; font-size: 11px; font-weight: 600; }
+      .doc-label { fill: #1976d2; }
+      .web-label { fill: #7b1fa2; }
+      .present-label { fill: #c62828; }
+      .academic-label { fill: #388e3c; }
+      .other-label { fill: #f57c00; }
+    </style>
+    
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" 
+            refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" class="arrow"/>
+    </marker>
+    
+    <marker id="process-arrowhead" markerWidth="12" markerHeight="8" 
+            refX="10" refY="4" orient="auto">
+      <polygon points="0 0, 12 4, 0 8" class="process-arrow"/>
+    </marker>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1000" height="650" fill="#fafafa"/>
+  
+  <!-- Input Section -->
+  <rect x="50" y="50" width="150" height="120" class="input-box"/>
+  <text x="125" y="75" text-anchor="middle" class="label">📝 입력 파일</text>
+  
+  <text x="60" y="95" class="label">• manuscript.md</text>
+  <text x="60" y="110" class="label">• document.markdown</text>
+  <text x="60" y="125" class="label">• paper.pandoc</text>
+  
+  <text x="60" y="145" class="command">YAML 메타데이터</text>
+  <text x="60" y="160" class="command">+ 템플릿 설정</text>
+  
+  <!-- Pandoc Engine -->
+  <rect x="300" y="30" width="210" height="160" class="pandoc-box"/>
+  <text x="400" y="60" text-anchor="middle" class="title" font-size="16">🔄 Pandoc 엔진</text>
+  
+  <!-- Process Steps -->
+  <text x="320" y="85" class="process">1. 파싱 (Parsing)</text>
+  <text x="320" y="100" class="process">2. AST 변환</text>
+  <text x="320" y="115" class="process">3. 템플릿 적용</text>
+  <text x="320" y="130" class="process">4. 포맷 렌더링</text>
+  
+  <!-- Basic Command -->
+  <rect x="310" y="145" width="190" height="35" fill="#f8f9fa" stroke="#ddd" rx="4"/>
+  <text x="315" y="160" class="command">pandoc input.ext -o output.ext</text>
+  <text x="315" y="173" class="command">pandoc doc.md -o doc.pdf</text>
+  
+  <!-- Arrows from input to pandoc -->
+  <line x1="200" y1="110" x2="290" y2="110" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- Document Formats -->
+  <text x="120" y="250" text-anchor="middle" class="category-label doc-label">📄 문서 형식</text>
+  
+  <rect x="60" y="270" width="60" height="40" class="doc-box"/>
+  <text x="90" y="285" text-anchor="middle" class="label" font-size="10">PDF</text>
+  <text x="90" y="298" class="command" font-size="8">.pdf</text>
+  
+  <rect x="130" y="270" width="60" height="40" class="doc-box"/>
+  <text x="160" y="285" text-anchor="middle" class="label" font-size="10">Word</text>
+  <text x="155" y="298" class="command" font-size="8">.docx</text>
+  
+  <rect x="60" y="320" width="60" height="40" class="doc-box"/>
+  <text x="90" y="335" text-anchor="middle" class="label" font-size="10">ODT</text>
+  <text x="90" y="348" class="command" font-size="8">.odt</text>
+  
+  <rect x="130" y="320" width="60" height="40" class="doc-box"/>
+  <text x="160" y="335" text-anchor="middle" class="label" font-size="10">RTF</text>
+  <text x="160" y="348" class="command" font-size="8">.rtf</text>
+  
+  <!-- Web Formats -->
+  <text x="320" y="250" text-anchor="middle" class="category-label web-label">🌐 웹 형식</text>
+  
+  <rect x="260" y="270" width="60" height="40" class="web-box"/>
+  <text x="290" y="285" text-anchor="middle" class="label" font-size="10">HTML</text>
+  <text x="280" y="298" class="command" font-size="8">.html</text>
+  
+  <rect x="330" y="270" width="60" height="40" class="web-box"/>
+  <text x="360" y="285" text-anchor="middle" class="label" font-size="10">EPUB</text>
+  <text x="350" y="298" class="command" font-size="8">.epub</text>
+  
+  <rect x="260" y="320" width="60" height="40" class="web-box"/>
+  <text x="290" y="335" text-anchor="middle" class="label" font-size="10">HTML5</text>
+  <text x="280" y="348" class="command" font-size="8">.html5</text>
+  
+  <rect x="330" y="320" width="60" height="40" class="web-box"/>
+  <text x="360" y="335" text-anchor="middle" class="label" font-size="10">JSON</text>
+  <text x="350" y="348" class="command" font-size="8">.json</text>
+  
+  <!-- Presentation Formats -->
+  <text x="520" y="250" text-anchor="middle" class="category-label present-label">🎯 프레젠테이션</text>
+  
+  <rect x="460" y="270" width="60" height="40" class="present-box"/>
+  <text x="490" y="285" text-anchor="middle" class="label" font-size="10">Reveal</text>
+  <text x="470" y="298" class="command" font-size="8">revealjs</text>
+  
+  <rect x="530" y="270" width="60" height="40" class="present-box"/>
+  <text x="560" y="285" text-anchor="middle" class="label" font-size="10">Beamer</text>
+  <text x="560" y="298" class="command" font-size="8">.tex</text>
+  
+  <rect x="460" y="320" width="60" height="40" class="present-box"/>
+  <text x="490" y="335" text-anchor="middle" class="label" font-size="10">PowerPoint</text>
+  <text x="480" y="348" class="command" font-size="8">.pptx</text>
+  
+  <rect x="530" y="320" width="60" height="40" class="present-box"/>
+  <text x="560" y="335" text-anchor="middle" class="label" font-size="10">S5</text>
+  <text x="560" y="348" class="command" font-size="8">s5</text>
+  
+  <!-- Academic Formats -->
+  <text x="720" y="250" text-anchor="middle" class="category-label academic-label">🎓 학술 형식</text>
+  
+  <rect x="660" y="270" width="60" height="40" class="academic-box"/>
+  <text x="690" y="285" text-anchor="middle" class="label" font-size="10">LaTeX</text>
+  <text x="690" y="298" class="command" font-size="8">.tex</text>
+  
+  <rect x="730" y="270" width="60" height="40" class="academic-box"/>
+  <text x="760" y="285" text-anchor="middle" class="label" font-size="10">ConTeXt</text>
+  <text x="760" y="298" class="command" font-size="8">.tex</text>
+  
+  <rect x="660" y="320" width="60" height="40" class="academic-box"/>
+  <text x="690" y="335" text-anchor="middle" class="label" font-size="10">BibTeX</text>
+  <text x="690" y="348" class="command" font-size="8">.bib</text>
+  
+  <rect x="730" y="320" width="60" height="40" class="academic-box"/>
+  <text x="760" y="335" text-anchor="middle" class="label" font-size="10">Markdown</text>
+  <text x="760" y="348" class="command" font-size="8">.md</text>
+  
+  <!-- Other Formats -->
+  <text x="920" y="250" text-anchor="middle" class="category-label other-label">⚡ 기타</text>
+  
+  <rect x="860" y="270" width="60" height="40" class="other-box"/>
+  <text x="890" y="285" text-anchor="middle" class="label" font-size="10">Plain</text>
+  <text x="890" y="298" class="command" font-size="8">.txt</text>
+  
+  <rect x="930" y="270" width="60" height="40" class="other-box"/>
+  <text x="960" y="285" text-anchor="middle" class="label" font-size="10">XML</text>
+  <text x="960" y="298" class="command" font-size="8">.xml</text>
+  
+  <rect x="860" y="320" width="60" height="40" class="other-box"/>
+  <text x="890" y="335" text-anchor="middle" class="label" font-size="10">AsciiDoc</text>
+  <text x="890" y="348" class="command" font-size="8">.adoc</text>
+  
+  <rect x="930" y="320" width="60" height="40" class="other-box"/>
+  <text x="960" y="335" text-anchor="middle" class="label" font-size="10">Org</text>
+  <text x="960" y="348" class="command" font-size="8">.org</text>
+  
+  <!-- Angled Arrows from Pandoc to outputs -->
+  <!-- To Document Formats -->
+  <polyline points="400,190 400,220 120,220 120,240" fill="none" stroke="#8e44ad" stroke-width="0.5" marker-end="url(#process-arrowhead)"/>
+  
+  <!-- To Web Formats -->
+  <polyline points="400,190 400,220 320,220 320,240" fill="none" stroke="#8e44ad" stroke-width="0.5" marker-end="url(#process-arrowhead)"/>
+  
+  <!-- To Presentation Formats -->
+  <polyline points="400,190 400,220 520,220 520,240" fill="none" stroke="#8e44ad" stroke-width="0.5" marker-end="url(#process-arrowhead)"/>
+  
+  <!-- To Academic Formats -->
+  <polyline points="400,190 400,220 720,220 720,240" fill="none" stroke="#8e44ad" stroke-width="0.5" marker-end="url(#process-arrowhead)"/>
+  
+  <!-- To Other Formats -->
+  <polyline points="400,190 400,220 920,220 920,240" fill="none" stroke="#8e44ad" stroke-width="0.5" marker-end="url(#process-arrowhead)"/>
+  
+  <!-- Command Examples Box -->
+  <rect x="50" y="390" width="900" height="160" fill="#f8f9fa" stroke="#ddd" stroke-width="2" rx="8"/>
+  <text x="70" y="415" class="subtitle">💻 주요 변환 명령어 예시</text>
+  
+  <!-- Command examples in columns -->
+  <text x="70" y="440" class="command">📄 문서 변환:</text>
+  <text x="80" y="455" class="command">pandoc manuscript.md -o manuscript.pdf</text>
+  <text x="80" y="470" class="command">pandoc document.md -o document.docx</text>
+  
+  <text x="320" y="440" class="command">🌐 웹 변환:</text>
+  <text x="330" y="455" class="command">pandoc article.md -o article.html</text>
+  <text x="330" y="470" class="command">pandoc book.md -o book.epub</text>
+  
+  <text x="570" y="440" class="command">🎯 프레젠테이션:</text>
+  <text x="580" y="455" class="command">pandoc slides.md -t revealjs -o slides.html</text>
+  <text x="580" y="470" class="command">pandoc presentation.md -t beamer -o slides.pdf</text>
+  
+  <text x="70" y="500" class="command">🔧 옵션 활용:</text>
+  <text x="80" y="515" class="command">pandoc input.md --template=custom.tex -o output.pdf</text>
+  <text x="80" y="530" class="command">pandoc input.md --toc --number-sections -o output.html</text>
+  <text x="80" y="545" class="command">pandoc input.md --bibliography=refs.bib --csl=apa.csl -o paper.pdf</text>
+  
+  <!-- Footer note -->
+  <text x="750" y="120" text-anchor="middle" class="title" fill="#666">
+    💡 Pandoc은 150+ 형식 간 변환을 지원하는 만능 문서 변환 도구!
+  </text>
+</svg>

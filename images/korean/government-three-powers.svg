@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="500" xmlns="http://www.w3.org/2000/svg">
+  <!-- 배경 -->
+  <rect width="800" height="500" fill="#f8f9fa"/>
+  
+  <!-- 제목 -->
+  <text x="300" y="30" text-anchor="middle" font-family="IBM Plex Sans KR, AppleGothic, sans-serif" font-size="24" font-weight="bold" fill="#2c3e50">대한민국 3권 분립</text>
+  
+  <!-- 상단: 입법부 - 국회 -->
+  <g id="legislative" transform="translate(250, 70)">
+    <!-- 국회 돔 -->
+    <ellipse cx="50" cy="20" rx="45" ry="15" fill="#87ceeb" stroke="#174F99" stroke-width="2"/>
+    <!-- 국회 기둥들 -->
+    <rect x="10" y="35" width="8" height="40" fill="#174F99"/>
+    <rect x="22" y="35" width="8" height="40" fill="#174F99"/>
+    <rect x="34" y="35" width="8" height="40" fill="#174F99"/>
+    <rect x="46" y="35" width="8" height="40" fill="#174F99"/>
+    <rect x="58" y="35" width="8" height="40" fill="#174F99"/>
+    <rect x="70" y="35" width="8" height="40" fill="#174F99"/>
+    <rect x="82" y="35" width="8" height="40" fill="#174F99"/>
+    <!-- 국회 기단 -->
+    <rect x="5" y="75" width="90" height="15" fill="#174F99"/>
+    
+    <!-- 입법부 설명 텍스트 박스 -->
+    <g transform="translate(110, 20)">
+      <rect x="0" y="0" width="160" height="70" fill="#174F99" opacity="0.1" rx="8"/>
+      <text x="8" y="18" font-family="IBM Plex Sans KR, AppleGothic, sans-serif" font-size="14" font-weight="bold" fill="#174F99">🏛️ 입법부 (국회)</text>
+      <text x="8" y="35" font-family="IBM Plex Sans KR, AppleGothic, sans-serif" font-size="11" fill="#2c3e50">• 법률 제정 및 개정</text>
+      <text x="8" y="48" font-family="IBM Plex Sans KR, AppleGothic, sans-serif" font-size="11" fill="#2c3e50">• 국정감사 및 국정조사</text>
+      <text x="8" y="61" font-family="IBM Plex Sans KR, AppleGothic, sans-serif" font-size="11" fill="#2c3e50">• 예산 심의 및 승인</text>
+    </g>
+  </g>
+  
+  <!-- 좌하단: 사법부 - 저울 -->
+  <g id="judicial" transform="translate(100, 300)">
+    <!-- 저울대 -->
+    <line x1="30" y1="40" x2="70" y2="40" stroke="#6c757d" stroke-width="4"/>
+    <!-- 받침대 -->
+    <line x1="50" y1="40" x2="50" y2="70" stroke="#6c757d" stroke-width="4"/>
+    <!-- 저울판 좌측 -->
+    <circle cx="35" cy="40" r="12" fill="none" stroke="#6c757d" stroke-width="2"/>
+    <line x1="30" y1="30" x2="40" y2="30" stroke="#6c757d" stroke-width="2"/>
+    <line x1="30" y1="30" x2="35" y2="40" stroke="#6c757d" stroke-width="1"/>
+    <line x1="40" y1="30" x2="35" y2="40" stroke="#6c757d" stroke-width="1"/>
+    <!-- 저울판 우측 -->
+    <circle cx="65" cy="40" r="12" fill="none" stroke="#6c757d" stroke-width="2"/>
+    <line x1="60" y1="30" x2="70" y2="30" stroke="#6c757d" stroke-width="2"/>
+    <line x1="60" y1="30" x2="65" y2="40" stroke="#6c757d" stroke-width="1"/>
+    <line x1="70" y1="30" x2="65" y2="40" stroke="#6c757d" stroke-width="1"/>
+    <!-- 기단 -->
+    <rect x="40" y="70" width="20" height="10" fill="#6c757d"/>
+    
+    <!-- 사법부 설명 텍스트 박스 -->
+    <g transform="translate(-120, 20)">
+      <rect x="0" y="0" width="160" height="70" fill="#6c757d" opacity="0.1" rx="8"/>
+      <text x="8" y="18" font-family="IBM Plex Sans KR, AppleGothic, sans-serif" font-size="14" font-weight="bold" fill="#6c757d">⚖️ 사법부 (법원)</text>
+      <text x="8" y="35" font-family="IBM Plex Sans KR, AppleGothic, sans-serif" font-size="11" fill="#2c3e50">• 법률 해석 및 적용</text>
+      <text x="8" y="48" font-family="IBM Plex Sans KR, AppleGothic, sans-serif" font-size="11" fill="#2c3e50">• 재판 및 분쟁 해결</text>
+      <text x="8" y="61" font-family="IBM Plex Sans KR, AppleGothic, sans-serif" font-size="11" fill="#2c3e50">• 위헌법률심판권</text>
+    </g>
+  </g>
+  
+  <!-- 우하단: 행정부 - 태극 -->
+  <g id="executive" transform="translate(450, 300)">
+    <!-- 태극 원 -->
+    <circle cx="50" cy="50" r="35" fill="white" stroke="#174F99" stroke-width="3"/>
+    <!-- 태극 상단 (빨강) -->
+    <path d="M15,50 A17.5,17.5 0 0,1 50,32.5 A17.5,17.5 0 0,1 85,50 A35,35 0 0,1 15,50" fill="#dc2626"/>
+    <!-- 태극 하단 (파랑) -->
+    <path d="M15,50 A35,35 0 0,1 85,50 A17.5,17.5 0 0,1 50,67.5 A17.5,17.5 0 0,1 15,50" fill="#3124DC"/>
+    <!-- 중앙 소태극 상 (파랑) -->
+    <circle cx="32.5" cy="40" r="7" fill="#3124DC"/>
+    <!-- 중앙 소태극 하 (빨강) -->
+    <circle cx="67.5" cy="60" r="7" fill="#dc2626"/>
+    
+    <!-- 행정부 설명 텍스트 박스 -->
+    <g transform="translate(110, 20)">
+      <rect x="0" y="0" width="160" height="70" fill="#dc2626" opacity="0.1" rx="8"/>
+      <text x="8" y="18" font-family="IBM Plex Sans KR, AppleGothic, sans-serif" font-size="14" font-weight="bold" fill="#dc2626">⚙️ 행정부 (정부)</text>
+      <text x="8" y="35" font-family="IBM Plex Sans KR, AppleGothic, sans-serif" font-size="11" fill="#2c3e50">• 법률 집행 및 시행</text>
+      <text x="8" y="48" font-family="IBM Plex Sans KR, AppleGothic, sans-serif" font-size="11" fill="#2c3e50">• 국정 운영 및 정책 수립</text>
+      <text x="8" y="61" font-family="IBM Plex Sans KR, AppleGothic, sans-serif" font-size="11" fill="#2c3e50">• 공공서비스 제공</text>
+    </g>
+  </g>
+  
+  <!-- 삼각형 순환 화살표들 -->
+  <!-- 입법부 → 사법부 -->
+  <path d="M280,170 Q200,250 170,320" fill="none" stroke="#f39c12" stroke-width="4" marker-end="url(#arrowhead)"/>
+  
+  <!-- 사법부 → 행정부 -->
+  <path d="M200,350 Q350,420 470,370" fill="none" stroke="#f39c12" stroke-width="4" marker-end="url(#arrowhead)"/>
+  
+  <!-- 행정부 → 입법부 -->
+  <path d="M480,320 Q400,200 320,170" fill="none" stroke="#f39c12" stroke-width="4" marker-end="url(#arrowhead)"/>
+  
+  <!-- 중앙 핵심 메시지 -->
+  <g id="center-message" transform="translate(300, 250)">
+    <circle cx="0" cy="0" r="50" fill="white" opacity="0.9" stroke="#f39c12" stroke-width="2"/>
+    <text x="0" y="-8" text-anchor="middle" font-family="IBM Plex Sans KR, AppleGothic, sans-serif" font-size="12" font-weight="bold" fill="#2c3e50">상호 견제</text>
+    <text x="0" y="8" text-anchor="middle" font-family="IBM Plex Sans KR, AppleGothic, sans-serif" font-size="12" font-weight="bold" fill="#2c3e50">균형</text>
+  </g>
+  
+  <!-- 화살표 마커 정의 -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" 
+            refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#f39c12"/>
+    </marker>
+  </defs>
+  
+  <!-- 하단 설명 -->
+  <text x="300" y="480" text-anchor="middle" font-family="IBM Plex Sans KR, AppleGothic, sans-serif" font-size="14" fill="#6c757d">상호 견제와 균형을 통한 민주주의 실현</text>
+  
+</svg>

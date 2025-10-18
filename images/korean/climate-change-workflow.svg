@@ -1,0 +1,126 @@
+<svg width="1000" height="270" viewBox="0 35 1000 270" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Gradients -->
+    <linearGradient id="sqlGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ff7675" />
+      <stop offset="100%" stop-color="#d63031" />
+    </linearGradient>
+    <linearGradient id="rGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#74b9ff" />
+      <stop offset="100%" stop-color="#0984e3" />
+    </linearGradient>
+    <linearGradient id="juliaGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#a29bfe" />
+      <stop offset="100%" stop-color="#6c5ce7" />
+    </linearGradient>
+    <linearGradient id="pythonGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#fd79a8" />
+      <stop offset="100%" stop-color="#e84393" />
+    </linearGradient>
+    <linearGradient id="jsGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#fdcb6e" />
+      <stop offset="100%" stop-color="#e17055" />
+    </linearGradient>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f8f9fa" />
+      <stop offset="50%" stop-color="#e9ecef" />
+      <stop offset="100%" stop-color="#f8f9fa" />
+    </linearGradient>
+    
+    <!-- Drop shadows -->
+    <filter id="dropshadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="2" dy="4" stdDeviation="3" flood-color="#00000020"/>
+    </filter>
+    
+    <!-- Arrow markers -->
+    <marker id="arrowblue" markerWidth="12" markerHeight="8" refX="10" refY="4" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,8 L12,4 z" fill="#74b9ff"/>
+    </marker>
+    
+    <!-- Styles -->
+    <style>
+      .title { font-family: 'IBM Plex Sans KR', sans-serif; font-size: 18px; font-weight: 700; fill: #2d3436; }
+      .lang-title { font-family: 'IBM Plex Sans KR', sans-serif; font-size: 14px; font-weight: 600; fill: white; }
+      .lang-desc { font-family: 'IBM Plex Sans KR', sans-serif; font-size: 10px; fill: white; }
+      .data-flow { font-family: 'IBM Plex Sans KR', sans-serif; font-size: 9px; fill: #636e72; font-style: italic; }
+      .process-box { rx: 12; filter: url(#dropshadow); }
+      .flow-arrow { stroke: #74b9ff; stroke-width: 1; fill: none; marker-end: url(#arrowblue); }
+      .data-label { fill: #636e72; font-family: 'IBM Plex Sans KR', sans-serif; font-size: 8px; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="url(#bgGrad)"/>
+  
+  <!-- Process boxes -->
+  <!-- SQL -->
+  <rect x="20" y="60" width="160" height="160" fill="url(#sqlGrad)" class="process-box"/>
+  <circle cx="100" cy="90" r="20" fill="white" opacity="0.2"/>
+  <text x="100" y="95" style="font-size: 16px; fill: white; text-anchor: middle;">🗄️</text>
+  <text x="100" y="125" class="lang-title" text-anchor="middle">SQL</text>
+  <text x="100" y="145" class="lang-desc" text-anchor="middle">30년 기상 데이터베이스</text>
+  <text x="100" y="160" class="lang-desc" text-anchor="middle">• 온도/강수/습도 추출</text>
+  <text x="100" y="175" class="lang-desc" text-anchor="middle">• 시계열 정제</text>
+  <text x="100" y="190" class="lang-desc" text-anchor="middle">• 품질 검증</text>
+  <text x="100" y="205" class="lang-desc" text-anchor="middle">Output: 정제된 CSV</text>
+  
+  <!-- R -->
+  <rect x="220" y="60" width="160" height="160" fill="url(#rGrad)" class="process-box"/>
+  <circle cx="300" cy="90" r="20" fill="white" opacity="0.2"/>
+  <text x="300" y="95" style="font-size: 16px; fill: white; text-anchor: middle;">📊</text>
+  <text x="300" y="125" class="lang-title" text-anchor="middle">R</text>
+  <text x="300" y="145" class="lang-desc" text-anchor="middle">시계열 트렌드 분석</text>
+  <text x="300" y="160" class="lang-desc" text-anchor="middle">• 계절성 분해 (STL)</text>
+  <text x="300" y="175" class="lang-desc" text-anchor="middle">• 장기 트렌드 추출</text>
+  <text x="300" y="190" class="lang-desc" text-anchor="middle">• ARIMA 모델링</text>
+  <text x="300" y="205" class="lang-desc" text-anchor="middle">Output: 트렌드 매개변수</text>
+  
+  <!-- Julia -->
+  <rect x="420" y="60" width="160" height="160" fill="url(#juliaGrad)" class="process-box"/>
+  <circle cx="500" cy="90" r="20" fill="white" opacity="0.2"/>
+  <text x="500" y="95" style="font-size: 16px; fill: white; text-anchor: middle;">⚡</text>
+  <text x="500" y="125" class="lang-title" text-anchor="middle">Julia</text>
+  <text x="500" y="145" class="lang-desc" text-anchor="middle">기후 모델 시뮬레이션</text>
+  <text x="500" y="160" class="lang-desc" text-anchor="middle">• 대기역학 모델링</text>
+  <text x="500" y="175" class="lang-desc" text-anchor="middle">• 수치해석 (PDE)</text>
+  <text x="500" y="190" class="lang-desc" text-anchor="middle">• 고성능 병렬처리</text>
+  <text x="500" y="205" class="lang-desc" text-anchor="middle">Output: 시뮬레이션 격자</text>
+  
+  <!-- Python -->
+  <rect x="620" y="60" width="160" height="160" fill="url(#pythonGrad)" class="process-box"/>
+  <circle cx="700" cy="90" r="20" fill="white" opacity="0.2"/>
+  <text x="700" y="95" style="font-size: 16px; fill: white; text-anchor: middle;">🧠</text>
+  <text x="700" y="125" class="lang-title" text-anchor="middle">Python</text>
+  <text x="700" y="145" class="lang-desc" text-anchor="middle">딥러닝 기온 예측</text>
+  <text x="700" y="160" class="lang-desc" text-anchor="middle">• LSTM 신경망</text>
+  <text x="700" y="175" class="lang-desc" text-anchor="middle">• TensorFlow/PyTorch</text>
+  <text x="700" y="190" class="lang-desc" text-anchor="middle">• 미래 기온 예측</text>
+  <text x="700" y="205" class="lang-desc" text-anchor="middle">Output: 예측값 시리즈</text>
+  
+  <!-- JavaScript -->
+  <rect x="820" y="60" width="160" height="160" fill="url(#jsGrad)" class="process-box"/>
+  <circle cx="900" cy="90" r="20" fill="white" opacity="0.2"/>
+  <text x="900" y="95" style="font-size: 16px; fill: white; text-anchor: middle;">🌍</text>
+  <text x="900" y="125" class="lang-title" text-anchor="middle">JavaScript</text>
+  <text x="900" y="145" class="lang-desc" text-anchor="middle">인터랙티브 시각화</text>
+  <text x="900" y="160" class="lang-desc" text-anchor="middle">• D3.js 지도 렌더링</text>
+  <text x="900" y="175" class="lang-desc" text-anchor="middle">• 실시간 대시보드</text>
+  <text x="900" y="190" class="lang-desc" text-anchor="middle">• WebGL 3D 모델</text>
+  <text x="900" y="205" class="lang-desc" text-anchor="middle">Output: 웹 애플리케이션</text>
+  
+  <!-- Flow arrows -->
+  <path d="M 185 140 Q 200 120 220 140" class="flow-arrow"/>
+  <path d="M 385 140 Q 400 120 420 140" class="flow-arrow"/>
+  <path d="M 585 140 Q 600 120 620 140" class="flow-arrow"/>
+  <path d="M 785 140 Q 800 120 820 140" class="flow-arrow"/>
+  
+  <!-- Data flow labels -->
+  <text x="202" y="115" class="data-flow" text-anchor="middle">정제 데이터</text>
+  <text x="402" y="115" class="data-flow" text-anchor="middle">트렌드 분석</text>
+  <text x="602" y="115" class="data-flow" text-anchor="middle">모델 결과</text>
+  <text x="802" y="115" class="data-flow" text-anchor="middle">예측 출력</text>
+  
+  <!-- Bottom info bar -->
+  <rect x="20" y="230" width="960" height="30" fill="#ddd" rx="5" opacity="0.3"/>
+  <text x="500" y="248" class="data-label" text-anchor="middle">🌡️ 핵심 성과: 30년 데이터 → 99.2% 정확도 기온 예측 → 정책 의사결정 지원</text>
+</svg>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="250" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .title { font-family: 'IBM Plex Sans KR', sans-serif; font-size: 16px; font-weight: bold; fill: #2c3e50; }
+      .label { font-family: 'IBM Plex Sans KR', sans-serif; font-size: 14px; font-weight: 500; fill: #2c3e50; }
+      .sub-label { font-family: 'IBM Plex Sans KR', sans-serif; font-size: 12px; fill: #555; }
+      .tech-label { font-family: 'IBM Plex Sans KR', sans-serif; font-size: 10px; fill: #8e44ad; font-weight: 500; }
+      .input-box { fill: #e8f5e8; stroke: #27ae60; stroke-width: 2; }
+      .quarto-box { fill: #f0e6ff; stroke: #8e44ad; stroke-width: 3; }
+      .output-box { fill: #fff3e0; stroke: #e67e22; stroke-width: 2; }
+      .arrow { fill: #666; }
+    </style>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" class="arrow"/>
+    </marker>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="250" fill="#fafafa"/>
+  
+  <!-- Input Section -->
+  <rect x="50" y="30" width="140" height="140" rx="10" class="input-box"/>
+  <text x="120" y="60" text-anchor="middle" class="label">📄 .qmd 파일</text>
+  
+  <text x="60" y="85" class="sub-label">마크다운</text>
+  <text x="60" y="100" class="sub-label">+ R 코드</text>
+  <text x="60" y="115" class="sub-label">+ Python 코드</text>
+  <text x="60" y="130" class="sub-label">+ Julia 코드</text>
+  <text x="60" y="145" class="sub-label">+ YAML 설정</text>
+  
+  <!-- Quarto Engine -->
+  <rect x="280" y="30" width="160" height="140" rx="12" class="quarto-box"/>
+  <text x="360" y="60" text-anchor="middle" class="title">🔄 Quarto</text>
+  
+  <text x="290" y="85" class="tech-label">내장 엔진:</text>
+  <text x="295" y="105" class="tech-label">• Pandoc (변환)</text>
+  <text x="295" y="120" class="tech-label">• Knitr (R)</text>
+  <text x="295" y="135" class="tech-label">• Jupyter (Python/Julia)</text>
+  <text x="295" y="150" class="tech-label">• Observable (JS)</text>
+  
+  <!-- Output Section -->
+  <rect x="530" y="30" width="220" height="140" rx="8" class="output-box"/>
+  <text x="640" y="60" text-anchor="middle" class="label">📚 다양한 출력</text>
+  
+  <text x="540" y="85" class="sub-label">📖 문서: PDF, Word, HTML</text>
+  <text x="540" y="100" class="sub-label">🌐 웹사이트 및 블로그</text>
+  <text x="540" y="115" class="sub-label">📊 대시보드</text>
+  <text x="540" y="130" class="sub-label">🎯 프레젠테이션</text>
+  <text x="540" y="145" class="sub-label">📚 전자책</text>
+  <text x="540" y="160" class="sub-label">📑 학술논문</text>
+  
+  <!-- Arrows -->
+  <line x1="200" y1="100" x2="270" y2="100" stroke="#27ae60" stroke-width="3" marker-end="url(#arrowhead)"/>
+  <line x1="450" y1="100" x2="520" y2="100" stroke="#8e44ad" stroke-width="3" marker-end="url(#arrowhead)"/>
+  
+  <!-- Key Benefits -->
+  <rect x="50" y="200" width="700" height="40" fill="#f8f9fa" stroke="#ddd" rx="5"/>
+  <text x="60" y="222" class="sub-label">💡 핵심 장점: 복잡한 Pandoc 명령어 없이 YAML 설정으로 간편하게 | 코드 실행 + 문서 생성 동시에 | 프로젝트 단위 관리</text>
+</svg>
+

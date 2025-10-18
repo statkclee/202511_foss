@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 120 1200 600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .title { font: bold 20px 'Noto Sans KR', sans-serif; fill: #2c3e50; text-anchor: middle; }
+      .module-title { font: bold 18px 'AppleGothic', 'Noto Sans KR', sans-serif; fill: white; text-anchor: middle; text-shadow: 1px 1px 2px rgba(0,0,0,0.7); }
+      .component-text { font: 14px 'AppleGothic', 'Noto Sans KR', sans-serif; fill: #2c3e50; text-anchor: middle; }
+      .component-text-small { font: 12px 'AppleGothic', 'Noto Sans KR', sans-serif; fill: #5a5a5a; text-anchor: middle; }
+      .english-text { font: 12px 'AppleGothic', sans-serif; fill: #7f8c8d; text-anchor: middle; font-style: bold; }
+      .english-title-text { font: 12px 'AppleGothic', sans-serif; fill:rgb(0, 7, 8); text-anchor: middle; font-style: bold; }
+      
+      .cover-box { fill: #3498db; stroke: #2980b9; stroke-width: 2; rx: 8; }
+      .front-box { fill: #e74c3c; stroke: #c0392b; stroke-width: 2; rx: 8; }
+      .content-box { fill: #2ecc71; stroke: #27ae60; stroke-width: 2; rx: 8; }
+      .back-box { fill: #9b59b6; stroke: #8e44ad; stroke-width: 2; rx: 8; }
+      
+      .component-rect { fill: #f8f9fa; stroke: #dee2e6; stroke-width: 1; rx: 4; }
+      .essential { stroke: #2c3e50; stroke-width: 2; stroke-dasharray: none; }
+      .optional { stroke: #6c757d; stroke-width: 1; stroke-dasharray: 4,4; }
+      
+      .arrow { stroke: #34495e; stroke-width: 1; fill: none; marker-end: url(#arrowhead); }
+      .flow-arrow { stroke: #95a5a6; stroke-width: 1.5; fill: none; marker-end: url(#flow-arrowhead); }
+    </style>
+    
+    <!-- Arrow markers -->
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#34495e" />
+    </marker>
+    <marker id="flow-arrowhead" markerWidth="12" markerHeight="9" refX="11" refY="4.5" orient="auto">
+      <polygon points="0 0, 12 4.5, 0 9" fill="#95a5a6" />
+    </marker>
+    
+    <!-- Drop shadow filter -->
+    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="3"/>
+      <feOffset dx="2" dy="2" result="offsetblur"/>
+      <feComponentTransfer>
+        <feFuncA type="linear" slope="0.3"/>
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    
+    <!-- Module background gradient -->
+    <linearGradient id="moduleGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:rgba(255,255,255,0.3);stop-opacity:1" />
+      <stop offset="100%" style="stop-color:rgba(0,0,0,0.1);stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1200" height="720" fill="#ffffff"/>
+  
+  <!-- Flow arrows between main modules -->
+  <path d="M 260 430 L 320 430" class="flow-arrow"/>
+  <path d="M 560 430 L 620 430" class="flow-arrow"/>
+  <path d="M 860 430 L 920 430" class="flow-arrow"/>
+  
+  <!-- Module 1: Front Cover (앞표지) -->
+  <g transform="translate(50, 250)">
+    <!-- Module header -->
+    <rect x="0" y="0" width="210" height="60" class="cover-box" fill="url(#moduleGradient)" filter="url(#shadow)"/>
+    <text x="105" y="25" class="module-title">📖 앞표지</text>
+    <text x="105" y="45" class="english-title-text">Front Cover</text>
+    
+    <!-- Components -->
+    <rect x="20" y="80" width="170" height="45" class="component-rect essential"/>
+    <text x="105" y="97" class="component-text">표제</text>
+    <text x="105" y="115" class="english-text">(Title)</text>
+    
+    <rect x="20" y="140" width="170" height="45" class="component-rect essential"/>
+    <text x="105" y="157" class="component-text">저자명</text>
+    <text x="105" y="175" class="english-text">(Author)</text>
+    
+    <rect x="20" y="200" width="170" height="45" class="component-rect essential"/>
+    <text x="105" y="217" class="component-text">출판사</text>
+    <text x="105" y="235" class="english-text">(Publisher)</text>
+    
+    <!-- Function description -->
+    <rect x="0" y="265" width="210" height="40" fill="#ecf0f1" stroke="#bdc3c7" stroke-width="1" rx="4"/>
+    <text x="105" y="280" class="component-text-small">첫인상 결정</text>
+    <text x="105" y="295" class="component-text-small">독자 관심 유발</text>
+    
+    <!-- Quarto mapping -->
+    <rect x="0" y="315" width="210" height="35" fill="#e3f2fd" stroke="#1976d2" stroke-width="1" rx="4"/>
+    <text x="105" y="327" class="component-text-small" style="font-weight: bold;">📁 Quarto</text>
+    <text x="105" y="340" class="component-text-small">_quarto.yml: title, author</text>
+  </g>
+  
+  <!-- Module 2: Front Matter (전문) -->
+  <g transform="translate(320, 250)">
+    <!-- Module header -->
+    <rect x="0" y="0" width="240" height="60" class="front-box" fill="url(#moduleGradient)" filter="url(#shadow)"/>
+    <text x="120" y="25" class="module-title">📄 전문</text>
+    <text x="120" y="45" class="english-title-text">Front Matter</text>
+    
+    <!-- Essential components -->
+    <rect x="10" y="80" width="100" height="40" class="component-rect essential"/>
+    <text x="60" y="95" class="component-text-small">속표지</text>
+    <text x="60" y="110" class="english-text">(Title Page)</text>
+    
+    <rect x="130" y="80" width="100" height="40" class="component-rect essential"/>
+    <text x="180" y="95" class="component-text-small">판권지</text>
+    <text x="180" y="110" class="english-text">(Copyright)</text>
+    
+    <rect x="10" y="135" width="100" height="40" class="component-rect essential"/>
+    <text x="60" y="150" class="component-text-small">목차</text>
+    <text x="60" y="165" class="english-text">(Contents)</text>
+    
+    <rect x="130" y="135" width="100" height="40" class="component-rect essential"/>
+    <text x="180" y="150" class="component-text-small">머리말</text>
+    <text x="180" y="165" class="english-text">(Preface)</text>
+    
+    <!-- Optional components -->
+    <rect x="10" y="190" width="100" height="40" class="component-rect optional"/>
+    <text x="60" y="205" class="component-text-small">바치는 글</text>
+    <text x="60" y="220" class="english-text">(Dedication)</text>
+    
+    <rect x="130" y="190" width="100" height="40" class="component-rect optional"/>
+    <text x="180" y="205" class="component-text-small">추천사</text>
+    <text x="180" y="220" class="english-text">(Foreword)</text>
+    
+    <!-- Connection arrows -->
+    <path d="M 110 100 L 130 100" class="arrow"/>
+    <path d="M 110 155 L 130 155" class="arrow"/>
+    
+    <!-- Function description -->
+    <rect x="0" y="250" width="240" height="55" fill="#fadbd8" stroke="#e8daef" stroke-width="1" rx="4"/>
+    <text x="120" y="265" class="component-text-small">독서 준비 단계</text>
+    <text x="120" y="280" class="component-text-small">책 정보 제공</text>
+    <text x="120" y="295" class="component-text-small">맥락 설정</text>
+    
+    <!-- Quarto mapping -->
+    <rect x="0" y="315" width="240" height="35" fill="#e3f2fd" stroke="#1976d2" stroke-width="1" rx="4"/>
+    <text x="120" y="327" class="component-text-small" style="font-weight: bold;">📁 Quarto</text>
+    <text x="120" y="340" class="component-text-small">머리말.qmd, 목차 자동생성</text>
+  </g>
+  
+  <!-- Module 3: Main Content (본문) -->
+  <g transform="translate(620, 250)">
+    <!-- Module header -->
+    <rect x="0" y="0" width="240" height="60" class="content-box" fill="url(#moduleGradient)" filter="url(#shadow)"/>
+    <text x="120" y="25" class="module-title">📝 본문</text>
+    <text x="120" y="45" class="english-title-text">Main Content</text>
+    
+    <!-- Part structure -->
+    <rect x="20" y="80" width="200" height="45" class="component-rect essential"/>
+    <text x="120" y="97" class="component-text">제1부</text>
+    <text x="120" y="115" class="english-text">(Part 1)</text>
+    
+    <!-- Chapters under Part 1 -->
+    <rect x="35" y="140" width="80" height="35" class="component-rect essential"/>
+    <text x="75" y="160" class="component-text-small">제1장</text>
+    
+    <rect x="125" y="140" width="80" height="35" class="component-rect essential"/>
+    <text x="165" y="160" class="component-text-small">제2장</text>
+    
+    <!-- Part 2 -->
+    <rect x="20" y="190" width="200" height="45" class="component-rect essential"/>
+    <text x="120" y="207" class="component-text">제2부</text>
+    <text x="120" y="225" class="english-text">(Part 2)</text>
+    
+    <!-- More chapters -->
+    <rect x="70" y="250" width="100" height="35" class="component-rect essential"/>
+    <text x="120" y="270" class="component-text-small">제N장...</text>
+    
+    <!-- Connection arrows -->
+    <path d="M 120 125 L 75 140" class="arrow"/>
+    <path d="M 120 125 L 165 140" class="arrow"/>
+    <path d="M 120 235 L 120 250" class="arrow"/>
+    
+    <!-- Function description -->
+    <rect x="0" y="305" width="240" height="40" fill="#d5f4e6" stroke="#a9dfbf" stroke-width="1" rx="4"/>
+    <text x="120" y="320" class="component-text-small">핵심 지식 전달</text>
+    <text x="120" y="335" class="component-text-small">체계적 내용 구성</text>
+    
+    <!-- Quarto mapping -->
+    <rect x="0" y="355" width="240" height="35" fill="#e3f2fd" stroke="#1976d2" stroke-width="1" rx="4"/>
+    <text x="120" y="367" class="component-text-small" style="font-weight: bold;">📁 Quarto</text>
+    <text x="120" y="380" class="component-text-small">chapters: *.qmd</text>
+  </g>
+  
+  <!-- Module 4: Back Matter (후문) -->
+  <g transform="translate(920, 250)">
+    <!-- Module header -->
+    <rect x="0" y="0" width="230" height="60" class="back-box" fill="url(#moduleGradient)" filter="url(#shadow)"/>
+    <text x="115" y="25" class="module-title">📚 후문</text>
+    <text x="115" y="45" class="english-title-text">Back Matter</text>
+    
+    <!-- Components in reading order -->
+    <rect x="15" y="80" width="200" height="40" class="component-rect optional"/>
+    <text x="115" y="95" class="component-text-small">후기</text>
+    <text x="115" y="110" class="english-text">(Afterword)</text>
+    
+    <rect x="15" y="135" width="200" height="40" class="component-rect optional"/>
+    <text x="115" y="150" class="component-text-small">부록</text>
+    <text x="115" y="165" class="english-text">(Appendix)</text>
+    
+    <rect x="15" y="190" width="200" height="40" class="component-rect optional"/>
+    <text x="115" y="205" class="component-text-small">용어 풀이</text>
+    <text x="115" y="220" class="english-text">(Glossary)</text>
+    
+    <rect x="15" y="245" width="200" height="40" class="component-rect essential"/>
+    <text x="115" y="260" class="component-text-small">참고문헌</text>
+    <text x="115" y="275" class="english-text">(Bibliography)</text>
+    
+    <rect x="15" y="300" width="200" height="40" class="component-rect optional"/>
+    <text x="115" y="315" class="component-text-small">찾아보기</text>
+    <text x="115" y="330" class="english-text">(Index)</text>
+    
+    <!-- Connection arrows showing sequence -->
+    <path d="M 115 120 L 115 135" class="arrow"/>
+    <path d="M 115 175 L 115 190" class="arrow"/>
+    <path d="M 115 230 L 115 245" class="arrow"/>
+    <path d="M 115 285 L 115 300" class="arrow"/>
+    
+    <!-- Function description -->
+    <rect x="0" y="360" width="230" height="40" fill="#ebdef0" stroke="#d2b4de" stroke-width="1" rx="4"/>
+    <text x="115" y="375" class="component-text-small">참고 자료 제공</text>
+    <text x="115" y="390" class="component-text-small">학술적 완성도</text>
+    
+    <!-- Quarto mapping -->
+    <rect x="0" y="410" width="230" height="35" fill="#e3f2fd" stroke="#1976d2" stroke-width="1" rx="4"/>
+    <text x="115" y="422" class="component-text-small" style="font-weight: bold;">📁 Quarto</text>
+    <text x="115" y="435" class="component-text-small">references.qmd, appendix/</text>
+  </g>
+  
+  <!-- Reading flow indicators -->
+  <g transform="translate(0, 100)">
+
+    <!-- Flow description boxes -->
+    <g transform="translate(-80,0)">
+      <rect x="150" y="40" width="180" height="60" fill="#e8f4fd" stroke="#0d6efd" stroke-width="2" rx="8"/>
+      <text x="240" y="60" class="component-text-small">1단계: 관심 유발</text>
+      <text x="240" y="75" class="component-text-small">표지로 첫인상 형성</text>
+      <text x="240" y="90" class="component-text-small">구매/대출 결정</text>
+    </g>
+
+    <g transform="translate(-20,0)">
+      <rect x="370" y="40" width="180" height="60" fill="#fdeaea" stroke="#dc3545" stroke-width="2" rx="8"/>
+      <text x="460" y="60" class="component-text-small">2단계: 독서 준비</text>
+      <text x="460" y="75" class="component-text-small">목차로 구조 파악</text>
+      <text x="460" y="90" class="component-text-small">저자 의도 이해</text>
+    </g>
+    
+    <g transform="translate(60,0)">
+      <rect x="590" y="40" width="180" height="60" fill="#eafaf1" stroke="#28a745" stroke-width="2" rx="8"/>
+      <text x="680" y="60" class="component-text-small">3단계: 핵심 학습</text>
+      <text x="680" y="75" class="component-text-small">체계적 지식 습득</text>
+      <text x="680" y="90" class="component-text-small">단계별 이해 구축</text>
+    </g>
+    
+    <g transform="translate(140,0)">
+      <rect x="810" y="40" width="180" height="60" fill="#f3e5f5" stroke="#6f42c1" stroke-width="2" rx="8"/>
+      <text x="900" y="60" class="component-text-small">4단계: 심화 탐구</text>
+      <text x="900" y="75" class="component-text-small">추가 자료 활용</text>
+      <text x="900" y="90" class="component-text-small">지식 확장</text>
+    </g>
+    
+    <!-- Connection arrows between stages -->
+    <path d="M 250 70 L 350 70" class="flow-arrow"/>
+    <path d="M 530 70 L 650 70" class="flow-arrow"/>
+    <path d="M 830 70 L 950 70" class="flow-arrow"/>
+  </g>
+
+  
+  
+  <!-- Legend -->
+  <g transform="translate(50, 650)">
+    <!-- Legend background -->
+    <rect x="-10" y="-5" width="300" height="45" fill="#f8f9fa" stroke="#dee2e6" stroke-width="1" rx="6" opacity="0.9"/>
+    
+    <!-- Legend title -->
+    <text x="47" y="18" class="component-text" style="font-weight: bold;">범례</text>
+    <text x="47" y="33" class="english-text" style="font-weight: bold;">(Legend)</text>
+    
+    <!-- Essential element -->
+    <g transform="translate(100, 0)">
+      <rect x="0" y="8" width="70" height="25" class="component-rect essential"/>
+      <text x="35" y="25" class="component-text-small" style="font-weight: bold;">필수 요소</text>
+    </g>
+    
+    <!-- Optional element -->
+    <g transform="translate(190, 0)">
+      <rect x="0" y="8" width="70" height="25" class="component-rect optional"/>
+      <text x="35" y="25" class="component-text-small" style="font-weight: bold;">선택 요소</text>
+    </g>
+  </g>
+</svg>

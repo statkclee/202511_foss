@@ -1,0 +1,82 @@
+<svg viewBox="0 70 1100 560" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="1100" height="615" fill="#fafbfc"/>
+  
+  <!-- Problem illustration (Top) -->
+  <g transform="translate(550,100)">
+    <rect x="-450" y="0" width="900" height="105" rx="15" fill="#fef2f2" stroke="#dc2626" stroke-width="2"/>
+    <text x="0" y="25" font-family="Noto Sans KR, Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#dc2626">문제: 부조화로운 혼용</text>
+    
+    <!-- Mismatched example -->
+    <g transform="translate(-350,55)">
+      <text x="0" y="0" font-family="Noto Sans KR, Arial, sans-serif" font-size="18" fill="#1e293b">한글텍스트</text>
+      <text x="120" y="0" font-family="Times, serif" font-size="18" fill="#1e293b">English Text</text>
+      <text x="250" y="0" font-family="Noto Sans KR, Arial, sans-serif" font-size="18" fill="#1e293b">１２３４５</text>
+      <text x="350" y="0" font-family="Computer Modern, serif" font-size="18" fill="#1e293b">∫f(x)dx</text>
+    </g>
+    
+    <text x="0" y="85" font-family="Noto Sans KR, Arial, sans-serif" font-size="16" fill="#7f1d1d">시각적 무게감 불일치, 기준선 맞지 않음, 조화 부족</text>
+  </g>
+  
+  <!-- Solution illustration (Bottom) -->
+  <g transform="translate(550,280)">
+    <rect x="-450" y="0" width="900" height="105" rx="15" fill="#f0fdf4" stroke="#16a34a" stroke-width="2"/>
+    <text x="0" y="25" font-family="Noto Sans KR, Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#16a34a">해결책: 체계적 조화</text>
+    
+    <!-- Harmonized example -->
+    <g transform="translate(-350,55)">
+      <text x="0" y="0" font-family="Noto Sans KR, Arial, sans-serif" font-size="18" fill="#1e293b">한글텍스트</text>
+      <text x="120" y="0" font-family="Noto Sans KR, Arial, sans-serif" font-size="18" fill="#1e293b">English Text</text>
+      <text x="250" y="0" font-family="Noto Sans KR, Arial, sans-serif" font-size="18" fill="#1e293b">12345</text>
+      <text x="320" y="0" font-family="STIX Two Math, serif" font-size="18" fill="#1e293b">∫f(x)dx</text>
+    </g>
+    
+    <text x="0" y="85" font-family="Noto Sans KR, Arial, sans-serif" font-size="15" fill="#15803d">일관된 기준선, 조화로운 무게감, 통합된 시각 리듬</text>
+  </g>
+  
+  <!-- Character comparison sections -->
+  <g transform="translate(230,450)">
+    <rect x="0" y="0" width="300" height="140" rx="12" fill="#fff7ed" stroke="#ea580c" stroke-width="2"/>
+    <text x="150" y="25" font-family="Noto Sans KR, Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#ea580c">전각 vs 반각 숫자</text>
+    
+    <text x="20" y="50" font-family="Noto Sans KR, Arial, sans-serif" font-size="12" fill="#9a3412">전각 (한글폭):</text>
+    <text x="20" y="70" font-family="Noto Sans KR, Arial, sans-serif" font-size="20" fill="#1e293b">１２３４５</text>
+    
+    <text x="20" y="100" font-family="Noto Sans KR, Arial, sans-serif" font-size="12" fill="#9a3412">반각 (가변폭):</text>
+    <text x="20" y="120" font-family="Noto Sans KR, Arial, sans-serif" font-size="20" fill="#1e293b">12345</text>
+  </g>
+  
+  <g transform="translate(560,450)">
+    <rect x="0" y="0" width="300" height="140" rx="12" fill="#eff6ff" stroke="#2563eb" stroke-width="2"/>
+    <text x="150" y="25" font-family="Noto Sans KR, Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#2563eb">등높이 vs 구식 숫자</text>
+    
+    <text x="20" y="50" font-family="Noto Sans KR, Arial, sans-serif" font-size="12" fill="#1d4ed8">등높이 숫자:</text>
+    <text x="20" y="70" font-family="Noto Sans KR, Arial, sans-serif" font-size="20" fill="#1e293b" style="font-feature-settings: 'lnum' 1;">1234567890</text>
+    
+    <text x="20" y="100" font-family="Noto Sans KR, Arial, sans-serif" font-size="12" fill="#1d4ed8">구식 숫자:</text>
+    <text x="20" y="120" font-family="Times, serif" font-size="20" fill="#1e293b" style="font-feature-settings: 'onum' 1;">1234567890</text>
+  </g>
+  
+  <!-- Technical solution box -->
+  <g transform="translate(50,350)">
+    <rect x="0" y="0" width="175" height="100" rx="8" fill="#f8fafc" stroke="#64748b" stroke-width="1"/>
+    <text x="100" y="20" font-family="Noto Sans KR, Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#334155">CSS 기법</text>
+    <text x="10" y="40" font-family="JetBrains Mono, monospace" font-size="10" fill="#0f172a">font-feature-settings:</text>
+    <text x="10" y="55" font-family="JetBrains Mono, monospace" font-size="10" fill="#0f172a">"lnum" 1;</text>
+    <text x="10" y="80" font-family="Noto Sans KR, Arial, sans-serif" font-size="10" fill="#64748b">등높이 숫자 활성화</text>
+  </g>
+  
+  <g transform="translate(870,350)">
+    <rect x="0" y="0" width="175" height="100" rx="8" fill="#f8fafc" stroke="#64748b" stroke-width="1"/>
+    <text x="100" y="20" font-family="Noto Sans KR, Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#334155">LaTeX 수식</text>
+    <text x="10" y="40" font-family="JetBrains Mono, monospace" font-size="10" fill="#0f172a">\setmathfont{STIX}</text>
+    <text x="10" y="55" font-family="JetBrains Mono, monospace" font-size="10" fill="#0f172a">\setmainfont{Noto}</text>
+    <text x="10" y="80" font-family="Noto Sans KR, Arial, sans-serif" font-size="10" fill="#64748b">폰트 분리 설정</text>
+  </g>
+  
+  <!-- Flow arrows -->
+  <path d="M 550 220 L 550 260" stroke="#64748b" stroke-width="4"/>
+  <!-- Direct arrow head pointing down -->
+  <polygon points="545,260 555,260 550,275" fill="#64748b"/>
+  <text x="570" y="250" font-family="Noto Sans KR, Arial, sans-serif" font-size="16" font-weight="bold" fill="#16a34a">최적화</text>
+</svg>

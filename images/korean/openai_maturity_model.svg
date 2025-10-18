@@ -1,0 +1,96 @@
+<svg viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b1020"/>
+      <stop offset="100%" stop-color="#101b3a"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="6" stdDeviation="12" flood-color="#000" flood-opacity="0.35"/>
+    </filter>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="9" markerHeight="9" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#94A3B8"/>
+    </marker>
+    <style>
+      .title { font-family: 'IBM Plex Sans KR', system-ui, sans-serif; font-size:20px; font-weight:800; fill:#000000; }
+      .subtitle { font-family: 'Inter', system-ui, sans-serif; font-size:14px; fill:#CBD5E1; }
+      .level-title { font-family: 'IBM Plex Sans KR', system-ui, sans-serif; font-size:18px; font-weight:700; fill:#0b1020; }
+      .level-sub { font-family: 'Inter', system-ui, sans-serif; font-size:13px; fill:#0b1020; opacity:0.9; }
+      .caption { font-family: 'Inter', system-ui, sans-serif; font-size:12px; fill:#94A3B8; }
+      .pill { font-family: 'Inter', system-ui, sans-serif; font-size:11px; font-weight:700; fill:#0b1020; }
+      .axis { font-family: 'Inter', system-ui, sans-serif; font-size:12px; fill:#A5B4FC; }
+      .year-label { font-family: 'Inter', system-ui, sans-serif; font-size:14px; fill:#1E293B; font-weight:600; }
+      .enabler { font-family: 'IBM Plex Sans KR'; font-size:15; fill:#000000; font-weight:bold; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="920" fill="#ffffff"/>
+
+  <!-- Header -->
+  <text x="60" y="60" class="title">① Chatbots → ② Reasoners → ③ Agents → ④ Innovators → ⑤ Organizations</text>
+
+  <!-- LEFT ENABLER SPINE (Upward) -->
+  <g id="enabler-spine" transform="translate(40,180)" stroke="#94A3B8" stroke-width="0.5">
+    <!-- L1→L2 -->
+    <path d="M 0 450 v -110" fill="none" marker-end="url(#arrow)"/>
+    <text class="enabler" x="14" y="450">Lv.1→2: Chain‑of‑Thought·검색통합(Search)·계획/검증</text>
+    <!-- L2→L3 -->
+    <path d="M 0 340 v -130" fill="none" marker-end="url(#arrow)"/>
+    <text class="enabler" x="14" y="305">Lv.2→3: Function Calling·도구사용(API)·장기메모리</text>
+    <!-- L3→L4 -->
+    <path d="M 0 210 v -130" fill="none" marker-end="url(#arrow)"/>
+    <text class="enabler" x="14" y="160">Lv.3→4: 멀티에이전트 오케스트레이션·가드레일·평가</text>
+    <!-- L4→L5 -->
+    <path d="M 0 80 v -120" fill="none" marker-end="url(#arrow)"/>
+    <text class="enabler" x="14" y="30">Lv.4→5: 도메인 시뮬레이터·자율실험루프·조정/협업</text>
+  </g>
+
+  <!-- Ladder with years & service/enablers (RIGHT BLOCKS) -->
+  <g transform="translate(100,160)">
+    <!-- Level 1 -->
+    <g transform="translate(100,480)">
+      <rect width="820" height="100" rx="16" fill="#E0E7FF" filter="url(#shadow)"/>
+      <text x="24" y="34" class="level-title">Lv.1 대화형 언어 (Chatbots)</text>
+      <text x="24" y="56" class="level-sub">자연스러운 대화·요약·번역·질의응답 중심</text>
+      <text x="24" y="83" class="service-tech">서비스(Services): ChatGPT, GPT‑4(채팅/비전), 고급 데이터 분석(구 Code Interpreter)</text>
+      <text x="670" y="34" class="year-label">2020–2022</text>
+    </g>
+
+    <!-- Level 2 -->
+    <g transform="translate(160,340)">
+      <rect width="760" height="100" rx="16" fill="#BAE6FD" filter="url(#shadow)"/>
+      <text x="24" y="34" class="level-title">Lv.2 문제해결 (Reasoners)</text>
+      <text x="24" y="56" class="level-sub">사고 연쇄·계획·검증으로 범용 문제 해결</text>
+      <text x="24" y="83" class="service-tech">서비스: ChatGPT(추론 프롬프트·자가검증), OpenAI Evals(평가)</text>
+      <text x="600" y="34" class="year-label">2023–2025</text>
+    </g>
+
+    <!-- Level 3 -->
+    <g transform="translate(220,200)">
+      <rect width="700" height="100" rx="16" fill="#BBF7D0" filter="url(#shadow)"/>
+      <text x="24" y="34" class="level-title">Lv.3 행위·도구사용 (Agents)</text>
+      <text x="24" y="56" class="level-sub">API·툴 사용과 멀티스텝 자율 실행 (감독 하)</text>
+      <text x="24" y="83" class="service-tech">서비스: Assistants API(툴: 함수호출·Retrieval·ADA), 사용자 정의 GPTs</text>
+      <text x="550" y="34" class="year-label">2025–2027 (예상)</text>
+    </g>
+
+    <!-- Level 4 -->
+    <g transform="translate(280,60)">
+      <rect width="640" height="100" rx="16" fill="#FDE68A" filter="url(#shadow)"/>
+      <text x="24" y="34" class="level-title">Lv.4 발명·연구 (Innovators)</text>
+      <text x="24" y="56" class="level-sub">새 아이디어·설계·발견 생성 (과학·공학)</text>
+      <text x="24" y="83" class="service-tech">서비스: (미래 예시) 고급 연구용 모델·실험 자동화 도구</text>
+      <text x="490" y="34" class="year-label">2028–2030 (예상)</text>
+    </g>
+
+    <!-- Level 5 -->
+    <g transform="translate(340,-80)">
+      <rect width="580" height="100" rx="16" fill="#FCA5A5" filter="url(#shadow)"/>
+      <text x="24" y="34" class="level-title">Lv.5 조직 단위 수행 (Organizations)</text>
+      <text x="24" y="56" class="level-sub">팀/조직 수준 목표설정·조정·운영까지 수행</text>
+      <text x="24" y="83" class="service-tech">서비스: (미래 예시) 조직 운영 에이전트 / 전사 오케스트레이션</text>
+      <text x="440" y="34" class="year-label">2030+ (예상)</text>
+    </g>
+  </g>
+
+</svg>

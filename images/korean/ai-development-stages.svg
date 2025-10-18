@@ -1,0 +1,154 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600" width="1200" height="600">
+  <defs>
+    <style><![CDATA[
+      .title { font-family: Inter, Segoe UI, Arial, sans-serif; font-size: 32px; font-weight: 900; fill: #f8fafc; }
+      .subtitle { font-family: Inter, Segoe UI, Arial, sans-serif; font-size: 18px; font-weight: 600; fill: #cbd5e1; }
+      .h1 { font-family: Inter, Segoe UI, Arial, sans-serif; font-size: 20px; font-weight: 800; fill: #ffffff; }
+      .h2 { font-family: Inter, Segoe UI, Arial, sans-serif; font-size: 16px; font-weight: 800; fill: #f1f5f9; }
+      .p { font-family: Inter, Segoe UI, Arial, sans-serif; font-size: 14px; font-weight: 600; fill: #e5e7eb; }
+      .small { font-family: Inter, Segoe UI, Arial, sans-serif; font-size: 12px; font-weight: 700; fill: #cbd5e1; }
+      .year { font-family: Inter, Segoe UI, Arial, sans-serif; font-size: 16px; font-weight: 900; fill: #fbbf24; }
+    ]]></style>
+
+    <!-- Background -->
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+
+    <!-- Stage gradients -->
+    <linearGradient id="gradStage1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fbbf24"/>
+      <stop offset="100%" stop-color="#f59e0b"/>
+    </linearGradient>
+
+    <linearGradient id="gradStage2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3b82f6"/>
+      <stop offset="100%" stop-color="#2563eb"/>
+    </linearGradient>
+
+    <linearGradient id="gradStage3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10b981"/>
+      <stop offset="100%" stop-color="#059669"/>
+    </linearGradient>
+
+    <!-- Effects -->
+    <filter id="shadow"><feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000" flood-opacity="0.3"/></filter>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge> 
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Arrow markers -->
+    <marker id="arrowRight" markerWidth="16" markerHeight="12" refX="12" refY="6" orient="auto">
+      <polygon points="0 0, 16 6, 0 12" fill="#34d399"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="600" fill="url(#bg)"/>
+
+  <!-- Header -->
+  <text x="450" y="50" text-anchor="middle" class="title">AI 발전 3단계</text>
+  <text x="700" y="50" text-anchor="middle" class="subtitle">Three Stages of AI Development</text>
+
+  <!-- Current position indicator -->
+  <g transform="translate(150,100)">
+    <polygon points="0 0, 20 -25, -20 -25" fill="#fbbf24" filter="url(#shadow)"/>
+    <text x="0" y="-35" text-anchor="middle" class="small" fill="#fbbf24">현재 위치</text>
+  </g>
+
+  <!-- Stage 1: Simple Substitution -->
+  <g transform="translate(50,120)">
+    <rect x="0" y="0" width="300" height="320" rx="20" fill="url(#gradStage1)" filter="url(#shadow)" opacity="0.9"/>
+    <text x="150" y="35" text-anchor="middle" class="h1">1단계: 단순 대체</text>
+    <text x="150" y="60" text-anchor="middle" class="small">Simple Substitution</text>
+    <text x="150" y="85" text-anchor="middle" class="year">2022-2025</text>
+    
+    <g transform="translate(20,110)" class="p">
+      <text x="0" y="0" class="h2" fill="#fed7aa">특징:</text>
+      <text x="0" y="25">• 기존 업무에 AI 도구 추가</text>
+      <text x="0" y="45">• 워크플로우 대부분 유지</text>
+      <text x="0" y="65">• 조직 구조 변화 최소</text>
+      <text x="0" y="85">• "AI 보조" 개념</text>
+      
+      <text x="0" y="125" class="h2" fill="#fed7aa">현재 상황:</text>
+      <text x="0" y="150">• ChatGPT, Claude 활용</text>
+      <text x="0" y="170">• 코딩 어시스턴트 사용</text>
+      <text x="0" y="190">• 텍스트 생성 도구</text>
+      
+      <text x="0" y="230" class="h2" fill="#fed7aa">한계:</text>
+      <text x="0" y="255">• 제한적 생산성 향상</text>
+      <text x="0" y="275">• 학습 비용 발생</text>
+      <text x="0" y="295">• 기존 관성 지속</text>
+    </g>
+  </g>
+
+  <!-- Arrow 1 -->
+  <line x1="340" y1="280" x2="440" y2="280" stroke="#34d399" stroke-width="6" marker-end="url(#arrowRight)" filter="url(#glow)"/>
+
+  <!-- Stage 2: Gradual Adaptation -->
+  <g transform="translate(450,120)">
+    <rect x="0" y="0" width="300" height="320" rx="20" fill="url(#gradStage2)" filter="url(#shadow)" opacity="0.9"/>
+    <text x="150" y="35" text-anchor="middle" class="h1">2단계: 점진적 적응</text>
+    <text x="150" y="60" text-anchor="middle" class="small">Gradual Adaptation</text>
+    <text x="150" y="85" text-anchor="middle" class="year">2025-2030 (예상)</text>
+    
+    <g transform="translate(20,110)" class="p">
+      <text x="0" y="0" class="h2" fill="#bfdbfe">특징:</text>
+      <text x="0" y="25">• AI 전용 워크플로우 개발</text>
+      <text x="0" y="45">• 조직 구조 부분 개편</text>
+      <text x="0" y="65">• 인간-AI 역할 분담</text>
+      <text x="0" y="85">• 혼재된 시스템 운영</text>
+      
+      <text x="0" y="125" class="h2" fill="#bfdbfe">예상 변화:</text>
+      <text x="0" y="150">• AI 매니저 등장</text>
+      <text x="0" y="170">• 새로운 직무 생성</text>
+      <text x="0" y="190">• 교육 시스템 개편</text>
+      
+      <text x="0" y="230" class="h2" fill="#bfdbfe">과제:</text>
+      <text x="0" y="255">• 무형자본 투자 필요</text>
+      <text x="0" y="275">• 문화 변화 요구</text>
+      <text x="0" y="295">• 복잡성 관리</text>
+    </g>
+  </g>
+
+  <!-- Arrow 2 -->
+  <line x1="760" y1="280" x2="840" y2="280" stroke="#34d399" stroke-width="6" marker-end="url(#arrowRight)" filter="url(#glow)"/>
+
+  <!-- Stage 3: Revolutionary Reconfiguration -->
+  <g transform="translate(850,120)">
+    <rect x="0" y="0" width="300" height="320" rx="20" fill="url(#gradStage3)" filter="url(#shadow)" opacity="0.9"/>
+    <text x="150" y="35" text-anchor="middle" class="h1">3단계: 혁신적 재구성</text>
+    <text x="150" y="60" text-anchor="middle" class="small">Revolutionary Reconfiguration</text>
+    <text x="150" y="85" text-anchor="middle" class="year">2030-2040 (예상)</text>
+    
+    <g transform="translate(20,110)" class="p">
+      <text x="0" y="0" class="h2" fill="#a7f3d0">특징:</text>
+      <text x="0" y="25">• AI 네이티브 조직 구조</text>
+      <text x="0" y="45">• 업무 프로세스 완전 재구성</text>
+      <text x="0" y="65">• 인간-AI 완전 통합</text>
+      <text x="0" y="85">• 새로운 산업 생태계</text>
+      
+      <text x="0" y="125" class="h2" fill="#a7f3d0">예상 성과:</text>
+      <text x="0" y="150">• 폭발적 생산성 향상</text>
+      <text x="0" y="170">• 창의성 혁명</text>
+      <text x="0" y="190">• 지식 민주화</text>
+      
+      <text x="0" y="230" class="h2" fill="#a7f3d0">결과:</text>
+      <text x="0" y="255">• 인지혁명 완성</text>
+      <text x="0" y="275">• 새로운 경제 패러다임</text>
+      <text x="0" y="295">• 인간 잠재력 극대화</text>
+    </g>
+  </g>
+
+  <!-- Bottom insight -->
+  <g transform="translate(600,535)">
+    <rect x="-550" y="0" width="1100" height="60" rx="15" fill="#1f2937" opacity="0.8"/>
+    <text x="0" y="25" text-anchor="middle" class="h1">핵심 메시지: 현재는 1단계, 진정한 변화는 2-3단계에서 실현</text>
+    <text x="0" y="45" text-anchor="middle" class="small">Key Message: We are in Stage 1, true transformation will happen in Stages 2-3</text>
+  </g>
+</svg>

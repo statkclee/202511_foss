@@ -1,0 +1,295 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 900">
+  <defs>
+    <style>
+      .title-text { font-size: 28px; font-weight: bold; }
+      .subtitle-text { font-size: 16px; }
+      .panel-title { font-size: 20px; font-weight: bold; }
+      .vs-text { font-size: 48px; font-weight: bold; }
+      .plus-text { font-size: 48px; font-weight: bold; }
+      .description-text { font-size: 14px; }
+      .quote-text { font-size: 16px; font-weight: bold; }
+      .citation-text { font-size: 12px; }
+      .label-text { font-size: 13px; font-weight: bold; }
+    </style>
+    
+    <!-- Gradients for spacecraft sections -->
+    <radialGradient id="spacecraftGradient" cx="50%" cy="30%" r="60%">
+      <stop offset="0%" style="stop-color:#f3f4f6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#d1d5db;stop-opacity:1" />
+    </radialGradient>
+    
+    <!-- Conflict gradient (red/orange) -->
+    <linearGradient id="conflictGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#dc2626;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#ea580c;stop-opacity:0.8" />
+    </linearGradient>
+    
+    <!-- Collaboration gradient (blue/green) -->
+    <linearGradient id="collabGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0ea5e9;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#10b981;stop-opacity:0.8" />
+    </linearGradient>
+    
+    <!-- Space background gradient -->
+    <radialGradient id="spaceGradient" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#1e1b4b;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0f0f23;stop-opacity:1" />
+    </radialGradient>
+    
+    <!-- Shadow filter -->
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="3" dy="3" stdDeviation="4" flood-opacity="0.3"/>
+    </filter>
+    
+    <!-- Glow filter -->
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge> 
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    
+    <!-- Stars pattern -->
+    <pattern id="stars" x="0" y="0" width="100" height="100" patternUnits="userSpaceOnUse">
+      <circle cx="20" cy="30" r="1" fill="white" opacity="0.8"/>
+      <circle cx="60" cy="10" r="0.5" fill="white" opacity="0.6"/>
+      <circle cx="80" cy="70" r="1.5" fill="white" opacity="0.9"/>
+      <circle cx="10" cy="80" r="0.8" fill="white" opacity="0.7"/>
+      <circle cx="90" cy="50" r="0.3" fill="white" opacity="0.5"/>
+    </pattern>
+  </defs>
+  
+  <!-- Space background -->
+  <rect width="1400" height="900" fill="url(#spaceGradient)"/>
+  <rect width="1400" height="900" fill="url(#stars)" opacity="0.3"/>
+  
+  <!-- Title Section -->
+  <g id="title-section">
+    <text x="700" y="50" text-anchor="middle" font-family="Arial, sans-serif" class="title-text" fill="white">
+      일자리: 기계와의 전쟁(?)
+    </text>
+    <text x="700" y="75" text-anchor="middle" font-family="Arial, sans-serif" class="subtitle-text" fill="#d1d5db">
+      Man versus machine or man + machine?
+    </text>
+  </g>
+  
+  <!-- Left Panel - Man vs Machine (Conflict) -->
+  <g id="conflict-panel">
+    <!-- Spacecraft cross-section (cramped) -->
+    <path d="M 100 200 Q 200 150 300 200 L 300 500 Q 200 550 100 500 Z" 
+          fill="url(#spacecraftGradient)" stroke="#6b7280" stroke-width="3" filter="url(#shadow)"/>
+    
+    <!-- Conflict atmosphere overlay -->
+    <path d="M 100 200 Q 200 150 300 200 L 300 500 Q 200 550 100 500 Z" 
+          fill="url(#conflictGradient)" opacity="0.4"/>
+    
+    <!-- Interior panels and controls -->
+    <rect x="120" y="220" width="160" height="30" rx="5" fill="#374151" opacity="0.8"/>
+    <rect x="130" y="225" width="20" height="20" rx="3" fill="#ef4444"/>
+    <rect x="160" y="225" width="20" height="20" rx="3" fill="#f97316"/>
+    <rect x="190" y="225" width="20" height="20" rx="3" fill="#eab308"/>
+    
+    <!-- Warning lights -->
+    <circle cx="240" cy="235" r="5" fill="#dc2626" filter="url(#glow)"/>
+    <circle cx="255" cy="235" r="5" fill="#dc2626" filter="url(#glow)"/>
+    
+    <!-- Human figure (left side, defensive) -->
+    <g id="human-conflict" transform="translate(130, 300)">
+      <!-- Helmet -->
+      <circle cx="25" cy="30" r="20" fill="#f3f4f6" stroke="#6b7280" stroke-width="2"/>
+      <circle cx="25" cy="30" r="15" fill="rgba(255,255,255,0.1)"/>
+      <!-- Face -->
+      <circle cx="22" cy="27" r="2" fill="#374151"/>
+      <circle cx="28" cy="27" r="2" fill="#374151"/>
+      <path d="M 20 35 Q 25 32 30 35" stroke="#374151" stroke-width="2" fill="none"/>
+      <!-- Body -->
+      <ellipse cx="25" cy="80" rx="25" ry="35" fill="#e5e7eb"/>
+      <!-- Arms (boxing stance) -->
+      <ellipse cx="5" cy="70" rx="8" ry="20" fill="#e5e7eb" transform="rotate(-20)"/>
+      <ellipse cx="45" cy="70" rx="8" ry="20" fill="#e5e7eb" transform="rotate(20)"/>
+      <!-- Boxing gloves -->
+      <circle cx="0" cy="60" r="10" fill="#dc2626"/>
+      <circle cx="50" cy="60" r="10" fill="#dc2626"/>
+      <!-- Legs -->
+      <ellipse cx="15" cy="130" rx="8" ry="25" fill="#e5e7eb"/>
+      <ellipse cx="35" cy="130" rx="8" ry="25" fill="#e5e7eb"/>
+    </g>
+    
+    <!-- Robot figure (right side, aggressive) -->
+    <g id="robot-conflict" transform="translate(200, 300)">
+      <!-- Head -->
+      <rect x="15" y="20" width="30" height="25" rx="5" fill="#6b7280" stroke="#374151" stroke-width="2"/>
+      <!-- Eyes (angry red) -->
+      <rect x="20" y="28" width="8" height="4" fill="#dc2626" filter="url(#glow)"/>
+      <rect x="32" y="28" width="8" height="4" fill="#dc2626" filter="url(#glow)"/>
+      <!-- Body -->
+      <rect x="10" y="55" width="40" height="50" rx="8" fill="#6b7280"/>
+      <!-- Arms (threatening) -->
+      <rect x="-5" y="65" width="15" height="30" rx="7" fill="#6b7280" transform="rotate(-30)"/>
+      <rect x="40" y="65" width="15" height="30" rx="7" fill="#6b7280" transform="rotate(30)"/>
+      <!-- Claws/hands -->
+      <polygon points="-8,50 -15,45 -12,55" fill="#374151"/>
+      <polygon points="58,50 65,45 62,55" fill="#374151"/>
+      <!-- Legs -->
+      <rect x="18" y="105" width="8" height="30" rx="4" fill="#6b7280"/>
+      <rect x="30" y="105" width="8" height="30" rx="4" fill="#6b7280"/>
+    </g>
+    
+    <!-- VS Symbol -->
+    <circle cx="200" cy="230" r="30" fill="#dc2626" filter="url(#shadow)"/>
+    <text x="200" y="245" text-anchor="middle" font-family="Arial, sans-serif" class="vs-text" fill="white">
+      VS
+    </text>
+    
+    <!-- Panel label -->
+    <rect x="50" y="520" width="300" height="40" rx="10" fill="rgba(220,38,38,0.8)"/>
+    <text x="200" y="535" text-anchor="middle" font-family="Arial, sans-serif" class="panel-title" fill="white">
+      대립 모델
+    </text>
+    <text x="200" y="550" text-anchor="middle" font-family="Arial, sans-serif" class="description-text" fill="white">
+      Competition • Replacement • Zero-sum
+    </text>
+  </g>
+  
+  <!-- Right Panel - Man + Machine (Collaboration) -->
+  <g id="collaboration-panel">
+    <!-- Spacecraft cross-section (spacious) -->
+    <path d="M 500 180 Q 650 120 800 180 L 850 520 Q 650 580 450 520 Z" 
+          fill="url(#spacecraftGradient)" stroke="#6b7280" stroke-width="3" filter="url(#shadow)"/>
+    
+    <!-- Collaboration atmosphere overlay -->
+    <path d="M 500 180 Q 650 120 800 180 L 850 520 Q 650 580 450 520 Z" 
+          fill="url(#collabGradient)" opacity="0.3"/>
+    
+    <!-- Advanced control panels -->
+    <rect x="520" y="200" width="200" height="40" rx="8" fill="#1f2937" opacity="0.9"/>
+    <rect x="530" y="210" width="30" height="20" rx="3" fill="#10b981"/>
+    <rect x="570" y="210" width="30" height="20" rx="3" fill="#06b6d4"/>
+    <rect x="610" y="210" width="30" height="20" rx="3" fill="#3b82f6"/>
+    <rect x="650" y="210" width="30" height="20" rx="3" fill="#8b5cf6"/>
+    
+    <!-- Status indicators -->
+    <circle cx="700" cy="220" r="6" fill="#10b981" filter="url(#glow)"/>
+    <circle cx="720" cy="220" r="6" fill="#06b6d4" filter="url(#glow)"/>
+    
+    <!-- Human figure (collaborative) -->
+    <g id="human-collab" transform="translate(550, 320)">
+      <!-- Helmet -->
+      <circle cx="25" cy="30" r="22" fill="#f3f4f6" stroke="#6b7280" stroke-width="2"/>
+      <circle cx="25" cy="30" r="17" fill="rgba(255,255,255,0.1)"/>
+      <!-- Face (friendly) -->
+      <circle cx="22" cy="27" r="2" fill="#374151"/>
+      <circle cx="28" cy="27" r="2" fill="#374151"/>
+      <path d="M 18 35 Q 25 40 32 35" stroke="#374151" stroke-width="2" fill="none"/>
+      <!-- Body -->
+      <ellipse cx="25" cy="85" rx="28" ry="40" fill="#e5e7eb"/>
+      <!-- Arms (reaching out) -->
+      <ellipse cx="5" cy="75" rx="10" ry="25" fill="#e5e7eb" transform="rotate(-10)"/>
+      <ellipse cx="45" cy="75" rx="10" ry="25" fill="#e5e7eb" transform="rotate(10)"/>
+      <!-- Hands (open, welcoming) -->
+      <circle cx="5" cy="95" r="6" fill="#fbbf24"/>
+      <circle cx="45" cy="95" r="6" fill="#fbbf24"/>
+      <!-- Legs -->
+      <ellipse cx="15" cy="140" rx="10" ry="30" fill="#e5e7eb"/>
+      <ellipse cx="35" cy="140" rx="10" ry="30" fill="#e5e7eb"/>
+    </g>
+    
+    <!-- Robot figure (collaborative) -->
+    <g id="robot-collab" transform="translate(650, 320)">
+      <!-- Head -->
+      <rect x="15" y="20" width="35" height="30" rx="8" fill="#6b7280" stroke="#374151" stroke-width="2"/>
+      <!-- Eyes (friendly blue) -->
+      <circle cx="25" cy="32" r="4" fill="#06b6d4" filter="url(#glow)"/>
+      <circle cx="35" cy="32" r="4" fill="#06b6d4" filter="url(#glow)"/>
+      <!-- Smile -->
+      <path d="M 22 40 Q 30 45 38 40" stroke="#10b981" stroke-width="2" fill="none"/>
+      <!-- Body -->
+      <rect x="10" y="60" width="45" height="55" rx="10" fill="#6b7280"/>
+      <!-- Arms (reaching toward human) -->
+      <rect x="0" y="70" width="18" height="35" rx="9" fill="#6b7280" transform="rotate(-20)"/>
+      <rect x="45" y="70" width="18" height="35" rx="9" fill="#6b7280" transform="rotate(20)"/>
+      <!-- Hands (open, collaborative) -->
+      <circle cx="5" cy="95" r="7" fill="#10b981"/>
+      <circle cx="50" cy="95" r="7" fill="#10b981"/>
+      <!-- Legs -->
+      <rect x="20" y="115" width="10" height="35" rx="5" fill="#6b7280"/>
+      <rect x="35" y="115" width="10" height="35" rx="5" fill="#6b7280"/>
+    </g>
+    
+    <!-- Handshake/collaboration symbol -->
+    <g id="handshake" transform="translate(620, 400)">
+      <circle cx="0" cy="0" r="35" fill="#10b981" opacity="0.3"/>
+      <!-- Human hand -->
+      <ellipse cx="-15" cy="0" rx="12" ry="8" fill="#fbbf24"/>
+      <!-- Robot hand -->
+      <ellipse cx="15" cy="0" rx="12" ry="8" fill="#6b7280"/>
+      <!-- Connection/spark -->
+      <circle cx="0" cy="0" r="5" fill="#fbbf24" filter="url(#glow)"/>
+    </g>
+    
+    <!-- Plus Symbol -->
+    <circle cx="650" cy="250" r="35" fill="#10b981" filter="url(#shadow)"/>
+    <text x="650" y="265" text-anchor="middle" font-family="Arial, sans-serif" class="plus-text" fill="white">
+      +
+    </text>
+    
+    <!-- Panel label -->
+    <rect x="450" y="540" width="350" height="40" rx="10" fill="rgba(16,185,129,0.8)"/>
+    <text x="625" y="555" text-anchor="middle" font-family="Arial, sans-serif" class="panel-title" fill="white">
+      협력 모델
+    </text>
+    <text x="625" y="570" text-anchor="middle" font-family="Arial, sans-serif" class="description-text" fill="white">
+      Collaboration • Augmentation • Synergy
+    </text>
+  </g>
+  
+  <!-- MIT Lab References -->
+  <g id="mit-references">
+    <rect x="90" y="580" width="220" height="25" rx="5" fill="#1f2937" opacity="0.8"/>
+    <text x="200" y="595" text-anchor="middle" font-family="Arial, sans-serif" class="label-text" fill="white">
+      M.I.T. INSTRUMENTATION LABORATORY
+    </text>
+    
+    <rect x="490" y="600" width="220" height="25" rx="5" fill="#1f2937" opacity="0.8"/>
+    <text x="600" y="615" text-anchor="middle" font-family="Arial, sans-serif" class="label-text" fill="white">
+      M.I.T. INSTRUMENTATION LABORATORY
+    </text>
+  </g>
+  
+  <!-- Evolution Arrow -->
+  <g id="evolution-arrow">
+    <path d="M 380 350 Q 420 330 460 350" stroke="#fbbf24" stroke-width="6" fill="none" 
+          marker-end="url(#arrow)" filter="url(#glow)"/>
+    <text x="420" y="320" text-anchor="middle" font-family="Arial, sans-serif" class="description-text" fill="#fbbf24">
+      Evolution
+    </text>
+  </g>
+  
+  <!-- Arrow marker -->
+  <defs>
+    <marker id="arrow" markerWidth="12" markerHeight="10" refX="10" refY="5" orient="auto">
+      <polygon points="0 0, 12 5, 0 10" fill="#fbbf24"/>
+    </marker>
+  </defs>
+  
+  <!-- Key Message Section -->
+  <g id="key-message">
+    <rect x="100" y="650" width="1200" height="120" rx="15" fill="rgba(30,27,75,0.8)" 
+          stroke="#fbbf24" stroke-width="2" filter="url(#shadow)"/>
+    
+    <text x="700" y="685" text-anchor="middle" font-family="Arial, sans-serif" class="quote-text" fill="#fbbf24">
+      Cummings 교수가 제시한 "Man versus machine or man + machine?"라는 질문에 대해, 
+    </text>
+    <text x="700" y="710" text-anchor="middle" font-family="Arial, sans-serif" class="quote-text" fill="#fbbf24">
+      아폴로는 명확한 답을 제시 ➜ 효과적인 시스템은 인간과 기계가 각자의 강점을 발휘하며 
+    </text>
+    <text x="700" y="735" text-anchor="middle" font-family="Arial, sans-serif" class="quote-text" fill="#fbbf24">
+      협력하는 "man + machine" 모델
+    </text>
+    
+    <text x="700" y="760" text-anchor="middle" font-family="Arial, sans-serif" class="citation-text" fill="#d1d5db">
+      Liang Sim, M.L. Cummings, Cristin A. Smith, "Past, present and future implications of human supervisory control in space missions", Acta Astronautica 62 (2008) 648 – 655
+    </text>
+  </g>
+</svg>

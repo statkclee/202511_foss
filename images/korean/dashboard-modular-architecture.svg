@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1200" height="600" viewBox="0 50 1200 600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="flexGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#9CA3AF;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#6B7280;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="quartoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3B82F6;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#8B5CF6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#06B6D4;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="moduleGradient1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FEF3C7;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#F59E0B;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="moduleGradient2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#DBEAFE;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3B82F6;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="moduleGradient3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#D1FAE5;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#10B981;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="moduleGradient4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#F3E8FF;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#8B5CF6;stop-opacity:1" />
+    </linearGradient>
+    
+    <filter id="depth" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="3"/>
+      <feOffset dx="3" dy="6" result="offset" />
+      <feFlood flood-color="#1F2937" flood-opacity="0.3"/>
+      <feComposite in2="offset" operator="in" />
+      <feMerge> 
+        <feMergeNode />
+        <feMergeNode in="SourceGraphic" /> 
+      </feMerge>
+    </filter>
+    
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+      <feMerge> 
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/> 
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1200" height="800" fill="#F9FAFB"/>
+  
+  <!-- Left Side: flexdashboard (Monolithic) -->
+  <g id="flexdashboard-side">
+    <text x="200" y="95" text-anchor="middle" font-family="'Noto Sans KR', Arial, sans-serif" font-size="22" font-weight="bold" fill="#374151">
+      flexdashboard (2017-2023)
+    </text>
+    
+    <!-- Monolithic Block -->
+    <rect x="50" y="120" width="300" height="500" rx="15" fill="url(#flexGradient)" stroke="#4B5563" stroke-width="3" filter="url(#depth)"/>
+    
+    <!-- R Only Label -->
+    <rect x="80" y="150" width="240" height="40" rx="8" fill="#EF4444" opacity="0.9"/>
+    <text x="200" y="175" text-anchor="middle" font-family="'Noto Sans KR', Arial, sans-serif" font-size="15" font-weight="bold" fill="white">
+      R 언어 단일 제약
+    </text>
+    
+    <!-- Core Limitations -->
+    <text x="80" y="220" font-family="'Noto Sans KR', Arial, sans-serif" font-size="17" font-weight="bold" fill="#1F2937">핸심 제약:</text>
+    
+    <circle cx="95" cy="250" r="5" fill="#DC2626"/>
+    <text x="115" y="256" font-family="'Noto Sans KR', Arial, sans-serif" font-size="14" fill="#374151">단일 언어 의존성</text>
+    
+    <circle cx="95" cy="280" r="5" fill="#DC2626"/>
+    <text x="115" y="286" font-family="'Noto Sans KR', Arial, sans-serif" font-size="14" fill="#374151">서버 설정 복잡성</text>
+    
+    <circle cx="95" cy="310" r="5" fill="#DC2626"/>
+    <text x="115" y="316" font-family="'Noto Sans KR', Arial, sans-serif" font-size="14" fill="#374151">제한적 확장성</text>
+    
+    <circle cx="95" cy="340" r="5" fill="#DC2626"/>
+    <text x="115" y="346" font-family="'Noto Sans KR', Arial, sans-serif" font-size="14" fill="#374151">모바일 대응 미흥</text>
+    
+    <!-- Monolithic Stack -->
+    <rect x="90" y="380" width="220" height="80" rx="10" fill="url(#flexGradient)" stroke="#4B5563" stroke-width="2" opacity="0.8"/>
+    <text x="200" y="405" text-anchor="middle" font-family="'Noto Sans KR', Arial, sans-serif" font-size="14" font-weight="bold" fill="white">R 단일 스택</text>
+    <text x="200" y="425" text-anchor="middle" font-family="'Noto Sans KR', Arial, sans-serif" font-size="12" fill="white">flexdashboard 패키지</text>
+    <text x="200" y="440" text-anchor="middle" font-family="'Noto Sans KR', Arial, sans-serif" font-size="12" fill="white">Shiny 런타임</text>
+    <text x="200" y="455" text-anchor="middle" font-family="'Noto Sans KR', Arial, sans-serif" font-size="12" fill="white">HTML 정적 출력</text>
+    
+    <rect x="90" y="480" width="220" height="40" rx="8" fill="#9CA3AF" opacity="0.6"/>
+    <text x="200" y="505" text-anchor="middle" font-family="'Noto Sans KR', Arial, sans-serif" font-size="13" font-weight="bold" fill="#1F2937">모놀리식 아키텍처</text>
+  </g>
+  
+  <!-- Transition Arrow -->
+  <g id="transition" transform="translate(-50, -30)">
+    <defs>
+      <marker id="evolutionArrow" markerWidth="20" markerHeight="15" refX="15" refY="7.5" orient="auto">
+        <polygon points="0 0, 15 7.5, 0 15" fill="url(#quartoGradient)" />
+      </marker>
+    </defs>
+    
+    <line x1="380" y1="350" x2="520" y2="350" stroke="url(#quartoGradient)" stroke-width="8" marker-end="url(#evolutionArrow)" filter="url(#glow)"/>
+    
+    <rect x="420" y="315" width="120" height="70" rx="30" fill="white" stroke="url(#quartoGradient)" stroke-width="3" filter="url(#depth)"/>
+    <text x="480" y="335" text-anchor="middle" font-family="'Noto Sans KR', Arial, sans-serif" font-size="15" font-weight="bold" fill="#3B82F6">2024</text>
+    <text x="480" y="355" text-anchor="middle" font-family="'Noto Sans KR', Arial, sans-serif" font-size="17" font-weight="bold" fill="#8B5CF6">패러다임</text>
+    <text x="480" y="372" text-anchor="middle" font-family="'Noto Sans KR', Arial, sans-serif" font-size="13" fill="#6B46C1">v1.4 진화</text>
+  </g>
+  
+  <!-- Right Side: Quarto Dashboard (Modular) -->
+  <g id="quarto-side" transform="translate(-70, 30)">
+    <text x="900" y="75" text-anchor="middle" font-family="'Noto Sans KR', Arial, sans-serif" font-size="22" font-weight="bold" fill="#1E40AF">
+      Quarto Dashboard (2024+)
+    </text>
+    
+    <!-- Central Quarto Core -->
+    <rect x="790" y="195" width="220" height="85" rx="15" fill="url(#quartoGradient)" stroke="#1E40AF" stroke-width="3" filter="url(#glow)"/>
+    <text x="900" y="225" text-anchor="middle" font-family="'Noto Sans KR', Arial, sans-serif" font-size="18" font-weight="bold" fill="white">
+      Quarto Core
+    </text>
+    <text x="900" y="245" text-anchor="middle" font-family="'Noto Sans KR', Arial, sans-serif" font-size="14" fill="white">
+      통합 렌더링 엔진
+    </text>
+    <text x="900" y="260" text-anchor="middle" font-family="'Noto Sans KR', Arial, sans-serif" font-size="12" fill="white">
+      다언어 크로스 레퍼런스
+    </text>
+    <text x="900" y="275" text-anchor="middle" font-family="'Noto Sans KR', Arial, sans-serif" font-size="11" fill="white">
+      데이터 공유 및 상호작용
+    </text>
+    
+    <!-- R Module -->
+    <rect x="540" y="125" width="190" height="110" rx="12" fill="url(#moduleGradient2)" stroke="#3B82F6" stroke-width="2" filter="url(#depth)" transform="rotate(-12 635 180)"/>
+    <text x="635" y="160" text-anchor="middle" font-family="'Noto Sans KR', Arial, sans-serif" font-size="16" font-weight="bold" fill="white">R 모듈</text>
+    <text x="635" y="180" text-anchor="middle" font-family="'Noto Sans KR', Arial, sans-serif" font-size="12" fill="white">tidyverse</text>
+    <text x="635" y="195" text-anchor="middle" font-family="'Noto Sans KR', Arial, sans-serif" font-size="12" fill="white">ggplot2</text>
+    <text x="635" y="210" text-anchor="middle" font-family="'Noto Sans KR', Arial, sans-serif" font-size="12" fill="white">gt 테이블</text>
+    <text x="635" y="225" text-anchor="middle" font-family="'Noto Sans KR', Arial, sans-serif" font-size="11" fill="white">통계 분석</text>
+    
+    <!-- Python Module -->
+    <rect x="1010" y="125" width="190" height="110" rx="12" fill="url(#moduleGradient3)" stroke="#10B981" stroke-width="2" filter="url(#depth)" transform="rotate(12 1105 180)"/>
+    <text x="1105" y="160" text-anchor="middle" font-family="'Noto Sans KR', Arial, sans-serif" font-size="16" font-weight="bold" fill="white">Python 모듈</text>
+    <text x="1105" y="180" text-anchor="middle" font-family="'Noto Sans KR', Arial, sans-serif" font-size="12" fill="white">pandas</text>
+    <text x="1105" y="195" text-anchor="middle" font-family="'Noto Sans KR', Arial, sans-serif" font-size="12" fill="white">scikit-learn</text>
+    <text x="1105" y="210" text-anchor="middle" font-family="'Noto Sans KR', Arial, sans-serif" font-size="12" fill="white">matplotlib</text>
+    <text x="1105" y="225" text-anchor="middle" font-family="'Noto Sans KR', Arial, sans-serif" font-size="11" fill="white">ML 및 AI</text>
+    
+    <!-- Julia Module -->
+    <rect x="540" y="345" width="190" height="110" rx="12" fill="url(#moduleGradient1)" stroke="#F59E0B" stroke-width="2" filter="url(#depth)" transform="rotate(12 635 400)"/>
+    <text x="635" y="380" text-anchor="middle" font-family="'Noto Sans KR', Arial, sans-serif" font-size="16" font-weight="bold" fill="white">Julia 모듈</text>
+    <text x="635" y="400" text-anchor="middle" font-family="'Noto Sans KR', Arial, sans-serif" font-size="12" fill="white">DataFrames.jl</text>
+    <text x="635" y="415" text-anchor="middle" font-family="'Noto Sans KR', Arial, sans-serif" font-size="12" fill="white">Plots.jl</text>
+    <text x="635" y="430" text-anchor="middle" font-family="'Noto Sans KR', Arial, sans-serif" font-size="12" fill="white">고성능 수치</text>
+    <text x="635" y="445" text-anchor="middle" font-family="'Noto Sans KR', Arial, sans-serif" font-size="11" fill="white">병렬 컴퓨팅</text>
+    
+    <!-- Observable JS Module -->
+    <rect x="1010" y="345" width="190" height="110" rx="12" fill="url(#moduleGradient4)" stroke="#8B5CF6" stroke-width="2" filter="url(#depth)" transform="rotate(-12 1105 400)"/>
+    <text x="1105" y="380" text-anchor="middle" font-family="'Noto Sans KR', Arial, sans-serif" font-size="16" font-weight="bold" fill="white">Observable JS</text>
+    <text x="1105" y="400" text-anchor="middle" font-family="'Noto Sans KR', Arial, sans-serif" font-size="12" fill="white">D3.js</text>
+    <text x="1105" y="415" text-anchor="middle" font-family="'Noto Sans KR', Arial, sans-serif" font-size="12" fill="white">Plot.js</text>
+    <text x="1105" y="430" text-anchor="middle" font-family="'Noto Sans KR', Arial, sans-serif" font-size="12" fill="white">인터랙티브</text>
+    <text x="1105" y="445" text-anchor="middle" font-family="'Noto Sans KR', Arial, sans-serif" font-size="11" fill="white">시각화</text>
+    
+    <!-- Connection lines with smooth curves -->
+    <path d="M 730 180 Q 780 190 790 220" stroke="#3B82F6" stroke-width="4" fill="none" opacity="0.8"/>
+    <path d="M 1010 180 Q 960 190 950 220" stroke="#10B981" stroke-width="4" fill="none" opacity="0.8"/>
+    <path d="M 730 400 Q 780 360 790 260" stroke="#F59E0B" stroke-width="4" fill="none" opacity="0.8"/>
+    <path d="M 1010 400 Q 960 360 950 260" stroke="#8B5CF6" stroke-width="4" fill="none" opacity="0.8"/>
+    
+    <!-- Core Solutions -->
+    <text x="750" y="470" font-family="'Noto Sans KR', Arial, sans-serif" font-size="17" font-weight="bold" fill="#1E40AF">핵심 손루션:</text>
+    
+    <circle cx="765" cy="495" r="5" fill="#10B981"/>
+    <text x="785" y="500" font-family="'Noto Sans KR', Arial, sans-serif" font-size="14" fill="#374151">다언어 네이티브 통합</text>
+    
+    <circle cx="765" cy="520" r="5" fill="#10B981"/>
+    <text x="785" y="525" font-family="'Noto Sans KR', Arial, sans-serif" font-size="14" fill="#374151">실시간 데이터 공유</text>
+    
+    <circle cx="765" cy="545" r="5" fill="#10B981"/>
+    <text x="785" y="550" font-family="'Noto Sans KR', Arial, sans-serif" font-size="14" fill="#374151">반응형 모바일 대응</text>
+    
+    <circle cx="765" cy="570" r="5" fill="#10B981"/>
+    <text x="785" y="575" font-family="'Noto Sans KR', Arial, sans-serif" font-size="14" fill="#374151">모듈러 재사용성</text>
+  </g>
+  
+  <!-- Enhanced Data Flow Animation -->
+  <g id="data-flow">
+    <circle cx="560" cy="180" r="4" fill="#3B82F6" opacity="0">
+      <animate attributeName="opacity" values="0;1;0" dur="3s" repeatCount="indefinite"/>
+      <animate attributeName="r" values="4;6;4" dur="3s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="1050" cy="180" r="4" fill="#10B981" opacity="0">
+      <animate attributeName="opacity" values="0;1;0" dur="3s" begin="0.5s" repeatCount="indefinite"/>
+      <animate attributeName="r" values="4;6;4" dur="3s" begin="0.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="830" cy="240" r="5" fill="#06B6D4" opacity="0">
+      <animate attributeName="opacity" values="0;1;0" dur="3s" begin="1s" repeatCount="indefinite"/>
+      <animate attributeName="r" values="5;8;5" dur="3s" begin="1s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="580" cy="400" r="4" fill="#F59E0B" opacity="0">
+      <animate attributeName="opacity" values="0;1;0" dur="3s" begin="1.5s" repeatCount="indefinite"/>
+      <animate attributeName="r" values="4;6;4" dur="3s" begin="1.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="1055" cy="400" r="4" fill="#8B5CF6" opacity="0">
+      <animate attributeName="opacity" values="0;1;0" dur="3s" begin="2s" repeatCount="indefinite"/>
+      <animate attributeName="r" values="4;6;4" dur="3s" begin="2s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+  
+  <!-- Bottom comparison with enhanced content -->
+  
+  <g transform="translate(80, 540)">
+    <rect width="250" height="60" rx="8" fill="#FEF2F2" stroke="#DC2626" stroke-width="1" opacity="0.8"/>
+    <text x="15" y="20" font-family="'Noto Sans KR', Arial, sans-serif" font-size="14" font-weight="bold" fill="#DC2626">flexdashboard 제약</text>
+    <text x="15" y="38" font-family="'Noto Sans KR', Arial, sans-serif" font-size="12" fill="#7F1D1D">R 단일 언어 + 서버 복잡성 + 제한적 확장</text>
+    <text x="15" y="53" font-family="'Noto Sans KR', Arial, sans-serif" font-size="12" fill="#7F1D1D">→ 개발 속도 저하 및 유지보수 어려움</text>
+  </g>
+  
+  <g transform="translate(875, 540)">
+    <rect width="250" height="60" rx="8" fill="#F0FDF4" stroke="#10B981" stroke-width="1" opacity="0.8"/>
+    <text x="15" y="20" font-family="'Noto Sans KR', Arial, sans-serif" font-size="14" font-weight="bold" fill="#10B981">Quarto 솔루션</text>
+    <text x="15" y="38" font-family="'Noto Sans KR', Arial, sans-serif" font-size="12" fill="#064E3B">다언어 네이티브 + 모듈러 설계 + 무한 확장</text>
+    <text x="15" y="53" font-family="'Noto Sans KR', Arial, sans-serif" font-size="12" fill="#064E3B">→ 빠른 개발 + 유연한 통합 + 미래 대응력</text>
+  </g>
+</svg>

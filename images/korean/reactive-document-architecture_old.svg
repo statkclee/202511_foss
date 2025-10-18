@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1200" height="900" viewBox="0 30 1200 900" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#F0F9FF;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#E0E7FF;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="userGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#8B5CF6" />
+      <stop offset="100%" style="stop-color:#A78BFA" />
+    </linearGradient>
+    
+    <linearGradient id="reactiveGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#10B981" />
+      <stop offset="100%" style="stop-color:#34D399" />
+    </linearGradient>
+    
+    <linearGradient id="dataGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#F59E0B" />
+      <stop offset="100%" style="stop-color:#FBBF24" />
+    </linearGradient>
+    
+    <linearGradient id="outputGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#EF4444" />
+      <stop offset="100%" style="stop-color:#F87171" />
+    </linearGradient>
+    
+    <filter id="shadow">
+      <feDropShadow dx="3" dy="6" stdDeviation="4" flood-opacity="0.3"/>
+    </filter>
+    
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge> 
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1200" height="900" fill="url(#bgGradient)"/>
+  
+  <!-- User Layer -->
+  <g id="user-layer" transform="translate(0, -50)">
+    <rect x="50" y="100" width="1100" height="125" rx="15" fill="url(#userGradient)" filter="url(#shadow)" opacity="0.9"/>
+    <text x="600" y="130" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="white">
+      사용자 인터페이스 레이어
+    </text>
+    
+    <!-- UI Controls -->
+    <g id="ui-controls">
+      <!-- Slider -->
+      <rect x="100" y="150" width="150" height="57" rx="10" fill="white" opacity="0.9"/>
+      <text x="175" y="170" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#8B5CF6">슬라이더</text>
+      <rect x="120" y="180" width="110" height="4" fill="#E5E7EB" rx="2"/>
+      <circle cx="180" cy="182" r="6" fill="#8B5CF6"/>
+      <text x="175" y="200" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#6B7280">샘플 크기: 100</text>
+      
+      <!-- Dropdown -->
+      <rect x="280" y="150" width="150" height="57" rx="10" fill="white" opacity="0.9"/>
+      <text x="355" y="170" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#8B5CF6">드롭다운</text>
+      <rect x="300" y="180" width="110" height="20" fill="#F3F4F6" stroke="#D1D5DB" rx="3"/>
+      <text x="355" y="192" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#374151">지역 선택</text>
+      <polygon points="400,187 395,192 405,192" fill="#6B7280"/>
+      
+      <!-- Button -->
+      <rect x="460" y="150" width="150" height="57" rx="10" fill="white" opacity="0.9"/>
+      <text x="535" y="170" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#8B5CF6">버튼</text>
+      <rect x="485" y="180" width="100" height="20" fill="#8B5CF6" rx="5"/>
+      <text x="535" y="192" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="white">분석 실행</text>
+      
+      <!-- Text Input -->
+      <rect x="640" y="150" width="150" height="57" rx="10" fill="white" opacity="0.9"/>
+      <text x="715" y="170" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#8B5CF6">텍스트 입력</text>
+      <rect x="660" y="180" width="110" height="18" fill="white" stroke="#D1D5DB" rx="3"/>
+      <text x="665" y="192" font-family="Arial, sans-serif" font-size="9" fill="#9CA3AF">검색어 입력...</text>
+      
+      <!-- File Upload -->
+      <rect x="820" y="150" width="150" height="57" rx="10" fill="white" opacity="0.9"/>
+      <text x="895" y="170" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#8B5CF6">파일 업로드</text>
+      <rect x="845" y="180" width="100" height="18" fill="#FEF3C7" stroke="#F59E0B" stroke-width="1" stroke-dasharray="3,2" rx="3"/>
+      <text x="895" y="192" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#92400E">파일 선택</text>
+      
+      <!-- Voice Input -->
+      <rect x="1000" y="150" width="120" height="57" rx="10" fill="white" opacity="0.9"/>
+      <text x="1060" y="170" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#8B5CF6">음성 입력</text>
+      <circle cx="1060" cy="185" r="8" fill="#EF4444"/>
+      <text x="1060" y="205" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#991B1B">● REC</text>
+    </g>
+  </g>
+  
+  <!-- Reactive Engine Layer -->
+  <g id="reactive-layer"  transform="translate(0, -50)">
+    <rect x="50" y="250" width="1100" height="205" rx="15" fill="url(#reactiveGradient)" filter="url(#shadow)" opacity="0.9"/>
+    <text x="600" y="280" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="white">
+      반응형 엔진 (Reactive Engine) 레이어 
+    </text>
+    
+    <!-- Reactive nodes -->
+    <g id="reactive-nodes">
+      <!-- Input reactives -->
+      <circle cx="150" cy="330" r="25" fill="white" opacity="0.9" filter="url(#glow)"/>
+      <text x="150" y="335" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#059669">input$</text>
+      <text x="150" y="370" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">사용자 입력</text>
+      
+      <circle cx="300" cy="320" r="30" fill="white" opacity="0.9" filter="url(#glow)"/>
+      <text x="300" y="315" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#059669">reactive()</text>
+      <text x="300" y="327" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" font-weight="bold" fill="#10B981">값 반환 ✓</text>
+      <text x="300" y="340" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#059669">데이터 변환</text>
+      <text x="300" y="367" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">지연 평가 / 캐싱됨</text>
+      
+      <circle cx="500" cy="340" r="30" fill="white" opacity="0.9" filter="url(#glow)"/>
+      <text x="500" y="335" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#059669">reactive()</text>
+      <text x="500" y="347" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" font-weight="bold" fill="#10B981">값 반환 ✓</text>
+      <text x="500" y="360" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#059669">통계 분석</text>
+      <text x="500" y="387" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">지연 평가 / 캐싱됨</text>
+      
+      <circle cx="700" cy="320" r="30" fill="white" opacity="0.9" filter="url(#glow)"/>
+      <text x="700" y="315" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#059669">reactive()</text>
+      <text x="700" y="327" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" font-weight="bold" fill="#10B981">값 반환 ✓</text>
+      <text x="700" y="340" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#059669">시각화 데이터</text>
+      <text x="700" y="367" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">지연 평가 / 캐싱됨</text>
+      
+      <circle cx="900" cy="330" r="25" fill="white" opacity="0.9" filter="url(#glow)"/>
+      <text x="900" y="330" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#059669">observe()</text>
+      <text x="900" y="342" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" font-weight="bold" fill="#F59E0B">반환값 없음 ✗</text>
+      <text x="900" y="355" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#059669">부수 효과 실행</text>
+      <text x="900" y="372" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">즉시 실행</text>
+      <text x="900" y="384" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">DB/파일/로그</text>
+      
+      <circle cx="1050" cy="330" r="25" fill="white" opacity="0.9" filter="url(#glow)"/>
+      <text x="1050" y="335" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#059669">render*()</text>
+      <text x="1050" y="370" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">출력 생성</text>
+    </g>
+    
+    <!-- Dependency arrows -->
+    <defs>
+      <marker id="reactiveArrow" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+        <polygon points="0 0, 8 3, 0 6" fill="#065F46" opacity="0.7"/>
+      </marker>
+      <marker id="externalArrow" markerWidth="10" markerHeight="8" refX="10" refY="4" orient="auto">
+        <polygon points="0 0, 10 4, 0 8" fill="#0b2af5" opacity="0.8"/>
+      </marker>
+    </defs>
+    
+    <!-- Internal reactive flow -->
+    <line x1="175" y1="330" x2="270" y2="325" stroke="#065F46" stroke-width="2" marker-end="url(#reactiveArrow)" opacity="0.7"/>
+    <line x1="330" y1="325" x2="470" y2="335" stroke="#065F46" stroke-width="2" marker-end="url(#reactiveArrow)" opacity="0.7"/>
+    <line x1="530" y1="340" x2="670" y2="325" stroke="#065F46" stroke-width="2" marker-end="url(#reactiveArrow)" opacity="0.7"/>
+    <line x1="730" y1="325" x2="875" y2="330" stroke="#065F46" stroke-width="2" marker-end="url(#reactiveArrow)" opacity="0.7"/>
+    <line x1="925" y1="330" x2="1025" y2="330" stroke="#065F46" stroke-width="2" marker-end="url(#reactiveArrow)" opacity="0.7"/>
+    
+    <!-- External side effect arrows from observe() -->
+    <line x1="900" y1="305" x2="900" y2="270" stroke="#2200fd" stroke-width="3" marker-end="url(#externalArrow)" opacity="0.8"/>
+    <text x="910" y="285" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#2200fd">외부 세계</text>
+    <line x1="925" y1="330" x2="970" y2="320" stroke="#2200fd" stroke-width="2" marker-end="url(#externalArrow)" opacity="0.6"/>
+    <text x="950" y="315" font-family="Arial, sans-serif" font-size="14" fill="#2200fd">DB</text>
+    
+    <!-- Reactive vs Observe Explanation -->
+    <rect x="150" y="395" width="900" height="85" rx="8" fill="white" stroke="#059669" stroke-width="2" opacity="0.95"/>
+    <text x="600" y="415" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#065F46">
+      반응형 프로그래밍 진행 과정: reactive() vs observe()
+    </text>
+    
+    <!-- reactive() explanation -->
+    <rect x="170" y="425" width="400" height="35" rx="5" fill="#E6FFFA" stroke="#10B981" stroke-width="1"/>
+    <text x="180" y="440" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#065F46">reactive(): 값 계산 및 전달</text>
+    <text x="180" y="452" font-family="Arial, sans-serif" font-size="10" fill="#059669">• 값을 반환 • 지연 평가 • 캐싱됨 • 순수 함수</text>
+    
+    <!-- observe() explanation -->
+    <rect x="580" y="425" width="400" height="35" rx="5" fill="#FEF3C7" stroke="#F59E0B" stroke-width="1"/>
+    <text x="590" y="440" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#92400E">observe(): 부수 효과 실행</text>
+    <text x="590" y="452" font-family="Arial, sans-serif" font-size="10" fill="#D97706">• 값 반환 없음 • 즉시 실행 • 외부 영향 • DB/파일/로그</text>
+    
+    <!-- Process flow example -->
+    <text x="600" y="475" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#065F46">
+      예시: input$slider 변경 → reactive() 재계산 → observe() 외부 저장 → render*() 화면 출력
+    </text>
+  </g>
+  
+  <!-- Data Layer -->
+  <g id="data-layer"  transform="translate(0, -40)">
+    <rect x="50" y="480" width="525" height="150" rx="15" fill="url(#dataGradient)" filter="url(#shadow)" opacity="0.9"/>
+    <text x="325" y="510" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="white">
+      데이터 레이어
+    </text>
+    
+    <!-- Data sources -->
+    <rect x="80" y="530" width="100" height="70" rx="8" fill="white" opacity="0.9"/>
+    <text x="130" y="550" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#D97706">CSV/Excel</text>
+    <rect x="90" y="555" width="80" height="3" fill="#F59E0B"/>
+    <rect x="90" y="565" width="60" height="3" fill="#F59E0B"/>
+    <rect x="90" y="575" width="70" height="3" fill="#F59E0B"/>
+    <rect x="90" y="585" width="50" height="3" fill="#F59E0B"/>
+    
+    <rect x="200" y="530" width="100" height="70" rx="8" fill="white" opacity="0.9"/>
+    <text x="250" y="550" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#D97706">Database</text>
+    <rect x="210" y="560" width="80" height="35" fill="#FEF3C7" stroke="#F59E0B"/>
+    <circle cx="225" cy="570" r="3" fill="#F59E0B"/>
+    <circle cx="240" cy="570" r="3" fill="#F59E0B"/>
+    <circle cx="255" cy="570" r="3" fill="#F59E0B"/>
+    <circle cx="270" cy="570" r="3" fill="#F59E0B"/>
+    
+    <rect x="320" y="530" width="100" height="70" rx="8" fill="white" opacity="0.9"/>
+    <text x="370" y="550" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#D97706">API</text>
+    <circle cx="370" cy="570" r="15" fill="#FEF3C7" stroke="#F59E0B" stroke-width="2"/>
+    <text x="370" y="575" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#D97706">JSON</text>
+    
+    <rect x="440" y="530" width="100" height="70" rx="8" fill="white" opacity="0.9"/>
+    <text x="490" y="550" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#D97706">Real-time</text>
+    <path d="M 460 570 Q 470 560 480 570 T 500 570 T 520 570" stroke="#F59E0B" stroke-width="2" fill="none"/>
+    <circle cx="520" cy="570" r="3" fill="#10B981">
+      <animate attributeName="r" values="3;6;3" dur="1.5s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+  
+  <!-- Output Layer -->
+  <g id="output-layer"  transform="translate(0, -40)">
+    <rect x="620" y="480" width="530" height="150" rx="15" fill="url(#outputGradient)" filter="url(#shadow)" opacity="0.9"/>
+    <text x="885" y="510" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="white">
+      출력 레이어
+    </text>
+    
+    <!-- Output types -->
+    <rect x="650" y="530" width="90" height="70" rx="8" fill="white" opacity="0.9"/>
+    <text x="695" y="550" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#DC2626">차트</text>
+    <rect x="660" y="560" width="70" height="35" fill="#FEE2E2"/>
+    <rect x="665" y="585" width="10" height="8" fill="#DC2626"/>
+    <rect x="680" y="580" width="10" height="13" fill="#DC2626"/>
+    <rect x="695" y="575" width="10" height="18" fill="#DC2626"/>
+    <rect x="710" y="570" width="10" height="23" fill="#DC2626"/>
+    
+    <rect x="760" y="530" width="90" height="70" rx="8" fill="white" opacity="0.9"/>
+    <text x="805" y="550" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#DC2626">표</text>
+    <rect x="770" y="560" width="70" height="35" fill="#FEE2E2"/>
+    <rect x="775" y="565" width="60" height="3" fill="#DC2626"/>
+    <rect x="775" y="572" width="50" height="3" fill="#DC2626"/>
+    <rect x="775" y="579" width="55" height="3" fill="#DC2626"/>
+    <rect x="775" y="586" width="45" height="3" fill="#DC2626"/>
+    
+    <rect x="870" y="530" width="90" height="70" rx="8" fill="white" opacity="0.9"/>
+    <text x="915" y="550" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#DC2626">텍스트</text>
+    <rect x="880" y="560" width="70" height="35" fill="#FEE2E2"/>
+    <text x="915" y="575" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#DC2626">동적</text>
+    <text x="915" y="585" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#DC2626">결과</text>
+    
+    <rect x="980" y="530" width="90" height="70" rx="8" fill="white" opacity="0.9"/>
+    <text x="1025" y="550" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#DC2626">알림</text>
+    <circle cx="1025" cy="575" r="15" fill="#FEE2E2" stroke="#DC2626"/>
+    <text x="1025" y="580" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#DC2626">!</text>
+  </g>
+  
+  <!-- Technology Integration Architecture -->
+  <g id="tech-stack">
+    <!-- Integration platform gradient -->
+    <defs>
+      <radialGradient id="quartoGradient" cx="50%" cy="50%" r="50%">
+        <stop offset="0%" style="stop-color:#7C3AED;stop-opacity:1" />
+        <stop offset="50%" style="stop-color:#A855F7;stop-opacity:0.9" />
+        <stop offset="100%" style="stop-color:#C084FC;stop-opacity:0.8" />
+      </radialGradient>
+      
+      <filter id="centralGlow">
+        <feGaussianBlur stdDeviation="8" result="coloredBlur"/>
+        <feMerge>
+          <feMergeNode in="coloredBlur"/>
+          <feMergeNode in="SourceGraphic"/>
+        </feMerge>
+      </filter>
+      
+      <marker id="integrationArrow" markerWidth="10" markerHeight="8" refX="10" refY="4" orient="auto">
+        <polygon points="0 0, 10 4, 0 8" fill="#7C3AED" opacity="0.8"/>
+      </marker>
+    </defs>
+    
+    <rect x="50" y="670" width="1100" height="220" rx="15" fill="white" stroke="#D1D5DB" stroke-width="2" opacity="0.95"/>
+    <text x="600" y="700" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#374151">
+      반응형 프로그래밍 통합 플랫폼: Quarto Reactive Ecosystem
+    </text>
+    
+    <!-- Central Quarto Dashboard (enlarged and centered) -->
+    <rect x="450" y="720" width="300" height="130" rx="15" fill="url(#quartoGradient)" stroke="#7C3AED" stroke-width="3" filter="url(#centralGlow)"/>
+    <text x="600" y="745" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="white">
+      Quarto Dashboard
+    </text>
+    <text x="600" y="767" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#F3E8FF">
+      ⚡ 반응형 프로그래밍 허브
+    </text>
+    <text x="460" y="790" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white">• 모든 반응형 패러다임 통합</text>
+    <text x="460" y="805" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white">• 다중 언어 반응형 바인딩</text>
+    <text x="460" y="820" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white">• 실시간 문서-앱 동기화</text>
+    <text x="460" y="835" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white">• 반응형 과학 출판</text>
+    
+    <!-- Component Technologies (2x2 grid layout) -->
+    <!-- First Row -->
+    <!-- R Shiny -->
+    <rect x="180" y="720" width="140" height="70" rx="8" fill="#EEF2FF" stroke="#6366F1" stroke-width="1" opacity="0.8"/>
+    <text x="250" y="740" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#4338CA">R Shiny</text>
+    <text x="190" y="755" font-family="Arial, sans-serif" font-size="8" fill="#6B7280">반응형 요소</text>
+    <text x="190" y="768" font-family="Arial, sans-serif" font-size="8" fill="#374151">• reactive() / observe()</text>
+    <text x="190" y="780" font-family="Arial, sans-serif" font-size="8" fill="#374151">• renderPlot() / DT</text>
+    
+    <!-- Python Streamlit -->
+    <rect x="880" y="720" width="140" height="70" rx="8" fill="#F0FDF4" stroke="#10B981" stroke-width="1" opacity="0.8"/>
+    <text x="950" y="740" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#065F46">Streamlit</text>
+    <text x="890" y="755" font-family="Arial, sans-serif" font-size="8" fill="#6B7280">반응형 요소</text>
+    <text x="890" y="768" font-family="Arial, sans-serif" font-size="8" fill="#374151">• @st.cache / st.session</text>
+    <text x="890" y="780" font-family="Arial, sans-serif" font-size="8" fill="#374151">• 상태 기반 반응성</text>
+    
+    <!-- Second Row -->
+    <!-- Observable JS -->
+    <rect x="180" y="810" width="140" height="70" rx="8" fill="#FFFBEB" stroke="#F59E0B" stroke-width="1" opacity="0.8"/>
+    <text x="250" y="830" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#92400E">Observable</text>
+    <text x="190" y="845" font-family="Arial, sans-serif" font-size="8" fill="#6B7280">반응형 요소</text>
+    <text x="190" y="858" font-family="Arial, sans-serif" font-size="8" fill="#374151">• 반응형 셀 기반</text>
+    <text x="190" y="870" font-family="Arial, sans-serif" font-size="8" fill="#374151">• viewof / Inputs</text>
+    
+    <!-- Julia (추가) -->
+    <rect x="880" y="810" width="140" height="70" rx="8" fill="#F3E8FF" stroke="#A855F7" stroke-width="1" opacity="0.8"/>
+    <text x="950" y="830" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#7C2D92">Julia</text>
+    <text x="890" y="845" font-family="Arial, sans-serif" font-size="8" fill="#6B7280">반응형 요소</text>
+    <text x="890" y="858" font-family="Arial, sans-serif" font-size="8" fill="#374151">• Pluto.jl 반응형</text>
+    <text x="890" y="870" font-family="Arial, sans-serif" font-size="8" fill="#374151">• 라이브 노트북</text>
+    
+    <!-- Clean Integration Arrows (non-overlapping) -->
+    <!-- From components to center -->
+    <line x1="320" y1="755" x2="440" y2="770" stroke="#7C3AED" stroke-width="2" marker-end="url(#integrationArrow)" opacity="0.6"/>
+    <line x1="880" y1="755" x2="760" y2="770" stroke="#7C3AED" stroke-width="2" marker-end="url(#integrationArrow)" opacity="0.6"/>
+    <line x1="320" y1="845" x2="440" y2="820" stroke="#7C3AED" stroke-width="2" marker-end="url(#integrationArrow)" opacity="0.6"/>
+    <line x1="880" y1="845" x2="760" y2="820" stroke="#7C3AED" stroke-width="2" marker-end="url(#integrationArrow)" opacity="0.6"/>
+    
+    <!-- Reactive Binding labels -->
+    <text x="380" y="750" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#7C3AED">reactive()</text>
+    <text x="820" y="750" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#7C3AED">st.cache_data</text>
+    <text x="375" y="825" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#7C3AED">OJS reactive cells</text>
+    <text x="820" y="825" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#7C3AED">pluto.jl</text>
+    
+    <!-- Direct connection from Reactive Engine to Quarto -->
+    <line x1="600" y1="430" x2="600" y2="720" stroke="#7C3AED" stroke-width="4" marker-end="url(#integrationArrow)" opacity="0.8"/>
+    <text x="640" y="580" text-anchor="start" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#7C3AED">
+      반응형 엔진 ↓ Quarto 통합 (실시간 데이터 플로우)
+    </text>
+  </g>
+  
+  <!-- Bottom insight -->
+  <g id="bottom-insight" transform="translate(0, -280)">
+    <rect x="50" y="880" width="1100" height="60" rx="10" fill="#7C3AED" opacity="0.95"/>
+    <text x="600" y="905" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="white">
+      ⚡ 반응형 패러다임: Quarto = 모든 반응형 기술의 통합 허브
+    </text>
+    <text x="600" y="925" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#E9D5FF">
+      reactive() + @st.cache_data + OJS 반응형 셀 + Pluto.jl = 실시간 과학 문서 생태계
+    </text>
+  </g>
+</svg>

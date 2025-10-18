@@ -1,0 +1,311 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2200 1600" width="2200" height="1600">
+  <defs>
+    <style><![CDATA[
+      .title { font-family: Inter, Segoe UI, Arial, sans-serif; font-size: 50px; font-weight: 900; fill: #f8fafc; }
+      .subtitle { font-family: Inter, Segoe UI, Arial, sans-serif; font-size: 28px; font-weight: 600; fill: #cbd5e1; }
+      .h1 { font-family: Inter, Segoe UI, Arial, sans-serif; font-size: 32px; font-weight: 800; fill: #ffffff; }
+      .h2 { font-family: Inter, Segoe UI, Arial, sans-serif; font-size: 26px; font-weight: 800; fill: #f1f5f9; }
+      .p { font-family: Inter, Segoe UI, Arial, sans-serif; font-size: 19px; font-weight: 600; fill: #e5e7eb; }
+      .small { font-family: Inter, Segoe UI, Arial, sans-serif; font-size: 17px; font-weight: 700; fill: #cbd5e1; }
+      .metric { font-family: Inter, Segoe UI, Arial, sans-serif; font-size: 18px; font-weight: 800; fill: #34d399; }
+      .year { font-family: Inter, Segoe UI, Arial, sans-serif; font-size: 22px; font-weight: 900; fill: #fbbf24; }
+    ]]></style>
+
+    <!-- Background -->
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+
+    <!-- SaaS Model (Blue) -->
+    <linearGradient id="gradSaaS" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0284c7"/>
+      <stop offset="100%" stop-color="#0369a1"/>
+    </linearGradient>
+
+    <!-- Cloud-Native Model (Purple) -->
+    <linearGradient id="gradCloud" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7c3aed"/>
+      <stop offset="100%" stop-color="#6d28d9"/>
+    </linearGradient>
+
+    <!-- AI Model (Green) -->
+    <linearGradient id="gradAI" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10b981"/>
+      <stop offset="100%" stop-color="#059669"/>
+    </linearGradient>
+
+    <!-- Comparison matrix gradients -->
+    <linearGradient id="gradMatrix" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#374151"/>
+      <stop offset="100%" stop-color="#4b5563"/>
+    </linearGradient>
+
+    <!-- Effects -->
+    <filter id="shadow"><feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#000" flood-opacity="0.4"/></filter>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge> 
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Arrow markers -->
+    <marker id="arrowRight" markerWidth="18" markerHeight="14" refX="16" refY="7" orient="auto">
+      <polygon points="0 0, 18 7, 0 14" fill="#34d399"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="2200" height="1600" fill="url(#bg)"/>
+
+  <!-- Header -->
+  <text x="1100" y="70" text-anchor="middle" class="title">3세대 소프트웨어 모델 비교</text>
+  <text x="1100" y="115" text-anchor="middle" class="subtitle">SaaS vs Cloud-Native vs AI-Based Comparison</text>
+
+  <!-- Top Section: Three Models Side by Side -->
+  <g transform="translate(100,160)">
+    <!-- Model 1: SaaS -->
+    <g transform="translate(0,0)">
+      <rect x="0" y="0" width="620" height="350" rx="20" fill="url(#gradSaaS)" filter="url(#shadow)" opacity="0.9"/>
+      <text x="310" y="50" text-anchor="middle" class="h1">SaaS 모델</text>
+      <text x="310" y="85" text-anchor="middle" class="small">Software-as-a-Service (2000s)</text>
+      
+      <!-- Characteristics -->
+      <g transform="translate(40,120)" class="p">
+        <text x="0" y="0" class="h2" fill="#93c5fd">핵심 특징:</text>
+        <text x="0" y="35">• 멀티테넌트 아키텍처</text>
+        <text x="0" y="65">• 구독 기반 수익 모델</text>
+        <text x="0" y="95">• 중앙집중식 배포</text>
+        <text x="0" y="125">• 제한된 커스터마이징</text>
+        <text x="0" y="155">• API 기반 통합</text>
+        
+        <text x="320" y="0" class="h2" fill="#93c5fd">대표 기업:</text>
+        <text x="320" y="35">• Salesforce</text>
+        <text x="320" y="65">• Slack</text>
+        <text x="320" y="95">• Zoom</text>
+        <text x="320" y="125">• Dropbox</text>
+      </g>
+    </g>
+
+    <!-- Model 2: Cloud-Native -->
+    <g transform="translate(660,0)">
+      <rect x="0" y="0" width="620" height="350" rx="20" fill="url(#gradCloud)" filter="url(#shadow)" opacity="0.9"/>
+      <text x="310" y="50" text-anchor="middle" class="h1">클라우드 네이티브</text>
+      <text x="310" y="85" text-anchor="middle" class="small">Cloud-Native (2010s)</text>
+      
+      <g transform="translate(40,120)" class="p">
+        <text x="0" y="0" class="h2" fill="#c4b5fd">핵심 특징:</text>
+        <text x="0" y="35">• 마이크로서비스 아키텍처</text>
+        <text x="0" y="65">• 사용량 기반 과금</text>
+        <text x="0" y="95">• 컨테이너 기반 배포</text>
+        <text x="0" y="125">• 무제한 확장성</text>
+        <text x="0" y="155">• 오케스트레이션 플랫폼</text>
+        
+        <text x="320" y="0" class="h2" fill="#c4b5fd">대표 기업:</text>
+        <text x="320" y="35">• AWS</text>
+        <text x="320" y="65">• Google Cloud</text>
+        <text x="320" y="95">• Kubernetes</text>
+        <text x="320" y="125">• Docker</text>
+      </g>
+    </g>
+
+    <!-- Model 3: AI-Based -->
+    <g transform="translate(1320,0)">
+      <rect x="0" y="0" width="620" height="350" rx="20" fill="url(#gradAI)" filter="url(#shadow)" opacity="0.9"/>
+      <text x="310" y="50" text-anchor="middle" class="h1">AI 기반 모델</text>
+      <text x="310" y="85" text-anchor="middle" class="small">AI-as-a-Platform (2020s)</text>
+      
+      <g transform="translate(40,120)" class="p">
+        <text x="0" y="0" class="h2" fill="#6ee7b7">핵심 특징:</text>
+        <text x="0" y="35">• 에이전트 기반 아키텍처</text>
+        <text x="0" y="65">• 토큰 기반 과금</text>
+        <text x="0" y="95">• 온디맨드 생성</text>
+        <text x="0" y="125">• 무제한 맞춤화</text>
+        <text x="0" y="155">• 자연어 인터페이스</text>
+        
+        <text x="320" y="0" class="h2" fill="#6ee7b7">대표 기업:</text>
+        <text x="320" y="35">• OpenAI</text>
+        <text x="320" y="65">• Anthropic</text>
+        <text x="320" y="95">• Cursor</text>
+        <text x="320" y="125">• Replit</text>
+      </g>
+    </g>
+
+    <!-- Evolution arrows -->
+    <g transform="translate(0,175)">
+      <line x1="620" y1="0" x2="660" y2="0" stroke="#34d399" stroke-width="8" marker-end="url(#arrowRight)" filter="url(#glow)"/>
+      <line x1="1280" y1="0" x2="1320" y2="0" stroke="#34d399" stroke-width="8" marker-end="url(#arrowRight)" filter="url(#glow)"/>
+      
+      <text x="640" y="-15" text-anchor="middle" class="small" fill="#34d399">진화</text>
+      <text x="1300" y="-15" text-anchor="middle" class="small" fill="#34d399">혁신</text>
+    </g>
+  </g>
+
+  <!-- Middle Section: Comparison Matrix -->
+  <g transform="translate(100,570)">
+    <text x="1000" y="30" text-anchor="middle" class="h1">9개 차원 비교 매트릭스</text>
+    <text x="1000" y="65" text-anchor="middle" class="subtitle">Comprehensive Comparison Matrix</text>
+
+    <!-- Matrix header -->
+    <g transform="translate(0,100)">
+      <rect x="0" y="0" width="2000" height="60" rx="15" fill="url(#gradMatrix)" opacity="0.8"/>
+      <text x="250" y="40" text-anchor="middle" class="h2">비교 요소</text>
+      <text x="650" y="40" text-anchor="middle" class="h2">SaaS 모델</text>
+      <text x="1000" y="40" text-anchor="middle" class="h2">Cloud-Native</text>
+      <text x="1350" y="40" text-anchor="middle" class="h2">AI 기반</text>
+      <text x="1700" y="40" text-anchor="middle" class="h2">미래 전망</text>
+    </g>
+
+    <!-- Matrix rows -->
+    <g transform="translate(0,160)">
+      <!-- Row 1: Architecture -->
+      <g>
+        <rect x="0" y="0" width="2000" height="50" rx="8" fill="#1f2937" opacity="0.6"/>
+        <text x="250" y="32" text-anchor="middle" class="p" fill="#fbbf24">아키텍처</text>
+        <text x="650" y="32" text-anchor="middle" class="p">멀티테넌트</text>
+        <text x="1000" y="32" text-anchor="middle" class="p">마이크로서비스</text>
+        <text x="1350" y="32" text-anchor="middle" class="p">에이전트 기반</text>
+        <text x="1700" y="32" text-anchor="middle" class="small" fill="#34d399">완전 자율형</text>
+      </g>
+
+      <!-- Row 2: Deployment -->
+      <g transform="translate(0,60)">
+        <rect x="0" y="0" width="2000" height="50" rx="8" fill="#374151" opacity="0.4"/>
+        <text x="250" y="32" text-anchor="middle" class="p" fill="#fbbf24">배포 방식</text>
+        <text x="650" y="32" text-anchor="middle" class="p">중앙집중식</text>
+        <text x="1000" y="32" text-anchor="middle" class="p">분산형</text>
+        <text x="1350" y="32" text-anchor="middle" class="p">온디맨드 생성</text>
+        <text x="1700" y="32" text-anchor="middle" class="small" fill="#34d399">즉시 구현</text>
+      </g>
+
+      <!-- Row 3: Cost Structure -->
+      <g transform="translate(0,120)">
+        <rect x="0" y="0" width="2000" height="50" rx="8" fill="#1f2937" opacity="0.6"/>
+        <text x="250" y="32" text-anchor="middle" class="p" fill="#fbbf24">비용 구조</text>
+        <text x="650" y="32" text-anchor="middle" class="p">월/연 구독료</text>
+        <text x="1000" y="32" text-anchor="middle" class="p">사용량 기반</text>
+        <text x="1350" y="32" text-anchor="middle" class="p">토큰 기반</text>
+        <text x="1700" y="32" text-anchor="middle" class="small" fill="#34d399">성과 기반</text>
+      </g>
+
+      <!-- Row 4: Customization -->
+      <g transform="translate(0,180)">
+        <rect x="0" y="0" width="2000" height="50" rx="8" fill="#374151" opacity="0.4"/>
+        <text x="250" y="32" text-anchor="middle" class="p" fill="#fbbf24">커스터마이징</text>
+        <text x="650" y="32" text-anchor="middle" class="p">제한적 설정</text>
+        <text x="1000" y="32" text-anchor="middle" class="p">컨테이너화</text>
+        <text x="1350" y="32" text-anchor="middle" class="p">무제한 생성</text>
+        <text x="1700" y="32" text-anchor="middle" class="small" fill="#34d399">AI 자동 생성</text>
+      </g>
+
+      <!-- Row 5: Scalability -->
+      <g transform="translate(0,240)">
+        <rect x="0" y="0" width="2000" height="50" rx="8" fill="#1f2937" opacity="0.6"/>
+        <text x="250" y="32" text-anchor="middle" class="p" fill="#fbbf24">확장성</text>
+        <text x="650" y="32" text-anchor="middle" class="p">수직 확장</text>
+        <text x="1000" y="32" text-anchor="middle" class="p">수평 확장</text>
+        <text x="1350" y="32" text-anchor="middle" class="p">자동 확장</text>
+        <text x="1700" y="32" text-anchor="middle" class="small" fill="#34d399">무한 확장</text>
+      </g>
+
+      <!-- Row 6: Updates -->
+      <g transform="translate(0,300)">
+        <rect x="0" y="0" width="2000" height="50" rx="8" fill="#374151" opacity="0.4"/>
+        <text x="250" y="32" text-anchor="middle" class="p" fill="#fbbf24">업데이트</text>
+        <text x="650" y="32" text-anchor="middle" class="p">정기 릴리즈</text>
+        <text x="1000" y="32" text-anchor="middle" class="p">CI/CD</text>
+        <text x="1350" y="32" text-anchor="middle" class="p">실시간 학습</text>
+        <text x="1700" y="32" text-anchor="middle" class="small" fill="#34d399">자가 진화</text>
+      </g>
+
+      <!-- Row 7: Integration -->
+      <g transform="translate(0,360)">
+        <rect x="0" y="0" width="2000" height="50" rx="8" fill="#1f2937" opacity="0.6"/>
+        <text x="250" y="32" text-anchor="middle" class="p" fill="#fbbf24">통합 방식</text>
+        <text x="650" y="32" text-anchor="middle" class="p">API 연결</text>
+        <text x="1000" y="32" text-anchor="middle" class="p">오케스트레이션</text>
+        <text x="1350" y="32" text-anchor="middle" class="p">자연어</text>
+        <text x="1700" y="32" text-anchor="middle" class="small" fill="#34d399">의도 기반</text>
+      </g>
+
+      <!-- Row 8: Development Speed -->
+      <g transform="translate(0,420)">
+        <rect x="0" y="0" width="2000" height="50" rx="8" fill="#374151" opacity="0.4"/>
+        <text x="250" y="32" text-anchor="middle" class="p" fill="#fbbf24">개발 속도</text>
+        <text x="650" y="32" text-anchor="middle" class="p">몇 달</text>
+        <text x="1000" y="32" text-anchor="middle" class="p">몇 주</text>
+        <text x="1350" y="32" text-anchor="middle" class="p">몇 시간</text>
+        <text x="1700" y="32" text-anchor="middle" class="small" fill="#34d399">몇 분</text>
+      </g>
+
+      <!-- Row 9: Maintenance -->
+      <g transform="translate(0,480)">
+        <rect x="0" y="0" width="2000" height="50" rx="8" fill="#1f2937" opacity="0.6"/>
+        <text x="250" y="32" text-anchor="middle" class="p" fill="#fbbf24">유지보수</text>
+        <text x="650" y="32" text-anchor="middle" class="p">벤더 의존</text>
+        <text x="1000" y="32" text-anchor="middle" class="p">DevOps</text>
+        <text x="1350" y="32" text-anchor="middle" class="p">자율 운영</text>
+        <text x="1700" y="32" text-anchor="middle" class="small" fill="#34d399">완전 자동화</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- Bottom Section: Evolution Timeline -->
+  <g transform="translate(100,1220)">
+    <text x="1000" y="30" text-anchor="middle" class="h1">진화 타임라인과 시장 전망</text>
+    <text x="1000" y="65" text-anchor="middle" class="subtitle">Evolution Timeline &amp; Market Forecast</text>
+
+    <!-- Timeline -->
+    <g transform="translate(0,100)">
+      <!-- Timeline line -->
+      <line x1="0" y1="150" x2="1900" y2="150" stroke="#4b5563" stroke-width="6"/>
+
+      <!-- Era markers -->
+      <g>
+        <!-- 2000s: SaaS -->
+        <circle cx="300" cy="150" r="15" fill="url(#gradSaaS)" stroke="#fff" stroke-width="4"/>
+        <text x="300" y="190" text-anchor="middle" class="year">2000s</text>
+        <text x="300" y="220" text-anchor="middle" class="small">SaaS 등장</text>
+        <text x="300" y="245" text-anchor="middle" class="metric">$100B 시장</text>
+
+        <!-- 2010s: Cloud-Native -->
+        <circle cx="800" cy="150" r="15" fill="url(#gradCloud)" stroke="#fff" stroke-width="4"/>
+        <text x="800" y="190" text-anchor="middle" class="year">2010s</text>
+        <text x="800" y="220" text-anchor="middle" class="small">클라우드 혁명</text>
+        <text x="800" y="245" text-anchor="middle" class="metric">$500B 시장</text>
+
+        <!-- 2020s: AI Era -->
+        <circle cx="1300" cy="150" r="15" fill="url(#gradAI)" stroke="#fff" stroke-width="4"/>
+        <text x="1300" y="190" text-anchor="middle" class="year">2020s</text>
+        <text x="1300" y="220" text-anchor="middle" class="small">AI 혁신</text>
+        <text x="1300" y="245" text-anchor="middle" class="metric">$1T+ 시장</text>
+
+        <!-- 2030s: Future -->
+        <circle cx="1700" cy="150" r="15" fill="#34d399" stroke="#fff" stroke-width="4"/>
+        <text x="1700" y="190" text-anchor="middle" class="year">2030s</text>
+        <text x="1700" y="220" text-anchor="middle" class="small">AI 네이티브</text>
+        <text x="1700" y="245" text-anchor="middle" class="metric">$10T+ 시장</text>
+      </g>
+
+      <!-- Market size visualization -->
+      <g transform="translate(0,-80)">
+        <rect x="200" y="0" width="200" height="60" rx="12" fill="url(#gradSaaS)" opacity="0.7"/>
+        <text x="300" y="35" text-anchor="middle" class="p">구매 중심</text>
+        
+        <rect x="600" y="0" width="400" height="60" rx="12" fill="url(#gradCloud)" opacity="0.7"/>
+        <text x="800" y="35" text-anchor="middle" class="p">구축 중심</text>
+        
+        <rect x="1100" y="0" width="600" height="60" rx="12" fill="url(#gradAI)" opacity="0.7"/>
+        <text x="1400" y="35" text-anchor="middle" class="p">생성 중심</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- Footer -->
+  <g transform="translate(100,1520)">
+    <text x="1000" y="30" text-anchor="middle" class="subtitle">💡 소프트웨어 구매 → 인프라 구축 → 지능 생성의 진화 여정</text>
+    <text x="1000" y="65" text-anchor="middle" class="small">From buying software to building infrastructure to generating intelligence</text>
+  </g>
+</svg>

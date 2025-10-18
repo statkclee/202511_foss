@@ -1,0 +1,261 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 20 1200 600">
+  <defs>
+    <style>
+      .title-text { font-size: 32px; font-weight: bold; }
+      .era-title { font-size: 24px; font-weight: bold; }
+      .era-subtitle { font-size: 18px; }
+      .feature-text { font-size: 16px; }
+      .timeline-text { font-size: 16px; font-weight: bold;}
+    </style>
+    
+    <!-- Era Gradients -->
+    <linearGradient id="logicalEra" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#8b5cf6;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#6d28d9;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="statisticalEra" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3b82f6;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#1d4ed8;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="computationalEra" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#10b981;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#047857;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="aiEra" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f59e0b;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#d97706;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Arrow marker -->
+    <marker id="arrow" markerWidth="12" markerHeight="6" refX="6" refY="2" orient="auto">
+      <polygon points="0 0, 12 4, 0 6" fill="#64748b"/>
+    </marker>
+    
+    <!-- Glow effect -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1200" height="800" fill="#ffffff"/>
+  
+  <!-- Timeline Arrow -->
+  <line x1="100" y1="400" x2="1100" y2="400" stroke="#64748b" stroke-width="4" marker-end="url(#arrow)" opacity="0.6"/>
+  <text x="1050" y="390" font-family="Arial, sans-serif" class="timeline-text" fill="#64748b">시간</text>
+  
+  <!-- Era 1: Logical Thinking -->
+  <g id="logicalThinking">
+    <rect x="80" y="120" width="200" height="240" fill="url(#logicalEra)" rx="15" filter="url(#glow)"/>
+    <text x="180" y="155" text-anchor="middle" font-family="Arial, sans-serif" class="era-title" fill="white">
+      논리적 사고
+    </text>
+    <text x="180" y="175" text-anchor="middle" font-family="Arial, sans-serif" class="era-subtitle" fill="rgba(255,255,255,0.8)">
+      Logical Thinking
+    </text>
+    
+    <!-- Era timeline -->
+    <text x="180" y="200" text-anchor="middle" font-family="Arial, sans-serif" class="feature-text" fill="white" font-weight="bold">
+      고대 ~ 19세기
+    </text>
+    
+    <!-- Features -->
+    <text x="180" y="225" text-anchor="middle" font-family="Arial, sans-serif" class="feature-text" fill="rgba(255,255,255,0.9)">
+      • 연역/귀납 추론
+    </text>
+    <text x="180" y="245" text-anchor="middle" font-family="Arial, sans-serif" class="feature-text" fill="rgba(255,255,255,0.9)">
+      • 형식 논리학
+    </text>
+    <text x="180" y="265" text-anchor="middle" font-family="Arial, sans-serif" class="feature-text" fill="rgba(255,255,255,0.9)">
+      • 철학적 사변
+    </text>
+    <text x="180" y="285" text-anchor="middle" font-family="Arial, sans-serif" class="feature-text" fill="rgba(255,255,255,0.9)">
+      • 수학적 증명
+    </text>
+    
+    <!-- Tools -->
+    <rect x="90" y="300" width="180" height="45" fill="rgba(255,255,255,0.2)" rx="8"/>
+    <text x="180" y="315" text-anchor="middle" font-family="Arial, sans-serif" class="feature-text" fill="white" font-weight="bold">
+      도구
+    </text>
+    <text x="180" y="335" text-anchor="middle" font-family="Arial, sans-serif" class="timeline-text" fill="rgba(255,255,255,0.8)">
+      종이, 펜, 주판
+    </text>
+    
+    <!-- Timeline position -->
+    <circle cx="180" cy="400" r="8" fill="#8b5cf6"/>
+  </g>
+  
+  <!-- Era 2: Statistical Thinking -->
+  <g id="statisticalThinking">
+    <rect x="320" y="120" width="200" height="240" fill="url(#statisticalEra)" rx="15" filter="url(#glow)"/>
+    <text x="420" y="155" text-anchor="middle" font-family="Arial, sans-serif" class="era-title" fill="white">
+      통계적 사고
+    </text>
+    <text x="420" y="175" text-anchor="middle" font-family="Arial, sans-serif" class="era-subtitle" fill="rgba(255,255,255,0.8)">
+      Statistical Thinking
+    </text>
+    
+    <text x="420" y="200" text-anchor="middle" font-family="Arial, sans-serif" class="feature-text" fill="white" font-weight="bold">
+      19세기 ~ 20세기
+    </text>
+    
+    <text x="420" y="225" text-anchor="middle" font-family="Arial, sans-serif" class="feature-text" fill="rgba(255,255,255,0.9)">
+      • 확률과 불확실성
+    </text>
+    <text x="420" y="245" text-anchor="middle" font-family="Arial, sans-serif" class="feature-text" fill="rgba(255,255,255,0.9)">
+      • 가설 검정
+    </text>
+    <text x="420" y="265" text-anchor="middle" font-family="Arial, sans-serif" class="feature-text" fill="rgba(255,255,255,0.9)">
+      • 데이터 분석
+    </text>
+    <text x="420" y="285" text-anchor="middle" font-family="Arial, sans-serif" class="feature-text" fill="rgba(255,255,255,0.9)">
+      • 실험 설계
+    </text>
+    
+    <rect x="330" y="300" width="180" height="45" fill="rgba(255,255,255,0.2)" rx="8"/>
+    <text x="420" y="315" text-anchor="middle" font-family="Arial, sans-serif" class="feature-text" fill="white" font-weight="bold">
+      도구
+    </text>
+    <text x="420" y="335" text-anchor="middle" font-family="Arial, sans-serif" class="timeline-text" fill="rgba(255,255,255,0.8)">
+      계산기, SPSS, R
+    </text>
+    
+    <circle cx="420" cy="400" r="8" fill="#3b82f6"/>
+  </g>
+  
+  <!-- Era 3: Computational Thinking -->
+  <g id="computationalThinking">
+    <rect x="560" y="120" width="200" height="240" fill="url(#computationalEra)" rx="15" filter="url(#glow)"/>
+    <text x="660" y="155" text-anchor="middle" font-family="Arial, sans-serif" class="era-title" fill="white">
+      컴퓨팅 사고
+    </text>
+    <text x="660" y="175" text-anchor="middle" font-family="Arial, sans-serif" class="era-subtitle" fill="rgba(255,255,255,0.8)">
+      Computational Thinking
+    </text>
+    
+    <text x="660" y="200" text-anchor="middle" font-family="Arial, sans-serif" class="feature-text" fill="white" font-weight="bold">
+      20세기 후반 ~ 2010년대
+    </text>
+    
+    <text x="660" y="225" text-anchor="middle" font-family="Arial, sans-serif" class="feature-text" fill="rgba(255,255,255,0.9)">
+      • 문제 분해
+    </text>
+    <text x="660" y="245" text-anchor="middle" font-family="Arial, sans-serif" class="feature-text" fill="rgba(255,255,255,0.9)">
+      • 패턴 인식
+    </text>
+    <text x="660" y="265" text-anchor="middle" font-family="Arial, sans-serif" class="feature-text" fill="rgba(255,255,255,0.9)">
+      • 추상화
+    </text>
+    <text x="660" y="285" text-anchor="middle" font-family="Arial, sans-serif" class="feature-text" fill="rgba(255,255,255,0.9)">
+      • 알고리즘 설계
+    </text>
+    
+    <rect x="570" y="300" width="180" height="45" fill="rgba(255,255,255,0.2)" rx="8"/>
+    <text x="660" y="315" text-anchor="middle" font-family="Arial, sans-serif" class="feature-text" fill="white" font-weight="bold">
+      도구
+    </text>
+    <text x="660" y="335" text-anchor="middle" font-family="Arial, sans-serif" class="timeline-text" fill="rgba(255,255,255,0.8)">
+      컴퓨터, 프로그래밍
+    </text>
+    
+    <circle cx="660" cy="400" r="8" fill="#10b981"/>
+  </g>
+  
+  <!-- Era 4: AI Thinking -->
+  <g id="aiThinking">
+    <rect x="800" y="120" width="200" height="240" fill="url(#aiEra)" rx="15" filter="url(#glow)"/>
+    <text x="900" y="155" text-anchor="middle" font-family="Arial, sans-serif" class="era-title" fill="white">
+      AI 사고
+    </text>
+    <text x="900" y="175" text-anchor="middle" font-family="Arial, sans-serif" class="era-subtitle" fill="rgba(255,255,255,0.8)">
+      AI Thinking
+    </text>
+    
+    <text x="900" y="200" text-anchor="middle" font-family="Arial, sans-serif" class="feature-text" fill="white" font-weight="bold">
+      2020년대 ~
+    </text>
+    
+    <text x="900" y="225" text-anchor="middle" font-family="Arial, sans-serif" class="feature-text" fill="rgba(255,255,255,0.9)">
+      • 프롬프트 설계
+    </text>
+    <text x="900" y="245" text-anchor="middle" font-family="Arial, sans-serif" class="feature-text" fill="rgba(255,255,255,0.9)">
+      • 하이브리드 추론
+    </text>
+    <text x="900" y="265" text-anchor="middle" font-family="Arial, sans-serif" class="feature-text" fill="rgba(255,255,255,0.9)">
+      • 창발적 발견
+    </text>
+    <text x="900" y="285" text-anchor="middle" font-family="Arial, sans-serif" class="feature-text" fill="rgba(255,255,255,0.9)">
+      • 비판적 검증
+    </text>
+    
+    <rect x="810" y="300" width="180" height="45" fill="rgba(255,255,255,0.2)" rx="8"/>
+    <text x="900" y="315" text-anchor="middle" font-family="Arial, sans-serif" class="feature-text" fill="white" font-weight="bold">
+      도구
+    </text>
+    <text x="900" y="335" text-anchor="middle" font-family="Arial, sans-serif" class="timeline-text" fill="rgba(255,255,255,0.8)">
+      LLM, ChatGPT, Claude
+    </text>
+    
+    <circle cx="900" cy="400" r="8" fill="#f59e0b"/>
+  </g>
+  
+  <!-- Evolution Arrows -->
+  <g opacity="1.0">
+    <path d="M 280 280 Q 300 260 320 280" stroke="#64748b" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+    <path d="M 520 280 Q 540 260 560 280" stroke="#64748b" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+    <path d="M 760 280 Q 780 260 800 280" stroke="#64748b" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+  </g>
+  
+  <!-- Cumulative Growth Indicator -->
+  <g id="cumulativeGrowth">
+    <!-- Background bars showing cumulative complexity -->
+    <rect x="80" y="450" width="200" height="20" fill="#8b5cf6" opacity="0.3" rx="3"/>
+    <rect x="320" y="450" width="200" height="30" fill="#3b82f6" opacity="0.3" rx="3"/>
+    <rect x="560" y="450" width="200" height="40" fill="#10b981" opacity="0.3" rx="3"/>
+    <rect x="800" y="450" width="200" height="50" fill="#f59e0b" opacity="0.3" rx="3"/>
+    
+    <text x="180" y="465" text-anchor="middle" font-family="Arial, sans-serif" class="timeline-text" fill="#8b5cf6" font-weight="bold">
+      기초
+    </text>
+    <text x="420" y="470" text-anchor="middle" font-family="Arial, sans-serif" class="timeline-text" fill="#3b82f6" font-weight="bold">
+      +불확실성
+    </text>
+    <text x="660" y="475" text-anchor="middle" font-family="Arial, sans-serif" class="timeline-text" fill="#10b981" font-weight="bold">
+      +알고리즘
+    </text>
+    <text x="900" y="480" text-anchor="middle" font-family="Arial, sans-serif" class="timeline-text" fill="#f59e0b" font-weight="bold">
+      +지능증강
+    </text>
+  </g>
+  
+  <!-- Key Insight -->
+  <rect x="200" y="520" width="800" height="80" fill="rgba(255,255,255,0.9)" rx="15" stroke="#64748b" stroke-width="2"/>
+  <text x="600" y="545" text-anchor="middle" font-family="Arial, sans-serif" class="era-title" fill="#1e293b">
+    핵심 통찰
+  </text>
+  <text x="600" y="570" text-anchor="middle" font-family="Arial, sans-serif" class="feature-text" fill="#374151">
+    각 시대의 사고방식은 이전 방식을 대체하는 것이 아니라 <strong>누적적으로 발전</strong>
+  </text>
+  <text x="600" y="590" text-anchor="middle" font-family="Arial, sans-serif" class="feature-text" fill="#374151">
+    AI 시대에는 <strong>모든 사고력을 통합적으로 활용</strong>하는 능력이 핵심
+  </text>
+  
+  <!-- Modern Integration -->
+  <g transform="translate(0,-590)">
+    <rect x="100" y="630" width="1000" height="60" fill="linear-gradient(90deg, #8b5cf6 0%,rgb(133, 177, 248) 25%,rgb(68, 118, 102) 50%, #f59e0b 75%, #f59e0b 100%)" opacity="0.2" rx="10"/>
+    <text x="600" y="655" text-anchor="middle" font-family="Arial, sans-serif" class="era-subtitle" fill="#1e293b" font-weight="bold">
+      현재: 통합적 사고력 (Integrated Thinking)
+    </text>
+    <text x="600" y="675" text-anchor="middle" font-family="Arial, sans-serif" class="feature-text" fill="#374151">
+      논리 + 통계 + 컴퓨팅 + AI = 21세기 핵심 역량
+    </text>
+  </g>
+</svg>

@@ -1,0 +1,164 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 700" width="1000" height="700">
+  <defs>
+    <style><![CDATA[
+      .title { font-family: Inter, Segoe UI, Arial, sans-serif; font-size: 36px; font-weight: 900; fill: #f8fafc; }
+      .subtitle { font-family: Inter, Segoe UI, Arial, sans-serif; font-size: 20px; font-weight: 600; fill: #cbd5e1; }
+      .h1 { font-family: Inter, Segoe UI, Arial, sans-serif; font-size: 24px; font-weight: 800; fill: #ffffff; }
+      .h2 { font-family: Inter, Segoe UI, Arial, sans-serif; font-size: 20px; font-weight: 800; fill: #f1f5f9; }
+      .p { font-family: Inter, Segoe UI, Arial, sans-serif; font-size: 16px; font-weight: 600; fill: #e5e7eb; }
+      .small { font-family: Inter, Segoe UI, Arial, sans-serif; font-size: 14px; font-weight: 700; fill: #cbd5e1; }
+      .axis { font-family: Inter, Segoe UI, Arial, sans-serif; font-size: 18px; font-weight: 600; fill: #9ca3af; }
+    ]]></style>
+
+    <!-- Background -->
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+
+    <!-- J-curve gradient -->
+    <linearGradient id="gradJCurve" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ef4444"/>
+      <stop offset="30%" stop-color="#f59e0b"/>
+      <stop offset="70%" stop-color="#3b82f6"/>
+      <stop offset="100%" stop-color="#10b981"/>
+    </linearGradient>
+
+    <!-- Phase backgrounds -->
+    <linearGradient id="gradPhase1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fecaca" stop-opacity="0.1"/>
+      <stop offset="100%" stop-color="#ef4444" stop-opacity="0.1"/>
+    </linearGradient>
+
+    <linearGradient id="gradPhase2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fed7aa" stop-opacity="0.1"/>
+      <stop offset="100%" stop-color="#f59e0b" stop-opacity="0.1"/>
+    </linearGradient>
+
+    <linearGradient id="gradPhase3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#d1fae5" stop-opacity="0.1"/>
+      <stop offset="100%" stop-color="#10b981" stop-opacity="0.1"/>
+    </linearGradient>
+
+    <!-- Effects -->
+    <filter id="shadow"><feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000" flood-opacity="0.3"/></filter>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge> 
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Arrow markers -->
+    <marker id="arrowUp" markerWidth="12" markerHeight="10" refX="8" refY="5" orient="auto">
+      <polygon points="0 0, 0 10, 12 5" fill="#9ca3af"/>
+    </marker>
+    <marker id="arrowRight" markerWidth="12" markerHeight="10" refX="12" refY="5" orient="auto">
+      <polygon points="0 0, 12 5, 0 10" fill="#9ca3af"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1000" height="700" fill="url(#bg)"/>
+
+  <!-- Header -->
+  <text x="400" y="60" text-anchor="middle" class="title">생산성 J-커브 현상</text>
+  <text x="720" y="60" text-anchor="middle" class="subtitle">Productivity J-Curve Phenomenon</text>
+
+  <!-- Chart area -->
+  <g transform="translate(150,100)">
+    <!-- Chart background -->
+    <rect x="0" y="0" width="700" height="400" fill="#1f2937" opacity="0.3" rx="10"/>
+    
+    <!-- Phase background areas -->
+    <rect x="0" y="0" width="200" height="400" fill="url(#gradPhase1)"/>
+    <rect x="200" y="0" width="300" height="400" fill="url(#gradPhase2)"/>
+    <rect x="500" y="0" width="200" height="400" fill="url(#gradPhase3)"/>
+    
+    <!-- Grid lines -->
+    <g stroke="#374151" stroke-width="1" opacity="0.3">
+      <line x1="0" y1="100" x2="700" y2="100"/>
+      <line x1="0" y1="200" x2="700" y2="200"/>
+      <line x1="0" y1="300" x2="700" y2="300"/>
+      <line x1="100" y1="0" x2="100" y2="400"/>
+      <line x1="200" y1="0" x2="200" y2="400"/>
+      <line x1="300" y1="0" x2="300" y2="400"/>
+      <line x1="400" y1="0" x2="400" y2="400"/>
+      <line x1="500" y1="0" x2="500" y2="400"/>
+      <line x1="600" y1="0" x2="600" y2="400"/>
+    </g>
+    
+    <!-- Axes -->
+    <line x1="0" y1="200" x2="700" y2="200" stroke="#9ca3af" stroke-width="2" marker-end="url(#arrowRight)"/>
+    <line x1="50" y1="400" x2="50" y2="0" stroke="#9ca3af" stroke-width="2" marker-end="url(#arrowUp)"/>
+    
+    <!-- Axis labels -->
+    <text x="720" y="205" class="axis">시간 (Time)</text>
+    <text x="-10" y="20" class="axis" text-anchor="middle" transform="rotate(-90, 30, 20)">생산성 (Productivity)</text>
+    
+    <!-- Zero line -->
+    <text x="20" y="205" class="axis" text-anchor="end">0</text>
+    
+    <!-- J-Curve path -->
+    <path d="M 50 200 Q 150 250, 200 240 Q 350 220, 500 150 Q 600 100, 650 80" 
+          stroke="url(#gradJCurve)" stroke-width="6" fill="none" filter="url(#glow)"/>
+    
+    <!-- Key points -->
+    <circle cx="50" cy="200" r="6" fill="#fbbf24" filter="url(#shadow)"/>
+    <circle cx="200" cy="240" r="6" fill="#ef4444" filter="url(#shadow)"/>
+    <circle cx="500" cy="150" r="6" fill="#3b82f6" filter="url(#shadow)"/>
+    <circle cx="650" cy="80" r="6" fill="#10b981" filter="url(#shadow)"/>
+    
+    <!-- Phase labels on x-axis -->
+    <text x="100" y="430" text-anchor="middle" fill="white" font-size="16" font-weight="bold">도입</text>
+    <text x="350" y="430" text-anchor="middle" fill="white" font-size="16" font-weight="bold">적응</text>
+    <text x="600" y="430" text-anchor="middle" fill="white" font-size="16" font-weight="bold">성숙</text>
+    
+    <!-- Time markers -->
+    <text x="50" y="450" text-anchor="middle" class="axis">0년</text>
+    <text x="200" y="450" text-anchor="middle" class="axis">5-10년</text>
+    <text x="500" y="450" text-anchor="middle" class="axis">20-30년</text>
+    <text x="650" y="450" text-anchor="middle" class="axis">40년+</text>
+  </g>
+
+  <!-- Phase descriptions -->
+  <g transform="translate(50,580)">
+    <!-- Phase 1: Initial Decline -->
+    <g>
+      <rect x="0" y="0" width="280" height="80" rx="10" fill="#ef4444" opacity="0.8"/>
+      <text x="140" y="25" text-anchor="middle" class="h2">1단계: 초기 감소</text>
+      <text x="20" y="45" class="small">• 학습 비용</text>
+      <text x="150" y="45" class="small">• 시행착오</text>
+      <text x="20" y="65" class="small">• 조직 혼란</text>
+      <text x="150" y="65" class="small">• 저항과 갈등</text>
+    </g>
+
+    <!-- Phase 2: Gradual Recovery -->
+    <g transform="translate(310,0)">
+      <rect x="0" y="0" width="280" height="80" rx="10" fill="#f59e0b" opacity="0.8"/>
+      <text x="140" y="25" text-anchor="middle" class="h2">2단계: 점진적 회복</text>
+      <text x="20" y="45" class="small">• 무형자본 투자</text>
+      <text x="150" y="45" class="small">• 프로세스 개선</text>
+      <text x="20" y="65" class="small">• 역량 구축</text>
+      <text x="150" y="65" class="small">• 문화 변화</text>
+    </g>
+
+    <!-- Phase 3: Explosive Growth -->
+    <g transform="translate(620,0)">
+      <rect x="0" y="0" width="280" height="80" rx="10" fill="#10b981" opacity="0.8"/>
+      <text x="140" y="25" text-anchor="middle" class="h2">3단계: 폭발적 성장</text>
+      <text x="20" y="45" class="small">• 시너지 실현</text>
+      <text x="150" y="45" class="small">• 혁신 가속</text>
+      <text x="20" y="65" class="small">• 생산성 급증</text>
+      <text x="150" y="65" class="small">• 새로운 기준</text>
+    </g>
+  </g>
+
+  <!-- Current AI position indicator -->
+  <g transform="translate(250,490)">
+    <polygon points="0 0, 15 -20, -15 -20" fill="#fbbf24" filter="url(#shadow)"/>
+    <text x="0" y="-45" text-anchor="middle" class="small" fill="#fbbf24">현재 AI 위치</text>
+    <text x="0" y="-27" text-anchor="middle" class="small" fill="#fbbf24">Current AI</text>
+  </g>
+</svg>

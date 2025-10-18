@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1000" height="750" viewBox="0 0 1000 750" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- 콘텐츠 생성 전용 그라데이션 -->
+    <linearGradient id="aiPurple" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#8B5CF6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#6366F1;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="dataBlue" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3B82F6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1E40AF;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="versionGray" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#6B7280;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#4B5563;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="promptTeal" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#14B8A6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0F766E;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="codeOrange" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#F97316;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#EA580C;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="textGreen" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#10B981;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#059669;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="vizRed" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#EF4444;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#DC2626;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="tableAmber" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#F59E0B;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#D97706;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="qualityIndigo" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#6366F1;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#4F46E5;stop-opacity:1" />
+    </linearGradient>
+
+    <!-- 고급 필터 -->
+    <filter id="dropShadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="4"/>
+      <feOffset dx="3" dy="6" result="offsetblur"/>
+      <feComponentTransfer><feFuncA type="linear" slope="0.25"/></feComponentTransfer>
+      <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="5" result="coloredBlur"/>
+      <feMerge><feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+
+    <!-- 펄스 애니메이션 -->
+    <filter id="pulse" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="3" result="coloredBlur"/>
+      <feMerge><feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+
+    <!-- 화살표 -->
+    <marker id="aiArrow" markerWidth="14" markerHeight="14" refX="12" refY="7" orient="auto">
+      <path d="M2,2 L2,12 L12,7 z" fill="#8B5CF6" />
+    </marker>
+    <marker id="dataArrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M2,2 L2,10 L10,6 z" fill="#6B7280" />
+    </marker>
+
+    <!-- 스타일 -->
+    <style>
+      .ai-title { font-family: "Noto Sans KR", sans-serif; font-size: 16px; font-weight: bold; text-anchor: middle; fill: white; }
+      .ai-subtitle { font-family: "Noto Sans KR", sans-serif; font-size: 12px; text-anchor: middle; fill: white; opacity: 0.9; }
+      .ai-label { font-family: "Noto Sans KR", sans-serif; font-size: 11px; text-anchor: middle; fill: #6B7280; }
+      .center-title { font-family: "Noto Sans KR", sans-serif; font-size: 18px; font-weight: bold; text-anchor: middle; }
+      .feature-text { font-family: "Noto Sans KR", sans-serif; font-size: 10px; text-anchor: middle; fill: white; }
+    </style>
+  </defs>
+
+  <!-- 배경 -->
+  <rect width="1000" height="750" fill="#FEFEFE" stroke="#E5E7EB" stroke-width="1" rx="12"/>
+
+  <!-- 제목 영역 -->
+  <rect x="50" y="15" width="900" height="50" rx="20" fill="rgba(139, 92, 246, 0.08)" stroke="#8B5CF6" stroke-width="2" stroke-dasharray="10,5"/>
+  <text x="500" y="35" class="center-title" fill="#7C3AED">AI 강화 콘텐츠 생성 시스템</text>
+  <text x="500" y="55" class="ai-label" fill="#8B5CF6">From Data to Publication: 8-Stage Content Pipeline</text>
+
+  <!-- 중앙 허브: AI 강화 콘텐츠 제작 (크기 확장) -->
+  <g transform="translate(500, 375)">
+    <circle cx="0" cy="0" r="90" fill="url(#aiPurple)" filter="url(#glow)" stroke="#6D28D9" stroke-width="5"/>
+    <circle cx="0" cy="0" r="75" fill="rgba(255,255,255,0.15)" opacity="0.8"/>
+    <text x="0" y="-20" class="ai-title" font-size="18">🤖 AI 강화</text>
+    <text x="0" y="0" class="ai-title" font-size="18">콘텐츠 생성</text>
+    <text x="0" y="20" class="ai-subtitle" font-size="14">Content Generation Hub</text>
+    <text x="0" y="35" class="ai-subtitle" font-size="12">8-Stage Pipeline</text>
+  </g>
+
+  <!-- 상단 영역: 연구/분석 단계 -->
+  
+  <!-- 1. 데이터 연결 (좌상단) -->
+  <path d="M 450 300 Q 350 200 270 150" stroke="#8B5CF6" stroke-width="2" marker-end="url(#aiArrow)" filter="url(#glow)" fill="none"/>
+  <g transform="translate(200, 150)">
+    <rect x="-70" y="-35" width="140" height="70" rx="18" fill="url(#dataBlue)" filter="url(#dropShadow)" stroke="#1E40AF" stroke-width="2"/>
+    <text x="0" y="-12" class="ai-title" font-size="14">🗂️ 데이터 연결</text>
+    <text x="0" y="5" class="ai-subtitle" font-size="11">SQL • CSV • API</text>
+    <text x="0" y="20" class="ai-subtitle" font-size="10">자동 쿼리 생성</text>
+  </g>
+
+  <!-- 2. 버전 관리 (상단 중앙) -->
+  <path d="M 500 285 V 200" stroke="#8B5CF6" stroke-width="3" marker-end="url(#aiArrow)" filter="url(#glow)" fill="none"/>
+  <g transform="translate(500, 150)">
+    <rect x="-70" y="-35" width="140" height="70" rx="18" fill="url(#versionGray)" filter="url(#dropShadow)" stroke="#4B5563" stroke-width="2"/>
+    <text x="0" y="-12" class="ai-title" font-size="14">🔄 버전 관리</text>
+    <text x="0" y="5" class="ai-subtitle" font-size="11">Git • 협업</text>
+    <text x="0" y="20" class="ai-subtitle" font-size="10">변경사항 추적</text>
+  </g>
+
+  <!-- 3. 프롬프트 엔지니어링 (우상단) -->
+  <path d="M 550 300 Q 650 200 730 150" stroke="#8B5CF6" stroke-width="2" marker-end="url(#aiArrow)" filter="url(#glow)" fill="none"/>
+  <g transform="translate(800, 150)">
+    <rect x="-70" y="-35" width="140" height="70" rx="18" fill="url(#promptTeal)" filter="url(#dropShadow)" stroke="#0F766E" stroke-width="2"/>
+    <text x="0" y="-12" class="ai-title" font-size="14">⚡ 프롬프트 설계</text>
+    <text x="0" y="5" class="ai-subtitle" font-size="11">CoT • Few-shot</text>
+    <text x="0" y="20" class="ai-subtitle" font-size="10">도메인 특화</text>
+  </g>
+
+  <!-- 중간 영역: 생성/처리 단계 -->
+  
+  <!-- 4. 코드 블록 생성 (좌측) -->
+  <path d="M 410 375 H 320" stroke="#8B5CF6" stroke-width="3" marker-end="url(#aiArrow)" filter="url(#glow)" fill="none"/>
+  <g transform="translate(250, 375)">
+    <rect x="-70" y="-35" width="140" height="70" rx="18" fill="url(#codeOrange)" filter="url(#dropShadow)" stroke="#EA580C" stroke-width="2"/>
+    <text x="0" y="-12" class="ai-title" font-size="14">⚙️ 코드 생성</text>
+    <text x="0" y="5" class="ai-subtitle" font-size="11">R • Python • SQL</text>
+    <text x="0" y="20" class="ai-subtitle" font-size="10">자동 디버깅</text>
+  </g>
+
+  <!-- 5. 텍스트 콘텐츠 (우측) -->
+  <path d="M 590 375 H 680" stroke="#8B5CF6" stroke-width="3" marker-end="url(#aiArrow)" filter="url(#glow)" fill="none"/>
+  <g transform="translate(750, 375)">
+    <rect x="-70" y="-35" width="140" height="70" rx="18" fill="url(#textGreen)" filter="url(#dropShadow)" stroke="#059669" stroke-width="2"/>
+    <text x="0" y="-12" class="ai-title" font-size="14">📝 텍스트 생성</text>
+    <text x="0" y="5" class="ai-subtitle" font-size="11">학술 글쓰기</text>
+    <text x="0" y="20" class="ai-subtitle" font-size="10">다국어 지원</text>
+  </g>
+
+  <!-- 하단 영역: 출력/검증 단계 -->
+  
+  <!-- 6. 시각화 자동화 (좌하단) -->
+  <path d="M 450 450 Q 350 550 270 600" stroke="#8B5CF6" stroke-width="2" marker-end="url(#aiArrow)" filter="url(#glow)" fill="none"/>
+  <g transform="translate(200, 600)">
+    <rect x="-70" y="-35" width="140" height="70" rx="18" fill="url(#vizRed)" filter="url(#dropShadow)" stroke="#DC2626" stroke-width="2"/>
+    <text x="0" y="-12" class="ai-title" font-size="14">📊 시각화</text>
+    <text x="0" y="5" class="ai-subtitle" font-size="11">ggplot2 • plotly</text>
+    <text x="0" y="20" class="ai-subtitle" font-size="10">인터랙티브</text>
+  </g>
+
+  <!-- 7. 표/수식 생성 (하단 중앙) -->
+  <path d="M 500 465 V 550" stroke="#8B5CF6" stroke-width="3" marker-end="url(#aiArrow)" filter="url(#glow)" fill="none"/>
+  <g transform="translate(500, 600)">
+    <rect x="-70" y="-35" width="140" height="70" rx="18" fill="url(#tableAmber)" filter="url(#dropShadow)" stroke="#D97706" stroke-width="2"/>
+    <text x="0" y="-12" class="ai-title" font-size="14">📋 표/수식</text>
+    <text x="0" y="5" class="ai-subtitle" font-size="11">GT • LaTeX</text>
+    <text x="0" y="20" class="ai-subtitle" font-size="10">통계 요약</text>
+  </g>
+
+  <!-- 8. 품질 검증 (우하단) -->
+  <path d="M 550 450 Q 650 550 730 600" stroke="#8B5CF6" stroke-width="2" marker-end="url(#aiArrow)" filter="url(#glow)" fill="none"/>
+  <g transform="translate(800, 600)">
+    <rect x="-70" y="-35" width="140" height="70" rx="18" fill="url(#qualityIndigo)" filter="url(#dropShadow)" stroke="#4F46E5" stroke-width="2"/>
+    <text x="0" y="-12" class="ai-title" font-size="14">✅ 품질 검증</text>
+    <text x="0" y="5" class="ai-subtitle" font-size="11">재현성 체크</text>
+    <text x="0" y="20" class="ai-subtitle" font-size="10">인용 검증</text>
+  </g>
+
+  <!-- 하단 기존 생태계 통합 -->
+  <rect x="50" y="680" width="900" height="60" rx="15" fill="rgba(16, 185, 129, 0.05)" stroke="#10B981" stroke-width="2" stroke-dasharray="8,4"/>
+  <text x="500" y="700" class="center-title" fill="#059669" font-size="14">쿼토 기존 생태계와 AI의 완벽한 통합</text>
+
+  <!-- 기존 4대 핵심 요소 -->
+  <g transform="translate(200, 720)">
+    <rect x="-80" y="-12" width="160" height="24" rx="12" fill="#8B5CF6" opacity="0.8"/>
+    <text x="0" y="3" class="feature-text" font-size="11">📝 마크다운 + AI 글쓰기</text>
+  </g>
+  
+  <g transform="translate(400, 720)">
+    <rect x="-80" y="-12" width="160" height="24" rx="12" fill="#3B82F6" opacity="0.8"/>
+    <text x="0" y="3" class="feature-text" font-size="11">🔬 Python/R + AI 코딩</text>
+  </g>
+  
+  <g transform="translate(600, 720)">
+    <rect x="-80" y="-12" width="160" height="24" rx="12" fill="#10B981" opacity="0.8"/>
+    <text x="0" y="3" class="feature-text" font-size="11">📚 싱글 소싱 출판</text>
+  </g>
+  
+  <g transform="translate(800, 720)">
+    <rect x="-80" y="-12" width="160" height="24" rx="12" fill="#F97316" opacity="0.8"/>
+    <text x="0" y="3" class="feature-text" font-size="11">🎨 brand.yml 디자인</text>
+  </g>
+
+  <!-- 연결선 -->
+  <path d="M 280 720 H 320" stroke="#10B981" stroke-width="2" stroke-dasharray="4,2" fill="none"/>
+  <path d="M 480 720 H 520" stroke="#10B981" stroke-width="2" stroke-dasharray="4,2" fill="none"/>
+  <path d="M 680 720 H 720" stroke="#10B981" stroke-width="2" stroke-dasharray="4,2" fill="none"/>
+</svg>

@@ -1,0 +1,205 @@
+<svg width="900" height="500" viewBox="0 80 900 500" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- 그라데이션 정의 -->
+    <linearGradient id="textGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#e8f4fd;stop-opacity:0.9"/>
+      <stop offset="100%" style="stop-color:#d4edfc;stop-opacity:0.7"/>
+    </linearGradient>
+    
+    <linearGradient id="codeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f3e8ff;stop-opacity:0.9"/>
+      <stop offset="100%" style="stop-color:#e9d5ff;stop-opacity:0.7"/>
+    </linearGradient>
+    
+    <linearGradient id="graphGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#fef3e2;stop-opacity:0.9"/>
+      <stop offset="100%" style="stop-color:#fed7aa;stop-opacity:0.7"/>
+    </linearGradient>
+    
+    <linearGradient id="tableGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f0fdf4;stop-opacity:0.9"/>
+      <stop offset="100%" style="stop-color:#dcfce7;stop-opacity:0.7"/>
+    </linearGradient>
+
+    <linearGradient id="pageGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#f8f9fa;stop-opacity:1"/>
+    </linearGradient>
+
+    <!-- 그림자 필터 -->
+    <filter id="dropshadow">
+      <feDropShadow dx="2" dy="2" stdDeviation="3" flood-color="#000000" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+  
+  <style>
+    .main-title { font-family: 'Noto Sans KR', sans-serif; font-size: 26px; font-weight: bold; fill: #1f2937; text-anchor: middle; }
+    .subtitle { font-family: 'Noto Sans KR', sans-serif; font-size: 15px; fill: #6b7280; text-anchor: middle; }
+    
+    .section-title { font-family: 'Noto Sans KR', sans-serif; font-size: 14px; font-weight: bold; fill: #374151; text-anchor: middle; }
+    .section-subtitle { font-family: 'Noto Sans KR', sans-serif; font-size: 11px; fill: #6b7280; text-anchor: middle; font-weight: 500; }
+    .feature-text { font-family: 'Noto Sans KR', sans-serif; font-size: 10px; fill: #4b5563; text-anchor: middle; }
+    .sample-text { font-family: 'Noto Sans KR', sans-serif; font-size: 9px; fill: #374151; text-anchor: middle; }
+    .sample-serif { font-family: 'Noto Serif KR', serif; font-size: 9px; fill: #374151; text-anchor: middle; }
+    .sample-mono { font-family: 'D2 Coding', monospace; font-size: 9px; fill: #374151; text-anchor: middle; }
+    .sample-sans { font-family: 'Noto Sans KR', sans-serif; font-size: 9px; fill: #374151; text-anchor: middle; }
+    
+    .doc-title { font-family: 'IBM Plex Sans KR', sans-serif; font-size: 18px; font-weight: bold; fill: #2c3e50; text-anchor: start; }
+    .doc-text { font-family: 'Noto Serif KR', serif; font-size: 11px; fill: #2c3e50; text-anchor: start; }
+    .doc-code { font-family: 'D2 Coding', monospace; font-size: 9px; fill: #8e44ad; text-anchor: start; }
+    .doc-graph-label { font-family: 'Noto Sans KR', sans-serif; font-size: 9px; fill: #5d6d7e; text-anchor: start; }
+    .doc-table-header { font-family: 'Noto Sans KR', sans-serif; font-size: 9px; font-weight: bold; fill: #2c3e50; text-anchor: start; }
+    .doc-table-data { font-family: 'Noto Sans KR', sans-serif; font-size: 9px; fill: #34495e; text-anchor: start; }
+    
+    .icon { font-size: 18px; text-anchor: middle; }
+    .arrow-line { stroke: #9ca3af; stroke-width: 1.5; stroke-dasharray: 4,2; }
+    .guide-text { font-family: 'Noto Sans KR', sans-serif; font-size: 11px; fill: #2c3e50; text-anchor: start; font-weight: 500; }
+  </style>
+
+  <!-- 배경 -->
+  <rect width="900" height="750" fill="#fefefe"/>
+  
+  <!-- 왼쪽: 연구보고서 예시 -->
+  <rect x="50" y="90" width="350" height="475" rx="15" fill="url(#pageGrad)" stroke="#bdc3c7" stroke-width="2" filter="url(#dropshadow)"/>
+  
+  <!-- 문서 제목 -->
+  <rect x="70" y="110" width="310" height="40" rx="5" fill="#e8f4fd" stroke="#3b82f6" stroke-width="1"/>
+  <text x="80" y="130" class="doc-title" style="fill: #1e40af;">과학기술 연구보고서</text>
+  <text x="80" y="145" class="doc-title" style="font-size: 13px;">AI 기반 데이터 분석 방법론</text>
+  
+  <!-- 본문 텍스트 영역 -->
+  <rect x="70" y="160" width="310" height="80" rx="5" fill="#ffffff" stroke="#d4edfc" stroke-width="1"/>
+  <text x="80" y="180" class="doc-text">본 연구는 기계학습을 활용한 혁신적 데이터 분석</text>
+  <text x="80" y="195" class="doc-text">방법론을 제시한다. 자연어 처리 기술의 발전으로</text>
+  <text x="80" y="210" class="doc-text">대용량 텍스트 분석이 가능해졌으며, 이를 통해</text>
+  <text x="80" y="225" class="doc-text">기존 한계를 극복할 수 있는 새로운 접근법을 모색하였다.</text>
+  
+  <!-- 코드 블록 -->
+  <rect x="70" y="255" width="310" height="75" rx="5" fill="#f3e8ff" stroke="#8b5cf6" stroke-width="1"/>
+  <text x="80" y="275" class="doc-code" style="fill: #8e44ad;"># 데이터 전처리 및 분석</text>
+  <text x="80" y="290" class="doc-code" style="fill: #2980b9;">import</text>
+  <text x="117" y="290" class="doc-code"> pandas </text>
+  <text x="155" y="290" class="doc-code" style="fill: #2980b9;">as</text>
+  <text x="175" y="290" class="doc-code"> pd</text>
+  <text x="80" y="305" class="doc-code">data = pd.read_csv(</text>
+  <text x="180" y="305" class="doc-code" style="fill: #e67e22;">'dataset.csv'</text>
+  <text x="245" y="305" class="doc-code">)</text>
+  <text x="80" y="320" class="doc-code" style="fill: #95a5a6;"># 통계 분석 수행</text>
+  
+  <!-- 그래프 영역 -->
+  <rect x="70" y="345" width="150" height="90" rx="5" fill="#fef3e2" stroke="#f59e0b" stroke-width="1"/>
+  <text x="80" y="365" class="doc-graph-label" style="font-weight: bold; fill: #d97706;">분기별 성장률 추이</text>
+  <g transform="translate(27,16)">
+    <rect x="90"  y="375" width="12" height="25" fill="#3b82f6"/>
+    <rect x="110" y="370" width="12" height="30" fill="#3b82f6"/>
+    <rect x="130" y="365" width="12" height="35" fill="#3b82f6"/>
+    <rect x="150" y="360" width="12" height="40" fill="#3b82f6"/>
+    <text x="93" y="415" class="doc-graph-label">1Q</text>
+    <text x="113" y="415" class="doc-graph-label">2Q</text>
+    <text x="133" y="415" class="doc-graph-label">3Q</text>
+    <text x="153" y="415" class="doc-graph-label">4Q</text>
+  </g>
+  <text x="75" y="380" class="doc-graph-label">증가율(%)</text>
+  
+  <!-- 표 영역 -->
+  <rect x="230" y="345" width="150" height="90" rx="5" fill="#f0fdf4" stroke="#10b981" stroke-width="1"/>
+  <text x="240" y="365" class="doc-table-header" style="fill: #059669;">실험 결과 요약</text>
+  <rect x="240" y="370" width="130" height="15" fill="#ecf0f1" stroke="#bdc3c7" stroke-width="0.5"/>
+  <text x="245" y="380" class="doc-table-header">방법</text>
+  <text x="285" y="380" class="doc-table-header">정확도</text>
+  <text x="330" y="380" class="doc-table-header">시간</text>
+  <text x="245" y="395" class="doc-table-data">SVM</text>
+  <text x="285" y="395" class="doc-table-data">89.2%</text>
+  <text x="330" y="395" class="doc-table-data">3.2s</text>
+  <text x="245" y="410" class="doc-table-data">DNN</text>
+  <text x="285" y="410" class="doc-table-data">94.5%</text>
+  <text x="330" y="410" class="doc-table-data">8.7s</text>
+  <text x="245" y="425" class="doc-table-data">RF</text>
+  <text x="285" y="425" class="doc-table-data">91.8%</text>
+  <text x="330" y="425" class="doc-table-data">2.1s</text>
+  
+  <!-- 결론 텍스트 -->
+  <rect x="70" y="450" width="310" height="60" rx="5" fill="#ffffff" stroke="#d4edfc" stroke-width="1"/>
+  <text x="80" y="470" class="doc-text">연구 결과, 딥뉴럴네트워크 방법론이 가장 높은 정확도를</text>
+  <text x="80" y="485" class="doc-text">보였으나, 실시간 처리가 필요한 환경에서는 랜덤포레스트가</text>
+  <text x="80" y="500" class="doc-text">더 적합한 것으로 판단된다.</text>
+  
+  <!-- 참고문헌 -->
+  <text x="80" y="530" class="doc-text" style="font-size: 8px; fill: #7f8c8d;">* 참고: Kim et al. (2024), Journal of AI Research</text>
+
+  <!-- 오른쪽: 4가지 글꼴 타입 (2x2 그리드) -->
+  
+  <!-- 1. 텍스트 글꼴 (좌상) -->
+  <rect x="450" y="90" width="180" height="150" rx="12" fill="url(#textGrad)" stroke="#3b82f6" stroke-width="2" filter="url(#dropshadow)"/>
+  <text x="540" y="115" class="icon">📖</text>
+  <text x="540" y="135" class="section-title">텍스트 글꼴</text>
+  <text x="540" y="150" class="section-subtitle">"읽기의 편안함"</text>
+  <text x="540" y="170" class="feature-text">Serif/Sans-serif</text>
+  <text x="540" y="185" class="sample-serif">긴 문장도 편안한 읽기</text>
+  <text x="540" y="200" class="sample-sans">디지털 화면 최적화</text>
+  <rect x="470" y="210" width="140" height="15" rx="3" fill="#ffffff" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="540" y="221" class="feature-text" style="font-weight: bold; fill: #1e40af;">장시간 읽어도 편안</text>
+
+  <!-- 2. 코드 글꼴 (우상) -->
+  <rect x="670" y="90" width="180" height="150" rx="12" fill="url(#codeGrad)" stroke="#8b5cf6" stroke-width="2" filter="url(#dropshadow)"/>
+  <text x="760" y="115" class="icon">💻</text>
+  <text x="760" y="135" class="section-title">코드 글꼴</text>
+  <text x="760" y="150" class="section-subtitle">"정확한 구분"</text>
+  <text x="760" y="170" class="feature-text">Monospace</text>
+  <text x="760" y="185" class="sample-mono">0 O o | 1 l I</text>
+  <text x="760" y="200" class="sample-mono">if (x == y) { }</text>
+  <rect x="690" y="210" width="140" height="15" rx="3" fill="#ffffff" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="760" y="221" class="feature-text" style="font-weight: bold; fill: #7c3aed;">모든 문자 같은 폭</text>
+
+  <!-- 3. 표 글꼴 (좌하) -->
+  <g transform="translate(220,0)">
+    <rect x="450" y="280" width="180" height="150" rx="12" fill="url(#tableGrad)" stroke="#10b981" stroke-width="2" filter="url(#dropshadow)"/>
+    <text x="540" y="305" class="icon">📋</text>
+    <text x="540" y="325" class="section-title">표 글꼴</text>
+    <text x="540" y="340" class="section-subtitle">"계층적 구조"</text>
+    <text x="540" y="360" class="feature-text">Weight 변화 활용</text>
+    <!-- 미니 표 -->
+    <rect x="500" y="375" width="80" height="30" fill="#ffffff" stroke="#d1d5db" stroke-width="1" rx="3"/>
+    <line x1="500" y1="387" x2="580" y2="387" stroke="#d1d5db" stroke-width="1"/>
+    <text x="520" y="384" class="sample-sans" style="font-size: 8px; font-weight: bold;">항목</text>
+    <text x="555" y="384" class="sample-sans" style="font-size: 8px; font-weight: bold;">값</text>
+    <text x="520" y="397" class="sample-sans" style="font-size: 8px;">데이터</text>
+    <text x="555" y="397" class="sample-sans" style="font-size: 8px;">100</text>
+    <rect x="470" y="410" width="140" height="15" rx="3" fill="#ffffff" stroke="#cbd5e1" stroke-width="1"/>
+    <text x="540" y="421" class="feature-text" style="font-weight: bold; fill: #059669;">체계적 정리</text>
+  </g>
+
+  <!-- 4. 그래프 글꼴 (우하) -->
+  <g transform="translate(-220,0)">
+    <rect x="670" y="280" width="180" height="150" rx="12" fill="url(#graphGrad)" stroke="#f59e0b" stroke-width="2" filter="url(#dropshadow)"/>
+    <text x="760" y="305" class="icon">📊</text>
+    <text x="760" y="325" class="section-title">그래프 글꼴</text>
+    <text x="760" y="340" class="section-subtitle">"깔끔한 전달"</text>
+    <text x="760" y="355" class="feature-text">Clean Sans-serif</text>
+    <!-- 미니 그래프 -->
+    <rect x="735" y="375" width="10" height="20" fill="#3b82f6"/>
+    <rect x="750" y="370" width="10" height="25" fill="#3b82f6"/>
+    <rect x="765" y="365" width="10" height="30" fill="#3b82f6"/>
+    <rect x="780" y="360" width="10" height="35" fill="#3b82f6"/>
+    <text x="760" y="405" class="sample-sans">Q1 Q2 Q3 Q4</text>
+    <rect x="690" y="410" width="140" height="15" rx="3" fill="#ffffff" stroke="#cbd5e1" stroke-width="1"/>
+    <text x="760" y="421" class="feature-text" style="font-weight: bold; fill: #d97706;">데이터에 집중</text>
+  </g>
+
+  <!-- 연결선들 (문서에서 각 박스로) -->
+  <line x1="385" y1="127" x2="450" y2="160" class="arrow-line" stroke="#3b82f6"/>
+  <line x1="385" y1="290" x2="670" y2="160" class="arrow-line" stroke="#8b5cf6"/>
+  <line x1="220" y1="390" x2="450" y2="350" class="arrow-line" stroke="#10b981"/>
+  <line x1="385" y1="390" x2="670" y2="350" class="arrow-line" stroke="#f59e0b"/>
+
+  <!-- 하단: 글꼴 선택 원칙 -->
+  <g transform="translate(400,-160)">
+    <rect x="50" y="605" width="400" height="120" rx="15" fill="#f9fafb" stroke="#e5e7eb" stroke-width="2" filter="url(#dropshadow)"/>
+    <text x="250" y="630" class="main-title" style="font-size: 16px;">글꼴 선택 원칙</text>
+    
+    <text x="70" y="655" class="guide-text">📖 텍스트: 장시간 읽기에 편안한 글꼴 (Noto Serif KR, IBM Plex Sans KR)</text>
+    <text x="70" y="675" class="guide-text">💻 코드: 문자 구분이 명확한 고정폭 글꼴 (D2 Coding, Fira Code)</text>
+    <text x="70" y="695" class="guide-text">📊 그래프: 작은 크기에서도 선명한 Sans-serif (나눔고딕, Pretendard)</text>
+    <text x="70" y="715" class="guide-text">📋 표: 계층 구조가 명확한 Weight 변화 (Bold ↔ Regular)</text>
+  </g>  
+</svg>

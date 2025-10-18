@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1360" height="500" viewBox="0 0 1360 500" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!-- 정의 섹션 -->
+  <defs>
+    <!-- 그라디언트 정의 -->
+    <linearGradient id="traditionalGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#8B7355;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#A0522D;stop-opacity:0.8" />
+    </linearGradient>
+    <linearGradient id="computerGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#4A90E2;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#357ABD;stop-opacity:0.8" />
+    </linearGradient>
+    <linearGradient id="digitalGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#27AE60;stop-opacity:0.9" />
+      <stop offset="100%" style="stop-color:#2ECC71;stop-opacity:0.9" />
+    </linearGradient>
+    <linearGradient id="aiGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#E74C3C;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#FF6B6B;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#E74C3C;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="ellmerGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#FF6B6B;stop-opacity:1" />
+      <stop offset="25%" style="stop-color:#4ECDC4;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#45B7D1;stop-opacity:1" />
+      <stop offset="75%" style="stop-color:#96CEB4;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FECA57;stop-opacity:1" />
+    </linearGradient>
+
+    <!-- 발광 효과 -->
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <!-- 강한 발광 효과 -->
+    <filter id="strongGlow">
+      <feGaussianBlur stdDeviation="6" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- 배경 -->
+  <rect width="1600" height="500" fill="#f8f9fa"/>
+
+  <!-- =============== 상단 타임라인: 전통 글쓰기 도구 =============== -->
+  <g id="traditional-timeline">
+    <rect x="50" y="70" width="650" height="110" fill="url(#traditionalGrad)" opacity="0.1" rx="10"/>
+    <text x="60" y="90" font-size="14" font-weight="bold" fill="#8B7355">전통 글쓰기 도구</text>
+
+    <!-- 점토판 쐐기 (고대) -->
+    <g transform="translate(120,120)">
+      <rect x="-25" y="-15" width="50" height="30" fill="#8B7355" rx="5"/>
+      <text x="0" y="3" text-anchor="middle" font-size="10" fill="white" font-weight="bold">점토판</text>
+      <text x="0" y="35" text-anchor="middle" font-size="11" font-weight="bold" fill="#8B7355">점토판 쐐기</text>
+      <text x="0" y="47" text-anchor="middle" font-size="9" fill="#7f8c8d">(고대)</text>
+    </g>
+
+    <!-- 화살표 1 -->
+    <polygon points="155,120 175,115 175,125" fill="#8B7355"/>
+    <line x1="175" y1="120" x2="195" y2="120" stroke="#8B7355" stroke-width="2"/>
+
+    <!-- 필경사 (중세) -->
+    <g transform="translate(220,120)">
+      <rect x="-20" y="-15" width="40" height="30" fill="#A0522D" rx="5"/>
+      <text x="0" y="3" text-anchor="middle" font-size="10" fill="white" font-weight="bold">필경</text>
+      <text x="0" y="35" text-anchor="middle" font-size="11" font-weight="bold" fill="#8B7355">필경사</text>
+      <text x="0" y="47" text-anchor="middle" font-size="9" fill="#7f8c8d">(중세)</text>
+    </g>
+
+    <!-- 화살표 2 -->
+    <polygon points="250,120 270,115 270,125" fill="#8B7355"/>
+    <line x1="270" y1="120" x2="290" y2="120" stroke="#8B7355" stroke-width="2"/>
+
+    <!-- 붓과 머루, 잉크와 깃털펜 (근대) -->
+    <g transform="translate(340,120)">
+      <rect x="-35" y="-15" width="70" height="30" fill="#8B4513" rx="5"/>
+      <text x="0" y="-2" text-anchor="middle" font-size="9" fill="white" font-weight="bold">붓과 머루</text>
+      <text x="0" y="8" text-anchor="middle" font-size="9" fill="white" font-weight="bold">잉크와 깃털펜</text>
+      <text x="0" y="35" text-anchor="middle" font-size="11" font-weight="bold" fill="#8B7355">붓과 머루, 잉크와 깃털펜</text>
+      <text x="0" y="47" text-anchor="middle" font-size="9" fill="#7f8c8d">(근대)</text>
+    </g>
+
+    <!-- 화살표 3 -->
+    <polygon points="390,120 410,115 410,125" fill="#8B7355"/>
+    <line x1="410" y1="120" x2="430" y2="120" stroke="#8B7355" stroke-width="2"/>
+
+    <!-- 타자기 (1868) -->
+    <g transform="translate(480,120)">
+      <rect x="-30" y="-15" width="60" height="30" fill="#708090" rx="5"/>
+      <text x="0" y="3" text-anchor="middle" font-size="10" fill="white" font-weight="bold">타자기</text>
+      <text x="0" y="35" text-anchor="middle" font-size="11" font-weight="bold" fill="#708090">타자기</text>
+      <text x="0" y="47" text-anchor="middle" font-size="9" fill="#7f8c8d">(1868)</text>
+    </g>
+
+    <!-- 화살표 4 -->
+    <polygon points="525,120 545,115 545,125" fill="#708090"/>
+    <line x1="545" y1="120" x2="565" y2="120" stroke="#708090" stroke-width="2"/>
+
+    <!-- 전동타자기 (1902, Blickensderfer Electric) -->
+    <g transform="translate(600,120)">
+      <rect x="-25" y="-15" width="50" height="30" fill="#778899" rx="5"/>
+      <text x="0" y="3" text-anchor="middle" font-size="10" fill="white" font-weight="bold">전동</text>
+      <text x="0" y="35" text-anchor="middle" font-size="11" font-weight="bold" fill="#708090">전동타자기</text>
+      <text x="0" y="47" text-anchor="middle" font-size="9" fill="#7f8c8d">(1902, Blickensderfer Electric)</text>
+    </g>
+  </g>
+
+  <!-- =============== 하단 타임라인: 컴퓨터/디지털 도구 =============== -->
+  <g id="computer-timeline">
+    <rect x="50" y="200" width="650" height="110" fill="url(#computerGrad)" opacity="0.1" rx="10"/>
+    <text x="60" y="220" font-size="14" font-weight="bold" fill="#4A90E2">컴퓨터/디지털 도구</text>
+
+    <!-- 에니악 컴퓨터 (1946) -->
+    <g transform="translate(120,250)">
+      <rect x="-25" y="-15" width="50" height="30" fill="#4A90E2" rx="5"/>
+      <text x="0" y="3" text-anchor="middle" font-size="10" fill="white" font-weight="bold">에니악</text>
+      <text x="0" y="35" text-anchor="middle" font-size="11" font-weight="bold" fill="#4A90E2">에니악 컴퓨터</text>
+      <text x="0" y="47" text-anchor="middle" font-size="9" fill="#7f8c8d">(1946)</text>
+    </g>
+
+    <!-- 화살표 1 -->
+    <polygon points="155,250 175,245 175,255" fill="#4A90E2"/>
+    <line x1="175" y1="250" x2="195" y2="250" stroke="#4A90E2" stroke-width="2"/>
+
+    <!-- IBM 워드프로세서 MT/ST (1964) -->
+    <g transform="translate(250,250)">
+      <rect x="-35" y="-15" width="70" height="30" fill="#357ABD" rx="5"/>
+      <text x="0" y="-2" text-anchor="middle" font-size="9" fill="white" font-weight="bold">IBM 워드프로세서</text>
+      <text x="0" y="8" text-anchor="middle" font-size="9" fill="white" font-weight="bold">MT/ST</text>
+      <text x="0" y="35" text-anchor="middle" font-size="11" font-weight="bold" fill="#4A90E2">IBM 워드프로세서 MT/ST</text>
+      <text x="0" y="47" text-anchor="middle" font-size="9" fill="#7f8c8d">(1964)</text>
+    </g>
+
+    <!-- 화살표 2 -->
+    <polygon points="300,250 320,245 320,255" fill="#4A90E2"/>
+    <line x1="320" y1="250" x2="340" y2="250" stroke="#4A90E2" stroke-width="2"/>
+
+    <!-- IBM 저장장치 MagCards (1969) -->
+    <g transform="translate(390,250)">
+      <rect x="-35" y="-15" width="70" height="30" fill="#2980B9" rx="5"/>
+      <text x="0" y="-2" text-anchor="middle" font-size="9" fill="white" font-weight="bold">IBM 저장장치</text>
+      <text x="0" y="8" text-anchor="middle" font-size="9" fill="white" font-weight="bold">MagCards</text>
+      <text x="0" y="35" text-anchor="middle" font-size="11" font-weight="bold" fill="#4A90E2">IBM 저장장치 MagCards</text>
+      <text x="0" y="47" text-anchor="middle" font-size="9" fill="#7f8c8d">(1969)</text>
+    </g>
+
+    <!-- 화살표 3 -->
+    <polygon points="440,250 460,245 460,255" fill="#4A90E2"/>
+    <line x1="460" y1="250" x2="480" y2="250" stroke="#4A90E2" stroke-width="2"/>
+
+    <!-- 마이크로소프트 워드 1.0 (1983) -->
+    <g transform="translate(540,250)">
+      <rect x="-35" y="-15" width="70" height="30" fill="#1F4E79" rx="5"/>
+      <text x="0" y="-2" text-anchor="middle" font-size="9" fill="white" font-weight="bold">마이크로소프트</text>
+      <text x="0" y="8" text-anchor="middle" font-size="9" fill="white" font-weight="bold">워드 1.0</text>
+      <text x="0" y="35" text-anchor="middle" font-size="11" font-weight="bold" fill="#4A90E2">마이크로소프트 워드 1.0</text>
+      <text x="0" y="47" text-anchor="middle" font-size="9" fill="#7f8c8d">(1983)</text>
+    </g>
+
+    <!-- TeX LaTeX 분기 -->
+    <g transform="translate(620,210)">
+      <rect x="-25" y="-15" width="50" height="30" fill="#27AE60" rx="5"/>
+      <text x="0" y="-2" text-anchor="middle" font-size="9" fill="white" font-weight="bold">TeX</text>
+      <text x="0" y="8" text-anchor="middle" font-size="9" fill="white" font-weight="bold">LaTeX</text>
+      <text x="0" y="35" text-anchor="middle" font-size="11" font-weight="bold" fill="#27AE60">TeX (1978)</text>
+      <text x="0" y="47" text-anchor="middle" font-size="11" font-weight="bold" fill="#27AE60">LaTeX (1984)</text>
+    </g>
+
+    <!-- TeX 연결선 -->
+    <path d="M 575 240 Q 590 225 620 225" stroke="#27AE60" stroke-width="2" fill="none"/>
+    <polygon points="615,220 625,225 615,230" fill="#27AE60"/>
+  </g>
+
+  <!-- =============== 수렴 지점 =============== -->
+  <g id="convergence">
+    <path d="M 600 135 Q 700 180 800 320" stroke="#8B7355" stroke-width="3" fill="none"/>
+    <path d="M 620 225 Q 700 250 800 320" stroke="#27AE60" stroke-width="3" fill="none"/>
+    <path d="M 540 265 Q 670 285 800 320" stroke="#4A90E2" stroke-width="3" fill="none"/>
+  </g>
+
+  <!-- =============== 디지털 글쓰기 시대 =============== -->
+  <g id="digital-era">
+    <g transform="translate(800,350)">
+      <rect x="-60" y="-25" width="120" height="50" fill="url(#digitalGrad)" rx="10" filter="url(#glow)"/>
+      <text x="0" y="-8" text-anchor="middle" font-size="12" fill="white" font-weight="bold">디지털 글쓰기</text>
+      <text x="0" y="5" text-anchor="middle" font-size="10" fill="white">마크다운+R/파이썬</text>
+      <text x="0" y="50" text-anchor="middle" font-size="13" font-weight="bold" fill="#27AE60">디지털 글쓰기</text>
+      <text x="0" y="65" text-anchor="middle" font-size="11" fill="#7f8c8d">마크다운+R/파이썬</text>
+    </g>
+    <polygon points="875,350 895,345 895,355" fill="#E74C3C" stroke="none"/>
+    <line x1="895" y1="350" x2="915" y2="350" stroke="#E74C3C" stroke-width="4"/>
+  </g>
+
+  <!-- =============== AI 시대 =============== -->
+  <g id="ai-era">
+    <g transform="translate(1000,350)" filter="url(#strongGlow)">
+      <ellipse cx="0" cy="0" rx="80" ry="40" fill="none" stroke="#E74C3C" stroke-width="5" stroke-dasharray="10,5"/>
+      <rect x="-65" y="-25" width="130" height="50" fill="url(#aiGrad)" rx="10"/>
+      <text x="0" y="-8" text-anchor="middle" font-size="12" fill="white" font-weight="bold">챗GPT 디지털 글쓰기</text>
+      <text x="0" y="5" text-anchor="middle" font-size="10" fill="white">챗GPT+마크다운+R/파이썬</text>
+      <text x="0" y="65" text-anchor="middle" font-size="14" font-weight="bold" fill="#E74C3C">챗GPT 디지털 글쓰기</text>
+      <text x="0" y="80" text-anchor="middle" font-size="11" fill="#7f8c8d">챗GPT+마크다운+R/파이썬</text>
+    </g>
+    <polygon points="1095,350 1115,345 1115,355" fill="url(#ellmerGrad)" stroke="none"/>
+    <line x1="1115" y1="350" x2="1140" y2="350" stroke="url(#ellmerGrad)" stroke-width="3"/>
+    
+    <!-- Split to both tracks -->
+    <path d="M 1140 350 Q 1160 340 1180 320" stroke="url(#ellmerGrad)" stroke-width="3" fill="none"/>
+    <path d="M 1140 350 Q 1160 360 1180 380" stroke="url(#ellmerGrad)" stroke-width="3" fill="none"/>
+    <polygon points="1175,318 1185,320 1175,322" fill="url(#ellmerGrad)"/>
+    <polygon points="1175,378 1185,380 1175,382" fill="url(#ellmerGrad)"/>
+  </g>
+
+  <!-- =============== 최신: 이중 트랙 통합 =============== -->
+  <g id="modern-era">
+    <!-- Programming Language Track: ellmer-쿼토 통합 -->
+    <g transform="translate(1220,300)" filter="url(#strongGlow)">
+      <rect x="-80" y="-25" width="160" height="50" fill="url(#ellmerGrad)" rx="12"/>
+      <text x="0" y="-8" text-anchor="middle" font-size="12" fill="white" font-weight="bold">ellmer-쿼토 통합</text>
+      <text x="0" y="5" text-anchor="middle" font-size="10" fill="white" font-weight="bold">프로그래밍 언어 통합</text>
+      <text x="0" y="40" text-anchor="middle" font-size="13" font-weight="bold" fill="#E74C3C">ellmer-쿼토 통합</text>
+      <text x="0" y="55" text-anchor="middle" font-size="10" fill="#7f8c8d">프로그래밍 언어 통합</text>
+    </g>
+
+    <!-- CLI Tools Track -->
+    <g transform="translate(1220,400)" filter="url(#strongGlow)">
+      <rect x="-80" y="-25" width="160" height="50" fill="url(#ellmerGrad)" rx="12"/>
+      <text x="0" y="-8" text-anchor="middle" font-size="12" fill="white" font-weight="bold">AI CLI 도구</text>
+      <text x="0" y="5" text-anchor="middle" font-size="10" fill="white" font-weight="bold">Claude Code, Gemini CLI, OpenAI</text>
+      <text x="0" y="40" text-anchor="middle" font-size="13" font-weight="bold" fill="#E74C3C">AI CLI 도구</text>
+      <text x="0" y="55" text-anchor="middle" font-size="10" fill="#7f8c8d">Shell/Terminal 인터페이스</text>
+    </g>
+
+    <!-- Final Convergence -->
+    <g transform="translate(1220,200)" filter="url(#strongGlow)">
+      <ellipse cx="0" cy="0" rx="90" ry="35" fill="url(#ellmerGrad)" stroke="#E74C3C" stroke-width="2"/>
+      <text x="0" y="-5" text-anchor="middle" font-size="14" fill="white" font-weight="bold">AI 통합 글쓰기</text>
+      <text x="0" y="8" text-anchor="middle" font-size="12" fill="white" font-weight="bold">플랫폼</text>
+      <text x="0" y="50" text-anchor="middle" font-size="15" font-weight="bold" fill="#E74C3C">AI 통합 글쓰기 플랫폼</text>
+      <text x="0" y="65" text-anchor="middle" font-size="10" fill="#7f8c8d">(2025~현재)</text>
+    </g>
+
+    <!-- Convergence arrows -->
+    <!-- <polygon points="1300,320 1320,315 1320,325" fill="url(#ellmerGrad)" stroke="none"/> -->
+    <!-- <line x1="1320" y1="320" x2="1280" y2="335" stroke="url(#ellmerGrad)" stroke-width="3"/> -->
+    
+    <!-- <polygon points="1300,380 1320,375 1320,385" fill="url(#ellmerGrad)" stroke="none"/> -->
+    <!-- <line x1="1320" y1="380" x2="1280" y2="365" stroke="url(#ellmerGrad)" stroke-width="3"/> -->
+  </g>
+
+  <!-- =============== 시대 구분선 =============== -->
+  <g id="era-dividers">
+    <line x1="720" y1="60" x2="720" y2="450" stroke="#27AE60" stroke-width="2" stroke-dasharray="8,4" opacity="0.6"/>
+    <text x="755" y="110" font-size="12" font-weight="bold" fill="#27AE60" transform="rotate(90 755 80)">디지털 혁신</text>
+    <line x1="900" y1="60" x2="900" y2="450" stroke="#E74C3C" stroke-width="3" stroke-dasharray="8,4" opacity="0.8"/>
+    <text x="955" y="130" font-size="14" font-weight="bold" fill="#E74C3C" transform="rotate(90 955 80)">AI 혁명</text>
+  </g>
+
+  <!-- =============== 범례 (우측 상단으로 이동) =============== -->
+  <g id="legend" transform="translate(1120,60)">
+    <rect x="0" y="0" width="200" height="95" fill="white" stroke="#bdc3c7" rx="8" opacity="0.95"/>
+    <text x="100" y="15" text-anchor="middle" font-size="12" font-weight="bold" fill="#2c3e50">시대별 구분</text>
+
+    <circle cx="15" cy="30" r="6" fill="#8B7355"/>
+    <text x="25" y="34" font-size="10" fill="#2c3e50">전통 글쓰기</text>
+
+    <circle cx="15" cy="45" r="6" fill="#4A90E2"/>
+    <text x="25" y="49" font-size="10" fill="#2c3e50">컴퓨터 시대</text>
+
+    <circle cx="105" cy="30" r="6" fill="#27AE60"/>
+    <text x="115" y="34" font-size="10" fill="#2c3e50">디지털 글쓰기</text>
+
+    <circle cx="105" cy="45" r="6" fill="#E74C3C"/>
+    <text x="115" y="49" font-size="10" fill="#2c3e50">AI 글쓰기</text>
+
+    <rect x="10" y="58" width="60" height="12" rx="3" fill="url(#ellmerGrad)"/>
+    <text x="40" y="67" text-anchor="middle" font-size="8" fill="white" font-weight="bold">ellmer-쿼토</text>
+
+    <rect x="100" y="58" width="60" height="12" rx="3" fill="url(#ellmerGrad)"/>
+    <text x="125" y="67" text-anchor="middle" font-size="8" fill="white" font-weight="bold">AI CLI</text>
+
+    <ellipse cx="100" cy="82" rx="40" ry="8" fill="url(#ellmerGrad)"/>
+    <text x="100" y="85" text-anchor="middle" font-size="8" fill="white" font-weight="bold">AI 통합 플랫폼</text>
+  </g>
+
+  <!-- 시간 흐름 표시 -->
+  <text x="80" y="470" font-size="12" fill="#7f8c8d">고대</text>
+  <text x="300" y="470" font-size="12" fill="#7f8c8d">근대</text>
+  <text x="450" y="470" font-size="12" fill="#7f8c8d">1900년대</text>
+  <text x="600" y="470" font-size="12" fill="#7f8c8d">1980년대</text>
+  <text x="800" y="470" font-size="12" fill="#27AE60" font-weight="bold">2000년대</text>
+  <text x="1000" y="470" font-size="12" fill="#E74C3C" font-weight="bold">2020년대</text>
+  <text x="1250" y="470" font-size="12" fill="#E74C3C" font-weight="bold">2025년~</text>
+</svg>

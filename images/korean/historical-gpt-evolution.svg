@@ -1,0 +1,308 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" width="1600" height="1000">
+  <defs>
+    <style><![CDATA[
+      .title { font-family: Inter, Segoe UI, Arial, sans-serif; font-size: 40px; font-weight: 900; fill: #f8fafc; }
+      .subtitle { font-family: Inter, Segoe UI, Arial, sans-serif; font-size: 22px; font-weight: 600; fill: #cbd5e1; }
+      .h1 { font-family: Inter, Segoe UI, Arial, sans-serif; font-size: 20px; font-weight: 800; fill: #ffffff; }
+      .h2 { font-family: Inter, Segoe UI, Arial, sans-serif; font-size: 18px; font-weight: 800; fill: #f1f5f9; }
+      .p { font-family: Inter, Segoe UI, Arial, sans-serif; font-size: 18px; font-weight: 600; fill: #e5e7eb; }
+      .small { font-family: Inter, Segoe UI, Arial, sans-serif; font-size: 12px; font-weight: 700; fill: #cbd5e1; }
+      .year { font-family: Inter, Segoe UI, Arial, sans-serif; font-size: 16px; font-weight: 900; fill: #fbbf24; }
+    ]]></style>
+
+    <!-- Background -->
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+
+    <!-- Era gradients -->
+    <linearGradient id="gradAncient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#92400e"/>
+      <stop offset="100%" stop-color="#78350f"/>
+    </linearGradient>
+
+    <linearGradient id="gradClassical" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#dc2626"/>
+      <stop offset="100%" stop-color="#b91c1c"/>
+    </linearGradient>
+
+    <linearGradient id="gradMedieval" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ea580c"/>
+      <stop offset="100%" stop-color="#c2410c"/>
+    </linearGradient>
+
+    <linearGradient id="gradRenaissance" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ca8a04"/>
+      <stop offset="100%" stop-color="#a16207"/>
+    </linearGradient>
+
+    <linearGradient id="gradIndustrial" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#059669"/>
+      <stop offset="100%" stop-color="#047857"/>
+    </linearGradient>
+
+    <linearGradient id="gradModern" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0284c7"/>
+      <stop offset="100%" stop-color="#0369a1"/>
+    </linearGradient>
+
+    <linearGradient id="gradDigital" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7c3aed"/>
+      <stop offset="100%" stop-color="#6d28d9"/>
+    </linearGradient>
+
+    <linearGradient id="gradAI" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10b981"/>
+      <stop offset="100%" stop-color="#059669"/>
+    </linearGradient>
+
+    <!-- Effects -->
+    <filter id="shadow"><feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000" flood-opacity="0.3"/></filter>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge> 
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Arrow markers -->
+    <marker id="arrowRight" markerWidth="16" markerHeight="12" refX="14" refY="6" orient="auto">
+      <polygon points="0 0, 16 6, 0 12" fill="#34d399"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1600" height="1000" fill="url(#bg)"/>
+
+  <!-- Header -->
+  <text x="800" y="60" text-anchor="middle" class="title">범용기술의 역사적 진화</text>
+  <text x="800" y="95" text-anchor="middle" class="subtitle">Historical Evolution of General Purpose Technologies</text>
+
+  <!-- Timeline -->
+  <g transform="translate(80,150)">
+    <!-- Main timeline line -->
+    <line x1="0" y1="570" x2="1440" y2="570" stroke="#4b5563" stroke-width="4"/>
+    
+    <!-- Era 1: Ancient (Agriculture, Writing) -->
+    <g transform="translate(0,0)">
+      <rect x="0" y="0" width="180" height="450" rx="15" fill="url(#gradAncient)" filter="url(#shadow)" opacity="0.9"/>
+      <text x="90" y="30" text-anchor="middle" class="h1">고대</text>
+      <text x="90" y="50" text-anchor="middle" class="small">Ancient Era</text>
+      <text x="90" y="75" text-anchor="middle" class="year">BC 9000-500</text>
+      
+      <g transform="translate(15,110)" class="p">
+        <text x="0" y="0" class="h2" fill="#fed7aa">주요 GPT:</text>
+        <text x="0" y="30">• 식물 재배 (BC 9000)</text>
+        <text x="0" y="55">• 문자 (BC 3400)</text>
+        <text x="0" y="80">• 철 (BC 1200)</text>
+        
+        <text x="0" y="120" class="h2" fill="#fed7aa">영향:</text>
+        <text x="0" y="150">• 농업혁명</text>
+        <text x="0" y="175">• 문명 발전</text>
+        <text x="0" y="200">• 철기시대</text>
+        
+        <text x="0" y="240" class="h2" fill="#fed7aa">특징:</text>
+        <text x="0" y="270">• 생존 중심</text>
+        <text x="0" y="295">• 지역적 확산</text>
+        <text x="0" y="320">• 천천한 발전</text>
+      </g>
+      
+      <circle cx="90" cy="570" r="12" fill="url(#gradAncient)" stroke="#fff" stroke-width="3"/>
+    </g>
+
+    <!-- Era 2: Classical/Medieval (Watermills, Printing) -->
+    <g transform="translate(200,0)">
+      <rect x="0" y="0" width="180" height="450" rx="15" fill="url(#gradMedieval)" filter="url(#shadow)" opacity="0.9"/>
+      <text x="90" y="30" text-anchor="middle" class="h1">중세</text>
+      <text x="90" y="50" text-anchor="middle" class="small">Medieval Era</text>
+      <text x="90" y="75" text-anchor="middle" class="year">500-1500</text>
+      
+      <g transform="translate(15,110)" class="p">
+        <text x="0" y="0" class="h2" fill="#fed7aa">주요 GPT:</text>
+        <text x="0" y="30">• 물레방아 (중세 초)</text>
+        <text x="0" y="55">• 삼돛 범선 (15C)</text>
+        <text x="0" y="80">• 인쇄술 (15C)</text>
+        
+        <text x="0" y="120" class="h2" fill="#fed7aa">영향:</text>
+        <text x="0" y="150">• 기술 혁신</text>
+        <text x="0" y="175">• 대항해시대</text>
+        <text x="0" y="200">• 정보혁명</text>
+        
+        <text x="0" y="240" class="h2" fill="#fed7aa">특징:</text>
+        <text x="0" y="270">• 수공업 중심</text>
+        <text x="0" y="295">• 지식 전파</text>
+        <text x="0" y="320">• 탐험 시대</text>
+      </g>
+      
+      <circle cx="90" cy="570" r="12" fill="url(#gradMedieval)" stroke="#fff" stroke-width="3"/>
+    </g>
+
+    <!-- Era 3: Industrial Revolution -->
+    <g transform="translate(400,0)">
+      <rect x="0" y="0" width="200" height="450" rx="15" fill="url(#gradIndustrial)" filter="url(#shadow)" opacity="0.9"/>
+      <text x="100" y="30" text-anchor="middle" class="h1">산업혁명</text>
+      <text x="100" y="50" text-anchor="middle" class="small">Industrial Revolution</text>
+      <text x="100" y="75" text-anchor="middle" class="year">1750-1850</text>
+      
+      <g transform="translate(15,110)" class="p">
+        <text x="0" y="0" class="h2" fill="#a7f3d0">주요 GPT:</text>
+        <text x="0" y="30">• 공장 시스템 (18C)</text>
+        <text x="0" y="55">• 증기기관 (18C 후반)</text>
+        <text x="0" y="80">• 철도 (19C 중반)</text>
+        
+        <text x="0" y="120" class="h2" fill="#a7f3d0">영향:</text>
+        <text x="0" y="150">• 1차 산업혁명</text>
+        <text x="0" y="175">• 교통혁명</text>
+        <text x="0" y="200">• 도시화</text>
+        
+        <text x="0" y="240" class="h2" fill="#a7f3d0">특징:</text>
+        <text x="0" y="270">• 기계화</text>
+        <text x="0" y="295">• 대량생산</text>
+        <text x="0" y="320">• 노동 변화</text>
+      </g>
+      
+      <circle cx="100" cy="570" r="12" fill="url(#gradIndustrial)" stroke="#fff" stroke-width="3"/>
+    </g>
+
+    <!-- Era 4: Second Industrial Revolution -->
+    <g transform="translate(620,0)">
+      <rect x="0" y="0" width="200" height="450" rx="15" fill="url(#gradModern)" filter="url(#shadow)" opacity="0.9"/>
+      <text x="100" y="30" text-anchor="middle" class="h1">2차 산업혁명</text>
+      <text x="100" y="50" text-anchor="middle" class="small">Second Industrial</text>
+      <text x="100" y="75" text-anchor="middle" class="year">1870-1914</text>
+      
+      <g transform="translate(15,110)" class="p">
+        <text x="0" y="0" class="h2" fill="#bfdbfe">주요 GPT:</text>
+        <text x="0" y="30">• 전기 (20C 초)</text>
+        <text x="0" y="55">• 내연기관 (19C 후반)</text>
+        <text x="0" y="80">• 자동차 (20C 초)</text>
+        
+        <text x="0" y="120" class="h2" fill="#bfdbfe">영향:</text>
+        <text x="0" y="150">• 2차 산업혁명</text>
+        <text x="0" y="175">• 자동차혁명</text>
+        <text x="0" y="200">• 전기화</text>
+        
+        <text x="0" y="240" class="h2" fill="#bfdbfe">특징:</text>
+        <text x="0" y="270">• 전력 활용</text>
+        <text x="0" y="295">• 개인 이동성</text>
+        <text x="0" y="320">• 생활 혁신</text>
+      </g>
+      
+      <circle cx="100" cy="570" r="12" fill="url(#gradModern)" stroke="#fff" stroke-width="3"/>
+    </g>
+
+    <!-- Era 5: Information Age -->
+    <g transform="translate(840,0)">
+      <rect x="0" y="0" width="200" height="450" rx="15" fill="url(#gradDigital)" filter="url(#shadow)" opacity="0.9"/>
+      <text x="100" y="30" text-anchor="middle" class="h1">정보혁명</text>
+      <text x="100" y="50" text-anchor="middle" class="small">Information Age</text>
+      <text x="100" y="75" text-anchor="middle" class="year">1950-2000</text>
+      
+      <g transform="translate(15,110)" class="p">
+        <text x="0" y="0" class="h2" fill="#ddd6fe">주요 GPT:</text>
+        <text x="0" y="30">• 컴퓨터 (20C 후반)</text>
+        <text x="0" y="55">• 인터넷 (20C 후반)</text>
+        <text x="0" y="80">• 린 생산 (20C 후반)</text>
+        
+        <text x="0" y="120" class="h2" fill="#ddd6fe">영향:</text>
+        <text x="0" y="150">• 정보혁명</text>
+        <text x="0" y="175">• 디지털혁명</text>
+        <text x="0" y="200">• 효율성혁명</text>
+        
+        <text x="0" y="240" class="h2" fill="#ddd6fe">특징:</text>
+        <text x="0" y="270">• 정보 처리</text>
+        <text x="0" y="295">• 글로벌 연결</text>
+        <text x="0" y="320">• 지식 경제</text>
+      </g>
+      
+      <circle cx="100" cy="570" r="12" fill="url(#gradDigital)" stroke="#fff" stroke-width="3"/>
+    </g>
+
+    <!-- Era 6: AI Revolution -->
+    <g transform="translate(1060,0)">
+      <rect x="0" y="0" width="200" height="450" rx="15" fill="url(#gradAI)" filter="url(#shadow)" opacity="0.9"/>
+      <text x="100" y="30" text-anchor="middle" class="h1">인지혁명</text>
+      <text x="100" y="50" text-anchor="middle" class="small">Cognitive Revolution</text>
+      <text x="100" y="75" text-anchor="middle" class="year">2022-현재</text>
+      
+      <g transform="translate(15,110)" class="p">
+        <text x="0" y="0" class="h2" fill="#a7f3d0">주요 GPT:</text>
+        <text x="0" y="30">• 생성형 AI (2022)</text>
+        <text x="0" y="55">• 대화형 AI</text>
+        <text x="0" y="80">• 멀티모달 AI</text>
+        
+        <text x="0" y="120" class="h2" fill="#a7f3d0">영향:</text>
+        <text x="0" y="150">• 인지혁명</text>
+        <text x="0" y="175">• 창조 보조</text>
+        <text x="0" y="200">• 지능 증강</text>
+        
+        <text x="0" y="240" class="h2" fill="#a7f3d0">특징:</text>
+        <text x="0" y="270">• 사고 증강</text>
+        <text x="0" y="295">• 창작 협력</text>
+        <text x="0" y="320">• 민주화</text>
+      </g>
+      
+      <circle cx="100" cy="570" r="12" fill="url(#gradAI)" stroke="#fff" stroke-width="3" filter="url(#glow)"/>
+    </g>
+
+    <!-- Future placeholder -->
+    <g transform="translate(1280,0)">
+      <rect x="0" y="0" width="200" height="450" rx="15" fill="#374151" filter="url(#shadow)" opacity="0.5" stroke="#fbbf24" stroke-width="2" stroke-dasharray="5,5"/>
+      <text x="80" y="30" text-anchor="middle" class="h1" fill="#fbbf24">미래?</text>
+      <text x="80" y="50" text-anchor="middle" class="small" fill="#fbbf24">Future?</text>
+      <text x="80" y="75" text-anchor="middle" class="year">2030+</text>
+      
+      <g transform="translate(15,110)" class="p">
+        <text x="0" y="0" class="h2" fill="#fbbf24">가능성:</text>
+        <text x="0" y="30">• Physical AI</text>
+        <text x="0" y="55">• Brain-Computer</text>
+        <text x="0" y="80">• 퀀텀 컴퓨팅</text>
+        
+        <text x="0" y="120" class="h2" fill="#fbbf24">예상 영향:</text>
+        <text x="0" y="150">• 물리적 지능</text>
+        <text x="0" y="175">• 인간-AI 융합</text>
+        <text x="0" y="200">• 차원 도약</text>
+        
+        <text x="0" y="240" class="h2" fill="#fbbf24">특징:</text>
+        <text x="0" y="270">• 초지능 시대</text>
+        <text x="0" y="295">• 물리-디지털 융합</text>
+        <text x="0" y="320">• 포스트휴먼 가능성</text>
+      </g>
+      
+      <circle cx="80" cy="570" r="8" fill="#fbbf24" stroke="#fff" stroke-width="2" opacity="0.7"/>
+    </g>
+
+    <!-- Arrows showing progression -->
+    <g transform="translate(0,570)">
+      <line x1="180" y1="0" x2="200" y2="0" stroke="#34d399" stroke-width="4" marker-end="url(#arrowRight)"/>
+      <line x1="380" y1="0" x2="400" y2="0" stroke="#34d399" stroke-width="4" marker-end="url(#arrowRight)"/>
+      <line x1="600" y1="0" x2="620" y2="0" stroke="#34d399" stroke-width="4" marker-end="url(#arrowRight)"/>
+      <line x1="820" y1="0" x2="840" y2="0" stroke="#34d399" stroke-width="4" marker-end="url(#arrowRight)"/>
+      <line x1="1040" y1="0" x2="1060" y2="0" stroke="#34d399" stroke-width="4" marker-end="url(#arrowRight)" filter="url(#glow)"/>
+      <line x1="1260" y1="0" x2="1280" y2="0" stroke="#fbbf24" stroke-width="4" marker-end="url(#arrowRight)" stroke-dasharray="5,5"/>
+    </g>
+  </g>
+
+  <!-- Key Insights -->
+  <g transform="translate(800,780)">
+    <rect x="-720" y="0" width="1440" height="120" rx="15" fill="#1f2937" opacity="0.8"/>
+    <text x="0" y="30" text-anchor="middle" class="h1">진화 패턴 핵심 통찰</text>
+    <text x="0" y="55" text-anchor="middle" class="p">각 시대의 GPT는 인간 능력의 새로운 차원을 확장: 물리력 → 정보력 → 인지력</text>
+    <text x="0" y="80" text-anchor="middle" class="small">생성형 AI는 인간의 창작과 사고 과정에 직접 참여하는 최초의 GPT</text>
+    <text x="0" y="105" text-anchor="middle" class="small">Key Pattern: Each GPT expands new dimensions of human capability - Physical → Information → Cognitive</text>
+  </g>
+
+  <!-- Current status indicator -->
+  <g transform="translate(1160,140)">
+    <polygon points="0 0, 20 -25, -20 -25" fill="#10b981" filter="url(#shadow)"/>
+    <text x="0" y="-35" text-anchor="middle" class="h2" fill="#10b981">현재 위치</text>
+  </g>
+
+  <!-- Acceleration indicator -->
+  <g transform="translate(800,950)">
+    <text x="0" y="0" text-anchor="middle" class="h1">⚡ 가속하는 혁신 주기: 수천 년 → 수백 년 → 수십 년 → 수년</text>
+    <text x="0" y="25" text-anchor="middle" class="small">Accelerating Innovation Cycles: Millennia → Centuries → Decades → Years</text>
+  </g>
+</svg>

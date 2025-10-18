@@ -1,0 +1,133 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 700" width="900" height="700">
+  <defs>
+    <style><![CDATA[
+      .title { font-family: Inter, Segoe UI, Arial, sans-serif; font-size: 36px; font-weight: 900; fill: #f8fafc; }
+      .subtitle { font-family: Inter, Segoe UI, Arial, sans-serif; font-size: 20px; font-weight: 600; fill: #cbd5e1; }
+      .h1 { font-family: Inter, Segoe UI, Arial, sans-serif; font-size: 24px; font-weight: 800; fill: #ffffff; }
+      .h2 { font-family: Inter, Segoe UI, Arial, sans-serif; font-size: 20px; font-weight: 800; fill: #f1f5f9; }
+      .p { font-family: Inter, Segoe UI, Arial, sans-serif; font-size: 16px; font-weight: 600; fill: #e5e7eb; }
+      .small { font-family: Inter, Segoe UI, Arial, sans-serif; font-size: 14px; font-weight: 700; fill: #cbd5e1; }
+      .quote { font-family: Inter, Segoe UI, Arial, sans-serif; font-size: 18px; font-weight: 600; fill: #fbbf24; font-style: italic; }
+    ]]></style>
+
+    <!-- Background -->
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+
+    <!-- Technology Investment (Orange) -->
+    <linearGradient id="gradTech" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#d97706"/>
+    </linearGradient>
+
+    <!-- Productivity Gap (Red) -->
+    <linearGradient id="gradGap" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ef4444"/>
+      <stop offset="100%" stop-color="#dc2626"/>
+    </linearGradient>
+
+    <!-- Future Promise (Green) -->
+    <linearGradient id="gradPromise" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10b981"/>
+      <stop offset="100%" stop-color="#059669"/>
+    </linearGradient>
+
+    <!-- Effects -->
+    <filter id="shadow"><feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000" flood-opacity="0.3"/></filter>
+    
+    <!-- Question mark -->
+    <filter id="questionGlow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge> 
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="900" height="700" fill="url(#bg)"/>
+
+  <!-- Header -->
+  <text x="450" y="60" text-anchor="middle" class="title">솔로우 패러독스</text>
+  <text x="450" y="90" text-anchor="middle" class="subtitle">Solow Productivity Paradox (1987)</text>
+
+  <!-- Famous Quote -->
+  <g transform="translate(450,140)">
+    <rect x="-400" y="-30" width="800" height="60" rx="15" fill="#1f2937" opacity="0.8"/>
+    <text x="0" y="-5" text-anchor="middle" class="quote">"컴퓨터는 생산성 통계를 제외한 모든 곳에서 볼 수 있다"</text>
+    <text x="0" y="20" text-anchor="middle" class="small">— Robert Solow, NYT Book Review, 1987</text>
+  </g>
+
+  <!-- Visual representation -->
+  <g transform="translate(50,200)">
+    <!-- Technology Investment Side -->
+    <g>
+      <rect x="0" y="0" width="350" height="300" rx="20" fill="url(#gradTech)" filter="url(#shadow)" opacity="0.9"/>
+      <text x="175" y="40" text-anchor="middle" class="h1">대규모 기술 투자</text>
+      <text x="175" y="70" text-anchor="middle" class="small">Massive Technology Investment</text>
+      
+      <!-- Computer icons -->
+      <g transform="translate(30,100)" class="p">
+        <rect x="0" y="0" width="40" height="30" rx="4" fill="#1f2937" opacity="0.7"/>
+        <rect x="50" y="0" width="40" height="30" rx="4" fill="#1f2937" opacity="0.7"/>
+        <rect x="100" y="0" width="40" height="30" rx="4" fill="#1f2937" opacity="0.7"/>
+        <rect x="150" y="0" width="40" height="30" rx="4" fill="#1f2937" opacity="0.7"/>
+        <rect x="200" y="0" width="40" height="30" rx="4" fill="#1f2937" opacity="0.7"/>
+        <rect x="250" y="0" width="40" height="30" rx="4" fill="#1f2937" opacity="0.7"/>
+        
+        <text x="0" y="70" class="p">• 1970–80년대 컴퓨터·네트워크 급확산</text>
+        <text x="0" y="95" class="p">• IT 지출 확대(연간 수십억→수천억 달러 확대)</text>
+        <text x="0" y="120" class="p">• 산업 전반의 업무 디지털화</text>
+        <text x="0" y="145" class="p">• 자동화·정보시스템 도입</text>
+        <text x="0" y="170" class="p">• 데이터 센터·통신 인프라 확충</text>
+      </g>
+    </g>
+
+    <!-- Gap/Question Mark -->
+    <g transform="translate(425,150)">
+      <circle cx="0" cy="0" r="60" fill="url(#gradGap)" filter="url(#shadow)" opacity="0.8"/>
+      <text x="0" y="15" text-anchor="middle" class="title" fill="#ffffff" filter="url(#questionGlow)">?</text>
+      <text x="0" y="100" text-anchor="middle" class="h2" fill="#fca5a5">어디에?</text>
+      <text x="0" y="125" text-anchor="middle" class="small" fill="#fca5a5">Where?</text>
+    </g>
+
+    <!-- Productivity Statistics Side -->
+    <g transform="translate(500,0)">
+      <rect x="0" y="0" width="350" height="300" rx="20" fill="url(#gradGap)" filter="url(#shadow)" opacity="0.9"/>
+      <text x="175" y="42" text-anchor="middle" class="h1">생산성 통계 정체</text>
+      <text x="175" y="70" text-anchor="middle" class="small">Stagnation in Productivity Statistics</text>
+      
+      <!-- Flat line chart -->
+      <g transform="translate(50,85)">
+        <!-- Chart background -->
+        <rect x="0" y="0" width="250" height="120" rx="8" fill="#1f2937" opacity="0.6"/>
+        
+        <!-- Flat trend line -->
+        <line x1="20" y1="90" x2="230" y2="85" stroke="#fca5a5" stroke-width="4" stroke-dasharray="5,5"/>
+        
+        <!-- Chart labels -->
+        <text x="20" y="110" class="small">1970</text>
+        <text x="210" y="110" class="small">1987</text>
+        <text x="125" y="15" text-anchor="middle" class="small">생산성 지수</text>
+        
+        <text x="0" y="150" class="p">• 거시 생산성 지표 정체</text>
+        <text x="0" y="175" class="p">• IT 도입 대비 가시적 도약 부재</text>
+        <text x="0" y="200" class="p">• 조직·프로세스 적응 지연</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- Key Insights -->
+  <g transform="translate(450,580)">
+    <rect x="-400" y="-50" width="800" height="100" rx="15" fill="url(#gradPromise)" opacity="0.8"/>
+    <text x="0" y="-25" text-anchor="middle" class="h1">핵심 통찰</text>
+    <text x="0" y="0" text-anchor="middle" class="p">기술 혁신과 생산성 향상 사이에는 시간차가 존재한다</text>
+    <text x="0" y="25" text-anchor="middle" class="small">Time lag exists between technological innovation and productivity gains</text>
+  </g>
+
+  <!-- Footer -->
+  <text x="450" y="670" text-anchor="middle" class="small">💡 현재 생성형 AI도 같은 패러독스를 겪고 있으나, 이는 자연스러운 적응 과정</text>
+</svg>

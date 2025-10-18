@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 70 1400 750" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .title-text { font-family: 'Noto Sans KR', Arial, sans-serif; font-size: 22px; font-weight: bold; fill: #2c3e50; }
+      .subtitle-text { font-family: 'Noto Sans KR', Arial, sans-serif; font-size: 14px; fill: #34495e; }
+      .layer-title { font-family: 'Noto Sans KR', Arial, sans-serif; font-size: 14px; font-weight: bold; fill: #ffffff; }
+      .equation-text { font-family: 'Times New Roman', serif; font-size: 12px; fill: #2c3e50; font-style: italic; }
+      .latex-text { font-family: 'Courier New', monospace; font-size: 10px; fill: #000000; font-weight: bold; }
+      .side-title { font-family: 'Noto Sans KR', Arial, sans-serif; font-size: 12px; font-weight: bold; fill: #34495e; }
+      .side-equation { font-family: 'Times New Roman', serif; font-size: 10px; fill: #5d6d7e; font-style: italic; }
+      .side-desc { font-family: 'Noto Sans KR', Arial, sans-serif; font-size: 9px; fill: #7f8c8d; }
+      .legend-text { font-family: 'Noto Sans KR', Arial, sans-serif; font-size: 11px; fill: #2c3e50; }
+      .footer-text { font-family: 'Noto Sans KR', Arial, sans-serif; font-size: 12px; fill: #ffffff; }
+    </style>
+    
+    <!-- 계층별 그라디언트 -->
+    <radialGradient id="molecularGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#e67e22;stop-opacity:0.9" />
+      <stop offset="100%" style="stop-color:#d35400;stop-opacity:1" />
+    </radialGradient>
+    <radialGradient id="individualGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#3498db;stop-opacity:0.7" />
+      <stop offset="100%" style="stop-color:#2980b9;stop-opacity:1" />
+    </radialGradient>
+    <radialGradient id="populationGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#27ae60;stop-opacity:0.5" />
+      <stop offset="100%" style="stop-color:#229954;stop-opacity:1" />
+    </radialGradient>
+    <radialGradient id="environmentGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#1abc9c;stop-opacity:0.3" />
+      <stop offset="100%" style="stop-color:#16a085;stop-opacity:1" />
+    </radialGradient>
+    <radialGradient id="globalGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#9b59b6;stop-opacity:0.1" />
+      <stop offset="100%" style="stop-color:#8e44ad;stop-opacity:1" />
+    </radialGradient>
+  </defs>
+  
+  <!-- 제목 -->
+  <text x="700" y="100" text-anchor="middle" class="title-text">L<tspan dy="-0.5em" style="font-size: 70%;">A</tspan><tspan dy="0.5em">T</tspan><tspan dy="0.3em" style="font-size: 70%;">E</tspan><tspan dy="-0.3em">X</tspan>로 그리는 과학의 계층</text>
+  <text x="700" y="120" text-anchor="middle" class="subtitle-text">Scientific Scales Expressed Through L<tspan dy="-0.3em" style="font-size: 70%;">A</tspan><tspan dy="0.3em">T</tspan><tspan dy="0.2em" style="font-size: 70%;">E</tspan><tspan dy="-0.2em">X</tspan></text>
+  
+  <!-- 메인 동심원 구조 (중앙: 700, 450) -->
+  
+  <!-- 5층: 지구 수준 (가장 바깥) -->
+  <circle cx="700" cy="450" r="250" fill="url(#globalGrad)" stroke="#8e44ad" stroke-width="2"/>
+  
+  <!-- 4층: 환경 수준 -->
+  <circle cx="700" cy="450" r="200" fill="url(#environmentGrad)" stroke="#16a085" stroke-width="2"/>
+  
+  <!-- 3층: 집단 수준 -->
+  <circle cx="700" cy="450" r="150" fill="url(#populationGrad)" stroke="#229954" stroke-width="2"/>
+  
+  <!-- 2층: 개체 수준 -->
+  <circle cx="700" cy="450" r="100" fill="url(#individualGrad)" stroke="#2980b9" stroke-width="2"/>
+  
+  <!-- 1층: 분자 수준 (중심) -->
+  <circle cx="700" cy="450" r="50" fill="url(#molecularGrad)" stroke="#d35400" stroke-width="3"/>
+  
+  <!-- 계층별 텍스트 배치 -->
+  
+  <!-- 분자 수준 (중심) -->
+  <text x="700" y="440" text-anchor="middle" class="layer-title">분자</text>
+  <text x="700" y="455" text-anchor="middle" class="layer-title">Molecular</text>
+  <text x="700" y="470" text-anchor="middle" class="latex-text">\frac{}{}</text>
+  
+  <!-- 개체 수준 -->
+  <text x="700" y="365" text-anchor="middle" class="layer-title">개체 Individual</text>
+  <text x="700" y="380" text-anchor="middle" class="equation-text">∇²u = 0</text>
+  <text x="700" y="395" text-anchor="middle" class="latex-text">\nabla, \mathbf{}</text>
+  
+  <!-- 집단 수준 -->
+  <text x="700" y="315" text-anchor="middle" class="layer-title">집단 Population</text>
+  <text x="700" y="330" text-anchor="middle" class="equation-text">dN/dt = rN(1-N/K)</text>
+  <text x="700" y="345" text-anchor="middle" class="latex-text">\sim, \mathcal{N}</text>
+  
+  <!-- 환경 수준 -->
+  <text x="700" y="265" text-anchor="middle" class="layer-title">환경 Environmental</text>
+  <text x="700" y="280" text-anchor="middle" class="equation-text">∂u/∂t + ∇·u = 0</text>
+  <text x="700" y="295" text-anchor="middle" class="latex-text">\partial, \ce{}</text>
+  
+  <!-- 지구 수준 -->
+  <text x="700" y="215" text-anchor="middle" class="layer-title">지구 Global</text>
+  <text x="700" y="230" text-anchor="middle" class="equation-text">S₀(1-α)/4 = σT⁴</text>
+  <text x="700" y="245" text-anchor="middle" class="latex-text">align, conditions</text>
+  
+  <!-- 보조 과학 분야들 (주변 박스) -->
+  
+  <!-- 좌상단: 천문학 -->
+  <rect x="150" y="120" width="140" height="80" fill="#ecf0f1" stroke="#95a5a6" stroke-width="1" stroke-dasharray="5,5" rx="5"/>
+  <text x="220" y="140" text-anchor="middle" class="side-title">천문학 Astronomy</text>
+  <text x="220" y="155" text-anchor="middle" class="side-equation">T³ ∝ a³</text>
+  <text x="220" y="170" text-anchor="middle" class="side-desc">더 큰 스케일로</text>
+  <text x="220" y="185" text-anchor="middle" class="side-desc">확장 가능</text>
+  
+  <!-- 우상단: 양자역학 -->
+  <rect x="1110" y="120" width="140" height="80" fill="#ecf0f1" stroke="#95a5a6" stroke-width="1" stroke-dasharray="5,5" rx="5"/>
+  <text x="1180" y="140" text-anchor="middle" class="side-title">양자역학 Quantum</text>
+  <text x="1180" y="155" text-anchor="middle" class="side-equation">ĤΨ = EΨ</text>
+  <text x="1180" y="170" text-anchor="middle" class="side-desc">더 작은 스케일로</text>
+  <text x="1180" y="185" text-anchor="middle" class="side-desc">확장 가능</text>
+  
+  <!-- 좌측: 지질학 -->
+  <rect x="150" y="410" width="140" height="80" fill="#ecf0f1" stroke="#95a5a6" stroke-width="1" stroke-dasharray="5,5" rx="5"/>
+  <text x="220" y="430" text-anchor="middle" class="side-title">지질학 Geology</text>
+  <text x="220" y="445" text-anchor="middle" class="side-equation">v = √(E/ρ)</text>
+  <text x="220" y="460" text-anchor="middle" class="side-desc">지구 내부 구조</text>
+  <text x="220" y="475" text-anchor="middle" class="side-desc">지진파 전파</text>
+  
+  <!-- 우측: 의학 -->
+  <rect x="1110" y="410" width="140" height="80" fill="#ecf0f1" stroke="#95a5a6" stroke-width="1" stroke-dasharray="5,5" rx="5"/>
+  <text x="1180" y="430" text-anchor="middle" class="side-title">의학 Medicine</text>
+  <text x="1180" y="445" text-anchor="middle" class="side-equation">C(t) = C₀e^(-kt)</text>
+  <text x="1180" y="460" text-anchor="middle" class="side-desc">인간 건강 응용</text>
+  <text x="1180" y="475" text-anchor="middle" class="side-desc">약동학 모델링</text>
+  
+  <!-- 좌하단: 컴퓨터과학 -->
+  <rect x="150" y="700" width="140" height="80" fill="#ecf0f1" stroke="#95a5a6" stroke-width="1" stroke-dasharray="5,5" rx="5"/>
+  <text x="220" y="720" text-anchor="middle" class="side-title">컴퓨터과학 CS</text>
+  <text x="220" y="735" text-anchor="middle" class="side-equation">O(n log n)</text>
+  <text x="220" y="750" text-anchor="middle" class="side-desc">계산과 시뮬레이션</text>
+  <text x="220" y="765" text-anchor="middle" class="side-desc">알고리즘 복잡도</text>
+  
+  <!-- 우하단: 공학 -->
+  <rect x="1110" y="700" width="140" height="80" fill="#ecf0f1" stroke="#95a5a6" stroke-width="1" stroke-dasharray="5,5" rx="5"/>
+  <text x="1180" y="720" text-anchor="middle" class="side-title">공학 Engineering</text>
+  <text x="1180" y="735" text-anchor="middle" class="side-equation">X(s) = L{x(t)}</text>
+  <text x="1180" y="750" text-anchor="middle" class="side-desc">실용적 응용</text>
+  <text x="1180" y="765" text-anchor="middle" class="side-desc">제어 및 설계</text>
+  
+  <!-- 점선 연결 -->
+  <line x1="290" y1="160" x2="550" y2="320" stroke="#95a5a6" stroke-width="1" stroke-dasharray="3,3"/>
+  <line x1="1110" y1="160" x2="850" y2="320" stroke="#95a5a6" stroke-width="1" stroke-dasharray="3,3"/>
+  <line x1="290" y1="450" x2="500" y2="450" stroke="#95a5a6" stroke-width="1" stroke-dasharray="3,3"/>
+  <line x1="1110" y1="450" x2="900" y2="450" stroke="#95a5a6" stroke-width="1" stroke-dasharray="3,3"/>
+  <line x1="290" y1="740" x2="550" y2="580" stroke="#95a5a6" stroke-width="1" stroke-dasharray="3,3"/>
+  <line x1="1110" y1="740" x2="850" y2="580" stroke="#95a5a6" stroke-width="1" stroke-dasharray="3,3"/>
+  
+  <!-- 하단 메시지 -->
+  <rect x="500" y="730" width="400" height="60" fill="#2c3e50" rx="5"/>
+  <text x="700" y="755" text-anchor="middle" class="footer-text">L<tspan dy="-0.3em" style="font-size: 70%;">A</tspan><tspan dy="0.3em">T</tspan><tspan dy="0.2em" style="font-size: 70%;">E</tspan><tspan dy="-0.2em">X</tspan>는 모든 스케일과 분야의 과학을 통합하는 보편 언어</text>
+  <text x="700" y="775" text-anchor="middle" class="footer-text">점선으로 연결된 분야들도 필요시 동일한 계층 구조로 통합 가능</text>
+</svg>

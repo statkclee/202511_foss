@@ -1,0 +1,351 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2000 1400" width="2000" height="1400">
+  <defs>
+    <style><![CDATA[
+      .title { font-family: Inter, Segoe UI, Arial, sans-serif; font-size: 48px; font-weight: 900; fill: #f8fafc; }
+      .subtitle { font-family: Inter, Segoe UI, Arial, sans-serif; font-size: 26px; font-weight: 600; fill: #cbd5e1; }
+      .h1 { font-family: Inter, Segoe UI, Arial, sans-serif; font-size: 30px; font-weight: 800; fill: #ffffff; }
+      .h2 { font-family: Inter, Segoe UI, Arial, sans-serif; font-size: 24px; font-weight: 800; fill: #f1f5f9; }
+      .p { font-family: Inter, Segoe UI, Arial, sans-serif; font-size: 18px; font-weight: 600; fill: #e5e7eb; }
+      .small { font-family: Inter, Segoe UI, Arial, sans-serif; font-size: 16px; font-weight: 700; fill: #cbd5e1; }
+      .year { font-family: Inter, Segoe UI, Arial, sans-serif; font-size: 22px; font-weight: 900; fill: #34d399; }
+      .metric { font-family: Inter, Segoe UI, Arial, sans-serif; font-size: 16px; font-weight: 700; fill: #fbbf24; }
+    ]]></style>
+
+    <!-- Background -->
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+
+    <!-- Era gradients -->
+    <linearGradient id="gradTraditional" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#dc2626"/>
+      <stop offset="100%" stop-color="#b91c1c"/>
+    </linearGradient>
+
+    <linearGradient id="gradLicense" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ea580c"/>
+      <stop offset="100%" stop-color="#c2410c"/>
+    </linearGradient>
+
+    <linearGradient id="gradWeb" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ca8a04"/>
+      <stop offset="100%" stop-color="#a16207"/>
+    </linearGradient>
+
+    <linearGradient id="gradASP" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#059669"/>
+      <stop offset="100%" stop-color="#047857"/>
+    </linearGradient>
+
+    <linearGradient id="gradSaaS" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0284c7"/>
+      <stop offset="100%" stop-color="#0369a1"/>
+    </linearGradient>
+
+    <linearGradient id="gradCloud" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7c3aed"/>
+      <stop offset="100%" stop-color="#6d28d9"/>
+    </linearGradient>
+
+    <!-- Effects -->
+    <filter id="shadow"><feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#000" flood-opacity="0.4"/></filter>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge> 
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Arrow markers -->
+    <marker id="arrowRight" markerWidth="18" markerHeight="14" refX="16" refY="7" orient="auto">
+      <polygon points="0 0, 18 7, 0 14" fill="#34d399"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="2000" height="1400" fill="url(#bg)"/>
+
+  <!-- Header -->
+  <text x="1000" y="70" text-anchor="middle" class="title">사업모델 진화사: 초기 소프트웨어부터 SaaS까지</text>
+  <text x="1000" y="110" text-anchor="middle" class="subtitle">Business Model Evolution: From Traditional Software to SaaS</text>
+
+  <!-- Timeline -->
+  <g transform="translate(50,160)">
+    <!-- Timeline line -->
+    <line x1="100" y1="600" x2="1800" y2="600" stroke="#374151" stroke-width="4"/>
+    
+    <!-- Era 1: Traditional Software (1960s-1980s) -->
+    <g transform="translate(0,0)">
+      <rect x="0" y="0" width="280" height="480" rx="20" fill="url(#gradTraditional)" filter="url(#shadow)"/>
+      <text x="140" y="40" text-anchor="middle" class="h1">전통 소프트웨어</text>
+      <text x="140" y="70" text-anchor="middle" class="small">Traditional Software</text>
+      <text x="140" y="100" text-anchor="middle" class="year">1960s-1980s</text>
+      
+      <!-- Characteristics -->
+      <g transform="translate(20,130)" class="p">
+        <text x="0" y="0" class="h2" fill="#fca5a5">특징:</text>
+        <text x="0" y="35">• 하드웨어와 번들</text>
+        <text x="0" y="60">• 대형 메인프레임</text>
+        <text x="0" y="85">• IBM 독점 시대</text>
+        <text x="0" y="110">• 맞춤형 개발</text>
+        
+        <text x="0" y="155" class="h2" fill="#fbbf24">수익모델:</text>
+        <text x="0" y="190" class="metric">• 하드웨어 판매 중심</text>
+        <text x="0" y="215" class="metric">• 소프트웨어 무료 제공</text>
+        <text x="0" y="240" class="metric">• 서비스 계약</text>
+        
+        <text x="0" y="285" class="h2" fill="#a78bfa">고객:</text>
+        <text x="0" y="320">• 대기업, 정부기관</text>
+        <text x="0" y="345">• 높은 진입장벽</text>
+        
+        <text x="0" y="385" class="h2" fill="#60a5fa">대표 기업:</text>
+        <text x="0" y="420">• IBM, DEC, Burroughs</text>
+      </g>
+      
+      <!-- Timeline marker -->
+      <circle cx="140" cy="600" r="12" fill="url(#gradTraditional)" stroke="#fff" stroke-width="3"/>
+      <text x="140" y="640" text-anchor="middle" class="small">1960s</text>
+    </g>
+
+    <!-- Era 2: Licensed Software (1980s-1990s) -->
+    <g transform="translate(300,0)">
+      <rect x="0" y="0" width="280" height="480" rx="20" fill="url(#gradLicense)" filter="url(#shadow)"/>
+      <text x="140" y="40" text-anchor="middle" class="h1">라이센스 소프트웨어</text>
+      <text x="140" y="70" text-anchor="middle" class="small">Licensed Software</text>
+      <text x="140" y="100" text-anchor="middle" class="year">1980s-1990s</text>
+      
+      <g transform="translate(20,130)" class="p">
+        <text x="0" y="0" class="h2" fill="#fca5a5">특징:</text>
+        <text x="0" y="35">• PC 혁명 시대</text>
+        <text x="0" y="60">• 패키지 소프트웨어</text>
+        <text x="0" y="85">• MS-DOS, Windows</text>
+        <text x="0" y="110">• 디스켓/CD 배포</text>
+        
+        <text x="0" y="155" class="h2" fill="#fbbf24">수익모델:</text>
+        <text x="0" y="190" class="metric">• 라이센스 판매</text>
+        <text x="0" y="215" class="metric">• 일회성 구매</text>
+        <text x="0" y="240" class="metric">• 업그레이드 수익</text>
+        
+        <text x="0" y="285" class="h2" fill="#a78bfa">고객:</text>
+        <text x="0" y="320">• 중소기업 확산</text>
+        <text x="0" y="345">• 개인 사용자 진입</text>
+        
+        <text x="0" y="385" class="h2" fill="#60a5fa">대표 기업:</text>
+        <text x="0" y="420">• Microsoft, Oracle, Adobe</text>
+      </g>
+      
+      <circle cx="140" cy="600" r="12" fill="url(#gradLicense)" stroke="#fff" stroke-width="3"/>
+      <text x="140" y="640" text-anchor="middle" class="small">1980s</text>
+    </g>
+
+    <!-- Era 3: Web-based Software (1990s-2000s) -->
+    <g transform="translate(600,0)">
+      <rect x="0" y="0" width="280" height="480" rx="20" fill="url(#gradWeb)" filter="url(#shadow)"/>
+      <text x="140" y="40" text-anchor="middle" class="h1">웹 기반 소프트웨어</text>
+      <text x="140" y="70" text-anchor="middle" class="small">Web-based Software</text>
+      <text x="140" y="100" text-anchor="middle" class="year">1990s-2000s</text>
+      
+      <g transform="translate(20,130)" class="p">
+        <text x="0" y="0" class="h2" fill="#fca5a5">특징:</text>
+        <text x="0" y="35">• 인터넷 상용화</text>
+        <text x="0" y="60">• 브라우저 기반</text>
+        <text x="0" y="85">• 클라이언트-서버</text>
+        <text x="0" y="110">• 웹 포털 시대</text>
+        
+        <text x="0" y="155" class="h2" fill="#fbbf24">수익모델:</text>
+        <text x="0" y="190" class="metric">• 라이센스 + 웹</text>
+        <text x="0" y="215" class="metric">• 광고 모델 등장</text>
+        <text x="0" y="240" class="metric">• 프리미엄 서비스</text>
+        
+        <text x="0" y="285" class="h2" fill="#a78bfa">고객:</text>
+        <text x="0" y="320">• 온라인 사용자</text>
+        <text x="0" y="345">• 글로벌 접근성</text>
+        
+        <text x="0" y="385" class="h2" fill="#60a5fa">대표 기업:</text>
+        <text x="0" y="420">• Yahoo, AOL, eBay</text>
+      </g>
+      
+      <circle cx="140" cy="600" r="12" fill="url(#gradWeb)" stroke="#fff" stroke-width="3"/>
+      <text x="140" y="640" text-anchor="middle" class="small">1990s</text>
+    </g>
+
+    <!-- Era 4: ASP (Application Service Provider) -->
+    <g transform="translate(900,0)">
+      <rect x="0" y="0" width="280" height="480" rx="20" fill="url(#gradASP)" filter="url(#shadow)"/>
+      <text x="140" y="40" text-anchor="middle" class="h1">ASP 모델</text>
+      <text x="140" y="70" text-anchor="middle" class="small">Application Service Provider</text>
+      <text x="140" y="100" text-anchor="middle" class="year">Late 1990s-2000s</text>
+      
+      <g transform="translate(20,130)" class="p">
+        <text x="0" y="0" class="h2" fill="#fca5a5">특징:</text>
+        <text x="0" y="35">• 원격 호스팅</text>
+        <text x="0" y="60">• 중앙 집중형</text>
+        <text x="0" y="85">• 네트워크 접근</text>
+        <text x="0" y="110">• SaaS의 전신</text>
+        
+        <text x="0" y="155" class="h2" fill="#fbbf24">수익모델:</text>
+        <text x="0" y="190" class="metric">• 월 임대료</text>
+        <text x="0" y="215" class="metric">• 사용량 기반</text>
+        <text x="0" y="240" class="metric">• 유지보수 포함</text>
+        
+        <text x="0" y="285" class="h2" fill="#a78bfa">고객:</text>
+        <text x="0" y="320">• 중소기업 타겟</text>
+        <text x="0" y="345">• IT 부담 경감</text>
+        
+        <text x="0" y="385" class="h2" fill="#60a5fa">대표 기업:</text>
+        <text x="0" y="420">• Citrix, Concur, NetSuite</text>
+      </g>
+      
+      <circle cx="140" cy="600" r="12" fill="url(#gradASP)" stroke="#fff" stroke-width="3"/>
+      <text x="140" y="640" text-anchor="middle" class="small">Late 1990s</text>
+    </g>
+
+    <!-- Era 5: SaaS (2000s-Present) -->
+    <g transform="translate(1200,0)">
+      <rect x="0" y="0" width="280" height="480" rx="20" fill="url(#gradSaaS)" filter="url(#shadow)"/>
+      <text x="140" y="40" text-anchor="middle" class="h1">SaaS 모델</text>
+      <text x="140" y="70" text-anchor="middle" class="small">Software-as-a-Service</text>
+      <text x="140" y="100" text-anchor="middle" class="year">2000s-Present</text>
+      
+      <g transform="translate(20,130)" class="p">
+        <text x="0" y="0" class="h2" fill="#fca5a5">특징:</text>
+        <text x="0" y="35">• 멀티테넌트 아키텍처</text>
+        <text x="0" y="60">• 클라우드 네이티브</text>
+        <text x="0" y="85">• API 기반 통합</text>
+        <text x="0" y="110">• 자동 업데이트</text>
+        
+        <text x="0" y="155" class="h2" fill="#fbbf24">수익모델:</text>
+        <text x="0" y="190" class="metric">• 구독 기반 (MRR)</text>
+        <text x="0" y="215" class="metric">• 계층별 요금</text>
+        <text x="0" y="240" class="metric">• 플랫폼 수익</text>
+        
+        <text x="0" y="285" class="h2" fill="#a78bfa">고객:</text>
+        <text x="0" y="320">• 모든 규모 기업</text>
+        <text x="0" y="345">• 글로벌 확장성</text>
+        
+        <text x="0" y="385" class="h2" fill="#60a5fa">대표 기업:</text>
+        <text x="0" y="420">• Salesforce, Slack, Zoom</text>
+      </g>
+      
+      <circle cx="140" cy="600" r="12" fill="url(#gradSaaS)" stroke="#fff" stroke-width="3"/>
+      <text x="140" y="640" text-anchor="middle" class="small">2000s</text>
+    </g>
+
+    <!-- Era 6: Cloud-Native & AI-First -->
+    <g transform="translate(1500,0)">
+      <rect x="0" y="0" width="280" height="480" rx="20" fill="url(#gradCloud)" filter="url(#shadow)"/>
+      <text x="140" y="40" text-anchor="middle" class="h1">클라우드 네이티브</text>
+      <text x="140" y="70" text-anchor="middle" class="small">Cloud-Native &amp; AI-First</text>
+      <text x="140" y="100" text-anchor="middle" class="year">2010s-Future</text>
+      
+      <g transform="translate(20,130)" class="p">
+        <text x="0" y="0" class="h2" fill="#fca5a5">특징:</text>
+        <text x="0" y="35">• 마이크로서비스</text>
+        <text x="0" y="60">• 컨테이너 기반</text>
+        <text x="0" y="85">• AI/ML 통합</text>
+        <text x="0" y="110">• 자동화</text>
+        
+        <text x="0" y="155" class="h2" fill="#fbbf24">수익모델:</text>
+        <text x="0" y="190" class="metric">• 사용량 기반</text>
+        <text x="0" y="215" class="metric">• 플랫폼 생태계</text>
+        <text x="0" y="240" class="metric">• AI 서비스 수익</text>
+        
+        <text x="0" y="285" class="h2" fill="#a78bfa">고객:</text>
+        <text x="0" y="320">• 디지털 네이티브</text>
+        <text x="0" y="345">• AI 우선 기업</text>
+        
+        <text x="0" y="385" class="h2" fill="#60a5fa">대표 기업:</text>
+        <text x="0" y="420">• AWS, OpenAI, Anthropic</text>
+      </g>
+      
+      <circle cx="140" cy="600" r="12" fill="url(#gradCloud)" stroke="#fff" stroke-width="3"/>
+      <text x="140" y="640" text-anchor="middle" class="small">2010s+</text>
+    </g>
+
+    <!-- Evolution arrows -->
+    <g transform="translate(0,500)">
+      <line x1="280" y1="50" x2="300" y2="50" stroke="#34d399" stroke-width="6" marker-end="url(#arrowRight)" filter="url(#glow)"/>
+      <line x1="580" y1="50" x2="600" y2="50" stroke="#34d399" stroke-width="6" marker-end="url(#arrowRight)" filter="url(#glow)"/>
+      <line x1="880" y1="50" x2="900" y2="50" stroke="#34d399" stroke-width="6" marker-end="url(#arrowRight)" filter="url(#glow)"/>
+      <line x1="1180" y1="50" x2="1200" y2="50" stroke="#34d399" stroke-width="6" marker-end="url(#arrowRight)" filter="url(#glow)"/>
+      <line x1="1480" y1="50" x2="1500" y2="50" stroke="#34d399" stroke-width="6" marker-end="url(#arrowRight)" filter="url(#glow)"/>
+    </g>
+  </g>
+
+  <!-- Key Drivers Section -->
+  <g transform="translate(100,800)">
+    <rect x="0" y="0" width="1800" height="200" rx="20" fill="#0b1220" opacity="0.8"/>
+    <text x="900" y="40" text-anchor="middle" class="h1">진화 동력 (Key Evolution Drivers)</text>
+    
+    <g transform="translate(50,70)" class="p">
+      <g transform="translate(0,0)">
+        <circle cx="8" cy="8" r="6" fill="#ef4444"/>
+        <text x="24" y="14" class="h2" fill="#fca5a5">기술 발전:</text>
+        <text x="24" y="40">• 하드웨어 성능 향상</text>
+        <text x="24" y="65">• 인터넷 및 클라우드</text>
+        <text x="24" y="90">• AI/ML 기술 성숙</text>
+      </g>
+      
+      <g transform="translate(400,0)">
+        <circle cx="8" cy="8" r="6" fill="#f59e0b"/>
+        <text x="24" y="14" class="h2" fill="#fbbf24">시장 요구:</text>
+        <text x="24" y="40">• 비용 효율성</text>
+        <text x="24" y="65">• 빠른 배포</text>
+        <text x="24" y="90">• 확장성</text>
+      </g>
+      
+      <g transform="translate(750,0)">
+        <circle cx="8" cy="8" r="6" fill="#10b981"/>
+        <text x="24" y="14" class="h2" fill="#6ee7b7">사업 모델:</text>
+        <text x="24" y="40">• 예측 가능한 수익</text>
+        <text x="24" y="65">• 고객 생애 가치</text>
+        <text x="24" y="90">• 플랫폼 효과</text>
+      </g>
+      
+      <g transform="translate(1100,0)">
+        <circle cx="8" cy="8" r="6" fill="#3b82f6"/>
+        <text x="24" y="14" class="h2" fill="#93c5fd">사용자 경험:</text>
+        <text x="24" y="40">• 언제 어디서나 접근</text>
+        <text x="24" y="65">• 자동 업데이트</text>
+        <text x="24" y="90">• 협업 기능</text>
+      </g>
+      
+      <g transform="translate(1450,0)">
+        <circle cx="8" cy="8" r="6" fill="#8b5cf6"/>
+        <text x="24" y="14" class="h2" fill="#c4b5fd">미래 트렌드:</text>
+        <text x="24" y="40">• AI 통합</text>
+        <text x="24" y="65">• 저코드/노코드</text>
+        <text x="24" y="90">• 개인화</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- Market Value Evolution Chart -->
+  <g transform="translate(100,1050)">
+    <rect x="0" y="0" width="1800" height="150" rx="20" fill="#111827" opacity="0.9"/>
+    <text x="900" y="35" text-anchor="middle" class="h1">시장 가치 진화 (Market Value Evolution)</text>
+    
+    <!-- Value metrics -->
+    <g transform="translate(50,60)" class="metric">
+      <text x="0" y="0">Traditional (1960s): $10B 시장</text>
+      <text x="300" y="0">License (1980s): $100B 시장</text>
+      <text x="600" y="0">Web-based (1990s): $500B 시장</text>
+      <text x="900" y="0">ASP (2000s): $50B 시장</text>
+      <text x="1200" y="0">SaaS (2020s): $1T+ 시장</text>
+      
+      <text x="0" y="35" class="p">• TCO: 높음 → 중간 → 중간 → 낮음 → 매우 낮음</text>
+      <text x="600" y="35" class="p">• 진입장벽: 매우 높음 → 높음 → 중간 → 낮음 → 매우 낮음</text>
+      <text x="0" y="65" class="p">• 확장성: 제한적 → 제한적 → 중간 → 높음 → 매우 높음</text>
+      <text x="600" y="65" class="p">• 혁신 속도: 느림 → 느림 → 중간 → 빠름 → 매우 빠름</text>
+    </g>
+  </g>
+
+  <!-- Footer -->
+  <g transform="translate(100,1250)">
+    <text x="900" y="30" text-anchor="middle" class="subtitle">💡 소프트웨어 사업모델의 진화는 기술 발전과 시장 요구의 상호작용으로 이루어졌습니다</text>
+    <text x="900" y="65" text-anchor="middle" class="small">Software business model evolution reflects the interplay between technological advancement and market demands</text>
+    <text x="900" y="95" text-anchor="middle" class="small">다음 단계: AI-Native 플랫폼이 SaaS를 넘어서는 새로운 패러다임을 만들어갈 것입니다</text>
+  </g>
+</svg>

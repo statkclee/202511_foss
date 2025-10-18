@@ -1,0 +1,132 @@
+<svg viewBox="0 25 850 580" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .title { font: bold 24px 'AppleGothic', sans-serif; fill: #2c3e50; }
+      .section-title { font: bold 18px 'AppleGothic', sans-serif; fill: #34495e; }
+      .component-box { fill: #3498db; stroke: #2980b9; stroke-width: 2; rx: 8; }
+      .intro-box { fill: #e74c3c; stroke: #c0392b; stroke-width: 2; rx: 8; }
+      .method-box { fill: #f39c12; stroke: #d68910; stroke-width: 2; rx: 8; }
+      .result-box { fill: #2ecc71; stroke: #27ae60; stroke-width: 2; rx: 8; }
+      .conclusion-box { fill: #9b59b6; stroke: #8e44ad; stroke-width: 2; rx: 8; }
+      .text { font: bold 14px 'AppleGothic', sans-serif; fill: white; text-anchor: middle; dominant-baseline: middle; text-shadow: 1px 1px 2px rgba(0,0,0,0.7); }
+      .text-dark { font: bold 14px 'AppleGothic', sans-serif; fill: #2c3e50; text-anchor: middle; dominant-baseline: middle; text-shadow: 1px 1px 2px rgba(255,255,255,0.8); }
+      .small-text-dark { font: 12px 'AppleGothic', sans-serif; fill: #34495e; text-anchor: middle; dominant-baseline: middle; text-shadow: 0.5px 0.5px 1px rgba(255,255,255,0.8); }
+      .small-text { font: 12px 'AppleGothic', sans-serif; fill: #5a5a5a; text-anchor: middle; dominant-baseline: middle; text-shadow: 0.5px 0.5px 1px rgba(255,255,255,0.8); }
+      .arrow { stroke: #34495e; stroke-width: 2; fill: none; marker-end: url(#arrowhead); }
+      .dotted-arrow { stroke: #7f8c8d; stroke-width: 1.5; fill: none; marker-end: url(#arrowhead-small); stroke-dasharray: 4,4; }
+    </style>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#34495e" />
+    </marker>
+    <marker id="arrowhead-small" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#7f8c8d" />
+    </marker>
+  </defs>
+
+  <!-- Abstract -->
+  <rect x="380" y="50" width="240" height="70" class="component-box"/>
+  <text x="500" y="75" class="text">초록 (Abstract)</text>
+  <text x="500" y="90" class="small-text">연구 전체 요약</text>
+  <text x="500" y="105" class="small-text">200-250 단어</text>
+
+  <!-- Introduction -->
+  <rect x="40" y="170" width="170" height="90" class="intro-box"/>
+  <text x="125" y="200" class="text">서론</text>
+  <text x="125" y="215" class="text">(Introduction)</text>
+  <text x="125" y="230" class="small-text">연구 배경</text>
+  <text x="125" y="245" class="small-text">연구 목적</text>
+
+  <!-- Literature Review -->
+  <rect x="240" y="170" width="170" height="90" class="intro-box"/>
+  <text x="325" y="200" class="text">문헌 리뷰</text>
+  <text x="325" y="215" class="text">(Literature Review)</text>
+  <text x="325" y="230" class="small-text">선행 연구</text>
+  <text x="325" y="245" class="small-text">연구 격차</text>
+
+  <!-- Methodology -->
+  <rect x="440" y="170" width="180" height="90" class="method-box"/>
+  <text x="530" y="200" class="text-dark">연구 방법론</text>
+  <text x="530" y="215" class="text-dark">(Methodology)</text>
+  <text x="530" y="230" class="small-text-dark">연구 설계</text>
+  <text x="530" y="245" class="small-text-dark">데이터 수집</text>
+
+  <!-- Results -->
+  <rect x="650" y="170" width="170" height="90" class="result-box"/>
+  <text x="735" y="200" class="text-dark">결과</text>
+  <text x="735" y="215" class="text-dark">(Results)</text>
+  <text x="735" y="230" class="small-text-dark">분석 결과</text>
+  <text x="735" y="245" class="small-text-dark">통계 데이터</text>
+
+  <!-- Discussion -->
+  <rect x="190" y="320" width="170" height="90" class="result-box"/>
+  <text x="275" y="350" class="text-dark">토의</text>
+  <text x="275" y="365" class="text-dark">(Discussion)</text>
+  <text x="275" y="380" class="small-text-dark">결과 해석</text>
+  <text x="275" y="395" class="small-text-dark">함의 논의</text>
+
+  <!-- Conclusion -->
+  <rect x="390" y="320" width="170" height="90" class="conclusion-box"/>
+  <text x="475" y="350" class="text">결론</text>
+  <text x="475" y="365" class="text">(Conclusion)</text>
+  <text x="475" y="380" class="small-text">연구 기여</text>
+  <text x="475" y="395" class="small-text">향후 연구</text>
+
+  <!-- References -->
+  <rect x="590" y="320" width="180" height="90" class="conclusion-box"/>
+  <text x="680" y="350" class="text">참고문헌</text>
+  <text x="680" y="365" class="text">(References)</text>
+  <text x="680" y="380" class="small-text">인용 문헌</text>
+  <text x="680" y="395" class="small-text">자동 관리</text>
+
+  <!-- Flow Arrows -->
+  <!-- Abstract to Introduction -->
+  <line x1="440" y1="120" x2="180" y2="170" class="arrow"/>
+  
+  <!-- Introduction to Literature Review -->
+  <line x1="210" y1="215" x2="240" y2="215" class="arrow"/>
+  
+  <!-- Literature Review to Methodology -->
+  <line x1="410" y1="215" x2="440" y2="215" class="arrow"/>
+  
+  <!-- Methodology to Results -->
+  <line x1="620" y1="215" x2="650" y2="215" class="arrow"/>
+  
+  <!-- Results to Discussion -->
+  <line x1="720" y1="260" x2="330" y2="320" class="arrow"/>
+  
+  <!-- Discussion to Conclusion -->
+  <line x1="360" y1="365" x2="390" y2="365" class="arrow"/>
+  
+  <!-- Conclusion to References -->
+  <line x1="560" y1="365" x2="590" y2="365" class="arrow"/>
+
+  <!-- Cross-references (dotted lines) -->
+  <line x1="530" y1="260" x2="275" y2="320" class="dotted-arrow"/>
+  <line x1="680" y1="320" x2="325" y2="260" class="dotted-arrow"/>
+  <line x1="275" y1="320" x2="125" y2="260" class="dotted-arrow"/>
+
+
+  <!-- Key Features -->
+  <g transform="translate(50, 470)">
+    <rect x="0" y="0" width="700" height="100" fill="none" stroke="#bdc3c7" stroke-width="1" rx="8"/>
+    <text x="20" y="25" class="section-title">핵심 특징</text>
+    
+    <circle cx="40" cy="50" r="6" fill="#2ecc71"/>
+    <text x="55" y="55" font="bold 13px 'AppleGothic'" fill="#1a252f">구조화된 흐름</text>
+    
+    <circle cx="160" cy="50" r="6" fill="#3498db"/>
+    <text x="175" y="55" font="bold 13px 'AppleGothic'" fill="#1a252f">논리적 연결</text>
+    
+    <circle cx="280" cy="50" r="6" fill="#f39c12"/>
+    <text x="295" y="55" font="bold 13px 'AppleGothic'" fill="#1a252f">재현가능한 분석</text>
+    
+    <circle cx="420" cy="50" r="6" fill="#9b59b6"/>
+    <text x="435" y="55" font="bold 13px 'AppleGothic'" fill="#1a252f">자동 참조 관리</text>
+    
+    <circle cx="560" cy="50" r="6" fill="#e74c3c"/>
+    <text x="575" y="55" font="bold 13px 'AppleGothic'" fill="#1a252f">다중 출력 형식</text>
+    
+    <text x="20" y="80" font="11px 'AppleGothic'" fill="#5a5a5a">• 각 구성 요소는 독립적으로 작성하되 유기적으로 연결되어야 함</text>
+    <text x="20" y="95" font="11px 'AppleGothic'" fill="#5a5a5a">• Quarto의 교차 참조 시스템을 활용하여 일관성 있는 문서 작성 가능</text>
+  </g>
+</svg>

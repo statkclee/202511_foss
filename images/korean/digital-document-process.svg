@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 52 900 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .title-text { font-family: 'IBM Plex Sans KR', sans-serif; font-size: 24px; font-weight: bold; fill: #2c3e50; }
+      .stage-text { font-family: 'IBM Plex Sans KR', sans-serif; font-size: 16px; font-weight: 600; fill: #34495e; }
+      .desc-text-middle { font-family: 'Noto Sans KR', sans-serif; font-size: 15px; fill: #7f8c8d; }
+      .desc-text { font-family: 'Noto Sans KR', sans-serif; font-size: 13px; fill: #7f8c8d; }
+      .process-box { fill: #ecf0f1; stroke: #bdc3c7; stroke-width: 2; }
+      .arrow { fill: #3498db; }
+      .computer { fill: #95a5a6; stroke: #7f8c8d; stroke-width: 2; }
+      .screen { fill: #2c3e50; stroke: #34495e; stroke-width: 1; }
+      .keyboard { fill: #34495e; stroke: #2c3e50; stroke-width: 1; }
+      .disk { fill: #e74c3c; stroke: #c0392b; stroke-width: 1; }
+    </style>
+    
+    <!-- 화살표 마커 정의 -->
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" 
+            refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" class="arrow" />
+    </marker>
+  </defs>
+
+  <!-- 1단계: 컴퓨터 편집 -->
+  <g id="stage1">
+    <rect x="50" y="80" width="150" height="120" rx="10" class="process-box"/>
+    <text x="125" y="105" text-anchor="middle" class="stage-text">1. 컴퓨터 편집</text>
+    
+    <!-- 컴퓨터 모니터 -->
+    <rect x="80" y="120" width="70" height="45" rx="3" class="screen"/>
+    <rect x="85" y="125" width="60" height="35" fill="#ecf0f1"/>
+    <line x1="90" y1="135" x2="140" y2="135" stroke="#2c3e50" stroke-width="1"/>
+    <line x1="90" y1="140" x2="130" y2="140" stroke="#2c3e50" stroke-width="1"/>
+    <line x1="90" y1="145" x2="135" y2="145" stroke="#2c3e50" stroke-width="1"/>
+    
+    <!-- 키보드 -->
+    <rect x="85" y="170" width="60" height="15" rx="2" class="keyboard"/>
+    <rect x="88" y="173" width="6" height="3" fill="#7f8c8d"/>
+    <rect x="96" y="173" width="6" height="3" fill="#7f8c8d"/>
+    <rect x="104" y="173" width="6" height="3" fill="#7f8c8d"/>
+    <rect x="112" y="173" width="6" height="3" fill="#7f8c8d"/>
+    <rect x="120" y="173" width="6" height="3" fill="#7f8c8d"/>
+    <rect x="128" y="173" width="6" height="3" fill="#7f8c8d"/>
+    <rect x="136" y="173" width="6" height="3" fill="#7f8c8d"/>
+    
+    <text x="125" y="230" text-anchor="middle" class="desc-text-middle">WYSIWYG 편집</text>
+  </g>
+
+  <!-- 화살표 1 -->
+  <line x1="200" y1="140" x2="260" y2="140" stroke="#3498db" stroke-width="3" marker-end="url(#arrowhead)"/>
+
+  <!-- 2단계: 템플릿 시스템 -->
+  <g id="stage2">
+    <rect x="270" y="80" width="150" height="120" rx="10" class="process-box"/>
+    <text x="345" y="105" text-anchor="middle" class="stage-text">2. 템플릿 시스템</text>
+    
+    <!-- 문서 템플릿들 -->
+    <rect x="290" y="115" width="25" height="35" rx="2" fill="#3498db" stroke="#2980b9" stroke-width="1"/>
+    <text x="302" y="165" text-anchor="middle" class="desc-text" fill="white">공문</text>
+    
+    <rect x="320" y="115" width="25" height="35" rx="2" fill="#e67e22" stroke="#d35400" stroke-width="1"/>
+    <text x="332" y="165" text-anchor="middle" class="desc-text" fill="white">보고서</text>
+    
+    <rect x="350" y="115" width="25" height="35" rx="2" fill="#27ae60" stroke="#229954" stroke-width="1"/>
+    <text x="362" y="165" text-anchor="middle" class="desc-text" fill="white">편지</text>
+    
+    <!-- 선택된 템플릿 -->
+    <rect x="305" y="170" width="55" height="25" rx="3" fill="#f8f9fa" stroke="#dee2e6" stroke-width="2"/>
+    <line x1="310" y1="175" x2="355" y2="175" stroke="#2c3e50" stroke-width="1"/>
+    <line x1="310" y1="179" x2="345" y2="179" stroke="#2c3e50" stroke-width="1"/>
+    <line x1="310" y1="185" x2="350" y2="185" stroke="#2c3e50" stroke-width="1"/>
+    
+    <text x="345" y="230" text-anchor="middle" class="desc-text-middle">서식 재사용</text>
+  </g>
+
+  <!-- 화살표 2 -->
+  <line x1="420" y1="140" x2="480" y2="140" stroke="#3498db" stroke-width="3" marker-end="url(#arrowhead)"/>
+
+  <!-- 3단계: 글꼴과 서식 -->
+  <g id="stage3">
+    <rect x="490" y="80" width="150" height="120" rx="10" class="process-box"/>
+    <text x="565" y="105" text-anchor="middle" class="stage-text">3. 글꼴과 서식</text>
+    
+    <!-- 다양한 글꼴 예시 -->
+    <text x="515" y="130" class="desc-text" font-family="serif">명조체</text>
+    <text x="515" y="145" class="desc-text" font-family="sans-serif" font-weight="bold">고딕체</text>
+    <text x="515" y="160" class="desc-text" font-size="16px" fill="#e74c3c">큰 글씨</text>
+    <text x="515" y="175" class="desc-text" font-size="10px" fill="#3498db">작은 글씨</text>
+    
+    <!-- 서식 도구 -->
+    <rect x="580" y="125" width="15" height="15" fill="#2c3e50"/>
+    <text x="587" y="137" text-anchor="middle" fill="white" font-size="10px">B</text>
+    <rect x="580" y="145" width="15" height="15" fill="#e74c3c"/>
+    <text x="587" y="157" text-anchor="middle" fill="white" font-size="10px">A</text>
+    <rect x="580" y="165" width="15" height="15" fill="#3498db"/>
+    <text x="587" y="177" text-anchor="middle" fill="white" font-size="10px">U</text>
+    
+    <text x="565" y="230" text-anchor="middle" class="desc-text-middle">시각적 다양성</text>
+  </g>
+
+  <!-- 화살표 3 -->
+  <line x1="640" y1="140" x2="700" y2="140" stroke="#3498db" stroke-width="3" marker-end="url(#arrowhead)"/>
+
+  <!-- 4단계: 저장과 배포 -->
+  <g id="stage4">
+    <rect x="710" y="80" width="150" height="120" rx="10" class="process-box"/>
+    <text x="785" y="105" text-anchor="middle" class="stage-text">4. 저장과 배포</text>
+    
+    <!-- 디스켓 -->
+    <rect x="730" y="120" width="30" height="25" rx="3" class="disk"/>
+    <rect x="735" y="125" width="20" height="15" fill="#c0392b"/>
+    <circle cx="745" cy="132" r="3" fill="#2c3e50"/>
+    <text x="745" y="165" text-anchor="middle" class="desc-text">디스켓</text>
+    
+    <!-- 파일 형식들 -->
+    <rect x="770" y="120" width="35" height="20" rx="2" fill="#f8f9fa" stroke="#dee2e6" stroke-width="1"/>
+    <text x="787" y="133" text-anchor="middle" class="desc-text">.hwp</text>
+    <rect x="810" y="120" width="35" height="20" rx="2" fill="#f8f9fa" stroke="#dee2e6" stroke-width="1"/>
+    <text x="827" y="133" text-anchor="middle" class="desc-text">.doc</text>
+    
+    <rect x="770" y="145" width="35" height="20" rx="2" fill="#f8f9fa" stroke="#dee2e6" stroke-width="1"/>
+    <text x="787" y="158" text-anchor="middle" class="desc-text">.txt</text>
+    <rect x="810" y="145" width="35" height="20" rx="2" fill="#f8f9fa" stroke="#dee2e6" stroke-width="1"/>
+    <text x="827" y="158" text-anchor="middle" class="desc-text">.rtf</text>
+    
+    <text x="785" y="185" text-anchor="middle" class="desc-text">편집 가능</text>
+    <text x="785" y="230" text-anchor="middle" class="desc-text-middle">다양한 형식</text>
+  </g>
+
+  <!-- 특징 설명 박스들 -->
+  <g id="characteristics" transform="translate(0, -30)">
+    <!-- 편집의 자유 -->
+    <rect x="50" y="280" width="170" height="85" rx="8" fill="#e8f4fd" stroke="#3498db" stroke-width="2"/>
+    <text x="130" y="305" text-anchor="middle" class="stage-text">편집의 자유</text>
+    <text x="60" y="325" class="desc-text">언제든 수정 가능</text>
+    <text x="60" y="340" class="desc-text">복사, 붙여넣기, 이동</text>
+    <text x="60" y="355" class="desc-text">실시간 편집</text>
+
+    <!-- 템플릿과 서식 -->
+    <rect x="270" y="280" width="170" height="85" rx="8" fill="#fdf2e8" stroke="#e67e22" stroke-width="2"/>
+    <text x="360" y="305" text-anchor="middle" class="stage-text">템플릿과 서식</text>
+    <text x="290" y="325" class="desc-text">일관된 서식 유지</text>
+    <text x="290" y="340" class="desc-text">양식 재사용</text>
+    <text x="290" y="355" class="desc-text">효율적 작업</text>
+
+    <!-- 여전한 한계 -->
+    <rect x="490" y="280" width="170" height="85" rx="8" fill="#f4f8fd" stroke="#8e44ad" stroke-width="2"/>
+    <text x="580" y="305" text-anchor="middle" class="stage-text">여전한 한계</text>
+    <text x="510" y="325" class="desc-text">정적 콘텐츠</text>
+    <text x="510" y="340" class="desc-text">상호작용 불가</text>
+    <text x="510" y="355" class="desc-text">호환성 문제</text>
+
+    <!-- WYSIWYG 원칙 -->
+    <rect x="710" y="280" width="170" height="85" rx="8" fill="#eaf7f0" stroke="#27ae60" stroke-width="2"/>
+    <text x="800" y="305" text-anchor="middle" class="stage-text">WYSIWYG 원칙</text>
+    <text x="730" y="325" class="desc-text">화면 = 인쇄 결과</text>
+    <text x="730" y="340" class="desc-text">종이 문서 모방</text>
+    <text x="730" y="355" class="desc-text">직관적 편집</text>
+  </g>
+
+</svg>

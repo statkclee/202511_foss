@@ -1,0 +1,136 @@
+<svg viewBox="0 70 1000 350" width="1000" height="500" xmlns="http://www.w3.org/2000/svg" aria-labelledby="title desc" role="img">
+  <title id="title">지능형 사고 4층 모델 — 하이브리드 협업 강조</title>
+  <desc id="desc">전통적 문해력, 하이브리드 사고력, 맥락 설계력, 검증 직관력의 4층 구조와 인간/AI 강점을 시각화한 도식</desc>
+  <defs>
+    <style>
+      .title-text { font-family: 'IBM Plex Sans KR', sans-serif; font-size: 22px; font-weight: 800; fill: #1f2937; }
+      .layer-title { font-family: 'IBM Plex Sans KR', sans-serif; font-size: 18px; font-weight: 800; fill: #1f2937; }
+      .layer-desc { font-family: 'Noto Sans KR', sans-serif; font-size: 14px; fill: #334155; }
+      .keyword { font-family: 'Noto Sans KR', sans-serif; font-size: 12px; fill: #0f766e; font-weight: 600; }
+      .flow-arrow { stroke: #64748b; stroke-width: 1.5; fill: none; }
+      .note { font-family: 'Noto Sans KR', sans-serif; font-size: 12px; fill: #475569; }
+    </style>
+
+    <!-- 배경 그라데이션 -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f8fafc" />
+      <stop offset="100%" stop-color="#eef2ff" />
+    </linearGradient>
+
+    <!-- 레이어 그라데이션 -->
+    <linearGradient id="g-verify" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fde68a" />
+      <stop offset="100%" stop-color="#f59e0b" />
+    </linearGradient>
+    <linearGradient id="g-context" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#bbf7d0" />
+      <stop offset="100%" stop-color="#34d399" />
+    </linearGradient>
+    <linearGradient id="g-hybrid" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#dbeafe" />
+      <stop offset="100%" stop-color="#60a5fa" />
+    </linearGradient>
+    <linearGradient id="g-trad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e5e7eb" />
+      <stop offset="100%" stop-color="#cbd5e1" />
+    </linearGradient>
+
+    <!-- 그림자 -->
+    <filter id="softShadow" x="-30%" y="-30%" width="160%" height="160%" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#0f172a" flood-opacity="0.18"/>
+    </filter>
+
+    <!-- 화살표 마커 -->
+    <marker id="arrow" markerWidth="12" markerHeight="8" refX="10" refY="4" orient="auto">
+      <polygon points="0 0, 12 4, 0 8" fill="#64748b" />
+    </marker>
+  </defs>
+
+  <!-- 배경 패널 -->
+  <rect x="20" y="30" width="960" height="430" rx="16" fill="url(#bgGrad)" stroke="#e2e8f0" stroke-width="1"/>
+
+  <!-- 4층: 검증 직관력 (정점) -->
+  <g filter="url(#softShadow)" transform="translate(0, -20)" >
+    <polygon points="400,90 600,90 580,140 420,140" fill="url(#g-verify)" stroke="#f59e0b" stroke-width="2"/>
+  </g>
+  <text x="500" y="88" text-anchor="middle" class="layer-title">🕵️‍♂️ 검증 직관력</text>
+  <text x="500" y="118" text-anchor="middle" class="layer-desc">AI 콘텐츠 진위 판별 · 오류 감지</text>
+
+  <!-- 3층: 맥락 설계력 -->
+  <g id="third-layer" transform="translate(0, 20)" filter="url(#softShadow)">
+    <polygon points="390,130 610,130 580,180 420,180" fill="url(#g-context)" stroke="#22c55e" stroke-width="2"/>
+  </g>
+  <text x="500" y="168" text-anchor="middle" class="layer-title">🧩 맥락 설계력</text>
+  <text x="500" y="198" text-anchor="middle" class="layer-desc">의도·상황 구조화 · 문제정의</text>
+
+  <!-- 2층: 하이브리드 사고력 -->
+  <g id="second-layer" transform="translate(0, 40)" filter="url(#softShadow)">
+    <polygon points="350,190 650,190 620,250 380,250" fill="url(#g-hybrid)" stroke="#3b82f6" stroke-width="2"/>
+  </g>
+  <text x="500" y="250" text-anchor="middle" class="layer-title">🤝 하이브리드 사고력</text>
+  <text x="500" y="286" text-anchor="middle" class="layer-desc">인간 직관 + AI 계산력의 융합</text>
+
+  <!-- 1층: 전통적 문해력 (기반) -->
+  <g id="first-layer" transform="translate(0, 60)" filter="url(#softShadow)">
+    <polygon points="300,260 700,260 680,320 320,320" fill="url(#g-trad)" stroke="#94a3b8" stroke-width="2"/>
+  </g>
+  <text x="500" y="350" text-anchor="middle" class="layer-title">📚 전통적 문해력</text>
+  <text x="500" y="370" text-anchor="middle" class="layer-desc">읽기 · 쓰기 · 계산 (기초 토대)</text>
+
+  <!-- 키워드들 -->
+  <g id="verification-keywords">
+    <text x="430" y="103" class="keyword">🧪 논리검증</text>
+    <text x="510" y="103" class="keyword">🛡️ 진위감별</text>
+  </g>
+
+  <g id="context-keywords">
+    <text x="420" y="182" class="keyword">🗺️ 시나리오 설계</text>
+    <text x="525" y="182" class="keyword">🎯 의도 전달</text>
+  </g>
+
+  <g id="hybrid-keywords">
+    <text x="375" y="268" class="keyword">🔪 문제 분할</text>
+    <text x="460" y="268" class="keyword">🧠 창의적 융합</text>
+    <text x="550" y="268" class="keyword">⏱️ 실시간 협업</text>
+  </g>
+
+  <!-- 흐름 화살표: 인접 층의 경계 중앙에 정확히 정렬 -->
+  <!-- 경계 Y 좌표: 
+       검증 하단=140, 맥락 상단=150
+       맥락 하단=200, 하이브리드 상단=230 (190+40)
+       하이브리드 하단=290, 전통 상단=320 (260+60)
+  -->
+  <line x1="500" y1="120" x2="500" y2="150" class="flow-arrow" marker-end="url(#arrow)"/>
+  <line x1="500" y1="200" x2="500" y2="230" class="flow-arrow" marker-end="url(#arrow)"/>
+  <line x1="500" y1="290" x2="500" y2="320" class="flow-arrow" marker-end="url(#arrow)"/>
+
+  <!-- 좌우 보강 패널 -->
+  <g id="left-descriptions" transform="translate(40, 0)">
+    <rect x="50" y="160" width="200" height="150" rx="12" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.5" filter="url(#softShadow)"/>
+    <text x="150" y="185" text-anchor="middle" class="layer-title">👤 인간 강점</text>
+    <text x="65" y="207" class="keyword">💡 창의적 통찰</text>
+    <text x="65" y="226" class="keyword">⚖️ 윤리·가치 판단</text>
+    <text x="65" y="245" class="keyword">🧭 맥락 이해</text>
+    <text x="65" y="264" class="keyword">🕵️ 직관적 검증</text>
+    <text x="65" y="283" class="keyword">🤝 이해관계자 조정</text>
+  </g>
+
+  <g id="right-descriptions" transform="translate(-20, 0)">
+    <rect x="780" y="160" width="200" height="150" rx="12" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.5" filter="url(#softShadow)"/>
+    <text x="880" y="185" text-anchor="middle" class="layer-title">🤖 AI 강점</text>
+    <text x="795" y="207" class="keyword">📦 대용량·고속 처리</text>
+    <text x="795" y="226" class="keyword">🌀 패턴 인식</text>
+    <text x="795" y="245" class="keyword">📏 정확한 계산</text>
+    <text x="795" y="264" class="keyword">📈 실시간 분석</text>
+    <text x="795" y="283" class="keyword">🔁 반복 자동화</text>
+  </g>
+
+  <!-- 하단 메시지 -->
+  <g filter="url(#softShadow)" transform="translate(0, 10)">
+    <rect x="250" y="380" width="500" height="60" rx="12" fill="#ecfeff" stroke="#06b6d4" stroke-width="2"/>
+  </g>
+  <text x="310" y="417" text-anchor="middle" class="layer-title">🔗 핵심 원리</text>
+  <text x="500" y="440" text-anchor="middle" class="layer-desc">각 층은 아래 층 위에 구축되며, 👤+🤖의 협업으로 지능형 사고가 완성</text>
+  <text x="500" y="417" text-anchor="middle" class="note">인간 직관(👤)과 AI 계산(🤖)의 상호보완적 협업</text>
+
+</svg>

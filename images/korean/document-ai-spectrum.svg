@@ -1,0 +1,260 @@
+<svg viewBox="0 0 1000 500" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- 스펙트럼 그라디언트 -->
+    <linearGradient id="spectrumGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#dc3545;stop-opacity:1" />
+      <stop offset="25%" style="stop-color:#fd7e14;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#ffc107;stop-opacity:1" />
+      <stop offset="75%" style="stop-color:#28a745;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#007bff;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- 단계별 색상 -->
+    <linearGradient id="stage1" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#dc3545;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#c82333;stop-opacity:0.8" />
+    </linearGradient>
+    
+    <linearGradient id="stage2" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#fd7e14;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#e66b00;stop-opacity:0.8" />
+    </linearGradient>
+    
+    <linearGradient id="stage3" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffc107;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#e0a800;stop-opacity:0.8" />
+    </linearGradient>
+    
+    <linearGradient id="stage4" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#28a745;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#1e7e34;stop-opacity:0.8" />
+    </linearGradient>
+    
+    <linearGradient id="stage5" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#007bff;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#0056b3;stop-opacity:0.8" />
+    </linearGradient>
+    
+    <!-- 그림자 효과 -->
+    <filter id="cardShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="3" dy="3" stdDeviation="3" flood-color="#333" flood-opacity="0.2"/>
+    </filter>
+    
+    <!-- 글로우 효과 -->
+    <filter id="textGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- 배경 -->
+  <rect width="1000" height="500" fill="#f8f9fa"/>
+  
+  <!-- 제목 -->
+  <text x="500" y="30" text-anchor="middle" font-size="22" font-weight="bold" fill="#212529">
+    문서-AI 진화 스펙트럼: 정적 문서에서 지능형 에이전트까지
+  </text>
+  
+  <!-- 스펙트럼 바 -->
+  <rect x="50" y="80" width="900" height="20" fill="url(#spectrumGrad)" rx="10"/>
+  
+  <!-- 단계 표시 점들 -->
+  <circle cx="90" cy="90" r="8" fill="white" stroke="#dc3545" stroke-width="3"/>
+  <circle cx="260" cy="90" r="8" fill="white" stroke="#fd7e14" stroke-width="3"/>
+  <circle cx="430" cy="90" r="8" fill="white" stroke="#ffc107" stroke-width="3"/>
+  <circle cx="600" cy="90" r="8" fill="white" stroke="#28a745" stroke-width="3"/>
+  <circle cx="770" cy="90" r="8" fill="white" stroke="#007bff" stroke-width="3"/>
+  
+  <!-- 1단계: 전통적 문서 -->
+  <g transform="translate(90,130)">
+    <rect x="-70" y="0" width="140" height="280" rx="10" fill="url(#stage1)" filter="url(#cardShadow)"/>
+    
+    <!-- 헤더 -->
+    <rect x="-65" y="5" width="130" height="35" rx="5" fill="rgba(255,255,255,0.9)"/>
+    <text x="0" y="18" text-anchor="middle" font-size="12" font-weight="bold" fill="#dc3545">1단계</text>
+    <text x="0" y="32" text-anchor="middle" font-size="11" font-weight="bold" fill="#333">정적 문서</text>
+    
+    <!-- 아이콘 -->
+    <rect x="-20" y="50" width="40" height="30" rx="3" fill="white" stroke="#ccc"/>
+    <text x="0" y="68" text-anchor="middle" font-size="10" fill="#666">HWP</text>
+    <text x="0" y="80" text-anchor="middle" font-size="10" fill="#666">DOCX</text>
+    
+    <!-- 특징들 -->
+    <text x="0" y="105" text-anchor="middle" font-size="11" font-weight="bold" fill="white">특징:</text>
+    <text x="0" y="120" text-anchor="middle" font-size="9" fill="white">• 수동 작성</text>
+    <text x="0" y="135" text-anchor="middle" font-size="9" fill="white">• 고정된 내용</text>
+    <text x="0" y="150" text-anchor="middle" font-size="9" fill="white">• 일회성 배포</text>
+    <text x="0" y="165" text-anchor="middle" font-size="9" fill="white">• 버전 관리 어려움</text>
+    
+    <!-- 한계 -->
+    <text x="0" y="185" text-anchor="middle" font-size="11" font-weight="bold" fill="white">한계:</text>
+    <text x="0" y="200" text-anchor="middle" font-size="9" fill="white">❌ 데이터 연동 불가</text>
+    <text x="0" y="215" text-anchor="middle" font-size="9" fill="white">❌ 자동화 없음</text>
+    <text x="0" y="230" text-anchor="middle" font-size="9" fill="white">❌ 협업 제한</text>
+    <text x="0" y="245" text-anchor="middle" font-size="9" fill="white">❌ 인터랙티브 불가</text>
+    
+    <!-- 대표 도구 -->
+    <text x="0" y="265" text-anchor="middle" font-size="9" font-weight="bold" fill="white">현재 주류</text>
+  </g>
+  
+  <!-- 2단계: 코드 내장 문서 -->
+  <g transform="translate(260,130)">
+    <rect x="-70" y="0" width="140" height="280" rx="10" fill="url(#stage2)" filter="url(#cardShadow)"/>
+    
+    <!-- 헤더 -->
+    <rect x="-65" y="5" width="130" height="35" rx="5" fill="rgba(255,255,255,0.9)"/>
+    <text x="0" y="18" text-anchor="middle" font-size="12" font-weight="bold" fill="#fd7e14">2단계</text>
+    <text x="0" y="32" text-anchor="middle" font-size="11" font-weight="bold" fill="#333">코드 내장</text>
+    
+    <!-- 아이콘 -->
+    <rect x="-25" y="50" width="50" height="30" rx="3" fill="white" stroke="#ccc"/>
+    <text x="0" y="65" text-anchor="middle" font-size="9" fill="#666">&lt;code&gt;</text>
+    <text x="0" y="78" text-anchor="middle" font-size="9" fill="#666">문서 + 코드</text>
+    
+    <!-- 특징들 -->
+    <text x="0" y="105" text-anchor="middle" font-size="11" font-weight="bold" fill="white">특징:</text>
+    <text x="0" y="120" text-anchor="middle" font-size="9" fill="white">• 동적 컨텐츠</text>
+    <text x="0" y="135" text-anchor="middle" font-size="9" fill="white">• 재현 가능성</text>
+    <text x="0" y="150" text-anchor="middle" font-size="9" fill="white">• 데이터 연동</text>
+    <text x="0" y="165" text-anchor="middle" font-size="9" fill="white">• 자동 차트 생성</text>
+    
+    <!-- 개선점 -->
+    <text x="0" y="185" text-anchor="middle" font-size="11" font-weight="bold" fill="white">개선:</text>
+    <text x="0" y="200" text-anchor="middle" font-size="9" fill="white">✅ 버전 관리</text>
+    <text x="0" y="215" text-anchor="middle" font-size="9" fill="white">✅ 다중 출력</text>
+    <text x="0" y="230" text-anchor="middle" font-size="9" fill="white">⚠️ 여전히 수동</text>
+    <text x="0" y="245" text-anchor="middle" font-size="9" fill="white">⚠️ 텍스트는 고정</text>
+    
+    <!-- 대표 도구 -->
+    <text x="0" y="265" text-anchor="middle" font-size="9" font-weight="bold" fill="white">Quarto, Jupyter</text>
+  </g>
+  
+  <!-- 3단계: AI 보조 문서 -->
+  <g transform="translate(430,130)">
+    <rect x="-70" y="0" width="140" height="280" rx="10" fill="url(#stage3)" filter="url(#cardShadow)"/>
+    
+    <!-- 헤더 -->
+    <rect x="-65" y="5" width="130" height="35" rx="5" fill="rgba(255,255,255,0.9)"/>
+    <text x="0" y="18" text-anchor="middle" font-size="12" font-weight="bold" fill="#ffc107">3단계</text>
+    <text x="0" y="32" text-anchor="middle" font-size="11" font-weight="bold" fill="#333">AI 보조</text>
+    
+    <!-- 아이콘 -->
+    <circle cx="0" cy="65" r="15" fill="white" stroke="#ffc107" stroke-width="2"/>
+    <text x="0" y="70" text-anchor="middle" font-size="12" fill="#ffc107">🤖</text>
+    
+    <!-- 특징들 -->
+    <text x="0" y="105" text-anchor="middle" font-size="11" font-weight="bold" fill="white">특징:</text>
+    <text x="0" y="120" text-anchor="middle" font-size="9" fill="white">• AI가 텍스트 생성</text>
+    <text x="0" y="135" text-anchor="middle" font-size="9" fill="white">• 코드 자동완성</text>
+    <text x="0" y="150" text-anchor="middle" font-size="9" fill="white">• 인사이트 제안</text>
+    <text x="0" y="165" text-anchor="middle" font-size="9" fill="white">• 인간 검토 필요</text>
+    
+    <!-- 능력 -->
+    <text x="0" y="185" text-anchor="middle" font-size="11" font-weight="bold" fill="white">능력:</text>
+    <text x="0" y="200" text-anchor="middle" font-size="9" fill="white">✅ 초안 생성</text>
+    <text x="0" y="215" text-anchor="middle" font-size="9" fill="white">✅ 분석 보조</text>
+    <text x="0" y="230" text-anchor="middle" font-size="9" fill="white">✅ 번역/요약</text>
+    <text x="0" y="245" text-anchor="middle" font-size="9" fill="white">⚠️ 환각 위험</text>
+    
+    <!-- 대표 도구 -->
+    <text x="0" y="265" text-anchor="middle" font-size="9" font-weight="bold" fill="white">Quarto+OpenAI</text>
+  </g>
+  
+  <!-- 4단계: 반응형 AI 문서 -->
+  <g transform="translate(600,130)">
+    <rect x="-70" y="0" width="140" height="280" rx="10" fill="url(#stage4)" filter="url(#cardShadow)"/>
+    
+    <!-- 헤더 -->
+    <rect x="-65" y="5" width="130" height="35" rx="5" fill="rgba(255,255,255,0.9)"/>
+    <text x="0" y="18" text-anchor="middle" font-size="12" font-weight="bold" fill="#28a745">4단계</text>
+    <text x="0" y="32" text-anchor="middle" font-size="11" font-weight="bold" fill="#333">반응형 AI</text>
+    
+    <!-- 아이콘 -->
+    <circle cx="-10" cy="65" r="10" fill="white" stroke="#28a745" stroke-width="2"/>
+    <circle cx="10" cy="65" r="10" fill="white" stroke="#28a745" stroke-width="2"/>
+    <path d="M -5,65 L 5,65" stroke="#28a745" stroke-width="2"/>
+    <text x="0" y="80" text-anchor="middle" font-size="8" fill="#666">상호작용</text>
+    
+    <!-- 특징들 -->
+    <text x="0" y="105" text-anchor="middle" font-size="11" font-weight="bold" fill="white">특징:</text>
+    <text x="0" y="120" text-anchor="middle" font-size="9" fill="white">• 실시간 대화</text>
+    <text x="0" y="135" text-anchor="middle" font-size="9" fill="white">• 사용자 맞춤</text>
+    <text x="0" y="150" text-anchor="middle" font-size="9" fill="white">• 컨텍스트 인식</text>
+    <text x="0" y="165" text-anchor="middle" font-size="9" fill="white">• 학습 능력</text>
+    
+    <!-- 능력 -->
+    <text x="0" y="185" text-anchor="middle" font-size="11" font-weight="bold" fill="white">능력:</text>
+    <text x="0" y="200" text-anchor="middle" font-size="9" fill="white">✅ Q&amp;A 대화</text>
+    <text x="0" y="215" text-anchor="middle" font-size="9" fill="white">✅ 동적 업데이트</text>
+    <text x="0" y="230" text-anchor="middle" font-size="9" fill="white">✅ 개인화</text>
+    <text x="0" y="245" text-anchor="middle" font-size="9" fill="white">✅ 패턴 학습</text>
+    
+    <!-- 대표 도구 -->
+    <text x="0" y="265" text-anchor="middle" font-size="9" font-weight="bold" fill="white">현재 개발 중</text>
+  </g>
+  
+  <!-- 5단계: 자율 지능 에이전트 -->
+  <g transform="translate(770,130)">
+    <rect x="-70" y="0" width="140" height="280" rx="10" fill="url(#stage5)" filter="url(#cardShadow)"/>
+    
+    <!-- 헤더 -->
+    <rect x="-65" y="5" width="130" height="35" rx="5" fill="rgba(255,255,255,0.9)"/>
+    <text x="0" y="18" text-anchor="middle" font-size="12" font-weight="bold" fill="#007bff">5단계</text>
+    <text x="0" y="32" text-anchor="middle" font-size="11" font-weight="bold" fill="#333">자율 에이전트</text>
+    
+    <!-- 아이콘 -->
+    <circle cx="0" cy="65" r="15" fill="#007bff" opacity="0.2"/>
+    <circle cx="0" cy="65" r="10" fill="#007bff" opacity="0.4"/>
+    <circle cx="0" cy="65" r="5" fill="#007bff"/>
+    <text x="0" y="80" text-anchor="middle" font-size="8" fill="#666">자율 운영</text>
+    
+    <!-- 특징들 -->
+    <text x="0" y="105" text-anchor="middle" font-size="11" font-weight="bold" fill="white">특징:</text>
+    <text x="0" y="120" text-anchor="middle" font-size="9" fill="white">• 완전 자율</text>
+    <text x="0" y="135" text-anchor="middle" font-size="9" fill="white">• 의사결정</text>
+    <text x="0" y="150" text-anchor="middle" font-size="9" fill="white">• 다중 에이전트</text>
+    <text x="0" y="165" text-anchor="middle" font-size="9" fill="white">• 창조적 협업</text>
+    
+    <!-- 미래 능력 -->
+    <text x="0" y="185" text-anchor="middle" font-size="11" font-weight="bold" fill="white">미래:</text>
+    <text x="0" y="200" text-anchor="middle" font-size="9" fill="white">🚀 자가 진화</text>
+    <text x="0" y="215" text-anchor="middle" font-size="9" fill="white">🚀 목표 설정</text>
+    <text x="0" y="230" text-anchor="middle" font-size="9" fill="white">🚀 창의적 사고</text>
+    <text x="0" y="245" text-anchor="middle" font-size="9" fill="white">🚀 감정 지능</text>
+    
+    <!-- 시기 -->
+    <text x="0" y="265" text-anchor="middle" font-size="9" font-weight="bold" fill="white">2027-2030?</text>
+  </g>
+  
+  <!-- 하단 화살표와 설명 -->
+  <g transform="translate(500,440)">
+    <!-- 화살표 -->
+    <path d="M -400,0 L 400,0" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)"/>
+    
+    <!-- 방향 표시 -->
+    <text x="-350" y="-10" font-size="12" fill="#666">정적 ← → 지능형</text>
+    <text x="200" y="-10" font-size="12" fill="#666">수동 ← → 자율</text>
+    
+    <!-- 현재 위치 표시 -->
+    <circle cx="-70" cy="0" r="5" fill="#28a745"/>
+    <text x="-70" y="20" text-anchor="middle" font-size="10" font-weight="bold" fill="#28a745">← 현재 여기</text>
+  </g>
+  
+  <!-- 화살표 마커 정의 -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" 
+            refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#666" />
+    </marker>
+  </defs>
+  
+  <!-- 범례 -->
+  <g transform="translate(50,460)">
+    <text x="0" y="0" font-size="11" font-weight="bold" fill="#495057">진화 트렌드:</text>
+    <text x="0" y="15" font-size="9" fill="#6c757d">• 인간 개입 감소 • 자동화 증가 • 지능 수준 향상 • 개인화 강화</text>
+  </g>
+  
+</svg>

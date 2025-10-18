@@ -1,0 +1,156 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700" width="1200" height="700">
+  <defs>
+    <style><![CDATA[
+      .title { font-family: Inter, Segoe UI, Arial, sans-serif; font-size: 36px; font-weight: 900; fill: #f8fafc; }
+      .subtitle { font-family: Inter, Segoe UI, Arial, sans-serif; font-size: 18px; font-weight: 600; fill: #cbd5e1; }
+      .h1 { font-family: Inter, Segoe UI, Arial, sans-serif; font-size: 22px; font-weight: 800; fill: #ffffff; }
+      .h2 { font-family: Inter, Segoe UI, Arial, sans-serif; font-size: 16px; font-weight: 800; fill: #f1f5f9; }
+      .p { font-family: Inter, Segoe UI, Arial, sans-serif; font-size: 14px; font-weight: 600; fill: #e5e7eb; }
+      .small { font-family: Inter, Segoe UI, Arial, sans-serif; font-size: 12px; font-weight: 700; fill: #cbd5e1; }
+      .time-label { font-family: Inter, Segoe UI, Arial, sans-serif; font-size: 14px; font-weight: 800; fill: #34d399; }
+      .year-label { font-family: Inter, Segoe UI, Arial, sans-serif; font-size: 14px; font-weight: 800; fill: #a855f7; }
+      .chatgpt-label { font-family: Inter, Segoe UI, Arial, sans-serif; font-size: 16px; font-weight: 900; fill: #fbbf24; }
+      .date-label { font-family: Inter, Segoe UI, Arial, sans-serif; font-size: 12px; font-weight: 600; fill: #94a3b8; }
+    ]]></style>
+
+    <!-- Background -->
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+
+    <!-- Bar gradients -->
+    <linearGradient id="gradChatGPT" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fbbf24"/>
+      <stop offset="100%" stop-color="#f59e0b"/>
+    </linearGradient>
+
+    <linearGradient id="gradTech" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3b82f6"/>
+      <stop offset="100%" stop-color="#2563eb"/>
+    </linearGradient>
+
+    <linearGradient id="gradSocial" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10b981"/>
+      <stop offset="100%" stop-color="#059669"/>
+    </linearGradient>
+
+    <linearGradient id="gradOld" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#64748b"/>
+      <stop offset="100%" stop-color="#475569"/>
+    </linearGradient>
+
+    <linearGradient id="gradYear" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8b5cf6"/>
+      <stop offset="100%" stop-color="#7c3aed"/>
+    </linearGradient>
+
+    <!-- Effects -->
+    <filter id="shadow"><feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#000" flood-opacity="0.3"/></filter>
+    <filter id="glowGold"><feDropShadow dx="0" dy="0" stdDeviation="8" flood-color="#fbbf24" flood-opacity="0.6"/></filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="700" fill="url(#bg)"/>
+
+  <!-- Header -->
+  <text x="600" y="50" text-anchor="middle" class="title">1억 사용자 도달 시간 비교</text>
+
+  <!-- Chart area -->
+  <g transform="translate(100,50)">
+    <!-- Y-axis labels -->
+    <g>
+      <!-- ChatGPT -->
+      <text x="0" y="60" class="h2" fill="#fbbf24">ChatGPT</text>
+      <text x="0" y="78" class="small">챗GPT</text>
+      
+      <!-- Instagram -->
+      <text x="0" y="120" class="h2">Instagram</text>
+      <text x="0" y="138" class="small">인스타그램</text>
+      
+      <!-- Facebook -->
+      <text x="0" y="180" class="h2">Facebook</text>
+      <text x="0" y="198" class="small">페이스북</text>
+      
+      <!-- Twitter -->
+      <text x="0" y="240" class="h2">Twitter</text>
+      <text x="0" y="258" class="small">트위터</text>
+      
+      <!-- Spotify -->
+      <text x="0" y="300" class="h2">Spotify</text>
+      <text x="0" y="318" class="small">스포티파이</text>
+      
+      <!-- Internet -->
+      <text x="0" y="360" class="h2">Internet</text>
+      <text x="0" y="378" class="small">인터넷</text>
+      
+      <!-- Mobile Phone -->
+      <text x="0" y="420" class="h2">Mobile Phone</text>
+      <text x="0" y="438" class="small">모바일폰</text>
+      
+      <!-- Telephone -->
+      <text x="0" y="480" class="h2">Telephone</text>
+      <text x="0" y="498" class="small">전화</text>
+    </g>
+
+    <!-- Chart bars -->
+    <g transform="translate(120,30)">
+      <!-- ChatGPT - 2 months (shortest bar, special highlight) -->
+      <rect x="0" y="15" width="15" height="20" fill="url(#gradChatGPT)" filter="url(#glowGold)" rx="3"/>
+      <text x="25" y="30" class="chatgpt-label">2개월</text>
+      <text x="80" y="30" class="date-label">(2023.01)</text>
+      
+      <!-- Instagram - 28 months -->
+      <rect x="0" y="75" width="210" height="20" fill="url(#gradSocial)" filter="url(#shadow)" rx="3"/>
+      <text x="220" y="90" class="time-label">28개월</text>
+      <text x="280" y="90" class="date-label">(2013.02)</text>
+      
+      <!-- Facebook - 54 months -->
+      <rect x="0" y="135" width="405" height="20" fill="url(#gradSocial)" filter="url(#shadow)" rx="3"/>
+      <text x="415" y="150" class="time-label">54개월</text>
+      <text x="475" y="150" class="date-label">(2008.08)</text>
+      
+      <!-- Twitter - 66 months -->
+      <rect x="0" y="195" width="495" height="20" fill="url(#gradTech)" filter="url(#shadow)" rx="3"/>
+      <text x="505" y="210" class="time-label">66개월</text>
+      <text x="565" y="210" class="date-label">(2011.09)</text>
+      
+      <!-- Spotify - 92 months -->
+      <rect x="0" y="255" width="690" height="20" fill="url(#gradTech)" filter="url(#shadow)" rx="3"/>
+      <text x="700" y="270" class="time-label">92개월</text>
+      <text x="765" y="270" class="date-label">(2016.06)</text>
+      
+      <!-- Internet - 7 years -->
+      <rect x="0" y="315" width="525" height="20" fill="url(#gradOld)" filter="url(#shadow)" rx="3"/>
+      <text x="535" y="330" class="year-label">7년</text>
+      <text x="570" y="330" class="date-label">(1998.01)</text>
+      
+      <!-- Mobile Phone - 15 years (avg 13-17) -->
+      <rect x="0" y="375" width="675" height="20" fill="url(#gradOld)" filter="url(#shadow)" rx="3"/>
+      <text x="685" y="390" class="year-label">15년</text>
+      <text x="725" y="390" class="date-label">(1996)</text>
+      
+      <!-- Telephone - 75 years -->
+      <rect x="0" y="435" width="900" height="20" fill="url(#gradOld)" filter="url(#shadow)" rx="3"/>
+      <text x="910" y="450" class="year-label">75년</text>
+      <text x="910" y="470" class="date-label">(1950년대)</text>
+    </g>
+
+    <!-- Timeline scale -->
+    <g transform="translate(120,520)">
+      <line x1="0" y1="0" x2="950" y2="0" stroke="#475569" stroke-width="2"/>
+      <text x="0" y="20" class="small" text-anchor="start">0</text>
+      <text x="238" y="20" class="small" text-anchor="middle">30개월</text>
+      <text x="475" y="20" class="small" text-anchor="middle">5년</text>
+      <text x="713" y="20" class="small" text-anchor="middle">15년</text>
+      <text x="950" y="20" class="small" text-anchor="end">75년</text>
+    </g>
+  </g>
+
+  <!-- Key insights -->
+  <g transform="translate(100,620)">
+    <rect x="0" y="0" width="1000" height="60" rx="15" fill="#1f2937" opacity="0.8"/>
+    <text x="500" y="25" text-anchor="middle" class="h1" fill="#fbbf24">핵심 통찰</text>
+    <text x="500" y="50" text-anchor="middle" class="p" fill="#fbbf24">ChatGPT는 Instagram보다 14배 빠른 속도로 확산 - AI 시대의 디지털 네이티브 혁명</text>
+  </g>
+</svg>

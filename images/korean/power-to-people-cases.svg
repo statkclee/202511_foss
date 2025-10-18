@@ -1,0 +1,181 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" width="1600" height="1000">
+  <defs>
+    <style><![CDATA[
+      .title { font-family: Inter, Segoe UI, Arial, sans-serif; font-size: 44px; font-weight: 900; fill: #f8fafc; }
+      .subtitle { font-family: Inter, Segoe UI, Arial, sans-serif; font-size: 22px; font-weight: 600; fill: #cbd5e1; }
+      .h1 { font-family: Inter, Segoe UI, Arial, sans-serif; font-size: 26px; font-weight: 800; fill: #ffffff; }
+      .h2 { font-family: Inter, Segoe UI, Arial, sans-serif; font-size: 22px; font-weight: 800; fill: #f1f5f9; }
+      .p { font-family: Inter, Segoe UI, Arial, sans-serif; font-size: 18px; font-weight: 600; fill: #e5e7eb; }
+      .small { font-family: Inter, Segoe UI, Arial, sans-serif; font-size: 14px; font-weight: 700; fill: #cbd5e1; }
+      .badge { font-family: Inter, Segoe UI, Arial, sans-serif; font-size: 14px; font-weight: 800; letter-spacing: 0.3px; }
+    ]]></style>
+
+    <!-- Background -->
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+
+    <!-- Palette -->
+    <linearGradient id="gradCase" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8b5cf6"/>
+      <stop offset="100%" stop-color="#7c3aed"/>
+    </linearGradient>
+    <linearGradient id="gradFlowUp" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#10b981"/>
+      <stop offset="100%" stop-color="#34d399"/>
+    </linearGradient>
+    <linearGradient id="gradResp" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#d97706"/>
+    </linearGradient>
+
+    <!-- Effects -->
+    <filter id="shadow"><feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#000" flood-opacity="0.35"/></filter>
+
+    <!-- Markers -->
+    <marker id="arrowUp" markerWidth="16" markerHeight="12" refX="14" refY="6" orient="auto">
+      <polygon points="0 0, 16 6, 0 12" fill="#34d399"/>
+    </marker>
+    <marker id="arrowRight" markerWidth="18" markerHeight="14" refX="16" refY="7" orient="auto">
+      <polygon points="0 0, 18 7, 0 14" fill="#f59e0b"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1600" height="1000" fill="url(#bg)"/>
+
+  <!-- Header -->
+  <text x="800" y="68" text-anchor="middle" class="title">‘대중 → 기관’ 확산의 역사적 전형</text>
+  <text x="800" y="104" text-anchor="middle" class="subtitle">Bottom‑Up Adoption → Institutional Response</text>
+
+  <!-- Legend -->
+  <g transform="translate(70,130)">
+    <rect x="0" y="0" width="460" height="64" rx="12" fill="#0b1220" opacity="0.6"/>
+    <g transform="translate(16,16)">
+      <rect x="0" y="4" width="18" height="18" rx="4" fill="url(#gradCase)"/>
+      <text x="26" y="18" class="small">대중 주도 확산 (grassroots)</text>
+      <line x1="190" y1="14" x2="218" y2="14" stroke="url(#gradFlowUp)" stroke-width="6" marker-end="url(#arrowUp)"/>
+      <text x="228" y="18" class="small">상향식 흐름</text>
+      <line x1="342" y1="14" x2="370" y2="14" stroke="url(#gradResp)" stroke-width="6" marker-end="url(#arrowRight)"/>
+      <text x="380" y="18" class="small">제도적 대응</text>
+    </g>
+  </g>
+
+  <!-- Cases grid -->
+  <g transform="translate(70,220)">
+    <!-- CASE 1: Pamphlets -->
+    <g>
+      <rect x="0" y="0" width="290" height="420" rx="16" fill="url(#gradCase)" filter="url(#shadow)"/>
+      <text x="145" y="36" text-anchor="middle" class="h1">인쇄술 &amp; 팸플릿</text>
+      <text x="145" y="62" text-anchor="middle" class="small">16–17세기</text>
+      <g transform="translate(18,88)" class="p">
+        <text x="0" y="0">• 값싼 인쇄 → 대중 여론전</text>
+        <text x="0" y="28">• 종교개혁 · 정치 논쟁 확산</text>
+      </g>
+      <!-- Flow up -->
+      <path d="M 145 210 L 145 150" stroke="url(#gradFlowUp)" stroke-width="8" marker-end="url(#arrowUp)"/>
+      <text x="145" y="230" text-anchor="middle" class="small">대중 사용/배포</text>
+      <!-- Response -->
+      <g transform="translate(18,260)">
+        <rect x="0" y="0" width="254" height="120" rx="12" fill="#0b1220" opacity="0.6"/>
+        <text x="127" y="28" text-anchor="middle" class="h2">국가의 대응</text>
+        <text x="18" y="56" class="p">• 검열·허가제 도입</text>
+        <text x="18" y="84" class="p">• 팸플릿 단속·규제</text>
+      </g>
+    </g>
+
+    <!-- CASE 2: Ham Radio -->
+    <g transform="translate(320,0)">
+      <rect x="0" y="0" width="290" height="420" rx="16" fill="url(#gradCase)" filter="url(#shadow)"/>
+      <text x="145" y="36" text-anchor="middle" class="h1">아마추어 라디오</text>
+      <text x="145" y="62" text-anchor="middle" class="small">1900–1912</text>
+      <g transform="translate(18,88)" class="p">
+        <text x="0" y="0">• ‘햄’들의 실험·교신 급증</text>
+        <text x="0" y="28">• 주파수 혼잡 발생</text>
+      </g>
+      <path d="M 145 210 L 145 150" stroke="url(#gradFlowUp)" stroke-width="8" marker-end="url(#arrowUp)"/>
+      <text x="145" y="230" text-anchor="middle" class="small">대중 실험</text>
+      <g transform="translate(18,260)">
+        <rect x="0" y="0" width="254" height="120" rx="12" fill="#0b1220" opacity="0.6"/>
+        <text x="127" y="28" text-anchor="middle" class="h2">정부의 대응</text>
+        <text x="18" y="56" class="p">• 1912 라디오법</text>
+        <text x="18" y="84" class="p">• 면허·주파수 규제</text>
+      </g>
+    </g>
+
+    <!-- CASE 3: Personal Computer -->
+    <g transform="translate(640,0)">
+      <rect x="0" y="0" width="290" height="420" rx="16" fill="url(#gradCase)" filter="url(#shadow)"/>
+      <text x="145" y="36" text-anchor="middle" class="h1">개인용 컴퓨터</text>
+      <text x="145" y="62" text-anchor="middle" class="small">1970s 중반</text>
+      <g transform="translate(18,88)" class="p">
+        <text x="0" y="0">• 홈브류 클럽·호비이스트</text>
+        <text x="0" y="28">• 키트·소프트 공유</text>
+      </g>
+      <path d="M 145 210 L 145 150" stroke="url(#gradFlowUp)" stroke-width="8" marker-end="url(#arrowUp)"/>
+      <text x="145" y="230" text-anchor="middle" class="small">사용자 커뮤니티</text>
+      <g transform="translate(18,260)">
+        <rect x="0" y="0" width="254" height="120" rx="12" fill="#0b1220" opacity="0.6"/>
+        <text x="127" y="28" text-anchor="middle" class="h2">산업의 대응</text>
+        <text x="18" y="56" class="p">• 표준·생태계 정비</text>
+        <text x="18" y="84" class="p">• 기업화(애플 등)</text>
+      </g>
+    </g>
+
+    <!-- CASE 4: PGP -->
+    <g transform="translate(960,0)">
+      <rect x="0" y="0" width="290" height="420" rx="16" fill="url(#gradCase)" filter="url(#shadow)"/>
+      <text x="145" y="36" text-anchor="middle" class="h1">개인 암호화(PGP)</text>
+      <text x="145" y="62" text-anchor="middle" class="small">1991 이후</text>
+      <g transform="translate(18,88)" class="p">
+        <text x="0" y="0">• 시민의 강한 암호화 채택</text>
+        <text x="0" y="28">• 공개 배포·커뮤니티 확산</text>
+      </g>
+      <path d="M 145 210 L 145 150" stroke="url(#gradFlowUp)" stroke-width="8" marker-end="url(#arrowUp)"/>
+      <text x="145" y="230" text-anchor="middle" class="small">소비자 보안</text>
+      <g transform="translate(18,260)">
+        <rect x="0" y="0" width="254" height="120" rx="12" fill="#0b1220" opacity="0.6"/>
+        <text x="127" y="28" text-anchor="middle" class="h2">정책의 대응</text>
+        <text x="18" y="56" class="p">• 클리퍼 칩·수출규제</text>
+        <text x="18" y="84" class="p">• 이후 소비자 암호화 정착</text>
+      </g>
+    </g>
+
+    <!-- CASE 5: P2P -->
+    <g transform="translate(1280,0)">
+      <rect x="0" y="0" width="290" height="420" rx="16" fill="url(#gradCase)" filter="url(#shadow)"/>
+      <text x="145" y="36" text-anchor="middle" class="h1">P2P 파일공유</text>
+      <text x="145" y="62" text-anchor="middle" class="small">1999–2001</text>
+      <g transform="translate(18,88)" class="p">
+        <text x="0" y="0">• 대중이 음악 유통 재발명</text>
+        <text x="0" y="28">• 수천만 사용자</text>
+      </g>
+      <path d="M 145 210 L 145 150" stroke="url(#gradFlowUp)" stroke-width="8" marker-end="url(#arrowUp)"/>
+      <text x="145" y="230" text-anchor="middle" class="small">폭발적 채택</text>
+      <g transform="translate(18,260)">
+        <rect x="0" y="0" width="254" height="120" rx="12" fill="#0b1220" opacity="0.6"/>
+        <text x="127" y="28" text-anchor="middle" class="h2">산업의 대응</text>
+        <text x="18" y="56" class="p">• 소송 → 합법 스트리밍</text>
+        <text x="18" y="84" class="p">• iTunes·Spotify 등</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- Bottom ribbon: Shared pattern -->
+  <g>
+    <rect x="120" y="700" width="1360" height="120" rx="18" fill="#0b1220" opacity="0.65"/>
+    <g transform="translate(140,720)">
+      <text x="0" y="0" class="h2">공통 인사이트</text>
+      <text x="0" y="34" class="p">① 낮은 진입장벽(가격·접근성) ② 커뮤니티/네트워크 효과 ③ 사후적 규제·표준 정렬</text>
+      <text x="0" y="62" class="p">→ LLM 확산과 구조적으로 유사: 소비자 우선 채택 → 기업 제품화 → 정부/정책 후행</text>
+    </g>
+  </g>
+
+  <!-- Footer sources (compact) -->
+  <g transform="translate(120,870)">
+    <rect x="0" y="0" width="1360" height="72" rx="12" fill="#111827"/>
+    <text x="20" y="28" class="small">참고: Rutgers History Exhibits · I Love Typography · EHNE · earlyradiohistory.us · ARRL · CHM · All About Circuits · WIRED · UChicago Law · Miami Law · Washington Post · EBSCO</text>
+    <text x="20" y="52" class="small">(핵심 링크는 본문 자료집에 수록)</text>
+  </g>
+</svg>

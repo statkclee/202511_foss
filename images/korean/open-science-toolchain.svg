@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="460" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .folder { fill: #FFD700; stroke: #B8860B; stroke-width: 2; }
+      .file-hwp { fill: #FF6B6B; stroke: #D63031; stroke-width: 1; }
+      .file-excel { fill: #00B894; stroke: #00A085; stroke-width: 1; }
+      .file-spss { fill: #9B59B6; stroke: #8E44AD; stroke-width: 1; }
+      .file-md { fill: #6C5CE7; stroke: #5A47D6; stroke-width: 1; }
+      .file-data { fill: #74B9FF; stroke: #0984E3; stroke-width: 1; }
+      .text { font-family: Arial, sans-serif; font-size: 11px; fill: #2D3436; }
+      .title { font-family: Arial, sans-serif; font-size: 14px; font-weight: bold; fill: #2D3436; }
+      .subtitle { font-family: Arial, sans-serif; font-size: 12px; font-weight: bold; fill: #636E72; }
+      .problem { fill: #E17055; }
+      .solution { fill: #00B894; }
+    </style>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="460" fill="#F8F9FA"/>
+  
+  <!-- Left side: Document as Code way -->
+  <text x="200" y="30" text-anchor="middle" class="subtitle solution">문서 코드화 방식</text>
+  
+  <!-- Project folder (left) -->
+  <rect x="50" y="45" width="300" height="390" fill="#FFF" stroke="#DDD" stroke-width="1" rx="5"/>
+  
+  <!-- Main project folder -->
+  <rect x="60" y="55" width="20" height="15" class="folder" rx="2"/>
+  <text x="85" y="67" class="text">research-project/</text>
+  
+  <!-- Organized structure -->
+  <rect x="80" y="80" width="18" height="13" class="folder" rx="2"/>
+  <text x="103" y="91" class="text">data/</text>
+  <rect x="100" y="100" width="12" height="10" class="file-data" rx="1"/>
+  <text x="117" y="108" class="text">raw_data.csv</text>
+  <rect x="100" y="115" width="12" height="10" class="file-data" rx="1"/>
+  <text x="117" y="123" class="text">processed_data.csv</text>
+  
+  <rect x="80" y="135" width="18" height="13" class="folder" rx="2"/>
+  <text x="103" y="146" class="text">images/</text>
+  <rect x="100" y="155" width="12" height="10" fill="#FD79A8" stroke="#E84393" rx="1"/>
+  <text x="117" y="163" class="text">generated plots</text>
+  
+  <rect x="80" y="175" width="18" height="13" class="folder" rx="2"/>
+  <text x="103" y="186" class="text">scripts/</text>
+  <rect x="100" y="195" width="12" height="10" fill="#A29BFE" stroke="#6C5CE7" rx="1"/>
+  <text x="117" y="203" class="text">analysis.R</text>
+  <rect x="100" y="210" width="12" height="10" fill="#A29BFE" stroke="#6C5CE7" rx="1"/>
+  <text x="117" y="218" class="text">visualization.py</text>
+  
+  <!-- Main documents -->
+  <rect x="80" y="235" width="15" height="12" class="file-md" rx="1"/>
+  <text x="100" y="245" class="text">report.qmd</text>
+  
+  <rect x="80" y="255" width="15" height="12" class="file-md" rx="1"/>
+  <text x="100" y="265" class="text">README.md</text>
+  
+  <!-- Version control -->
+  <rect x="80" y="280" width="18" height="13" class="folder" rx="2"/>
+  <text x="103" y="291" class="text">.git/</text>
+  <text x="100" y="305" class="text" style="font-size: 9px;">complete version history</text>
+  
+  <!-- Benefits list -->
+  <text x="70" y="330" class="text solution">✅ 완전한 버전 관리</text>
+  <text x="70" y="345" class="text solution">✅ 데이터-코드-문서 통합</text>
+  <text x="70" y="360" class="text solution">✅ 완전 재현 가능</text>
+  <text x="70" y="375" class="text solution">✅ 원활한 협업</text>
+  <text x="70" y="390" class="text solution">✅ 플랫폼 독립적</text>
+  
+  <!-- Right side: Open Science Toolchain -->
+  <text x="600" y="30" text-anchor="middle" class="subtitle solution">오픈사이언스 도구 체인</text>
+  
+  <!-- Toolchain area -->
+  <rect x="450" y="45" width="300" height="390" fill="#FFF" stroke="#DDD" stroke-width="1" rx="5"/>
+  
+  <!-- Step 1: Data Collection -->
+  <text x="470" y="70" class="text" style="font-weight: bold;">1단계: 데이터 수집/처리</text>
+  <rect x="480" y="75" width="18" height="13" fill="#00B894" stroke="#00A085" rx="2"/>
+  <text x="503" y="85" class="text">R/tidyverse</text>
+  <text x="560" y="85" class="text" style="font-size: 9px; fill: #00B894;">무료</text>
+  
+  <rect x="480" y="95" width="18" height="13" fill="#3776AB" stroke="#2E5D84" rx="2"/>
+  <text x="503" y="105" class="text">Python/pandas</text>
+  <text x="580" y="105" class="text" style="font-size: 9px; fill: #00B894;">무료</text>
+  
+  <!-- Step 2: Statistical Analysis -->
+  <text x="470" y="130" class="text" style="font-weight: bold;">2단계: 통계 분석</text>
+  <rect x="480" y="135" width="18" height="13" fill="#00B894" stroke="#00A085" rx="2"/>
+  <text x="503" y="145" class="text">R/stats</text>
+  <text x="540" y="145" class="text" style="font-size: 9px; fill: #00B894;">무료</text>
+  
+  <rect x="480" y="155" width="18" height="13" fill="#3776AB" stroke="#2E5D84" rx="2"/>
+  <text x="503" y="165" class="text">Python/scipy</text>
+  <text x="570" y="165" class="text" style="font-size: 9px; fill: #00B894;">무료</text>
+  
+  <rect x="480" y="175" width="18" height="13" fill="#9558B2" stroke="#7A4A95" rx="2"/>
+  <text x="503" y="185" class="text">Julia</text>
+  <text x="530" y="185" class="text" style="font-size: 9px; fill: #00B894;">무료</text>
+  
+  <!-- Step 3: Visualization -->
+  <text x="470" y="210" class="text" style="font-weight: bold;">3단계: 그래프/시각화</text>
+  <rect x="480" y="215" width="18" height="13" fill="#00B894" stroke="#00A085" rx="2"/>
+  <text x="503" y="225" class="text">ggplot2</text>
+  <text x="545" y="225" class="text" style="font-size: 9px; fill: #00B894;">무료</text>
+  
+  <rect x="480" y="235" width="18" height="13" fill="#3776AB" stroke="#2E5D84" rx="2"/>
+  <text x="503" y="245" class="text">matplotlib</text>
+  <text x="560" y="245" class="text" style="font-size: 9px; fill: #00B894;">무료</text>
+  
+  <!-- Step 4: Document Creation -->
+  <text x="470" y="270" class="text" style="font-weight: bold;">4단계: 문서 작성</text>
+  <rect x="480" y="275" width="18" height="13" fill="#6C5CE7" stroke="#5A47D6" rx="2"/>
+  <text x="503" y="285" class="text">Quarto</text>
+  <text x="540" y="285" class="text" style="font-size: 9px; fill: #00B894;">무료</text>
+  
+  <rect x="480" y="295" width="18" height="13" fill="#F37626" stroke="#DA6A1F" rx="2"/>
+  <text x="503" y="305" class="text">Jupyter</text>
+  <text x="545" y="305" class="text" style="font-size: 9px; fill: #00B894;">무료</text>
+  
+  <!-- Output formats -->
+  <text x="500" y="325" class="text" style="font-size: 9px;">→ HTML, PDF, Word, PPT</text>
+  
+  <!-- Total cost box -->
+  <rect x="460" y="340" width="270" height="60" fill="#E8F5E8" stroke="#00B894" stroke-width="2" rx="5"/>
+  <text x="470" y="355" class="text" style="font-weight: bold; fill: #00B894;">연간 총 비용</text>
+  <text x="470" y="370" class="text">개인/연구실/대학: ₩0 (완전 무료)</text>
+  <text x="470" y="385" class="text">커뮤니티 지원 + GitHub/GitLab 호스팅</text>
+  
+  <!-- Benefits with toolchain -->
+  <text x="470" y="415" class="text solution">✅ 자동화된 워크플로우</text>
+  <text x="470" y="430" class="text solution">✅ Git/GitHub 완전 통합</text>
+  
+  <!-- Automated workflow arrows -->
+  <defs>
+    <marker id="auto-arrow" markerWidth="8" markerHeight="6" 
+     refX="8" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#00B894" />
+    </marker>
+  </defs>
+  
+  <!-- Workflow arrows -->
+  <line x1="520" y1="108" x2="520" y2="125" stroke="#00B894" stroke-width="1" marker-end="url(#auto-arrow)"/>
+  <text x="530" y="118" class="text" style="font-size: 8px; fill: #00B894;">자동실행</text>
+  
+  <line x1="520" y1="188" x2="520" y2="205" stroke="#00B894" stroke-width="1" marker-end="url(#auto-arrow)"/>
+  <text x="530" y="198" class="text" style="font-size: 8px; fill: #00B894;">코드통합</text>
+  
+  <line x1="520" y1="248" x2="520" y2="265" stroke="#00B894" stroke-width="1" marker-end="url(#auto-arrow)"/>
+  <text x="530" y="258" class="text" style="font-size: 8px; fill: #00B894;">자동생성</text>
+  
+  <!-- Arrow showing transformation -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" 
+     refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#00B894" />
+    </marker>
+  </defs>
+  <line x1="360" y1="240" x2="440" y2="240" stroke="#00B894" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="400" y="220" text-anchor="middle" class="text" style="font-size: 17px; font-weight: bold; fill: #00B894;">구현 방식</text>
+  
+</svg>

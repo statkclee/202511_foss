@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 55 1200 700" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .title { font: bold 22px 'Noto Sans KR', Arial, sans-serif; fill: #2c3e50; text-anchor: middle; }
+      .section-title { font: bold 16px 'Noto Sans KR', Arial, sans-serif; fill: white; text-anchor: middle; text-shadow: 1px 1px 2px rgba(0,0,0,0.7); }
+      .component-text { font: 14px 'Noto Sans KR', Arial, sans-serif; fill: #2c3e50; text-anchor: middle; }
+      .component-text-white { font: 14px 'Noto Sans KR', Arial, sans-serif; fill: #ffffff; text-anchor: middle; text-shadow: 1px 1px 2px rgba(0,0,0,0.7); }
+      .small-text { font: 12px 'Noto Sans KR', Arial, sans-serif; fill: #2c3e50; text-anchor: middle; }
+      .middle-text { font: 14px 'Noto Sans KR', Arial, sans-serif; fill: #2c3e50; text-anchor: left; }
+      .small-text-white { font: 12px 'Noto Sans KR', Arial, sans-serif; fill: #ffffff; text-anchor: middle; text-shadow: 1px 1px 2px rgba(0,0,0,0.7); }
+      .emph-text { font: bold 14px 'Noto Sans KR', Arial, sans-serif; fill: #e74c3c; text-anchor: middle; }
+      .dimensions-text { font: 11px 'Courier New', monospace; fill: #34495e; text-anchor: middle; }
+      .dimensions-text-white { font: 11px 'Courier New', monospace; fill: #ffffff; text-anchor: middle; text-shadow: 1px 1px 2px rgba(0,0,0,0.7); }
+      
+      .physical-paper { fill: #ecf0f1; stroke: #2c3e50; stroke-width: 2; filter: drop-shadow(2px 2px 4px rgba(0,0,0,0.3)); }
+      .digital-screen { fill: #2874a6; stroke: #1f5582; stroke-width: 2; rx: 8; filter: drop-shadow(2px 2px 4px rgba(0,0,0,0.3)); }
+      .mobile-screen { fill: #c0392b; stroke: #a93226; stroke-width: 2; rx: 12; filter: drop-shadow(2px 2px 4px rgba(0,0,0,0.3)); }
+      .tablet-screen { fill: #d68910; stroke: #b7750f; stroke-width: 2; rx: 10; filter: drop-shadow(2px 2px 4px rgba(0,0,0,0.3)); }
+      .desktop-screen { fill: #1e8449; stroke: #186a3b; stroke-width: 2; rx: 6; filter: drop-shadow(2px 2px 4px rgba(0,0,0,0.3)); }
+      .large-screen { fill: #6c3483; stroke: #5b2c6f; stroke-width: 2; rx: 4; filter: drop-shadow(2px 2px 4px rgba(0,0,0,0.3)); }
+      
+      .divider { stroke: #bdc3c7; stroke-width: 2; stroke-dasharray: 5,5; }
+      .arrow { stroke: #e74c3c; stroke-width: 1.5; fill: none; marker-end: url(#arrowhead); }
+      .fold-line { stroke: #95a5a6; stroke-width: 1; stroke-dasharray: 2,2; }
+    </style>
+    
+    <marker id="arrowhead" markerWidth="12" markerHeight="10" refX="10" refY="5" orient="auto">
+      <polygon points="0 0, 12 5, 0 10" fill="#e74c3c" />
+    </marker>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1200" height="780" fill="#ffffff"/>
+  
+  <!-- Physical Paper Sizes Section (Left) -->
+  <g transform="translate(50, 80)">
+    <text x="150" y="25" style="font: bold 16px 'Noto Sans KR', Arial, sans-serif; fill: #34495e; text-anchor: middle;">📄 전통 출판 (Physical)</text>
+    <text x="150" y="50" class="small-text">ISO A형 표준 - 수학적 비율 √2:1</text>
+    
+    <!-- A0 Paper (scaled down but larger - 30% increase) -->
+    <rect x="15" y="70" width="130" height="183" class="physical-paper"/>
+    <text x="80" y="110" class="component-text">A0</text>
+    <text x="80" y="135" class="dimensions-text">841×1189mm</text>
+    <text x="80" y="155" class="small-text">포스터</text>
+    
+    <!-- Fold line on A0 -->
+    <line x1="80" y1="70" x2="80" y2="253" class="fold-line"/>
+    
+    <!-- A1 Paper (30% increase) -->
+    <rect x="160" y="70" width="92" height="130" class="physical-paper"/>
+    <text x="206" y="115" class="component-text">A1</text>
+    <text x="206" y="140" class="dimensions-text">594×841</text>
+    <text x="206" y="160" class="small-text">도면</text>
+    
+    <!-- A4 Paper (most common - 30% increase) -->
+    <rect x="15" y="270" width="70" height="98" class="physical-paper"/>
+    <text x="50" y="305" class="component-text">A4</text>
+    <text x="50" y="328" class="dimensions-text">210×297</text>
+    <text x="50" y="348" class="small-text">표준 문서</text>
+    
+    <!-- A5 Paper (30% increase) -->
+    <rect x="100" y="270" width="51" height="70" class="physical-paper"/>
+    <text x="125" y="295" class="component-text">A5</text>
+    <text x="125" y="315" class="dimensions-text">148×210</text>
+    <text x="125" y="335" class="small-text">소설책</text>
+    
+    <!-- B5 Paper (30% increase) -->
+    <rect x="165" y="270" width="61" height="86" class="physical-paper"/>
+    <text x="195" y="300" class="component-text">B5</text>
+    <text x="195" y="323" class="dimensions-text">182×257</text>
+    <text x="195" y="343" class="small-text">전문서적</text>
+    
+    <!-- Physical constraints -->
+    <g transform="translate(150, -80)">
+      <text x="150" y="330" class="emph-text">⚠️ 물리적 제약</text>
+      <text x="150" y="350" class="small-text">• 고정된 크기</text>
+      <text x="150" y="368" class="small-text">• 종이 낭비 최소화</text>
+      <text x="150" y="386" class="small-text">• 제작비용 고려</text>
+      <text x="150" y="404" class="small-text">• 유통/보관 효율성</text>
+    </g>
+  </g>
+  
+  <!-- Transformation Arrow -->
+  <g transform="translate(380, 250)">
+    <line x1="0" y1="0" x2="140" y2="0" class="arrow"/>
+    <text x="70" y="-15" class="emph-text">디지털 혁명</text>
+    <text x="70" y="25" class="small-text">Quarto 통합</text>
+  </g>
+  
+  <!-- Digital Devices Section (Right) -->
+  <g transform="translate(580, 80)">
+    <text x="220" y="25" style="font: bold 16px 'Noto Sans KR', Arial, sans-serif; fill: #1f5582; text-anchor: middle;">💻 디지털 출판 (Digital)</text>
+    <text x="220" y="50" class="small-text">반응형 디자인 - 모든 화면 크기 대응</text>
+    
+    <!-- Large Display (4K) -->
+    <rect x="25" y="70" width="175" height="99" class="large-screen"/>
+    <text x="112" y="105" class="component-text-white">4K 디스플레이</text>
+    <text x="112" y="125" class="dimensions-text-white">3840×2160px</text>
+    <text x="112" y="145" class="small-text-white">A0 대응</text>
+    
+    <!-- Desktop Screen -->
+    <rect x="220" y="70" width="125" height="79" class="desktop-screen"/>
+    <text x="282" y="105" class="component-text-white">데스크톱</text>
+    <text x="282" y="120" class="dimensions-text-white">1920×1080</text>
+    <text x="282" y="135" class="small-text-white">A4 대응</text>
+    
+    <!-- Tablet Screen -->
+    <rect x="365" y="70" width="75" height="100" class="tablet-screen"/>
+    <text x="402" y="110" class="component-text-white">태블릿</text>
+    <text x="402" y="125" class="dimensions-text-white">768×1024</text>
+    <text x="402" y="140" class="small-text-white">B5 대응</text>
+    
+    <!-- Mobile Screen -->
+    <rect x="460" y="70" width="50" height="89" class="mobile-screen"/>
+    <text x="485" y="110" class="component-text-white">모바일</text>
+    <text x="485" y="125" class="dimensions-text-white">375×667</text>
+    <text x="485" y="140" class="small-text-white">A5 대응</text>
+    
+    <!-- Responsive Web Design -->
+    <g transform="translate(0, 190)">
+      <rect x="60" y="25" width="380" height="140" fill="#f8f9fa" stroke="#dee2e6" stroke-width="1" rx="8"/>
+      <text x="240" y="50" style="font: bold 16px 'Noto Sans KR', Arial, sans-serif; fill: #27ae60; text-anchor: middle;">📱 반응형 웹 디자인</text>
+      
+      <!-- Breakpoint indicators -->
+      <rect x="85" y="65" width="20" height="35" class="mobile-screen"/>
+      <text x="95" y="115" class="small-text">Mobile</text>
+      <text x="95" y="130" class="dimensions-text">~576px</text>
+      
+      <rect x="140" y="65" width="40" height="35" class="tablet-screen"/>
+      <text x="160" y="115" class="small-text">Tablet</text>
+      <text x="160" y="130" class="dimensions-text">~768px</text>
+      
+      <rect x="210" y="65" width="60" height="35" class="desktop-screen"/>
+      <text x="240" y="115" class="small-text">Desktop</text>
+      <text x="240" y="130" class="dimensions-text">~1200px</text>
+      
+      <rect x="300" y="65" width="80" height="35" class="large-screen"/>
+      <text x="340" y="115" class="small-text">Large</text>
+      <text x="340" y="130" class="dimensions-text">1200px+</text>
+      
+      <text x="240" y="150" class="small-text">CSS Breakpoints for Responsive Layout</text>
+    </g>
+    
+    <!-- Digital advantages -->
+    <g transform="translate(270,-120)">
+      <text x="240" y="370" class="emph-text">✨ 디지털 자유</text>
+      <text x="240" y="390" class="small-text">• 무한 확장 가능</text>
+      <text x="240" y="408" class="small-text">• 독자 맞춤 최적화</text>
+      <text x="240" y="426" class="small-text">• 실시간 적응형</text>
+      <text x="240" y="444" class="small-text">• 상호작용 지원</text>
+    </g>
+  </g>
+  
+  <!-- Quarto Integration Section (Bottom) -->
+  <g transform="translate(50, 470)">
+    <rect x="0" y="0" width="1100" height="220" fill="#f8f9fa" stroke="#dee2e6" stroke-width="1" rx="8"/>
+    <text x="550" y="30" class="title" fill="#8e44ad">🔧 Quarto: 통합 출판 솔루션</text>
+    
+    <!-- YAML Configuration -->
+    <g transform="translate(60, 50)">
+      <rect x="0" y="0" width="320" height="140" fill="#2c3e50" rx="4"/>
+      <text x="160" y="25" class="section-title">_quarto.yml 설정</text>
+      
+      <text x="35" y="50" style="font: 12px 'Noto Sans KR', Arial, sans-serif; fill: #ecf0f1; text-anchor: start;">format:</text>
+      <text x="45" y="70" style="font: 12px 'Noto Sans KR', Arial, sans-serif; fill: #f39c12; text-anchor: start;">html:</text>
+      <text x="55" y="85" style="font: 12px 'Noto Sans KR', Arial, sans-serif; fill: #ecf0f1; text-anchor: start;">theme: cosmo</text>
+      <text x="45" y="105" style="font: 12px 'Noto Sans KR', Arial, sans-serif; fill: #f39c12; text-anchor: start;">pdf:</text>
+      <text x="55" y="120" style="font: 12px 'Noto Sans KR', Arial, sans-serif; fill: #ecf0f1; text-anchor: start;">papersize: a4</text>
+    </g>
+    
+    <!-- Arrow showing one source to multiple outputs -->
+    <g transform="translate(400, 100)">
+      <line x1="0" y1="0" x2="60" y2="-35" class="arrow"/>
+      <line x1="0" y1="0" x2="70" y2="0" class="arrow"/>
+      <line x1="0" y1="0" x2="60" y2="35" class="arrow"/>
+      <text x="60" y="-10" class="small-text">One Source</text>
+      <text x="40" y="48" class="small-text">Multiple Outputs</text>
+    </g>
+    
+    <!-- Multiple Output Formats -->
+    <g transform="translate(500, 70)">
+      <!-- HTML Output -->
+      <rect x="0" y="0" width="100" height="60" class="desktop-screen"/>
+      <text x="50" y="25" class="component-text-white">HTML</text>
+      <text x="50" y="40" class="small-text-white">웹 최적화</text>
+      <text x="50" y="52" class="dimensions-text-white">반응형</text>
+      
+      <!-- PDF Output -->
+      <rect x="120" y="0" width="80" height="60" class="physical-paper"/>
+      <text x="160" y="25" class="component-text">PDF</text>
+      <text x="160" y="40" class="small-text">A4/B5</text>
+      <text x="160" y="52" class="dimensions-text">인쇄용</text>
+      
+      <!-- EPUB Output -->
+      <rect x="220" y="0" width="80" height="60" class="mobile-screen"/>
+      <text x="260" y="25" class="component-text-white">EPUB</text>
+      <text x="260" y="40" class="small-text-white">전자책</text>
+      <text x="260" y="52" class="dimensions-text-white">가변형</text>
+    </g>
+    
+    <!-- Benefits -->
+    <g transform="translate(750, 30)">
+      <text x="130" y="25"  class="emph-text">🎯 핵심 이점</text>
+      <text x="120" y="50"  class="middle-text">• Write Once, Publish Everywhere</text>
+      <text x="120" y="70"  class="middle-text">• 전통적 지혜 + 현대 기술</text>
+      <text x="120" y="90"  class="middle-text">• 독자별 최적화 자동화</text>
+      <text x="120" y="110"  class="middle-text">• AI 협업 네이티브 지원</text>
+      <text x="120" y="130" class="middle-text">• 지속 가능한 출판 생태계</text>
+      <text x="120" y="150" class="middle-text">• 무제한 확장성과 유연성</text>
+    </g>
+  </g>
+  
+  <!-- Historical Timeline Arrow (Bottom) -->
+  <g transform="translate(50, 730)">
+    <line x1="0" y1="0" x2="1100" y2="0" stroke="#95a5a6" stroke-width="3"/>
+    <text x="180" y="-15" class="small-text">1920년대: ISO 표준 확립</text>
+    <text x="420" y="-15" class="small-text">1990년대: 웹 출현</text>
+    <text x="670" y="-15" class="small-text">2010년대: 반응형 디자인</text>
+    <text x="920" y="-15" class="small-text">2025년: AI 출판 시대</text>
+  </g>
+</svg>
